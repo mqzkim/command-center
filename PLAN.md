@@ -30,3 +30,5 @@
 ## 상태 로그
 - 2026-08-23 00:30 계약 작성, 프로젝트 `command-center` 생성 예정, L1/L2/L3 병렬 fan-out.
 - 2026-08-23 01:20 L3 완료(4/5). claude-os 버그 2건 발견(리스너 사망·청킹 metadata 인플레이션) → L4 `gates/l4-claude-os-patch.md` 추가(패치+전량 재임포트). L3-4는 L4 통과 후 재검증. L1·L2 진행 중.
+- 2026-08-23 03:50 L1·L2·L3·L4 전부 완료(21/21), I1~I5 완료. claude-os 패치 3건(청킹 metadata 제외·ingest threadpool·search-all lexical boost) 적용, 위키 571문서 재임포트(청크 5,247→2,209). L4 agent는 세션 한도로 종료 → L4-5는 부모가 직접 재검증.
+- 2026-08-23 04:25 L5(미해결 4건) 완료 6/6: metadata 저장·metadata_filter 정확 필터·레이트리밋 60/min·start.ps1 자동 sync·대시보드 단계 질의 필터. index-thin drift lint 완료.

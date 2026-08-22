@@ -1,12 +1,12 @@
 // 자동 생성 — build-projects.mjs (로컬 클론 스캔 + projects-raw.json(gh) + .launch/launch-status.json + ~/.wiki 링크)
-// 생성: 2026-08-22 16:06Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
+// 생성: 2026-08-22 22:30Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
 const CC_PROJECTS = {
- "generatedAt": "2026-08-22 16:06Z",
+ "generatedAt": "2026-08-22 22:30Z",
  "roots": [
   "C:\\workspace",
   "C:\\Users\\my\\workspace"
  ],
- "ghSnapshot": "2026-08-22T16:04:49.087Z",
+ "ghSnapshot": "2026-08-22T18:46:40.501Z",
  "stages": [
   "intake",
   "repo_bootstrap",
@@ -41,32 +41,153 @@ const CC_PROJECTS = {
   "unverified": "미확정"
  },
  "summary": {
-  "total": 63,
+  "total": 68,
   "hidden": 24,
-  "toss": 16,
-  "active30d": 15,
+  "toss": 17,
+  "active30d": 20,
   "tossWithBlockers": 14,
-  "tossFromLaunchStatus": 15,
+  "tossFromLaunchStatus": 16,
   "byCategory": {
-   "side-project": 12,
+   "apps-in-toss": 17,
+   "side-project": 16,
    "knowledge-wiki": 1,
    "harness-ai-infra": 5,
-   "apps-in-toss": 16,
    "landing-docs": 3,
    "legacy": 26
   },
   "byStage": {
    "intake": 1,
    "analytics": 2,
-   "registration_draft": 5,
+   "registration_draft": 6,
    "sandbox_qa": 5,
    "released": 2,
    "unverified": 1
   },
   "tossUnverified": 1,
-  "dirty": 17
+  "dirty": 18
  },
  "items": [
+  {
+   "name": "subway-timer",
+   "repo": "subway-timer",
+   "displayName": null,
+   "desc": "지하철 도착 타이머: 자주 타는 역을 고르면 다음 열차까지 남은 시간을 바로 보여주는 앱",
+   "category": "apps-in-toss",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/subway-timer.git",
+   "lang": null,
+   "branch": "main",
+   "dirty": 1,
+   "lastCommit": "2026-08-23",
+   "lastActivity": "2026-08-23",
+   "daysSince": 0,
+   "gh": {
+    "url": "https://github.com/mqzkim/subway-timer",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 9,
+    "commits30d": 3,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "launch(mvp_prd): lock MVP scope and mirror backlog issues"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(repo_bootstrap): record repository evidence"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(repo_bootstrap): import idea artifacts"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": {
+    "source": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\subway-timer\\.launch\\launch-status.json",
+    "appName": "subway-timer",
+    "displayName": null,
+    "stage": "registration_draft",
+    "stageKo": "콘솔 등록",
+    "nextCheck": "registration_draft",
+    "pipeline": [
+     {
+      "s": "intake",
+      "st": "pass"
+     },
+     {
+      "s": "repo_bootstrap",
+      "st": "pass"
+     },
+     {
+      "s": "mvp_prd",
+      "st": "pass"
+     },
+     {
+      "s": "store_assets",
+      "st": "pass"
+     },
+     {
+      "s": "scaffold",
+      "st": "pass"
+     },
+     {
+      "s": "tds_mvp",
+      "st": "pass"
+     },
+     {
+      "s": "analytics",
+      "st": "pass"
+     },
+     {
+      "s": "artifact",
+      "st": "pass"
+     },
+     {
+      "s": "local_qa",
+      "st": "pass"
+     },
+     {
+      "s": "registration_draft",
+      "st": "pending"
+     },
+     {
+      "s": "deploy_authorization",
+      "st": "n/a"
+     },
+     {
+      "s": "sandbox_qa",
+      "st": "pending"
+     },
+     {
+      "s": "release_gate",
+      "st": "pending"
+     },
+     {
+      "s": "released",
+      "st": "pending"
+     }
+    ],
+    "blockersOpen": 0,
+    "blockersTotal": 0,
+    "blockers": [],
+    "classification": "non-game",
+    "finalReleaseApproved": true,
+    "updatedAt": "2026-08-22",
+    "goal": "지하철 도착 타이머: 자주 타는 역을 고르면 다음 열차까지 남은 시간을 바로 보여주는 앱"
+   },
+   "links": {
+    "local": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\subway-timer",
+    "github": "https://github.com/mqzkim/subway-timer",
+    "wiki": [],
+    "launch": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\subway-timer\\.launch\\launch-status.json",
+    "parent": null
+   }
+  },
   {
    "name": "launch-deck",
    "repo": "launch-deck",
@@ -81,7 +202,7 @@ const CC_PROJECTS = {
    "remote": "https://github.com/mqzkim/launch-deck.git",
    "lang": "Python",
    "branch": "main",
-   "dirty": 22,
+   "dirty": 1,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
    "daysSince": 0,
@@ -90,19 +211,19 @@ const CC_PROJECTS = {
     "private": true,
     "pushedAt": "2026-08-22",
     "openIssues": 0,
-    "commits30d": 8,
+    "commits30d": 23,
     "recent": [
      {
       "date": "2026-08-22",
-      "message": "gates(core): 12/12 met with evidence; venvpy.cmd wrapper for cmd.exe-…"
+      "message": "chore(dashboard): drop scratch logs from gates/evidence, ignore e2e r…"
      },
      {
       "date": "2026-08-22",
-      "message": "feat(core): adopt/snapshot, conductor db+planner+locks+tick loop, noo…"
+      "message": "feat(dashboard): Playwright e2e against seeded real backend, static d…"
      },
      {
       "date": "2026-08-22",
-      "message": "docs(spec): §5.5 image_gen path confirmed"
+      "message": "feat(tools): shell_tools (NodeRunner real/fake), project_validator po…"
      }
     ],
     "issueTitles": []
@@ -136,16 +257,16 @@ const CC_PROJECTS = {
    "remote": "https://github.com/mqzkim/command-center.git",
    "lang": "JavaScript",
    "branch": "master",
-   "dirty": 4,
+   "dirty": 24,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
    "daysSince": 0,
    "gh": {
     "url": "https://github.com/mqzkim/command-center",
-    "private": true,
+    "private": false,
     "pushedAt": "2026-08-22",
     "openIssues": 0,
-    "commits30d": 26,
+    "commits30d": 32,
     "recent": [
      {
       "date": "2026-08-22",
@@ -153,11 +274,11 @@ const CC_PROJECTS = {
      },
      {
       "date": "2026-08-22",
-      "message": "evolve(2026-08-23): ledger commit sha 53bf150"
+      "message": "evolve(2026-08-23): ledger commit sha f519cee"
      },
      {
       "date": "2026-08-22",
-      "message": "evolve(2026-08-23): FailproofAI/failproofai 지식화(c) — ~/.wiki entity i…"
+      "message": "evolve(2026-08-23): §6 자기진화 — trends.mjs 쿼리 8→15(hooks·subagents·memo…"
      }
     ],
     "issueTitles": []
@@ -169,75 +290,16 @@ const CC_PROJECTS = {
     "wiki": [
      "concepts/agentic-harness-engineering.md",
      "concepts/apps-in-toss-front-loaded-launch-contract.md",
+     "concepts/derived-mirror-index-sync-contract.md",
      "concepts/discord-bot-ecosystem.md",
      "concepts/git-subdirectory-remote-detection-pitfall.md",
      "concepts/harness-engineering.md",
      "concepts/headless-chrome-dom-error-capture.md",
-     "concepts/mcp-protocol.md",
-     "concepts/non-dev-ux-messaging.md"
+     "concepts/mcp-protocol.md"
     ],
     "launch": null,
     "parent": null
    }
-  },
-  {
-   "name": "llm-wiki",
-   "repo": "llm-wiki",
-   "displayName": null,
-   "desc": null,
-   "category": "knowledge-wiki",
-   "significance": 4,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "lang": "JavaScript",
-   "branch": null,
-   "dirty": null,
-   "lastCommit": null,
-   "lastActivity": "2026-08-22",
-   "daysSince": 1,
-   "gh": {
-    "url": "https://github.com/mqzkim/llm-wiki",
-    "private": true,
-    "pushedAt": "2026-08-22",
-    "openIssues": 0,
-    "commits30d": 23,
-    "recent": [
-     {
-      "date": "2026-08-22",
-      "message": "knowledge: add agno-agentos, standing-resolution-pattern, launch-deck…"
-     },
-     {
-      "date": "2026-08-19",
-      "message": "knowledge: update apps-in-toss free backend isolation"
-     },
-     {
-      "date": "2026-08-03",
-      "message": "knowledge: update apps-in-toss launch slice"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": null,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/llm-wiki",
-   "links": {
-    "local": null,
-    "github": "https://github.com/mqzkim/llm-wiki",
-    "wiki": [
-     "CLAUDE.md",
-     "concepts/agent-skill-autopilot-boundary.md",
-     "concepts/agentic-rag.md",
-     "concepts/artifact-drop-librarian-hook.md",
-     "concepts/benchmark-result-normalization.md",
-     "concepts/harness-wrapper-contract.md",
-     "concepts/knowledge-pipeline.md",
-     "concepts/mcp-tooling.md"
-    ],
-    "launch": null,
-    "parent": null
-   },
-   "noLocal": true
   },
   {
    "name": "launch-deck-gtest-fe1e2bc1",
@@ -286,6 +348,253 @@ const CC_PROJECTS = {
    "noLocal": true
   },
   {
+   "name": "launch-deck-gtest-0a2ab922",
+   "repo": "launch-deck-gtest-0a2ab922",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "lang": null,
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-08-22",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/launch-deck-gtest-0a2ab922",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 1,
+    "commits30d": 2,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "launch(mvp_prd): live checkpoint"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(repo_bootstrap): import idea artifacts"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/launch-deck-gtest-0a2ab922",
+   "links": {
+    "local": null,
+    "github": "https://github.com/mqzkim/launch-deck-gtest-0a2ab922",
+    "wiki": [],
+    "launch": null,
+    "parent": null
+   },
+   "noLocal": true
+  },
+  {
+   "name": "launch-deck-gtest-165ccf97",
+   "repo": "launch-deck-gtest-165ccf97",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "lang": null,
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-08-22",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/launch-deck-gtest-165ccf97",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 1,
+    "commits30d": 2,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "launch(mvp_prd): live checkpoint"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(repo_bootstrap): import idea artifacts"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/launch-deck-gtest-165ccf97",
+   "links": {
+    "local": null,
+    "github": "https://github.com/mqzkim/launch-deck-gtest-165ccf97",
+    "wiki": [],
+    "launch": null,
+    "parent": null
+   },
+   "noLocal": true
+  },
+  {
+   "name": "launch-deck-gtest-smoke",
+   "repo": "launch-deck-gtest-smoke",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "lang": null,
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-08-22",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/launch-deck-gtest-smoke",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 2,
+    "commits30d": 4,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "launch(store_assets): draft console asset package"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(mvp_prd): lock MVP scope and mirror backlog issues"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(repo_bootstrap): record repository evidence"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/launch-deck-gtest-smoke",
+   "links": {
+    "local": null,
+    "github": "https://github.com/mqzkim/launch-deck-gtest-smoke",
+    "wiki": [],
+    "launch": null,
+    "parent": null
+   },
+   "noLocal": true
+  },
+  {
+   "name": "launch-deck-gtest-4c3f5fea",
+   "repo": "launch-deck-gtest-4c3f5fea",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "lang": null,
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-08-22",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/launch-deck-gtest-4c3f5fea",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 1,
+    "commits30d": 2,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "launch(mvp_prd): live checkpoint"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(repo_bootstrap): import idea artifacts"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/launch-deck-gtest-4c3f5fea",
+   "links": {
+    "local": null,
+    "github": "https://github.com/mqzkim/launch-deck-gtest-4c3f5fea",
+    "wiki": [],
+    "launch": null,
+    "parent": null
+   },
+   "noLocal": true
+  },
+  {
+   "name": "llm-wiki",
+   "repo": "llm-wiki",
+   "displayName": null,
+   "desc": null,
+   "category": "knowledge-wiki",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "lang": "JavaScript",
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-08-22",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/llm-wiki",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 0,
+    "commits30d": 24,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "knowledge: update TradingAgents allocation rebalancing"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "knowledge: add agno-agentos, standing-resolution-pattern, launch-deck…"
+     },
+     {
+      "date": "2026-08-19",
+      "message": "knowledge: update apps-in-toss free backend isolation"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/llm-wiki",
+   "links": {
+    "local": null,
+    "github": "https://github.com/mqzkim/llm-wiki",
+    "wiki": [
+     "CLAUDE.md",
+     "concepts/agent-skill-autopilot-boundary.md",
+     "concepts/agentic-rag.md",
+     "concepts/artifact-drop-librarian-hook.md",
+     "concepts/benchmark-result-normalization.md",
+     "concepts/harness-wrapper-contract.md",
+     "concepts/knowledge-pipeline.md",
+     "concepts/mcp-tooling.md"
+    ],
+    "launch": null,
+    "parent": null
+   },
+   "noLocal": true
+  },
+  {
    "name": "hermes-shared-knowledge",
    "repo": "hermes-shared-knowledge",
    "displayName": null,
@@ -306,7 +615,7 @@ const CC_PROJECTS = {
     "private": true,
     "pushedAt": "2026-08-22",
     "openIssues": 0,
-    "commits30d": 7,
+    "commits30d": 9,
     "recent": [
      {
       "date": "2026-08-22",
@@ -462,6 +771,7 @@ const CC_PROJECTS = {
     "local": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\naeheunjeok",
     "github": "https://github.com/mqzkim/naeheunjeok",
     "wiki": [
+     "concepts/nomic-embed-korean-field-search-limitation.md",
      "internal/command-center-project-registry.md"
     ],
     "launch": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\naeheunjeok\\.launch\\launch-status.json",
@@ -866,6 +1176,7 @@ const CC_PROJECTS = {
     "github": "https://github.com/mqzkim/today-task",
     "wiki": [
      "concepts/apps-in-toss-front-loaded-launch-contract.md",
+     "concepts/nomic-embed-korean-field-search-limitation.md",
      "internal/command-center-project-registry.md"
     ],
     "launch": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\today-task\\.launch\\launch-status.json",
@@ -1952,10 +2263,10 @@ const CC_PROJECTS = {
    "remote": "https://github.com/mqzkim/app-in-toss.git",
    "lang": "JavaScript",
    "branch": "main",
-   "dirty": 116,
-   "lastCommit": "2026-07-06",
-   "lastActivity": "2026-08-03",
-   "daysSince": 20,
+   "dirty": 129,
+   "lastCommit": "2026-08-23",
+   "lastActivity": "2026-08-23",
+   "daysSince": 0,
    "gh": {
     "url": "https://github.com/mqzkim/app-in-toss",
     "private": true,
@@ -2218,6 +2529,7 @@ const CC_PROJECTS = {
     "local": "C:\\Users\\my\\workspace\\seoul-house-from-space",
     "github": "https://github.com/mqzkim/seoul-house-from-space",
     "wiki": [
+     "concepts/nomic-embed-korean-field-search-limitation.md",
      "internal/command-center-project-registry.md"
     ],
     "launch": "C:\\Users\\my\\workspace\\seoul-house-from-space\\.launch\\launch-status.json",
@@ -4261,9 +4573,14 @@ const CC_PROJECTS = {
     "local": "C:\\workspace\\claude-os",
     "github": "https://github.com/brobertsaz/claude-os",
     "wiki": [
+     "concepts/derived-mirror-index-sync-contract.md",
+     "concepts/headless-chrome-dom-error-capture.md",
+     "concepts/nomic-embed-korean-field-search-limitation.md",
      "concepts/oss-windows-porting-patterns.md",
      "entities/claude-os.md",
-     "entities/superpowers.md"
+     "entities/superpowers.md",
+     "internal/command-center-project-registry.md",
+     "_librarian/lint-queue.md"
     ],
     "launch": null,
     "parent": null

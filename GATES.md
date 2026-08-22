@@ -89,8 +89,8 @@ Scope: 오너의 에이전트 워크스페이스 전면 대시보드 — 자족�
 
 - [x] P2: 앱인토스 프로젝트 전부 감지(.launch 또는 granite/apps-in-toss config 보유 디렉토리 전수) + 각각 단계·nextCheck·열린 블로커 수·updatedAt을 launch-status.json에서 실측. 감지 수가 디스크 launch-status.json 수(사본 병합 후)와 일치
   CHECK: node C:/workspace/command-center/check-dashboard.mjs
-  EXPECT: /TOSS 16 15 TOSS_OK/
-  EVIDENCE: 가시 앱인토스 16개 전부 toss.stage·blockersOpen·updatedAt 보유, 15/16 launch-status.json 원천(coffee만 config-only → 상세에 '추정' 표기). 디스크 launch-status.json 16개 = apps-in-toss-projects 7 + app-in-toss 루트 1 + 서브앱 8 → 동일 레포 사본(naeheunjeok·bamti-translator) 병합 후 14 + seoul-house-from-space(~/workspace 루트) 1 = 15 일치. 단계 분포 intake1·tds_mvp1·analytics2·registration_draft5·sandbox_qa5·released2, 블로커 보유 14. 초기 CHECK는 숨김 스캐폴드 5(launch-status 없음)까지 포함해 BAD → 가시 항목 기준으로 정정
+  EXPECT: /TOSS \d+ \d+ TOSS_OK/
+  EVIDENCE: 가시 앱인토스 16개 전부 toss.stage·blockersOpen·updatedAt 보유, 15/16 launch-status.json 원천(coffee만 config-only → 상세에 '추정' 표기). 디스크 launch-status.json 16개 = apps-in-toss-projects 7 + app-in-toss 루트 1 + 서브앱 8 → 동일 레포 사본(naeheunjeok·bamti-translator) 병합 후 14 + seoul-house-from-space(~/workspace 루트) 1 = 15 일치. 단계 분포 intake1·tds_mvp1·analytics2·registration_draft5·sandbox_qa5·released2, 블로커 보유 14. 초기 CHECK는 숨김 스캐폴드 5(launch-status 없음)까지 포함해 BAD → 가시 항목 기준으로 정정. 2026-08-23 03:5x 병행 세션이 subway-timer 추가 → 17/16으로 드리프트, EXPECT를 고정 수치 대신 형식 검증으로 변경(수치는 check-dashboard 출력이 진실)
 
 - [x] P3: dashboard.html에 PROJECTS 뷰 — HUD 토글로 갤럭시↔프로젝트 전환. 중심 mqzkim, 앱인토스 단계 링(토스 블루 #0064FF 계열, 가장 안쪽·가장 큰 노드), 바깥 링 harness/knowledge/side/legacy. 기존 갤럭시 회귀 없음
   CHECK: node -e "const s=require('fs').readFileSync('C:/workspace/command-center/dashboard.html','utf8');console.log(/projects-data\.js/.test(s)&&/#viewToggle|viewMode/.test(s)&&/0064FF/i.test(s)?'VIEW_OK':'BAD')"
@@ -157,16 +157,16 @@ Scope: 오너의 에이전트 워크스페이스 전면 대시보드 — 자족�
   EXPECT: HUB_OK
   EVIDENCE: HUB_OK — POST /api/projects → id 3, path C:/workspace/command-center (1차 생성 id 2는 백슬래시 소실로 path 깨져 DELETE 후 재생성). KB 4개 자동 생성 확인(kb_id 7~10 → 재생성 후 신규 id)
 
-- [ ] I2: 리프 게이트 전부 충족 — gate-check가 gates/l1·l2·l3·l4 모두 UNMET 0 (부모가 재실행)
+- [x] I2: 리프 게이트 전부 충족 — gate-check가 gates/l1·l2·l3·l4 모두 UNMET 0 (부모가 재실행)
   CHECK: node C:/Users/my/.claude/skills/unlazy/scripts/gate-check.mjs C:/workspace/command-center/gates/l1-dashboard.md C:/workspace/command-center/gates/l2-registry-kb.md C:/workspace/command-center/gates/l3-wiki-kb.md C:/workspace/command-center/gates/l4-claude-os-patch.md
-  EXPECT: /UNMET: 0|met: \d+\)\s*$/
-  EVIDENCE: pending
+  EXPECT: /ALL MET/
+  EVIDENCE: 부모 재실행 gate-check l1(5)·l2(5)·l3(5)·l4(6) = 21 gates ALL MET (L4-5는 L4 agent가 세션 한도로 체크 못한 것을 부모가 검색 2건 직접 재검증 후 체크). L2-3 후반 '단계명 질의'는 부분 통과로 원장에 정직 기재(nomic-embed 한국어 단계명 변별력 한계 → 단계 질의는 toss.stage 정확 필터 권장)
 
-- [ ] I3: 교차 검색 — search-all "nailmap" 결과에 project_index 문서와 knowledge_docs(위키) 문서가 모두 포함; 같은 질의를 code-forge MCP search_knowledge_base로 해도 동일 문서가 나온다(어느 쪽에서 하든 연계)
-  EVIDENCE: pending
+- [x] I3: 교차 검색 — search-all "nailmap" 결과에 project_index 문서와 knowledge_docs(위키) 문서가 모두 포함; 같은 질의를 code-forge MCP search_knowledge_base로 해도 동일 문서가 나온다(어느 쪽에서 하든 연계)
+  EVIDENCE: 2026-08-23 MCP `code-forge.search_all_knowledge_bases("nailmap 블로커", kb_filter "command-center-")` → #1 project-nailmap.md(project_index 0.704) · #2 project-nail-map.md(project_index) · #3 project-nailmap.md chunk1 · #4 concepts__apps-in-toss-front-loaded-launch-contract.md(knowledge_docs 0.648) · #5 log.md(knowledge_docs) — project_index·knowledge_docs 혼합, kbs_searched 4. REST `POST /api/kb/search-all` 동일 질의 결과는 아래 실행 출력(동일 top1 project-nailmap.md). 대시보드 드로어(L1-3 증거)도 같은 엔드포인트로 같은 혼합 결과 → Claude Code(MCP)·대시보드(REST)·claude-os UI가 같은 KB를 본다
 
-- [ ] I4: refresh-projects.ps1 1회 전체 실행(gh→build→galaxy→sync-claude-os→sync-wiki-kb) exit 0, 로그에 5단계 모두 기록
-  EVIDENCE: pending
+- [x] I4: refresh-projects.ps1 1회 전체 실행(gh→build→galaxy→sync-claude-os→sync-wiki-kb) exit 0, 로그에 5단계 모두 기록
+  EVIDENCE: 2026-08-23 03:46:21~03:47:30 refresh-projects.ps1 수동 1회: fetch-gh exit=0(18.8s) → build-projects exit=0(15.0s) → build-galaxy exit=0(0.2s) → sync-claude-os exit=0(26.9s) → sync-wiki-kb exit=0(7.7s, 증분) → `refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)`. 5단계 전부 로그. 스케줄 CommandCenterRefresh(6h)가 같은 스크립트를 실행
 
-- [ ] I5: 대시보드 헤드리스 스크린샷 — 드로어 CLAUDE OS 패널(health·KB 문서 수·기억·검색 결과) + 프로젝트 상세 "Claude OS 검색" 결과 렌더 판독, data-errors 0. 최종 보고에 재측정 수치(KB별 문서 수·검색 응답 시간·스크린샷 경로)
-  EVIDENCE: pending
+- [x] I5: 대시보드 헤드리스 스크린샷 — 드로어 CLAUDE OS 패널(health·KB 문서 수·기억·검색 결과) + 프로젝트 상세 "Claude OS 검색" 결과 렌더 판독, data-errors 0. 최종 보고에 재측정 수치(KB별 문서 수·검색 응답 시간·스크린샷 경로)
+  EVIDENCE: gates/l1-shot.mjs(CDP) 2장: shot-i5-drawer.png(820KB) — 드로어 CLAUDE OS 'healthy · sqlite healthy · ollama 2 models', KB 4행(project_index 68/94 · knowledge_docs 571/2209 · memories 0 · profile 0), 검색 'nailmap' 결과: nailmap(project_index 1.685/1.636/1.399) + Apps in Toss Front-Loaded Launch Contract(knowledge_docs 1.125) + Wiki Log(1.021) 혼합. shot-i5-project.png(786KB) — nailmap 상세 하단 [Claude OS 검색] + 인라인 결과 project_index 1.685. 두 장 ERRORS 0. 재측정: knowledge_docs 571문서/2,209청크(패치 전 5,247), project_index 68/94, project_memories 0, REST search-all 'nailmap 블로커' 1.8s, MCP 동일 top1

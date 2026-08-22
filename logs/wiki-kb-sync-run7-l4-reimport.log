@@ -7,3 +7,8 @@ progress 250/571
 progress 300/571
 progress 350/571
 progress 400/571
+progress 450/571
+progress 500/571
+progress 550/571
+elapsed=727.4s
+scanned=571 upserted=571 deleted=0 unchanged=0 errors=0

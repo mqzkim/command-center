@@ -929,14 +929,32 @@ const COS_TIMEOUT = { timeout: true };
 const cosFailMsg = (j, what) => j === COS_TIMEOUT ? `응답 지연 — 8051 ${what} 30s 초과 (인제스트 중일 수 있음, 잠시 후 재시도)` : `오프라인 — claude-os(8051) 응답 없음`;
 function cosSnip(s) { return esc(String(s || "").replace(/\s+/g, " ").trim().slice(0, 120)); }
 function cosTitle(r) { return (r.metadata && (r.metadata.title || r.metadata.filename)) || r.doc_id || "?"; }
+/* 단계명 감지 — 질의에 14단계 중 하나(영문 key 또는 한국어 라벨)가 있으면 벡터 유사도 대신 metadata 정확 필터(stage)를 건다.
+   nomic-embed가 한국어 단계명을 변별하지 못하는 한계(L2-3) 때문에 검색 서버의 metadata_filter(L5 계약)를 사용 */
+function cosStageOf(query) {
+  const q = String(query || "").toLowerCase();
+  for (const s of (PJ.stages || []).concat(["unverified"])) {
+    const ko = (PJ.stageKo && PJ.stageKo[s]) || "";
+    const en = s.replace(/_/g, "[ _-]?");
+    if ((ko && q.includes(ko.toLowerCase())) || new RegExp(`\\b${en}\\b`).test(q)) return s;
+  }
+  return null;
+}
 async function cosSearchInto(box, query, topK) {
   box.innerHTML = `<li class="cos-dim">검색 중… "${esc(query)}"</li>`;
-  const j = await cosFetch("/api/kb/search-all", { query, top_k: topK }, 20000);
+  const stage = cosStageOf(query);
+  const body = { query, top_k: stage ? Math.max(topK, 20) : topK };
+  if (stage) { body.metadata_filter = { stage }; body.kb_filter = "command-center-project_index"; }
+  const j = await cosFetch("/api/kb/search-all", body, 20000);
   if (!j || j === COS_TIMEOUT) { box.innerHTML = `<li class="cos-off">${cosFailMsg(j, "search-all")}</li>`; return; }
-  const rs = j.results || [];
-  box.innerHTML = rs.length
-    ? rs.map(r => `<li><b>${esc(cosTitle(r))}</b><span class="s">${esc(r.kb_name || "?")} · score ${(+r.score || 0).toFixed(3)}</span><span class="why">${cosSnip(r.text)}</span></li>`).join("")
-    : `<li class="cos-dim">결과 0건 "${esc(query)}"</li>`;
+  let rs = j.results || [];
+  if (stage) { /* 같은 프로젝트 문서의 청크 중복 제거 — 프로젝트당 1행 */
+    const seen = new Set(); rs = rs.filter(r => { const f = r.metadata && r.metadata.filename; if (seen.has(f)) return false; seen.add(f); return true; });
+  }
+  const head = stage ? `<li class="cos-dim">단계 필터: <b>${esc((PJ.stageKo && PJ.stageKo[stage]) || stage)}</b> (${stage}) · ${rs.length}건${j.metadata_filter ? "" : " · 서버 미지원(필터 무시됨)"}</li>` : "";
+  box.innerHTML = head + (rs.length
+    ? rs.map(r => `<li><b>${esc(cosTitle(r))}</b><span class="s">${esc(r.kb_name || "?")} · score ${(+r.score || 0).toFixed(3)}${r.metadata && r.metadata.stage ? " · " + esc(r.metadata.stage) : ""}</span><span class="why">${cosSnip(r.text)}</span></li>`).join("")
+    : `<li class="cos-dim">결과 0건 "${esc(query)}"</li>`);
 }
 async function cosPanelRefresh() {
   const st = $("#cosState"), kb = $("#cosKb"), mem = $("#cosMem");

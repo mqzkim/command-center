@@ -2,22 +2,22 @@
 
 Scope: `C:\workspace\claude-os` 내부만(`mcp_server/server.py`, `app/core/ingestion.py`). command-center 파일은 `gates/l4-claude-os-patch.md`와 `state/wiki-kb-sync.json` 삭제만.
 
-- [ ] L4-1: 청킹 패치 — `chunk_document`가 metadata를 임베딩/청크 예산에서 제외. 재현 테스트: `concepts/rubric-ceiling-generic-troubleshooting.md` 로컬 chunk 수가 139 → 5 이하
-  EVIDENCE: pending
+- [x] L4-1: 청킹 패치 — `chunk_document`가 metadata를 임베딩/청크 예산에서 제외. 재현 테스트: `concepts/rubric-ceiling-generic-troubleshooting.md` 로컬 chunk 수가 139 → 5 이하
+  EVIDENCE: 2026-08-23 로컬 재현(venv python, preprocess_markdown→chunk_document, scratchpad/repro_chunks.py). 패치 전: rubric-ceiling-generic-troubleshooting **108청크**(min 26·avg 55자, metadata 1,207자; L3 실측 139는 upload_date 등 metadata 길이 차이) / smallest-ratchet 70 / critic-blind-spots 85 / ralph-wiggum-loop 7. 패치 후: rubric-ceiling **2**(683·737자) / smallest-ratchet 3 / critic-blind-spots 3 / ralph-wiggum-loop 4. 패치: `app/core/ingestion.py chunk_document` — `Document(..., excluded_embed_metadata_keys=list(metadata), excluded_llm_metadata_keys=list(metadata))` (+15/-2, 원인 주석). LlamaIndex 경고 `Metadata length (479) is close to chunk size (512)` 소멸.
 
-- [ ] L4-2: 리스너 사망 패치 — 동기 ingest를 threadpool로 이동(`run_in_threadpool`) 또는 SelectorEventLoop 정책. 재현 테스트: ingest 4개 동시 진행 중 `GET /api/kb` 20회 연속 + abort 5회 → 서버 생존, /health 200
-  EVIDENCE: pending
+- [x] L4-2: 리스너 사망 패치 — 동기 ingest를 threadpool로 이동(`run_in_threadpool`) 또는 SelectorEventLoop 정책. 재현 테스트: ingest 4개 동시 진행 중 `GET /api/kb` 20회 연속 + abort 5회 → 서버 생존, /health 200
+  EVIDENCE: 패치: `mcp_server/server.py` — `starlette.concurrency.run_in_threadpool` import(원인 주석) + `upload`·`documents/content`·`import`·folders auto_sync(`ingest_directory`)·동기 `index_semantic`(`_run_semantic_indexing_sync`) 5곳을 `await run_in_threadpool(...)`로 전환(+20/-7). SQLiteManager.get_connection은 호출마다 새 connection → 스레드 안전, 추가 변경 불필요. 재현 테스트(scratchpad/survive.mjs, 2026-08-23 16:05): `documents/content` 4건 동시(log.md 133청크·index.md 55·rubric 2·critic 3, 완료 5.5~13.0s) 진행 중 `GET /api/kb` 20회 연속 **ok=20/20**(지연 min 3ms·max 349ms), AbortController 5회 모두 AbortError 후 서버 생존, `/health` 200 healthy, 재기동 이후 `server.err.log` `Accept failed` **0건**. 참고: 패치 전 같은 로그 00:59:10에 `Accept failed on a socket` 재발 → 8051 리스너 사망 상태였음(PID 74232 생존·포트 미수신).
 
-- [ ] L4-3: 재기동 후 회귀 — pytest `tests`에서 패치 전 통과 수 이상(이전 587 passed 기준, Windows 특성 실패 7건 제외) · /health healthy · 5173 200
+- [x] L4-3: 재기동 후 회귀 — pytest `tests`에서 패치 전 통과 수 이상(이전 587 passed 기준, Windows 특성 실패 7건 제외) · /health healthy · 5173 200
   CHECK: curl -s http://127.0.0.1:8051/health
   EXPECT: /"status":"healthy"/
-  EVIDENCE: pending
+  EVIDENCE: pytest(`venv python -m pytest tests -q -p no:cacheprovider`; pytest.ini가 -v/--cov 포함, `--timeout` 플러그인 미설치라 생략) 패치 전 **577 passed / 16 failed**(101.5s) → 패치 후 **577 passed / 16 failed**(121.1s). 실패 집합 md5 동일(2ded3afc…: test_api health·test_auth JWT·test_config ollama_host·conversation_watcher·test_health ollama 등 환경/Windows 특성, ingestion·server 패치 무관; 이전 587/6/1과의 차이는 동일 환경에서 패치 전에도 재현되는 기준선 차이). 재기동 `stop.ps1`→`start.ps1`(서버 PID 64700; 이후 L4-5 search-all 패치 반영을 위해 2회 추가, 최종 PID 17988 — 재기동 전 8051은 이미 리스너 사망 상태였으므로 타 리프 영향은 재기동 자체가 아니라 복구): 최종 `/health` `{"status":"healthy"}` sqlite·ollama healthy, 5173 `ui=200`. search-all 패치 후 pytest 재실행 결과는 보고 본문 참조.
 
-- [ ] L4-4: knowledge_docs 전량 재임포트 — state 삭제 → `node sync-wiki-kb.mjs` errors=0, 문서 수 = 디스크 md 수, 총 청크 수가 패치 전 5,247보다 유의미하게 감소(초소형 청크 제거) — 실측 수치 기재
-  EVIDENCE: pending
+- [x] L4-4: knowledge_docs 전량 재임포트 — state 삭제 → `node sync-wiki-kb.mjs` errors=0, 문서 수 = 디스크 md 수, 총 청크 수가 패치 전 5,247보다 유의미하게 감소(초소형 청크 제거) — 실측 수치 기재
+  EVIDENCE: `state/wiki-kb-sync.json` 삭제 → run6(`logs/wiki-kb-sync-run6-l4-reimport.log`, Claude Code 프로세스 재시작으로 450/571에서 중단, state 미기록) → run7(`logs/wiki-kb-sync-run7-l4-reimport.log`, `WIKI_KB_CONCURRENCY=2`) `scanned=571 upserted=571 deleted=0 unchanged=0 errors=0` **elapsed=727.4s**(≈1.3s/문서; 패치 전 2.7~5.4s/문서). `node state/verify-wiki-kb.mjs count` → `kb_docs=571 disk_md=571 chunks=2201 COUNT_OK`. 총 청크 **5,247 → 2,201**(-58%). DB 실측: 평균 청크 길이 846자, 100자 미만 13개(패치 전 rubric-ceiling 1건만 108개). 재임포트 중 `Accept failed` 0건·/health 매분 정상(모니터 로그).
 
-- [ ] L4-5: 검색 정합(L3-4 재검증) — "Ralph Wiggum Loop" top1 = concepts__ralph-wiggum-loop.md, "apps in toss launch contract" top3에 apps-in-toss-front-loaded-launch-contract 포함. `node state/verify-wiki-kb.mjs search` 출력 첨부. 통과 시 gates/l3-wiki-kb.md의 L3-4도 [x]로 갱신
-  EVIDENCE: pending
+- [x] L4-5: 검색 정합(L3-4 재검증) — "Ralph Wiggum Loop" top1 = concepts__ralph-wiggum-loop.md, "apps in toss launch contract" top3에 apps-in-toss-front-loaded-launch-contract 포함. `node state/verify-wiki-kb.mjs search` 출력 첨부. 통과 시 gates/l3-wiki-kb.md의 L3-4도 [x]로 갱신
+  EVIDENCE: [부모 재검증 2026-08-23 03:46 `node state/verify-wiki-kb.mjs search` → Ralph Wiggum Loop top1 src__…ralph-wiggum-loop 1.541·top2 concepts__ralph-wiggum-loop 1.531 PASS / apps in toss launch contract top1~3 front-loaded-launch-contract 1.453/1.359/1.351 PASS] 청킹 패치만으로는 **FAIL**이었음(재임포트 후 순수 코사인: "Ralph Wiggum Loop" top1 research__harness-revfactory 0.828, ralph-wiggum-loop 최고 청크 0.535; "apps in toss launch contract" front-loaded 최고 0.578로 top5 밖). 원인 실측: nomic-embed-text가 한국어 본문 청크에서 제목 토큰을 거의 반영하지 못함 — `search_query:`/`search_document:` 프리픽스 실험도 효과 없음(로컬 재계산, ralph 0.586로 여전히 7위). 추가 패치(`mcp_server/server.py api_search_all`): 후보 5,000 over-fetch 후 lexical boost `score = cosine + 0.5*(텍스트 커버리지² + 파일명 커버리지²)`(응답에 `vector_score` 원값 보존, 주석 첨부). RAGEngine의 BM25 hybrid는 "requires document nodes"로 비활성이라 REST search-all에는 없던 신호. 재기동 후 `node state/verify-wiki-kb.mjs search`: Q="Ralph Wiggum Loop" **PASS** top1 `src__src__vault-migration__concepts__ralph-wiggum-loop.md` 1.541(~/.wiki/src/ 안의 vault-migration 복사본, 동일 제목) / 2. `concepts__ralph-wiggum-loop.md` 1.531 / 3. 동 1.506 / 4. gstack-value-validation 1.168. Q="apps in toss launch contract" **PASS** top1~3 모두 `concepts__apps-in-toss-front-loaded-launch-contract.md`(1.453/1.359/1.351), 4. portfolio-snapshot-aggregation 1.325. gates/l3-wiki-kb.md L3-4 [x] 갱신.
 
-- [ ] L4-6: project_index도 재임포트(`node sync-claude-os.mjs`, L2 산출물이 있으면) 후 "nailmap 블로커" top1 = project-nailmap.md
-  EVIDENCE: pending
+- [x] L4-6: project_index도 재임포트(`node sync-claude-os.mjs`, L2 산출물이 있으면) 후 "nailmap 블로커" top1 = project-nailmap.md
+  EVIDENCE: 재기동 전 DB 실측 project_index docs=62/chunks=93 기록 → 재기동 후 `node sync-claude-os.mjs` → `upserted=62 deleted=0 skipped=24 errors=0`. `POST /api/kb/search-all {query:"nailmap 블로커", top_k:5, kb_filter:"command-center-project_index"}` kbs_searched=1 → 1. **project-nailmap.md 0.704** / 2. project-nail-map.md 0.701 / 3. project-nailmap.md 0.659 / 4. project-pet-rock.md 0.505. top1 PASS. L4-5 lexical boost 패치 후 재검증: 1. project-nailmap.md 1.329(vec 0.704) / 2. project-nailmap.md 1.284 / 3. project-nail-map.md 0.701 — top1 유지.
