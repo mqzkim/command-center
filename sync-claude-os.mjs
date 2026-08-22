@@ -84,8 +84,9 @@ function docFor(p) {
 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-// 연결 실패(ECONNREFUSED 등, 예: claude-os 재기동 중)만 최대 5회 백오프 재시도. HTTP 에러는 그대로 반환.
-async function api(method, url, body, retries = 5) {
+// 연결 실패(ECONNREFUSED 등, 예: claude-os 재기동 중)만 최대 8회 백오프 재시도(합계 ~72s). HTTP 에러는 그대로 반환.
+// DELETE→POST 사이에 서버가 죽으면 해당 문서는 빠진 채 errors 로 집계되며, 다음 실행이 멱등적으로 복구한다.
+async function api(method, url, body, retries = 8) {
   for (let attempt = 0; ; attempt++) {
     try {
       return await fetch(BASE + url, {

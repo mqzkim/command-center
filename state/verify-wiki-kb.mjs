@@ -28,7 +28,7 @@ if (mode === 'count') {
   }
 } else {
   const queries = [
-    ['Ralph Wiggum Loop', 'concepts__', 1],
+    ['Ralph Wiggum Loop', 'concepts__ralph-wiggum-loop', 1],
     ['apps in toss launch contract', 'apps-in-toss-front-loaded-launch-contract', 3],
   ];
   for (const [q, expect, topN] of queries) {
