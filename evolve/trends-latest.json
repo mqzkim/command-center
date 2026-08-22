@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-22T15:13:50.583Z",
+ "generatedAt": "2026-08-22T15:18:47.494Z",
  "minStars": 500,
  "queries": [
   "claude code skills",
@@ -14,119 +14,9 @@
  "scanned": 84,
  "dedup": {
   "wikiCatalog": 2,
-  "alreadySeen": 0
+  "alreadySeen": 10
  },
  "candidates": [
-  {
-   "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
-   "fullName": "JuliusBrussee/caveman",
-   "stargazersCount": 100269,
-   "updatedAt": "2026-08-22T15:11:26Z",
-   "url": "https://github.com/JuliusBrussee/caveman",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "A collection of MCP servers.",
-   "fullName": "punkpeye/awesome-mcp-servers",
-   "stargazersCount": 92684,
-   "updatedAt": "2026-08-22T14:48:57Z",
-   "url": "https://github.com/punkpeye/awesome-mcp-servers",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming",
-   "fullName": "FoundationAgents/MetaGPT",
-   "stargazersCount": 69946,
-   "updatedAt": "2026-08-22T15:00:59Z",
-   "url": "https://github.com/FoundationAgents/MetaGPT",
-   "labels": [
-    "orchestration"
-   ],
-   "query": "multi-agent framework"
-  },
-  {
-   "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
-   "fullName": "headroomlabs-ai/headroom",
-   "stargazersCount": 67168,
-   "updatedAt": "2026-08-22T14:59:33Z",
-   "url": "https://github.com/headroomlabs-ai/headroom",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-   "fullName": "mvanhorn/last30days-skill",
-   "stargazersCount": 58955,
-   "updatedAt": "2026-08-22T14:57:37Z",
-   "url": "https://github.com/mvanhorn/last30days-skill",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-   "fullName": "DeusData/codebase-memory-mcp",
-   "stargazersCount": 39857,
-   "updatedAt": "2026-08-22T14:57:47Z",
-   "url": "https://github.com/DeusData/codebase-memory-mcp",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "Playwright MCP server",
-   "fullName": "microsoft/playwright-mcp",
-   "stargazersCount": 36358,
-   "updatedAt": "2026-08-22T14:57:27Z",
-   "url": "https://github.com/microsoft/playwright-mcp",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-   "fullName": "anthropics/claude-plugins-official",
-   "stargazersCount": 33818,
-   "updatedAt": "2026-08-22T15:12:18Z",
-   "url": "https://github.com/anthropics/claude-plugins-official",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "GitHub's official MCP Server",
-   "fullName": "github/github-mcp-server",
-   "stargazersCount": 32424,
-   "updatedAt": "2026-08-22T15:07:44Z",
-   "url": "https://github.com/github/github-mcp-server",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
-   "fullName": "googleworkspace/cli",
-   "stargazersCount": 30511,
-   "updatedAt": "2026-08-22T15:02:22Z",
-   "url": "https://github.com/googleworkspace/cli",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
   {
    "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
    "fullName": "jarrodwatts/claude-hud",
@@ -152,8 +42,8 @@
   {
    "description": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown plans, session recovery after /clear and compaction, per-turn re-injection against context rot, deterministic completion gate. Manus-style. Install from npm, the Claude Code plugin marketplace, or npx skills. Codex, Cursor, OpenCode, 60+ agents.",
    "fullName": "OthmanAdi/planning-with-files",
-   "stargazersCount": 26278,
-   "updatedAt": "2026-08-22T14:44:28Z",
+   "stargazersCount": 26279,
+   "updatedAt": "2026-08-22T15:15:27Z",
    "url": "https://github.com/OthmanAdi/planning-with-files",
    "labels": [
     "skills"
@@ -163,8 +53,8 @@
   {
    "description": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
    "fullName": "xai-org/grok-build",
-   "stargazersCount": 25884,
-   "updatedAt": "2026-08-22T14:54:14Z",
+   "stargazersCount": 25885,
+   "updatedAt": "2026-08-22T15:17:44Z",
    "url": "https://github.com/xai-org/grok-build",
    "labels": [
     "harness"
@@ -174,8 +64,8 @@
   {
    "description": "345 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
    "fullName": "alirezarezvani/claude-skills",
-   "stargazersCount": 24797,
-   "updatedAt": "2026-08-22T14:33:33Z",
+   "stargazersCount": 24798,
+   "updatedAt": "2026-08-22T15:16:04Z",
    "url": "https://github.com/alirezarezvani/claude-skills",
    "labels": [
     "skills"
@@ -196,8 +86,8 @@
   {
    "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
    "fullName": "virgiliojr94/book-to-skill",
-   "stargazersCount": 24000,
-   "updatedAt": "2026-08-22T15:08:52Z",
+   "stargazersCount": 24002,
+   "updatedAt": "2026-08-22T15:15:17Z",
    "url": "https://github.com/virgiliojr94/book-to-skill",
    "labels": [
     "skills"
@@ -252,7 +142,7 @@
    "description": "20 MB lightweight cross-platform database client for 90+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 90+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP Server。",
    "fullName": "t8y2/dbx",
    "stargazersCount": 16240,
-   "updatedAt": "2026-08-22T14:50:09Z",
+   "updatedAt": "2026-08-22T15:18:04Z",
    "url": "https://github.com/t8y2/dbx",
    "labels": [
     "mcp"
@@ -405,8 +295,8 @@
   {
    "description": "An AI-agent skill that generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF, and PPTX.",
    "fullName": "chuspeeism/dashi-ppt-skill",
-   "stargazersCount": 5973,
-   "updatedAt": "2026-08-22T15:05:31Z",
+   "stargazersCount": 5974,
+   "updatedAt": "2026-08-22T15:14:09Z",
    "url": "https://github.com/chuspeeism/dashi-ppt-skill",
    "labels": [
     "skills"
@@ -676,6 +566,116 @@
     "skills"
    ],
    "query": "ai agent skills"
+  },
+  {
+   "description": "A collection of AI agent skills focused on resume optimization, job applications, and career development. Built for job seekers, career changers, and professionals who want Claude Code to help with resume writing, ATS optimization, interview prep, and strategic job search.",
+   "fullName": "Paramchoudhary/ResumeSkills",
+   "stargazersCount": 1763,
+   "updatedAt": "2026-08-22T14:37:39Z",
+   "url": "https://github.com/Paramchoudhary/ResumeSkills",
+   "labels": [
+    "skills"
+   ],
+   "query": "ai agent skills"
+  },
+  {
+   "description": "Waku Waku! Waku Agent is a local-first AI agent harness you actually own, including loop, memory, eval, all in code built to stay legible as it grows.",
+   "fullName": "ShenSeanChen/waku-agent",
+   "stargazersCount": 1521,
+   "updatedAt": "2026-08-22T13:57:46Z",
+   "url": "https://github.com/ShenSeanChen/waku-agent",
+   "labels": [
+    "harness"
+   ],
+   "query": "ai agent harness"
+  },
+  {
+   "description": "Observability and enforcement for AI agent harnesses. Capture every run and runtime reliability with policy enforcement.  40 built-in policies, a local dashboard, no account required with a generous free cloud plan",
+   "fullName": "FailproofAI/failproofai",
+   "stargazersCount": 1387,
+   "updatedAt": "2026-08-22T14:51:28Z",
+   "url": "https://github.com/FailproofAI/failproofai",
+   "labels": [
+    "harness"
+   ],
+   "query": "ai agent harness"
+  },
+  {
+   "description": "Multi-Agent Framework",
+   "fullName": "fastclaw-ai/fastclaw",
+   "stargazersCount": 1291,
+   "updatedAt": "2026-08-22T14:41:19Z",
+   "url": "https://github.com/fastclaw-ai/fastclaw",
+   "labels": [
+    "orchestration"
+   ],
+   "query": "multi-agent framework"
+  },
+  {
+   "description": "An intelligent assistant serving the entire software development lifecycle, powered by a Multi-Agent Framework, working with DevOps Toolkits, Code&Doc Repo RAG,  etc.",
+   "fullName": "codefuse-ai/codefuse-chatbot",
+   "stargazersCount": 1290,
+   "updatedAt": "2026-08-21T04:09:51Z",
+   "url": "https://github.com/codefuse-ai/codefuse-chatbot",
+   "labels": [
+    "orchestration"
+   ],
+   "query": "multi-agent framework"
+  },
+  {
+   "description": "Give Claude the ability to watch and understand videos — Claude Code plugin with frame extraction and multimodal audio analysis",
+   "fullName": "jordanrendric/claude-video-vision",
+   "stargazersCount": 1253,
+   "updatedAt": "2026-08-22T04:08:19Z",
+   "url": "https://github.com/jordanrendric/claude-video-vision",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code plugin"
+  },
+  {
+   "description": "Curated Claude Code plugin marketplace",
+   "fullName": "obra/superpowers-marketplace",
+   "stargazersCount": 1227,
+   "updatedAt": "2026-08-22T12:42:04Z",
+   "url": "https://github.com/obra/superpowers-marketplace",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code plugin"
+  },
+  {
+   "description": "Automated collection of Claude Code plugin adoption metrics across GitHub repositories using n8n workflows",
+   "fullName": "quemsah/awesome-claude-plugins",
+   "stargazersCount": 1209,
+   "updatedAt": "2026-08-22T10:41:34Z",
+   "url": "https://github.com/quemsah/awesome-claude-plugins",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code plugin"
+  },
+  {
+   "description": "Open-source AI agent harness in native Rust — GUI, CLI, headless, and webapp from one binary. Multi-provider, MCP, skills, plugins, agent teams.",
+   "fullName": "thClaws/thClaws",
+   "stargazersCount": 1203,
+   "updatedAt": "2026-08-22T10:23:51Z",
+   "url": "https://github.com/thClaws/thClaws",
+   "labels": [
+    "harness"
+   ],
+   "query": "ai agent harness"
+  },
+  {
+   "description": "Minimal and readable coding agent harness implementation in Python to explain the core components of coding agents.",
+   "fullName": "rasbt/mini-coding-agent",
+   "stargazersCount": 1114,
+   "updatedAt": "2026-08-22T05:30:53Z",
+   "url": "https://github.com/rasbt/mini-coding-agent",
+   "labels": [
+    "harness"
+   ],
+   "query": "coding agent harness"
   }
  ]
 }

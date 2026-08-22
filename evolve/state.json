@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-22T15:14:07.323Z",
+ "lastRun": "2026-08-22T15:18:28.252Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -8,9 +8,26 @@
    "improvement": "trends.mjs dedup 의미론 수정 — 스캔이 seenRepos를 소비하지 않음(후보 82건 복원, 유실 57건 회수), 캡 25→60, CANDIDATES_EXHAUSTED 경고, evolve.md §3 검토→seenRepos 규칙",
    "commit": "13fb088",
    "gates": "4/4"
+  },
+  {
+   "date": "2026-08-23",
+   "improvement": "트렌드 후보 10건 검토(채택 1: headroom → wiki ingest, 기각 9) · seenRepos 원장 0→10",
+   "commit": "pending",
+   "gates": "4/4"
   }
  ],
- "seenRepos": [],
+ "seenRepos": [
+  "headroomlabs-ai/headroom",
+  "JuliusBrussee/caveman",
+  "punkpeye/awesome-mcp-servers",
+  "FoundationAgents/MetaGPT",
+  "mvanhorn/last30days-skill",
+  "DeusData/codebase-memory-mcp",
+  "microsoft/playwright-mcp",
+  "anthropics/claude-plugins-official",
+  "github/github-mcp-server",
+  "googleworkspace/cli"
+ ],
  "appliedImprovements": [
   {
    "id": "self:trends-no-consume-dedup",
@@ -20,6 +37,12 @@
     "evolve/trends.mjs",
     "evolve/evolve.md"
    ]
+  },
+  {
+   "id": "wiki:headroomlabs-ai/headroom",
+   "repo": "headroomlabs-ai/headroom",
+   "date": "2026-08-23",
+   "mode": "knowledge"
   }
  ],
  "openFindings": []
