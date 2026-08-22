@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-22T15:51:25.905Z",
+ "lastRun": "2026-08-22T15:54:55.863Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -106,7 +106,17 @@
   "guy-hartstein/company-research-agent",
   "P4nda0s/reverse-skills",
   "wondelai/skills",
-  "Eronred/aso-skills"
+  "Eronred/aso-skills",
+  "Paramchoudhary/ResumeSkills",
+  "ShenSeanChen/waku-agent",
+  "FailproofAI/failproofai",
+  "fastclaw-ai/fastclaw",
+  "codefuse-ai/codefuse-chatbot",
+  "jordanrendric/claude-video-vision",
+  "obra/superpowers-marketplace",
+  "quemsah/awesome-claude-plugins",
+  "thClaws/thClaws",
+  "rasbt/mini-coding-agent"
  ],
  "appliedImprovements": [
   {
@@ -156,6 +166,13 @@
    "repo": "agentuniverse-ai/agentUniverse",
    "date": "2026-08-23",
    "mode": "knowledge"
+  },
+  {
+   "id": "wiki:FailproofAI/failproofai",
+   "repo": "FailproofAI/failproofai",
+   "date": "2026-08-23",
+   "mode": "knowledge",
+   "note": "(a) dashboard integration pending owner decision: settings.json hook collision + on-disk format unverified"
   }
  ],
  "openFindings": []

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-22T15:51:34.787Z",
+ "generatedAt": "2026-08-22T15:59:29.042Z",
  "minStars": 500,
  "queries": [
   "claude code skills",
@@ -14,119 +14,9 @@
  "scanned": 84,
  "dedup": {
   "wikiCatalog": 2,
-  "alreadySeen": 60
+  "alreadySeen": 70
  },
  "candidates": [
-  {
-   "description": "A collection of AI agent skills focused on resume optimization, job applications, and career development. Built for job seekers, career changers, and professionals who want Claude Code to help with resume writing, ATS optimization, interview prep, and strategic job search.",
-   "fullName": "Paramchoudhary/ResumeSkills",
-   "stargazersCount": 1763,
-   "updatedAt": "2026-08-22T14:37:39Z",
-   "url": "https://github.com/Paramchoudhary/ResumeSkills",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "Waku Waku! Waku Agent is a local-first AI agent harness you actually own, including loop, memory, eval, all in code built to stay legible as it grows.",
-   "fullName": "ShenSeanChen/waku-agent",
-   "stargazersCount": 1521,
-   "updatedAt": "2026-08-22T13:57:46Z",
-   "url": "https://github.com/ShenSeanChen/waku-agent",
-   "labels": [
-    "harness"
-   ],
-   "query": "ai agent harness"
-  },
-  {
-   "description": "Observability and enforcement for AI agent harnesses. Capture every run and runtime reliability with policy enforcement.  40 built-in policies, a local dashboard, no account required with a generous free cloud plan",
-   "fullName": "FailproofAI/failproofai",
-   "stargazersCount": 1387,
-   "updatedAt": "2026-08-22T14:51:28Z",
-   "url": "https://github.com/FailproofAI/failproofai",
-   "labels": [
-    "harness"
-   ],
-   "query": "ai agent harness"
-  },
-  {
-   "description": "Multi-Agent Framework",
-   "fullName": "fastclaw-ai/fastclaw",
-   "stargazersCount": 1291,
-   "updatedAt": "2026-08-22T14:41:19Z",
-   "url": "https://github.com/fastclaw-ai/fastclaw",
-   "labels": [
-    "orchestration"
-   ],
-   "query": "multi-agent framework"
-  },
-  {
-   "description": "An intelligent assistant serving the entire software development lifecycle, powered by a Multi-Agent Framework, working with DevOps Toolkits, Code&Doc Repo RAG,  etc.",
-   "fullName": "codefuse-ai/codefuse-chatbot",
-   "stargazersCount": 1290,
-   "updatedAt": "2026-08-21T04:09:51Z",
-   "url": "https://github.com/codefuse-ai/codefuse-chatbot",
-   "labels": [
-    "orchestration"
-   ],
-   "query": "multi-agent framework"
-  },
-  {
-   "description": "Give Claude the ability to watch and understand videos — Claude Code plugin with frame extraction and multimodal audio analysis",
-   "fullName": "jordanrendric/claude-video-vision",
-   "stargazersCount": 1254,
-   "updatedAt": "2026-08-22T15:25:18Z",
-   "url": "https://github.com/jordanrendric/claude-video-vision",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Curated Claude Code plugin marketplace",
-   "fullName": "obra/superpowers-marketplace",
-   "stargazersCount": 1227,
-   "updatedAt": "2026-08-22T12:42:04Z",
-   "url": "https://github.com/obra/superpowers-marketplace",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Automated collection of Claude Code plugin adoption metrics across GitHub repositories using n8n workflows",
-   "fullName": "quemsah/awesome-claude-plugins",
-   "stargazersCount": 1209,
-   "updatedAt": "2026-08-22T10:41:34Z",
-   "url": "https://github.com/quemsah/awesome-claude-plugins",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Open-source AI agent harness in native Rust — GUI, CLI, headless, and webapp from one binary. Multi-provider, MCP, skills, plugins, agent teams.",
-   "fullName": "thClaws/thClaws",
-   "stargazersCount": 1203,
-   "updatedAt": "2026-08-22T10:23:51Z",
-   "url": "https://github.com/thClaws/thClaws",
-   "labels": [
-    "harness"
-   ],
-   "query": "ai agent harness"
-  },
-  {
-   "description": "Minimal and readable coding agent harness implementation in Python to explain the core components of coding agents.",
-   "fullName": "rasbt/mini-coding-agent",
-   "stargazersCount": 1114,
-   "updatedAt": "2026-08-22T05:30:53Z",
-   "url": "https://github.com/rasbt/mini-coding-agent",
-   "labels": [
-    "harness"
-   ],
-   "query": "coding agent harness"
-  },
   {
    "description": "A Claude Code plugin marketplace for people who want to become AI Native",
    "fullName": "fivetaku/gptaku_plugins",
