@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-22T15:25:49.333Z",
+ "generatedAt": "2026-08-22T15:30:46.276Z",
  "minStars": 500,
  "queries": [
   "claude code skills",
@@ -11,144 +11,12 @@
   "mcp server",
   "claude code plugin"
  ],
- "scanned": 84,
+ "scanned": 69,
  "dedup": {
   "wikiCatalog": 2,
-  "alreadySeen": 20
+  "alreadySeen": 17
  },
  "candidates": [
-  {
-   "description": "\"DeepCode: Open Agentic Coding (Agent Harness & Loop Engineering & Multi-Agent Orchestration)\"",
-   "fullName": "HKUDS/DeepCode",
-   "stargazersCount": 16402,
-   "updatedAt": "2026-08-22T11:35:33Z",
-   "url": "https://github.com/HKUDS/DeepCode",
-   "labels": [
-    "harness"
-   ],
-   "query": "coding agent harness"
-  },
-  {
-   "description": "20 MB lightweight cross-platform database client for 90+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 90+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP Server。",
-   "fullName": "t8y2/dbx",
-   "stargazersCount": 16240,
-   "updatedAt": "2026-08-22T15:18:04Z",
-   "url": "https://github.com/t8y2/dbx",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
-   "fullName": "googleapis/mcp-toolbox",
-   "stargazersCount": 16236,
-   "updatedAt": "2026-08-22T14:37:54Z",
-   "url": "https://github.com/googleapis/mcp-toolbox",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "Open-source NotebookLM alternative. Research the open web with live data(Reddit, YT, IG, TikTok, Indeed, Google Search, Maps etc) through one platform, API or MCP server. Join our Discord: https://discord.gg/ejRNvftDp9",
-   "fullName": "MODSetter/SurfSense",
-   "stargazersCount": 15984,
-   "updatedAt": "2026-08-22T13:35:54Z",
-   "url": "https://github.com/MODSetter/SurfSense",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "Humanizer 的汉化版本，Claude Code Skills，旨在消除文本中 AI 生成的痕迹。",
-   "fullName": "op7418/Humanizer-zh",
-   "stargazersCount": 15861,
-   "updatedAt": "2026-08-22T15:10:02Z",
-   "url": "https://github.com/op7418/Humanizer-zh",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
-   "fullName": "GLips/Figma-Context-MCP",
-   "stargazersCount": 15701,
-   "updatedAt": "2026-08-22T13:26:15Z",
-   "url": "https://github.com/GLips/Figma-Context-MCP",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "A 100% free modern JS SaaS boilerplate (React, NodeJS, Prisma). Full-featured: Auth (email, google, github, slack, MS), Email sending, Background jobs, Landing page, Payments (Stripe, Polar.sh), Shadcn UI, S3 file upload. AI-ready with tailored AGENTS.md, skills, and Claude Code plugin. One cmd deploy. Powered by Wasp full-stack framework.",
-   "fullName": "wasp-lang/open-saas",
-   "stargazersCount": 15563,
-   "updatedAt": "2026-08-22T14:54:51Z",
-   "url": "https://github.com/wasp-lang/open-saas",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
-   "fullName": "NVIDIA/SkillSpector",
-   "stargazersCount": 14871,
-   "updatedAt": "2026-08-22T15:07:32Z",
-   "url": "https://github.com/NVIDIA/SkillSpector",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "Chrome MCP Server is a Chrome extension-based Model Context Protocol (MCP) server that exposes your Chrome browser functionality to AI assistants like Claude, enabling complex browser automation, content analysis, and semantic search.",
-   "fullName": "hangwin/mcp-chrome",
-   "stargazersCount": 12333,
-   "updatedAt": "2026-08-22T14:24:56Z",
-   "url": "https://github.com/hangwin/mcp-chrome",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "The power of Claude Code / GeminiCLI / CodexCLI + [Gemini / OpenAI / OpenRouter / Azure / Grok / Ollama / Custom Model / All Of The Above] working as one.",
-   "fullName": "BeehiveInnovations/pal-mcp-server",
-   "stargazersCount": 11728,
-   "updatedAt": "2026-08-22T01:32:41Z",
-   "url": "https://github.com/BeehiveInnovations/pal-mcp-server",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research. Seamlessly bridge LLMs with real-world offensive security capabilities.",
-   "fullName": "0x4m4/hexstrike-ai",
-   "stargazersCount": 11278,
-   "updatedAt": "2026-08-22T14:15:25Z",
-   "url": "https://github.com/0x4m4/hexstrike-ai",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "Visual testing tool for MCP servers",
-   "fullName": "modelcontextprotocol/inspector",
-   "stargazersCount": 10723,
-   "updatedAt": "2026-08-22T15:24:51Z",
-   "url": "https://github.com/modelcontextprotocol/inspector",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
   {
    "description": "🔍 An LLM-based Multi-agent Framework of Web Search Engine (like Perplexity.ai Pro and SearchGPT)",
    "fullName": "InternLM/MindSearch",
@@ -676,6 +544,28 @@
     "harness"
    ],
    "query": "ai agent harness"
+  },
+  {
+   "description": "[ACL2026 main] Official implementation of \"Paper2Rebuttal: A Multi-Agent Framework for Transparent Author Response Assistance\"",
+   "fullName": "AutoLab-SAI-SJTU/Paper2Rebuttal",
+   "stargazersCount": 555,
+   "updatedAt": "2026-08-17T12:21:31Z",
+   "url": "https://github.com/AutoLab-SAI-SJTU/Paper2Rebuttal",
+   "labels": [
+    "orchestration"
+   ],
+   "query": "multi-agent framework"
+  },
+  {
+   "description": "",
+   "fullName": "Mnehmos/mnehmos.multi-agent.framework",
+   "stargazersCount": 534,
+   "updatedAt": "2026-08-18T20:48:08Z",
+   "url": "https://github.com/Mnehmos/mnehmos.multi-agent.framework",
+   "labels": [
+    "orchestration"
+   ],
+   "query": "multi-agent framework"
   }
  ]
 }

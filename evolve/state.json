@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-22T15:27:45.608Z",
+ "lastRun": "2026-08-22T15:30:07.757Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -20,6 +20,12 @@
    "improvement": "트렌드 후보 10건 검토(채택 1: planning-with-files → wiki ingest, 기각 9) · seenRepos 원장 10→20",
    "commit": "0e125ab",
    "gates": "3/3"
+  },
+  {
+   "date": "2026-08-23",
+   "improvement": "트렌드 후보 10건 검토(채택 1: DeepCode → wiki ingest, 기각 9; 다음 1순위 SkillSpector 스킬 채택) · seenRepos 원장 20→30",
+   "commit": "PENDING",
+   "gates": "PENDING"
   }
  ],
  "seenRepos": [
@@ -42,7 +48,17 @@
   "virgiliojr94/book-to-skill",
   "activepieces/activepieces",
   "camel-ai/camel",
-  "larksuite/cli"
+  "larksuite/cli",
+  "HKUDS/DeepCode",
+  "t8y2/dbx",
+  "googleapis/mcp-toolbox",
+  "MODSetter/SurfSense",
+  "op7418/Humanizer-zh",
+  "GLips/Figma-Context-MCP",
+  "wasp-lang/open-saas",
+  "NVIDIA/SkillSpector",
+  "hangwin/mcp-chrome",
+  "BeehiveInnovations/pal-mcp-server"
  ],
  "appliedImprovements": [
   {
@@ -63,6 +79,12 @@
   {
    "id": "wiki:OthmanAdi/planning-with-files",
    "repo": "OthmanAdi/planning-with-files",
+   "date": "2026-08-23",
+   "mode": "knowledge"
+  },
+  {
+   "id": "wiki:HKUDS/DeepCode",
+   "repo": "HKUDS/DeepCode",
    "date": "2026-08-23",
    "mode": "knowledge"
   }
