@@ -14,8 +14,6 @@ const BATCH = 10;
 const t0 = Date.now();
 let apiCalls = 0;
 
-const prev = (() => { try { return JSON.parse(readFileSync(OUT, "utf8")); } catch { return { repos: [] }; } })();
-const prevByName = Object.fromEntries((prev.repos || []).map(r => [r.name, r]));
 
 function gql(query, variables = {}) {
   apiCalls++;
@@ -67,7 +65,7 @@ for (let i = 0; i < real.length; i += BATCH) {
 
 /* ---------- 3. 판정 ---------- */
 const now = Date.now();
-// 레포 이름만으로 결정론적 분류 (description은 보지 않음 — 오분류 방지). 미매치 시 이전 스냅샷 값 → side-project.
+// 레포 이름만으로 결정론적 분류 (description은 보지 않음 — 오분류 방지). 미매치 시 side-project.
 const CATEGORY_RULES = [
   ["harness-ai-infra", /(hermes|agent|harness|helix|briefme|trading|llm-lean|sena|orchestrat|infra)/i],
   ["knowledge-wiki", /(wiki|growth-hacker)/i],
@@ -114,8 +112,7 @@ function classify(r, det) {
   if (r.isFork) category = "fork";
   else if (isToss) category = "apps-in-toss";
   else {
-    category = (CATEGORY_RULES.find(([, re]) => re.test(r.name)) || [])[0] || prevByName[r.name]?.category || "side-project";
-    if (category === "apps-in-toss" || category === "fork") category = "side-project";
+    category = (CATEGORY_RULES.find(([, re]) => re.test(r.name)) || [])[0] || "side-project";
   }
   return { isToss, aitEvidence, appName, category, sig, reason: parts.join(", "), c30, rootNames, hasDep };
 }

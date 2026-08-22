@@ -1,12 +1,12 @@
 // 자동 생성 — build-projects.mjs (로컬 클론 스캔 + projects-raw.json(gh) + .launch/launch-status.json + ~/.wiki 링크)
-// 생성: 2026-08-22 15:00Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
+// 생성: 2026-08-22 15:11Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
 const CC_PROJECTS = {
- "generatedAt": "2026-08-22 15:00Z",
+ "generatedAt": "2026-08-22 15:11Z",
  "roots": [
   "C:\\workspace",
   "C:\\Users\\my\\workspace"
  ],
- "ghSnapshot": "2026-08-22T14:14:09.245Z",
+ "ghSnapshot": "2026-08-22T15:06:47.229Z",
  "stages": [
   "intake",
   "repo_bootstrap",
@@ -41,17 +41,17 @@ const CC_PROJECTS = {
   "unverified": "미확정"
  },
  "summary": {
-  "total": 61,
+  "total": 62,
   "hidden": 24,
   "toss": 16,
-  "active30d": 13,
+  "active30d": 14,
   "tossWithBlockers": 14,
   "tossFromLaunchStatus": 15,
   "byCategory": {
-   "harness-ai-infra": 5,
+   "side-project": 11,
    "knowledge-wiki": 1,
+   "harness-ai-infra": 5,
    "apps-in-toss": 16,
-   "side-project": 10,
    "landing-docs": 3,
    "legacy": 26
   },
@@ -64,58 +64,66 @@ const CC_PROJECTS = {
    "unverified": 1
   },
   "tossUnverified": 1,
-  "dirty": 16
+  "dirty": 17
  },
  "items": [
   {
-   "name": "hermes-shared-knowledge",
-   "repo": "hermes-shared-knowledge",
+   "name": "command-center",
+   "repo": "command-center",
    "displayName": null,
-   "desc": "Shared Hermes/Sena skills, personalities, and safe config templates",
-   "category": "harness-ai-infra",
+   "desc": null,
+   "category": "side-project",
    "significance": 4,
    "hidden": false,
    "scaffold": false,
    "legacy": false,
-   "lang": "TeX",
-   "branch": null,
-   "dirty": null,
-   "lastCommit": null,
-   "lastActivity": "2026-08-22",
-   "daysSince": 1,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/command-center.git",
+   "lang": "JavaScript",
+   "branch": "master",
+   "dirty": 12,
+   "lastCommit": "2026-08-23",
+   "lastActivity": "2026-08-23",
+   "daysSince": 0,
    "gh": {
-    "url": "https://github.com/mqzkim/hermes-shared-knowledge",
+    "url": "https://github.com/mqzkim/command-center",
     "private": true,
     "pushedAt": "2026-08-22",
     "openIssues": 0,
-    "commits30d": 5,
+    "commits30d": 3,
     "recent": [
      {
       "date": "2026-08-22",
-      "message": "ops: refresh sena-1 telemetry metrics"
+      "message": "evolve: dashboard ROUTINES integration + EVOLVE docs + gates ledger"
      },
      {
-      "date": "2026-08-17",
-      "message": "ops: refresh sena-1 telemetry metrics"
+      "date": "2026-08-22",
+      "message": "evolve: pipeline artifacts (trends 82 candidates, health baseline, sc…"
      },
      {
-      "date": "2026-08-02",
-      "message": "ops: refresh sena-1 telemetry metrics"
+      "date": "2026-08-22",
+      "message": "init: Command Center — galaxy dashboard + daily evolution loop scaffold"
      }
     ],
     "issueTitles": []
    },
    "toss": null,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/hermes-shared-knowledge",
    "links": {
-    "local": null,
-    "github": "https://github.com/mqzkim/hermes-shared-knowledge",
-    "wiki": [],
+    "local": "C:\\workspace\\command-center",
+    "github": "https://github.com/mqzkim/command-center",
+    "wiki": [
+     "concepts/agentic-harness-engineering.md",
+     "concepts/apps-in-toss-front-loaded-launch-contract.md",
+     "concepts/discord-bot-ecosystem.md",
+     "concepts/git-subdirectory-remote-detection-pitfall.md",
+     "concepts/headless-chrome-dom-error-capture.md",
+     "concepts/mcp-protocol.md",
+     "concepts/non-dev-ux-messaging.md",
+     "concepts/parallel-session-shared-log-namespacing.md"
+    ],
     "launch": null,
     "parent": null
-   },
-   "noLocal": true
+   }
   },
   {
    "name": "llm-wiki",
@@ -131,15 +139,19 @@ const CC_PROJECTS = {
    "branch": null,
    "dirty": null,
    "lastCommit": null,
-   "lastActivity": "2026-08-19",
-   "daysSince": 4,
+   "lastActivity": "2026-08-22",
+   "daysSince": 1,
    "gh": {
     "url": "https://github.com/mqzkim/llm-wiki",
     "private": true,
-    "pushedAt": "2026-08-19",
+    "pushedAt": "2026-08-22",
     "openIssues": 0,
-    "commits30d": 22,
+    "commits30d": 23,
     "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "knowledge: add agno-agentos, standing-resolution-pattern, launch-deck…"
+     },
      {
       "date": "2026-08-19",
       "message": "knowledge: update apps-in-toss free backend isolation"
@@ -147,10 +159,6 @@ const CC_PROJECTS = {
      {
       "date": "2026-08-03",
       "message": "knowledge: update apps-in-toss launch slice"
-     },
-     {
-      "date": "2026-07-29",
-      "message": "knowledge: document TradingAgents signal persistence observation"
      }
     ],
     "issueTitles": []
@@ -175,6 +183,103 @@ const CC_PROJECTS = {
     "parent": null
    },
    "noLocal": true
+  },
+  {
+   "name": "hermes-shared-knowledge",
+   "repo": "hermes-shared-knowledge",
+   "displayName": null,
+   "desc": "Shared Hermes/Sena skills, personalities, and safe config templates",
+   "category": "harness-ai-infra",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "lang": "TeX",
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-08-22",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/hermes-shared-knowledge",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 0,
+    "commits30d": 6,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "ops: refresh sena-1 telemetry metrics"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "ops: refresh sena-1 telemetry metrics"
+     },
+     {
+      "date": "2026-08-17",
+      "message": "ops: refresh sena-1 telemetry metrics"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/hermes-shared-knowledge",
+   "links": {
+    "local": null,
+    "github": "https://github.com/mqzkim/hermes-shared-knowledge",
+    "wiki": [],
+    "launch": null,
+    "parent": null
+   },
+   "noLocal": true
+  },
+  {
+   "name": "launch-deck",
+   "repo": "launch-deck",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/launch-deck.git",
+   "lang": null,
+   "branch": "main",
+   "dirty": 24,
+   "lastCommit": "2026-08-22",
+   "lastActivity": "2026-08-22",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/launch-deck",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 0,
+    "commits30d": 1,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "docs: add launch-deck design spec (sections 1-5, approved 2026-08-22)"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "links": {
+    "local": "C:\\workspace\\launch-deck",
+    "github": "https://github.com/mqzkim/launch-deck",
+    "wiki": [
+     "concepts/standing-resolution-pattern.md",
+     "entities/agno-agentos.md",
+     "entities/launch-deck.md",
+     "internal/command-center-project-registry.md",
+     "_librarian/lint-queue.md"
+    ],
+    "launch": null,
+    "parent": null
+   }
   },
   {
    "name": "naeheunjeok",
@@ -1780,40 +1885,6 @@ const CC_PROJECTS = {
    }
   },
   {
-   "name": "launch-deck",
-   "repo": "launch-deck",
-   "displayName": null,
-   "desc": null,
-   "category": "side-project",
-   "significance": 2,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/launch-deck.git",
-   "lang": null,
-   "branch": "main",
-   "dirty": 22,
-   "lastCommit": "2026-08-22",
-   "lastActivity": "2026-08-22",
-   "daysSince": 1,
-   "gh": null,
-   "toss": null,
-   "links": {
-    "local": "C:\\workspace\\launch-deck",
-    "github": "https://github.com/mqzkim/launch-deck",
-    "wiki": [
-     "concepts/standing-resolution-pattern.md",
-     "entities/agno-agentos.md",
-     "entities/launch-deck.md",
-     "internal/command-center-project-registry.md",
-     "_librarian/lint-queue.md"
-    ],
-    "launch": null,
-    "parent": null
-   }
-  },
-  {
    "name": "app-in-toss",
    "repo": "app-in-toss",
    "displayName": "app-in-toss (모노레포)",
@@ -2473,15 +2544,15 @@ const CC_PROJECTS = {
     "evidence": [
      "granite.config.ts 존재 (appName=ddasa, TODO 주석 — 콘솔 미등록 추정 아님·확인 필요)",
      "ddasa.ait 번들 존재 (부모 디렉토리)",
-     "plans/ 존재"
+     "plans/ 존재",
+     "gh 파일 트리: plans"
     ]
    },
    "links": {
     "local": "C:\\Users\\my\\workspace\\app-in-toss\\coffee",
     "github": "https://github.com/mqzkim/coffee",
     "wiki": [
-     "internal/command-center-project-registry.md",
-     "node_modules/argparse/CHANGELOG.md"
+     "internal/command-center-project-registry.md"
     ],
     "launch": null,
     "parent": "app-in-toss"

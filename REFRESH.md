@@ -59,6 +59,8 @@ node C:\workspace\command-center\build-projects.mjs 를 실행해줘. (apps-in-t
 apps-in-toss.config.ts 또는 @apps-in-toss 의존성)
 ```
 
+**자동 갱신**: 위 재수집은 `fetch-gh.mjs`가 스크립트로 수행한다(gh GraphQL 10개 배치, 기존 스키마 동일, `stageEstimate`는 기록하지 않음 — 단계는 launch-status.json만이 진실). `refresh-projects.ps1`이 `fetch-gh.mjs → build-projects.mjs → build-galaxy.mjs`를 순서대로 실행하고 `logs\refresh.log`(최근 200줄)에 기록하며, gh 실패 시 기존 `projects-raw.json`을 유지한 채 build만 수행한다. 작업 스케줄러에 **`CommandCenterRefresh`** 태스크로 **6시간마다** 등록돼 있다(비관리자 등록, 로그온 세션에서 실행). 확인: `schtasks /Query /TN CommandCenterRefresh` · 수동 실행: `powershell -NoProfile -ExecutionPolicy Bypass -File C:\workspace\command-center\refresh-projects.ps1` (gh만: `node C:\workspace\command-center\fetch-gh.mjs`) · 해제: `schtasks /Delete /TN CommandCenterRefresh /F` · 주기 변경: `schtasks /Change /TN CommandCenterRefresh /RI <분>`. 스케줄러를 쓸 수 없는 환경에선 `refresh-projects.ps1 -Loop`(6시간 루프 상주)를 시작프로그램 vbs로 띄우는 폴백이 준비돼 있다.
+
 규칙: 숨김(`hidden`)은 `*-scaffold`·mqzkim 외 remote(서드파티 레퍼런스)·프로젝트 내부 보조 디렉토리가 기본값. 단계 추정(`toss.source`가 null)은 gh 파일 존재 기반이며 상세 패널에 "추정"으로 표기된다. 새 프로젝트를 연결하려면 위 루트 중 한 곳에 클론(또는 `.launch/`를 가진 디렉토리)만 두면 다음 빌드에 자동 포함된다.
 
 ## 갤럭시 실명 목록 갱신

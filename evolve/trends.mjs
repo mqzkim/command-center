@@ -1,6 +1,9 @@
 // 트렌드 스캐너 — gh search로 star 상위 AI 스킬/오케스트레이션/하네스/MCP repo를 수집하고
-// (1) ~/.wiki/entities/ai-benchmark-repos 카탈로그 (2) state.seenRepos 대비 중복 제거한다.
-// 출력: evolve/trends-latest.json (신규 후보), state.json seenRepos 갱신.
+// (1) ~/.wiki/entities/ai-benchmark-repos 카탈로그 (2) state.seenRepos(플레이북이 검토 완료한 repo)
+// (3) state.appliedImprovements의 repo 대비 중복 제거한다.
+// 출력: evolve/trends-latest.json (미검토 후보 전량, ≤60). state.json은 읽기만 한다 —
+// seenRepos 추가는 플레이북(evolve.md §3)이 검토(채택/기각) 시점에 수행한다.
+// (2026-08-23 수정: 스캔 시점에 seenRepos를 소비하던 구조가 후보 57건을 유실하고 매일 new=0을 만들었음)
 // 사용: node evolve/trends.mjs   (command-center 루트 어디서 실행해도 동작)
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -23,7 +26,8 @@ const QUERIES = [
 ];
 
 const state = JSON.parse(readFileSync(STATE_P, "utf8"));
-const seen = new Set(state.seenRepos);
+const seen = new Set((state.seenRepos || []).map(s => s.toLowerCase()));
+for (const a of state.appliedImprovements || []) if (a.repo) seen.add(String(a.repo).toLowerCase());
 
 /* wiki 카탈로그(owner__repo.md) — 이미 지식화된 repo는 중복 */
 const catDir = join(homedir(), ".wiki", "entities", "ai-benchmark-repos");
@@ -61,7 +65,6 @@ for (const [key, r] of found) {
   if (catalog.has(key)) { dupWiki++; continue; }
   if (seen.has(key)) { dupSeen++; continue; }
   fresh.push(r);
-  seen.add(key);
 }
 fresh.sort((a, b) => b.stargazersCount - a.stargazersCount);
 
@@ -71,12 +74,10 @@ const out = {
   queries: QUERIES.map(x => x.q),
   scanned: found.size,
   dedup: { wikiCatalog: dupWiki, alreadySeen: dupSeen },
-  candidates: fresh.slice(0, 25),
+  candidates: fresh.slice(0, 60),
 };
 writeFileSync(join(HERE, "trends-latest.json"), JSON.stringify(out, null, 1));
 
-state.seenRepos = [...seen];
-writeFileSync(STATE_P, JSON.stringify(state, null, 1));
-
 console.log(`TRENDS_OK scanned=${found.size} new=${fresh.length} dup_wiki=${dupWiki} dup_seen=${dupSeen}`);
+if (found.size && !fresh.length) console.log("CANDIDATES_EXHAUSTED — 스캔 전건이 검토됨. 쿼리 확장 또는 MIN_STARS 하향 검토 (evolve.md §6)");
 if (fresh.length) console.log("top:", fresh.slice(0, 5).map(r => `${r.fullName}(${r.stargazersCount}★)`).join(", "));

@@ -2,3 +2,29 @@
 [2026-08-23 00:04:29]   fetch-gh> repos 38 (non-fork 36, fork 2) | apps-in-toss 11: naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, bamti-translator, conclusion-card, seoul-house-from-space, coffee, diamond-gather, app-in-toss
 [2026-08-23 00:04:29]   fetch-gh> api calls 5 | elapsed 15.6s | WROTE projects-raw.json
 [2026-08-23 00:04:29] fetch-gh exit=0 (15.8s)
+[2026-08-23 00:05:19]   build-projects> dirs scanned 79 | items 86 | visible 62 | toss 16 (launch-status 15)
+[2026-08-23 00:05:19]   build-projects> byCategory {"side-project":10,"knowledge-wiki":1,"harness-ai-infra":6,"apps-in-toss":16,"landing-docs":3,"legacy":26} byStage {"intake":1,"analytics":2,"registration_draft":5,"sandbox_qa":5,"released":2,"unverified":1}
+[2026-08-23 00:05:19]   build-projects> WROTE projects-data.js
+[2026-08-23 00:05:19] build-projects exit=0 (50.5s)
+[2026-08-23 00:05:20]   build-galaxy> CONCEPTS 124
+[2026-08-23 00:05:20]   build-galaxy> ENTITIES 255
+[2026-08-23 00:05:20]   build-galaxy> RESEARCH 35
+[2026-08-23 00:05:20]   build-galaxy> INTERNAL 41
+[2026-08-23 00:05:20]   build-galaxy> WROTE galaxy-data.js
+[2026-08-23 00:05:20] build-galaxy exit=0 (0.3s)
+[2026-08-23 00:05:20] === refresh end (gh=0 build-projects=0 build-galaxy=0)
+[2026-08-23 00:06:31] === refresh start (pid 59372, loop=False)
+[2026-08-23 00:06:47]   fetch-gh> repos 38 (non-fork 36, fork 2) | apps-in-toss 11: naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, bamti-translator, conclusion-card, seoul-house-from-space, coffee, diamond-gather, app-in-toss
+[2026-08-23 00:06:47]   fetch-gh> api calls 5 | elapsed 15.7s | WROTE projects-raw.json
+[2026-08-23 00:06:47] fetch-gh exit=0 (15.8s)
+[2026-08-23 00:07:13]   build-projects> dirs scanned 79 | items 86 | visible 62 | toss 16 (launch-status 15)
+[2026-08-23 00:07:13]   build-projects> byCategory {"side-project":11,"knowledge-wiki":1,"harness-ai-infra":5,"apps-in-toss":16,"landing-docs":3,"legacy":26} byStage {"intake":1,"analytics":2,"registration_draft":5,"sandbox_qa":5,"released":2,"unverified":1}
+[2026-08-23 00:07:13]   build-projects> WROTE projects-data.js
+[2026-08-23 00:07:13] build-projects exit=0 (26.6s)
+[2026-08-23 00:07:14]   build-galaxy> CONCEPTS 125
+[2026-08-23 00:07:14]   build-galaxy> ENTITIES 255
+[2026-08-23 00:07:14]   build-galaxy> RESEARCH 35
+[2026-08-23 00:07:14]   build-galaxy> INTERNAL 41
+[2026-08-23 00:07:14]   build-galaxy> WROTE galaxy-data.js
+[2026-08-23 00:07:14] build-galaxy exit=0 (0.6s)
+[2026-08-23 00:07:14] === refresh end (gh=0 build-projects=0 build-galaxy=0)

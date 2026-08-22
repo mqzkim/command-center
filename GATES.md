@@ -139,3 +139,34 @@ Scope: 오너의 에이전트 워크스페이스 전면 대시보드 — 자족�
 
 - [x] G23: 재검증 — 문법 OK, HTTP 200, 스크린샷 직접 판독으로 신규 UI 확인
   EVIDENCE: shot4.png(806KB) 직접 판독 — HUD에 search/▦PROJECTS/☰MENU/RESET 4요소, KPI 7타일(447 위키·16 앱인토스·13 30일활성 포함), 갤럭시 정상(119/253 신규 실측 수치 반영). SYNTAX_OK·MD_RENDER OK·wiki-fetch 200·page 200. 병행 세션의 PROJECTS 뷰와 무충돌 공존.
+
+- [x] P10: 단계 추정 금지 — launch-status.json 없는 앱인토스는 단계를 추정하지 않고 "미확정"으로 분리 표시(링 상단 틈 점선 노드·드로어 "미확정" 행·상세 "추정하지 않음" + 관찰된 근거 목록), 요약 라벨에 N unverified
+  CHECK: node -e "const P=require('C:/workspace/command-center/projects-data.js');const u=P.items.filter(p=>p.category==='apps-in-toss'&&!p.hidden&&!p.toss.source);console.log(u.length,u.every(p=>p.toss.stage==='unverified'&&Array.isArray(p.toss.evidence))?'UNVERIFIED_OK':'BAD')"
+  EXPECT: UNVERIFIED_OK
+  EVIDENCE: coffee 1건 unverified(근거: granite.config.ts appName=ddasa TODO 주석·부모 ddasa.ait·plans/). shot-projects.png: 상단 틈 점선 노드 "coffee" + "미확정 1" 라벨 + 서브타이틀 "1 unverified", 드로어 "미확정 1개 coffee"(점선 배지). shot-projects-detail.png: 칩 "단계 미확정 · launch-status 없음", "단계 미확정 — 추정하지 않음", "관찰된 근거 (단계 판정 아님)" 3건. dump-dom ERRORS 0 · unv buttons 1. 빌더의 unverified 처리는 병행 세션이 선행 구현, 대시보드 렌더는 본 세션. 부수 수정: wiki 링크 스캔에서 node_modules 제외
+
+- [x] P11: gh 스냅샷 자동 갱신 — fetch-gh.mjs(GraphQL 배치, 원자적 교체, stageEstimate 미기록) + refresh-projects.ps1(fetch→build-projects→build-galaxy, logs\refresh.log) + Task Scheduler 6시간 주기 등록. 1회 실행으로 projects-raw.json generatedAt 갱신·앱인토스 목록 회귀 0 확인
+  CHECK: schtasks /Query /TN CommandCenterRefresh /FO LIST
+  EXPECT: /CommandCenterRefresh/
+  EVIDENCE: schtasks SUCCESS, Status Ready, Repeat Every 6 Hour(s), Next Run 2026-08-23 06:03. 1회 실행 exit 0: generatedAt 2026-08-22T14:14:09Z→15:06:47Z, repos 36→38(command-center·launch-deck 신규), isAppsInToss 11개 동일, category·significance 드리프트 0, API 5회 ~16초. 실패 경로(gh 없음)에서 기존 파일 바이트 동일·tmp 잔여 없음. 미검증: 실제 자동 회차(06:03)는 아직 안 돎 — logs\refresh.log 새 블록이 최종 증거. 주의: 로그온 세션 한정 태스크, 병행 세션의 CommandCenterEvolve(07:30 데일리)와 빌더 재실행이 중복되나 무해
+
+## I — Command Center ⇄ Claude OS 통합 (오케스트레이션: gates/l1-dashboard.md · l2-registry-kb.md · l3-wiki-kb.md, 계약 PLAN.md)
+
+- [ ] I1: 허브 프로젝트 `command-center`가 claude-os에 존재하고 KB 4개(command-center-knowledge_docs/project_profile/project_index/project_memories)가 있다
+  CHECK: node -e "fetch('http://localhost:8051/api/kb').then(r=>r.json()).then(j=>{const n=j.knowledge_bases.map(k=>k.name);console.log(['knowledge_docs','project_profile','project_index','project_memories'].every(t=>n.includes('command-center-'+t))?'HUB_OK':'MISSING '+n.join(','))})"
+  EXPECT: HUB_OK
+  EVIDENCE: pending
+
+- [ ] I2: 리프 게이트 전부 충족 — gate-check가 gates/l1·l2·l3 모두 UNMET 0 (부모가 재실행)
+  CHECK: node C:/Users/my/.claude/skills/unlazy/scripts/gate-check.mjs C:/workspace/command-center/gates/l1-dashboard.md C:/workspace/command-center/gates/l2-registry-kb.md C:/workspace/command-center/gates/l3-wiki-kb.md
+  EXPECT: /UNMET: 0|met: \d+\)\s*$/
+  EVIDENCE: pending
+
+- [ ] I3: 교차 검색 — search-all "nailmap" 결과에 project_index 문서와 knowledge_docs(위키) 문서가 모두 포함; 같은 질의를 code-forge MCP search_knowledge_base로 해도 동일 문서가 나온다(어느 쪽에서 하든 연계)
+  EVIDENCE: pending
+
+- [ ] I4: refresh-projects.ps1 1회 전체 실행(gh→build→galaxy→sync-claude-os→sync-wiki-kb) exit 0, 로그에 5단계 모두 기록
+  EVIDENCE: pending
+
+- [ ] I5: 대시보드 헤드리스 스크린샷 — 드로어 CLAUDE OS 패널(health·KB 문서 수·기억·검색 결과) + 프로젝트 상세 "Claude OS 검색" 결과 렌더 판독, data-errors 0. 최종 보고에 재측정 수치(KB별 문서 수·검색 응답 시간·스크린샷 경로)
+  EVIDENCE: pending

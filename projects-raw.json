@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T15:04:29.317Z",
+  "generatedAt": "2026-08-22T15:06:47.229Z",
   "source": "gh api graphql (5 calls, 38 repos: 36 non-fork + 2 fork; fetch-gh.mjs)",
   "repos": [
     {
@@ -9,12 +9,16 @@
       "isPrivate": true,
       "isFork": false,
       "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-08-22T15:04:02Z",
+      "pushedAt": "2026-08-22T15:04:59Z",
       "createdAt": "2026-08-22T15:02:39Z",
       "stargazerCount": 0,
       "openIssues": 0,
       "defaultBranch": "master",
       "recentCommits": [
+        {
+          "date": "2026-08-22",
+          "message": "evolve: dashboard ROUTINES integration + EVOLVE docs + gates ledger"
+        },
         {
           "date": "2026-08-22",
           "message": "evolve: pipeline artifacts (trends 82 candidates, health baseline, sc…"
@@ -24,7 +28,7 @@
           "message": "init: Command Center — galaxy dashboard + daily evolution loop scaffold"
         }
       ],
-      "commitsLast30d": 2,
+      "commitsLast30d": 3,
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
@@ -1448,7 +1452,7 @@
       "commitsLast30d": 0,
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
-      "category": "harness-ai-infra",
+      "category": "side-project",
       "significance": 2,
       "significanceReason": "마지막 푸시 127일 전, 설명 있음"
     },

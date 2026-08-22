@@ -1,5 +1,5 @@
 {
- "at": "2026-08-22T15:03:15.657Z",
+ "at": "2026-08-22T15:13:51.008Z",
  "results": [
   {
    "name": "dashboard-js-syntax",
@@ -28,7 +28,7 @@
   {
    "name": "wiki-junction",
    "ok": true,
-   "healed": true,
+   "healed": false,
    "note": ""
   },
   {
