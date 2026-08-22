@@ -60,7 +60,7 @@
   {
    "date": "2026-08-23",
    "improvement": "§6 자기진화: trends.mjs 쿼리 8→15·per-query limit 15→30(후보 풀 2→60건 복원) · 잔여 후보 2건 검토(기각 2) · seenRepos 80→82",
-   "commit": "pending",
+   "commit": "f519cee",
    "gates": "4/4"
   }
  ],
