@@ -36,7 +36,7 @@
   {
    "date": "2026-08-23",
    "improvement": "agenticnotetaking/arscontexta 지식화(c) — ~/.wiki entity ingest(LLM Wiki 대비 Reweave·write-time 훅 검증 아이디어) · 트렌드 후보 10건 검토(채택 1·기각 9) · seenRepos 40→50",
-   "commit": "pending",
+   "commit": "dc68e0d",
    "gates": "4/4"
   }
  ],
