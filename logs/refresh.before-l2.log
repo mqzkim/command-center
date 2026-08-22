@@ -28,17 +28,3 @@
 [2026-08-23 00:07:14]   build-galaxy> WROTE galaxy-data.js
 [2026-08-23 00:07:14] build-galaxy exit=0 (0.6s)
 [2026-08-23 00:07:14] === refresh end (gh=0 build-projects=0 build-galaxy=0)
-[2026-08-23 01:04:32] === refresh start (pid 77248, loop=False)
-[2026-08-23 01:04:49]   fetch-gh> repos 39 (non-fork 37, fork 2) | apps-in-toss 11: naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, bamti-translator, conclusion-card, seoul-house-from-space, coffee, diamond-gather, app-in-toss
-[2026-08-23 01:04:49]   fetch-gh> api calls 5 | elapsed 16.7s | WROTE projects-raw.json
-[2026-08-23 01:04:49] fetch-gh exit=0 (16.8s)
-[2026-08-23 01:05:36]   build-projects> dirs scanned 79 | items 87 | visible 63 | toss 16 (launch-status 15)
-[2026-08-23 01:05:36]   build-projects> byCategory {"side-project":12,"knowledge-wiki":1,"harness-ai-infra":5,"apps-in-toss":16,"landing-docs":3,"legacy":26} byStage {"intake":1,"analytics":2,"registration_draft":5,"sandbox_qa":5,"released":2,"unverified":1}
-[2026-08-23 01:05:36]   build-projects> WROTE projects-data.js
-[2026-08-23 01:05:36] build-projects exit=0 (45.8s)
-[2026-08-23 01:05:37]   build-galaxy> CONCEPTS 125
-[2026-08-23 01:05:37]   build-galaxy> ENTITIES 262
-[2026-08-23 01:05:37]   build-galaxy> RESEARCH 35
-[2026-08-23 01:05:37]   build-galaxy> INTERNAL 41
-[2026-08-23 01:05:37]   build-galaxy> WROTE galaxy-data.js
-[2026-08-23 01:05:37] build-galaxy exit=0 (0.5s)

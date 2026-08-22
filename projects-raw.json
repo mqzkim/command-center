@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-22T15:06:47.229Z",
-  "source": "gh api graphql (5 calls, 38 repos: 36 non-fork + 2 fork; fetch-gh.mjs)",
+  "generatedAt": "2026-08-22T16:04:49.087Z",
+  "source": "gh api graphql (5 calls, 39 repos: 37 non-fork + 2 fork; fetch-gh.mjs)",
   "repos": [
     {
       "name": "command-center",
@@ -9,7 +9,7 @@
       "isPrivate": true,
       "isFork": false,
       "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-08-22T15:04:59Z",
+      "pushedAt": "2026-08-22T16:01:13Z",
       "createdAt": "2026-08-22T15:02:39Z",
       "stargazerCount": 0,
       "openIssues": 0,
@@ -17,23 +17,31 @@
       "recentCommits": [
         {
           "date": "2026-08-22",
-          "message": "evolve: dashboard ROUTINES integration + EVOLVE docs + gates ledger"
+          "message": "evolve-run: 2026-08-23 pipeline artifacts"
         },
         {
           "date": "2026-08-22",
-          "message": "evolve: pipeline artifacts (trends 82 candidates, health baseline, sc…"
+          "message": "evolve(2026-08-23): ledger commit sha 53bf150"
         },
         {
           "date": "2026-08-22",
-          "message": "init: Command Center — galaxy dashboard + daily evolution loop scaffold"
+          "message": "evolve(2026-08-23): FailproofAI/failproofai 지식화(c) — ~/.wiki entity i…"
+        },
+        {
+          "date": "2026-08-22",
+          "message": "evolve-run: 2026-08-23 pipeline artifacts"
+        },
+        {
+          "date": "2026-08-22",
+          "message": "evolve(2026-08-23): ledger commit sha 8ea18ac"
         }
       ],
-      "commitsLast30d": 3,
+      "commitsLast30d": 26,
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 4,
-      "significanceReason": "최근 7일 내 푸시"
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 26"
     },
     {
       "name": "hermes-shared-knowledge",
@@ -42,12 +50,16 @@
       "isPrivate": true,
       "isFork": false,
       "primaryLanguage": "TeX",
-      "pushedAt": "2026-08-22T15:00:13Z",
+      "pushedAt": "2026-08-22T16:00:16Z",
       "createdAt": "2026-04-30T02:45:22Z",
       "stargazerCount": 0,
       "openIssues": 0,
       "defaultBranch": "main",
       "recentCommits": [
+        {
+          "date": "2026-08-22",
+          "message": "ops: refresh sena-1 telemetry metrics"
+        },
         {
           "date": "2026-08-22",
           "message": "ops: refresh sena-1 telemetry metrics"
@@ -63,18 +75,84 @@
         {
           "date": "2026-08-02",
           "message": "ops: refresh sena-1 telemetry metrics"
-        },
-        {
-          "date": "2026-08-02",
-          "message": "ops: refresh sena-1 telemetry metrics"
         }
       ],
-      "commitsLast30d": 6,
+      "commitsLast30d": 7,
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 4,
-      "significanceReason": "최근 7일 내 푸시, 30일 커밋 6, 설명 있음"
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 7, 설명 있음"
+    },
+    {
+      "name": "launch-deck-gtest-fe1e2bc1",
+      "url": "https://github.com/mqzkim/launch-deck-gtest-fe1e2bc1",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": null,
+      "pushedAt": "2026-08-22T15:52:59Z",
+      "createdAt": "2026-08-22T15:52:49Z",
+      "stargazerCount": 0,
+      "openIssues": 1,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-08-22",
+          "message": "launch(mvp_prd): live checkpoint"
+        },
+        {
+          "date": "2026-08-22",
+          "message": "launch(repo_bootstrap): import idea artifacts"
+        }
+      ],
+      "commitsLast30d": 2,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "side-project",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시"
+    },
+    {
+      "name": "launch-deck",
+      "url": "https://github.com/mqzkim/launch-deck",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "Python",
+      "pushedAt": "2026-08-22T15:37:42Z",
+      "createdAt": "2026-08-22T14:16:28Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-08-22",
+          "message": "gates(core): 12/12 met with evidence; venvpy.cmd wrapper for cmd.exe-…"
+        },
+        {
+          "date": "2026-08-22",
+          "message": "feat(core): adopt/snapshot, conductor db+planner+locks+tick loop, noo…"
+        },
+        {
+          "date": "2026-08-22",
+          "message": "docs(spec): §5.5 image_gen path confirmed"
+        },
+        {
+          "date": "2026-08-22",
+          "message": "feat(core): scaffold, settings, LaunchStatus model, v1/v2→v3 migratio…"
+        },
+        {
+          "date": "2026-08-22",
+          "message": "plan(core): implementation plan for subproject 1.1"
+        }
+      ],
+      "commitsLast30d": 8,
+      "isAppsInToss": false,
+      "aitEvidence": "README mentions toss",
+      "category": "side-project",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 8"
     },
     {
       "name": "llm-wiki",
@@ -116,31 +194,6 @@
       "category": "knowledge-wiki",
       "significance": 4,
       "significanceReason": "최근 7일 내 푸시, 30일 커밋 23"
-    },
-    {
-      "name": "launch-deck",
-      "url": "https://github.com/mqzkim/launch-deck",
-      "description": null,
-      "isPrivate": true,
-      "isFork": false,
-      "primaryLanguage": null,
-      "pushedAt": "2026-08-22T14:16:32Z",
-      "createdAt": "2026-08-22T14:16:28Z",
-      "stargazerCount": 0,
-      "openIssues": 0,
-      "defaultBranch": "main",
-      "recentCommits": [
-        {
-          "date": "2026-08-22",
-          "message": "docs: add launch-deck design spec (sections 1-5, approved 2026-08-22)"
-        }
-      ],
-      "commitsLast30d": 1,
-      "isAppsInToss": false,
-      "aitEvidence": "README mentions toss",
-      "category": "side-project",
-      "significance": 4,
-      "significanceReason": "최근 7일 내 푸시"
     },
     {
       "name": "naeheunjeok",
@@ -1240,7 +1293,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "landing-docs",
       "significance": 2,
-      "significanceReason": "마지막 푸시 120일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 121일 전, 설명 있음"
     },
     {
       "name": "helix-space",

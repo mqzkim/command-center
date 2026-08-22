@@ -157,8 +157,8 @@ Scope: 오너의 에이전트 워크스페이스 전면 대시보드 — 자족�
   EXPECT: HUB_OK
   EVIDENCE: HUB_OK — POST /api/projects → id 3, path C:/workspace/command-center (1차 생성 id 2는 백슬래시 소실로 path 깨져 DELETE 후 재생성). KB 4개 자동 생성 확인(kb_id 7~10 → 재생성 후 신규 id)
 
-- [ ] I2: 리프 게이트 전부 충족 — gate-check가 gates/l1·l2·l3 모두 UNMET 0 (부모가 재실행)
-  CHECK: node C:/Users/my/.claude/skills/unlazy/scripts/gate-check.mjs C:/workspace/command-center/gates/l1-dashboard.md C:/workspace/command-center/gates/l2-registry-kb.md C:/workspace/command-center/gates/l3-wiki-kb.md
+- [ ] I2: 리프 게이트 전부 충족 — gate-check가 gates/l1·l2·l3·l4 모두 UNMET 0 (부모가 재실행)
+  CHECK: node C:/Users/my/.claude/skills/unlazy/scripts/gate-check.mjs C:/workspace/command-center/gates/l1-dashboard.md C:/workspace/command-center/gates/l2-registry-kb.md C:/workspace/command-center/gates/l3-wiki-kb.md C:/workspace/command-center/gates/l4-claude-os-patch.md
   EXPECT: /UNMET: 0|met: \d+\)\s*$/
   EVIDENCE: pending
 

@@ -1,12 +1,12 @@
 // 자동 생성 — build-projects.mjs (로컬 클론 스캔 + projects-raw.json(gh) + .launch/launch-status.json + ~/.wiki 링크)
-// 생성: 2026-08-22 15:55Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
+// 생성: 2026-08-22 16:05Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
 const CC_PROJECTS = {
- "generatedAt": "2026-08-22 15:55Z",
+ "generatedAt": "2026-08-22 16:05Z",
  "roots": [
   "C:\\workspace",
   "C:\\Users\\my\\workspace"
  ],
- "ghSnapshot": "2026-08-22T15:06:47.229Z",
+ "ghSnapshot": "2026-08-22T16:04:49.087Z",
  "stages": [
   "intake",
   "repo_bootstrap",
@@ -41,14 +41,14 @@ const CC_PROJECTS = {
   "unverified": "미확정"
  },
  "summary": {
-  "total": 62,
+  "total": 63,
   "hidden": 24,
   "toss": 16,
-  "active30d": 14,
+  "active30d": 15,
   "tossWithBlockers": 14,
   "tossFromLaunchStatus": 15,
   "byCategory": {
-   "side-project": 11,
+   "side-project": 12,
    "knowledge-wiki": 1,
    "harness-ai-infra": 5,
    "apps-in-toss": 16,
@@ -79,9 +79,9 @@ const CC_PROJECTS = {
    "legacy": false,
    "mine": true,
    "remote": "https://github.com/mqzkim/launch-deck.git",
-   "lang": null,
+   "lang": "Python",
    "branch": "main",
-   "dirty": 11,
+   "dirty": 20,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
    "daysSince": 0,
@@ -90,11 +90,19 @@ const CC_PROJECTS = {
     "private": true,
     "pushedAt": "2026-08-22",
     "openIssues": 0,
-    "commits30d": 1,
+    "commits30d": 8,
     "recent": [
      {
       "date": "2026-08-22",
-      "message": "docs: add launch-deck design spec (sections 1-5, approved 2026-08-22)"
+      "message": "gates(core): 12/12 met with evidence; venvpy.cmd wrapper for cmd.exe-…"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "feat(core): adopt/snapshot, conductor db+planner+locks+tick loop, noo…"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "docs(spec): §5.5 image_gen path confirmed"
      }
     ],
     "issueTitles": []
@@ -128,7 +136,7 @@ const CC_PROJECTS = {
    "remote": "https://github.com/mqzkim/command-center.git",
    "lang": "JavaScript",
    "branch": "master",
-   "dirty": 5,
+   "dirty": 11,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
    "daysSince": 0,
@@ -137,19 +145,19 @@ const CC_PROJECTS = {
     "private": true,
     "pushedAt": "2026-08-22",
     "openIssues": 0,
-    "commits30d": 3,
+    "commits30d": 26,
     "recent": [
      {
       "date": "2026-08-22",
-      "message": "evolve: dashboard ROUTINES integration + EVOLVE docs + gates ledger"
+      "message": "evolve-run: 2026-08-23 pipeline artifacts"
      },
      {
       "date": "2026-08-22",
-      "message": "evolve: pipeline artifacts (trends 82 candidates, health baseline, sc…"
+      "message": "evolve(2026-08-23): ledger commit sha 53bf150"
      },
      {
       "date": "2026-08-22",
-      "message": "init: Command Center — galaxy dashboard + daily evolution loop scaffold"
+      "message": "evolve(2026-08-23): FailproofAI/failproofai 지식화(c) — ~/.wiki entity i…"
      }
     ],
     "issueTitles": []
@@ -232,6 +240,52 @@ const CC_PROJECTS = {
    "noLocal": true
   },
   {
+   "name": "launch-deck-gtest-fe1e2bc1",
+   "repo": "launch-deck-gtest-fe1e2bc1",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "lang": null,
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-08-22",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/launch-deck-gtest-fe1e2bc1",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 1,
+    "commits30d": 2,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "launch(mvp_prd): live checkpoint"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(repo_bootstrap): import idea artifacts"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/launch-deck-gtest-fe1e2bc1",
+   "links": {
+    "local": null,
+    "github": "https://github.com/mqzkim/launch-deck-gtest-fe1e2bc1",
+    "wiki": [],
+    "launch": null,
+    "parent": null
+   },
+   "noLocal": true
+  },
+  {
    "name": "hermes-shared-knowledge",
    "repo": "hermes-shared-knowledge",
    "displayName": null,
@@ -252,7 +306,7 @@ const CC_PROJECTS = {
     "private": true,
     "pushedAt": "2026-08-22",
     "openIssues": 0,
-    "commits30d": 6,
+    "commits30d": 7,
     "recent": [
      {
       "date": "2026-08-22",
@@ -263,7 +317,7 @@ const CC_PROJECTS = {
       "message": "ops: refresh sena-1 telemetry metrics"
      },
      {
-      "date": "2026-08-17",
+      "date": "2026-08-22",
       "message": "ops: refresh sena-1 telemetry metrics"
      }
     ],
@@ -2374,10 +2428,10 @@ const CC_PROJECTS = {
      "concepts/llm-pr-merge-trust-boundary.md",
      "concepts/provider-smoke-sentinel-validation.md",
      "entities/ai-benchmark-repos/aaif-goose__goose.md",
+     "entities/failproofai.md",
      "entities/headroom.md",
      "internal/ai-benchmark-harness/harness-learning-log.md",
-     "research/github-org-ai-pr-automation-2026-07.md",
-     "_librarian/lint-queue.md"
+     "research/github-org-ai-pr-automation-2026-07.md"
     ],
     "launch": null,
     "parent": null
@@ -4197,7 +4251,7 @@ const CC_PROJECTS = {
    "remote": "https://github.com/brobertsaz/claude-os",
    "lang": null,
    "branch": "main",
-   "dirty": 5,
+   "dirty": 6,
    "lastCommit": "2026-02-06",
    "lastActivity": "2026-02-06",
    "daysSince": 198,
