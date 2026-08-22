@@ -8,3 +8,9 @@ ERROR upsert concepts/korean-community-user-needs-scan.md (1308 bytes): fetch fa
 ERROR upsert concepts/lean-startup.md (2610 bytes): fetch failed
 progress 100/565
 ERROR upsert concepts/smallest-ratchet-in-harness-team-build.md (7234 bytes): fetch failed
+progress 150/565
+ERROR upsert entities/ai-benchmark-repos/esinecan__skynet-agent.md (2453 bytes): fetch failed
+progress 200/565
+progress 250/565
+ERROR upsert entities/ai-benchmark-repos/ruvnet__ruflo.md (3210 bytes): fetch failed
+progress 300/565

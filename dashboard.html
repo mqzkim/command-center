@@ -907,6 +907,7 @@ $("#drawerBody").addEventListener("click", async e => {
   const o = q.get("open");
   if (o) { const n = pjName2node[o] || nodes.find(n => n.kind && n.label && n.label.toLowerCase() === o.toLowerCase()); if (n) { if (n.p && viewMode !== "projects") setView("projects"); openDetail(n); } }
   if (q.get("brief") === "1") $("#drawer").classList.add("open");
+  if (q.get("cos") === "1") { const b = $("#detail [data-cos-search]"); if (b) b.click(); } /* ?open=<proj>&cos=1 → 상세 "Claude OS 검색" 자동 실행 */
   const cq = q.get("q");
   if (cq) { $("#drawer").classList.add("open"); $("#cosQ").value = cq; cosSearchInto($("#cosRes"), cq, 8); }
 })();

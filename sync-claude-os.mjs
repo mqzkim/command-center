@@ -21,12 +21,20 @@ function docFor(p) {
   const t = p.toss;
   const stage = t?.stage || (p.legacy ? 'legacy' : 'n/a');
   const L = [];
+  const ko = (s) => stageKo[s] || s;
   L.push(`# ${p.name}`);
   if (p.displayName || t?.displayName) L.push(`displayName: ${p.displayName || t.displayName}`);
+  // 검색 품질용 한 줄 요약(한국어): 프로젝트명 + 현재 단계 + 블로커 수를 첫 청크에 포함
+  if (t) {
+    const nb = t.blockersOpen ?? t.blockers?.length ?? 0;
+    L.push(`summary: ${p.name}은(는) 앱인토스(Apps in Toss) 앱, 현재 ${ko(t.stage)}(${t.stage}) 단계. ${nb ? `${p.name} 블로커 ${nb}건 열림.` : '블로커 없음.'}${t.nextCheck ? ` 다음 점검: ${ko(t.nextCheck)}(${t.nextCheck}).` : ''}`);
+  } else {
+    L.push(`summary: ${p.name} — ${p.category}${p.legacy ? ' (legacy)' : ''}. 마지막 활동 ${p.lastActivity || 'unknown'}.`);
+  }
   L.push(`category: ${p.category}`);
   L.push(`stage: ${stage}${stageKo[stage] ? ` (${stageKo[stage]})` : ''}`);
   L.push(`nextCheck: ${t?.nextCheck ? `${t.nextCheck}${stageKo[t.nextCheck] ? ` (${stageKo[t.nextCheck]})` : ''}` : 'n/a'}`);
-  L.push(`blockers: ${t?.blockers?.length ? `${t.blockersOpen ?? t.blockers.length} open / ${t.blockersTotal ?? t.blockers.length} total` : 'none'}`);
+  L.push(`blockers: ${t?.blockers?.length ? `${t.blockersOpen ?? t.blockers.length} open / ${t.blockersTotal ?? t.blockers.length} total — ${t.blockers.join(' | ')}` : 'none'}`);
   L.push(`lastActivity: ${p.lastActivity || 'unknown'}`);
   L.push(`lastCommit: ${p.lastCommit || 'unknown'}`);
   L.push(`branch: ${p.branch || 'n/a'} (dirty files: ${p.dirty ?? 0})`);
