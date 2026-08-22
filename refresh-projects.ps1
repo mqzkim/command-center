@@ -33,7 +33,14 @@ function Invoke-Refresh {
   if ($gh -ne 0) { Write-Log "fetch-gh FAILED — 기존 projects-raw.json 유지, build만 수행" }
   $b1 = Run-Step "build-projects" "build-projects.mjs"
   $b2 = Run-Step "build-galaxy" "build-galaxy.mjs"
-  Write-Log "=== refresh end (gh=$gh build-projects=$b1 build-galaxy=$b2)"
+  # claude-os 연계: 레지스트리 → project_index KB, ~/.wiki → knowledge_docs KB (둘 다 claude-os 오프라인이면 자체적으로 "skipped" + exit 0)
+  $s1 = Run-Step "sync-claude-os" "sync-claude-os.mjs"
+  if (Test-Path (Join-Path $Root "sync-wiki-kb.mjs")) {
+    $s2 = Run-Step "sync-wiki-kb" "sync-wiki-kb.mjs"
+  } else {
+    $s2 = "skip"; Write-Log "sync-wiki-kb skipped: sync-wiki-kb.mjs not found"
+  }
+  Write-Log "=== refresh end (gh=$gh build-projects=$b1 build-galaxy=$b2 sync-claude-os=$s1 sync-wiki-kb=$s2)"
   Trim-Log
 }
 

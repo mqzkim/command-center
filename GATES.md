@@ -152,10 +152,10 @@ Scope: 오너의 에이전트 워크스페이스 전면 대시보드 — 자족�
 
 ## I — Command Center ⇄ Claude OS 통합 (오케스트레이션: gates/l1-dashboard.md · l2-registry-kb.md · l3-wiki-kb.md, 계약 PLAN.md)
 
-- [ ] I1: 허브 프로젝트 `command-center`가 claude-os에 존재하고 KB 4개(command-center-knowledge_docs/project_profile/project_index/project_memories)가 있다
+- [x] I1: 허브 프로젝트 `command-center`가 claude-os에 존재하고 KB 4개(command-center-knowledge_docs/project_profile/project_index/project_memories)가 있다
   CHECK: node -e "fetch('http://localhost:8051/api/kb').then(r=>r.json()).then(j=>{const n=j.knowledge_bases.map(k=>k.name);console.log(['knowledge_docs','project_profile','project_index','project_memories'].every(t=>n.includes('command-center-'+t))?'HUB_OK':'MISSING '+n.join(','))})"
   EXPECT: HUB_OK
-  EVIDENCE: pending
+  EVIDENCE: HUB_OK — POST /api/projects → id 3, path C:/workspace/command-center (1차 생성 id 2는 백슬래시 소실로 path 깨져 DELETE 후 재생성). KB 4개 자동 생성 확인(kb_id 7~10 → 재생성 후 신규 id)
 
 - [ ] I2: 리프 게이트 전부 충족 — gate-check가 gates/l1·l2·l3 모두 UNMET 0 (부모가 재실행)
   CHECK: node C:/Users/my/.claude/skills/unlazy/scripts/gate-check.mjs C:/workspace/command-center/gates/l1-dashboard.md C:/workspace/command-center/gates/l2-registry-kb.md C:/workspace/command-center/gates/l3-wiki-kb.md

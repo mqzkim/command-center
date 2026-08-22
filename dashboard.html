@@ -134,6 +134,13 @@ body { background: var(--bg); color: var(--text); font-family: var(--sans); }
 #detail .chip.warn { border-color: var(--orange); color: var(--orange); }
 #detail .chip.ok { border-color: var(--mint); color: var(--mint); }
 #detail .chip.gold { border-color: var(--gold); color: var(--gold); }
+/* ---- Claude OS 라이브 패널 ---- */
+.cos-ok { color: var(--mint) !important; } .cos-off { color: var(--orange) !important; } .cos-dim { color: var(--muted); }
+.cos-sub { font: 600 10px var(--mono); letter-spacing: .15em; color: var(--muted); margin: 8px 0 4px; }
+#cosQ { width: 100%; box-sizing: border-box; margin: 8px 0 6px; padding: 7px 10px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; color: var(--text); font: 12px var(--sans); }
+#cosQ:focus { outline: none; border-color: var(--orange); }
+.cos-row { display: flex; gap: 8px; margin-top: 8px; }
+#detail .cos-inline { margin-top: 8px; } #detail .cos-inline li { margin: 4px 0; font-size: 11.5px; } #detail .cos-inline .s, #detail .cos-inline .why { display: block; color: var(--muted); font: 10.5px var(--mono); }
 #detail .pipe { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; margin: 0 0 12px; }
 #detail .pipe div { height: 20px; border-radius: 4px; background: var(--panel-2); border: 1px solid var(--line); font: 8.5px var(--mono);
   display: flex; align-items: center; justify-content: center; color: var(--dim); overflow: hidden; white-space: nowrap; padding: 0 2px; }
@@ -348,7 +355,8 @@ G.orbits.forEach((o, i) => {
 const apps = G.orbits[2].apps || [];
 apps.forEach((app, i) => {
   nodes.push({ ring: "apps", r: 434, a: i / apps.length * TAU + 0.35, size: 11, color: "#e8b04b",
-    label: app.n || app, kind: "APP", hexa: true, glow: 12,
+    label: app.n || app, kind: "APP", hexa: true, glow: 12, live: app.live || null,
+    path: app.live === "claude-os" ? "http://localhost:8051 · http://localhost:5173" : null,
     desc: (app.d || "연결된 애플리케이션/커넥터.") + "\n(APPLICATIONS 궤도 소속)" });
 });
 /* ROUTINES 항목 */
@@ -727,6 +735,7 @@ function openDetail(n) {
   $("#openRaw").style.display = n.kind === "DOC" && n.rel ? "" : "none";
   d.querySelector(".extra").innerHTML = p ? projectHtml(p) : "";
   if (n.kind === "DOC" && n.rel) loadDoc(n, d.querySelector(".extra"));
+  if (n.live === "claude-os") cosAppDetail(n, d.querySelector(".extra"));
   d.classList.add("open");
 }
 
@@ -809,6 +818,7 @@ function projectHtml(p) {
   if (p.altPaths && p.altPaths.length) links.push(`<li>다른 사본: <span class="s">${p.altPaths.map(esc).join("<br>")}</span></li>`);
   if (L.wiki && L.wiki.length) links.push(`<li>wiki: <span class="s">${L.wiki.map(w => "~/.wiki/" + esc(w)).join("<br>")}</span></li>`);
   if (links.length) h += `<h4>LINKS</h4><ul>${links.join("")}</ul>`;
+  h += `<h4>CLAUDE OS</h4><div class="row"><button type="button" data-cos-search="${esc(p.name)}">Claude OS 검색</button></div><div class="cos-inline" data-cos-for="${esc(p.name)}"></div>`;
   h += `<div class="src">원천: ${esc(t && t.source ? t.source : (L.local || "gh 메타만"))}${gh ? " · gh " + esc(PJ.ghSnapshot || "") : ""}</div>`;
   return h;
 }
@@ -819,7 +829,10 @@ function projectPrompt(p) {
 }
 $("#openGh").addEventListener("click", () => { const u = selected && (selected.p ? selected.p.links.github : selected.path); if (u) window.open(u, "_blank", "noopener"); });
 $("#copyPrompt").addEventListener("click", async () => { if (selected && selected.p) { await copy(projectPrompt(selected.p)); toast("프롬프트 복사됨 — Claude Code에 붙여넣으세요"); } });
-$("#detail").addEventListener("click", e => { const a = e.target.closest("[data-open]"); if (!a) return; e.preventDefault(); const n = pjName2node[a.dataset.open]; if (n) openDetail(n); });
+$("#detail").addEventListener("click", e => {
+  const cs = e.target.closest("[data-cos-search]");
+  if (cs) { const box = $("#detail").querySelector(`[data-cos-for="${CSS.escape(cs.dataset.cosSearch)}"]`); if (box) cosSearchInto(box, cs.dataset.cosSearch, 5); return; }
+  const a = e.target.closest("[data-open]"); if (!a) return; e.preventDefault(); const n = pjName2node[a.dataset.open]; if (n) openDetail(n); });
 function closeDetail() { selected = null; $("#detail").classList.remove("open"); }
 $("#detail .close").addEventListener("click", closeDetail);
 $("#copyPath").addEventListener("click", async () => {
@@ -861,6 +874,15 @@ $("#drawerBody").innerHTML = `
   <ul>${D.ci.map(c => `<li>${esc(c.repo)}<span class="why">${esc(c.workflow)} ${esc(c.status)} · ${esc(c.branch)} · ${esc(c.date)}</span></li>`).join("")}
       ${PVIS.filter(p => p.category !== "apps-in-toss" && p.significance >= 3).map(p => `<li><button class="pj" type="button" data-proj="${esc(p.name)}">${esc(pjLabel(p))}</button><span class="s">${esc(p.category)} · ${esc(p.lastActivity || "")}${p.desc ? " — " + esc(p.desc) : ""}</span></li>`).join("")}
       ${D.projects.map(p => `<li>${esc(p.name)}<span class="s">${esc(p.desc)}</span></li>`).join("")}</ul>
+  <h2 class="cos-h">CLAUDE OS <span class="s" id="cosState">확인 중…</span></h2>
+  <div id="cosPanel">
+    <ul id="cosKb"><li>KB 조회 중…</li></ul>
+    <div class="cos-sub">기억 최근 5 · project_memories</div>
+    <ul id="cosMem"><li>조회 중…</li></ul>
+    <input id="cosQ" type="search" placeholder="Claude OS 검색 (Enter) — search-all top_k 8" autocomplete="off">
+    <ul id="cosRes"></ul>
+    <div class="row cos-row"><button class="act" type="button" data-cos-open="http://localhost:5173">5173 열기</button><button class="act" type="button" data-cos-open="http://localhost:8051/health">8051 health</button></div>
+  </div>
   <h2>액션 — 클릭하면 프롬프트 복사</h2>
   <div class="acts">${D.actions.map((a, i) => `<button class="act" data-i="${i}" type="button">${esc(a.icon)} ${esc(a.label)}</button>`).join("")}</div>
   <h2>최근 산출물</h2>
@@ -869,6 +891,8 @@ $("#drawerBody").innerHTML = `
 $("#briefBtn").addEventListener("click", () => $("#drawer").classList.add("open"));
 $("#drawer .close").addEventListener("click", () => $("#drawer").classList.remove("open"));
 $("#drawerBody").addEventListener("click", async e => {
+  const co = e.target.closest("[data-cos-open]");
+  if (co) { window.open(co.dataset.cosOpen, "_blank", "noopener"); return; }
   const pj = e.target.closest(".pj");
   if (pj) { const n = pjName2node[pj.dataset.proj]; if (n) { if (viewMode !== "projects") setView("projects"); $("#drawer").classList.remove("open"); openDetail(n); } return; }
   const b = e.target.closest(".act"); if (!b) return;
@@ -883,7 +907,71 @@ $("#drawerBody").addEventListener("click", async e => {
   const o = q.get("open");
   if (o) { const n = pjName2node[o] || nodes.find(n => n.kind && n.label && n.label.toLowerCase() === o.toLowerCase()); if (n) { if (n.p && viewMode !== "projects") setView("projects"); openDetail(n); } }
   if (q.get("brief") === "1") $("#drawer").classList.add("open");
+  const cq = q.get("q");
+  if (cq) { $("#drawer").classList.add("open"); $("#cosQ").value = cq; cosSearchInto($("#cosRes"), cq, 8); }
 })();
+
+/* ═══════════════ CLAUDE OS 라이브 (8051) — 전부 런타임 fetch, 오프라인 시 명시 렌더, 에러 0 ═══════════════ */
+function cosBase() { return "http://localhost:8051"; }
+async function cosFetch(path, body) {
+  const COS = cosBase();
+  const ac = new AbortController(); const t = setTimeout(() => ac.abort(), 3000);
+  try {
+    const r = await fetch(COS + path, { signal: ac.signal, ...(body ? { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) } : {}) });
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; } finally { clearTimeout(t); }
+}
+function cosSnip(s) { return esc(String(s || "").replace(/\s+/g, " ").trim().slice(0, 120)); }
+function cosTitle(r) { return (r.metadata && (r.metadata.title || r.metadata.filename)) || r.doc_id || "?"; }
+async function cosSearchInto(box, query, topK) {
+  box.innerHTML = `<li class="cos-dim">검색 중… "${esc(query)}"</li>`;
+  const j = await cosFetch("/api/kb/search-all", { query, top_k: topK });
+  if (!j) { box.innerHTML = `<li class="cos-off">오프라인 — claude-os(8051) 응답 없음</li>`; return; }
+  const rs = j.results || [];
+  box.innerHTML = rs.length
+    ? rs.map(r => `<li><b>${esc(cosTitle(r))}</b><span class="s">${esc(r.kb_name || "?")} · score ${(+r.score || 0).toFixed(3)}</span><span class="why">${cosSnip(r.text)}</span></li>`).join("")
+    : `<li class="cos-dim">결과 0건 "${esc(query)}"</li>`;
+}
+async function cosPanelRefresh() {
+  const st = $("#cosState"), kb = $("#cosKb"), mem = $("#cosMem");
+  const h = await cosFetch("/health");
+  if (!h) { st.textContent = "오프라인"; st.className = "s cos-off"; kb.innerHTML = `<li class="cos-off">오프라인 — http://localhost:8051 응답 없음 (start.ps1 필요)</li>`; mem.innerHTML = `<li class="cos-dim">—</li>`; return; }
+  const c = h.components || {};
+  st.textContent = `${h.status} · sqlite ${c.sqlite ? c.sqlite.status : "?"} · ollama ${c.ollama ? c.ollama.models_installed + " models" : "?"}`;
+  st.className = "s " + (h.status === "healthy" ? "cos-ok" : "cos-off");
+  const kbs = ((await cosFetch("/api/kb")) || {}).knowledge_bases || [];
+  const mine = kbs.filter(k => /^command-center-/.test(k.name));
+  if (!mine.length) { kb.innerHTML = `<li class="cos-dim">command-center-* KB 없음 (프로젝트 미생성)</li>`; }
+  else {
+    const stats = await Promise.all(mine.map(k => cosFetch(`/api/kb/${encodeURIComponent(k.name)}/stats`)));
+    kb.innerHTML = mine.map((k, i) => `<li>${esc(k.name.replace(/^command-center-/, ""))}<span class="s">문서 ${stats[i] ? stats[i].total_documents : "?"} · 청크 ${stats[i] ? stats[i].total_chunks : "?"}</span></li>`).join("");
+  }
+  const docs = ((await cosFetch("/api/kb/command-center-project_memories/documents")) || {}).documents || [];
+  const top = [...docs].sort((a, b) => String((b.metadata || b).upload_date || b.created_at || "").localeCompare(String((a.metadata || a).upload_date || a.created_at || ""))).slice(0, 5);
+  mem.innerHTML = top.length
+    ? top.map(d => `<li>${esc((d.metadata && d.metadata.title) || d.title || d.filename || d.id)}<span class="s">${esc(String((d.metadata || d).upload_date || d.created_at || "").slice(0, 16))}</span></li>`).join("")
+    : `<li class="cos-dim">기억 0건 — "remember this"로 저장하면 여기 표시</li>`;
+}
+$("#cosQ").addEventListener("keydown", e => { if (e.key === "Enter" && e.target.value.trim()) cosSearchInto($("#cosRes"), e.target.value.trim(), 8); });
+cosPanelRefresh();
+/* APPLICATIONS "Claude OS" 헥사곤 상세 — 라이브 health/KB/프로젝트 */
+async function cosAppDetail(n, box) {
+  box.innerHTML = `<div class="loading">claude-os 상태 조회 중…</div>`;
+  const h = await cosFetch("/health");
+  if (selected !== n) return;
+  const btns = `<div class="row" style="margin-top:10px"><button type="button" data-cos-go="http://localhost:5173">5173 열기</button><button type="button" data-cos-go="http://localhost:8051/health">8051 health</button></div>`;
+  if (!h) { box.innerHTML = `<div class="chips"><span class="chip warn">오프라인</span></div><div class="src">http://localhost:8051 응답 없음 — C:\\workspace\\claude-os\\start.ps1 로 기동</div>${btns}`; return; }
+  const [kbj, pj] = await Promise.all([cosFetch("/api/kb"), cosFetch("/api/projects")]);
+  if (selected !== n) return;
+  const c = h.components || {}, sq = c.sqlite || {}, ol = c.ollama || {};
+  const kbs = (kbj && kbj.knowledge_bases) || [], prs = (pj && pj.projects) || [];
+  box.innerHTML = `<div class="chips"><span class="chip ${h.status === "healthy" ? "ok" : "warn"}">${esc(h.status)}</span><span class="chip">sqlite ${esc(sq.status || "?")} · tables ${esc(sq.tables ?? "?")}</span><span class="chip">ollama ${esc(ol.status || "?")} · models ${esc(ol.models_installed ?? "?")}</span><span class="chip">KB ${kbs.length}</span><span class="chip">프로젝트 ${prs.length}</span></div>`
+    + `<h4>PROJECTS</h4><ul>${prs.map(p => `<li>${esc(p.name)}<span class="s">${esc(p.path || "")}</span></li>`).join("") || "<li>없음</li>"}</ul>`
+    + `<h4>KNOWLEDGE BASES · ${kbs.length}</h4><ul>${kbs.map(k => `<li>${esc(k.name)}</li>`).join("")}</ul>`
+    + `<div class="src">실측 ${esc(h.timestamp || "")} · GET /health, /api/kb, /api/projects</div>` + btns;
+}
+$("#detail").addEventListener("click", e => { const g = e.target.closest("[data-cos-go]"); if (g) window.open(g.dataset.cosGo, "_blank", "noopener"); });
 
 /* ☰ MENU 배선 */
 const menuEl = $("#menu");

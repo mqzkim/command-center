@@ -233,6 +233,7 @@ const CC_DATA = {
         label: "APPLICATIONS", color: "#4da3ff",
         desc: "ARMS의 A — 에이전트가 손닿는 외부 앱·커넥터. 골드 링의 헥사곤이 개별 항목.",
         apps: [
+          { n: "Claude OS", d: "로컬 지식 허브 — API 8051 / UI 5173 / code-forge MCP. 프로젝트 command-center의 KB 4개(wiki 미러·프로젝트 레지스트리·기억). 상세는 런타임 /health 실측.", live: "claude-os" },
           { n: "Gmail", d: "claude.ai MCP 커넥터 — 받은편지함 스냅샷이 이 연결로 실측됨" },
           { n: "Calendar", d: "claude.ai MCP 커넥터 — 오늘 일정 위젯의 원천" },
           { n: "Drive", d: "claude.ai MCP 커넥터 — 파일 검색·공유" },
