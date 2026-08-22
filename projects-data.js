@@ -1,7 +1,7 @@
 // 자동 생성 — build-projects.mjs (로컬 클론 스캔 + projects-raw.json(gh) + .launch/launch-status.json + ~/.wiki 링크)
-// 생성: 2026-08-22 15:28Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
+// 생성: 2026-08-22 15:33Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
 const CC_PROJECTS = {
- "generatedAt": "2026-08-22 15:28Z",
+ "generatedAt": "2026-08-22 15:33Z",
  "roots": [
   "C:\\workspace",
   "C:\\Users\\my\\workspace"
@@ -68,6 +68,53 @@ const CC_PROJECTS = {
  },
  "items": [
   {
+   "name": "launch-deck",
+   "repo": "launch-deck",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/launch-deck.git",
+   "lang": null,
+   "branch": "main",
+   "dirty": 9,
+   "lastCommit": "2026-08-23",
+   "lastActivity": "2026-08-23",
+   "daysSince": 0,
+   "gh": {
+    "url": "https://github.com/mqzkim/launch-deck",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 0,
+    "commits30d": 1,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "docs: add launch-deck design spec (sections 1-5, approved 2026-08-22)"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "links": {
+    "local": "C:\\workspace\\launch-deck",
+    "github": "https://github.com/mqzkim/launch-deck",
+    "wiki": [
+     "concepts/standing-resolution-pattern.md",
+     "entities/agno-agentos.md",
+     "entities/launch-deck.md",
+     "internal/command-center-project-registry.md",
+     "_librarian/lint-queue.md"
+    ],
+    "launch": null,
+    "parent": null
+   }
+  },
+  {
    "name": "command-center",
    "repo": "command-center",
    "displayName": null,
@@ -81,7 +128,7 @@ const CC_PROJECTS = {
    "remote": "https://github.com/mqzkim/command-center.git",
    "lang": "JavaScript",
    "branch": "master",
-   "dirty": 5,
+   "dirty": 3,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
    "daysSince": 0,
@@ -233,53 +280,6 @@ const CC_PROJECTS = {
     "parent": null
    },
    "noLocal": true
-  },
-  {
-   "name": "launch-deck",
-   "repo": "launch-deck",
-   "displayName": null,
-   "desc": null,
-   "category": "side-project",
-   "significance": 4,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/launch-deck.git",
-   "lang": null,
-   "branch": "main",
-   "dirty": 24,
-   "lastCommit": "2026-08-22",
-   "lastActivity": "2026-08-22",
-   "daysSince": 1,
-   "gh": {
-    "url": "https://github.com/mqzkim/launch-deck",
-    "private": true,
-    "pushedAt": "2026-08-22",
-    "openIssues": 0,
-    "commits30d": 1,
-    "recent": [
-     {
-      "date": "2026-08-22",
-      "message": "docs: add launch-deck design spec (sections 1-5, approved 2026-08-22)"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": null,
-   "links": {
-    "local": "C:\\workspace\\launch-deck",
-    "github": "https://github.com/mqzkim/launch-deck",
-    "wiki": [
-     "concepts/standing-resolution-pattern.md",
-     "entities/agno-agentos.md",
-     "entities/launch-deck.md",
-     "internal/command-center-project-registry.md",
-     "_librarian/lint-queue.md"
-    ],
-    "launch": null,
-    "parent": null
-   }
   },
   {
    "name": "naeheunjeok",

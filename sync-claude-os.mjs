@@ -24,7 +24,12 @@ function docFor(p) {
   const ko = (s) => stageKo[s] || s;
   L.push(`# ${p.name}`);
   if (p.displayName || t?.displayName) L.push(`displayName: ${p.displayName || t.displayName}`);
-  // 검색 품질용 한 줄 요약(한국어): 프로젝트명 + 현재 단계 + 블로커 수를 첫 청크에 포함
+  // 검색 품질용: 대시보드가 던지는 질의 형태("<name> 블로커", "<name> 단계")를 키워드 줄로 첫 청크에 포함
+  const kw = [`${p.name} 프로젝트`, `${p.name} 상태`];
+  if (t) kw.push(`${p.name} 블로커`, `${p.name} 단계`, `${p.name} 앱인토스`, `앱인토스 ${ko(t.stage)} 단계`, `apps-in-toss ${t.stage}`);
+  if (p.displayName || t?.displayName) kw.push(`${p.displayName || t.displayName} 블로커`);
+  L.push(`keywords: ${kw.join(', ')}`);
+  // 한 줄 요약(한국어): 프로젝트명 + 현재 단계 + 블로커 수
   if (t) {
     const nb = t.blockersOpen ?? t.blockers?.length ?? 0;
     L.push(`summary: ${p.name}은(는) 앱인토스(Apps in Toss) 앱, 현재 ${ko(t.stage)}(${t.stage}) 단계. ${nb ? `${p.name} 블로커 ${nb}건 열림.` : '블로커 없음.'}${t.nextCheck ? ` 다음 점검: ${ko(t.nextCheck)}(${t.nextCheck}).` : ''}`);
@@ -35,6 +40,7 @@ function docFor(p) {
   L.push(`stage: ${stage}${stageKo[stage] ? ` (${stageKo[stage]})` : ''}`);
   L.push(`nextCheck: ${t?.nextCheck ? `${t.nextCheck}${stageKo[t.nextCheck] ? ` (${stageKo[t.nextCheck]})` : ''}` : 'n/a'}`);
   L.push(`blockers: ${t?.blockers?.length ? `${t.blockersOpen ?? t.blockers.length} open / ${t.blockersTotal ?? t.blockers.length} total — ${t.blockers.join(' | ')}` : 'none'}`);
+  L.push(''); // 청크 경계: 첫 청크는 이름·요약·단계·블로커만 담아 검색 신호를 집중
   L.push(`lastActivity: ${p.lastActivity || 'unknown'}`);
   L.push(`lastCommit: ${p.lastCommit || 'unknown'}`);
   L.push(`branch: ${p.branch || 'n/a'} (dirty files: ${p.dirty ?? 0})`);

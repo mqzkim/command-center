@@ -14,3 +14,18 @@ progress 200/565
 progress 250/565
 ERROR upsert entities/ai-benchmark-repos/ruvnet__ruflo.md (3210 bytes): fetch failed
 progress 300/565
+progress 350/565
+ERROR upsert entities/youtube.md (2075 bytes): fetch failed
+ERROR upsert internal/ai-benchmark-harness-repo-index.md (14890 bytes): fetch failed
+ERROR upsert internal/command-center-project-registry.md (7686 bytes): fetch failed
+progress 400/565
+ERROR upsert internal/issue-sync.md (1931 bytes): fetch failed
+ERROR upsert internal/workspace-summary.md (9940 bytes): fetch failed
+ERROR upsert log.md (136800 bytes): fetch failed
+ERROR upsert raw/2026-04-14-agentic-rag-landscape.md (35797 bytes): fetch failed
+ERROR upsert ref/deep-update-workflow.md (3538 bytes): fetch failed
+ERROR upsert research/dark-factory-critique-terzian.md (1775 bytes): fetch failed
+progress 450/565
+ERROR upsert research/harness-gitness.md (2776 bytes): fetch failed
+ERROR upsert research/lm-evaluation-harness.md (2886 bytes): fetch failed
+ERROR upsert src/src/raw/KoreaDrop Dev-2026-04-07T05-15-15-884Z.md (2113 bytes): fetch failed
