@@ -6,7 +6,7 @@
   {
    "date": "2026-08-23",
    "improvement": "trends.mjs dedup 의미론 수정 — 스캔이 seenRepos를 소비하지 않음(후보 82건 복원, 유실 57건 회수), 캡 25→60, CANDIDATES_EXHAUSTED 경고, evolve.md §3 검토→seenRepos 규칙",
-   "commit": null,
+   "commit": "13fb088",
    "gates": "4/4"
   }
  ],
