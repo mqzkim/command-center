@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Command Center — 김진규</title>
+<script src="data.js"></script>
+<script src="galaxy-data.js"></script> <!-- 전 점 실명 목록 (build-galaxy.mjs 생성) -->
+<script src="projects-data.js"></script> <!-- 프로젝트 레지스트리 (build-projects.mjs 생성) -->
+<style>
+/* ============================================================
+   COMMAND CENTER v3 — 비주얼 세컨드 브레인 (갤럭시 뷰)
+   중심 CLAUDE.MD · SKILLS 링 · 위키 섹터 나선 · 궤도 링(MEMORY/
+   ROUTINES/APPLICATIONS). 데이터는 전부 CC_DATA(data.js).
+   자족형: 외부 리소스 0. 캔버스 2D + DOM 패널.
+   ============================================================ */
+:root {
+  --bg: #0b0812; --panel: #14101d; --panel-2: #1b1626; --line: #2a2338;
+  --text: #eae6f2; --muted: #8d86a0; --dim: #5a5470;
+  --orange: #ff7a1a; --violet: #9d7bff; --blue: #4da3ff;
+  --mono: "Cascadia Code", Consolas, monospace;
+  --sans: "Segoe UI Variable Text", "Segoe UI", "Malgun Gothic", sans-serif;
+}
+/* 이 뷰는 다크 네이티브. 라이트 모드에서는 UI 패널만 밝게 보정. */
+@media (prefers-color-scheme: light) {
+  :root { --panel: #1a1526; --panel-2: #241d33; --line: #37304a; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; overflow: hidden; }
+body { background: var(--bg); color: var(--text); font-family: var(--sans); }
+#space { position: fixed; inset: 0; display: block; cursor: grab; }
+#space.drag { cursor: grabbing; }
+
+/* ---- 상단 좌측 브랜드 ---- */
+.brand {
+  position: fixed; top: 16px; left: 20px; z-index: 20;
+  display: flex; align-items: center; gap: 10px; pointer-events: none;
+}
+.brand .hex { width: 26px; height: 26px; }
+.brand b { font-size: 13px; letter-spacing: .28em; font-weight: 600; }
+.brand small { display: block; font-family: var(--mono); font-size: 9.5px; color: var(--muted); letter-spacing: .1em; }
+
+/* ---- 상단 우측: 검색 + 메뉴 ---- */
+.hud { position: fixed; top: 14px; right: 16px; z-index: 20; display: flex; gap: 8px; }
+.hud input {
+  width: 220px; background: var(--panel); border: 1px solid var(--line); color: var(--text);
+  font: 12.5px var(--mono); padding: 8px 12px; border-radius: 8px; outline: none;
+}
+.hud input:focus { border-color: var(--orange); }
+.hud button {
+  background: var(--panel); border: 1px solid var(--line); color: var(--muted);
+  font: 600 11px var(--sans); letter-spacing: .12em; padding: 8px 14px; border-radius: 8px; cursor: pointer;
+}
+.hud button:hover { color: var(--text); border-color: var(--orange); }
+
+/* ---- 우측 상세 패널 ---- */
+#detail {
+  position: fixed; top: 0; right: 0; bottom: 0; width: 340px; z-index: 30;
+  background: color-mix(in oklab, var(--panel) 92%, transparent);
+  backdrop-filter: blur(8px); border-left: 1px solid var(--line);
+  padding: 22px; transform: translateX(105%); transition: transform .22s ease;
+  overflow-y: auto;
+}
+#detail.open { transform: none; }
+#detail .kind { font: 600 10px var(--mono); letter-spacing: .22em; margin-bottom: 8px; }
+#detail h3 { font-size: 18px; letter-spacing: -.01em; margin-bottom: 4px; }
+#detail .path { font: 11px var(--mono); color: var(--muted); word-break: break-all; margin-bottom: 14px; }
+#detail p { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 16px; white-space: pre-line; }
+#detail .row { display: flex; gap: 8px; }
+#detail button, .drawer .act {
+  background: var(--panel-2); border: 1px solid var(--line); color: var(--text);
+  font: 550 12px var(--sans); padding: 8px 14px; border-radius: 8px; cursor: pointer;
+}
+#detail button:hover, .drawer .act:hover { border-color: var(--orange); color: var(--orange); }
+#detail .close { position: absolute; top: 14px; right: 14px; border: 0; background: none; color: var(--muted); font-size: 16px; }
+
+/* ---- 좌측 브리핑 드로어 ---- */
+#briefBtn {
+  position: fixed; bottom: 18px; left: 20px; z-index: 20;
+  background: var(--panel); border: 1px solid var(--line); color: var(--text);
+  font: 600 11.5px var(--sans); letter-spacing: .1em; padding: 10px 16px; border-radius: 10px; cursor: pointer;
+}
+#briefBtn:hover { border-color: var(--orange); }
+.drawer {
+  position: fixed; top: 0; left: 0; bottom: 0; width: 360px; z-index: 30;
+  background: color-mix(in oklab, var(--panel) 94%, transparent);
+  backdrop-filter: blur(8px); border-right: 1px solid var(--line);
+  padding: 20px 22px; transform: translateX(-105%); transition: transform .22s ease; overflow-y: auto;
+}
+.drawer.open { transform: none; }
+.drawer h2 { font: 600 11px var(--mono); letter-spacing: .24em; color: var(--orange); margin: 18px 0 8px; }
+.drawer h2:first-of-type { margin-top: 6px; }
+.drawer li { list-style: none; padding: 7px 0; border-top: 1px solid var(--line); font-size: 13px; }
+.drawer li:first-child { border-top: 0; }
+.drawer .s { font: 11px var(--mono); color: var(--muted); display: block; margin-top: 1px; }
+.drawer .why { font-size: 11.5px; color: var(--orange); display: block; }
+.drawer .acts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.drawer .close { position: absolute; top: 12px; right: 14px; border: 0; background: none; color: var(--muted); font-size: 16px; cursor: pointer; }
+.drawer .meta { font: 10.5px var(--mono); color: var(--dim); margin-top: 16px; }
+
+/* ---- 하단 KPI 스트립 ---- */
+.kpis {
+  position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); z-index: 20;
+  display: flex; gap: 1px; background: var(--line); border: 1px solid var(--line);
+  border-radius: 12px; overflow: hidden;
+}
+.kpi { background: var(--panel); padding: 8px 18px; text-align: center; }
+.kpi .n { font: 650 17px var(--mono); }
+.kpi .n.warn { color: var(--orange); }
+.kpi .l { font-size: 9.5px; color: var(--muted); letter-spacing: .08em; }
+
+/* ---- 툴팁 / 토스트 ---- */
+#tip {
+  position: fixed; z-index: 40; pointer-events: none; opacity: 0;
+  background: var(--panel-2); border: 1px solid var(--line); border-radius: 7px;
+  padding: 5px 10px; font: 11.5px var(--mono); color: var(--text); white-space: nowrap;
+  transition: opacity .1s;
+}
+#toast {
+  position: fixed; bottom: 70px; left: 50%; transform: translate(-50%, 12px); z-index: 50;
+  background: var(--panel); border: 1px solid var(--orange); border-radius: 10px;
+  padding: 9px 16px; font-size: 12.5px; opacity: 0; pointer-events: none; transition: .2s;
+}
+#toast.show { opacity: 1; transform: translate(-50%, 0); }
+#toast b { color: var(--orange); }
+/* ---- PROJECTS 뷰 (토스 블루 계열) ---- */
+:root { --toss: #3b8cff; --toss-deep: #0064FF; --mint: #2ee6a8; --gold: #ffd23e; }
+.hud button.on { color: #fff; border-color: var(--toss); background: #14305e; }
+#detail { width: 380px; }
+#detail .extra { font-size: 12px; color: var(--muted); }
+#detail .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+#detail .chip { font: 11px var(--mono); padding: 3px 8px; border: 1px solid var(--line); border-radius: 999px; color: var(--text); }
+#detail .chip.toss { border-color: var(--toss); color: #8ab8ff; }
+#detail .chip.warn { border-color: var(--orange); color: var(--orange); }
+#detail .chip.ok { border-color: var(--mint); color: var(--mint); }
+#detail .chip.gold { border-color: var(--gold); color: var(--gold); }
+#detail .pipe { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; margin: 0 0 12px; }
+#detail .pipe div { height: 20px; border-radius: 4px; background: var(--panel-2); border: 1px solid var(--line); font: 8.5px var(--mono);
+  display: flex; align-items: center; justify-content: center; color: var(--dim); overflow: hidden; white-space: nowrap; padding: 0 2px; }
+#detail .pipe .pass { background: #123b2e; border-color: var(--mint); color: var(--mint); }
+#detail .pipe .blocked { background: #3a1f10; border-color: var(--orange); color: var(--orange); }
+#detail .pipe .next { border-color: var(--toss); color: #8ab8ff; box-shadow: 0 0 6px var(--toss); }
+#detail h4 { font: 600 10px var(--mono); letter-spacing: .2em; color: var(--muted); margin: 12px 0 6px; }
+#detail ul { list-style: none; }
+#detail li { font-size: 12px; line-height: 1.5; padding: 4px 0; border-top: 1px solid var(--line); color: var(--text); }
+#detail li .s { font: 10.5px var(--mono); color: var(--muted); display: block; }
+#detail li.warn::before { content: "▲ "; color: var(--orange); }
+#detail a { color: #8ab8ff; text-decoration: none; word-break: break-all; }
+#detail a:hover { text-decoration: underline; }
+#detail .src { font: 10px var(--mono); color: var(--dim); margin-top: 14px; word-break: break-all; }
+.drawer h2.toss { color: var(--toss); }
+.drawer .stg { display: flex; gap: 6px; flex-wrap: wrap; margin: 3px 0 2px; }
+.drawer .pj { font: 11px var(--mono); padding: 2px 7px; border: 1px solid #3b8cff66; border-radius: 6px; color: #8ab8ff; cursor: pointer; background: none; }
+.drawer .pj:hover { border-color: var(--toss); color: #fff; }
+.drawer .pj.warn { border-color: #ff7a1a88; color: var(--orange); }
+.drawer .pj.rel { border-color: #ffd23e88; color: var(--gold); }
+.drawer .pj.unv { border-style: dashed; border-color: #7f8db0; color: #9aa6c4; }
+.drawer .pj i { font-style: normal; opacity: .7; }
+/* ---- 검색 결과 드롭다운 ---- */
+.searchWrap { position: relative; }
+#searchResults {
+  position: absolute; top: 38px; right: 0; width: 320px; max-height: 380px; overflow-y: auto;
+  background: color-mix(in oklab, var(--panel) 96%, transparent); backdrop-filter: blur(8px);
+  border: 1px solid var(--line); border-radius: 10px; display: none; z-index: 45;
+}
+#searchResults.show { display: block; }
+#searchResults .sr {
+  display: flex; align-items: center; gap: 9px; padding: 8px 12px; cursor: pointer;
+  border-top: 1px solid var(--line); font-size: 12.5px;
+}
+#searchResults .sr:first-child { border-top: 0; }
+#searchResults .sr:hover { background: var(--panel-2); }
+#searchResults .sr .dot2 { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+#searchResults .sr .nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#searchResults .sr .pp { font: 10px var(--mono); color: var(--dim); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ---- ☰ MENU 설정 패널 ---- */
+#menu {
+  position: fixed; top: 58px; right: 16px; width: 250px; z-index: 44;
+  background: color-mix(in oklab, var(--panel) 96%, transparent); backdrop-filter: blur(8px);
+  border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: none;
+}
+#menu.show { display: block; }
+#menu label { display: flex; justify-content: space-between; align-items: center; font: 11px var(--mono); color: var(--muted); margin: 10px 0 4px; }
+#menu label b { color: var(--orange); font-weight: 600; }
+#menu input[type=range] { width: 100%; accent-color: var(--orange); }
+#menu .chk { display: flex; align-items: center; gap: 8px; margin: 12px 0; font-size: 12.5px; }
+#menu .chk input { accent-color: var(--orange); }
+#menu .mrow { display: flex; gap: 8px; margin-top: 12px; }
+#menu .mrow button { flex: 1; background: var(--panel-2); border: 1px solid var(--line); color: var(--text); font: 550 11.5px var(--sans); padding: 7px 0; border-radius: 8px; cursor: pointer; }
+#menu .mrow button:hover { border-color: var(--orange); color: var(--orange); }
+
+/* ---- 문서 본문 뷰어 ---- */
+#detail .doc { border-top: 1px solid var(--line); margin-top: 14px; padding-top: 12px; font-size: 12.5px; line-height: 1.65; color: var(--text); }
+#detail .doc h1, #detail .doc h2, #detail .doc h3 { font-size: 13.5px; margin: 14px 0 6px; color: var(--orange); }
+#detail .doc h1 { font-size: 15px; }
+#detail .doc p { white-space: normal; margin-bottom: 8px; color: var(--text); }
+#detail .doc ul, #detail .doc ol { padding-left: 18px; margin-bottom: 8px; }
+#detail .doc li { margin: 2px 0; }
+#detail .doc code { font: 11px var(--mono); background: var(--panel-2); padding: 1px 5px; border-radius: 4px; }
+#detail .doc pre { background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 10px; overflow-x: auto; margin-bottom: 8px; }
+#detail .doc pre code { background: none; padding: 0; }
+#detail .doc blockquote { border-left: 3px solid var(--violet); padding-left: 10px; color: var(--muted); margin-bottom: 8px; }
+#detail .doc hr { border: 0; border-top: 1px solid var(--line); margin: 10px 0; }
+#detail .doc table { border-collapse: collapse; font-size: 11.5px; margin-bottom: 8px; display: block; overflow-x: auto; }
+#detail .doc td, #detail .doc th { border: 1px solid var(--line); padding: 3px 8px; }
+#detail .loading { color: var(--dim); font: 11px var(--mono); padding: 10px 0; }
+
+.kpis { cursor: pointer; }
+.kpis:hover { border-color: var(--orange); }
+@media (max-width: 760px) { .hud input { width: 130px; } #detail, .drawer { width: 88vw; } #searchResults { width: 78vw; } }
+</style>
+</head>
+<body>
+<canvas id="space"></canvas>
+
+<div class="brand">
+  <svg class="hex" viewBox="0 0 48 48" fill="none" stroke="#ff7a1a" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M24 6l18 10v16L24 42 6 32V16Z"/><path d="M6 16l18 10 18-10" opacity=".6"/><path d="M24 26v16" opacity=".6"/>
+  </svg>
+  <b>COMMAND CENTER<small id="brandSub"></small></b>
+</div>
+
+<div class="hud">
+  <div class="searchWrap">
+    <input id="search" type="search" placeholder="search nodes…" autocomplete="off">
+    <div id="searchResults"></div>
+  </div>
+  <button id="viewToggle" type="button" title="갤럭시 ↔ 프로젝트 뷰 전환">▦ PROJECTS</button>
+  <button id="menuBtn" type="button">☰ MENU</button>
+  <button id="resetView" type="button">RESET</button>
+</div>
+
+<div id="menu">
+  <label>RING SPIN <b id="vSpin"></b></label>
+  <input type="range" id="sSpin" min="0" max="3" step="0.1">
+  <label>NODE SIZE <b id="vDot"></b></label>
+  <input type="range" id="sDot" min="0.5" max="2" step="0.05">
+  <label>LINK WEB <b id="vLinks"></b></label>
+  <input type="range" id="sLinks" min="0" max="3" step="0.1">
+  <div class="chk"><input type="checkbox" id="sNames"><label for="sNames" style="margin:0">File names — 전 노드 라벨 상시 표시</label></div>
+  <div class="mrow"><button id="bakeBtn" type="button">Bake settings</button><button id="defBtn" type="button">Defaults</button></div>
+</div>
+
+<aside id="detail">
+  <button class="close" type="button" aria-label="닫기">✕</button>
+  <div class="kind"></div><h3></h3><div class="path"></div><p></p>
+  <div class="row"><button id="copyPath" type="button">Copy path</button><button id="openRaw" type="button">원문 보기</button><button id="openGh" type="button">GitHub 열기</button><button id="copyPrompt" type="button">Claude Code로 이어서</button></div>
+  <div class="extra"></div>
+</aside>
+
+<button id="briefBtn" type="button">☰ 오늘의 브리핑</button>
+<aside class="drawer" id="drawer">
+  <button class="close" type="button" aria-label="닫기">✕</button>
+  <div id="drawerBody"></div>
+</aside>
+
+<div class="kpis" id="kpis"></div>
+<div id="tip"></div>
+<div id="toast"></div>
+
+<script>
+"use strict";
+/* 런타임 에러 카운터 — 헤드리스 --dump-dom 검증용 (body[data-errors]) */
+addEventListener("error", e => { document.body.dataset.errors = (+(document.body.dataset.errors || 0)) + 1; document.body.dataset.lastError = String(e.message).slice(0, 200); });
+const D = CC_DATA;
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+$("#brandSub").textContent = D.meta.owner + " · " + D.meta.lastUpdated;
+
+/* ═══════════════ 모델: CC_DATA → 노드(정적 극좌표) ═══════════════ */
+const G = D.galaxy;
+const TAU = Math.PI * 2;
+const nodes = [];   // {ring, r, a, size, color, label, kind, desc, path, glow}
+const labels = [];  // 항상 그리는 텍스트 {ring, r, a, text, color, size, ls}
+
+/* 중심 */
+nodes.push({ ring: "center", r: 0, a: 0, size: 17, color: "#ff7a1a", label: G.center.label,
+  kind: "CENTER", path: G.center.path, glow: 26,
+  desc: G.center.desc || "모든 에이전트가 읽는 마스터 라우터. 워크스페이스의 항성." });
+
+/* SKILLS — 주황 스파크 3중 링 */
+G.skills.items.forEach((sk, i) => {
+  const ring = i % 3, per = Math.ceil(G.skills.items.length / 3);
+  const name = sk.n || sk;
+  nodes.push({ ring: "skills", r: 74 + ring * 15, a: ((i / 3) | 0) / per * TAU + ring * 0.35,
+    size: 3.4, color: "#ff7a1a", label: name, kind: "SKILL", spark: true, glow: 8,
+    path: sk.p || null,
+    desc: (sk.d ? sk.d + " — " : "") + `호출: Skill 도구 또는 /${name.split(":").pop()}` });
+});
+labels.push({ ring: "skills", r: 122, a: -TAU / 4, text: "SKILLS", color: "#ff7a1a", size: 15, ls: 4 });
+
+/* 위키 섹터 — 동심 점 나선 */
+const NS = G.sectors.length, SPAN = TAU / NS * 0.8;
+const ITEMS = typeof CC_GALAXY_ITEMS !== "undefined" ? CC_GALAXY_ITEMS : {};
+G.sectors.forEach((sec, si) => {
+  const ac = si / NS * TAU - TAU / 4 + TAU / NS / 2;
+  /* 실명 목록(디스크 스캔)이 있으면 전 점 실명 + 실측 count 갱신, 없으면 대표 실명만 */
+  const items = ITEMS[sec.name] || null;
+  const total = items ? items.length : sec.count;
+  sec.count = total;
+  let placed = 0, row = 0;
+  while (placed < total && row < 16) {
+    const r = 152 + row * 15.5;
+    const cap = Math.max(4, Math.floor(SPAN * r / 13));
+    const take = Math.min(cap, total - placed);
+    for (let j = 0; j < take; j++) {
+      const a = ac - SPAN / 2 + (j + 0.5) / cap * SPAN;
+      const it = items ? items[placed] : null;
+      /* PROJECTS 등 스캔 밖 섹터는 D.projects 실측 설명으로 폴백 */
+      const proj = !it && sec.name === "PROJECTS" ? D.projects[placed] : null;
+      const named = it ? it.t : (proj ? proj.name : (sec.named[placed] || null));
+      nodes.push({ ring: "sector", r, a, size: Math.max(1.6, 4.6 - row * 0.28), color: sec.color,
+        label: named, kind: named ? "DOC" : null, sector: sec.name, glow: named ? 8 : 5,
+        rel: it ? it.p : null,
+        path: it ? "~/.wiki/" + it.p : (proj ? proj.path : (named ? sec.root : null)),
+        desc: it
+          ? (it.d ? it.d + "\n\n" : "") + `수정 ${it.m} · ${it.s}KB · ${it.p}`
+          : (proj ? proj.desc + ` (status: ${proj.status})` : (named ? `${sec.name} 문서.` : null)) });
+      placed++;
+    }
+    row++;
+  }
+  if (placed < total) console.warn(sec.name, "미배치", total - placed);
+  /* 카테고리 노드 + 라벨 + 총계 (+최근 변경 top3) */
+  const recent = items
+    ? [...items].sort((a, b) => b.m.localeCompare(a.m)).slice(0, 3).map(x => `· ${x.m} ${x.t}`).join("\n")
+    : "";
+  nodes.push({ ring: "sector", r: 137, a: ac, size: 9, color: sec.color, label: sec.name,
+    kind: "CATEGORY", path: sec.root, glow: 16,
+    desc: `${sec.name} — ${sec.count}건 (디스크 실측). 모든 점이 실명 문서.`
+      + (recent ? `\n\n최근 변경:\n${recent}` : "") });
+  labels.push({ ring: "sector", r: 137, a: ac, text: sec.name, color: sec.color, size: 10, ls: 2, dy: -20 });
+  labels.push({ ring: "sector", r: 152 + Math.min(13, Math.ceil(sec.count / 24)) * 15.5 + 24, a: ac,
+    text: String(sec.count), color: sec.color, size: 13, ls: 1, mono: true });
+});
+
+/* 궤도 링 + 라벨 (위쪽 스택) — 라벨 자체가 클릭 노드 */
+const ORBITS = [370, 402, 434];
+G.orbits.forEach((o, i) => {
+  labels.push({ ring: "orbit", r: ORBITS[i], a: -TAU / 4, text: o.label, color: o.color, size: 13, ls: 5 });
+  const itemLines = (o.items || []).map(it => `· ${it.n} — ${it.d}`).join("\n");
+  nodes.push({ ring: "orbitLabel", r: ORBITS[i], a: -TAU / 4, size: 0.1, color: o.color,
+    label: o.label, kind: "ORBIT", invisible: true, pickR: 46, path: o.path || null,
+    desc: o.desc + (itemLines ? "\n" + itemLines : "") });
+});
+/* APPLICATIONS 헥사곤 아이콘 — 최외곽 골드 링 */
+const apps = G.orbits[2].apps || [];
+apps.forEach((app, i) => {
+  nodes.push({ ring: "apps", r: 434, a: i / apps.length * TAU + 0.35, size: 11, color: "#e8b04b",
+    label: app.n || app, kind: "APP", hexa: true, glow: 12,
+    desc: (app.d || "연결된 애플리케이션/커넥터.") + "\n(APPLICATIONS 궤도 소속)" });
+});
+/* ROUTINES 항목 */
+(G.orbits[1].items || []).forEach((it, i) => {
+  nodes.push({ ring: "apps", r: 402, a: 0.9 + i * 0.5, size: 6, color: "#c86ae0", label: it.n || it,
+    kind: "ROUTINE", glow: 10, path: it.p || null,
+    desc: (it.d || "") + "\n(ROUTINES 궤도 소속 — 시작프로그램 실측)" });
+});
+
+/* 링크 웹 — 중심→카테고리, 카테고리→일부 점 (결정적 의사난수) */
+const links = [];
+const cats = nodes.filter(n => n.kind === "CATEGORY");
+cats.forEach(c => links.push([nodes[0], c]));
+let seed = 7;
+const rnd = () => (seed = seed * 16807 % 2147483647) / 2147483647;
+nodes.filter(n => n.ring === "sector" && !n.kind).forEach(n => {
+  if (rnd() < 0.06) { const c = cats.find(c => c.label === n.sector); if (c) links.push([c, n]); }
+});
+
+/* ═══════════════ PROJECTS 뷰 모델 (CC_PROJECTS → 노드) ═══════════════ */
+const GALAXY = { nodes: nodes.slice(), labels: labels.slice(), links: links.slice() };
+const PJ = typeof CC_PROJECTS !== "undefined" ? CC_PROJECTS : { items: [], stages: [], stageKo: {}, summary: {}, generatedAt: "?" };
+const PV = { nodes: [], labels: [], links: [] };
+const TOSS = "#3b8cff", TOSS_DEEP = "#0064FF", MINT = "#2ee6a8", GOLD = "#ffd23e";
+const STAGE_R = 196;                       /* 앱인토스 단계 링 반경 (두 줄 스택 시 +52) */
+const CAT_RING = {                          /* 바깥 카테고리 링 */
+  "harness-ai-infra": { c: "#9d7bff", r: 332 }, "knowledge-wiki": { c: "#e05fe0", r: 332 },
+  "side-project": { c: "#35c9f0", r: 376 }, "landing-docs": { c: "#35c9f0", r: 376 },
+  legacy: { c: "#5a5470", r: 424 }, reference: { c: "#3a3550", r: 424 },
+};
+const RING_LABEL = [["HARNESS · AI INFRA · WIKI", 332, "#9d7bff"], ["SIDE PROJECTS · DOCS", 376, "#35c9f0"], ["LEGACY · ARCHIVED", 424, "#6a6480"]];
+const PVIS = PJ.items.filter(p => !p.hidden);
+const pjLabel = p => p.displayName || p.name;
+const pjName2node = {};
+(function buildProjects() {
+  const S = PJ.summary || {};
+  PV.nodes.push({ ring: "center", r: 0, a: 0, size: 17, color: TOSS_DEEP, label: "mqzkim", kind: "HUB", glow: 26,
+    path: "https://github.com/mqzkim",
+    desc: `GitHub mqzkim — 프로젝트 허브.\n· 가시 프로젝트 ${S.total ?? "?"} (숨김 ${S.hidden ?? 0}: 스캐폴드·서드파티 레퍼런스)\n· 앱인토스 ${S.toss ?? "?"} (launch-status 실측 ${S.tossFromLaunchStatus ?? "?"}) · 블로커 보유 ${S.tossWithBlockers ?? "?"}\n· 30일 활성 ${S.active30d ?? "?"} · 로컬 dirty ${S.dirty ?? "?"}\n원천: projects-data.js (build-projects.mjs, ${PJ.generatedAt})` });
+  /* 앱인토스 — 단계 링. 각 단계에 각도 슬롯, 같은 단계는 반경/각도로 스택 */
+  const ST = PJ.stages || [];
+  const GAP = 0.55, A0 = -TAU / 4 + GAP / 2;
+  const toss = PVIS.filter(p => p.category === "apps-in-toss").sort((a, b) => (b.significance - a.significance) || ((b.lastActivity || "") > (a.lastActivity || "") ? 1 : -1));
+  /* 단계별 각도 슬롯 — 프로젝트 수에 비례 배분(빈 단계는 좁게) → 같은 단계 노드가 호를 따라 퍼짐 */
+  const cnt = ST.map(s => toss.filter(p => p.toss.stage === s).length);
+  const w = cnt.map(c => 0.3 + c), wsum = w.reduce((a, b) => a + b, 0);
+  const slot = []; let acc = A0;
+  w.forEach(x => { const span = x / wsum * (TAU - GAP); slot.push({ a0: acc, a1: acc + span, mid: acc + span / 2 }); acc += span; });
+  PJ._slots = slot;
+  const seen = {};
+  /* 단계 미확정(launch-status.json 없음) — 링 위 상단 빈 틈(gap)에 점선 노드로 따로 둔다. 추정해서 단계에 끼워넣지 않음 */
+  const unv = toss.filter(p => ST.indexOf(p.toss.stage) < 0);
+  unv.forEach((p, k) => {
+    const a = -TAU / 4 + (k - (unv.length - 1) / 2) * 0.16;
+    const node = { ring: "toss", r: STAGE_R + 26, a, size: 7 + p.significance, color: "#7f8db0", glow: 6, dashed: true,
+      label: pjLabel(p), kind: "PROJECT", p, always: true, side: true, warn: false, path: p.links.local || p.links.github || "", desc: "" };
+    PV.nodes.push(node); pjName2node[p.name] = node;
+    PV.links.push([PV.nodes[0], node]);
+  });
+  if (unv.length) PV.labels.push({ ring: "toss", r: STAGE_R - 52, a: -TAU / 4, text: `미확정 ${unv.length}`, color: "#7f8db0", size: 10, ls: 0 });
+  toss.filter(p => ST.indexOf(p.toss.stage) >= 0).forEach(p => {
+    const si = ST.indexOf(p.toss.stage);
+    const k = seen[si] = (seen[si] || 0); seen[si]++;
+    const n = cnt[si], sl = slot[si];
+    const inner = sl.a0 + (sl.a1 - sl.a0) * 0.12, outer = sl.a1 - (sl.a1 - sl.a0) * 0.12;
+    const a = n === 1 ? sl.mid : inner + (k / (n - 1)) * (outer - inner);
+    const dr = n >= 3 ? (k % 2 ? 52 : 0) : 0;            /* 3개 이상이면 안·밖 두 줄로 */
+    const released = p.toss.stage === "released", warn = p.toss.blockersOpen > 0;
+    const node = { ring: "toss", r: STAGE_R + dr, a, size: 7.5 + p.significance * 1.1,
+      color: released ? GOLD : TOSS, glow: released ? 18 : 14, label: pjLabel(p), kind: "PROJECT", p, always: true, side: true,
+      warn, path: p.links.local || p.links.github || "", desc: "" };
+    PV.nodes.push(node); pjName2node[p.name] = node;
+    PV.links.push([PV.nodes[0], node]);
+  });
+  /* 서브앱 → 부모 모노레포 링크 */
+  toss.forEach(p => { if (p.links.parent && pjName2node[p.links.parent]) PV.links.push([pjName2node[p.links.parent], pjName2node[p.name]]); });
+  /* 단계 라벨 (링 안쪽) — 프로젝트가 있는 단계는 밝게 */
+  let emptyK = 0;
+  ST.forEach((s, i) => {
+    const n = cnt[i];
+    /* 빈 단계는 좁은 슬롯이라 안/더 안쪽 두 반경을 번갈아 써 겹침 방지 */
+    const r = n ? STAGE_R - 52 : (emptyK++ % 2 ? STAGE_R - 70 : STAGE_R - 52);
+    PV.labels.push({ ring: "toss", r, a: slot[i].mid, text: (PJ.stageKo[s] || s) + (n ? " " + n : ""), color: n ? "#8ab8ff" : "#3d4f77", size: n ? 10 : 8, ls: 0 });
+  });
+  /* 타이틀은 링 바깥 상단(두 줄 스택·부채꼴 바깥, 카테고리 링 안쪽) */
+  PV.labels.push({ ring: "toss", r: STAGE_R + 98, a: -TAU / 4, text: "APPS IN TOSS", color: TOSS, size: 14, ls: 5 });
+  PV.labels.push({ ring: "toss", r: STAGE_R + 98, a: -TAU / 4, text: `${toss.length} apps · ${toss.filter(p => p.toss.blockersOpen > 0).length} blocked · ${toss.filter(p => p.toss.stage === "released").length} released${unv.length ? ` · ${unv.length} unverified` : ""}`, color: "#5f79a8", size: 9, ls: 1, dy: 16, mono: true });
+  /* 바깥 링 — 카테고리별 */
+  const rings = {};
+  PVIS.filter(p => p.category !== "apps-in-toss").forEach(p => { const cr = CAT_RING[p.category] || CAT_RING["side-project"]; (rings[cr.r] = rings[cr.r] || []).push(p); });
+  Object.entries(rings).forEach(([r, arr]) => {
+    arr.sort((a, b) => b.significance - a.significance);
+    arr.forEach((p, i) => {
+      const cr = CAT_RING[p.category] || CAT_RING["side-project"];
+      const n = { ring: "pouter", r: +r, a: -TAU / 4 + 0.22 + (i + 0.5) / arr.length * (TAU - 0.44), size: p.category === "legacy" ? 2.6 : 3.6 + p.significance * 0.7,
+        color: cr.c, glow: p.category === "legacy" ? 3 : 8, label: pjLabel(p), kind: "PROJECT", p, always: p.significance >= 3,
+        warn: p.dirty > 0 && p.category !== "legacy", path: p.links.local || p.links.github || "", desc: "" };
+      PV.nodes.push(n); pjName2node[p.name] = n;
+    });
+  });
+  RING_LABEL.forEach(([t, r, c]) => PV.labels.push({ ring: "pouter-label", r, a: -TAU / 4, text: t, color: c, size: 10, ls: 3 }));
+})();
+
+/* 뷰 전환 — 렌더러는 nodes/labels/links 배열만 보므로 내용을 교체 */
+let viewMode = "galaxy";
+function setView(m) {
+  viewMode = m;
+  const src = m === "projects" ? PV : GALAXY;
+  nodes.length = 0; nodes.push(...src.nodes);
+  labels.length = 0; labels.push(...src.labels);
+  links.length = 0; links.push(...src.links);
+  const b = $("#viewToggle"); b.textContent = m === "projects" ? "◉ GALAXY" : "▦ PROJECTS"; b.classList.toggle("on", m === "projects");
+  closeDetail(); hover = null;
+  document.title = (m === "projects" ? "Projects — " : "Command Center — ") + D.meta.owner;
+}
+
+/* ═══════════════ 렌더러 ═══════════════ */
+const cv = $("#space"), ctx = cv.getContext("2d");
+let W, H, dpr;
+function resize() {
+  dpr = Math.min(devicePixelRatio || 1, 2);
+  W = innerWidth; H = innerHeight;
+  cv.width = W * dpr; cv.height = H * dpr;
+}
+resize(); addEventListener("resize", resize);
+
+let zoom = Math.min(innerHeight, innerWidth) / 980, panX = 0, panY = 0;
+const baseZoom = zoom;
+let hover = null, selected = null, query = "";
+
+const SPIN = { skills: 0.05, sector: -0.012, apps: 0.008, orbit: 0.008, center: 0, toss: 0, pouter: 0.004 };
+/* ☰ MENU 설정 — Bake 시 localStorage 저장, 로드 시 복원 */
+const S_DEF = { spin: 1, dot: 1, links: 1, names: false };
+let S = { ...S_DEF };
+try { S = { ...S_DEF, ...JSON.parse(localStorage.getItem("cc-settings") || "{}") }; } catch {}
+function ringAngle(ring, t) { return (SPIN[ring] || 0) * t * S.spin; }
+function toScreen(n, t) {
+  const a = n.a + ringAngle(n.ring, t);
+  return [W / 2 + panX + Math.cos(a) * n.r * zoom, H / 2 + panY + Math.sin(a) * n.r * zoom];
+}
+
+/* 배경 헥사 패턴 (오프스크린 1회) */
+const hexPat = document.createElement("canvas");
+(function () {
+  const s = 46, h = s * Math.sqrt(3) / 2;
+  hexPat.width = s * 3; hexPat.height = h * 2;
+  const c = hexPat.getContext("2d");
+  c.strokeStyle = "rgba(157,123,255,0.05)"; c.lineWidth = 1;
+  const hex = (cx, cy) => {
+    c.beginPath();
+    for (let i = 0; i < 6; i++) { const a = TAU / 6 * i; c[i ? "lineTo" : "moveTo"](cx + Math.cos(a) * s / 2, cy + Math.sin(a) * s / 2); }
+    c.closePath(); c.stroke();
+  };
+  hex(s * 0.75, 0); hex(s * 0.75, h * 2); hex(s * 2.25, h); hex(-s * 0.75, h); hex(s * 3.75, h);
+})();
+
+function spark(x, y, r) { /* 4각 별 (스킬 링) */
+  ctx.beginPath();
+  ctx.moveTo(x, y - r * 1.7); ctx.quadraticCurveTo(x, y, x + r * 1.7, y);
+  ctx.quadraticCurveTo(x, y, x, y + r * 1.7); ctx.quadraticCurveTo(x, y, x - r * 1.7, y);
+  ctx.quadraticCurveTo(x, y, x, y - r * 1.7); ctx.fill();
+}
+function hexIcon(x, y, r, color, letter) {
+  ctx.beginPath();
+  for (let i = 0; i < 6; i++) { const a = TAU / 6 * i - TAU / 12; ctx[i ? "lineTo" : "moveTo"](x + Math.cos(a) * r, y + Math.sin(a) * r); }
+  ctx.closePath();
+  ctx.fillStyle = "rgba(11,8,18,0.9)"; ctx.fill();
+  ctx.strokeStyle = color; ctx.lineWidth = 1.4; ctx.stroke();
+  ctx.fillStyle = color; ctx.font = `600 ${Math.max(8, r * 0.8)}px ${"Segoe UI"}`;
+  ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillText(letter, x, y + 0.5);
+}
+
+function frame(ms) {
+  const t = ms / 1000;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  /* 배경 */
+  const g = ctx.createRadialGradient(W / 2, H / 2, 80, W / 2, H / 2, Math.max(W, H) * 0.75);
+  g.addColorStop(0, "#120d1d"); g.addColorStop(0.55, "#0b0812"); g.addColorStop(1, "#070510");
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  ctx.save(); ctx.globalAlpha = 0.75; ctx.fillStyle = ctx.createPattern(hexPat, "repeat"); ctx.fillRect(0, 0, W, H); ctx.restore();
+
+  const dimmed = query.length > 0;
+  /* 링크 웹 */
+  ctx.lineWidth = 0.6;
+  links.forEach(([a, b]) => {
+    const [x1, y1] = toScreen(a, t), [x2, y2] = toScreen(b, t);
+    ctx.strokeStyle = `rgba(200,190,230,${0.06 * S.links})`;
+    ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+  });
+  /* 궤도 점선 링 (갤럭시) / 단계·카테고리 링 (프로젝트) */
+  if (viewMode === "galaxy") ORBITS.forEach((r, i) => {
+    ctx.save();
+    ctx.translate(W / 2 + panX, H / 2 + panY);
+    ctx.rotate(ringAngle("orbit", t) * (i % 2 ? -0.6 : 1));
+    ctx.strokeStyle = i === 2 ? "rgba(232,176,75,0.35)" : "rgba(157,123,255,0.18)";
+    ctx.setLineDash(i === 2 ? [1.5, 7] : [1, 9]); ctx.lineWidth = i === 2 ? 1.6 : 1;
+    ctx.beginPath(); ctx.arc(0, 0, r * zoom, 0, TAU); ctx.stroke();
+    ctx.restore();
+  });
+  else {
+    ctx.save(); ctx.translate(W / 2 + panX, H / 2 + panY);
+    /* 앱인토스 단계 링 — 토스 블루 글로우 */
+    ctx.shadowColor = TOSS; ctx.shadowBlur = 14 * zoom;
+    ctx.strokeStyle = "rgba(59,140,255,0.55)"; ctx.setLineDash([]); ctx.lineWidth = 1.8;
+    ctx.beginPath(); ctx.arc(0, 0, STAGE_R * zoom, 0, TAU); ctx.stroke();
+    ctx.shadowBlur = 0;
+    ctx.strokeStyle = "rgba(59,140,255,0.18)"; ctx.lineWidth = 1; ctx.setLineDash([2, 6]);
+    ctx.beginPath(); ctx.arc(0, 0, (STAGE_R + 52) * zoom, 0, TAU); ctx.stroke();
+    /* 단계 슬롯 경계 눈금 + 프로젝트 있는 단계는 부채꼴 하이라이트 */
+    ctx.setLineDash([]);
+    (PJ._slots || []).forEach((sl, i) => {
+      const has = PVIS.some(p => p.category === "apps-in-toss" && p.toss.stage === PJ.stages[i]);
+      if (has) { ctx.fillStyle = "rgba(59,140,255,0.07)"; ctx.beginPath(); ctx.moveTo(0, 0); ctx.arc(0, 0, (STAGE_R + 78) * zoom, sl.a0, sl.a1); ctx.closePath(); ctx.fill(); }
+      ctx.strokeStyle = "rgba(59,140,255,0.35)"; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(Math.cos(sl.a0) * (STAGE_R - 10) * zoom, Math.sin(sl.a0) * (STAGE_R - 10) * zoom);
+      ctx.lineTo(Math.cos(sl.a0) * (STAGE_R + 10) * zoom, Math.sin(sl.a0) * (STAGE_R + 10) * zoom); ctx.stroke();
+    });
+    /* 바깥 카테고리 링 */
+    RING_LABEL.forEach(([, r, c], i) => { ctx.strokeStyle = c + "44"; ctx.setLineDash(i === 2 ? [1, 9] : [1.5, 7]); ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.arc(0, 0, r * zoom, 0, TAU); ctx.stroke(); });
+    ctx.restore();
+  }
+
+  /* 노드 */
+  const pulse = 0.85 + 0.15 * Math.sin(t * 2.2);
+  nodes.forEach(n => {
+    if (n.invisible) return; /* 클릭 전용 노드(궤도 라벨) — 텍스트는 labels가 그림 */
+    const [x, y] = toScreen(n, t);
+    if (x < -60 || x > W + 60 || y < -60 || y > H + 60) return;
+    const hit = n === hover || n === selected;
+    const match = dimmed && n.label && n.label.toLowerCase().includes(query);
+    let alpha = 1;
+    if (dimmed) alpha = match ? 1 : 0.13;
+    ctx.globalAlpha = alpha;
+    ctx.shadowColor = n.color; ctx.shadowBlur = (n.glow || 0) * (hit || match ? 2.2 : pulse) * zoom;
+    ctx.fillStyle = n.color;
+    const s = n.size * zoom * S.dot * (hit ? 1.5 : 1);
+    if (n.hexa) { ctx.shadowBlur *= 0.7; hexIcon(x, y, s, n.color, n.label[0]); }
+    else if (n.spark) spark(x, y, s);
+    else { ctx.beginPath(); ctx.arc(x, y, s, 0, TAU); ctx.fill(); }
+    ctx.shadowBlur = 0;
+    /* 중심/카테고리 링 장식 */
+    if (n.kind === "CENTER") {
+      ctx.strokeStyle = n.color; ctx.lineWidth = 1.2; ctx.setLineDash([2, 4]);
+      ctx.beginPath(); ctx.arc(x, y, (n.size + 12) * zoom, 0, TAU); ctx.stroke(); ctx.setLineDash([]);
+      ctx.fillStyle = "#0b0812"; ctx.font = `700 ${11 * zoom}px ${"Cascadia Code"}, monospace`;
+      ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillText("▣", x, y);
+      ctx.fillStyle = "#eae6f2"; ctx.font = `600 ${10.5 * Math.max(zoom, 0.8)}px ${"Cascadia Code"}, monospace`;
+      ctx.fillText(n.label, x, y + (n.size + 24) * zoom);
+    }
+    if (n.kind === "HUB") {
+      ctx.strokeStyle = n.color; ctx.lineWidth = 1.2; ctx.setLineDash([2, 4]);
+      ctx.beginPath(); ctx.arc(x, y, (n.size + 12) * zoom, 0, TAU); ctx.stroke(); ctx.setLineDash([]);
+      ctx.fillStyle = "#eae6f2"; ctx.font = `600 ${10.5 * Math.max(zoom, 0.8)}px ${"Cascadia Code"}, monospace`;
+      ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillText(n.label, x, y + (n.size + 24) * zoom);
+    }
+    if (n.dashed) { /* 단계 미확정 — 점선 외곽 */
+      ctx.strokeStyle = n.color; ctx.lineWidth = 1.2; ctx.setLineDash([3, 3]);
+      ctx.beginPath(); ctx.arc(x, y, s + 4 * zoom, 0, TAU); ctx.stroke(); ctx.setLineDash([]);
+    }
+    if (n.warn) { /* 블로커/dirty 경고 링 */
+      ctx.strokeStyle = "#ff7a1a"; ctx.lineWidth = 1.3; ctx.setLineDash([]);
+      ctx.beginPath(); ctx.arc(x, y, s + 3.5 * zoom, 0, TAU); ctx.stroke();
+    }
+    if ((hit || match || ((n.always || (S.names && n.kind)) && !dimmed)) && n.label && n.kind !== "CENTER" && n.kind !== "HUB") {
+      ctx.globalAlpha = 1; ctx.fillStyle = hit ? "#ffffff" : (n.always && !hit ? "#cfd6e6" : "#eae6f2");
+      ctx.font = `${hit ? 600 : 500} ${(n.ring === "toss" ? 11.5 : 10.5) * Math.max(zoom, 0.85)}px ${"Segoe UI"}`;
+      ctx.textBaseline = "middle";
+      /* 좌반구 노드는 라벨을 왼쪽으로 (중심부 침범·겹침 방지) */
+      const left = n.side && x < W / 2 + panX;
+      ctx.textAlign = left ? "right" : "left";
+      ctx.fillText(n.label, left ? x - s - 7 : x + s + 7, y);
+    }
+    ctx.globalAlpha = 1;
+  });
+
+  /* 고정 라벨 */
+  labels.forEach(L => {
+    const a = L.a + ringAngle(L.ring === "orbit" ? "none" : L.ring, t);
+    const x = W / 2 + panX + Math.cos(a) * L.r * zoom;
+    const y = H / 2 + panY + Math.sin(a) * L.r * zoom + (L.dy || 0) * zoom;
+    ctx.globalAlpha = dimmed ? 0.25 : 1;
+    ctx.fillStyle = L.color;
+    ctx.font = `${L.mono ? 650 : 600} ${L.size * Math.max(zoom, 0.75)}px ${L.mono ? '"Cascadia Code", monospace' : '"Segoe UI"'}`;
+    ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    if (L.ls) { ctx.save(); ctx.letterSpacing = L.ls + "px"; ctx.fillText(L.text, x, y); ctx.restore(); }
+    else ctx.fillText(L.text, x, y);
+    ctx.globalAlpha = 1;
+  });
+
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+/* ═══════════════ 인터랙션 ═══════════════ */
+let dragging = false, lx = 0, ly = 0, moved = 0;
+cv.addEventListener("pointerdown", e => { dragging = true; moved = 0; lx = e.clientX; ly = e.clientY; cv.classList.add("drag"); });
+addEventListener("pointerup", () => { dragging = false; cv.classList.remove("drag"); });
+cv.addEventListener("pointermove", e => {
+  if (dragging) {
+    panX += e.clientX - lx; panY += e.clientY - ly; moved += Math.abs(e.clientX - lx) + Math.abs(e.clientY - ly);
+    lx = e.clientX; ly = e.clientY; return;
+  }
+  const t = performance.now() / 1000;
+  hover = pick(e.clientX, e.clientY, t);
+  const tip = $("#tip");
+  if (hover && hover.label) {
+    tip.textContent = hover.label;
+    tip.style.left = (e.clientX + 14) + "px"; tip.style.top = (e.clientY + 10) + "px";
+    tip.style.opacity = 1; cv.style.cursor = "pointer";
+  } else { tip.style.opacity = 0; cv.style.cursor = ""; }
+});
+cv.addEventListener("wheel", e => {
+  e.preventDefault();
+  const f = e.deltaY < 0 ? 1.12 : 1 / 1.12;
+  zoom = Math.min(4, Math.max(0.35, zoom * f));
+}, { passive: false });
+cv.addEventListener("click", e => {
+  if (moved > 6) return;
+  const n = pick(e.clientX, e.clientY, performance.now() / 1000);
+  if (n && n.kind) openDetail(n); else closeDetail();
+});
+function pick(mx, my, t) {
+  let best = null, bd = 1e9;
+  for (const n of nodes) {
+    if (!n.label) continue;
+    const [x, y] = toScreen(n, t);
+    const d = Math.hypot(mx - x, my - y);
+    const rad = n.pickR ? n.pickR * zoom : Math.max(9, n.size * zoom + 5);
+    if (d < rad && d < bd) { bd = d; best = n; }
+  }
+  return best;
+}
+$("#resetView").addEventListener("click", () => { zoom = baseZoom; panX = panY = 0; });
+$("#viewToggle").addEventListener("click", () => { setView(viewMode === "projects" ? "galaxy" : "projects"); zoom = baseZoom; panX = panY = 0; });
+
+/* 검색 — 하이라이트 + 결과 드롭다운 (색점·이름·경로, 클릭 선택) */
+const srBox = $("#searchResults");
+function renderSearch() {
+  if (!query) { srBox.classList.remove("show"); srBox.innerHTML = ""; return; }
+  const hits = nodes.filter(n => n.kind && n.label && n.label.toLowerCase().includes(query)).slice(0, 14);
+  srBox.innerHTML = hits.length
+    ? hits.map((n, i) => `<div class="sr" data-i="${nodes.indexOf(n)}">
+        <span class="dot2" style="background:${n.color}"></span>
+        <span><span class="nm">${esc(n.label)}</span><br><span class="pp">${esc(n.kind)}${n.sector ? " · " + esc(n.sector) : ""}${n.path ? " · " + esc(n.path) : ""}</span></span></div>`).join("")
+    : `<div class="sr"><span class="pp">결과 없음</span></div>`;
+  srBox.classList.add("show");
+}
+$("#search").addEventListener("input", e => { query = e.target.value.trim().toLowerCase(); renderSearch(); });
+$("#search").addEventListener("keydown", e => {
+  if (e.key === "Escape") { query = ""; e.target.value = ""; renderSearch(); }
+  if (e.key === "Enter" && query) {
+    const n = nodes.find(n => n.label && n.label.toLowerCase().includes(query) && n.kind);
+    if (n) { openDetail(n); srBox.classList.remove("show"); }
+  }
+});
+srBox.addEventListener("click", e => {
+  const row = e.target.closest(".sr[data-i]"); if (!row) return;
+  const n = nodes[+row.dataset.i]; if (n) { openDetail(n); srBox.classList.remove("show"); }
+});
+addEventListener("click", e => { if (!e.target.closest(".searchWrap")) srBox.classList.remove("show"); });
+
+/* 상세 패널 */
+function openDetail(n) {
+  selected = n;
+  const d = $("#detail");
+  d.querySelector(".kind").textContent = n.kind + (n.sector ? " · " + n.sector : "");
+  d.querySelector(".kind").style.color = n.color;
+  d.querySelector("h3").textContent = n.label;
+  d.querySelector(".path").textContent = n.path || "";
+  d.querySelector("p").textContent = n.desc || "";
+  $("#copyPath").style.display = n.path ? "" : "none";
+  const p = n.p || null;
+  $("#openGh").style.display = (p && p.links.github) || n.kind === "HUB" ? "" : "none";
+  $("#copyPrompt").style.display = p ? "" : "none";
+  $("#openRaw").style.display = n.kind === "DOC" && n.rel ? "" : "none";
+  d.querySelector(".extra").innerHTML = p ? projectHtml(p) : "";
+  if (n.kind === "DOC" && n.rel) loadDoc(n, d.querySelector(".extra"));
+  d.classList.add("open");
+}
+
+/* 문서 본문 뷰어 — wiki junction(~/.wiki 서빙)에서 fetch, 마크다운 렌더 */
+function md2html(src) {
+  src = src.replace(/^---\n[\s\S]*?\n---\n/, "");
+  const esc2 = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const inline = s => esc2(s)
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>")
+    .replace(/\[\[([^\]]+)\]\]/g, "<code>$1</code>")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1 <span style="color:var(--dim)">($2)</span>');
+  const out = []; let inCode = false, inList = false, inQuote = false;
+  const closeAll = () => { if (inList) { out.push("</ul>"); inList = false; } if (inQuote) { out.push("</blockquote>"); inQuote = false; } };
+  for (const line of src.split("\n")) {
+    if (line.startsWith("```")) { closeAll(); out.push(inCode ? "</code></pre>" : "<pre><code>"); inCode = !inCode; continue; }
+    if (inCode) { out.push(esc2(line) + "\n"); continue; }
+    const h = line.match(/^(#{1,3})\s+(.*)/);
+    if (h) { closeAll(); out.push(`<h${h[1].length}>${inline(h[2])}</h${h[1].length}>`); continue; }
+    if (/^(-{3,}|\*{3,})$/.test(line.trim())) { closeAll(); out.push("<hr>"); continue; }
+    if (/^\s*[-*+]\s+/.test(line)) { if (inQuote) { out.push("</blockquote>"); inQuote = false; } if (!inList) { out.push("<ul>"); inList = true; } out.push(`<li>${inline(line.replace(/^\s*[-*+]\s+/, ""))}</li>`); continue; }
+    if (/^>\s?/.test(line)) { if (inList) { out.push("</ul>"); inList = false; } if (!inQuote) { out.push("<blockquote>"); inQuote = true; } out.push(inline(line.replace(/^>\s?/, "")) + "<br>"); continue; }
+    if (line.startsWith("|")) { closeAll(); out.push(`<div style="font:10.5px var(--mono);color:var(--muted)">${esc2(line)}</div>`); continue; }
+    closeAll();
+    if (line.trim()) out.push(`<p>${inline(line)}</p>`);
+  }
+  closeAll(); if (inCode) out.push("</code></pre>");
+  return out.join("");
+}
+async function loadDoc(n, box) {
+  box.innerHTML = `<div class="loading">본문 로드 중… wiki/${esc(n.rel)}</div>`;
+  try {
+    const r = await fetch("wiki/" + encodeURI(n.rel));
+    if (!r.ok) throw new Error(r.status);
+    const text = await r.text();
+    if (selected !== n) return; /* 로드 중 다른 노드 선택 시 무시 */
+    box.innerHTML = `<div class="doc">${md2html(text)}</div>`;
+  } catch (e) {
+    box.innerHTML = `<div class="loading">본문 로드 실패 (${esc(String(e.message || e))}) — file:// 로 열었다면 http://localhost:7766 으로 접속해야 본문이 보입니다.</div>`;
+  }
+}
+$("#openRaw").addEventListener("click", () => {
+  if (selected && selected.rel) window.open("wiki/" + encodeURI(selected.rel), "_blank", "noopener");
+});
+/* 프로젝트 상세 — 전부 CC_PROJECTS에서 렌더 */
+function projectHtml(p) {
+  const t = p.toss, gh = p.gh;
+  const chips = [];
+  chips.push(`<span class="chip ${t ? "toss" : ""}">${esc(p.category)}</span>`);
+  const unverified = t && !t.source;
+  if (unverified) chips.push(`<span class="chip warn">단계 미확정 · launch-status 없음</span>`);
+  else if (t) chips.push(`<span class="chip ${t.stage === "released" ? "gold" : "toss"}">${esc(PJ.stageKo[t.stage] || t.stage)}${t.nextCheck && t.nextCheck !== t.stage ? " → " + esc(PJ.stageKo[t.nextCheck] || t.nextCheck) : ""}</span>`);
+  if (t && t.blockersOpen > 0) chips.push(`<span class="chip warn">블로커 ${t.blockersOpen}</span>`);
+  if (t && t.blockersOpen === 0 && t.source) chips.push(`<span class="chip ok">블로커 없음</span>`);
+  if (p.lastActivity) chips.push(`<span class="chip">${esc(p.lastActivity)} · ${p.daysSince}일 전</span>`);
+  if (p.branch) chips.push(`<span class="chip ${p.dirty > 0 ? "warn" : ""}">${esc(p.branch)}${p.dirty > 0 ? " · dirty " + p.dirty : ""}</span>`);
+  if (gh) chips.push(`<span class="chip">${gh.private ? "private" : "public"} · 이슈 ${gh.openIssues} · 30일 커밋 ${gh.commits30d}</span>`);
+  if (p.lang) chips.push(`<span class="chip">${esc(p.lang)}</span>`);
+  if (t && t.classification) chips.push(`<span class="chip">${esc(t.classification)}</span>`);
+  let h = `<div class="chips">${chips.join("")}</div>`;
+  if (unverified) {
+    h += `<h4>단계 미확정 — 추정하지 않음</h4><ul><li class="warn">${esc(t.note || "launch-status.json 없음")}</li></ul>`;
+    if (t.evidence && t.evidence.length) h += `<h4>관찰된 근거 (단계 판정 아님)</h4><ul>${t.evidence.map(e => `<li>${esc(e)}</li>`).join("")}</ul>`;
+  } else if (t) {
+    const st = Object.fromEntries((t.pipeline || []).map(x => [x.s, x.st]));
+    h += `<h4>LAUNCH PIPELINE${t.source ? "" : " · 추정"}</h4><div class="pipe">` + PJ.stages.map(s => {
+      const v = st[s] || "n/a";
+      const cls = v === "pass" ? "pass" : v === "blocked" ? "blocked" : (s === t.nextCheck ? "next" : "");
+      return `<div class="${cls}" title="${esc(s)}: ${esc(v)}">${esc(PJ.stageKo[s] || s)}</div>`;
+    }).join("") + `</div>`;
+    if (t.note) h += `<div class="src">${esc(t.note)}</div>`;
+    if (t.blockers.length) h += `<h4>OPEN BLOCKERS · ${t.blockersOpen}</h4><ul>${t.blockers.map(b => `<li class="warn">${esc(b)}</li>`).join("")}</ul>`;
+  }
+  if (gh && gh.recent.length) h += `<h4>RECENT COMMITS</h4><ul>${gh.recent.map(c => `<li>${esc(c.message)}<span class="s">${esc(c.date)}</span></li>`).join("")}</ul>`;
+  if (gh && gh.issueTitles.length) h += `<h4>OPEN ISSUES · ${gh.openIssues}</h4><ul>${gh.issueTitles.map(i => `<li>${esc(i)}</li>`).join("")}</ul>`;
+  const L = p.links;
+  let links = [];
+  if (L.github) links.push(`<li><a href="${esc(L.github)}" target="_blank" rel="noopener">${esc(L.github)}</a></li>`);
+  if (L.parent) links.push(`<li>모노레포 부모: <a href="#" data-open="${esc(L.parent)}">${esc(L.parent)}</a></li>`);
+  if (p.altPaths && p.altPaths.length) links.push(`<li>다른 사본: <span class="s">${p.altPaths.map(esc).join("<br>")}</span></li>`);
+  if (L.wiki && L.wiki.length) links.push(`<li>wiki: <span class="s">${L.wiki.map(w => "~/.wiki/" + esc(w)).join("<br>")}</span></li>`);
+  if (links.length) h += `<h4>LINKS</h4><ul>${links.join("")}</ul>`;
+  h += `<div class="src">원천: ${esc(t && t.source ? t.source : (L.local || "gh 메타만"))}${gh ? " · gh " + esc(PJ.ghSnapshot || "") : ""}</div>`;
+  return h;
+}
+function projectPrompt(p) {
+  const cd = p.links.local ? `cd "${p.links.local}"` : `git clone ${p.links.github}`;
+  if (p.toss) return `${cd}\n${p.name} 앱인토스 런치를 apps-in-toss-launcher로 이어서 진행해줘. 현재 단계: ${p.toss.stage}${p.toss.nextCheck ? `, 다음 체크: ${p.toss.nextCheck}` : ""}, 열린 블로커 ${p.toss.blockersOpen}개 (.launch/launch-status.json 기준). 블로커 중 오너 입력이 필요한 것은 먼저 목록으로 정리해줘.`;
+  return `${cd}\n${p.name} 프로젝트 현황을 브리핑하고 다음 할 일을 제안해줘. 마지막 활동 ${p.lastActivity || "?"}${p.gh ? `, 오픈 이슈 ${p.gh.openIssues}` : ""}${p.dirty ? `, 로컬 dirty ${p.dirty}` : ""}.`;
+}
+$("#openGh").addEventListener("click", () => { const u = selected && (selected.p ? selected.p.links.github : selected.path); if (u) window.open(u, "_blank", "noopener"); });
+$("#copyPrompt").addEventListener("click", async () => { if (selected && selected.p) { await copy(projectPrompt(selected.p)); toast("프롬프트 복사됨 — Claude Code에 붙여넣으세요"); } });
+$("#detail").addEventListener("click", e => { const a = e.target.closest("[data-open]"); if (!a) return; e.preventDefault(); const n = pjName2node[a.dataset.open]; if (n) openDetail(n); });
+function closeDetail() { selected = null; $("#detail").classList.remove("open"); }
+$("#detail .close").addEventListener("click", closeDetail);
+$("#copyPath").addEventListener("click", async () => {
+  if (selected && selected.path) { await copy(selected.path); toast("경로 복사됨"); }
+});
+
+/* ═══════════════ 브리핑 드로어 + KPI (기존 위젯 데이터) ═══════════════ */
+const kbTotal = Object.keys(ITEMS).length
+  ? Object.values(ITEMS).reduce((a, v) => a + v.length, 0)
+  : D.knowledge.categories.reduce((a, c) => a + c.count, 0);
+const ciFails = D.ci.filter(c => c.status === "failed").length;
+$("#kpis").innerHTML = [
+  [D.calendar.events.length, "오늘 일정", false],
+  [D.inbox.unreadEstimate, "안읽음", D.inbox.needsYou.length > 0],
+  [ciFails, "CI 실패", ciFails > 0],
+  [kbTotal, "위키 문서", false],
+  [D.automations.skillsCount, "스킬", false],
+  [PJ.summary.toss ?? 0, "앱인토스", (PJ.summary.tossWithBlockers ?? 0) > 0],
+  [PJ.summary.active30d ?? 0, "30일 활성", false],
+].map(([n, l, w]) => `<div class="kpi"><div class="n${w ? " warn" : ""}">${n}</div><div class="l">${esc(l)}</div></div>`).join("");
+
+$("#drawerBody").innerHTML = `
+  <h2>오늘 · ${esc(D.calendar.snapshotRange)}</h2>
+  ${D.calendar.events.length
+    ? `<ul>${D.calendar.events.map(e => `<li>${esc(e.title)}<span class="s">${esc(e.time || "")}</span></li>`).join("")}</ul>`
+    : `<ul><li>일정 없음<span class="s">${esc(D.calendar.note)}</span></li></ul>`}
+  <h2>받은편지함 · ${esc(D.inbox.snapshotAt)}</h2>
+  <ul>${D.inbox.needsYou.map(m => `<li>${esc(m.subject)}<span class="s">${esc(m.from)} · ${esc(m.date)}</span><span class="why">→ ${esc(m.why)}</span></li>`).join("") || "<li>액션 필요 없음</li>"}</ul>
+  <h2 class="toss">앱인토스 파이프라인 · ${PJ.summary.toss ?? 0}</h2>
+  <ul>${(() => {
+    const toss = PVIS.filter(p => p.category === "apps-in-toss");
+    const rows = [...PJ.stages, "unverified"].map(s => [s, toss.filter(p => s === "unverified" ? PJ.stages.indexOf(p.toss.stage) < 0 : p.toss.stage === s)]).filter(([, a]) => a.length);
+    if (!rows.length) return "<li>앱인토스 프로젝트 미감지<span class=\"s\">node build-projects.mjs 실행 필요</span></li>";
+    return rows.map(([s, arr]) => `<li>${esc(PJ.stageKo[s] || s)} <span class="s">${arr.length}개</span><div class="stg">${arr.map(p =>
+      `<button class="pj${p.toss.stage === "released" ? " rel" : !p.toss.source ? " unv" : p.toss.blockersOpen > 0 ? " warn" : ""}" type="button" data-proj="${esc(p.name)}" title="${esc(p.links.local || p.links.github || "")}">${esc(pjLabel(p))}${p.toss.blockersOpen ? ` <i>▲${p.toss.blockersOpen}</i>` : ""}</button>`).join("")}</div></li>`).join("");
+  })()}</ul>
+  <div class="meta">블로커 보유 ${PJ.summary.tossWithBlockers ?? 0} · launch-status 실측 ${PJ.summary.tossFromLaunchStatus ?? 0}/${PJ.summary.toss ?? 0} · 레지스트리 ${esc(PJ.generatedAt)}</div>
+  <h2>프로젝트 · CI</h2>
+  <ul>${D.ci.map(c => `<li>${esc(c.repo)}<span class="why">${esc(c.workflow)} ${esc(c.status)} · ${esc(c.branch)} · ${esc(c.date)}</span></li>`).join("")}
+      ${PVIS.filter(p => p.category !== "apps-in-toss" && p.significance >= 3).map(p => `<li><button class="pj" type="button" data-proj="${esc(p.name)}">${esc(pjLabel(p))}</button><span class="s">${esc(p.category)} · ${esc(p.lastActivity || "")}${p.desc ? " — " + esc(p.desc) : ""}</span></li>`).join("")}
+      ${D.projects.map(p => `<li>${esc(p.name)}<span class="s">${esc(p.desc)}</span></li>`).join("")}</ul>
+  <h2>액션 — 클릭하면 프롬프트 복사</h2>
+  <div class="acts">${D.actions.map((a, i) => `<button class="act" data-i="${i}" type="button">${esc(a.icon)} ${esc(a.label)}</button>`).join("")}</div>
+  <h2>최근 산출물</h2>
+  <ul>${D.artifacts.map(f => `<li>${esc(f.name)}<span class="s">${esc(f.date)} — ${esc(f.desc)}</span></li>`).join("")}</ul>
+  <div class="meta">갱신: ${esc(D.meta.updatedBy)} · ${esc(D.meta.lastUpdated)}<br>절차: REFRESH.md ("대시보드 새로고침")</div>`;
+$("#briefBtn").addEventListener("click", () => $("#drawer").classList.add("open"));
+$("#drawer .close").addEventListener("click", () => $("#drawer").classList.remove("open"));
+$("#drawerBody").addEventListener("click", async e => {
+  const pj = e.target.closest(".pj");
+  if (pj) { const n = pjName2node[pj.dataset.proj]; if (n) { if (viewMode !== "projects") setView("projects"); $("#drawer").classList.remove("open"); openDetail(n); } return; }
+  const b = e.target.closest(".act"); if (!b) return;
+  await copy(D.actions[+b.dataset.i].prompt);
+  toast("복사됨 — Claude Code에 붙여넣으세요");
+});
+
+/* URL 파라미터: ?view=projects&open=<name> (즐겨찾기·헤드리스 검증용) */
+(function initFromUrl() {
+  const q = new URLSearchParams(location.search);
+  if (q.get("view") === "projects") setView("projects");
+  const o = q.get("open");
+  if (o) { const n = pjName2node[o] || nodes.find(n => n.kind && n.label && n.label.toLowerCase() === o.toLowerCase()); if (n) { if (n.p && viewMode !== "projects") setView("projects"); openDetail(n); } }
+  if (q.get("brief") === "1") $("#drawer").classList.add("open");
+})();
+
+/* ☰ MENU 배선 */
+const menuEl = $("#menu");
+function syncMenu() {
+  $("#sSpin").value = S.spin; $("#vSpin").textContent = S.spin.toFixed(1);
+  $("#sDot").value = S.dot; $("#vDot").textContent = S.dot.toFixed(2);
+  $("#sLinks").value = S.links; $("#vLinks").textContent = S.links.toFixed(1);
+  $("#sNames").checked = S.names;
+}
+syncMenu();
+$("#menuBtn").addEventListener("click", () => menuEl.classList.toggle("show"));
+$("#sSpin").addEventListener("input", e => { S.spin = +e.target.value; $("#vSpin").textContent = S.spin.toFixed(1); });
+$("#sDot").addEventListener("input", e => { S.dot = +e.target.value; $("#vDot").textContent = S.dot.toFixed(2); });
+$("#sLinks").addEventListener("input", e => { S.links = +e.target.value; $("#vLinks").textContent = S.links.toFixed(1); });
+$("#sNames").addEventListener("change", e => { S.names = e.target.checked; });
+$("#bakeBtn").addEventListener("click", () => { localStorage.setItem("cc-settings", JSON.stringify(S)); toast("설정 저장됨 — 다음 로드에도 유지"); menuEl.classList.remove("show"); });
+$("#defBtn").addEventListener("click", () => { S = { ...S_DEF }; localStorage.removeItem("cc-settings"); syncMenu(); toast("기본값 복원"); });
+addEventListener("click", e => { if (!e.target.closest("#menu") && !e.target.closest("#menuBtn")) menuEl.classList.remove("show"); });
+
+/* 하단 KPI 스트립 = 패널 바 — 클릭하면 브리핑 드로어 */
+$("#kpis").addEventListener("click", () => $("#drawer").classList.add("open"));
+
+async function copy(text) {
+  try { await navigator.clipboard.writeText(text); }
+  catch { const t = document.createElement("textarea"); t.value = text; document.body.appendChild(t); t.select(); document.execCommand("copy"); t.remove(); }
+}
+function toast(msg) {
+  const el = $("#toast"); el.innerHTML = `<b>✓</b> ${esc(msg)}`;
+  el.classList.add("show"); clearTimeout(el._t); el._t = setTimeout(() => el.classList.remove("show"), 2200);
+}
+
+/* ============================================================
+   위젯/링 추가 가이드:
+   1. data.js의 galaxy에 데이터 추가 (count 실측, named 실명)
+   2. 모델 구간에서 nodes/labels push
+   3. 드로어 위젯은 drawerBody 템플릿에 h2+ul 한 쌍 추가
+   ============================================================ */
+</script>
+</body>
+</html>

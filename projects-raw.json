@@ -1,0 +1,1557 @@
+{
+  "generatedAt": "2026-08-22T14:14:09.245Z",
+  "source": "gh api graphql (5 calls, 36 repos; 요청 목록은 37개라 했으나 실제 36개 이름)",
+  "repos": [
+    {
+      "name": "hermes-shared-knowledge",
+      "url": "https://github.com/mqzkim/hermes-shared-knowledge",
+      "description": "Shared Hermes/Sena skills, personalities, and safe config templates",
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TeX",
+      "pushedAt": "2026-08-22T14:00:10Z",
+      "createdAt": "2026-04-30T02:45:22Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-08-22",
+          "message": "ops: refresh sena-1 telemetry metrics"
+        },
+        {
+          "date": "2026-08-17",
+          "message": "ops: refresh sena-1 telemetry metrics"
+        },
+        {
+          "date": "2026-08-02",
+          "message": "ops: refresh sena-1 telemetry metrics"
+        },
+        {
+          "date": "2026-08-02",
+          "message": "ops: refresh sena-1 telemetry metrics"
+        },
+        {
+          "date": "2026-07-24",
+          "message": "ops: refresh sena-1 telemetry metrics"
+        }
+      ],
+      "commitsLast30d": 5,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "harness-ai-infra",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 5, 설명 있음"
+    },
+    {
+      "name": "naeheunjeok",
+      "url": "https://github.com/mqzkim/naeheunjeok",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-08-19T06:59:53Z",
+      "createdAt": "2026-08-19T02:25:29Z",
+      "stargazerCount": 0,
+      "openIssues": 8,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-08-19",
+          "message": "feat: deploy free production search backend"
+        },
+        {
+          "date": "2026-08-19",
+          "message": "chore: refresh release evidence after QA build"
+        },
+        {
+          "date": "2026-08-19",
+          "message": "chore: verify app-scoped Toss deploy access"
+        },
+        {
+          "date": "2026-08-19",
+          "message": "chore: register naeheunjeok Apps in Toss draft"
+        },
+        {
+          "date": "2026-08-19",
+          "message": "docs: prepare Apps in Toss registration handoff"
+        }
+      ],
+      "commitsLast30d": 12,
+      "isAppsInToss": true,
+      "aitEvidence": "package.json has @apps-in-toss dependency; README mentions toss; apps-in-toss.config.ts exists (granite.config.ts 대신)",
+      "category": "apps-in-toss",
+      "appName": "naeheunjeok",
+      "stageEstimate": "released",
+      "stageEvidence": [
+        "PRD.md",
+        "docs",
+        "store-assets",
+        "vitest.config.ts",
+        "docs/ANALYTICS_EVENTS.md",
+        "docs/APP_IN_TOSS_SUBMISSION.md",
+        "docs/ASSET_RIGHTS.md",
+        "docs/BACKLOG.md",
+        "docs/CONSOLE_COPY.md",
+        "docs/IDEA_BRIEF.md",
+        "docs/OPERATOR_INPUTS_REQUIRED.md",
+        "docs/PRIVACY_POLICY_DRAFT.md",
+        "docs/REGISTRATION_HANDOFF.md",
+        "docs/RELEASE_REPORT.md",
+        "docs/RUNTIME_DECISION.md"
+      ],
+      "openIssueTitles": [
+        "[BL-008] 개인 아카이브 내보내기",
+        "[BL-007] 허용 플랫폼 OAuth 삭제 API 연동",
+        "[BL-006] 주제 클러스터와 고급 타임라인 필터",
+        "[BL-005] 인터넷 나이 비식별 공유 카드",
+        "[BL-004] 추가 아이디 정밀검색 보상형 광고",
+        "[BL-003] 과거의 오늘과 정기 재검색 알림",
+        "[BL-002] 공식 SNS 내보내기 파일 가져오기",
+        "[BL-001] 지식iN·웹문서 검색 소스 확장"
+      ],
+      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 12, 앱인토스"
+    },
+    {
+      "name": "llm-wiki",
+      "url": "https://github.com/mqzkim/llm-wiki",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-08-19T06:59:44Z",
+      "createdAt": "2026-04-06T21:42:42Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "master",
+      "recentCommits": [
+        {
+          "date": "2026-08-19",
+          "message": "knowledge: update apps-in-toss free backend isolation"
+        },
+        {
+          "date": "2026-08-03",
+          "message": "knowledge: update apps-in-toss launch slice"
+        },
+        {
+          "date": "2026-07-29",
+          "message": "knowledge: document TradingAgents signal persistence observation"
+        },
+        {
+          "date": "2026-07-29",
+          "message": "knowledge: add financial signal persistence design"
+        },
+        {
+          "date": "2026-07-29",
+          "message": "knowledge: audit TradingAgents recent no-order sessions"
+        }
+      ],
+      "commitsLast30d": 22,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "knowledge-wiki",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 22"
+    },
+    {
+      "name": "kid-cheer-call",
+      "url": "https://github.com/mqzkim/kid-cheer-call",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-08-11T13:51:15Z",
+      "createdAt": "2026-08-11T13:14:15Z",
+      "stargazerCount": 0,
+      "openIssues": 7,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-08-11",
+          "message": "feat: define production content and operations contracts"
+        },
+        {
+          "date": "2026-08-11",
+          "message": "feat: harden audio playback and release readiness gate"
+        },
+        {
+          "date": "2026-08-11",
+          "message": "docs: record console authentication blocker"
+        },
+        {
+          "date": "2026-08-11",
+          "message": "docs: prepare Apps in Toss registration handoff"
+        },
+        {
+          "date": "2026-08-11",
+          "message": "test: record local QA evidence"
+        }
+      ],
+      "commitsLast30d": 12,
+      "isAppsInToss": true,
+      "aitEvidence": "package.json has @apps-in-toss dependency; apps-in-toss.config.ts exists (granite.config.ts 대신)",
+      "category": "apps-in-toss",
+      "appName": "kid-cheer-call",
+      "stageEstimate": "released",
+      "stageEvidence": [
+        "PRD.md",
+        "docs",
+        "store-assets",
+        "docs/ANALYTICS_EVENTS.md",
+        "docs/APP_IN_TOSS_SUBMISSION.md",
+        "docs/ASSET_RIGHTS.md",
+        "docs/BACKLOG.md",
+        "docs/CONSOLE_COPY.md",
+        "docs/IDEA_BRIEF.md",
+        "docs/OPERATOR_INPUTS_REQUIRED.md",
+        "docs/PRIVACY_POLICY_DRAFT.md",
+        "docs/PRODUCTION_PACKAGE_CONTRACT.md",
+        "docs/REGISTRATION_HANDOFF.md",
+        "docs/RELEASE_READINESS.md",
+        "docs/SECURITY_AUDIT_NOTES.md"
+      ],
+      "openIssueTitles": [
+        "[BL-007] 기관별 공동 캠페인과 오프라인 연계",
+        "[BL-006] 다국어·접근성 콘텐츠 확장",
+        "[BL-005] 운영자 CMS와 신고 대시보드 확장",
+        "[BL-004] 브랜드 후원 캠페인",
+        "[BL-003] 선택형 보상 광고와 공유 카드",
+        "[BL-002] 오늘의 한마디 알림",
+        "[BL-001] 저장한 응원과 로컬 보관"
+      ],
+      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "significance": 4,
+      "significanceReason": "최근 30일 내 푸시, 30일 커밋 12, 앱인토스"
+    },
+    {
+      "name": "eomma-choiae",
+      "url": "https://github.com/mqzkim/eomma-choiae",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-08-03T01:36:42Z",
+      "createdAt": "2026-08-03T01:04:01Z",
+      "stargazerCount": 0,
+      "openIssues": 7,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-08-03",
+          "message": "docs: record repeated release blocker"
+        },
+        {
+          "date": "2026-08-03",
+          "message": "docs: refresh release gate audit"
+        },
+        {
+          "date": "2026-08-03",
+          "message": "chore: add release handoff tooling"
+        },
+        {
+          "date": "2026-08-03",
+          "message": "release: finalize assets and console handoff"
+        },
+        {
+          "date": "2026-08-03",
+          "message": "test: verify release artifact and local QA"
+        }
+      ],
+      "commitsLast30d": 11,
+      "isAppsInToss": true,
+      "aitEvidence": "package.json has @apps-in-toss dependency; README mentions toss; apps-in-toss.config.ts exists (granite.config.ts 대신)",
+      "category": "apps-in-toss",
+      "appName": "eomma-choiae",
+      "stageEstimate": "console",
+      "stageEvidence": [
+        "PRD.md",
+        "docs",
+        "store-assets",
+        "docs/ANALYTICS_EVENTS.md",
+        "docs/APP_IN_TOSS_SUBMISSION.md",
+        "docs/ASSET_RIGHTS.md",
+        "docs/BACKLOG.md",
+        "docs/CONSOLE_COPY.md",
+        "docs/IDEA_BRIEF.md",
+        "docs/OPERATOR_INPUTS_REQUIRED.md",
+        "docs/PRIVACY_POLICY_DRAFT.md",
+        "docs/REGISTRATION_HANDOFF.md",
+        "docs/SANDBOX_QA_HANDOFF.md",
+        "docs/SOURCE_NOTES.md",
+        "docs/STORE_ASSET_BRIEF.md"
+      ],
+      "openIssueTitles": [
+        "[BL-007] 질문 CMS와 시즌팩·가족 확장",
+        "[BL-006] 보상형 광고와 카드 테마",
+        "[BL-005] 기능성 알림",
+        "[BL-004] 자유 답변과 사진 카드",
+        "[BL-003] 전국 엄마 익명 투표",
+        "[BL-002] 일일 질문과 추억함",
+        "[BL-001] 원격 초대와 관계 연결"
+      ],
+      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "significance": 4,
+      "significanceReason": "최근 30일 내 푸시, 30일 커밋 11, 앱인토스"
+    },
+    {
+      "name": "agent-factory",
+      "url": "https://github.com/mqzkim/agent-factory",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-08-01T01:38:20Z",
+      "createdAt": "2026-07-21T18:01:50Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-08-01",
+          "message": "merge: add orca orchestration dashboard"
+        },
+        {
+          "date": "2026-08-01",
+          "message": "feat: add orca orchestration dashboard"
+        },
+        {
+          "date": "2026-07-22",
+          "message": "Merge pull request #1 from mqzkim/mqzkim/research-orca-ai-agent"
+        },
+        {
+          "date": "2026-07-22",
+          "message": "research: add universal research prompt audit and v2"
+        },
+        {
+          "date": "2026-07-21",
+          "message": "merge: add capability portfolio baselines"
+        }
+      ],
+      "commitsLast30d": 2,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "harness-ai-infra",
+      "significance": 3,
+      "significanceReason": "최근 30일 내 푸시"
+    },
+    {
+      "name": "today-task",
+      "url": "https://github.com/mqzkim/today-task",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-07-29T03:53:17Z",
+      "createdAt": "2026-07-27T03:46:52Z",
+      "stargazerCount": 0,
+      "openIssues": 4,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-07-29",
+          "message": "release: refresh current date and sandbox build"
+        },
+        {
+          "date": "2026-07-28",
+          "message": "release: upload editable main page sandbox build"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "feat: add editable profile and manager task creation"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "evidence: record private console deployment"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "evidence: verify today-task console registration"
+        }
+      ],
+      "commitsLast30d": 14,
+      "isAppsInToss": true,
+      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
+      "category": "apps-in-toss",
+      "appName": "today-task",
+      "stageEstimate": "console",
+      "stageEvidence": [
+        "PRD.md",
+        "console-registration-result.json",
+        "docs",
+        "store-assets",
+        "docs/ANALYTICS_EVENTS.md",
+        "docs/ASSET_RIGHTS.md",
+        "docs/BACKEND_INTEGRATION_CONTRACT.md",
+        "docs/BACKLOG.md",
+        "docs/CONSOLE_COPY.md",
+        "docs/IDEA_BRIEF.md",
+        "docs/OPERATOR_INPUTS_REQUIRED.md",
+        "docs/PRIVACY_POLICY_DRAFT.md",
+        "docs/REGISTRATION_HANDOFF.md",
+        "docs/SANDBOX_QA_HANDOFF.md",
+        "docs/SANDBOX_TEST_SCHEME.md"
+      ],
+      "openIssueTitles": [
+        "[BL-004] 내보내기와 운영 통계",
+        "[BL-003] 기능성 푸시 알림",
+        "[BL-002] 공동 관리자와 부재 상태",
+        "[BL-001] 반복 업무 템플릿"
+      ],
+      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "significance": 4,
+      "significanceReason": "최근 30일 내 푸시, 30일 커밋 14, 앱인토스"
+    },
+    {
+      "name": "nailmap",
+      "url": "https://github.com/mqzkim/nailmap",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-07-28T11:36:12Z",
+      "createdAt": "2026-07-27T00:04:18Z",
+      "stargazerCount": 0,
+      "openIssues": 16,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-07-28",
+          "message": "fix: make api key evidence utf8-safe"
+        },
+        {
+          "date": "2026-07-28",
+          "message": "release: verify sandbox deploy handoff"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "release: record sandbox deploy authorization blocker"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "test: refresh local release evidence"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "test: verify current Apps in Toss artifact"
+        }
+      ],
+      "commitsLast30d": 30,
+      "isAppsInToss": true,
+      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency",
+      "category": "apps-in-toss",
+      "appName": "nailmap",
+      "stageEstimate": "released",
+      "stageEvidence": [
+        "PRD.md",
+        "docs",
+        "store-assets",
+        "vitest.config.ts",
+        "docs/ANALYTICS_EVENTS.md",
+        "docs/API_KEY_REFRESH_HANDOFF.md",
+        "docs/APP_IN_TOSS_SUBMISSION.md",
+        "docs/ASSET_RIGHTS.md",
+        "docs/BACKLOG.md",
+        "docs/CONSOLE_COPY.md",
+        "docs/IDEA_BRIEF.md",
+        "docs/OPERATOR_INPUTS_REQUIRED.md",
+        "docs/PRIVACY_POLICY_DRAFT.md",
+        "docs/REGISTRATION_HANDOFF.md",
+        "docs/RELEASE_READINESS_REPORT.md"
+      ],
+      "openIssueTitles": [
+        "[BL-016] 가격 히스토리·지역 예약 HeatMap",
+        "[BL-015] 채팅·DM·실시간 상담·커뮤니티",
+        "[BL-014] 추천샵 광고·프리미엄 지도 노출",
+        "[BL-013] 친구 추천·쿠폰·포인트",
+        "[BL-012] 고객 리뷰 작성·사진 업로드·AI 방문 검증",
+        "[BL-011] 트렌드·이달의 아트·디자이너 포트폴리오",
+        "[BL-010] AI 견적·제거 및 시술시간 추정",
+        "[BL-009] AI 디자인 유사 검색·취향 추천",
+        "[BL-008] 고급 검색 필터",
+        "[BL-007] 2시간 이내 즉시예약·특가"
+      ],
+      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "significance": 4,
+      "significanceReason": "최근 30일 내 푸시, 30일 커밋 30, 앱인토스"
+    },
+    {
+      "name": "bamti-translator",
+      "url": "https://github.com/mqzkim/bamti-translator",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-07-28T10:36:49Z",
+      "createdAt": "2026-07-24T13:58:30Z",
+      "stargazerCount": 0,
+      "openIssues": 7,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-07-28",
+          "message": "release: publish V4 to Apps in Toss"
+        },
+        {
+          "date": "2026-07-28",
+          "message": "release: record V4 review submission"
+        },
+        {
+          "date": "2026-07-28",
+          "message": "feat: render 27 independent Bamti concepts"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "feat: add 27 Bamti style catalog"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "feat: amplify purpose-specific Bamti styles"
+        }
+      ],
+      "commitsLast30d": 48,
+      "isAppsInToss": true,
+      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
+      "category": "apps-in-toss",
+      "appName": "bamti-translator",
+      "stageEstimate": "console",
+      "stageEvidence": [
+        "PRD.md",
+        "docs",
+        "store-assets",
+        "vitest.config.ts",
+        "docs/ANALYTICS_EVENTS.md",
+        "docs/APP_IDENTITY_SEED.md",
+        "docs/APP_IN_TOSS_SUBMISSION.md",
+        "docs/ASSET_RIGHTS.md",
+        "docs/BACKLOG.md",
+        "docs/CANONICAL_PREVIEW_PARITY_CHECKLIST.md",
+        "docs/CONSOLE_COPY.md",
+        "docs/IDEA_BRIEF.md",
+        "docs/OPERATOR_INPUTS_REQUIRED.md",
+        "docs/PRIVACY_POLICY_DRAFT.md",
+        "docs/REGISTRATION_HANDOFF.md"
+      ],
+      "openIssueTitles": [
+        "[BL-008] 추가 감성 스타일 번역기",
+        "[BL-007] 폰트·레이어 고급 편집기",
+        "[BL-006] 보상·포인트·친구 초대",
+        "[BL-005] 유료 스타일 팩",
+        "[BL-004] 토스 로그인과 서버 갤러리",
+        "[BL-002] 영상·GIF 생성",
+        "[BL-001] 생성형 AI 이미지 변환"
+      ],
+      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "significance": 4,
+      "significanceReason": "최근 30일 내 푸시, 30일 커밋 48, 앱인토스"
+    },
+    {
+      "name": "nail-map",
+      "url": "https://github.com/mqzkim/nail-map",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": null,
+      "pushedAt": "2026-07-27T00:04:21Z",
+      "createdAt": "2026-07-27T00:04:17Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-07-27",
+          "message": "chore: initialize repository"
+        }
+      ],
+      "commitsLast30d": 1,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "side-project",
+      "categoryNote": "README만 있는 빈 레포(nailmap 앱의 이름 중복/placeholder로 추정)",
+      "significance": 3,
+      "significanceReason": "최근 30일 내 푸시"
+    },
+    {
+      "name": "conclusion-card",
+      "url": "https://github.com/mqzkim/conclusion-card",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "CSS",
+      "pushedAt": "2026-07-15T07:18:16Z",
+      "createdAt": "2026-07-15T04:23:11Z",
+      "stargazerCount": 0,
+      "openIssues": 6,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-07-15",
+          "message": "docs: refresh monetization release report"
+        },
+        {
+          "date": "2026-07-15",
+          "message": "docs: record console authentication handoff"
+        },
+        {
+          "date": "2026-07-15",
+          "message": "test: refresh launch evidence and store assets"
+        },
+        {
+          "date": "2026-07-15",
+          "message": "feat: add fail-open result banner monetization"
+        },
+        {
+          "date": "2026-07-15",
+          "message": "docs: lock optional banner revenue model"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": true,
+      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
+      "category": "apps-in-toss",
+      "appName": "conclusion-card",
+      "stageEstimate": "console",
+      "stageEvidence": [
+        "PRD.md",
+        "docs",
+        "store-assets",
+        "docs/ANALYTICS_EVENT_PLAN.md",
+        "docs/APP_IN_TOSS_SUBMISSION.md",
+        "docs/ASSET_RIGHTS.md",
+        "docs/BACKLOG.md",
+        "docs/CONSOLE_COPY.md",
+        "docs/IDEA_BRIEF.md",
+        "docs/OPERATOR_INPUTS_REQUIRED.md",
+        "docs/PRIVACY_POLICY_DRAFT.md",
+        "docs/REGISTRATION_HANDOFF.md",
+        "docs/REVENUE_MODEL.md",
+        "docs/SANDBOX_QA_HANDOFF.md",
+        "docs/SECURITY_AUDIT_NOTES.md"
+      ],
+      "openIssueTitles": [
+        "Post-MVP: 친구와 같은 질문 카드",
+        "Post-MVP: 고민 한 줄 입력과 선택 공유",
+        "Post-MVP: 오늘의 카드 알림",
+        "Post-MVP: 결과 기록함",
+        "Post-MVP: 테마별 특별 덱",
+        "Post-MVP: 한 번의 재뽑기와 보상형 광고"
+      ],
+      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "significance": 2,
+      "significanceReason": "60일 내 푸시, 앱인토스"
+    },
+    {
+      "name": "seoul-house-from-space",
+      "url": "https://github.com/mqzkim/seoul-house-from-space",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-07-15T07:01:25Z",
+      "createdAt": "2026-07-12T12:49:36Z",
+      "stargazerCount": 0,
+      "openIssues": 7,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-07-15",
+          "message": "docs: clarify fastest release timeline"
+        },
+        {
+          "date": "2026-07-15",
+          "message": "feat: hide remaining distance from journey UI"
+        },
+        {
+          "date": "2026-07-15",
+          "message": "docs: refresh planned release handoff"
+        },
+        {
+          "date": "2026-07-15",
+          "message": "docs: plan fastest Apps in Toss release"
+        },
+        {
+          "date": "2026-07-15",
+          "message": "docs: update security review handoff"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": true,
+      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
+      "category": "apps-in-toss",
+      "appName": "seoul-house-from-space",
+      "stageEstimate": "console",
+      "stageEvidence": [
+        "PRD.md",
+        "docs",
+        "store-assets",
+        "docs/ANALYTICS_EVENTS.md",
+        "docs/API_KEY_REFRESH_HANDOFF.md",
+        "docs/APP_IN_TOSS_SUBMISSION.md",
+        "docs/ASSET_RIGHTS.md",
+        "docs/BACKLOG.md",
+        "docs/CONSOLE_COPY.md",
+        "docs/FASTEST_RELEASE_PLAN.md",
+        "docs/GAME_RATING_EVIDENCE.md",
+        "docs/GAME_RATING_SUBMISSION_PACKAGE.md",
+        "docs/IDEA_BRIEF.md",
+        "docs/OPERATOR_INPUTS_REQUIRED.md",
+        "docs/PRIVACY_POLICY_DRAFT.md"
+      ],
+      "openIssueTitles": [
+        "[BL-007] 클라우드 진행 동기화",
+        "[BL-006] 사운드와 고급 햅틱 연출",
+        "[BL-005] 아파트까지 확장 토지 단계",
+        "[BL-004] 진행 공유 카드와 친구 초대",
+        "[BL-003] 게임 센터 리더보드",
+        "[BL-002] 장기 밸런스와 오프라인 진행",
+        "[BL-001] 선택형 보상 광고 부스터"
+      ],
+      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "significance": 2,
+      "significanceReason": "60일 내 푸시, 앱인토스"
+    },
+    {
+      "name": "seoul-house-from-space-support",
+      "url": "https://github.com/mqzkim/seoul-house-from-space-support",
+      "description": null,
+      "isPrivate": false,
+      "isFork": false,
+      "primaryLanguage": "HTML",
+      "pushedAt": "2026-07-12T14:59:57Z",
+      "createdAt": "2026-07-12T14:59:53Z",
+      "stargazerCount": 0,
+      "openIssues": 1,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-07-12",
+          "message": "docs: publish support and privacy pages"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "landing-docs",
+      "categoryNote": "seoul-house-from-space 앱의 공개 지원/개인정보처리방침 정적 페이지(index.html, privacy.html)",
+      "significance": 2,
+      "significanceReason": "60일 내 푸시"
+    },
+    {
+      "name": "coffee",
+      "url": "https://github.com/mqzkim/coffee",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-07-06T16:21:09Z",
+      "createdAt": "2026-07-06T16:21:02Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "master",
+      "recentCommits": [
+        {
+          "date": "2026-07-06",
+          "message": "feat: rebuild coffee app"
+        },
+        {
+          "date": "2026-07-02",
+          "message": "chore: ait:build/ait:deploy 스크립트 + 런북에 .ait 산출 반영"
+        },
+        {
+          "date": "2026-07-02",
+          "message": "build: ait build로 .ait 번들 산출 (outdir=out으로 next export 경로 일치)"
+        },
+        {
+          "date": "2026-07-02",
+          "message": "fix: 정적 export를 프로덕션 빌드로 한정 (dev devtools 충돌 방지)"
+        },
+        {
+          "date": "2026-07-02",
+          "message": "feat(mvp): 코어 루프 백엔드 연동 (따라살래/출석/응모권 → RPC)"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": true,
+      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency",
+      "category": "apps-in-toss",
+      "appName": "ddasa",
+      "stageEstimate": "build",
+      "stageEvidence": [],
+      "openIssueTitles": [],
+      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "significance": 2,
+      "significanceReason": "60일 내 푸시, 앱인토스"
+    },
+    {
+      "name": "diamond-gather",
+      "url": "https://github.com/mqzkim/diamond-gather",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-07-06T03:00:01Z",
+      "createdAt": "2026-07-06T02:59:56Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-07-06",
+          "message": "Implement diamond gather app"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": true,
+      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
+      "category": "apps-in-toss",
+      "appName": "diamond-get",
+      "stageEstimate": "build",
+      "stageEvidence": [
+        "docs",
+        "docs/ARCHITECTURE.md",
+        "docs/BACKLOG.md",
+        "docs/MVP-SCOPE.md",
+        "docs/RUNBOOK.md",
+        "docs/skills"
+      ],
+      "openIssueTitles": [],
+      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "significance": 2,
+      "significanceReason": "60일 내 푸시, 앱인토스"
+    },
+    {
+      "name": "app-in-toss",
+      "url": "https://github.com/mqzkim/app-in-toss",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-07-04T07:52:44Z",
+      "createdAt": "2026-07-04T07:52:06Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-07-04",
+          "message": "Update release next check"
+        },
+        {
+          "date": "2026-07-04",
+          "message": "Initial import"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": true,
+      "aitEvidence": "root has ddasa.ait, ttasa-store-assets, haru-han-tem, tds; AGENTS.md: 'Apps in Toss / 하루한템 작업' 워크스페이스 (granite.config.ts는 루트에 없음)",
+      "category": "apps-in-toss",
+      "categoryNote": "Apps in Toss 워크스페이스 모노레포(ddasa.ait, ttasa-store-assets, haru-han-tem, tds) — granite.config는 하위 폴더에 있음(루트 판정 미적용)",
+      "appName": null,
+      "stageEstimate": "store_assets",
+      "stageEvidence": [
+        "ddasa.ait",
+        "ttasa-store-assets",
+        "haru-han-tem"
+      ],
+      "openIssueTitles": [],
+      "significance": 2,
+      "significanceReason": "60일 내 푸시, 앱인토스"
+    },
+    {
+      "name": "cafe-review-reply-generator",
+      "url": "https://github.com/mqzkim/cafe-review-reply-generator",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-05-08T11:12:02Z",
+      "createdAt": "2026-04-17T13:54:05Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-05-08",
+          "message": "chore(coverage): ratchet content/verticals/laundry.ts to 100%"
+        },
+        {
+          "date": "2026-05-08",
+          "message": "chore(coverage): ratchet content/verticals/laborattorney.ts to 100%"
+        },
+        {
+          "date": "2026-05-08",
+          "message": "chore(coverage): ratchet content/verticals/kids-cafe.ts to 100%"
+        },
+        {
+          "date": "2026-05-08",
+          "message": "chore(coverage): ratchet content/verticals/kids-academy.ts to 100%"
+        },
+        {
+          "date": "2026-05-08",
+          "message": "chore(coverage): ratchet content/verticals/judicial-scrivener.ts to 100%"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "side-project",
+      "significance": 1,
+      "significanceReason": "마지막 푸시 106일 전"
+    },
+    {
+      "name": "korean-review-tone-kit",
+      "url": "https://github.com/mqzkim/korean-review-tone-kit",
+      "description": "Korean review tone analysis + reply style recommender (pure TS lib, 100% coverage)",
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-05-08T00:12:51Z",
+      "createdAt": "2026-05-01T17:08:23Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-05-08",
+          "message": "feat(sarcasm): 반어법·비꼼 탐지 (detectSarcasm)"
+        },
+        {
+          "date": "2026-05-07",
+          "message": "feat(tone): 강조어/완화어 인지 점수 (intensifier-aware scoring)"
+        },
+        {
+          "date": "2026-05-07",
+          "message": "docs(readme): document full public API + monetization-ready cookbook"
+        },
+        {
+          "date": "2026-05-02",
+          "message": "feat(draftPriorityQueue): combine prioritization + draft text for own…"
+        },
+        {
+          "date": "2026-05-02",
+          "message": "feat(formatWeeklyReport): owner-ready markdown digest from summarizeR…"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "side-project",
+      "significance": 2,
+      "significanceReason": "마지막 푸시 106일 전, 설명 있음"
+    },
+    {
+      "name": "hermes-agent",
+      "url": "https://github.com/mqzkim/hermes-agent",
+      "description": "The agent that grows with you",
+      "isPrivate": false,
+      "isFork": true,
+      "primaryLanguage": "Python",
+      "pushedAt": "2026-05-03T16:25:00Z",
+      "createdAt": "2026-04-30T02:35:20Z",
+      "stargazerCount": 0,
+      "defaultBranch": "main",
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "fork",
+      "significance": 1,
+      "significanceReason": "포크, 자체 커밋 없음",
+      "note": "포크: 간단 메타만"
+    },
+    {
+      "name": "og-image-api",
+      "url": "https://github.com/mqzkim/og-image-api",
+      "description": "Dynamic OG image generation API as a service - 4-7 day MVP money-making project",
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "Python",
+      "pushedAt": "2026-05-02T13:12:56Z",
+      "createdAt": "2026-04-30T01:56:44Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-05-02",
+          "message": "feat(themes): add github-card theme + landing Themes section"
+        },
+        {
+          "date": "2026-05-02",
+          "message": "feat(landing): sharpen lede + fix Free-tier dead-end CTA"
+        },
+        {
+          "date": "2026-05-01",
+          "message": "docs(halt): 2026-05-02 stop-loop recommendation (turn 238, BLOCKER 20…"
+        },
+        {
+          "date": "2026-05-01",
+          "message": "chore(loop): turn 238 idle (BLOCKER 208-turn)"
+        },
+        {
+          "date": "2026-05-01",
+          "message": "chore(loop): turn 237 idle (BLOCKER 207-turn)"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "side-project",
+      "significance": 2,
+      "significanceReason": "마지막 푸시 111일 전, 설명 있음"
+    },
+    {
+      "name": "tradingagents-sena-trader",
+      "url": "https://github.com/mqzkim/tradingagents-sena-trader",
+      "description": "Personal TradingAgents-based AI trader workspace for Sena/Hermes operations",
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "Python",
+      "pushedAt": "2026-05-02T00:43:40Z",
+      "createdAt": "2026-04-30T05:29:10Z",
+      "stargazerCount": 0,
+      "openIssues": 3,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-05-02",
+          "message": "docs: add 2026-05-01 paper trading report"
+        },
+        {
+          "date": "2026-05-01",
+          "message": "feat: add trader harness verification gates"
+        },
+        {
+          "date": "2026-04-30",
+          "message": "docs: add paper trade research addendum"
+        },
+        {
+          "date": "2026-04-30",
+          "message": "feat: preserve paper trade evidence in reports"
+        },
+        {
+          "date": "2026-04-30",
+          "message": "feat: schedule weighted paper auto trader"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "harness-ai-infra",
+      "significance": 2,
+      "significanceReason": "마지막 푸시 112일 전, 설명 있음"
+    },
+    {
+      "name": "mqzkim.github.io",
+      "url": "https://github.com/mqzkim/mqzkim.github.io",
+      "description": null,
+      "isPrivate": false,
+      "isFork": false,
+      "primaryLanguage": "Astro",
+      "pushedAt": "2026-05-02T00:43:32Z",
+      "createdAt": "2026-05-01T07:01:18Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-05-02",
+          "message": "Add web app manifest discovery"
+        },
+        {
+          "date": "2026-05-01",
+          "message": "Add robots meta to launched pages"
+        },
+        {
+          "date": "2026-05-01",
+          "message": "Add sitemap lastmod metadata"
+        },
+        {
+          "date": "2026-05-01",
+          "message": "Use absolute URLs in homepage ItemList schema"
+        },
+        {
+          "date": "2026-05-01",
+          "message": "Add hreflang alternates to launched pages"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "landing-docs",
+      "significance": 1,
+      "significanceReason": "마지막 푸시 112일 전"
+    },
+    {
+      "name": "hermes-agent-board",
+      "url": "https://github.com/mqzkim/hermes-agent-board",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-05-01T23:35:30Z",
+      "createdAt": "2026-04-24T13:48:02Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-05-01",
+          "message": "feat: show benchmark action plan"
+        },
+        {
+          "date": "2026-05-01",
+          "message": "docs: record enterprise evolution next steps"
+        },
+        {
+          "date": "2026-05-01",
+          "message": "feat: expose enterprise evolution run endpoint"
+        },
+        {
+          "date": "2026-05-01",
+          "message": "chore: record benchmark consumer run"
+        },
+        {
+          "date": "2026-05-01",
+          "message": "feat: add benchmark consumer panel"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "harness-ai-infra",
+      "significance": 1,
+      "significanceReason": "마지막 푸시 112일 전"
+    },
+    {
+      "name": "tuist",
+      "url": "https://github.com/mqzkim/tuist",
+      "description": "Your platform team, as a service",
+      "isPrivate": false,
+      "isFork": true,
+      "primaryLanguage": "Swift",
+      "pushedAt": "2026-04-30T15:17:08Z",
+      "createdAt": "2026-04-29T15:38:48Z",
+      "stargazerCount": 0,
+      "defaultBranch": "main",
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "fork",
+      "significance": 1,
+      "significanceReason": "포크, 자체 커밋 없음",
+      "note": "포크: 간단 메타만"
+    },
+    {
+      "name": "claude-max-codex-setup",
+      "url": "https://github.com/mqzkim/claude-max-codex-setup",
+      "description": "Claude Max + Codex Orchestration Setup — landing",
+      "isPrivate": false,
+      "isFork": false,
+      "primaryLanguage": "HTML",
+      "pushedAt": "2026-04-23T15:09:16Z",
+      "createdAt": "2026-04-23T15:09:13Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-04-23",
+          "message": "initial landing page"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "landing-docs",
+      "significance": 2,
+      "significanceReason": "마지막 푸시 120일 전, 설명 있음"
+    },
+    {
+      "name": "helix-space",
+      "url": "https://github.com/mqzkim/helix-space",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-04-21T02:46:14Z",
+      "createdAt": "2026-04-21T02:45:51Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-04-21",
+          "message": "Improve supervisor prompt injection"
+        },
+        {
+          "date": "2026-04-21",
+          "message": "Initial commit"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "harness-ai-infra",
+      "significance": 1,
+      "significanceReason": "마지막 푸시 123일 전"
+    },
+    {
+      "name": "beautify-me",
+      "url": "https://github.com/mqzkim/beautify-me",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "Python",
+      "pushedAt": "2026-04-19T10:56:39Z",
+      "createdAt": "2026-04-19T08:33:35Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-04-19",
+          "message": "Merge pull request #1 from mqzkim/codex/create-technical-specificatio…"
+        },
+        {
+          "date": "2026-04-19",
+          "message": "Harden architecture with strict linting, deterministic logic, and 100…"
+        },
+        {
+          "date": "2026-04-19",
+          "message": "Initialize repository"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "side-project",
+      "significance": 1,
+      "significanceReason": "마지막 푸시 125일 전"
+    },
+    {
+      "name": "roastsmysite",
+      "url": "https://github.com/mqzkim/roastsmysite",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-04-18T14:57:50Z",
+      "createdAt": "2026-04-17T15:27:57Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-04-18",
+          "message": "docs: sync backlog with shipped work"
+        },
+        {
+          "date": "2026-04-18",
+          "message": "harden gumroad token verification"
+        },
+        {
+          "date": "2026-04-18",
+          "message": "M-1: stream remaining persona unlocks through one verify request"
+        },
+        {
+          "date": "2026-04-18",
+          "message": "Remove persona identity leaks"
+        },
+        {
+          "date": "2026-04-18",
+          "message": "Finish Batch 6 safe polish"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "side-project",
+      "significance": 1,
+      "significanceReason": "마지막 푸시 125일 전"
+    },
+    {
+      "name": "llm-usage",
+      "url": "https://github.com/mqzkim/llm-usage",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "C#",
+      "pushedAt": "2026-04-18T09:11:11Z",
+      "createdAt": "2026-04-18T08:48:00Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "master",
+      "recentCommits": [
+        {
+          "date": "2026-04-18",
+          "message": "Add installable Windows widget packaging scripts"
+        },
+        {
+          "date": "2026-04-18",
+          "message": "Add Windows widget provider telemetry pipeline"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "side-project",
+      "significance": 1,
+      "significanceReason": "마지막 푸시 126일 전"
+    },
+    {
+      "name": "briefme",
+      "url": "https://github.com/mqzkim/briefme",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "Python",
+      "pushedAt": "2026-04-18T01:14:58Z",
+      "createdAt": "2026-04-16T16:30:32Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-04-18",
+          "message": "chore: auto-commit from Claude Code session"
+        },
+        {
+          "date": "2026-04-17",
+          "message": "chore: auto-commit from Claude Code session"
+        },
+        {
+          "date": "2026-04-17",
+          "message": "fix(verify_citations): add type annotation on json.loads result (#27)"
+        },
+        {
+          "date": "2026-04-17",
+          "message": "feat: add skill/scripts/verify_citations.py enforcing MISSION HI 6 (T…"
+        },
+        {
+          "date": "2026-04-17",
+          "message": "feat: add SKILL.md manifest + commands/briefme.md invocation gate (Tr…"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "harness-ai-infra",
+      "significance": 1,
+      "significanceReason": "마지막 푸시 126일 전"
+    },
+    {
+      "name": "short_youtube",
+      "url": "https://github.com/mqzkim/short_youtube",
+      "description": "요약튜브 YouTube transcript/report/PPT harness",
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "Python",
+      "pushedAt": "2026-04-17T00:56:27Z",
+      "createdAt": "2026-04-16T14:31:24Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-04-17",
+          "message": "fix: add published dates to reports and slides"
+        },
+        {
+          "date": "2026-04-17",
+          "message": "feat: add oauth cli llm providers"
+        },
+        {
+          "date": "2026-04-16",
+          "message": "feat: add chapter-aware llm report pipeline"
+        },
+        {
+          "date": "2026-04-16",
+          "message": "fix: fallback to ascii for cli json output"
+        },
+        {
+          "date": "2026-04-16",
+          "message": "feat: add recent selection sync mode"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "side-project",
+      "significance": 2,
+      "significanceReason": "마지막 푸시 127일 전, 설명 있음"
+    },
+    {
+      "name": "community-growth-hacker",
+      "url": "https://github.com/mqzkim/community-growth-hacker",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": null,
+      "pushedAt": "2026-04-16T07:39:44Z",
+      "createdAt": "2026-04-16T03:24:20Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-04-16",
+          "message": "Initial commit: community-growth-hacker v0-v4 drafts"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "knowledge-wiki",
+      "categoryNote": "discovery/drafts/WIKI_INGEST.md 등 지식·초안 중심",
+      "significance": 1,
+      "significanceReason": "마지막 푸시 128일 전"
+    },
+    {
+      "name": "harness-infra",
+      "url": "https://github.com/mqzkim/harness-infra",
+      "description": "Claude Code harness infrastructure: agents, skills, scripts, references",
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-04-16T07:07:14Z",
+      "createdAt": "2026-03-29T11:38:23Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-04-08",
+          "message": "chore: checkpoint"
+        },
+        {
+          "date": "2026-03-31",
+          "message": "fix: use hardlink fallback instead of copy for Windows file links"
+        },
+        {
+          "date": "2026-03-31",
+          "message": "fix: add copy fallback for file symlinks on Windows without Developer…"
+        },
+        {
+          "date": "2026-03-31",
+          "message": "refactor: separate global/ as canonical source, clarify root CLAUDE.md"
+        },
+        {
+          "date": "2026-03-31",
+          "message": "docs: add knowledge reliability principles to CLAUDE.md and templates"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "harness-ai-infra",
+      "significance": 2,
+      "significanceReason": "마지막 푸시 128일 전, 설명 있음"
+    },
+    {
+      "name": "helix-co",
+      "url": "https://github.com/mqzkim/helix-co",
+      "description": "Helix Co - AI Agent Operations Platform",
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-04-16T03:30:25Z",
+      "createdAt": "2026-03-29T11:39:59Z",
+      "stargazerCount": 0,
+      "openIssues": 90,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-04-16",
+          "message": "feat(factory): wire pipeline events → dashboard celebration trigger (…"
+        },
+        {
+          "date": "2026-04-16",
+          "message": "feat(factory): one-click launch experience + test suite expansion (#1…"
+        },
+        {
+          "date": "2026-04-12",
+          "message": "Remove Heartbeat section from SOUL.md on main branch"
+        },
+        {
+          "date": "2026-04-12",
+          "message": "Remove Heartbeat section to stop 30-minute cron DM notifications"
+        },
+        {
+          "date": "2026-04-11",
+          "message": "feat: add Codex issue resolver GitHub Action for auto-fix labeled issues"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "harness-ai-infra",
+      "significance": 2,
+      "significanceReason": "마지막 푸시 128일 전, 설명 있음, 오픈 이슈 90"
+    },
+    {
+      "name": "gst",
+      "url": "https://github.com/mqzkim/gst",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": null,
+      "pushedAt": "2026-04-12T18:09:54Z",
+      "createdAt": "2026-04-12T18:09:51Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-04-12",
+          "message": "Initial commit"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "side-project",
+      "significance": 1,
+      "significanceReason": "마지막 푸시 131일 전"
+    },
+    {
+      "name": "llm-lean-startup",
+      "url": "https://github.com/mqzkim/llm-lean-startup",
+      "description": "AI Skill-based Socratic Interview + 5-Layer Validation to guide developers from 'What to build?' to a validated PRD",
+      "isPrivate": false,
+      "isFork": false,
+      "primaryLanguage": "Astro",
+      "pushedAt": "2026-04-12T16:49:43Z",
+      "createdAt": "2026-04-11T23:00:59Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-04-12",
+          "message": "Add Anti-Drift framework: External Gates, checklist, case library, va…"
+        },
+        {
+          "date": "2026-04-12",
+          "message": "Add Phase 1-4 templates with PRD-ready brief tone calibration"
+        },
+        {
+          "date": "2026-04-12",
+          "message": "Redesign landing to Field Report style (essay/serif/sidenote)"
+        },
+        {
+          "date": "2026-04-12",
+          "message": "Add Stage 1-5 journey reference map, calibrate L3-L5 validation tone"
+        },
+        {
+          "date": "2026-04-11",
+          "message": "Initial commit: project setup"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "harness-ai-infra",
+      "significance": 2,
+      "significanceReason": "마지막 푸시 131일 전, 설명 있음"
+    }
+  ]
+}

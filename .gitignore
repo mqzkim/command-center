@@ -1,0 +1,10 @@
+# wiki는 junction — 위키 원본은 이 repo의 관리 대상이 아님 (원본: ~/.wiki)
+wiki/
+# 런타임 로그·임시물
+evolve/logs/
+_inline_check.js
+_syntax.js
+__pycache__/
+*.pyc
+# 헤드리스 크롬 격리 프로필 등 임시
+chrome-profile/
