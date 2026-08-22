@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-22T15:37:52.693Z",
+ "generatedAt": "2026-08-22T15:45:11.834Z",
  "minStars": 500,
  "queries": [
   "claude code skills",
@@ -14,119 +14,9 @@
  "scanned": 84,
  "dedup": {
   "wikiCatalog": 2,
-  "alreadySeen": 40
+  "alreadySeen": 50
  },
  "candidates": [
-  {
-   "description": "Deploy Your Frontend in a Single Command. Claude Code Skills supported.",
-   "fullName": "glitternetwork/pinme",
-   "stargazersCount": 3735,
-   "updatedAt": "2026-08-22T08:36:13Z",
-   "url": "https://github.com/glitternetwork/pinme",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-   "fullName": "elementalsouls/Claude-BugHunter",
-   "stargazersCount": 3731,
-   "updatedAt": "2026-08-22T13:41:01Z",
-   "url": "https://github.com/elementalsouls/Claude-BugHunter",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "Claude Code plugin that generates individualized knowledge systems from conversation. You describe how you think and work, have a conversation and get a complete second brain as markdown files you own.",
-   "fullName": "agenticnotetaking/arscontexta",
-   "stargazersCount": 3480,
-   "updatedAt": "2026-08-21T19:18:13Z",
-   "url": "https://github.com/agenticnotetaking/arscontexta",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "把 Markdown 一键排成可直接粘进公众号编辑器的精致 HTML —— 6 套精选主题 + 主题生成器 + 双关卡校验。An AI-agent skill that turns Markdown into paste-ready WeChat article HTML.",
-   "fullName": "isjiamu/gzh-design-skill",
-   "stargazersCount": 3255,
-   "updatedAt": "2026-08-22T13:57:14Z",
-   "url": "https://github.com/isjiamu/gzh-design-skill",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "A curated list of open source GitHub repositories related to ChatGPT, the OpenAI API, and Codex. Searchable via Claude Code skills.",
-   "fullName": "taishi-i/awesome-ChatGPT-repositories",
-   "stargazersCount": 3209,
-   "updatedAt": "2026-08-21T15:25:40Z",
-   "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "AI Multi-Agent Framework in .NET",
-   "fullName": "SciSharp/BotSharp",
-   "stargazersCount": 3098,
-   "updatedAt": "2026-08-22T09:52:19Z",
-   "url": "https://github.com/SciSharp/BotSharp",
-   "labels": [
-    "orchestration"
-   ],
-   "query": "multi-agent framework"
-  },
-  {
-   "description": "用 Claude Code Skills 做的视频剪辑 Agent",
-   "fullName": "Agentchengfeng/chengfeng-videocut-skills",
-   "stargazersCount": 2914,
-   "updatedAt": "2026-08-22T08:08:03Z",
-   "url": "https://github.com/Agentchengfeng/chengfeng-videocut-skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "A Claude Code skill for generating UI in the Nothing design language. Monochrome, typographic, industrial.",
-   "fullName": "dominikmartn/nothing-design-skill",
-   "stargazersCount": 2741,
-   "updatedAt": "2026-08-22T10:31:39Z",
-   "url": "https://github.com/dominikmartn/nothing-design-skill",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-   "fullName": "tradermonty/claude-trading-skills",
-   "stargazersCount": 2695,
-   "updatedAt": "2026-08-22T13:36:25Z",
-   "url": "https://github.com/tradermonty/claude-trading-skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "471 plugins, 3,069 skills, 347 agents for Claude Code. Open-source marketplace at tonsofskills.com with the ccpi CLI package manager.",
-   "fullName": "jeremylongshore/claude-code-plugins-plus-skills",
-   "stargazersCount": 2660,
-   "updatedAt": "2026-08-22T12:04:13Z",
-   "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
   {
    "description": "A curated directory of open-source AI agent skills for Swift and Apple platform development.",
    "fullName": "twostraws/Swift-Agent-Skills",
