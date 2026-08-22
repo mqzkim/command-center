@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-22T16:00:44.826Z",
+ "lastRun": "2026-08-22T16:03:52.661Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -49,6 +49,12 @@
    "date": "2026-08-23",
    "improvement": "FailproofAI/failproofai 지식화(c) — ~/.wiki entity ingest(Claude Code 훅 런타임 관측·정책 차단; (a) 대시보드 통합은 오너 결정 대기) · 트렌드 후보 10건 검토(채택 1·기각 9) · seenRepos 60→70",
    "commit": "53bf150",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-08-23",
+   "improvement": "china-qijizhifeng/agentic-harness-engineering 지식화(c) — 기존 AHE concept 페이지에 공식 코드 repo 반영 · 트렌드 후보 10건 검토(채택 1·기각 9, 잔여 2) · seenRepos 70→80",
+   "commit": "pending",
    "gates": "4/4"
   }
  ],
@@ -122,7 +128,17 @@
   "obra/superpowers-marketplace",
   "quemsah/awesome-claude-plugins",
   "thClaws/thClaws",
-  "rasbt/mini-coding-agent"
+  "rasbt/mini-coding-agent",
+  "fivetaku/gptaku_plugins",
+  "AKCodez/hackingtool-plugin",
+  "ccplugins/awesome-claude-code-plugins",
+  "fivetaku/fablize",
+  "Pan-Chera/Multi-Agent-CAD",
+  "china-qijizhifeng/agentic-harness-engineering",
+  "hashicorp/agent-skills",
+  "harnesslabs/arbiter",
+  "liquidos-ai/AutoAgents",
+  "RyanAlberts/best-of-Agent-Harnesses"
  ],
  "appliedImprovements": [
   {
@@ -179,6 +195,13 @@
    "date": "2026-08-23",
    "mode": "knowledge",
    "note": "(a) dashboard integration pending owner decision: settings.json hook collision + on-disk format unverified"
+  },
+  {
+   "id": "wiki:china-qijizhifeng/agentic-harness-engineering",
+   "repo": "china-qijizhifeng/agentic-harness-engineering",
+   "date": "2026-08-23",
+   "mode": "knowledge",
+   "note": "existing concept page (arXiv 2604.25850) updated with official code repo, no new entity"
   }
  ],
  "openFindings": []

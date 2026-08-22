@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-22T15:59:29.042Z",
+ "generatedAt": "2026-08-22T16:04:10.049Z",
  "minStars": 500,
  "queries": [
   "claude code skills",
@@ -14,119 +14,9 @@
  "scanned": 84,
  "dedup": {
   "wikiCatalog": 2,
-  "alreadySeen": 70
+  "alreadySeen": 80
  },
  "candidates": [
-  {
-   "description": "A Claude Code plugin marketplace for people who want to become AI Native",
-   "fullName": "fivetaku/gptaku_plugins",
-   "stargazersCount": 1065,
-   "updatedAt": "2026-08-22T11:30:56Z",
-   "url": "https://github.com/fivetaku/gptaku_plugins",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Claude Code plugin: 183+ pentesting & OSINT tools from Z4nzu/hackingtool. Auto-runs what it can, hands off the rest.",
-   "fullName": "AKCodez/hackingtool-plugin",
-   "stargazersCount": 1012,
-   "updatedAt": "2026-08-21T19:10:50Z",
-   "url": "https://github.com/AKCodez/hackingtool-plugin",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Awesome Claude Code plugins — a curated list of slash commands, subagents, MCP servers, and hooks for Claude Code",
-   "fullName": "ccplugins/awesome-claude-code-plugins",
-   "stargazersCount": 922,
-   "updatedAt": "2026-08-22T01:19:16Z",
-   "url": "https://github.com/ccplugins/awesome-claude-code-plugins",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "A Claude Code plugin that makes Opus behave like Fable — completion, evidence, and verification enforced as procedure. Ships only what a Fable-vs-Opus comparison proved transferable.",
-   "fullName": "fivetaku/fablize",
-   "stargazersCount": 894,
-   "updatedAt": "2026-08-22T10:46:28Z",
-   "url": "https://github.com/fivetaku/fablize",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "MAC (Multi-Agent CAD): A decoupled multi-agent framework for text-to-CAD generation via constrained test-time compute",
-   "fullName": "Pan-Chera/Multi-Agent-CAD",
-   "stargazersCount": 869,
-   "updatedAt": "2026-08-22T13:03:04Z",
-   "url": "https://github.com/Pan-Chera/Multi-Agent-CAD",
-   "labels": [
-    "orchestration"
-   ],
-   "query": "multi-agent framework"
-  },
-  {
-   "description": "Official AHE code — Agentic Harness Engineering: observability-driven automatic evolution of coding-agent harnesses (concurrent w/ meta-harness). NexAU-AHE reaches 84.7% ± 2.1 pass@1 on Terminal-Bench 2 (GPT-5.5). Lifts GPT-5.4 69.7→77.0% over 10 iters, beats Codex/ACE/Training-Free GRPO; frozen harness transfers to SWE-bench-Verified.",
-   "fullName": "china-qijizhifeng/agentic-harness-engineering",
-   "stargazersCount": 844,
-   "updatedAt": "2026-08-22T04:05:45Z",
-   "url": "https://github.com/china-qijizhifeng/agentic-harness-engineering",
-   "labels": [
-    "harness"
-   ],
-   "query": "coding agent harness"
-  },
-  {
-   "description": "A collection of Agent skills and Claude Code plugins for HashiCorp products.",
-   "fullName": "hashicorp/agent-skills",
-   "stargazersCount": 832,
-   "updatedAt": "2026-08-22T14:41:25Z",
-   "url": "https://github.com/hashicorp/agent-skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Multi-agent framework for design, simulation, and auditing.",
-   "fullName": "harnesslabs/arbiter",
-   "stargazersCount": 747,
-   "updatedAt": "2026-08-20T11:21:43Z",
-   "url": "https://github.com/harnesslabs/arbiter",
-   "labels": [
-    "orchestration"
-   ],
-   "query": "multi-agent framework"
-  },
-  {
-   "description": "A  multi-agent framework written in Rust that enables you to build, deploy, and coordinate multiple intelligent agents",
-   "fullName": "liquidos-ai/AutoAgents",
-   "stargazersCount": 738,
-   "updatedAt": "2026-08-21T20:48:45Z",
-   "url": "https://github.com/liquidos-ai/AutoAgents",
-   "labels": [
-    "orchestration"
-   ],
-   "query": "multi-agent framework"
-  },
-  {
-   "description": "🏆 Curated, ranked list of AI agent harnesses (100+) — plus an MCP server, llms.txt & JSON so agents can recommend them too. Rescored weekly.",
-   "fullName": "RyanAlberts/best-of-Agent-Harnesses",
-   "stargazersCount": 670,
-   "updatedAt": "2026-08-22T13:54:07Z",
-   "url": "https://github.com/RyanAlberts/best-of-Agent-Harnesses",
-   "labels": [
-    "harness"
-   ],
-   "query": "ai agent harness"
-  },
   {
    "description": "[ACL2026 main] Official implementation of \"Paper2Rebuttal: A Multi-Agent Framework for Transparent Author Response Assistance\"",
    "fullName": "AutoLab-SAI-SJTU/Paper2Rebuttal",
