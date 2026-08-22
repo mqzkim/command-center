@@ -1,7 +1,7 @@
 // 자동 생성 — build-projects.mjs (로컬 클론 스캔 + projects-raw.json(gh) + .launch/launch-status.json + ~/.wiki 링크)
-// 생성: 2026-08-22 15:33Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
+// 생성: 2026-08-22 15:42Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
 const CC_PROJECTS = {
- "generatedAt": "2026-08-22 15:33Z",
+ "generatedAt": "2026-08-22 15:42Z",
  "roots": [
   "C:\\workspace",
   "C:\\Users\\my\\workspace"
@@ -81,7 +81,7 @@ const CC_PROJECTS = {
    "remote": "https://github.com/mqzkim/launch-deck.git",
    "lang": null,
    "branch": "main",
-   "dirty": 9,
+   "dirty": 7,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
    "daysSince": 0,
@@ -128,7 +128,7 @@ const CC_PROJECTS = {
    "remote": "https://github.com/mqzkim/command-center.git",
    "lang": "JavaScript",
    "branch": "master",
-   "dirty": 3,
+   "dirty": 5,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
    "daysSince": 0,
@@ -163,10 +163,10 @@ const CC_PROJECTS = {
      "concepts/apps-in-toss-front-loaded-launch-contract.md",
      "concepts/discord-bot-ecosystem.md",
      "concepts/git-subdirectory-remote-detection-pitfall.md",
+     "concepts/harness-engineering.md",
      "concepts/headless-chrome-dom-error-capture.md",
      "concepts/mcp-protocol.md",
-     "concepts/non-dev-ux-messaging.md",
-     "concepts/parallel-session-shared-log-namespacing.md"
+     "concepts/non-dev-ux-messaging.md"
     ],
     "launch": null,
     "parent": null
@@ -4197,7 +4197,7 @@ const CC_PROJECTS = {
    "remote": "https://github.com/brobertsaz/claude-os",
    "lang": null,
    "branch": "main",
-   "dirty": 4,
+   "dirty": 5,
    "lastCommit": "2026-02-06",
    "lastActivity": "2026-02-06",
    "daysSince": 198,

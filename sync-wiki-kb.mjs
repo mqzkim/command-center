@@ -53,8 +53,20 @@ async function health() {
   } catch { return false; }
 }
 
+// 일시적 연결 오류(fetch failed / ECONNRESET 등) 재시도: 3회, 백오프 1s·3s·6s
+async function fetchRetry(url, opts, tries = 4) {
+  for (let i = 0; ; i++) {
+    try { return await fetch(url, opts); }
+    catch (e) {
+      const code = e.cause?.code || e.cause?.message || e.message;
+      if (i >= tries - 1) throw new Error(`${opts?.method || 'GET'} network error after ${tries} tries: ${code}`);
+      await new Promise((r) => setTimeout(r, [1000, 3000, 6000][i] || 6000));
+    }
+  }
+}
+
 async function del(filename) {
-  const r = await fetch(`${API}/api/kb/${KB}/documents/${encodeURIComponent(filename)}`, { method: 'DELETE' });
+  const r = await fetchRetry(`${API}/api/kb/${KB}/documents/${encodeURIComponent(filename)}`, { method: 'DELETE' });
   if (r.ok || r.status === 404) return;
   throw new Error(`DELETE ${r.status}: ${(await r.text()).slice(0, 200)}`);
 }
@@ -69,7 +81,7 @@ async function upsert(f) {
     filename,
     metadata: { path: f.rel, category: categoryOf(f.rel), title: titleOf(content, f.rel), mtime: new Date(f.mtimeMs).toISOString(), source: 'wiki-mirror' },
   });
-  const r = await fetch(`${API}/api/kb/${KB}/documents/content`, {
+  const r = await fetchRetry(`${API}/api/kb/${KB}/documents/content`, {
     method: 'POST', headers: { 'content-type': 'application/json' }, body,
   });
   if (!r.ok) throw new Error(`POST ${r.status} (${content.length} chars): ${(await r.text()).slice(0, 300)}`);

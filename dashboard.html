@@ -913,23 +913,26 @@ $("#drawerBody").addEventListener("click", async e => {
 })();
 
 /* ═══════════════ CLAUDE OS 라이브 (8051) — 전부 런타임 fetch, 오프라인 시 명시 렌더, 에러 0 ═══════════════ */
-function cosBase() { return "http://localhost:8051"; }
+/* ?cosPort=<n> — 오프라인 렌더 검증용(죽은 포트 지정). 기본 8051 */
+function cosBase() { const p = new URLSearchParams(location.search).get("cosPort"); return "http://localhost:" + (/^d{2,5}$/.test(p || "") ? p : "8051"); }
 async function cosFetch(path, body, ms) {
   const COS = cosBase();
-  /* 타임아웃 20s: 꺼져 있으면 connection refused로 즉시 reject(오프라인 렌더). 켜져 있으면 L2/L3 임베딩 인제스트 중 /health 6~18s·search-all ~10s 실측이라 3s는 허위 오프라인 */
-  const ac = new AbortController(); const t = setTimeout(() => ac.abort(), ms || 20000);
+  /* 타임아웃 기본 30s → COS_TIMEOUT 반환(지연 렌더), 연결 실패·비 2xx → null(오프라인 렌더). 인제스트 중 /health 6~18s·search-all ~10s 실측이라 3s는 허위 오프라인 */
+  const ac = new AbortController(); let timedOut = false; const t = setTimeout(() => { timedOut = true; ac.abort(); }, ms || 30000);
   try {
     const r = await fetch(COS + path, { signal: ac.signal, ...(body ? { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) } : {}) });
     if (!r.ok) return null;
     return await r.json();
-  } catch { return null; } finally { clearTimeout(t); }
+  } catch { return timedOut ? COS_TIMEOUT : null; } finally { clearTimeout(t); }
 }
+const COS_TIMEOUT = { timeout: true };
+const cosFailMsg = (j, what) => j === COS_TIMEOUT ? `응답 지연 — 8051 ${what} 30s 초과 (인제스트 중일 수 있음, 잠시 후 재시도)` : `오프라인 — claude-os(8051) 응답 없음`;
 function cosSnip(s) { return esc(String(s || "").replace(/\s+/g, " ").trim().slice(0, 120)); }
 function cosTitle(r) { return (r.metadata && (r.metadata.title || r.metadata.filename)) || r.doc_id || "?"; }
 async function cosSearchInto(box, query, topK) {
   box.innerHTML = `<li class="cos-dim">검색 중… "${esc(query)}"</li>`;
   const j = await cosFetch("/api/kb/search-all", { query, top_k: topK }, 20000);
-  if (!j) { box.innerHTML = `<li class="cos-off">오프라인 — claude-os(8051) 응답 없음</li>`; return; }
+  if (!j || j === COS_TIMEOUT) { box.innerHTML = `<li class="cos-off">${cosFailMsg(j, "search-all")}</li>`; return; }
   const rs = j.results || [];
   box.innerHTML = rs.length
     ? rs.map(r => `<li><b>${esc(cosTitle(r))}</b><span class="s">${esc(r.kb_name || "?")} · score ${(+r.score || 0).toFixed(3)}</span><span class="why">${cosSnip(r.text)}</span></li>`).join("")
@@ -938,18 +941,23 @@ async function cosSearchInto(box, query, topK) {
 async function cosPanelRefresh() {
   const st = $("#cosState"), kb = $("#cosKb"), mem = $("#cosMem");
   const h = await cosFetch("/health");
-  if (!h) { st.textContent = "오프라인"; st.className = "s cos-off"; kb.innerHTML = `<li class="cos-off">오프라인 — http://localhost:8051 응답 없음 (start.ps1 필요)</li>`; mem.innerHTML = `<li class="cos-dim">—</li>`; return; }
+  if (!h || h === COS_TIMEOUT) { st.textContent = h ? "응답 지연" : "오프라인"; st.className = "s cos-off"; kb.innerHTML = `<li class="cos-off">${cosFailMsg(h, "/health")}${h ? "" : " (start.ps1 필요)"}</li>`; mem.innerHTML = `<li class="cos-dim">—</li>`; return; }
   const c = h.components || {};
   st.textContent = `${h.status} · sqlite ${c.sqlite ? c.sqlite.status : "?"} · ollama ${c.ollama ? c.ollama.models_installed + " models" : "?"}`;
   st.className = "s " + (h.status === "healthy" ? "cos-ok" : "cos-off");
-  const kbs = ((await cosFetch("/api/kb")) || {}).knowledge_bases || [];
+  const kbj = await cosFetch("/api/kb");
+  const kbs = (kbj && kbj.knowledge_bases) || [];
   const mine = kbs.filter(k => /^command-center-/.test(k.name));
-  if (!mine.length) { kb.innerHTML = `<li class="cos-dim">command-center-* KB 없음 (프로젝트 미생성)</li>`; }
+  if (!kbj || kbj === COS_TIMEOUT) { kb.innerHTML = `<li class="cos-off">${cosFailMsg(kbj, "/api/kb")}</li>`; }
+  else if (!mine.length) { kb.innerHTML = `<li class="cos-dim">command-center-* KB 없음 (프로젝트 미생성)</li>`; }
   else {
     const stats = await Promise.all(mine.map(k => cosFetch(`/api/kb/${encodeURIComponent(k.name)}/stats`)));
-    kb.innerHTML = mine.map((k, i) => `<li>${esc(k.name.replace(/^command-center-/, ""))}<span class="s">문서 ${stats[i] ? stats[i].total_documents : "?"} · 청크 ${stats[i] ? stats[i].total_chunks : "?"}</span></li>`).join("");
+    const sv = (s, k) => s && s !== COS_TIMEOUT && k in s ? s[k] : "?";
+    kb.innerHTML = mine.map((k, i) => `<li>${esc(k.name.replace(/^command-center-/, ""))}<span class="s">문서 ${sv(stats[i], "total_documents")} · 청크 ${sv(stats[i], "total_chunks")}</span></li>`).join("");
   }
-  const docs = ((await cosFetch("/api/kb/command-center-project_memories/documents")) || {}).documents || [];
+  const dj = await cosFetch("/api/kb/command-center-project_memories/documents");
+  if (!dj || dj === COS_TIMEOUT) { mem.innerHTML = `<li class="cos-off">${cosFailMsg(dj, "documents")}</li>`; return; }
+  const docs = dj.documents || [];
   const top = [...docs].sort((a, b) => String((b.metadata || b).upload_date || b.created_at || "").localeCompare(String((a.metadata || a).upload_date || a.created_at || ""))).slice(0, 5);
   mem.innerHTML = top.length
     ? top.map(d => `<li>${esc((d.metadata && d.metadata.title) || d.title || d.filename || d.id)}<span class="s">${esc(String((d.metadata || d).upload_date || d.created_at || "").slice(0, 16))}</span></li>`).join("")
@@ -963,15 +971,16 @@ async function cosAppDetail(n, box) {
   const h = await cosFetch("/health");
   if (selected !== n) return;
   const btns = `<div class="row" style="margin-top:10px"><button type="button" data-cos-go="http://localhost:5173">5173 열기</button><button type="button" data-cos-go="http://localhost:8051/health">8051 health</button></div>`;
-  if (!h) { box.innerHTML = `<div class="chips"><span class="chip warn">오프라인</span></div><div class="src">http://localhost:8051 응답 없음 — C:\\workspace\\claude-os\\start.ps1 로 기동</div>${btns}`; return; }
+  if (!h || h === COS_TIMEOUT) { box.innerHTML = `<div class="chips"><span class="chip warn">${h ? "응답 지연" : "오프라인"}</span></div><div class="src">${cosFailMsg(h, "/health")}${h ? "" : " — C:\\workspace\\claude-os\\start.ps1 로 기동"}</div>${btns}`; return; }
   const [kbj, pj] = await Promise.all([cosFetch("/api/kb"), cosFetch("/api/projects")]);
   if (selected !== n) return;
   const c = h.components || {}, sq = c.sqlite || {}, ol = c.ollama || {};
   const kbs = (kbj && kbj.knowledge_bases) || [], prs = (pj && pj.projects) || [];
+  const partial = (!kbj || kbj === COS_TIMEOUT || !pj || pj === COS_TIMEOUT) ? `<div class="src cos-off">일부 조회 실패/지연: ${!kbj || kbj === COS_TIMEOUT ? "/api/kb " : ""}${!pj || pj === COS_TIMEOUT ? "/api/projects" : ""}</div>` : "";
   box.innerHTML = `<div class="chips"><span class="chip ${h.status === "healthy" ? "ok" : "warn"}">${esc(h.status)}</span><span class="chip">sqlite ${esc(sq.status || "?")} · tables ${esc(sq.tables ?? "?")}</span><span class="chip">ollama ${esc(ol.status || "?")} · models ${esc(ol.models_installed ?? "?")}</span><span class="chip">KB ${kbs.length}</span><span class="chip">프로젝트 ${prs.length}</span></div>`
     + `<h4>PROJECTS</h4><ul>${prs.map(p => `<li>${esc(p.name)}<span class="s">${esc(p.path || "")}</span></li>`).join("") || "<li>없음</li>"}</ul>`
     + `<h4>KNOWLEDGE BASES · ${kbs.length}</h4><ul>${kbs.map(k => `<li>${esc(k.name)}</li>`).join("")}</ul>`
-    + `<div class="src">실측 ${esc(h.timestamp || "")} · GET /health, /api/kb, /api/projects</div>` + btns;
+    + partial + `<div class="src">실측 ${esc(h.timestamp || "")} · GET /health, /api/kb, /api/projects</div>` + btns;
 }
 $("#detail").addEventListener("click", e => { const g = e.target.closest("[data-cos-go]"); if (g) window.open(g.dataset.cosGo, "_blank", "noopener"); });
 

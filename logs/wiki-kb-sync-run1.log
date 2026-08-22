@@ -29,3 +29,48 @@ progress 450/565
 ERROR upsert research/harness-gitness.md (2776 bytes): fetch failed
 ERROR upsert research/lm-evaluation-harness.md (2886 bytes): fetch failed
 ERROR upsert src/src/raw/KoreaDrop Dev-2026-04-07T05-15-15-884Z.md (2113 bytes): fetch failed
+progress 500/565
+ERROR upsert src/src/vault-migration/concepts/retrieval-augmented-generation.md (1380 bytes): fetch failed
+ERROR upsert src/src/vault-migration/entities/claude-workspace.md (292 bytes): fetch failed
+ERROR upsert src/src/vault-migration/entities/discord-command-center.md (1201 bytes): fetch failed
+ERROR upsert src/src/vault-migration/entities/intrinsic-alpha-trader.md (3950 bytes): fetch failed
+ERROR upsert src/src/vault-migration/entities/fconline.md (704 bytes): fetch failed
+ERROR upsert src/src/vault-migration/entities/helix-co.md (2937 bytes): fetch failed
+ERROR upsert src/src/vault-migration/entities/openai-codex.md (832 bytes): fetch failed
+ERROR upsert src/src/vault-migration/entities/openhands.md (626 bytes): fetch failed
+ERROR upsert src/src/vault-migration/entities/psmux.md (970 bytes): fetch failed
+ERROR upsert src/src/vault-migration/entities/sena.md (1492 bytes): fetch failed
+ERROR upsert src/src/vault-migration/internal/copy-replit.md (3653 bytes): fetch failed
+ERROR upsert src/src/vault-migration/internal/discord-command-center.md (970 bytes): fetch failed
+ERROR upsert src/src/vault-migration/internal/harness-engineering.md (6806 bytes): fetch failed
+ERROR upsert src/src/vault-migration/internal/harness-framework-sessions.md (5110 bytes): fetch failed
+ERROR upsert src/src/vault-migration/internal/helix-co.md (3348 bytes): fetch failed
+ERROR upsert src/src/vault-migration/internal/home-summary.md (6757 bytes): fetch failed
+ERROR upsert src/src/vault-migration/internal/issue-sync-pipeline.md (3276 bytes): fetch failed
+ERROR upsert src/src/vault-migration/internal/issue-sync.md (1576 bytes): fetch failed
+ERROR upsert src/src/vault-migration/internal/memsearch-pipeline.md (8123 bytes): fetch failed
+ERROR upsert src/src/vault-migration/internal/psmux-debugging.md (5184 bytes): fetch failed
+ERROR upsert src/src/vault-migration/internal/team-execution-framework.md (7782 bytes): fetch failed
+ERROR upsert src/src/vault-migration/internal/workspace-summary.md (7735 bytes): fetch failed
+ERROR upsert src/src/vault-migration/reference/karpathy-llm-wiki.md (963 bytes): fetch failed
+ERROR upsert src/src/vault-migration/reference/knowledge-compilation-prd.md (1066 bytes): fetch failed
+ERROR upsert src/src/vault-migration/reference/session-knowledge-design.md (1430 bytes): fetch failed
+ERROR upsert src/src/vault-migration/themes/discord-bot-ecosystem.md (4462 bytes): fetch failed
+ERROR upsert src/src/vault-migration/themes/evidence-truth-framework.md (2227 bytes): fetch failed
+progress 550/565
+ERROR upsert src/src/vault-migration/themes/harness-engineering.md (2191 bytes): fetch failed
+ERROR upsert src/src/vault-migration/themes/knowledge-pipeline.md (1949 bytes): fetch failed
+ERROR upsert src/src/vault-migration/themes/personal-knowledge-management.md (1233 bytes): fetch failed
+ERROR upsert summaries/2026-04-14-lightrag-agenticrag_report.md (6808 bytes): fetch failed
+ERROR upsert summaries/2026-04-14-lightrag-agenticrag_summary.md (6313 bytes): fetch failed
+ERROR upsert summaries/community-user-needs-2026-04-13_summary.md (1779 bytes): fetch failed
+ERROR upsert test/fixtures/phase-a/concepts/alpha.md (200 bytes): fetch failed
+ERROR upsert test/fixtures/phase-a/concepts/bad.md (207 bytes): fetch failed
+ERROR upsert test/fixtures/phase-a/concepts/beta.md (190 bytes): fetch failed
+ERROR upsert test/fixtures/phase-a/concepts/orphan.md (234 bytes): fetch failed
+ERROR upsert test/fixtures/phase-a/index.md (110 bytes): fetch failed
+ERROR upsert _librarian/lint-queue.md (12038 bytes): fetch failed
+ERROR upsert src/src/vault-migration/internal/framework-self-proving.md (3728 bytes): fetch failed
+failed: [{"rel":"concepts/apps-in-toss-portfolio-snapshot-aggregation.md","bytes":7761,"error":"fetch failed"},{"rel":"concepts/dag-layer-parallelism.md","bytes":3179,"error":"fetch failed"},{"rel":"concepts/decisions-matrix-consolidation.md","bytes":3663,"error":"fetch failed"},{"rel":"concepts/five-layer-validation.md","bytes":3042,"error":"fetch failed"},{"rel":"concepts/korean-community-user-needs-scan.md","bytes":1308,"error":"fetch failed"},{"rel":"concepts/lean-startup.md","bytes":2610,"error":"fetch failed"},{"rel":"concepts/smallest-ratchet-in-harness-team-build.md","bytes":7234,"error":"fetch failed"},{"rel":"entities/ai-benchmark-repos/esinecan__skynet-agent.md","bytes":2453,"error":"fetch failed"},{"rel":"entities/ai-benchmark-repos/ruvnet__ruflo.md","bytes":3210,"error":"fetch failed"},{"rel":"entities/youtube.md","bytes":2075,"error":"fetch failed"},{"rel":"internal/ai-benchmark-harness-repo-index.md","bytes":14890,"error":"fetch failed"},{"rel":"internal/command-center-project-registry.md","bytes":7686,"error":"fetch failed"},{"rel":"internal/issue-sync.md","bytes":1931,"error":"fetch failed"},{"rel":"internal/workspace-summary.md","bytes":9940,"error":"fetch failed"},{"rel":"log.md","bytes":136800,"error":"fetch failed"},{"rel":"raw/2026-04-14-agentic-rag-landscape.md","bytes":35797,"error":"fetch failed"},{"rel":"ref/deep-update-workflow.md","bytes":3538,"error":"fetch failed"},{"rel":"research/dark-factory-critique-terzian.md","bytes":1775,"error":"fetch failed"},{"rel":"research/harness-gitness.md","bytes":2776,"error":"fetch failed"},{"rel":"research/lm-evaluation-harness.md","bytes":2886,"error":"fetch failed"},{"rel":"src/src/raw/KoreaDrop Dev-2026-04-07T05-15-15-884Z.md","bytes":2113,"error":"fetch failed"},{"rel":"src/src/vault-migration/concepts/retrieval-augmented-generation.md","bytes":1380,"error":"fetch failed"},{"rel":"src/src/vault-migration/entities/claude-workspace.md","bytes":292,"error":"fetch failed"},{"rel":"src/src/vault-migration/entities/discord-command-center.md","bytes":1201,"error":"fetch failed"},{"rel":"src/src/vault-migration/entities/intrinsic-alpha-trader.md","bytes":3950,"error":"fetch failed"},{"rel":"src/src/vault-migration/entities/fconline.md","bytes":704,"error":"fetch failed"},{"rel":"src/src/vault-migration/entities/helix-co.md","bytes":2937,"error":"fetch failed"},{"rel":"src/src/vault-migration/entities/openai-codex.md","bytes":832,"error":"fetch failed"},{"rel":"src/src/vault-migration/entities/openhands.md","bytes":626,"error":"fetch failed"},{"rel":"src/src/vault-migration/entities/psmux.md","bytes":970,"error":"fetch failed"},{"rel":"src/src/vault-migration/entities/sena.md","bytes":1492,"error":"fetch failed"},{"rel":"src/src/vault-migration/internal/copy-replit.md","bytes":3653,"error":"fetch failed"},{"rel":"src/src/vault-migration/internal/discord-command-center.md","bytes":970,"error":"fetch failed"},{"rel":"src/src/vault-migration/internal/harness-engineering.md","bytes":6806,"error":"fetch failed"},{"rel":"src/src/vault-migration/internal/harness-framework-sessions.md","bytes":5110,"error":"fetch failed"},{"rel":"src/src/vault-migration/internal/helix-co.md","bytes":3348,"error":"fetch failed"},{"rel":"src/src/vault-migration/internal/home-summary.md","bytes":6757,"error":"fetch failed"},{"rel":"src/src/vault-migration/internal/issue-sync-pipeline.md","bytes":3276,"error":"fetch failed"},{"rel":"src/src/vault-migration/internal/issue-sync.md","bytes":1576,"error":"fetch failed"},{"rel":"src/src/vault-migration/internal/memsearch-pipeline.md","bytes":8123,"error":"fetch failed"},{"rel":"src/src/vault-migration/internal/psmux-debugging.md","bytes":5184,"error":"fetch failed"},{"rel":"src/src/vault-migration/internal/team-execution-framework.md","bytes":7782,"error":"fetch failed"},{"rel":"src/src/vault-migration/internal/workspace-summary.md","bytes":7735,"error":"fetch failed"},{"rel":"src/src/vault-migration/reference/karpathy-llm-wiki.md","bytes":963,"error":"fetch failed"},{"rel":"src/src/vault-migration/reference/knowledge-compilation-prd.md","bytes":1066,"error":"fetch failed"},{"rel":"src/src/vault-migration/reference/session-knowledge-design.md","bytes":1430,"error":"fetch failed"},{"rel":"src/src/vault-migration/themes/discord-bot-ecosystem.md","bytes":4462,"error":"fetch failed"},{"rel":"src/src/vault-migration/themes/evidence-truth-framework.md","bytes":2227,"error":"fetch failed"},{"rel":"src/src/vault-migration/themes/harness-engineering.md","bytes":2191,"error":"fetch failed"},{"rel":"src/src/vault-migration/themes/knowledge-pipeline.md","bytes":1949,"error":"fetch failed"},{"rel":"src/src/vault-migration/themes/personal-knowledge-management.md","bytes":1233,"error":"fetch failed"},{"rel":"summaries/2026-04-14-lightrag-agenticrag_report.md","bytes":6808,"error":"fetch failed"},{"rel":"summaries/2026-04-14-lightrag-agenticrag_summary.md","bytes":6313,"error":"fetch failed"},{"rel":"summaries/community-user-needs-2026-04-13_summary.md","bytes":1779,"error":"fetch failed"},{"rel":"test/fixtures/phase-a/concepts/alpha.md","bytes":200,"error":"fetch failed"},{"rel":"test/fixtures/phase-a/concepts/bad.md","bytes":207,"error":"fetch failed"},{"rel":"test/fixtures/phase-a/concepts/beta.md","bytes":190,"error":"fetch failed"},{"rel":"test/fixtures/phase-a/concepts/orphan.md","bytes":234,"error":"fetch failed"},{"rel":"test/fixtures/phase-a/index.md","bytes":110,"error":"fetch failed"},{"rel":"_librarian/lint-queue.md","bytes":12038,"error":"fetch failed"},{"rel":"src/src/vault-migration/internal/framework-self-proving.md","bytes":3728,"error":"fetch failed"}]
+elapsed=1368.1s
+scanned=565 upserted=504 deleted=0 unchanged=0 errors=61
