@@ -1,2 +1,18 @@
-skipped: claude-os offline
-scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+wiki=C:\Users\my\.wiki scanned=569 to_upsert=76 to_delete=0 unchanged=493
+ERROR upsert entities/ai-benchmark-repos/esinecan__skynet-agent.md (2453 bytes): DELETE network error after 4 tries: ECONNREFUSED
+ERROR upsert entities/ai-benchmark-repos/ruvnet__ruflo.md (3210 bytes): DELETE network error after 4 tries: ECONNREFUSED
+ERROR upsert entities/deepcode.md (6008 bytes): DELETE network error after 4 tries: ECONNREFUSED
+ERROR upsert entities/planning-with-files.md (3444 bytes): DELETE network error after 4 tries: ECONNREFUSED
+ERROR upsert index-thin.md (3505 bytes): DELETE network error after 4 tries: ECONNREFUSED
+ERROR upsert index.md (56162 bytes): DELETE network error after 4 tries: ECONNREFUSED
+ERROR upsert internal/wiki-maintenance-index.md (1801 bytes): DELETE network error after 4 tries: ECONNREFUSED
+ERROR upsert internal/workspace-summary.md (9940 bytes): DELETE network error after 4 tries: ECONNREFUSED
+ERROR upsert research/dark-factory-critique-terzian.md (1775 bytes): DELETE network error after 4 tries: ECONNREFUSED
+ERROR upsert src/src/vault-migration/entities/openhands.md (626 bytes): POST network error after 4 tries: ECONNREFUSED
+progress 50/76
+ERROR upsert src/src/vault-migration/internal/issue-sync.md (1576 bytes): DELETE network error after 4 tries: ECONNREFUSED
+ERROR upsert src/src/vault-migration/reference/knowledge-compilation-prd.md (1066 bytes): POST network error after 4 tries: ECONNREFUSED
+ERROR upsert src/src/vault-migration/themes/harness-engineering.md (2191 bytes): POST network error after 4 tries: ECONNREFUSED
+failed: [{"rel":"entities/ai-benchmark-repos/esinecan__skynet-agent.md","bytes":2453,"error":"DELETE network error after 4 tries: ECONNREFUSED"},{"rel":"entities/ai-benchmark-repos/ruvnet__ruflo.md","bytes":3210,"error":"DELETE network error after 4 tries: ECONNREFUSED"},{"rel":"entities/deepcode.md","bytes":6008,"error":"DELETE network error after 4 tries: ECONNREFUSED"},{"rel":"entities/planning-with-files.md","bytes":3444,"error":"DELETE network error after 4 tries: ECONNREFUSED"},{"rel":"index-thin.md","bytes":3505,"error":"DELETE network error after 4 tries: ECONNREFUSED"},{"rel":"index.md","bytes":56162,"error":"DELETE network error after 4 tries: ECONNREFUSED"},{"rel":"internal/wiki-maintenance-index.md","bytes":1801,"error":"DELETE network error after 4 tries: ECONNREFUSED"},{"rel":"internal/workspace-summary.md","bytes":9940,"error":"DELETE network error after 4 tries: ECONNREFUSED"},{"rel":"research/dark-factory-critique-terzian.md","bytes":1775,"error":"DELETE network error after 4 tries: ECONNREFUSED"},{"rel":"src/src/vault-migration/entities/openhands.md","bytes":626,"error":"POST network error after 4 tries: ECONNREFUSED"},{"rel":"src/src/vault-migration/internal/issue-sync.md","bytes":1576,"error":"DELETE network error after 4 tries: ECONNREFUSED"},{"rel":"src/src/vault-migration/reference/knowledge-compilation-prd.md","bytes":1066,"error":"POST network error after 4 tries: ECONNREFUSED"},{"rel":"src/src/vault-migration/themes/harness-engineering.md","bytes":2191,"error":"POST network error after 4 tries: ECONNREFUSED"}]
+elapsed=198.0s
+scanned=569 upserted=63 deleted=0 unchanged=493 errors=13

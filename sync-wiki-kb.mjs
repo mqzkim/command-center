@@ -13,7 +13,7 @@ const KB = 'command-center-knowledge_docs';
 const WIKI = process.env.WIKI_DIR || path.join(os.homedir(), '.wiki');
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const STATE_FILE = path.join(HERE, 'state', 'wiki-kb-sync.json');
-const CONCURRENCY = 4;
+const CONCURRENCY = Number(process.env.WIKI_KB_CONCURRENCY || 2); // 4→2: Windows claude-os는 ingest가 이벤트루프를 동기 차단 → accept 실패(WinError 64)로 리스너 종료 사례 2회 실측
 const PROGRESS_EVERY = 50;
 
 function scan(dir, base = dir, out = []) {

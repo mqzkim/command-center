@@ -55,7 +55,8 @@ function docFor(p) {
     L.push(`## 앱인토스 파이프라인 (Apps in Toss pipeline) — ${t.appName || p.name}`);
     L.push(`classification: ${t.classification || 'unknown'} · finalReleaseApproved: ${t.finalReleaseApproved ? 'yes' : 'no'} · updatedAt: ${t.updatedAt || 'unknown'}`);
     if (t.goal) L.push(`goal: ${t.goal}`);
-    for (const s of t.pipeline || []) L.push(`- ${s.s} (${stageKo[s.s] || s.s}): ${s.st}`);
+    // 한국어 단계명은 현재 단계에만 붙인다 — 모든 문서가 14개 단계명을 전부 담으면 단계 질의의 변별력이 사라짐
+    for (const s of t.pipeline || []) L.push(`- ${s.s}: ${s.st}${s.s === t.stage ? ` ← 현재 단계 (${ko(s.s)})` : ''}`);
     if (t.blockers?.length) {
       L.push('');
       L.push(`## 블로커 (blockers) — ${p.name} 블로커 ${t.blockersOpen ?? t.blockers.length}건`);
