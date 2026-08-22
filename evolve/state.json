@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-22T15:33:13.761Z",
+ "lastRun": "2026-08-22T15:40:21.344Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -25,6 +25,12 @@
    "date": "2026-08-23",
    "improvement": "트렌드 후보 10건 검토(채택 1: DeepCode → wiki ingest, 기각 9; 다음 1순위 SkillSpector 스킬 채택) · seenRepos 원장 20→30",
    "commit": "accaae6",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-08-23",
+   "improvement": "NVIDIA/SkillSpector 스킬 채택(b) — ~/.claude/skills/skill-audit 래퍼(junction 해석·--no-llm 기본) · 트렌드 후보 10건 검토(기각 10; 다음 후보 trailofbits/skills) · seenRepos 30→40",
+   "commit": "8adc87c",
    "gates": "4/4"
   }
  ],
