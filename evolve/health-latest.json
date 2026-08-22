@@ -1,0 +1,60 @@
+{
+ "at": "2026-08-22T15:03:15.657Z",
+ "results": [
+  {
+   "name": "dashboard-js-syntax",
+   "ok": true,
+   "healed": false,
+   "note": ""
+  },
+  {
+   "name": "data-js",
+   "ok": true,
+   "healed": false,
+   "note": ""
+  },
+  {
+   "name": "galaxy-data",
+   "ok": true,
+   "healed": false,
+   "note": ""
+  },
+  {
+   "name": "projects-data",
+   "ok": true,
+   "healed": false,
+   "note": ""
+  },
+  {
+   "name": "wiki-junction",
+   "ok": true,
+   "healed": true,
+   "note": ""
+  },
+  {
+   "name": "server-dashboard",
+   "ok": true,
+   "healed": false,
+   "note": "HTTP 200"
+  },
+  {
+   "name": "server-wiki",
+   "ok": true,
+   "healed": false,
+   "note": "HTTP 200"
+  },
+  {
+   "name": "startup-vbs",
+   "ok": true,
+   "healed": false,
+   "note": ""
+  },
+  {
+   "name": "evolve-scripts-syntax",
+   "ok": true,
+   "healed": false,
+   "note": ""
+  }
+ ],
+ "unresolved": []
+}

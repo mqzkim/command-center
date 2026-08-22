@@ -67,10 +67,11 @@ for (let i = 0; i < real.length; i += BATCH) {
 
 /* ---------- 3. 판정 ---------- */
 const now = Date.now();
+// 레포 이름만으로 결정론적 분류 (description은 보지 않음 — 오분류 방지). 미매치 시 이전 스냅샷 값 → side-project.
 const CATEGORY_RULES = [
-  ["knowledge-wiki", /\b(wiki|knowledge|growth-hacker)\b/i],
-  ["landing-docs", /(\.github\.io$|-support$|-setup$|landing|docs-site)/i],
   ["harness-ai-infra", /(hermes|agent|harness|helix|briefme|trading|llm-lean|sena|orchestrat|infra)/i],
+  ["knowledge-wiki", /(wiki|growth-hacker)/i],
+  ["landing-docs", /(\.github\.io$|-support$|-setup$|landing|docs-site)/i],
 ];
 function classify(r, det) {
   const pkg = det?.pkg?.text || "";
@@ -99,7 +100,7 @@ function classify(r, det) {
   if (r.isFork) { parts.push("포크, 자체 커밋 없음"); sig = 1; }
   else if (days <= 7) { parts.push("최근 7일 내 푸시"); sig = 4; }
   else if (days <= 30) { parts.push("최근 30일 내 푸시"); sig = 3 + ((isToss || c30 >= 5) ? 1 : 0); }
-  else if (days <= 60) { parts.push("60일 내 푸시"); sig = 2 + (isToss ? 1 : 0); }
+  else if (days <= 60) { parts.push("60일 내 푸시"); sig = 2; }
   else { parts.push(`마지막 푸시 ${days}일 전`); sig = 1 + (hasDesc ? 1 : 0) + (isToss ? 1 : 0); }
   if (!r.isFork) {
     if (c30 >= 5) parts.push(`30일 커밋 ${c30}`);
@@ -113,8 +114,7 @@ function classify(r, det) {
   if (r.isFork) category = "fork";
   else if (isToss) category = "apps-in-toss";
   else {
-    const hay = r.name + " " + (r.description || "");
-    category = (CATEGORY_RULES.find(([, re]) => re.test(hay)) || [])[0] || prevByName[r.name]?.category || "side-project";
+    category = (CATEGORY_RULES.find(([, re]) => re.test(r.name)) || [])[0] || prevByName[r.name]?.category || "side-project";
     if (category === "apps-in-toss" || category === "fork") category = "side-project";
   }
   return { isToss, aitEvidence, appName, category, sig, reason: parts.join(", "), c30, rootNames, hasDep };

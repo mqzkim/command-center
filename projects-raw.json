@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-22T14:14:09.245Z",
-  "source": "gh api graphql (5 calls, 36 repos; 요청 목록은 37개라 했으나 실제 36개 이름)",
+  "generatedAt": "2026-08-22T15:02:45.334Z",
+  "source": "gh api graphql (5 calls, 37 repos: 35 non-fork + 2 fork; fetch-gh.mjs)",
   "repos": [
     {
       "name": "hermes-shared-knowledge",
@@ -9,12 +9,16 @@
       "isPrivate": true,
       "isFork": false,
       "primaryLanguage": "TeX",
-      "pushedAt": "2026-08-22T14:00:10Z",
+      "pushedAt": "2026-08-22T15:00:13Z",
       "createdAt": "2026-04-30T02:45:22Z",
       "stargazerCount": 0,
       "openIssues": 0,
       "defaultBranch": "main",
       "recentCommits": [
+        {
+          "date": "2026-08-22",
+          "message": "ops: refresh sena-1 telemetry metrics"
+        },
         {
           "date": "2026-08-22",
           "message": "ops: refresh sena-1 telemetry metrics"
@@ -30,18 +34,80 @@
         {
           "date": "2026-08-02",
           "message": "ops: refresh sena-1 telemetry metrics"
-        },
-        {
-          "date": "2026-07-24",
-          "message": "ops: refresh sena-1 telemetry metrics"
         }
       ],
-      "commitsLast30d": 5,
+      "commitsLast30d": 6,
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
-      "category": "harness-ai-infra",
+      "category": "knowledge-wiki",
       "significance": 4,
-      "significanceReason": "최근 7일 내 푸시, 30일 커밋 5, 설명 있음"
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 6, 설명 있음"
+    },
+    {
+      "name": "llm-wiki",
+      "url": "https://github.com/mqzkim/llm-wiki",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-08-22T14:26:47Z",
+      "createdAt": "2026-04-06T21:42:42Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "master",
+      "recentCommits": [
+        {
+          "date": "2026-08-22",
+          "message": "knowledge: add agno-agentos, standing-resolution-pattern, launch-deck…"
+        },
+        {
+          "date": "2026-08-19",
+          "message": "knowledge: update apps-in-toss free backend isolation"
+        },
+        {
+          "date": "2026-08-03",
+          "message": "knowledge: update apps-in-toss launch slice"
+        },
+        {
+          "date": "2026-07-29",
+          "message": "knowledge: document TradingAgents signal persistence observation"
+        },
+        {
+          "date": "2026-07-29",
+          "message": "knowledge: add financial signal persistence design"
+        }
+      ],
+      "commitsLast30d": 23,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "knowledge-wiki",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 23"
+    },
+    {
+      "name": "launch-deck",
+      "url": "https://github.com/mqzkim/launch-deck",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": null,
+      "pushedAt": "2026-08-22T14:16:32Z",
+      "createdAt": "2026-08-22T14:16:28Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-08-22",
+          "message": "docs: add launch-deck design spec (sections 1-5, approved 2026-08-22)"
+        }
+      ],
+      "commitsLast30d": 1,
+      "isAppsInToss": false,
+      "aitEvidence": "README mentions toss",
+      "category": "side-project",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시"
     },
     {
       "name": "naeheunjeok",
@@ -79,11 +145,11 @@
       ],
       "commitsLast30d": 12,
       "isAppsInToss": true,
-      "aitEvidence": "package.json has @apps-in-toss dependency; README mentions toss; apps-in-toss.config.ts exists (granite.config.ts 대신)",
+      "aitEvidence": "apps-in-toss.config.ts exists (granite.config.ts 대신); package.json has @apps-in-toss dependency; README mentions toss",
       "category": "apps-in-toss",
       "appName": "naeheunjeok",
-      "stageEstimate": "released",
       "stageEvidence": [
+        ".launch",
         "PRD.md",
         "docs",
         "store-assets",
@@ -98,7 +164,9 @@
         "docs/PRIVACY_POLICY_DRAFT.md",
         "docs/REGISTRATION_HANDOFF.md",
         "docs/RELEASE_REPORT.md",
-        "docs/RUNTIME_DECISION.md"
+        "docs/RUNTIME_DECISION.md",
+        "docs/SOURCE_NOTES.md",
+        "docs/STORE_ASSET_BRIEF.md"
       ],
       "openIssueTitles": [
         "[BL-008] 개인 아카이브 내보내기",
@@ -110,50 +178,9 @@
         "[BL-002] 공식 SNS 내보내기 파일 가져오기",
         "[BL-001] 지식iN·웹문서 검색 소스 확장"
       ],
-      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
       "significance": 4,
       "significanceReason": "최근 7일 내 푸시, 30일 커밋 12, 앱인토스"
-    },
-    {
-      "name": "llm-wiki",
-      "url": "https://github.com/mqzkim/llm-wiki",
-      "description": null,
-      "isPrivate": true,
-      "isFork": false,
-      "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-08-19T06:59:44Z",
-      "createdAt": "2026-04-06T21:42:42Z",
-      "stargazerCount": 0,
-      "openIssues": 0,
-      "defaultBranch": "master",
-      "recentCommits": [
-        {
-          "date": "2026-08-19",
-          "message": "knowledge: update apps-in-toss free backend isolation"
-        },
-        {
-          "date": "2026-08-03",
-          "message": "knowledge: update apps-in-toss launch slice"
-        },
-        {
-          "date": "2026-07-29",
-          "message": "knowledge: document TradingAgents signal persistence observation"
-        },
-        {
-          "date": "2026-07-29",
-          "message": "knowledge: add financial signal persistence design"
-        },
-        {
-          "date": "2026-07-29",
-          "message": "knowledge: audit TradingAgents recent no-order sessions"
-        }
-      ],
-      "commitsLast30d": 22,
-      "isAppsInToss": false,
-      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
-      "category": "knowledge-wiki",
-      "significance": 4,
-      "significanceReason": "최근 7일 내 푸시, 30일 커밋 22"
     },
     {
       "name": "kid-cheer-call",
@@ -191,11 +218,11 @@
       ],
       "commitsLast30d": 12,
       "isAppsInToss": true,
-      "aitEvidence": "package.json has @apps-in-toss dependency; apps-in-toss.config.ts exists (granite.config.ts 대신)",
+      "aitEvidence": "apps-in-toss.config.ts exists (granite.config.ts 대신); package.json has @apps-in-toss dependency",
       "category": "apps-in-toss",
       "appName": "kid-cheer-call",
-      "stageEstimate": "released",
       "stageEvidence": [
+        ".launch",
         "PRD.md",
         "docs",
         "store-assets",
@@ -210,7 +237,9 @@
         "docs/PRODUCTION_PACKAGE_CONTRACT.md",
         "docs/REGISTRATION_HANDOFF.md",
         "docs/RELEASE_READINESS.md",
-        "docs/SECURITY_AUDIT_NOTES.md"
+        "docs/SECURITY_AUDIT_NOTES.md",
+        "docs/SOURCE_NOTES.md",
+        "docs/STORE_ASSET_BRIEF.md"
       ],
       "openIssueTitles": [
         "[BL-007] 기관별 공동 캠페인과 오프라인 연계",
@@ -221,7 +250,7 @@
         "[BL-002] 오늘의 한마디 알림",
         "[BL-001] 저장한 응원과 로컬 보관"
       ],
-      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
       "significance": 4,
       "significanceReason": "최근 30일 내 푸시, 30일 커밋 12, 앱인토스"
     },
@@ -261,13 +290,14 @@
       ],
       "commitsLast30d": 11,
       "isAppsInToss": true,
-      "aitEvidence": "package.json has @apps-in-toss dependency; README mentions toss; apps-in-toss.config.ts exists (granite.config.ts 대신)",
+      "aitEvidence": "apps-in-toss.config.ts exists (granite.config.ts 대신); package.json has @apps-in-toss dependency; root has eomma-choiae.ait; README mentions toss",
       "category": "apps-in-toss",
       "appName": "eomma-choiae",
-      "stageEstimate": "console",
       "stageEvidence": [
+        ".launch",
         "PRD.md",
         "docs",
+        "eomma-choiae.ait",
         "store-assets",
         "docs/ANALYTICS_EVENTS.md",
         "docs/APP_IN_TOSS_SUBMISSION.md",
@@ -291,7 +321,7 @@
         "[BL-002] 일일 질문과 추억함",
         "[BL-001] 원격 초대와 관계 연결"
       ],
-      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
       "significance": 4,
       "significanceReason": "최근 30일 내 푸시, 30일 커밋 11, 앱인토스"
     },
@@ -375,10 +405,9 @@
       "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
       "category": "apps-in-toss",
       "appName": "today-task",
-      "stageEstimate": "console",
       "stageEvidence": [
+        ".launch",
         "PRD.md",
-        "console-registration-result.json",
         "docs",
         "store-assets",
         "docs/ANALYTICS_EVENTS.md",
@@ -391,7 +420,10 @@
         "docs/PRIVACY_POLICY_DRAFT.md",
         "docs/REGISTRATION_HANDOFF.md",
         "docs/SANDBOX_QA_HANDOFF.md",
-        "docs/SANDBOX_TEST_SCHEME.md"
+        "docs/SANDBOX_TEST_SCHEME.md",
+        "docs/SECURITY_AUDIT.md",
+        "docs/SOURCE_NOTES.md",
+        "docs/STORE_ASSET_BRIEF.md"
       ],
       "openIssueTitles": [
         "[BL-004] 내보내기와 운영 통계",
@@ -399,7 +431,7 @@
         "[BL-002] 공동 관리자와 부재 상태",
         "[BL-001] 반복 업무 템플릿"
       ],
-      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
       "significance": 4,
       "significanceReason": "최근 30일 내 푸시, 30일 커밋 14, 앱인토스"
     },
@@ -439,13 +471,14 @@
       ],
       "commitsLast30d": 30,
       "isAppsInToss": true,
-      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency",
+      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; root has nailmap.ait",
       "category": "apps-in-toss",
       "appName": "nailmap",
-      "stageEstimate": "released",
       "stageEvidence": [
+        ".launch",
         "PRD.md",
         "docs",
+        "nailmap.ait",
         "store-assets",
         "vitest.config.ts",
         "docs/ANALYTICS_EVENTS.md",
@@ -458,7 +491,12 @@
         "docs/OPERATOR_INPUTS_REQUIRED.md",
         "docs/PRIVACY_POLICY_DRAFT.md",
         "docs/REGISTRATION_HANDOFF.md",
-        "docs/RELEASE_READINESS_REPORT.md"
+        "docs/RELEASE_READINESS_REPORT.md",
+        "docs/SANDBOX_TEST_SCHEME.md",
+        "docs/SECURITY_AUDIT_NOTES.md",
+        "docs/SOURCE_NOTES.md",
+        "docs/STORE_ASSET_BRIEF.md",
+        "docs/TODAY_RELEASE_HANDOFF.md"
       ],
       "openIssueTitles": [
         "[BL-016] 가격 히스토리·지역 예약 HeatMap",
@@ -472,9 +510,9 @@
         "[BL-008] 고급 검색 필터",
         "[BL-007] 2시간 이내 즉시예약·특가"
       ],
-      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
       "significance": 4,
-      "significanceReason": "최근 30일 내 푸시, 30일 커밋 30, 앱인토스"
+      "significanceReason": "최근 30일 내 푸시, 30일 커밋 30, 앱인토스, 오픈 이슈 16"
     },
     {
       "name": "bamti-translator",
@@ -512,12 +550,13 @@
       ],
       "commitsLast30d": 48,
       "isAppsInToss": true,
-      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
+      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; root has bamti-translator.ait; README mentions toss",
       "category": "apps-in-toss",
       "appName": "bamti-translator",
-      "stageEstimate": "console",
       "stageEvidence": [
+        ".launch",
         "PRD.md",
+        "bamti-translator.ait",
         "docs",
         "store-assets",
         "vitest.config.ts",
@@ -531,7 +570,13 @@
         "docs/IDEA_BRIEF.md",
         "docs/OPERATOR_INPUTS_REQUIRED.md",
         "docs/PRIVACY_POLICY_DRAFT.md",
-        "docs/REGISTRATION_HANDOFF.md"
+        "docs/REGISTRATION_HANDOFF.md",
+        "docs/RELEASE_REPORT.md",
+        "docs/SANDBOX_TEST_SCHEME.md",
+        "docs/SECURITY_AUDIT_NOTES.md",
+        "docs/SOURCE_NOTES.md",
+        "docs/STORE_ASSET_BRIEF.md",
+        "docs/skills"
       ],
       "openIssueTitles": [
         "[BL-008] 추가 감성 스타일 번역기",
@@ -542,7 +587,7 @@
         "[BL-002] 영상·GIF 생성",
         "[BL-001] 생성형 AI 이미지 변환"
       ],
-      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
       "significance": 4,
       "significanceReason": "최근 30일 내 푸시, 30일 커밋 48, 앱인토스"
     },
@@ -568,7 +613,6 @@
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
-      "categoryNote": "README만 있는 빈 레포(nailmap 앱의 이름 중복/placeholder로 추정)",
       "significance": 3,
       "significanceReason": "최근 30일 내 푸시"
     },
@@ -611,8 +655,8 @@
       "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
       "category": "apps-in-toss",
       "appName": "conclusion-card",
-      "stageEstimate": "console",
       "stageEvidence": [
+        ".launch",
         "PRD.md",
         "docs",
         "store-assets",
@@ -627,7 +671,10 @@
         "docs/REGISTRATION_HANDOFF.md",
         "docs/REVENUE_MODEL.md",
         "docs/SANDBOX_QA_HANDOFF.md",
-        "docs/SECURITY_AUDIT_NOTES.md"
+        "docs/SECURITY_AUDIT_NOTES.md",
+        "docs/SOURCE_NOTES.md",
+        "docs/STORE_ASSET_BRIEF.md",
+        "docs/skills"
       ],
       "openIssueTitles": [
         "Post-MVP: 친구와 같은 질문 카드",
@@ -637,8 +684,8 @@
         "Post-MVP: 테마별 특별 덱",
         "Post-MVP: 한 번의 재뽑기와 보상형 광고"
       ],
-      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
-      "significance": 2,
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
+      "significance": 3,
       "significanceReason": "60일 내 푸시, 앱인토스"
     },
     {
@@ -680,8 +727,8 @@
       "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
       "category": "apps-in-toss",
       "appName": "seoul-house-from-space",
-      "stageEstimate": "console",
       "stageEvidence": [
+        ".launch",
         "PRD.md",
         "docs",
         "store-assets",
@@ -696,7 +743,12 @@
         "docs/GAME_RATING_SUBMISSION_PACKAGE.md",
         "docs/IDEA_BRIEF.md",
         "docs/OPERATOR_INPUTS_REQUIRED.md",
-        "docs/PRIVACY_POLICY_DRAFT.md"
+        "docs/PRIVACY_POLICY_DRAFT.md",
+        "docs/REGISTRATION_HANDOFF.md",
+        "docs/SANDBOX_TEST_SCHEME.md",
+        "docs/SOURCE_NOTES.md",
+        "docs/STORE_ASSET_BRIEF.md",
+        "docs/skills"
       ],
       "openIssueTitles": [
         "[BL-007] 클라우드 진행 동기화",
@@ -707,8 +759,8 @@
         "[BL-002] 장기 밸런스와 오프라인 진행",
         "[BL-001] 선택형 보상 광고 부스터"
       ],
-      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
-      "significance": 2,
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
+      "significance": 3,
       "significanceReason": "60일 내 푸시, 앱인토스"
     },
     {
@@ -733,7 +785,6 @@
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "landing-docs",
-      "categoryNote": "seoul-house-from-space 앱의 공개 지원/개인정보처리방침 정적 페이지(index.html, privacy.html)",
       "significance": 2,
       "significanceReason": "60일 내 푸시"
     },
@@ -776,11 +827,11 @@
       "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency",
       "category": "apps-in-toss",
       "appName": "ddasa",
-      "stageEstimate": "build",
-      "stageEvidence": [],
-      "openIssueTitles": [],
-      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
-      "significance": 2,
+      "stageEvidence": [
+        "plans"
+      ],
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
+      "significance": 3,
       "significanceReason": "60일 내 푸시, 앱인토스"
     },
     {
@@ -806,7 +857,6 @@
       "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
       "category": "apps-in-toss",
       "appName": "diamond-get",
-      "stageEstimate": "build",
       "stageEvidence": [
         "docs",
         "docs/ARCHITECTURE.md",
@@ -815,9 +865,8 @@
         "docs/RUNBOOK.md",
         "docs/skills"
       ],
-      "openIssueTitles": [],
-      "stageNote": "파일 존재 기반 추정 — 'released'는 RELEASE_REPORT/RELEASE_READINESS 문서 + .ait/콘솔 핸드오프 존재로 추정이며 실제 스토어 공개 여부는 콘솔 미확인",
-      "significance": 2,
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
+      "significance": 3,
       "significanceReason": "60일 내 푸시, 앱인토스"
     },
     {
@@ -844,18 +893,13 @@
       ],
       "commitsLast30d": 0,
       "isAppsInToss": true,
-      "aitEvidence": "root has ddasa.ait, ttasa-store-assets, haru-han-tem, tds; AGENTS.md: 'Apps in Toss / 하루한템 작업' 워크스페이스 (granite.config.ts는 루트에 없음)",
+      "aitEvidence": "root has ddasa.ait",
       "category": "apps-in-toss",
-      "categoryNote": "Apps in Toss 워크스페이스 모노레포(ddasa.ait, ttasa-store-assets, haru-han-tem, tds) — granite.config는 하위 폴더에 있음(루트 판정 미적용)",
-      "appName": null,
-      "stageEstimate": "store_assets",
       "stageEvidence": [
-        "ddasa.ait",
-        "ttasa-store-assets",
-        "haru-han-tem"
+        "ddasa.ait"
       ],
-      "openIssueTitles": [],
-      "significance": 2,
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
+      "significance": 3,
       "significanceReason": "60일 내 푸시, 앱인토스"
     },
     {
@@ -997,7 +1041,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 2,
-      "significanceReason": "마지막 푸시 111일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 112일 전, 설명 있음"
     },
     {
       "name": "tradingagents-sena-trader",
@@ -1266,7 +1310,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 125일 전"
+      "significanceReason": "마지막 푸시 126일 전"
     },
     {
       "name": "llm-usage",
@@ -1375,7 +1419,7 @@
       "commitsLast30d": 0,
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
-      "category": "side-project",
+      "category": "harness-ai-infra",
       "significance": 2,
       "significanceReason": "마지막 푸시 127일 전, 설명 있음"
     },
@@ -1401,7 +1445,6 @@
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "knowledge-wiki",
-      "categoryNote": "discovery/drafts/WIKI_INGEST.md 등 지식·초안 중심",
       "significance": 1,
       "significanceReason": "마지막 푸시 128일 전"
     },
