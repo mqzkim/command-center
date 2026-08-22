@@ -24,8 +24,8 @@
   {
    "date": "2026-08-23",
    "improvement": "트렌드 후보 10건 검토(채택 1: DeepCode → wiki ingest, 기각 9; 다음 1순위 SkillSpector 스킬 채택) · seenRepos 원장 20→30",
-   "commit": "PENDING",
-   "gates": "PENDING"
+   "commit": "accaae6",
+   "gates": "4/4"
   }
  ],
  "seenRepos": [
