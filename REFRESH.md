@@ -71,3 +71,13 @@ apps-in-toss.config.ts 또는 @apps-in-toss 의존성)
 - 서버: `run-server.vbs`가 `python -m http.server 7766`을 창 없이 실행. 로그온 시 자동 시작은 시작프로그램 폴더의 `CommandCenterServe.vbs`가 담당 (해제: 그 파일 삭제).
 - 서버가 죽었을 때 수동 기동: `wscript.exe C:\workspace\command-center\run-server.vbs`
 - 폴백: `file:///C:/workspace/command-center/dashboard.html` 로도 열림 (클립보드 복사 버튼은 http에서 더 안정적).
+
+## 데일리 진화 루프 (EVOLVE)
+
+매일 07:30 Task Scheduler(`CommandCenterEvolve`)가 `evolve\run-daily.ps1`을 실행한다:
+`health.mjs`(체크 9종·자동복구 4종) → `trends.mjs`(gh search star≥500 AI 스킬/오케스트레이션/하네스/MCP, wiki 카탈로그+state.seenRepos dedup) → 빌더 재실행 → `claude -p evolve/evolve.md`(개선 정확히 1건, 게이트 증거, 원장 기록) → commit·push (**private: github.com/mqzkim/command-center**).
+
+- 상태 원장: `evolve/state.json` (seenRepos 중복 방지·appliedImprovements·openFindings·연속 실패 카운터)
+- 자기진화: 플레이북·스캐너 스스로 수정 가능 (node --check + health 통과 조건, 연속 실패 2회 시 마지막 evolve 커밋 revert)
+- 수동 실행: `powershell -File C:\workspace\command-center\evolve\run-daily.ps1` · 해제: `schtasks /delete /tn CommandCenterEvolve /f`
+- 로그: `evolve\logs\YYYY-MM-DD.log` (git 제외)

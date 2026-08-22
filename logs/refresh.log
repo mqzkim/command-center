@@ -1,0 +1,4 @@
+﻿[2026-08-23 00:04:13] === refresh start (pid 52924, loop=False)
+[2026-08-23 00:04:29]   fetch-gh> repos 38 (non-fork 36, fork 2) | apps-in-toss 11: naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, bamti-translator, conclusion-card, seoul-house-from-space, coffee, diamond-gather, app-in-toss
+[2026-08-23 00:04:29]   fetch-gh> api calls 5 | elapsed 15.6s | WROTE projects-raw.json
+[2026-08-23 00:04:29] fetch-gh exit=0 (15.8s)

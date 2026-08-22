@@ -1,7 +1,36 @@
 {
-  "generatedAt": "2026-08-22T15:02:45.334Z",
-  "source": "gh api graphql (5 calls, 37 repos: 35 non-fork + 2 fork; fetch-gh.mjs)",
+  "generatedAt": "2026-08-22T15:04:29.317Z",
+  "source": "gh api graphql (5 calls, 38 repos: 36 non-fork + 2 fork; fetch-gh.mjs)",
   "repos": [
+    {
+      "name": "command-center",
+      "url": "https://github.com/mqzkim/command-center",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-08-22T15:04:02Z",
+      "createdAt": "2026-08-22T15:02:39Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "master",
+      "recentCommits": [
+        {
+          "date": "2026-08-22",
+          "message": "evolve: pipeline artifacts (trends 82 candidates, health baseline, sc…"
+        },
+        {
+          "date": "2026-08-22",
+          "message": "init: Command Center — galaxy dashboard + daily evolution loop scaffold"
+        }
+      ],
+      "commitsLast30d": 2,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "side-project",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시"
+    },
     {
       "name": "hermes-shared-knowledge",
       "url": "https://github.com/mqzkim/hermes-shared-knowledge",
@@ -39,7 +68,7 @@
       "commitsLast30d": 6,
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
-      "category": "knowledge-wiki",
+      "category": "harness-ai-infra",
       "significance": 4,
       "significanceReason": "최근 7일 내 푸시, 30일 커밋 6, 설명 있음"
     },
@@ -685,7 +714,7 @@
         "Post-MVP: 한 번의 재뽑기와 보상형 광고"
       ],
       "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
-      "significance": 3,
+      "significance": 2,
       "significanceReason": "60일 내 푸시, 앱인토스"
     },
     {
@@ -760,7 +789,7 @@
         "[BL-001] 선택형 보상 광고 부스터"
       ],
       "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
-      "significance": 3,
+      "significance": 2,
       "significanceReason": "60일 내 푸시, 앱인토스"
     },
     {
@@ -831,7 +860,7 @@
         "plans"
       ],
       "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
-      "significance": 3,
+      "significance": 2,
       "significanceReason": "60일 내 푸시, 앱인토스"
     },
     {
@@ -866,7 +895,7 @@
         "docs/skills"
       ],
       "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
-      "significance": 3,
+      "significance": 2,
       "significanceReason": "60일 내 푸시, 앱인토스"
     },
     {
@@ -899,7 +928,7 @@
         "ddasa.ait"
       ],
       "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
-      "significance": 3,
+      "significance": 2,
       "significanceReason": "60일 내 푸시, 앱인토스"
     },
     {

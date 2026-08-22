@@ -81,8 +81,11 @@ const CC_DATA = {
     agents: [
       { name: "wiki-librarian", desc: "~/.wiki + memory 지식 베이스 사서 (ingest·dedup·lint)" },
     ],
-    routines: [],
-    routinesNote: "영속 크론 미등록 (세션 스코프 밖 스케줄러는 이 스냅샷에서 미확인)",
+    routines: [
+      { name: "CommandCenterEvolve", schedule: "매일 07:30 — health(자가치유)→trends(스캔)→claude 개선 1건→git push" },
+      { name: "CommandCenterServe", schedule: "로그온 시 — 대시보드 서버(7766) 기동" },
+    ],
+    routinesNote: "Task Scheduler + 시작프로그램 실측 (2026-08-23)",
   },
 
   ci: [
@@ -218,8 +221,10 @@ const CC_DATA = {
       },
       {
         label: "ROUTINES", color: "#c86ae0",
-        desc: "ARMS의 R — 나 없이 도는 것들. 현재 실측 등록 1건:",
+        desc: "ARMS의 R — 나 없이 도는 것들. 실측 등록 2건:",
         items: [
+          { n: "CommandCenterEvolve", d: "매일 07:30 데일리 진화 루프 — 자가치유·트렌드 스캔(star≥500 dedup)·개선 1건·private repo push",
+            p: "C:\\workspace\\command-center\\evolve\\run-daily.ps1" },
           { n: "CommandCenterServe", d: "로그온 시 대시보드 서버(포트 7766) 무창 기동",
             p: "C:\\Users\\my\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\CommandCenterServe.vbs" },
         ],
