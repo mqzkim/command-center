@@ -18,7 +18,7 @@
   {
    "date": "2026-08-23",
    "improvement": "트렌드 후보 10건 검토(채택 1: planning-with-files → wiki ingest, 기각 9) · seenRepos 원장 10→20",
-   "commit": "pending",
+   "commit": "0e125ab",
    "gates": "3/3"
   }
  ],
