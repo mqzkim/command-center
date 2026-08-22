@@ -1,7 +1,7 @@
 // 자동 생성 — build-projects.mjs (로컬 클론 스캔 + projects-raw.json(gh) + .launch/launch-status.json + ~/.wiki 링크)
-// 생성: 2026-08-22 16:05Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
+// 생성: 2026-08-22 16:06Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
 const CC_PROJECTS = {
- "generatedAt": "2026-08-22 16:05Z",
+ "generatedAt": "2026-08-22 16:06Z",
  "roots": [
   "C:\\workspace",
   "C:\\Users\\my\\workspace"
@@ -81,7 +81,7 @@ const CC_PROJECTS = {
    "remote": "https://github.com/mqzkim/launch-deck.git",
    "lang": "Python",
    "branch": "main",
-   "dirty": 20,
+   "dirty": 22,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
    "daysSince": 0,
@@ -136,7 +136,7 @@ const CC_PROJECTS = {
    "remote": "https://github.com/mqzkim/command-center.git",
    "lang": "JavaScript",
    "branch": "master",
-   "dirty": 11,
+   "dirty": 4,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
    "daysSince": 0,
@@ -4251,7 +4251,7 @@ const CC_PROJECTS = {
    "remote": "https://github.com/brobertsaz/claude-os",
    "lang": null,
    "branch": "main",
-   "dirty": 6,
+   "dirty": 7,
    "lastCommit": "2026-02-06",
    "lastActivity": "2026-02-06",
    "daysSince": 198,
