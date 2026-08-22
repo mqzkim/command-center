@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-22T15:30:46.276Z",
+ "generatedAt": "2026-08-22T15:37:52.693Z",
  "minStars": 500,
  "queries": [
   "claude code skills",
@@ -11,100 +11,12 @@
   "mcp server",
   "claude code plugin"
  ],
- "scanned": 69,
+ "scanned": 84,
  "dedup": {
   "wikiCatalog": 2,
-  "alreadySeen": 17
+  "alreadySeen": 40
  },
  "candidates": [
-  {
-   "description": "🔍 An LLM-based Multi-agent Framework of Web Search Engine (like Perplexity.ai Pro and SearchGPT)",
-   "fullName": "InternLM/MindSearch",
-   "stargazersCount": 6916,
-   "updatedAt": "2026-08-22T09:59:27Z",
-   "url": "https://github.com/InternLM/MindSearch",
-   "labels": [
-    "orchestration"
-   ],
-   "query": "multi-agent framework"
-  },
-  {
-   "description": "Claude Code skill to support Android app's reverse engineering",
-   "fullName": "SimoneAvogadro/android-reverse-engineering-skill",
-   "stargazersCount": 6860,
-   "updatedAt": "2026-08-22T09:57:43Z",
-   "url": "https://github.com/SimoneAvogadro/android-reverse-engineering-skill",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows",
-   "fullName": "trailofbits/skills",
-   "stargazersCount": 6786,
-   "updatedAt": "2026-08-22T13:45:27Z",
-   "url": "https://github.com/trailofbits/skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "An AI-agent skill that generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF, and PPTX.",
-   "fullName": "chuspeeism/dashi-ppt-skill",
-   "stargazersCount": 5974,
-   "updatedAt": "2026-08-22T15:14:09Z",
-   "url": "https://github.com/chuspeeism/dashi-ppt-skill",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "Programmatic access to Gemini Notebook - via command-line interface (CLI), Model Context Protocol (MCP) server, and AI agent skills.",
-   "fullName": "jacob-bd/gemini-notebook-mcp-cli",
-   "stargazersCount": 5910,
-   "updatedAt": "2026-08-22T14:39:11Z",
-   "url": "https://github.com/jacob-bd/gemini-notebook-mcp-cli",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.",
-   "fullName": "zarazhangrui/codebase-to-course",
-   "stargazersCount": 5433,
-   "updatedAt": "2026-08-22T14:15:39Z",
-   "url": "https://github.com/zarazhangrui/codebase-to-course",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution as one open, catch-all Agent Skill / Claude Code plugin.",
-   "fullName": "internet-court/internet-court-skill",
-   "stargazersCount": 4422,
-   "updatedAt": "2026-08-22T14:58:16Z",
-   "url": "https://github.com/internet-court/internet-court-skill",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "A lightweight desktop app to manage, sync, and organize AI agent skills across 50+ coding tools — Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
-   "fullName": "xingkongliang/skills-manager",
-   "stargazersCount": 3933,
-   "updatedAt": "2026-08-22T14:41:21Z",
-   "url": "https://github.com/xingkongliang/skills-manager",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
   {
    "description": "Deploy Your Frontend in a Single Command. Claude Code Skills supported.",
    "fullName": "glitternetwork/pinme",

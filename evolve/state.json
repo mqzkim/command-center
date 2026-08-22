@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-22T15:30:07.757Z",
+ "lastRun": "2026-08-22T15:33:13.761Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -58,7 +58,17 @@
   "wasp-lang/open-saas",
   "NVIDIA/SkillSpector",
   "hangwin/mcp-chrome",
-  "BeehiveInnovations/pal-mcp-server"
+  "BeehiveInnovations/pal-mcp-server",
+  "0x4m4/hexstrike-ai",
+  "modelcontextprotocol/inspector",
+  "InternLM/MindSearch",
+  "SimoneAvogadro/android-reverse-engineering-skill",
+  "trailofbits/skills",
+  "chuspeeism/dashi-ppt-skill",
+  "jacob-bd/gemini-notebook-mcp-cli",
+  "zarazhangrui/codebase-to-course",
+  "internet-court/internet-court-skill",
+  "xingkongliang/skills-manager"
  ],
  "appliedImprovements": [
   {
@@ -87,6 +97,15 @@
    "repo": "HKUDS/DeepCode",
    "date": "2026-08-23",
    "mode": "knowledge"
+  },
+  {
+   "id": "skill:NVIDIA/SkillSpector",
+   "repo": "NVIDIA/SkillSpector",
+   "date": "2026-08-23",
+   "mode": "skill",
+   "files": [
+    "~/.claude/skills/skill-audit/"
+   ]
   }
  ],
  "openFindings": []
