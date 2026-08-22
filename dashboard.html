@@ -913,9 +913,10 @@ $("#drawerBody").addEventListener("click", async e => {
 
 /* ═══════════════ CLAUDE OS 라이브 (8051) — 전부 런타임 fetch, 오프라인 시 명시 렌더, 에러 0 ═══════════════ */
 function cosBase() { return "http://localhost:8051"; }
-async function cosFetch(path, body) {
+async function cosFetch(path, body, ms) {
   const COS = cosBase();
-  const ac = new AbortController(); const t = setTimeout(() => ac.abort(), 3000);
+  /* 상태 조회 3s, search-all은 ollama 임베딩으로 ~8s 실측 → 20s */
+  const ac = new AbortController(); const t = setTimeout(() => ac.abort(), ms || 3000);
   try {
     const r = await fetch(COS + path, { signal: ac.signal, ...(body ? { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) } : {}) });
     if (!r.ok) return null;
@@ -926,7 +927,7 @@ function cosSnip(s) { return esc(String(s || "").replace(/\s+/g, " ").trim().sli
 function cosTitle(r) { return (r.metadata && (r.metadata.title || r.metadata.filename)) || r.doc_id || "?"; }
 async function cosSearchInto(box, query, topK) {
   box.innerHTML = `<li class="cos-dim">검색 중… "${esc(query)}"</li>`;
-  const j = await cosFetch("/api/kb/search-all", { query, top_k: topK });
+  const j = await cosFetch("/api/kb/search-all", { query, top_k: topK }, 20000);
   if (!j) { box.innerHTML = `<li class="cos-off">오프라인 — claude-os(8051) 응답 없음</li>`; return; }
   const rs = j.results || [];
   box.innerHTML = rs.length

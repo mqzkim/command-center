@@ -1,7 +1,7 @@
 // 자동 생성 — build-projects.mjs (로컬 클론 스캔 + projects-raw.json(gh) + .launch/launch-status.json + ~/.wiki 링크)
-// 생성: 2026-08-22 15:15Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
+// 생성: 2026-08-22 15:22Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
 const CC_PROJECTS = {
- "generatedAt": "2026-08-22 15:15Z",
+ "generatedAt": "2026-08-22 15:22Z",
  "roots": [
   "C:\\workspace",
   "C:\\Users\\my\\workspace"
@@ -81,7 +81,7 @@ const CC_PROJECTS = {
    "remote": "https://github.com/mqzkim/command-center.git",
    "lang": "JavaScript",
    "branch": "master",
-   "dirty": 3,
+   "dirty": 5,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
    "daysSince": 0,
@@ -2374,6 +2374,7 @@ const CC_PROJECTS = {
      "concepts/llm-pr-merge-trust-boundary.md",
      "concepts/provider-smoke-sentinel-validation.md",
      "entities/ai-benchmark-repos/aaif-goose__goose.md",
+     "entities/headroom.md",
      "internal/ai-benchmark-harness/harness-learning-log.md",
      "research/github-org-ai-pr-automation-2026-07.md",
      "_librarian/lint-queue.md"

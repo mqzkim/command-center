@@ -1,2 +1,10 @@
-skipped: claude-os offline
-scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+wiki=C:\Users\my\.wiki scanned=565 to_upsert=565 to_delete=0 unchanged=0
+ERROR upsert concepts/apps-in-toss-portfolio-snapshot-aggregation.md (7761 bytes): fetch failed
+ERROR upsert concepts/dag-layer-parallelism.md (3179 bytes): fetch failed
+ERROR upsert concepts/decisions-matrix-consolidation.md (3663 bytes): fetch failed
+ERROR upsert concepts/five-layer-validation.md (3042 bytes): fetch failed
+progress 50/565
+ERROR upsert concepts/korean-community-user-needs-scan.md (1308 bytes): fetch failed
+ERROR upsert concepts/lean-startup.md (2610 bytes): fetch failed
+progress 100/565
+ERROR upsert concepts/smallest-ratchet-in-harness-team-build.md (7234 bytes): fetch failed

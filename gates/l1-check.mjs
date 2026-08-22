@@ -6,7 +6,10 @@ import { join } from "node:path";
 const url = process.argv[2] || "http://localhost:7766/dashboard.html?brief=1&q=nailmap";
 const ch = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const ud = mkdtempSync(join(tmpdir(), "cc-l1-"));
-const dom = execFileSync(ch, ["--headless=new", "--disable-gpu", "--no-first-run", `--user-data-dir=${ud}`, "--virtual-time-budget=8000", "--dump-dom", url], { encoding: "utf8", maxBuffer: 64 << 20, stdio: ["ignore", "pipe", "ignore"] });
+// virtual-time-budget: 펜딩 fetch(8051 search-all ~8s 실측)가 끝날 때까지 가상시간 정지 → 라이브 렌더 후 DOM 덤프. chrome 종료가 느려 timeout으로 회수(stdout은 보존).
+let dom = "";
+try { dom = execFileSync(ch, ["--headless=new", "--disable-gpu", "--no-first-run", `--user-data-dir=${ud}`, "--virtual-time-budget=10000", "--dump-dom", url], { encoding: "utf8", maxBuffer: 64 << 20, stdio: ["ignore", "pipe", "ignore"], timeout: 90000 }); }
+catch (e) { dom = String(e.stdout || ""); }
 const body = (dom.match(/<body[^>]*>/) || [""])[0];
 const errs = (body.match(/data-errors="(\d+)"/) || [, "0"])[1];
 const grab = (id, n) => { const i = dom.indexOf(`id="${id}"`); return i < 0 ? "(none)" : dom.slice(i, i + n).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim(); };
