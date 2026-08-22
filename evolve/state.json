@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-22T16:03:52.661Z",
+ "lastRun": "2026-08-22T16:09:33.365Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -55,6 +55,12 @@
    "date": "2026-08-23",
    "improvement": "china-qijizhifeng/agentic-harness-engineering 지식화(c) — 기존 AHE concept 페이지에 공식 코드 repo 반영 · 트렌드 후보 10건 검토(채택 1·기각 9, 잔여 2) · seenRepos 70→80",
    "commit": "a743ebc",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-08-23",
+   "improvement": "§6 자기진화: trends.mjs 쿼리 8→15·per-query limit 15→30(후보 풀 2→60건 복원) · 잔여 후보 2건 검토(기각 2) · seenRepos 80→82",
+   "commit": "pending",
    "gates": "4/4"
   }
  ],
@@ -138,7 +144,9 @@
   "hashicorp/agent-skills",
   "harnesslabs/arbiter",
   "liquidos-ai/AutoAgents",
-  "RyanAlberts/best-of-Agent-Harnesses"
+  "RyanAlberts/best-of-Agent-Harnesses",
+  "AutoLab-SAI-SJTU/Paper2Rebuttal",
+  "Mnehmos/mnehmos.multi-agent.framework"
  ],
  "appliedImprovements": [
   {
@@ -202,6 +210,15 @@
    "date": "2026-08-23",
    "mode": "knowledge",
    "note": "existing concept page (arXiv 2604.25850) updated with official code repo, no new entity"
+  },
+  {
+   "id": "self:trends-query-expansion",
+   "date": "2026-08-23",
+   "mode": "self-modify",
+   "files": [
+    "evolve/trends.mjs"
+   ],
+   "note": "QUERIES 8->15, per-query limit 15->30; pool of 84 exhausted after 10 runs"
   }
  ],
  "openFindings": []

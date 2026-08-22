@@ -23,7 +23,17 @@ const QUERIES = [
   { q: "coding agent harness", label: "harness" },
   { q: "mcp server", label: "mcp" },
   { q: "claude code plugin", label: "skills" },
+  // 2026-08-23 §6 확장: 1차 8쿼리 풀(84건)이 10차 실행 만에 전량 검토되어 CANDIDATES_EXHAUSTED 직전.
+  // 오너 워크플로 직결 축(훅·서브에이전트·메모리·컨텍스트 엔지니어링·평가 하네스·지식 관리)을 추가.
+  { q: "claude code hooks", label: "harness" },
+  { q: "claude code subagents", label: "orchestration" },
+  { q: "llm agent memory", label: "harness" },
+  { q: "context engineering llm", label: "harness" },
+  { q: "llm evaluation harness", label: "harness" },
+  { q: "agentic workflow automation", label: "orchestration" },
+  { q: "llm knowledge base wiki", label: "knowledge" },
 ];
+const PER_QUERY_LIMIT = 30; // 15→30 (2026-08-23): star 상위 15건은 쿼리 간 중복이 커서 순증이 적음
 
 const state = JSON.parse(readFileSync(STATE_P, "utf8"));
 const seen = new Set((state.seenRepos || []).map(s => s.toLowerCase()));
@@ -40,7 +50,7 @@ const catalog = new Set(
 function ghSearch(q) {
   try {
     const out = execFileSync("gh", ["search", "repos", q, "--stars", `>=${MIN_STARS}`,
-      "--sort", "stars", "--limit", "15",
+      "--sort", "stars", "--limit", String(PER_QUERY_LIMIT),
       "--json", "fullName,stargazersCount,description,updatedAt,url"],
       { encoding: "utf8", timeout: 60000 });
     return JSON.parse(out);
