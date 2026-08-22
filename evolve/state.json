@@ -66,7 +66,7 @@
   {
    "date": "2026-08-23",
    "improvement": "HKUDS/nanobot 지식화(c) — ~/.wiki entity ingest(MCP 통합·멀티에이전트 위임·스케줄 자동화·장기메모리, Self-Evolving Loop/AHE 대응) · 트렌드 후보 10건 검토(채택 1·기각 9) · seenRepos 82→92",
-   "commit": "PENDING",
+   "commit": "b8b8bc0",
    "gates": "4/4"
   }
  ],
