@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-22T15:47:24.398Z",
+ "lastRun": "2026-08-22T15:51:25.905Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -37,6 +37,12 @@
    "date": "2026-08-23",
    "improvement": "agenticnotetaking/arscontexta 지식화(c) — ~/.wiki entity ingest(LLM Wiki 대비 Reweave·write-time 훅 검증 아이디어) · 트렌드 후보 10건 검토(채택 1·기각 9) · seenRepos 40→50",
    "commit": "dc68e0d",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-08-23",
+   "improvement": "agentuniverse-ai/agentUniverse 지식화(c) — ~/.wiki entity ingest(PEER·DOE 협업 패턴, Review 단계↔하네스 게이트 대응) · 트렌드 후보 10건 검토(채택 1·기각 9) · seenRepos 50→60",
+   "commit": "PENDING",
    "gates": "4/4"
   }
  ],
@@ -90,7 +96,17 @@
   "Agentchengfeng/chengfeng-videocut-skills",
   "dominikmartn/nothing-design-skill",
   "tradermonty/claude-trading-skills",
-  "jeremylongshore/claude-code-plugins-plus-skills"
+  "jeremylongshore/claude-code-plugins-plus-skills",
+  "twostraws/Swift-Agent-Skills",
+  "expo/skills",
+  "agentuniverse-ai/agentUniverse",
+  "yctimlin/mcp_excalidraw",
+  "trypromptly/LLMStack",
+  "FrancyJGLisboa/agent-skill-creator",
+  "guy-hartstein/company-research-agent",
+  "P4nda0s/reverse-skills",
+  "wondelai/skills",
+  "Eronred/aso-skills"
  ],
  "appliedImprovements": [
   {
@@ -132,6 +148,12 @@
   {
    "id": "wiki:agenticnotetaking/arscontexta",
    "repo": "agenticnotetaking/arscontexta",
+   "date": "2026-08-23",
+   "mode": "knowledge"
+  },
+  {
+   "id": "wiki:agentuniverse-ai/agentUniverse",
+   "repo": "agentuniverse-ai/agentUniverse",
    "date": "2026-08-23",
    "mode": "knowledge"
   }
