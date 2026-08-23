@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-22T22:33:29.920Z",
+ "lastRun": "2026-08-22T22:36:39.012Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -162,7 +162,17 @@
   "xberg-io/xberg",
   "idosal/git-mcp",
   "google-labs-code/stitch-skills",
-  "webiny/webiny-js"
+  "webiny/webiny-js",
+  "yzfly/Awesome-MCP-ZH",
+  "firecrawl/firecrawl-mcp-server",
+  "modelcontextprotocol/registry",
+  "BrowserMCP/mcp",
+  "CursorTouch/Windows-MCP",
+  "lharries/whatsapp-mcp",
+  "parcadei/Continuous-Claude-v3",
+  "disler/claude-code-hooks-mastery",
+  "pipeshub-ai/pipeshub-ai",
+  "aiwithremy/claude-skills-llm-council"
  ],
  "appliedImprovements": [
   {
@@ -242,6 +252,13 @@
    "date": "2026-08-23",
    "mode": "knowledge",
    "note": "new entity page; previously 1-line mention in hkuds-data-lab table"
+  },
+  {
+   "id": "wiki:parcadei/Continuous-Claude-v3",
+   "repo": "parcadei/Continuous-Claude-v3",
+   "date": "2026-08-24",
+   "mode": "knowledge",
+   "note": "new entity page; continuity harness (ledger/handoff/PreCompact/file_claims/MCP code-exec) vs owner handoff+wiki-librarian. Install rejected: 7mo stale, Windows hook issues #104/#111, overwrites ~/.claude. Runner-up for (b): CursorTouch/Windows-MCP"
   }
  ],
  "openFindings": []
