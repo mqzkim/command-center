@@ -1,12 +1,12 @@
 // 자동 생성 — build-projects.mjs (로컬 클론 스캔 + projects-raw.json(gh) + .launch/launch-status.json + ~/.wiki 링크)
-// 생성: 2026-08-22 22:30Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
+// 생성: 2026-08-23 03:03Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
 const CC_PROJECTS = {
- "generatedAt": "2026-08-22 22:30Z",
+ "generatedAt": "2026-08-23 03:03Z",
  "roots": [
   "C:\\workspace",
   "C:\\Users\\my\\workspace"
  ],
- "ghSnapshot": "2026-08-22T18:46:40.501Z",
+ "ghSnapshot": "2026-08-23T03:03:22.529Z",
  "stages": [
   "intake",
   "repo_bootstrap",
@@ -48,9 +48,9 @@ const CC_PROJECTS = {
   "tossWithBlockers": 14,
   "tossFromLaunchStatus": 16,
   "byCategory": {
+   "knowledge-wiki": 1,
    "apps-in-toss": 17,
    "side-project": 16,
-   "knowledge-wiki": 1,
    "harness-ai-infra": 5,
    "landing-docs": 3,
    "legacy": 26
@@ -68,6 +68,65 @@ const CC_PROJECTS = {
  },
  "items": [
   {
+   "name": "llm-wiki",
+   "repo": "llm-wiki",
+   "displayName": null,
+   "desc": null,
+   "category": "knowledge-wiki",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "lang": "JavaScript",
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-08-23",
+   "daysSince": 0,
+   "gh": {
+    "url": "https://github.com/mqzkim/llm-wiki",
+    "private": true,
+    "pushedAt": "2026-08-23",
+    "openIssues": 0,
+    "commits30d": 28,
+    "recent": [
+     {
+      "date": "2026-08-23",
+      "message": "knowledge: update profit writing publish handoff"
+     },
+     {
+      "date": "2026-08-23",
+      "message": "knowledge: update profit-writing publish idempotency"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "knowledge: update profit writing monetization gates"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/llm-wiki",
+   "links": {
+    "local": null,
+    "github": "https://github.com/mqzkim/llm-wiki",
+    "wiki": [
+     "CLAUDE.md",
+     "concepts/agent-skill-autopilot-boundary.md",
+     "concepts/agentic-rag.md",
+     "concepts/artifact-drop-librarian-hook.md",
+     "concepts/benchmark-result-normalization.md",
+     "concepts/harness-wrapper-contract.md",
+     "concepts/knowledge-pipeline.md",
+     "concepts/mcp-tooling.md"
+    ],
+    "launch": null,
+    "parent": null
+   },
+   "noLocal": true
+  },
+  {
    "name": "subway-timer",
    "repo": "subway-timer",
    "displayName": null,
@@ -79,7 +138,7 @@ const CC_PROJECTS = {
    "legacy": false,
    "mine": true,
    "remote": "https://github.com/mqzkim/subway-timer.git",
-   "lang": null,
+   "lang": "TypeScript",
    "branch": "main",
    "dirty": 1,
    "lastCommit": "2026-08-23",
@@ -90,22 +149,29 @@ const CC_PROJECTS = {
     "private": true,
     "pushedAt": "2026-08-22",
     "openIssues": 9,
-    "commits30d": 3,
+    "commits30d": 13,
     "recent": [
      {
       "date": "2026-08-22",
-      "message": "launch(mvp_prd): lock MVP scope and mirror backlog issues"
+      "message": "launch(local_qa): test bundle, audit classification, captures"
      },
      {
       "date": "2026-08-22",
-      "message": "launch(repo_bootstrap): record repository evidence"
+      "message": "launch(artifact): build .ait and record hash"
      },
      {
       "date": "2026-08-22",
-      "message": "launch(repo_bootstrap): import idea artifacts"
+      "message": "launch(analytics): event plan + instrumentation"
      }
     ],
-    "issueTitles": []
+    "issueTitles": [
+     "[BL-009] 백그라운드 자동 갱신 주기 최적화",
+     "[BL-008] 오프라인 캐시와 마지막 조회 결과 표시",
+     "[BL-007] 버스 등 타 교통수단 확장",
+     "[BL-006] 지각 방지 연속 기록·배지",
+     "[BL-005] 홈 화면 위젯·바로가기",
+     "[BL-004] 혼잡도·열차 위치 표시"
+    ]
    },
    "toss": {
     "source": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\subway-timer\\.launch\\launch-status.json",
@@ -189,6 +255,133 @@ const CC_PROJECTS = {
    }
   },
   {
+   "name": "app-in-toss",
+   "repo": "app-in-toss",
+   "displayName": "app-in-toss (모노레포)",
+   "desc": "앱인토스 모노레포 워크스페이스 — 서브앱 8개(croco-fishing·daesin-meogeo·haru-han-tem·pet-rock·upperant·diamond-gather·coffee·bamti/naeheunjeok 사본). 루트 launch-status는 악어밥 낚시왕 import 잔재",
+   "category": "apps-in-toss",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/app-in-toss.git",
+   "lang": "JavaScript",
+   "branch": "main",
+   "dirty": 129,
+   "lastCommit": "2026-08-23",
+   "lastActivity": "2026-08-23",
+   "daysSince": 0,
+   "gh": {
+    "url": "https://github.com/mqzkim/app-in-toss",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 0,
+    "commits30d": 4,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "fix: track deterministic e2e mode"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "ci: gate operated apps QA"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "test: checkpoint diamond-gather with stable QA"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": {
+    "source": "C:\\Users\\my\\workspace\\app-in-toss\\.launch\\launch-status.json",
+    "appName": "croco-fishing",
+    "displayName": "악어밥 낚시왕",
+    "stage": "intake",
+    "stageKo": "인테이크",
+    "nextCheck": "intake",
+    "pipeline": [
+     {
+      "s": "intake",
+      "st": "pending"
+     },
+     {
+      "s": "repo_bootstrap",
+      "st": "skipped"
+     },
+     {
+      "s": "mvp_prd",
+      "st": "skipped"
+     },
+     {
+      "s": "store_assets",
+      "st": "skipped"
+     },
+     {
+      "s": "scaffold",
+      "st": "blocked"
+     },
+     {
+      "s": "tds_mvp",
+      "st": "pending"
+     },
+     {
+      "s": "analytics",
+      "st": "pending"
+     },
+     {
+      "s": "artifact",
+      "st": "pending"
+     },
+     {
+      "s": "local_qa",
+      "st": "pending"
+     },
+     {
+      "s": "registration_draft",
+      "st": "pending"
+     },
+     {
+      "s": "deploy_authorization",
+      "st": "n/a"
+     },
+     {
+      "s": "sandbox_qa",
+      "st": "pending"
+     },
+     {
+      "s": "release_gate",
+      "st": "pending"
+     },
+     {
+      "s": "released",
+      "st": "pending"
+     }
+    ],
+    "blockersOpen": 2,
+    "blockersTotal": 2,
+    "blockers": [
+     "User must explicitly confirm whether 악어밥 낚시왕 should be treated and registered as a game app before scaffold/game-specific release preparation continues.",
+     "Support contact, privacy policy URL, console authority, and production ad group IDs are not provided yet."
+    ],
+    "classification": null,
+    "finalReleaseApproved": false,
+    "updatedAt": "2026-08-03",
+    "goal": "Prepare 악어밥 낚시왕 for Apps in Toss release gate"
+   },
+   "links": {
+    "local": "C:\\Users\\my\\workspace\\app-in-toss",
+    "github": "https://github.com/mqzkim/app-in-toss",
+    "wiki": [
+     "concepts/git-subdirectory-remote-detection-pitfall.md",
+     "internal/command-center-project-registry.md"
+    ],
+    "launch": "C:\\Users\\my\\workspace\\app-in-toss\\.launch\\launch-status.json",
+    "parent": null
+   }
+  },
+  {
    "name": "launch-deck",
    "repo": "launch-deck",
    "displayName": null,
@@ -211,19 +404,19 @@ const CC_PROJECTS = {
     "private": true,
     "pushedAt": "2026-08-22",
     "openIssues": 0,
-    "commits30d": 23,
+    "commits30d": 56,
     "recent": [
      {
       "date": "2026-08-22",
-      "message": "chore(dashboard): drop scratch logs from gates/evidence, ignore e2e r…"
+      "message": "plan(pipeline-c): re-verification follow-up — deploy evidence file, \\…"
      },
      {
       "date": "2026-08-22",
-      "message": "feat(dashboard): Playwright e2e against seeded real backend, static d…"
+      "message": "gates(pipeline-c): G4 live probe writes gates/evidence/pipeline-c/nai…"
      },
      {
       "date": "2026-08-22",
-      "message": "feat(tools): shell_tools (NodeRunner real/fake), project_validator po…"
+      "message": "fix(proc): restore \\v1.0 in PS module path (literal 0x0B had been wri…"
      }
     ],
     "issueTitles": []
@@ -257,7 +450,7 @@ const CC_PROJECTS = {
    "remote": "https://github.com/mqzkim/command-center.git",
    "lang": "JavaScript",
    "branch": "master",
-   "dirty": 24,
+   "dirty": 3,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
    "daysSince": 0,
@@ -266,7 +459,7 @@ const CC_PROJECTS = {
     "private": false,
     "pushedAt": "2026-08-22",
     "openIssues": 0,
-    "commits30d": 32,
+    "commits30d": 35,
     "recent": [
      {
       "date": "2026-08-22",
@@ -274,11 +467,11 @@ const CC_PROJECTS = {
      },
      {
       "date": "2026-08-22",
-      "message": "evolve(2026-08-23): ledger commit sha f519cee"
+      "message": "evolve(2026-08-23): ledger commit sha b8b8bc0"
      },
      {
       "date": "2026-08-22",
-      "message": "evolve(2026-08-23): §6 자기진화 — trends.mjs 쿼리 8→15(hooks·subagents·memo…"
+      "message": "evolve(2026-08-23): HKUDS/nanobot 지식화(c) — ~/.wiki entity 신규(MCP 통합·멀…"
      }
     ],
     "issueTitles": []
@@ -536,65 +729,6 @@ const CC_PROJECTS = {
    "noLocal": true
   },
   {
-   "name": "llm-wiki",
-   "repo": "llm-wiki",
-   "displayName": null,
-   "desc": null,
-   "category": "knowledge-wiki",
-   "significance": 4,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "lang": "JavaScript",
-   "branch": null,
-   "dirty": null,
-   "lastCommit": null,
-   "lastActivity": "2026-08-22",
-   "daysSince": 1,
-   "gh": {
-    "url": "https://github.com/mqzkim/llm-wiki",
-    "private": true,
-    "pushedAt": "2026-08-22",
-    "openIssues": 0,
-    "commits30d": 24,
-    "recent": [
-     {
-      "date": "2026-08-22",
-      "message": "knowledge: update TradingAgents allocation rebalancing"
-     },
-     {
-      "date": "2026-08-22",
-      "message": "knowledge: add agno-agentos, standing-resolution-pattern, launch-deck…"
-     },
-     {
-      "date": "2026-08-19",
-      "message": "knowledge: update apps-in-toss free backend isolation"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": null,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/llm-wiki",
-   "links": {
-    "local": null,
-    "github": "https://github.com/mqzkim/llm-wiki",
-    "wiki": [
-     "CLAUDE.md",
-     "concepts/agent-skill-autopilot-boundary.md",
-     "concepts/agentic-rag.md",
-     "concepts/artifact-drop-librarian-hook.md",
-     "concepts/benchmark-result-normalization.md",
-     "concepts/harness-wrapper-contract.md",
-     "concepts/knowledge-pipeline.md",
-     "concepts/mcp-tooling.md"
-    ],
-    "launch": null,
-    "parent": null
-   },
-   "noLocal": true
-  },
-  {
    "name": "hermes-shared-knowledge",
    "repo": "hermes-shared-knowledge",
    "displayName": null,
@@ -615,7 +749,7 @@ const CC_PROJECTS = {
     "private": true,
     "pushedAt": "2026-08-22",
     "openIssues": 0,
-    "commits30d": 9,
+    "commits30d": 11,
     "recent": [
      {
       "date": "2026-08-22",
@@ -643,6 +777,148 @@ const CC_PROJECTS = {
     "parent": null
    },
    "noLocal": true
+  },
+  {
+   "name": "bamti-translator",
+   "repo": "bamti-translator",
+   "displayName": null,
+   "desc": "밤티번역기를 구현하고 Apps in Toss 출시 게이트까지 준비",
+   "category": "apps-in-toss",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/bamti-translator.git",
+   "lang": "JavaScript",
+   "branch": "main",
+   "dirty": 0,
+   "lastCommit": "2026-07-28",
+   "lastActivity": "2026-08-22",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/bamti-translator",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 7,
+    "commits30d": 48,
+    "recent": [
+     {
+      "date": "2026-07-28",
+      "message": "release: publish V4 to Apps in Toss"
+     },
+     {
+      "date": "2026-07-28",
+      "message": "release: record V4 review submission"
+     },
+     {
+      "date": "2026-07-28",
+      "message": "feat: render 27 independent Bamti concepts"
+     }
+    ],
+    "issueTitles": [
+     "[BL-008] 추가 감성 스타일 번역기",
+     "[BL-007] 폰트·레이어 고급 편집기",
+     "[BL-006] 보상·포인트·친구 초대",
+     "[BL-005] 유료 스타일 팩",
+     "[BL-004] 토스 로그인과 서버 갤러리",
+     "[BL-002] 영상·GIF 생성"
+    ]
+   },
+   "toss": {
+    "source": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\bamti-translator\\.launch\\launch-status.json",
+    "appName": "bamti-translator",
+    "displayName": null,
+    "stage": "released",
+    "stageKo": "출시",
+    "nextCheck": "deploy_authorization",
+    "pipeline": [
+     {
+      "s": "intake",
+      "st": "pass"
+     },
+     {
+      "s": "repo_bootstrap",
+      "st": "pass"
+     },
+     {
+      "s": "mvp_prd",
+      "st": "pass"
+     },
+     {
+      "s": "store_assets",
+      "st": "pass"
+     },
+     {
+      "s": "scaffold",
+      "st": "pass"
+     },
+     {
+      "s": "tds_mvp",
+      "st": "pass"
+     },
+     {
+      "s": "analytics",
+      "st": "pass"
+     },
+     {
+      "s": "artifact",
+      "st": "pass"
+     },
+     {
+      "s": "local_qa",
+      "st": "pass"
+     },
+     {
+      "s": "registration_draft",
+      "st": "pass"
+     },
+     {
+      "s": "deploy_authorization",
+      "st": "n/a"
+     },
+     {
+      "s": "sandbox_qa",
+      "st": "pending"
+     },
+     {
+      "s": "release_gate",
+      "st": "pending"
+     },
+     {
+      "s": "released",
+      "st": "pass"
+     }
+    ],
+    "blockersOpen": 5,
+    "blockersTotal": 14,
+    "blockers": [
+     "sdk-transitive-security-review",
+     "output-parity-device-qa-required",
+     "bamti-style-device-visual-qa-required",
+     "style-catalog-v3-device-visual-qa-required",
+     "independent-concepts-v4-device-visual-qa-required"
+    ],
+    "classification": "non-game",
+    "finalReleaseApproved": true,
+    "updatedAt": "2026-07-28",
+    "goal": "밤티번역기를 구현하고 Apps in Toss 출시 게이트까지 준비"
+   },
+   "links": {
+    "local": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\bamti-translator",
+    "github": "https://github.com/mqzkim/bamti-translator",
+    "wiki": [
+     "concepts/apps-in-toss-front-loaded-launch-contract.md",
+     "concepts/apps-in-toss-non-game-anonymous-leaderboard.md",
+     "concepts/apps-in-toss-rewarded-ad-release-gate.md",
+     "internal/command-center-project-registry.md"
+    ],
+    "launch": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\bamti-translator\\.launch\\launch-status.json",
+    "parent": null
+   },
+   "altPaths": [
+    "C:\\Users\\my\\workspace\\app-in-toss\\bamti-translator"
+   ]
   },
   {
    "name": "naeheunjeok",
@@ -1318,148 +1594,6 @@ const CC_PROJECTS = {
     "launch": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\nailmap\\.launch\\launch-status.json",
     "parent": null
    }
-  },
-  {
-   "name": "bamti-translator",
-   "repo": "bamti-translator",
-   "displayName": null,
-   "desc": "밤티번역기를 구현하고 Apps in Toss 출시 게이트까지 준비",
-   "category": "apps-in-toss",
-   "significance": 4,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/bamti-translator.git",
-   "lang": "JavaScript",
-   "branch": "main",
-   "dirty": 0,
-   "lastCommit": "2026-07-28",
-   "lastActivity": "2026-07-28",
-   "daysSince": 26,
-   "gh": {
-    "url": "https://github.com/mqzkim/bamti-translator",
-    "private": true,
-    "pushedAt": "2026-07-28",
-    "openIssues": 7,
-    "commits30d": 48,
-    "recent": [
-     {
-      "date": "2026-07-28",
-      "message": "release: publish V4 to Apps in Toss"
-     },
-     {
-      "date": "2026-07-28",
-      "message": "release: record V4 review submission"
-     },
-     {
-      "date": "2026-07-28",
-      "message": "feat: render 27 independent Bamti concepts"
-     }
-    ],
-    "issueTitles": [
-     "[BL-008] 추가 감성 스타일 번역기",
-     "[BL-007] 폰트·레이어 고급 편집기",
-     "[BL-006] 보상·포인트·친구 초대",
-     "[BL-005] 유료 스타일 팩",
-     "[BL-004] 토스 로그인과 서버 갤러리",
-     "[BL-002] 영상·GIF 생성"
-    ]
-   },
-   "toss": {
-    "source": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\bamti-translator\\.launch\\launch-status.json",
-    "appName": "bamti-translator",
-    "displayName": null,
-    "stage": "released",
-    "stageKo": "출시",
-    "nextCheck": "deploy_authorization",
-    "pipeline": [
-     {
-      "s": "intake",
-      "st": "pass"
-     },
-     {
-      "s": "repo_bootstrap",
-      "st": "pass"
-     },
-     {
-      "s": "mvp_prd",
-      "st": "pass"
-     },
-     {
-      "s": "store_assets",
-      "st": "pass"
-     },
-     {
-      "s": "scaffold",
-      "st": "pass"
-     },
-     {
-      "s": "tds_mvp",
-      "st": "pass"
-     },
-     {
-      "s": "analytics",
-      "st": "pass"
-     },
-     {
-      "s": "artifact",
-      "st": "pass"
-     },
-     {
-      "s": "local_qa",
-      "st": "pass"
-     },
-     {
-      "s": "registration_draft",
-      "st": "pass"
-     },
-     {
-      "s": "deploy_authorization",
-      "st": "n/a"
-     },
-     {
-      "s": "sandbox_qa",
-      "st": "pending"
-     },
-     {
-      "s": "release_gate",
-      "st": "pending"
-     },
-     {
-      "s": "released",
-      "st": "pass"
-     }
-    ],
-    "blockersOpen": 5,
-    "blockersTotal": 14,
-    "blockers": [
-     "sdk-transitive-security-review",
-     "output-parity-device-qa-required",
-     "bamti-style-device-visual-qa-required",
-     "style-catalog-v3-device-visual-qa-required",
-     "independent-concepts-v4-device-visual-qa-required"
-    ],
-    "classification": "non-game",
-    "finalReleaseApproved": true,
-    "updatedAt": "2026-07-28",
-    "goal": "밤티번역기를 구현하고 Apps in Toss 출시 게이트까지 준비"
-   },
-   "links": {
-    "local": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\bamti-translator",
-    "github": "https://github.com/mqzkim/bamti-translator",
-    "wiki": [
-     "concepts/apps-in-toss-front-loaded-launch-contract.md",
-     "concepts/apps-in-toss-non-game-anonymous-leaderboard.md",
-     "concepts/apps-in-toss-rewarded-ad-release-gate.md",
-     "internal/command-center-project-registry.md"
-    ],
-    "launch": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\bamti-translator\\.launch\\launch-status.json",
-    "parent": null
-   },
-   "altPaths": [
-    "C:\\Users\\my\\workspace\\app-in-toss\\bamti-translator"
-   ]
   },
   {
    "name": "agent-factory",
@@ -2246,129 +2380,6 @@ const CC_PROJECTS = {
     "github": null,
     "wiki": [],
     "launch": null,
-    "parent": null
-   }
-  },
-  {
-   "name": "app-in-toss",
-   "repo": "app-in-toss",
-   "displayName": "app-in-toss (모노레포)",
-   "desc": "앱인토스 모노레포 워크스페이스 — 서브앱 8개(croco-fishing·daesin-meogeo·haru-han-tem·pet-rock·upperant·diamond-gather·coffee·bamti/naeheunjeok 사본). 루트 launch-status는 악어밥 낚시왕 import 잔재",
-   "category": "apps-in-toss",
-   "significance": 2,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/app-in-toss.git",
-   "lang": "JavaScript",
-   "branch": "main",
-   "dirty": 129,
-   "lastCommit": "2026-08-23",
-   "lastActivity": "2026-08-23",
-   "daysSince": 0,
-   "gh": {
-    "url": "https://github.com/mqzkim/app-in-toss",
-    "private": true,
-    "pushedAt": "2026-07-04",
-    "openIssues": 0,
-    "commits30d": 0,
-    "recent": [
-     {
-      "date": "2026-07-04",
-      "message": "Update release next check"
-     },
-     {
-      "date": "2026-07-04",
-      "message": "Initial import"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": {
-    "source": "C:\\Users\\my\\workspace\\app-in-toss\\.launch\\launch-status.json",
-    "appName": "croco-fishing",
-    "displayName": "악어밥 낚시왕",
-    "stage": "intake",
-    "stageKo": "인테이크",
-    "nextCheck": "intake",
-    "pipeline": [
-     {
-      "s": "intake",
-      "st": "pending"
-     },
-     {
-      "s": "repo_bootstrap",
-      "st": "skipped"
-     },
-     {
-      "s": "mvp_prd",
-      "st": "skipped"
-     },
-     {
-      "s": "store_assets",
-      "st": "skipped"
-     },
-     {
-      "s": "scaffold",
-      "st": "blocked"
-     },
-     {
-      "s": "tds_mvp",
-      "st": "pending"
-     },
-     {
-      "s": "analytics",
-      "st": "pending"
-     },
-     {
-      "s": "artifact",
-      "st": "pending"
-     },
-     {
-      "s": "local_qa",
-      "st": "pending"
-     },
-     {
-      "s": "registration_draft",
-      "st": "pending"
-     },
-     {
-      "s": "deploy_authorization",
-      "st": "n/a"
-     },
-     {
-      "s": "sandbox_qa",
-      "st": "pending"
-     },
-     {
-      "s": "release_gate",
-      "st": "pending"
-     },
-     {
-      "s": "released",
-      "st": "pending"
-     }
-    ],
-    "blockersOpen": 2,
-    "blockersTotal": 2,
-    "blockers": [
-     "User must explicitly confirm whether 악어밥 낚시왕 should be treated and registered as a game app before scaffold/game-specific release preparation continues.",
-     "Support contact, privacy policy URL, console authority, and production ad group IDs are not provided yet."
-    ],
-    "classification": null,
-    "finalReleaseApproved": false,
-    "updatedAt": "2026-08-03",
-    "goal": "Prepare 악어밥 낚시왕 for Apps in Toss release gate"
-   },
-   "links": {
-    "local": "C:\\Users\\my\\workspace\\app-in-toss",
-    "github": "https://github.com/mqzkim/app-in-toss",
-    "wiki": [
-     "concepts/git-subdirectory-remote-detection-pitfall.md",
-     "internal/command-center-project-registry.md"
-    ],
-    "launch": "C:\\Users\\my\\workspace\\app-in-toss\\.launch\\launch-status.json",
     "parent": null
    }
   },
