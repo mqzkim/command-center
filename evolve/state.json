@@ -78,7 +78,7 @@
   {
    "date": "2026-08-25",
    "improvement": "수리: build-projects.mjs 크래시(gh category=apps-in-toss인데 로컬 toss=null → §6 요약 null 역참조) — isToss에 gh 메타 포함해 unverifiedToss 생성 + 요약 옵셔널 체이닝 · projects-data.js 2일 stale 복구(08-23 03:03Z→08-24 22:34Z) · 트렌드 채택 없음(수리 우선) · wiki: self-evolving-daily-loop에 valid≠fresh 절 추가",
-   "commit": "PENDING",
+   "commit": "0770f7d",
    "gates": "4/4"
   }
  ],
