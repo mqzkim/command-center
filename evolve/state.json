@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-23T22:44:15.499Z",
+ "lastRun": "2026-08-23T22:45:11.161Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -73,6 +73,12 @@
    "date": "2026-08-24",
    "improvement": "parcadei/Continuous-Claude-v3 지식화(c) — ~/.wiki entity ingest(continuity 하네스: PreCompact 자동 handoff·세션 ledger·file_claims·MCP 코드실행 래퍼·TLDR; 설치 기각) · 트렌드 후보 10건 검토(채택 1·기각 9, Windows-MCP (b) 보류) · seenRepos 92→102",
    "commit": "f50be08",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-08-25",
+   "improvement": "수리: build-projects.mjs 크래시(gh category=apps-in-toss인데 로컬 toss=null → §6 요약 null 역참조) — isToss에 gh 메타 포함해 unverifiedToss 생성 + 요약 옵셔널 체이닝 · projects-data.js 2일 stale 복구(08-23 03:03Z→08-24 22:34Z) · 트렌드 채택 없음(수리 우선) · wiki: self-evolving-daily-loop에 valid≠fresh 절 추가",
+   "commit": "PENDING",
    "gates": "4/4"
   }
  ],
@@ -265,6 +271,15 @@
    "date": "2026-08-24",
    "mode": "knowledge",
    "note": "new entity page; continuity harness (ledger/handoff/PreCompact/file_claims/MCP code-exec) vs owner handoff+wiki-librarian. Install rejected: 7mo stale, Windows hook issues #104/#111, overwrites ~/.claude. Runner-up for (b): CursorTouch/Windows-MCP"
+  },
+  {
+   "id": "fix:build-projects-toss-null",
+   "date": "2026-08-25",
+   "mode": "repair",
+   "files": [
+    "build-projects.mjs"
+   ],
+   "note": "app-in-toss monorepo root lost .launch/launch-status.json; gh meta still category=apps-in-toss -> local item toss=null -> summary crash. health C4 passed on stale projects-data.js (valid!=fresh). Next self-modify candidate: health C4 freshness gate (generatedAt vs projects-raw.json generatedAt / pipeline exit code)"
   }
  ],
  "openFindings": []
