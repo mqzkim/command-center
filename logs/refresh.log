@@ -1,88 +1,4 @@
-﻿[2026-08-23 18:03:43] build-projects exit=1 (20.6s)
-[2026-08-23 18:03:44]   build-galaxy> CONCEPTS 128
-[2026-08-23 18:03:44]   build-galaxy> ENTITIES 263
-[2026-08-23 18:03:44]   build-galaxy> RESEARCH 36
-[2026-08-23 18:03:44]   build-galaxy> INTERNAL 41
-[2026-08-23 18:03:44]   build-galaxy> WROTE galaxy-data.js
-[2026-08-23 18:03:44] build-galaxy exit=0 (0.4s)
-[2026-08-23 18:03:44]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
-[2026-08-23 18:03:44]   sync-claude-os> upserted=0 deleted=0 skipped=92 errors=0
-[2026-08-23 18:03:44] sync-claude-os exit=0 (0.2s)
-[2026-08-23 18:03:44]   sync-wiki-kb> skipped: claude-os offline
-[2026-08-23 18:03:44]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
-[2026-08-23 18:03:44] sync-wiki-kb exit=0 (0.1s)
-[2026-08-23 18:03:44] === refresh end (gh=0 build-projects=1 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
-[2026-08-24 00:03:02] === refresh start (pid 53992, loop=False)
-[2026-08-24 00:03:21]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
-[2026-08-24 00:03:21]   fetch-gh> api calls 6 | elapsed 19.3s | WROTE projects-raw.json
-[2026-08-24 00:03:21] fetch-gh exit=0 (19.4s)
-[2026-08-24 00:03:38]   build-projects> file:///C:/workspace/command-center/build-projects.mjs:181
-[2026-08-24 00:03:38]   build-projects>   tossWithBlockers: toss.filter(p => p.toss.blockersOpen > 0).length,
-[2026-08-24 00:03:38]   build-projects>                                             ^
-[2026-08-24 00:03:38]   build-projects> System.Management.Automation.RemoteException
-[2026-08-24 00:03:38]   build-projects> TypeError: Cannot read properties of null (reading 'blockersOpen')
-[2026-08-24 00:03:38]   build-projects>     at file:///C:/workspace/command-center/build-projects.mjs:181:45
-[2026-08-24 00:03:38]   build-projects>     at Array.filter (<anonymous>)
-[2026-08-24 00:03:38]   build-projects>     at file:///C:/workspace/command-center/build-projects.mjs:181:26
-[2026-08-24 00:03:38]   build-projects>     at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
-[2026-08-24 00:03:38]   build-projects>     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
-[2026-08-24 00:03:38]   build-projects>     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
-[2026-08-24 00:03:38]   build-projects> System.Management.Automation.RemoteException
-[2026-08-24 00:03:38]   build-projects> Node.js v24.14.1
-[2026-08-24 00:03:38] build-projects exit=1 (16.4s)
-[2026-08-24 00:03:38]   build-galaxy> CONCEPTS 128
-[2026-08-24 00:03:38]   build-galaxy> ENTITIES 263
-[2026-08-24 00:03:38]   build-galaxy> RESEARCH 36
-[2026-08-24 00:03:38]   build-galaxy> INTERNAL 41
-[2026-08-24 00:03:38]   build-galaxy> WROTE galaxy-data.js
-[2026-08-24 00:03:38] build-galaxy exit=0 (0.3s)
-[2026-08-24 00:03:38]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
-[2026-08-24 00:03:38]   sync-claude-os> upserted=0 deleted=0 skipped=92 errors=0
-[2026-08-24 00:03:38] sync-claude-os exit=0 (0.1s)
-[2026-08-24 00:03:38]   sync-wiki-kb> skipped: claude-os offline
-[2026-08-24 00:03:38]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
-[2026-08-24 00:03:38] sync-wiki-kb exit=0 (0.1s)
-[2026-08-24 00:03:38] === refresh end (gh=0 build-projects=1 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
-[2026-08-24 06:03:02] === refresh start (pid 27484, loop=False)
-[2026-08-24 06:03:22]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
-[2026-08-24 06:03:22]   fetch-gh> api calls 6 | elapsed 19.7s | WROTE projects-raw.json
-[2026-08-24 06:03:22] fetch-gh exit=0 (19.8s)
-[2026-08-24 06:03:37]   build-projects> file:///C:/workspace/command-center/build-projects.mjs:181
-[2026-08-24 06:03:37]   build-projects>   tossWithBlockers: toss.filter(p => p.toss.blockersOpen > 0).length,
-[2026-08-24 06:03:37]   build-projects>                                             ^
-[2026-08-24 06:03:37]   build-projects> System.Management.Automation.RemoteException
-[2026-08-24 06:03:37]   build-projects> TypeError: Cannot read properties of null (reading 'blockersOpen')
-[2026-08-24 06:03:37]   build-projects>     at file:///C:/workspace/command-center/build-projects.mjs:181:45
-[2026-08-24 06:03:37]   build-projects>     at Array.filter (<anonymous>)
-[2026-08-24 06:03:37]   build-projects>     at file:///C:/workspace/command-center/build-projects.mjs:181:26
-[2026-08-24 06:03:37]   build-projects>     at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
-[2026-08-24 06:03:37]   build-projects>     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
-[2026-08-24 06:03:37]   build-projects>     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
-[2026-08-24 06:03:37]   build-projects> System.Management.Automation.RemoteException
-[2026-08-24 06:03:37]   build-projects> Node.js v24.14.1
-[2026-08-24 06:03:37] build-projects exit=1 (15.5s)
-[2026-08-24 06:03:37]   build-galaxy> CONCEPTS 129
-[2026-08-24 06:03:37]   build-galaxy> ENTITIES 263
-[2026-08-24 06:03:37]   build-galaxy> RESEARCH 36
-[2026-08-24 06:03:37]   build-galaxy> INTERNAL 41
-[2026-08-24 06:03:37]   build-galaxy> WROTE galaxy-data.js
-[2026-08-24 06:03:37] build-galaxy exit=0 (0.2s)
-[2026-08-24 06:03:38]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
-[2026-08-24 06:03:38]   sync-claude-os> upserted=0 deleted=0 skipped=92 errors=0
-[2026-08-24 06:03:38] sync-claude-os exit=0 (0.1s)
-[2026-08-24 06:03:38]   sync-wiki-kb> skipped: claude-os offline
-[2026-08-24 06:03:38]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
-[2026-08-24 06:03:38] sync-wiki-kb exit=0 (0.1s)
-[2026-08-24 06:03:38] === refresh end (gh=0 build-projects=1 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
-[2026-08-24 12:03:02] === refresh start (pid 54516, loop=False)
-[2026-08-24 12:03:22]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
-[2026-08-24 12:03:22]   fetch-gh> api calls 6 | elapsed 19.6s | WROTE projects-raw.json
-[2026-08-24 12:03:22] fetch-gh exit=0 (19.7s)
-[2026-08-24 12:03:37]   build-projects> file:///C:/workspace/command-center/build-projects.mjs:181
-[2026-08-24 12:03:37]   build-projects>   tossWithBlockers: toss.filter(p => p.toss.blockersOpen > 0).length,
-[2026-08-24 12:03:37]   build-projects>                                             ^
-[2026-08-24 12:03:37]   build-projects> System.Management.Automation.RemoteException
-[2026-08-24 12:03:37]   build-projects> TypeError: Cannot read properties of null (reading 'blockersOpen')
+﻿[2026-08-24 12:03:37]   build-projects> TypeError: Cannot read properties of null (reading 'blockersOpen')
 [2026-08-24 12:03:37]   build-projects>     at file:///C:/workspace/command-center/build-projects.mjs:181:45
 [2026-08-24 12:03:37]   build-projects>     at Array.filter (<anonymous>)
 [2026-08-24 12:03:37]   build-projects>     at file:///C:/workspace/command-center/build-projects.mjs:181:26
@@ -198,3 +114,87 @@
 [2026-08-25 06:03:45]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
 [2026-08-25 06:03:45] sync-wiki-kb exit=0 (0.1s)
 [2026-08-25 06:03:45] === refresh end (gh=0 build-projects=1 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-08-25 12:03:02] === refresh start (pid 35832, loop=False)
+[2026-08-25 12:03:23]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
+[2026-08-25 12:03:23]   fetch-gh> api calls 6 | elapsed 21.4s | WROTE projects-raw.json
+[2026-08-25 12:03:23] fetch-gh exit=0 (21.5s)
+[2026-08-25 12:03:39]   build-projects> dirs scanned 81 | items 95 | visible 71 | toss 20 (launch-status 17)
+[2026-08-25 12:03:39]   build-projects> byCategory {"apps-in-toss":20,"side-project":16,"knowledge-wiki":1,"harness-ai-infra":5,"landing-docs":3,"legacy":26} byStage {"mvp_prd":4,"scaffold":2,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
+[2026-08-25 12:03:39]   build-projects> WROTE projects-data.js
+[2026-08-25 12:03:39] build-projects exit=0 (15.5s)
+[2026-08-25 12:03:39]   build-galaxy> CONCEPTS 129
+[2026-08-25 12:03:39]   build-galaxy> ENTITIES 264
+[2026-08-25 12:03:39]   build-galaxy> RESEARCH 36
+[2026-08-25 12:03:39]   build-galaxy> INTERNAL 41
+[2026-08-25 12:03:39]   build-galaxy> WROTE galaxy-data.js
+[2026-08-25 12:03:39] build-galaxy exit=0 (0.3s)
+[2026-08-25 12:03:39]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-08-25 12:03:39]   sync-claude-os> upserted=0 deleted=0 skipped=95 errors=0
+[2026-08-25 12:03:39] sync-claude-os exit=0 (0.1s)
+[2026-08-25 12:03:39]   sync-wiki-kb> skipped: claude-os offline
+[2026-08-25 12:03:39]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+[2026-08-25 12:03:39] sync-wiki-kb exit=0 (0.1s)
+[2026-08-25 12:03:39] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-08-25 18:03:02] === refresh start (pid 39328, loop=False)
+[2026-08-25 18:03:28]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
+[2026-08-25 18:03:28]   fetch-gh> api calls 6 | elapsed 25.6s | WROTE projects-raw.json
+[2026-08-25 18:03:28] fetch-gh exit=0 (25.7s)
+[2026-08-25 18:03:44]   build-projects> dirs scanned 81 | items 95 | visible 71 | toss 20 (launch-status 17)
+[2026-08-25 18:03:44]   build-projects> byCategory {"knowledge-wiki":1,"apps-in-toss":20,"side-project":16,"harness-ai-infra":5,"landing-docs":3,"legacy":26} byStage {"mvp_prd":4,"scaffold":2,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
+[2026-08-25 18:03:44]   build-projects> WROTE projects-data.js
+[2026-08-25 18:03:44] build-projects exit=0 (16.5s)
+[2026-08-25 18:03:45]   build-galaxy> CONCEPTS 129
+[2026-08-25 18:03:45]   build-galaxy> ENTITIES 264
+[2026-08-25 18:03:45]   build-galaxy> RESEARCH 36
+[2026-08-25 18:03:45]   build-galaxy> INTERNAL 41
+[2026-08-25 18:03:45]   build-galaxy> WROTE galaxy-data.js
+[2026-08-25 18:03:45] build-galaxy exit=0 (0.3s)
+[2026-08-25 18:03:45]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-08-25 18:03:45]   sync-claude-os> upserted=0 deleted=0 skipped=95 errors=0
+[2026-08-25 18:03:45] sync-claude-os exit=0 (0.1s)
+[2026-08-25 18:03:45]   sync-wiki-kb> skipped: claude-os offline
+[2026-08-25 18:03:45]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+[2026-08-25 18:03:45] sync-wiki-kb exit=0 (0.1s)
+[2026-08-25 18:03:45] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-08-26 00:03:02] === refresh start (pid 32384, loop=False)
+[2026-08-26 00:03:30]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
+[2026-08-26 00:03:30]   fetch-gh> api calls 6 | elapsed 27.5s | WROTE projects-raw.json
+[2026-08-26 00:03:30] fetch-gh exit=0 (27.6s)
+[2026-08-26 00:03:47]   build-projects> dirs scanned 81 | items 95 | visible 71 | toss 20 (launch-status 17)
+[2026-08-26 00:03:47]   build-projects> byCategory {"knowledge-wiki":1,"apps-in-toss":20,"side-project":16,"harness-ai-infra":5,"landing-docs":3,"legacy":26} byStage {"mvp_prd":4,"scaffold":2,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
+[2026-08-26 00:03:47]   build-projects> WROTE projects-data.js
+[2026-08-26 00:03:47] build-projects exit=0 (17.0s)
+[2026-08-26 00:03:47]   build-galaxy> CONCEPTS 129
+[2026-08-26 00:03:47]   build-galaxy> ENTITIES 264
+[2026-08-26 00:03:47]   build-galaxy> RESEARCH 36
+[2026-08-26 00:03:47]   build-galaxy> INTERNAL 41
+[2026-08-26 00:03:47]   build-galaxy> WROTE galaxy-data.js
+[2026-08-26 00:03:47] build-galaxy exit=0 (0.4s)
+[2026-08-26 00:03:47]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-08-26 00:03:47]   sync-claude-os> upserted=0 deleted=0 skipped=95 errors=0
+[2026-08-26 00:03:47] sync-claude-os exit=0 (0.1s)
+[2026-08-26 00:03:47]   sync-wiki-kb> skipped: claude-os offline
+[2026-08-26 00:03:47]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+[2026-08-26 00:03:47] sync-wiki-kb exit=0 (0.1s)
+[2026-08-26 00:03:47] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-08-26 06:03:02] === refresh start (pid 55908, loop=False)
+[2026-08-26 06:03:27]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
+[2026-08-26 06:03:27]   fetch-gh> api calls 6 | elapsed 25.3s | WROTE projects-raw.json
+[2026-08-26 06:03:27] fetch-gh exit=0 (25.3s)
+[2026-08-26 06:03:44]   build-projects> dirs scanned 81 | items 95 | visible 71 | toss 20 (launch-status 17)
+[2026-08-26 06:03:44]   build-projects> byCategory {"knowledge-wiki":1,"harness-ai-infra":5,"apps-in-toss":20,"side-project":16,"landing-docs":3,"legacy":26} byStage {"mvp_prd":4,"scaffold":2,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
+[2026-08-26 06:03:44]   build-projects> WROTE projects-data.js
+[2026-08-26 06:03:44] build-projects exit=0 (16.7s)
+[2026-08-26 06:03:44]   build-galaxy> CONCEPTS 129
+[2026-08-26 06:03:44]   build-galaxy> ENTITIES 264
+[2026-08-26 06:03:44]   build-galaxy> RESEARCH 37
+[2026-08-26 06:03:44]   build-galaxy> INTERNAL 41
+[2026-08-26 06:03:44]   build-galaxy> WROTE galaxy-data.js
+[2026-08-26 06:03:44] build-galaxy exit=0 (0.3s)
+[2026-08-26 06:03:45]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-08-26 06:03:45]   sync-claude-os> upserted=0 deleted=0 skipped=95 errors=0
+[2026-08-26 06:03:45] sync-claude-os exit=0 (0.1s)
+[2026-08-26 06:03:45]   sync-wiki-kb> skipped: claude-os offline
+[2026-08-26 06:03:45]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+[2026-08-26 06:03:45] sync-wiki-kb exit=0 (0.1s)
+[2026-08-26 06:03:45] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
