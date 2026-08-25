@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-23T22:45:11.161Z",
+ "lastRun": "2026-08-25T22:37:55.118Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -79,6 +79,12 @@
    "date": "2026-08-25",
    "improvement": "수리: build-projects.mjs 크래시(gh category=apps-in-toss인데 로컬 toss=null → §6 요약 null 역참조) — isToss에 gh 메타 포함해 unverifiedToss 생성 + 요약 옵셔널 체이닝 · projects-data.js 2일 stale 복구(08-23 03:03Z→08-24 22:34Z) · 트렌드 채택 없음(수리 우선) · wiki: self-evolving-daily-loop에 valid≠fresh 절 추가",
    "commit": "0770f7d",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-08-26",
+   "improvement": "§6 자기수정: health C4 신선도 게이트(valid≠fresh) — generatedAt 36h 초과·gh 스냅샷보다 오래됨·refresh.log build-projects exit≠0 시 재빌드, 실패 시 openFindings escalation · evolve.md §5에 원칙 명시 · 트렌드 후보 10건 검토(채택 0·후보 3·기각 7, 내일 1순위 danyuchn/asd-ste100-skill (b)) · seenRepos 102→112",
+   "commit": "(pending)",
    "gates": "4/4"
   }
  ],
@@ -184,7 +190,17 @@
   "parcadei/Continuous-Claude-v3",
   "disler/claude-code-hooks-mastery",
   "pipeshub-ai/pipeshub-ai",
-  "aiwithremy/claude-skills-llm-council"
+  "aiwithremy/claude-skills-llm-council",
+  "Prat011/awesome-llm-skills",
+  "Shpigford/chops",
+  "disler/claude-code-hooks-multi-agent-observability",
+  "danyuchn/asd-ste100-skill",
+  "skills-directory/skill-codex",
+  "NeoLabHQ/context-engineering-kit",
+  "Pluviobyte/rnskill",
+  "daymade/claude-code-skills",
+  "MaJerle/c-code-style",
+  "truongduy2611/app-store-preflight-skills"
  ],
  "appliedImprovements": [
   {
@@ -280,6 +296,13 @@
     "build-projects.mjs"
    ],
    "note": "app-in-toss monorepo root lost .launch/launch-status.json; gh meta still category=apps-in-toss -> local item toss=null -> summary crash. health C4 passed on stale projects-data.js (valid!=fresh). Next self-modify candidate: health C4 freshness gate (generatedAt vs projects-raw.json generatedAt / pipeline exit code)"
+  },
+  {
+   "id": "self:health-freshness-gate",
+   "repo": null,
+   "date": "2026-08-26",
+   "mode": "self-modify",
+   "note": "health C4 valid≠fresh — generatedAt 36h·gh 스냅샷 대비·refresh.log build-projects exit≠0 → 재빌드, 실패 시 openFindings"
   }
  ],
  "openFindings": []

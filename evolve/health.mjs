@@ -53,14 +53,44 @@ try {
   record("galaxy-data", ok, heal, note);
 }
 
-/* C4. projects-data.js 파싱 (있을 때만; 재빌드는 로컬 스캔 기반이라 안전) */
+/* C4. projects-data.js 파싱 + 신선도 (있을 때만; 재빌드는 로컬 스캔 기반이라 안전)
+   valid≠fresh — 2026-08-23~25 build-projects.mjs 크래시로 2일 stale이던 파일을 "파싱 됨"만으로 ok 판정한 교훈.
+   stale 판정: generatedAt 부재/36h 초과 · gh 스냅샷(projects-raw.json)보다 오래됨 · refresh.log 마지막 build-projects exit≠0 */
 {
   let ok = false, heal = false, note = "";
   const p = join(ROOT, "projects-data.js");
+  const STALE_MS = 36 * 3600e3;
+  const staleReason = (afterRebuild) => {
+    const P = freshRequire(p);
+    if (!P.items) return "items 없음";
+    const gen = Date.parse(P.generatedAt || "");
+    if (!Number.isFinite(gen)) return "generatedAt 없음";
+    const ageH = (Date.now() - gen) / 3600e3;
+    if (ageH > STALE_MS / 3600e3) return `stale ${Math.round(ageH)}h`;
+    try {
+      const raw = JSON.parse(readFileSync(join(ROOT, "projects-raw.json"), "utf8"));
+      const rg = Date.parse(raw.generatedAt || "");
+      if (Number.isFinite(rg) && rg > gen) return `gh 스냅샷(${raw.generatedAt})보다 오래됨`;
+    } catch {}
+    if (!afterRebuild) { // 로그는 과거 증거 — 재빌드가 성공했으면 현재 상태로 판단
+      try {
+        const m = [...readFileSync(join(ROOT, "logs", "refresh.log"), "utf8").matchAll(/build-projects exit=(\d+)/g)].pop();
+        if (m && m[1] !== "0") return `refresh.log build-projects exit=${m[1]}`;
+      } catch {}
+    }
+    return "";
+  };
   if (!existsSync(p)) { record("projects-data", true, false, "부재 — 선택 구성요소"); }
   else {
-    try { ok = !!freshRequire(p).items; } catch (e) { note = String(e.message).slice(0, 80); }
-    if (!ok) { try { sh("node build-projects.mjs"); ok = !!freshRequire(p).items; heal = ok; healedAny ||= heal; note = "재빌드"; } catch (e) { note += " 재빌드 실패"; } }
+    try { note = staleReason(false); ok = !note; } catch (e) { note = String(e.message).slice(0, 80); }
+    if (!ok) {
+      try {
+        sh("node build-projects.mjs");
+        const again = staleReason(true);
+        ok = !again; heal = ok; healedAny ||= heal;
+        note = ok ? `재빌드(${note})` : `${note} → 재빌드 후에도 ${again}`;
+      } catch (e) { note += " 재빌드 실패 " + String(e.stderr || e.message).trim().split("\n").pop().slice(0, 80); }
+    }
     record("projects-data", ok, heal, note);
   }
 }
