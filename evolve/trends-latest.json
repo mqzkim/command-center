@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-25T22:30:15.813Z",
+ "generatedAt": "2026-08-26T22:30:32.674Z",
  "minStars": 500,
  "queries": [
   "claude code skills",
@@ -18,139 +18,40 @@
   "agentic workflow automation",
   "llm knowledge base wiki"
  ],
- "scanned": 153,
+ "scanned": 152,
  "dedup": {
   "wikiCatalog": 3,
-  "alreadySeen": 101
+  "alreadySeen": 110
  },
  "candidates": [
   {
-   "description": "A curated list of awesome LLM and AI Agent Skills, resources and tools for customising AI Agent workflows - that works with Claude Code, Codex, Gemini CLI and your custom AI Agents",
-   "fullName": "Prat011/awesome-llm-skills",
-   "stargazersCount": 1686,
-   "updatedAt": "2026-08-25T15:38:14Z",
-   "url": "https://github.com/Prat011/awesome-llm-skills",
+   "description": "AI agent skills for social media research. Outlier posts, comment mining, competitor teardowns, ad libraries & trends across TikTok, Instagram, YouTube, Reddit, X, LinkedIn & more. Powered by ScrapeCreators. Works with Claude Code, Cursor, Codex, Gemini CLI.",
+   "fullName": "ScrapeCreators/social-media-research-skills",
+   "stargazersCount": 1780,
+   "updatedAt": "2026-08-26T21:32:07Z",
+   "url": "https://github.com/ScrapeCreators/social-media-research-skills",
    "labels": [
     "skills"
    ],
    "query": "ai agent skills"
-  },
-  {
-   "description": "Your AI agent skills, finally organized. A macOS app to browse, edit, and manage skills across Claude Code, Cursor, Codex, Windsurf, and Amp.",
-   "fullName": "Shpigford/chops",
-   "stargazersCount": 1558,
-   "updatedAt": "2026-08-25T20:50:13Z",
-   "url": "https://github.com/Shpigford/chops",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "Real-time monitoring for Claude Code agents through simple hook event tracking.",
-   "fullName": "disler/claude-code-hooks-multi-agent-observability",
-   "stargazersCount": 1526,
-   "updatedAt": "2026-08-25T12:00:51Z",
-   "url": "https://github.com/disler/claude-code-hooks-multi-agent-observability",
-   "labels": [
-    "harness"
-   ],
-   "query": "claude code hooks"
-  },
-  {
-   "description": "ASD-STE100 Simplified Technical English rules, repurposed as a Claude Code skill for rewriting ambiguous agent-facing English.",
-   "fullName": "danyuchn/asd-ste100-skill",
-   "stargazersCount": 1433,
-   "updatedAt": "2026-08-25T22:06:13Z",
-   "url": "https://github.com/danyuchn/asd-ste100-skill",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "A claude code skill to delegate prompts to codex",
-   "fullName": "skills-directory/skill-codex",
-   "stargazersCount": 1414,
-   "updatedAt": "2026-08-25T01:37:10Z",
-   "url": "https://github.com/skills-directory/skill-codex",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "Hand-crafted Claude Code Skills focused on improving agent results quality. Compatible with OpenCode, Cursor, Antigravity, Gemini CLI, and others. Includes CodeRabbit open-source alternative.",
-   "fullName": "NeoLabHQ/context-engineering-kit",
-   "stargazersCount": 1387,
-   "updatedAt": "2026-08-25T20:46:22Z",
-   "url": "https://github.com/NeoLabHQ/context-engineering-kit",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "雪踏乌云的 AI Agent Skills 集合",
-   "fullName": "Pluviobyte/rnskill",
-   "stargazersCount": 1381,
-   "updatedAt": "2026-08-25T17:00:01Z",
-   "url": "https://github.com/Pluviobyte/rnskill",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "Professional Claude Code skills marketplace featuring production-ready skills for enhanced development workflows.",
-   "fullName": "daymade/claude-code-skills",
-   "stargazersCount": 1350,
-   "updatedAt": "2026-08-25T20:13:39Z",
-   "url": "https://github.com/daymade/claude-code-skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "Recommended C code style and coding rules for standard C99 or later. Comes with AI agent skill to write, edit and format the code.",
-   "fullName": "MaJerle/c-code-style",
-   "stargazersCount": 1339,
-   "updatedAt": "2026-08-25T01:10:20Z",
-   "url": "https://github.com/MaJerle/c-code-style",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "AI agent skill to scan iOS/macOS projects for App Store rejection patterns before submission",
-   "fullName": "truongduy2611/app-store-preflight-skills",
-   "stargazersCount": 1326,
-   "updatedAt": "2026-08-24T12:52:08Z",
-   "url": "https://github.com/truongduy2611/app-store-preflight-skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "Claude Code skill for improving website AEO (AI Engine Optimization) and GEO (Generative Engine Optimization) scores — 16 foundational checks, 6 intelligence dimensions, framework-specific fixes",
-   "fullName": "onvoyage-ai/gtm-engineer-skills",
-   "stargazersCount": 1286,
-   "updatedAt": "2026-08-25T15:56:15Z",
-   "url": "https://github.com/onvoyage-ai/gtm-engineer-skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
   },
   {
    "description": "Claude Code skill: four-phase plan hardening (recon, interrogate, Codex adversarial review, cross-model build & inspection) — two AI models harden your plan before a line of code exists, then swap jobs to build it. Whoever built it never grades it.",
    "fullName": "chaseai-yt/claudex-loop",
-   "stargazersCount": 1269,
-   "updatedAt": "2026-08-25T20:54:11Z",
+   "stargazersCount": 1315,
+   "updatedAt": "2026-08-26T22:04:20Z",
    "url": "https://github.com/chaseai-yt/claudex-loop",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code skills"
+  },
+  {
+   "description": "Claude Code skill for improving website AEO (AI Engine Optimization) and GEO (Generative Engine Optimization) scores — 16 foundational checks, 6 intelligence dimensions, framework-specific fixes",
+   "fullName": "onvoyage-ai/gtm-engineer-skills",
+   "stargazersCount": 1288,
+   "updatedAt": "2026-08-26T18:25:21Z",
+   "url": "https://github.com/onvoyage-ai/gtm-engineer-skills",
    "labels": [
     "skills"
    ],
@@ -159,8 +60,8 @@
   {
    "description": " A Claude Code skill that designs and builds high-converting questionnaire-style app onboarding flows — modelled    on proven conversion patterns from top subscription apps like Mob, Headspace and Noom",
    "fullName": "adamlyttleapps/claude-skill-app-onboarding-questionnaire",
-   "stargazersCount": 1172,
-   "updatedAt": "2026-08-23T01:47:55Z",
+   "stargazersCount": 1173,
+   "updatedAt": "2026-08-26T08:07:21Z",
    "url": "https://github.com/adamlyttleapps/claude-skill-app-onboarding-questionnaire",
    "labels": [
     "skills"
@@ -170,8 +71,8 @@
   {
    "description": "AI Agent Skill to generate and render beautiful Mermaid diagrams as SVG or terminal ASCII — 15 themes, 6 diagram types, batch CLI, no browser.",
    "fullName": "imxv/Pretty-mermaid-skills",
-   "stargazersCount": 1150,
-   "updatedAt": "2026-08-25T17:48:32Z",
+   "stargazersCount": 1154,
+   "updatedAt": "2026-08-26T16:36:59Z",
    "url": "https://github.com/imxv/Pretty-mermaid-skills",
    "labels": [
     "skills"
@@ -181,8 +82,8 @@
   {
    "description": "Battle-tested Claude Code skills for modern xOS (iOS, iPadOS, watchOS, tvOS) development",
    "fullName": "CharlesWiltgen/Axiom",
-   "stargazersCount": 1136,
-   "updatedAt": "2026-08-25T17:21:38Z",
+   "stargazersCount": 1139,
+   "updatedAt": "2026-08-26T17:41:52Z",
    "url": "https://github.com/CharlesWiltgen/Axiom",
    "labels": [
     "skills"
@@ -192,8 +93,8 @@
   {
    "description": "Universal skill installer and package manager for AI coding agents. One command, 12+ runtimes. npx ai-agent-skills",
    "fullName": "MoizIbnYousaf/Ai-Agent-Skills",
-   "stargazersCount": 1132,
-   "updatedAt": "2026-08-25T21:08:22Z",
+   "stargazersCount": 1133,
+   "updatedAt": "2026-08-26T02:12:59Z",
    "url": "https://github.com/MoizIbnYousaf/Ai-Agent-Skills",
    "labels": [
     "skills"
@@ -203,8 +104,8 @@
   {
    "description": "Claude Code skills and sub-agents for .NET Developers",
    "fullName": "Aaronontheweb/dotnet-skills",
-   "stargazersCount": 1126,
-   "updatedAt": "2026-08-25T07:01:12Z",
+   "stargazersCount": 1127,
+   "updatedAt": "2026-08-26T06:05:47Z",
    "url": "https://github.com/Aaronontheweb/dotnet-skills",
    "labels": [
     "skills"
@@ -214,8 +115,8 @@
   {
    "description": "🦖 ClawBio - The first bioinformatics-native AI agent skill library. Local-first. Reproducible. Open. Free.",
    "fullName": "ClawBio/ClawBio",
-   "stargazersCount": 1115,
-   "updatedAt": "2026-08-25T14:48:50Z",
+   "stargazersCount": 1118,
+   "updatedAt": "2026-08-26T22:14:46Z",
    "url": "https://github.com/ClawBio/ClawBio",
    "labels": [
     "skills"
@@ -225,13 +126,24 @@
   {
    "description": "A Claude Code skill that turns PDFs, docs, and codebases into Obsidian study vaults",
    "fullName": "bevibing/tutor-skills",
-   "stargazersCount": 1112,
-   "updatedAt": "2026-08-25T05:20:45Z",
+   "stargazersCount": 1114,
+   "updatedAt": "2026-08-26T07:41:01Z",
    "url": "https://github.com/bevibing/tutor-skills",
    "labels": [
     "skills"
    ],
    "query": "claude code skills"
+  },
+  {
+   "description": "fly ai agent skill",
+   "fullName": "alibaba-flyai/flyai-skill",
+   "stargazersCount": 1099,
+   "updatedAt": "2026-08-26T16:00:09Z",
+   "url": "https://github.com/alibaba-flyai/flyai-skill",
+   "labels": [
+    "skills"
+   ],
+   "query": "ai agent skills"
   },
   {
    "description": "Learn what AI writes, not just accept it. A Claude Code skill that turns AI-generated code into educational deep dives.",
@@ -245,21 +157,10 @@
    "query": "claude code skills"
   },
   {
-   "description": "fly ai agent skill",
-   "fullName": "alibaba-flyai/flyai-skill",
-   "stargazersCount": 1084,
-   "updatedAt": "2026-08-25T22:25:06Z",
-   "url": "https://github.com/alibaba-flyai/flyai-skill",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
    "description": "Claude Code skills for academic papers: deep analysis, comics, summaries | 论文工艺：深度解读、漫画生成、速览总结",
    "fullName": "zsyggg/paper-craft-skills",
-   "stargazersCount": 1073,
-   "updatedAt": "2026-08-25T08:28:01Z",
+   "stargazersCount": 1080,
+   "updatedAt": "2026-08-26T16:38:44Z",
    "url": "https://github.com/zsyggg/paper-craft-skills",
    "labels": [
     "skills"
@@ -280,8 +181,8 @@
   {
    "description": "The Claude Code skill that directs a website like a film. Commit-sheet, generated assets, build, and an executable anti-slop linter that gates every ship.",
    "fullName": "agiwhitelist/auteur",
-   "stargazersCount": 1015,
-   "updatedAt": "2026-08-25T20:21:09Z",
+   "stargazersCount": 1016,
+   "updatedAt": "2026-08-26T06:28:56Z",
    "url": "https://github.com/agiwhitelist/auteur",
    "labels": [
     "skills"
@@ -291,8 +192,8 @@
   {
    "description": "A collection of AI agent skills useful for projects using Kotlin language",
    "fullName": "Kotlin/kotlin-agent-skills",
-   "stargazersCount": 1012,
-   "updatedAt": "2026-08-24T08:08:36Z",
+   "stargazersCount": 1014,
+   "updatedAt": "2026-08-26T06:32:25Z",
    "url": "https://github.com/Kotlin/kotlin-agent-skills",
    "labels": [
     "skills"
@@ -300,11 +201,11 @@
    "query": "ai agent skills"
   },
   {
-   "description": "A curated list of resources for Japanese natural language processing (NLP): Python libraries, LLMs, dictionaries, corpora, and datasets. Includes Claude Code skills to search resources.",
-   "fullName": "taishi-i/awesome-japanese-nlp-resources",
+   "description": "Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll.",
+   "fullName": "nateherkai/scroll-craft",
    "stargazersCount": 1006,
-   "updatedAt": "2026-08-24T14:33:36Z",
-   "url": "https://github.com/taishi-i/awesome-japanese-nlp-resources",
+   "updatedAt": "2026-08-26T22:26:46Z",
+   "url": "https://github.com/nateherkai/scroll-craft",
    "labels": [
     "skills"
    ],
@@ -313,8 +214,8 @@
   {
    "description": "A comprehensive collection of 100+ production-ready development subagents for Claude Code",
    "fullName": "0xfurai/claude-code-subagents",
-   "stargazersCount": 989,
-   "updatedAt": "2026-08-25T00:59:47Z",
+   "stargazersCount": 991,
+   "updatedAt": "2026-08-26T13:39:47Z",
    "url": "https://github.com/0xfurai/claude-code-subagents",
    "labels": [
     "orchestration"
@@ -324,8 +225,8 @@
   {
    "description": "Free, open-source desktop manager for AI Agent Skills. Write a skill once, sync it to 32 AI coding tools (Claude Code, Codex, Cursor, Gemini CLI, and more) via symlinks. Local-first, MIT licensed. macOS, Windows, Linux.",
    "fullName": "jiweiyeah/Skills-Manager",
-   "stargazersCount": 955,
-   "updatedAt": "2026-08-25T14:16:50Z",
+   "stargazersCount": 959,
+   "updatedAt": "2026-08-26T12:36:43Z",
    "url": "https://github.com/jiweiyeah/Skills-Manager",
    "labels": [
     "skills"
@@ -335,8 +236,8 @@
   {
    "description": "AI agent skills for startup validation, competitive intelligence, and planning",
    "fullName": "ferdinandobons/startup-skill",
-   "stargazersCount": 851,
-   "updatedAt": "2026-08-25T21:02:13Z",
+   "stargazersCount": 853,
+   "updatedAt": "2026-08-26T17:20:57Z",
    "url": "https://github.com/ferdinandobons/startup-skill",
    "labels": [
     "skills"
@@ -346,8 +247,8 @@
   {
    "description": "A curated, multilingual library of 182 installable AI agent skills for end-to-end academic research—spanning literature discovery, scientific writing, grant development, bioinformatics, drug discovery, clinical research, machine learning, and data analysis.",
    "fullName": "LeonChaoX/qinyan-academic-skills",
-   "stargazersCount": 832,
-   "updatedAt": "2026-08-25T09:24:15Z",
+   "stargazersCount": 837,
+   "updatedAt": "2026-08-26T15:28:31Z",
    "url": "https://github.com/LeonChaoX/qinyan-academic-skills",
    "labels": [
     "skills"
@@ -357,8 +258,8 @@
   {
    "description": "Claude Code plugins for power users",
    "fullName": "team-attention/plugins-for-claude-natives",
-   "stargazersCount": 820,
-   "updatedAt": "2026-08-25T02:23:27Z",
+   "stargazersCount": 821,
+   "updatedAt": "2026-08-26T04:40:33Z",
    "url": "https://github.com/team-attention/plugins-for-claude-natives",
    "labels": [
     "skills"
@@ -368,8 +269,8 @@
   {
    "description": "AI agent skill that answers macro questions — housing, gold, BTC, geopolitics — with probability estimates mined from 13 financial data sources (Polymarket, Kalshi, CFTC, SEC & more). For Claude Code / Cursor / Codex / OpenClaw. | 让 AI Agent 从金融数据中挖掘宏观趋势的数字先知",
    "fullName": "komako-workshop/digital-oracle",
-   "stargazersCount": 796,
-   "updatedAt": "2026-08-25T12:19:12Z",
+   "stargazersCount": 798,
+   "updatedAt": "2026-08-26T18:07:56Z",
    "url": "https://github.com/komako-workshop/digital-oracle",
    "labels": [
     "skills"
@@ -388,17 +289,6 @@
    "query": "claude code plugin"
   },
   {
-   "description": "Collection of AI agent skills for Claude Code",
-   "fullName": "lixiaolin94/skills",
-   "stargazersCount": 749,
-   "updatedAt": "2026-08-25T14:30:13Z",
-   "url": "https://github.com/lixiaolin94/skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
    "description": "Claude Code plugin: automated code review loop with Codex",
    "fullName": "hamelsmu/claude-review-loop",
    "stargazersCount": 724,
@@ -412,8 +302,8 @@
   {
    "description": "A Claude Code plugin that turns your terminal into an autonomous research lab — literature survey, experiment execution, paper writing, all in one pipeline.",
    "fullName": "LigphiDonk/Oh-my--paper",
-   "stargazersCount": 718,
-   "updatedAt": "2026-08-25T20:30:23Z",
+   "stargazersCount": 719,
+   "updatedAt": "2026-08-26T06:04:23Z",
    "url": "https://github.com/LigphiDonk/Oh-my--paper",
    "labels": [
     "skills"
@@ -423,8 +313,8 @@
   {
    "description": "🔌 Claude Code Plugin for institutional-grade equity research.   Install with /plugin marketplace add. Generates professional   buy/sell recommendations with comprehensive fundamental   analysis, technical indicators, and risk assessment. Educational    use only - not financial advice.",
    "fullName": "quant-sentiment-ai/claude-equity-research",
-   "stargazersCount": 704,
-   "updatedAt": "2026-08-25T12:14:50Z",
+   "stargazersCount": 705,
+   "updatedAt": "2026-08-26T12:22:01Z",
    "url": "https://github.com/quant-sentiment-ai/claude-equity-research",
    "labels": [
     "skills"
@@ -456,8 +346,8 @@
   {
    "description": "Claude Code plugin that asks several AI coding agents the same question and shows their answers side by side. Gemini, OpenAI, Grok, Perplexity and Kimi over API; codex, antigravity, grok and kimi CLIs on subscription auth; ollama locally.",
    "fullName": "hex/claude-council",
-   "stargazersCount": 663,
-   "updatedAt": "2026-08-25T11:46:23Z",
+   "stargazersCount": 664,
+   "updatedAt": "2026-08-26T12:35:26Z",
    "url": "https://github.com/hex/claude-council",
    "labels": [
     "skills"
@@ -479,7 +369,7 @@
    "description": "McKinsey-style PPTX generator — Claude Code plugin with 40 slide templates + subagent that picks the right template and defends its choice. Built by AX Labs (이승필).",
    "fullName": "seulee26/mckinsey-pptx",
    "stargazersCount": 566,
-   "updatedAt": "2026-08-25T19:11:53Z",
+   "updatedAt": "2026-08-26T02:28:17Z",
    "url": "https://github.com/seulee26/mckinsey-pptx",
    "labels": [
     "skills"
@@ -522,8 +412,8 @@
   {
    "description": "Spec-driven development with smart compaction. Claude Code plugin combining Ralph Wiggum loop with structured specification workflow.",
    "fullName": "tzachbon/smart-ralph",
-   "stargazersCount": 526,
-   "updatedAt": "2026-08-25T16:36:24Z",
+   "stargazersCount": 527,
+   "updatedAt": "2026-08-26T04:50:52Z",
    "url": "https://github.com/tzachbon/smart-ralph",
    "labels": [
     "skills"
@@ -533,8 +423,8 @@
   {
    "description": "Claude Code plugin for designing modular systems from functional requirements and reviewing existing codebases for modularity problems with actionable improvement recommendations. Based on the Balanced Coupling model.",
    "fullName": "vladikk/modularity",
-   "stargazersCount": 523,
-   "updatedAt": "2026-08-25T21:55:54Z",
+   "stargazersCount": 524,
+   "updatedAt": "2026-08-26T18:20:39Z",
    "url": "https://github.com/vladikk/modularity",
    "labels": [
     "skills"
