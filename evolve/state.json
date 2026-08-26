@@ -90,7 +90,7 @@
   {
    "date": "2026-08-27",
    "improvement": "danyuchn/asd-ste100-skill 스킬 채택(b) — ~/.claude/skills/asd-ste100 (ASD-STE100 규칙으로 에이전트 대상 영문 재작성, markdown-only·MIT·의존성 0; skill-audit 오탐 2건은 fingerprint baseline 사유 명시 억제 → 재스캔 0/100 SAFE, claude -p 실측 통과) · 트렌드 후보 10건 검토(채택 0·후보 2·기각 8, 다음 1순위 chaseai-yt/claudex-loop (c)) · seenRepos 112→122",
-   "commit": "",
+   "commit": "0d1908f",
    "gates": "4/4"
   }
  ],
