@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-25T22:40:23.285Z",
+ "lastRun": "2026-08-26T22:42:51.936Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -92,6 +92,12 @@
    "improvement": "danyuchn/asd-ste100-skill 스킬 채택(b) — ~/.claude/skills/asd-ste100 (ASD-STE100 규칙으로 에이전트 대상 영문 재작성, markdown-only·MIT·의존성 0; skill-audit 오탐 2건은 fingerprint baseline 사유 명시 억제 → 재스캔 0/100 SAFE, claude -p 실측 통과) · 트렌드 후보 10건 검토(채택 0·후보 2·기각 8, 다음 1순위 chaseai-yt/claudex-loop (c)) · seenRepos 112→122",
    "commit": "0d1908f",
    "gates": "4/4"
+  },
+  {
+   "date": "2026-08-28",
+   "improvement": "chaseai-yt/claudex-loop 지식화(c) — ~/.wiki entity ingest(크로스모델 적대 리뷰: Claude 계획→Codex read-only 적대 리뷰 최대 5라운드→빌드 후 역할 교차 검수, \"만든 자는 채점하지 않는다\" 불변식; 스킬 설치(b)는 ChatGPT 로그인 의존·Windows 미검증으로 보류) · 트렌드 후보 10건 검토(채택 0·후보 3·기각 7, 다음 1순위 ferdinandobons/startup-skill (b)) · seenRepos 122→132",
+   "commit": "",
+   "gates": "0/4"
   }
  ],
  "seenRepos": [
@@ -216,7 +222,17 @@
   "MoizIbnYousaf/Ai-Agent-Skills",
   "Aaronontheweb/dotnet-skills",
   "ClawBio/ClawBio",
-  "bevibing/tutor-skills"
+  "bevibing/tutor-skills",
+  "alibaba-flyai/flyai-skill",
+  "nateherkai/scroll-craft",
+  "mohi-devhub/antivibe",
+  "zsyggg/paper-craft-skills",
+  "orange2ai/renwei-writing",
+  "Kotlin/kotlin-agent-skills",
+  "agiwhitelist/auteur",
+  "0xfurai/claude-code-subagents",
+  "jiweiyeah/Skills-Manager",
+  "ferdinandobons/startup-skill"
  ],
  "appliedImprovements": [
   {
@@ -329,6 +345,13 @@
     "~/.claude/skills/asd-ste100/"
    ],
    "note": "ASD-STE100 Simplified Technical English rules (active voice, one instruction per sentence, <=20 words, no phrasal verbs/semicolons, keep modality) for agent-facing English: tool descriptions, error messages, sub-agent instructions. 5 md files, MIT, zero deps. skill-audit flagged 2 false positives (P5 prose 'kill people' in aviation rationale, EA3 MIT disclaimer) -> suppressed via exact-fingerprint baseline with reasons (.skillspector-baseline.yaml), rescan 0/100 SAFE. Next self-modify candidate: skill-audit wrapper precision for markdown-only repos. Runner-ups: chaseai-yt/claudex-loop (c), imxv/Pretty-mermaid-skills (b)"
+  },
+  {
+   "id": "wiki:chaseai-yt/claudex-loop",
+   "repo": "chaseai-yt/claudex-loop",
+   "date": "2026-08-28",
+   "mode": "knowledge",
+   "note": "new entity page; cross-model adversarial review harness (Phase 0 recon/assumptions ledger -> Phase 1 interrogate/PLAN.md -> Phase 2 Codex read-only review, same-session resume, MAX_ROUNDS=5 deadlock-over-fake-approve -> Phase 3 build with role swap). Invariant: whoever made the thing never checks the thing. markdown-only, MIT, star 1367, pushed 08-24. Install rejected: Codex CLI>=0.130 + ChatGPT login, bash idioms (/tmp, mktemp) untested on Windows, /tmp fixed filenames, npx skills add YAML bug #8/#11. Idea to graft: Phase 2 codex-review only, after superpowers writing-plans. Runner-ups: ferdinandobons/startup-skill (b), agiwhitelist/auteur (c), jiweiyeah/Skills-Manager (c), imxv/Pretty-mermaid-skills (b, carried from 08-27)"
   }
  ],
  "openFindings": []
