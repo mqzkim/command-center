@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-26T22:42:51.936Z",
+ "lastRun": "2026-08-27T22:37:24.853Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -96,8 +96,8 @@
   {
    "date": "2026-08-28",
    "improvement": "chaseai-yt/claudex-loop 지식화(c) — ~/.wiki entity ingest(크로스모델 적대 리뷰: Claude 계획→Codex read-only 적대 리뷰 최대 5라운드→빌드 후 역할 교차 검수, \"만든 자는 채점하지 않는다\" 불변식; 스킬 설치(b)는 ChatGPT 로그인 의존·Windows 미검증으로 보류) · 트렌드 후보 10건 검토(채택 0·후보 3·기각 7, 다음 1순위 ferdinandobons/startup-skill (b)) · seenRepos 122→132",
-   "commit": "",
-   "gates": "0/4"
+   "commit": "c70ecbc",
+   "gates": "4/4"
   }
  ],
  "seenRepos": [
