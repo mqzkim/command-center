@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-27T22:30:34.294Z",
+ "generatedAt": "2026-08-28T22:30:35.373Z",
  "minStars": 500,
  "queries": [
   "claude code skills",
@@ -21,124 +21,36 @@
  "scanned": 152,
  "dedup": {
   "wikiCatalog": 3,
-  "alreadySeen": 120
+  "alreadySeen": 128
  },
  "candidates": [
   {
-   "description": "fly ai agent skill",
-   "fullName": "alibaba-flyai/flyai-skill",
-   "stargazersCount": 1101,
-   "updatedAt": "2026-08-27T15:33:58Z",
-   "url": "https://github.com/alibaba-flyai/flyai-skill",
+   "description": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
+   "fullName": "Gentleman-Programming/engram",
+   "stargazersCount": 6220,
+   "updatedAt": "2026-08-28T20:45:58Z",
+   "url": "https://github.com/Gentleman-Programming/engram",
    "labels": [
-    "skills"
+    "mcp"
    ],
-   "query": "ai agent skills"
+   "query": "mcp server"
   },
   {
-   "description": "Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll.",
-   "fullName": "nateherkai/scroll-craft",
-   "stargazersCount": 1094,
-   "updatedAt": "2026-08-27T21:56:48Z",
-   "url": "https://github.com/nateherkai/scroll-craft",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "Learn what AI writes, not just accept it. A Claude Code skill that turns AI-generated code into educational deep dives.",
-   "fullName": "mohi-devhub/antivibe",
-   "stargazersCount": 1094,
-   "updatedAt": "2026-08-21T13:52:56Z",
-   "url": "https://github.com/mohi-devhub/antivibe",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "Claude Code skills for academic papers: deep analysis, comics, summaries | 论文工艺：深度解读、漫画生成、速览总结",
-   "fullName": "zsyggg/paper-craft-skills",
-   "stargazersCount": 1088,
-   "updatedAt": "2026-08-27T18:26:30Z",
-   "url": "https://github.com/zsyggg/paper-craft-skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "人味儿写作 · An AI agent skill: edit people's words without erasing the person behind them",
-   "fullName": "orange2ai/renwei-writing",
+   "description": "Claude Code skill：把内容套进内置手绘画风配方,产出可直接复制的生图提示词。内置儿童涂色/极简线条/蜡笔童涂/吉卜力/小豆人涂鸦 5 种已验证画风。",
+   "fullName": "threerocks/hand-drawn-styles",
    "stargazersCount": 1018,
-   "updatedAt": "2026-08-27T06:31:53Z",
-   "url": "https://github.com/orange2ai/renwei-writing",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "A collection of AI agent skills useful for projects using Kotlin language",
-   "fullName": "Kotlin/kotlin-agent-skills",
-   "stargazersCount": 1017,
-   "updatedAt": "2026-08-27T21:15:09Z",
-   "url": "https://github.com/Kotlin/kotlin-agent-skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "The Claude Code skill that directs a website like a film. Commit-sheet, generated assets, build, and an executable anti-slop linter that gates every ship.",
-   "fullName": "agiwhitelist/auteur",
-   "stargazersCount": 1016,
-   "updatedAt": "2026-08-27T09:38:24Z",
-   "url": "https://github.com/agiwhitelist/auteur",
+   "updatedAt": "2026-08-28T14:49:11Z",
+   "url": "https://github.com/threerocks/hand-drawn-styles",
    "labels": [
     "skills"
    ],
    "query": "claude code skills"
-  },
-  {
-   "description": "A comprehensive collection of 100+ production-ready development subagents for Claude Code",
-   "fullName": "0xfurai/claude-code-subagents",
-   "stargazersCount": 991,
-   "updatedAt": "2026-08-26T13:39:47Z",
-   "url": "https://github.com/0xfurai/claude-code-subagents",
-   "labels": [
-    "orchestration"
-   ],
-   "query": "claude code subagents"
-  },
-  {
-   "description": "Free, open-source desktop manager for AI Agent Skills. Write a skill once, sync it to 32 AI coding tools (Claude Code, Codex, Cursor, Gemini CLI, and more) via symlinks. Local-first, MIT licensed. macOS, Windows, Linux.",
-   "fullName": "jiweiyeah/Skills-Manager",
-   "stargazersCount": 964,
-   "updatedAt": "2026-08-27T17:47:16Z",
-   "url": "https://github.com/jiweiyeah/Skills-Manager",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "AI agent skills for startup validation, competitive intelligence, and planning",
-   "fullName": "ferdinandobons/startup-skill",
-   "stargazersCount": 858,
-   "updatedAt": "2026-08-27T20:46:02Z",
-   "url": "https://github.com/ferdinandobons/startup-skill",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
   },
   {
    "description": "A curated, multilingual library of 182 installable AI agent skills for end-to-end academic research—spanning literature discovery, scientific writing, grant development, bioinformatics, drug discovery, clinical research, machine learning, and data analysis.",
    "fullName": "LeonChaoX/qinyan-academic-skills",
-   "stargazersCount": 839,
-   "updatedAt": "2026-08-27T13:39:57Z",
+   "stargazersCount": 844,
+   "updatedAt": "2026-08-28T19:28:03Z",
    "url": "https://github.com/LeonChaoX/qinyan-academic-skills",
    "labels": [
     "skills"
@@ -159,8 +71,8 @@
   {
    "description": "AI agent skill that answers macro questions — housing, gold, BTC, geopolitics — with probability estimates mined from 13 financial data sources (Polymarket, Kalshi, CFTC, SEC & more). For Claude Code / Cursor / Codex / OpenClaw. | 让 AI Agent 从金融数据中挖掘宏观趋势的数字先知",
    "fullName": "komako-workshop/digital-oracle",
-   "stargazersCount": 799,
-   "updatedAt": "2026-08-27T02:53:32Z",
+   "stargazersCount": 801,
+   "updatedAt": "2026-08-28T19:29:01Z",
    "url": "https://github.com/komako-workshop/digital-oracle",
    "labels": [
     "skills"
@@ -170,8 +82,8 @@
   {
    "description": "A Claude Code Plugin that provides an autonomous AI copywriter.",
    "fullName": "muratcankoylan/ralph-wiggum-marketer",
-   "stargazersCount": 772,
-   "updatedAt": "2026-08-25T09:53:59Z",
+   "stargazersCount": 773,
+   "updatedAt": "2026-08-27T23:21:15Z",
    "url": "https://github.com/muratcankoylan/ralph-wiggum-marketer",
    "labels": [
     "skills"
@@ -181,8 +93,8 @@
   {
    "description": "Claude Code plugin: automated code review loop with Codex",
    "fullName": "hamelsmu/claude-review-loop",
-   "stargazersCount": 725,
-   "updatedAt": "2026-08-27T11:13:23Z",
+   "stargazersCount": 726,
+   "updatedAt": "2026-08-28T12:12:13Z",
    "url": "https://github.com/hamelsmu/claude-review-loop",
    "labels": [
     "skills"
@@ -236,8 +148,8 @@
   {
    "description": "Claude Code plugin that asks several AI coding agents the same question and shows their answers side by side. Gemini, OpenAI, Grok, Perplexity and Kimi over API; codex, antigravity, grok and kimi CLIs on subscription auth; ollama locally.",
    "fullName": "hex/claude-council",
-   "stargazersCount": 667,
-   "updatedAt": "2026-08-27T17:38:28Z",
+   "stargazersCount": 670,
+   "updatedAt": "2026-08-28T17:34:19Z",
    "url": "https://github.com/hex/claude-council",
    "labels": [
     "skills"
@@ -247,8 +159,8 @@
   {
    "description": "Claude Code plugin that maps and documents codebases of any size using parallel AI subagents",
    "fullName": "kingbootoshi/cartographer",
-   "stargazersCount": 647,
-   "updatedAt": "2026-08-27T22:05:29Z",
+   "stargazersCount": 650,
+   "updatedAt": "2026-08-28T21:34:08Z",
    "url": "https://github.com/kingbootoshi/cartographer",
    "labels": [
     "skills"
@@ -258,8 +170,8 @@
   {
    "description": "McKinsey-style PPTX generator — Claude Code plugin with 40 slide templates + subagent that picks the right template and defends its choice. Built by AX Labs (이승필).",
    "fullName": "seulee26/mckinsey-pptx",
-   "stargazersCount": 566,
-   "updatedAt": "2026-08-26T02:28:17Z",
+   "stargazersCount": 567,
+   "updatedAt": "2026-08-28T03:19:23Z",
    "url": "https://github.com/seulee26/mckinsey-pptx",
    "labels": [
     "skills"
@@ -291,8 +203,8 @@
   {
    "description": "claude code hooks - adding voice on each hook",
    "fullName": "shanraisshan/claude-code-hooks",
-   "stargazersCount": 530,
-   "updatedAt": "2026-08-25T08:05:40Z",
+   "stargazersCount": 531,
+   "updatedAt": "2026-08-28T07:57:19Z",
    "url": "https://github.com/shanraisshan/claude-code-hooks",
    "labels": [
     "harness"
@@ -303,7 +215,7 @@
    "description": "Spec-driven development with smart compaction. Claude Code plugin combining Ralph Wiggum loop with structured specification workflow.",
    "fullName": "tzachbon/smart-ralph",
    "stargazersCount": 527,
-   "updatedAt": "2026-08-27T15:16:59Z",
+   "updatedAt": "2026-08-28T15:26:43Z",
    "url": "https://github.com/tzachbon/smart-ralph",
    "labels": [
     "skills"
