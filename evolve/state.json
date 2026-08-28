@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-27T22:37:24.853Z",
+ "lastRun": "2026-08-27T22:37:48.609Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -97,6 +97,12 @@
    "date": "2026-08-28",
    "improvement": "chaseai-yt/claudex-loop 지식화(c) — ~/.wiki entity ingest(크로스모델 적대 리뷰: Claude 계획→Codex read-only 적대 리뷰 최대 5라운드→빌드 후 역할 교차 검수, \"만든 자는 채점하지 않는다\" 불변식; 스킬 설치(b)는 ChatGPT 로그인 의존·Windows 미검증으로 보류) · 트렌드 후보 10건 검토(채택 0·후보 3·기각 7, 다음 1순위 ferdinandobons/startup-skill (b)) · seenRepos 122→132",
    "commit": "c70ecbc",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-08-29",
+   "improvement": "ferdinandobons/startup-skill 스킬 채택(b) — ~/.claude/skills/startup-{design,competitors,positioning,pitch} 4스킬(스타트업 검증·경쟁사 배틀카드·April Dunford 포지셔닝·피치, markdown-only·MIT·의존성 0; skill-audit exit 0 20/100 SAFE 억제 0; description에 한국어 트리거+Apps in Toss 미니앱 go/no-go(intake 앞단) 용도+병렬 리서치 에이전트 범위 확인 주의 추가; claude -p 실측 4/10 No-Go 판정 출력 확인) · 트렌드 후보 10건 검토(채택 0·후보 3·기각 7, 다음 1순위 Gentleman-Programming/engram (c)) · seenRepos 132→142",
+   "commit": "",
    "gates": "4/4"
   }
  ],
@@ -232,7 +238,17 @@
   "agiwhitelist/auteur",
   "0xfurai/claude-code-subagents",
   "jiweiyeah/Skills-Manager",
-  "ferdinandobons/startup-skill"
+  "ferdinandobons/startup-skill",
+  "Gentleman-Programming/engram",
+  "threerocks/hand-drawn-styles",
+  "LeonChaoX/qinyan-academic-skills",
+  "team-attention/plugins-for-claude-natives",
+  "komako-workshop/digital-oracle",
+  "muratcankoylan/ralph-wiggum-marketer",
+  "hamelsmu/claude-review-loop",
+  "LigphiDonk/Oh-my--paper",
+  "quant-sentiment-ai/claude-equity-research",
+  "hellowind777/hello2cc"
  ],
  "appliedImprovements": [
   {
@@ -352,6 +368,19 @@
    "date": "2026-08-28",
    "mode": "knowledge",
    "note": "new entity page; cross-model adversarial review harness (Phase 0 recon/assumptions ledger -> Phase 1 interrogate/PLAN.md -> Phase 2 Codex read-only review, same-session resume, MAX_ROUNDS=5 deadlock-over-fake-approve -> Phase 3 build with role swap). Invariant: whoever made the thing never checks the thing. markdown-only, MIT, star 1367, pushed 08-24. Install rejected: Codex CLI>=0.130 + ChatGPT login, bash idioms (/tmp, mktemp) untested on Windows, /tmp fixed filenames, npx skills add YAML bug #8/#11. Idea to graft: Phase 2 codex-review only, after superpowers writing-plans. Runner-ups: ferdinandobons/startup-skill (b), agiwhitelist/auteur (c), jiweiyeah/Skills-Manager (c), imxv/Pretty-mermaid-skills (b, carried from 08-27)"
+  },
+  {
+   "id": "skill:ferdinandobons/startup-skill",
+   "repo": "ferdinandobons/startup-skill",
+   "date": "2026-08-29",
+   "mode": "skill",
+   "files": [
+    "~/.claude/skills/startup-design/",
+    "~/.claude/skills/startup-competitors/",
+    "~/.claude/skills/startup-positioning/",
+    "~/.claude/skills/startup-pitch/"
+   ],
+   "note": "4 markdown-only skills (star 862, MIT, pushed 07-01, zero deps, 49 files). Use as go/no-go front-end before apps-in-toss-intake. skill-audit exit 0 20/100 SAFE (6 false positives: RP1 npx install prose x4, EA3 MIT, P6 conf 26% heading) — no baseline needed. Gotcha: description containing \": \" breaks YAML plain scalar -> 3 skills showed title only; fixed with \" — \". Full flows spawn up to 11 parallel WebSearch agents (design) — description warns to confirm scope. Next self-modify: skill-audit P6 low-confidence demotion + frontmatter yaml.safe_load check in adoption procedure. Runner-ups: Gentleman-Programming/engram (c), hamelsmu/claude-review-loop (c, claudex-loop counterpart), team-attention/plugins-for-claude-natives (c, session-wrap), imxv/Pretty-mermaid-skills (b, carried)"
   }
  ],
  "openFindings": []
