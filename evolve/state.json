@@ -102,7 +102,7 @@
   {
    "date": "2026-08-29",
    "improvement": "ferdinandobons/startup-skill 스킬 채택(b) — ~/.claude/skills/startup-{design,competitors,positioning,pitch} 4스킬(스타트업 검증·경쟁사 배틀카드·April Dunford 포지셔닝·피치, markdown-only·MIT·의존성 0; skill-audit exit 0 20/100 SAFE 억제 0; description에 한국어 트리거+Apps in Toss 미니앱 go/no-go(intake 앞단) 용도+병렬 리서치 에이전트 범위 확인 주의 추가; claude -p 실측 4/10 No-Go 판정 출력 확인) · 트렌드 후보 10건 검토(채택 0·후보 3·기각 7, 다음 1순위 Gentleman-Programming/engram (c)) · seenRepos 132→142",
-   "commit": "",
+   "commit": "dfc4ba7",
    "gates": "4/4"
   }
  ],
