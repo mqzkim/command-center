@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-28T22:30:35.373Z",
+ "generatedAt": "2026-08-29T22:30:34.085Z",
  "minStars": 500,
  "queries": [
   "claude code skills",
@@ -21,119 +21,9 @@
  "scanned": 152,
  "dedup": {
   "wikiCatalog": 3,
-  "alreadySeen": 128
+  "alreadySeen": 138
  },
  "candidates": [
-  {
-   "description": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
-   "fullName": "Gentleman-Programming/engram",
-   "stargazersCount": 6220,
-   "updatedAt": "2026-08-28T20:45:58Z",
-   "url": "https://github.com/Gentleman-Programming/engram",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "Claude Code skill：把内容套进内置手绘画风配方,产出可直接复制的生图提示词。内置儿童涂色/极简线条/蜡笔童涂/吉卜力/小豆人涂鸦 5 种已验证画风。",
-   "fullName": "threerocks/hand-drawn-styles",
-   "stargazersCount": 1018,
-   "updatedAt": "2026-08-28T14:49:11Z",
-   "url": "https://github.com/threerocks/hand-drawn-styles",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "A curated, multilingual library of 182 installable AI agent skills for end-to-end academic research—spanning literature discovery, scientific writing, grant development, bioinformatics, drug discovery, clinical research, machine learning, and data analysis.",
-   "fullName": "LeonChaoX/qinyan-academic-skills",
-   "stargazersCount": 844,
-   "updatedAt": "2026-08-28T19:28:03Z",
-   "url": "https://github.com/LeonChaoX/qinyan-academic-skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "Claude Code plugins for power users",
-   "fullName": "team-attention/plugins-for-claude-natives",
-   "stargazersCount": 821,
-   "updatedAt": "2026-08-26T04:40:33Z",
-   "url": "https://github.com/team-attention/plugins-for-claude-natives",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "AI agent skill that answers macro questions — housing, gold, BTC, geopolitics — with probability estimates mined from 13 financial data sources (Polymarket, Kalshi, CFTC, SEC & more). For Claude Code / Cursor / Codex / OpenClaw. | 让 AI Agent 从金融数据中挖掘宏观趋势的数字先知",
-   "fullName": "komako-workshop/digital-oracle",
-   "stargazersCount": 801,
-   "updatedAt": "2026-08-28T19:29:01Z",
-   "url": "https://github.com/komako-workshop/digital-oracle",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "A Claude Code Plugin that provides an autonomous AI copywriter.",
-   "fullName": "muratcankoylan/ralph-wiggum-marketer",
-   "stargazersCount": 773,
-   "updatedAt": "2026-08-27T23:21:15Z",
-   "url": "https://github.com/muratcankoylan/ralph-wiggum-marketer",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Claude Code plugin: automated code review loop with Codex",
-   "fullName": "hamelsmu/claude-review-loop",
-   "stargazersCount": 726,
-   "updatedAt": "2026-08-28T12:12:13Z",
-   "url": "https://github.com/hamelsmu/claude-review-loop",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "A Claude Code plugin that turns your terminal into an autonomous research lab — literature survey, experiment execution, paper writing, all in one pipeline.",
-   "fullName": "LigphiDonk/Oh-my--paper",
-   "stargazersCount": 719,
-   "updatedAt": "2026-08-26T06:04:23Z",
-   "url": "https://github.com/LigphiDonk/Oh-my--paper",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "🔌 Claude Code Plugin for institutional-grade equity research.   Install with /plugin marketplace add. Generates professional   buy/sell recommendations with comprehensive fundamental   analysis, technical indicators, and risk assessment. Educational    use only - not financial advice.",
-   "fullName": "quant-sentiment-ai/claude-equity-research",
-   "stargazersCount": 706,
-   "updatedAt": "2026-08-27T15:45:53Z",
-   "url": "https://github.com/quant-sentiment-ai/claude-equity-research",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Native-first Claude Code plugin for third-party models with silent Agent model injection and output styles.",
-   "fullName": "hellowind777/hello2cc",
-   "stargazersCount": 695,
-   "updatedAt": "2026-08-27T17:15:41Z",
-   "url": "https://github.com/hellowind777/hello2cc",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
   {
    "description": "Marketplace repo for Claude Code Plugins",
    "fullName": "ananddtyagi/cc-marketplace",
@@ -148,8 +38,8 @@
   {
    "description": "Claude Code plugin that asks several AI coding agents the same question and shows their answers side by side. Gemini, OpenAI, Grok, Perplexity and Kimi over API; codex, antigravity, grok and kimi CLIs on subscription auth; ollama locally.",
    "fullName": "hex/claude-council",
-   "stargazersCount": 670,
-   "updatedAt": "2026-08-28T17:34:19Z",
+   "stargazersCount": 671,
+   "updatedAt": "2026-08-29T06:49:22Z",
    "url": "https://github.com/hex/claude-council",
    "labels": [
     "skills"
@@ -159,8 +49,8 @@
   {
    "description": "Claude Code plugin that maps and documents codebases of any size using parallel AI subagents",
    "fullName": "kingbootoshi/cartographer",
-   "stargazersCount": 650,
-   "updatedAt": "2026-08-28T21:34:08Z",
+   "stargazersCount": 651,
+   "updatedAt": "2026-08-29T14:30:16Z",
    "url": "https://github.com/kingbootoshi/cartographer",
    "labels": [
     "skills"
@@ -192,8 +82,8 @@
   {
    "description": "Claude Code plugin for Elixir/Phoenix/LiveView — 26 specialist agents, Iron Laws enforcement, and Tidewave MCP integration. Plan features with parallel research agents, execute with automatic verification, review with 4-agent parallel audits, and capture learnings as reusable knowledge.",
    "fullName": "oliver-kriska/claude-elixir-phoenix",
-   "stargazersCount": 534,
-   "updatedAt": "2026-08-27T19:55:50Z",
+   "stargazersCount": 535,
+   "updatedAt": "2026-08-29T19:11:10Z",
    "url": "https://github.com/oliver-kriska/claude-elixir-phoenix",
    "labels": [
     "skills"
@@ -237,7 +127,7 @@
    "description": "Claude Code Plugin Marketplace with LSP servers",
    "fullName": "Piebald-AI/claude-code-lsps",
    "stargazersCount": 514,
-   "updatedAt": "2026-08-27T03:55:26Z",
+   "updatedAt": "2026-08-29T01:42:55Z",
    "url": "https://github.com/Piebald-AI/claude-code-lsps",
    "labels": [
     "skills"
