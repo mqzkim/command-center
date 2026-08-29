@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-27T22:37:48.609Z",
+ "lastRun": "2026-08-28T22:39:26.686Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -104,6 +104,12 @@
    "improvement": "ferdinandobons/startup-skill 스킬 채택(b) — ~/.claude/skills/startup-{design,competitors,positioning,pitch} 4스킬(스타트업 검증·경쟁사 배틀카드·April Dunford 포지셔닝·피치, markdown-only·MIT·의존성 0; skill-audit exit 0 20/100 SAFE 억제 0; description에 한국어 트리거+Apps in Toss 미니앱 go/no-go(intake 앞단) 용도+병렬 리서치 에이전트 범위 확인 주의 추가; claude -p 실측 4/10 No-Go 판정 출력 확인) · 트렌드 후보 10건 검토(채택 0·후보 3·기각 7, 다음 1순위 Gentleman-Programming/engram (c)) · seenRepos 132→142",
    "commit": "dfc4ba7",
    "gates": "4/4"
+  },
+  {
+   "date": "2026-08-30",
+   "improvement": "Gentleman-Programming/engram 지식화(c) — ~/.wiki entity ingest(AI 코딩 에이전트 영속 메모리: Go+SQLite FTS5·MCP 19툴·SessionStart:compact 훅 FIRST ACTION 강제·topic_key upsert·review_after·mem_judge 충돌 표면화·12 에이전트 지원; 설치(b)는 4번째 메모리 저장소=지식 원천 분열+Windows 훅 이슈 10건 open+v2 rc 불안정으로 기각) · 트렌드 후보 11건 검토(채택 0·후보(b) 1 vladikk/modularity·후보(c) 4·기각 4, 다음 1순위 vladikk/modularity (b)) · seenRepos 142→153",
+   "commit": "pending",
+   "gates": "3/4"
   }
  ],
  "seenRepos": [
@@ -248,7 +254,18 @@
   "hamelsmu/claude-review-loop",
   "LigphiDonk/Oh-my--paper",
   "quant-sentiment-ai/claude-equity-research",
-  "hellowind777/hello2cc"
+  "hellowind777/hello2cc",
+  "ananddtyagi/cc-marketplace",
+  "hex/claude-council",
+  "kingbootoshi/cartographer",
+  "seulee26/mckinsey-pptx",
+  "zscole/adversarial-spec",
+  "oliver-kriska/claude-elixir-phoenix",
+  "shanraisshan/claude-code-hooks",
+  "tzachbon/smart-ralph",
+  "vladikk/modularity",
+  "Piebald-AI/claude-code-lsps",
+  "nuster1128/LLM_Agent_Memory_Survey"
  ],
  "appliedImprovements": [
   {
@@ -381,6 +398,13 @@
     "~/.claude/skills/startup-pitch/"
    ],
    "note": "4 markdown-only skills (star 862, MIT, pushed 07-01, zero deps, 49 files). Use as go/no-go front-end before apps-in-toss-intake. skill-audit exit 0 20/100 SAFE (6 false positives: RP1 npx install prose x4, EA3 MIT, P6 conf 26% heading) — no baseline needed. Gotcha: description containing \": \" breaks YAML plain scalar -> 3 skills showed title only; fixed with \" — \". Full flows spawn up to 11 parallel WebSearch agents (design) — description warns to confirm scope. Next self-modify: skill-audit P6 low-confidence demotion + frontmatter yaml.safe_load check in adoption procedure. Runner-ups: Gentleman-Programming/engram (c), hamelsmu/claude-review-loop (c, claudex-loop counterpart), team-attention/plugins-for-claude-natives (c, session-wrap), imxv/Pretty-mermaid-skills (b, carried)"
+  },
+  {
+   "id": "wiki:Gentleman-Programming/engram",
+   "repo": "Gentleman-Programming/engram",
+   "date": "2026-08-30",
+   "mode": "knowledge",
+   "note": "new entity page; persistent memory for coding agents (Go single binary + SQLite FTS5, MCP stdio 19 tools, CLI/HTTP/TUI, 12 agents). star 6230 MIT pushed 08-29, v1.20.0 stable / v2.0.0-rc.1. Philosophy: no auto-capture, agent decides (vs Continuous-Claude-v3 auto-accumulate). Install rejected: 4th memory store splits knowledge source (SQLite vs ~/.wiki), Memory Protocol skill collides with wiki-librarian trigger, 10 open Windows hook issues (#641/#643/#804/#659/#818...), Defender false positive on prebuilt, v2 rc breaking (#877). Ideas to graft: topic_key family/kebab upsert, review_after lifecycle, 3-layer progressive disclosure, compaction hook FIRST ACTION, What/Why/Where/Learned template, mem_judge conflict surfacing. Runner-ups: vladikk/modularity (b, markdown-only, license Other needs check + skill-audit), seulee26/mckinsey-pptx (b conditional), tzachbon/smart-ralph (c -> Ralph concept append), shanraisshan/claude-code-hooks (c -> Hook System 30-hook catalog), hex/claude-council (c -> claudex-loop cross-model section), hamelsmu/claude-review-loop (c, carried), imxv/Pretty-mermaid-skills (b, carried)"
   }
  ],
  "openFindings": []
