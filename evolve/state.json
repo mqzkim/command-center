@@ -108,8 +108,8 @@
   {
    "date": "2026-08-30",
    "improvement": "Gentleman-Programming/engram 지식화(c) — ~/.wiki entity ingest(AI 코딩 에이전트 영속 메모리: Go+SQLite FTS5·MCP 19툴·SessionStart:compact 훅 FIRST ACTION 강제·topic_key upsert·review_after·mem_judge 충돌 표면화·12 에이전트 지원; 설치(b)는 4번째 메모리 저장소=지식 원천 분열+Windows 훅 이슈 10건 open+v2 rc 불안정으로 기각) · 트렌드 후보 11건 검토(채택 0·후보(b) 1 vladikk/modularity·후보(c) 4·기각 4, 다음 1순위 vladikk/modularity (b)) · seenRepos 142→153",
-   "commit": "pending",
-   "gates": "3/4"
+   "commit": "242bd36",
+   "gates": "4/4"
   }
  ],
  "seenRepos": [
