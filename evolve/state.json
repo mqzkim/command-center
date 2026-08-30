@@ -114,8 +114,8 @@
   {
    "date": "2026-08-31",
    "improvement": "vladikk/modularity 지식화(c) — ~/.wiki concept balanced-coupling(integration strength × distance × volatility 모델, 오너 스킬 체인·3층 지식 경계·파이프라인 결합도 적용) + entity vladikk-modularity 신규(Claude Code 플러그인 /modularity:review·design, SKILL.md 4종 safe_load OK; 어제 이월 (b) 스킬 채택은 LICENSE 실체 CC BY-NC-SA 4.0 NC 조항=Apps in Toss 상업 미니앱 리뷰 리스크+ai.txt Disallow-Training+5개월 정지로 보류, 비상업 한정 --plugin-dir 임시 로드 경로만 열어둠) · 트렌드 후보 2건 검토(채택 0·이월(c) Waishnav/devspace·기각 paperjury — SKILL.md 콜론 함정 in-the-wild 실증) · seenRepos 153→155 · 풀 소진 임박(alreadySeen 148/153) → 다음 §6 후보 trends 쿼리 갱신",
-   "commit": "pending",
-   "gates": "0/4"
+   "commit": "992540b",
+   "gates": "4/4"
   }
  ],
  "seenRepos": [
