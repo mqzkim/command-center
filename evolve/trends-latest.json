@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-29T22:30:34.085Z",
+ "generatedAt": "2026-08-30T22:30:33.572Z",
  "minStars": 500,
  "queries": [
   "claude code skills",
@@ -18,132 +18,33 @@
   "agentic workflow automation",
   "llm knowledge base wiki"
  ],
- "scanned": 152,
+ "scanned": 153,
  "dedup": {
   "wikiCatalog": 3,
-  "alreadySeen": 138
+  "alreadySeen": 148
  },
  "candidates": [
   {
-   "description": "Marketplace repo for Claude Code Plugins",
-   "fullName": "ananddtyagi/cc-marketplace",
-   "stargazersCount": 688,
-   "updatedAt": "2026-08-12T01:39:40Z",
-   "url": "https://github.com/ananddtyagi/cc-marketplace",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Claude Code plugin that asks several AI coding agents the same question and shows their answers side by side. Gemini, OpenAI, Grok, Perplexity and Kimi over API; codex, antigravity, grok and kimi CLIs on subscription auth; ollama locally.",
-   "fullName": "hex/claude-council",
-   "stargazersCount": 671,
-   "updatedAt": "2026-08-29T06:49:22Z",
-   "url": "https://github.com/hex/claude-council",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Claude Code plugin that maps and documents codebases of any size using parallel AI subagents",
-   "fullName": "kingbootoshi/cartographer",
-   "stargazersCount": 651,
-   "updatedAt": "2026-08-29T14:30:16Z",
-   "url": "https://github.com/kingbootoshi/cartographer",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "McKinsey-style PPTX generator — Claude Code plugin with 40 slide templates + subagent that picks the right template and defends its choice. Built by AX Labs (이승필).",
-   "fullName": "seulee26/mckinsey-pptx",
-   "stargazersCount": 567,
-   "updatedAt": "2026-08-28T03:19:23Z",
-   "url": "https://github.com/seulee26/mckinsey-pptx",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "A Claude Code plugin that iteratively refines product specifications by debating between multiple LLMs until all models reach consensus.",
-   "fullName": "zscole/adversarial-spec",
-   "stargazersCount": 556,
-   "updatedAt": "2026-08-21T06:24:09Z",
-   "url": "https://github.com/zscole/adversarial-spec",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Claude Code plugin for Elixir/Phoenix/LiveView — 26 specialist agents, Iron Laws enforcement, and Tidewave MCP integration. Plan features with parallel research agents, execute with automatic verification, review with 4-agent parallel audits, and capture learnings as reusable knowledge.",
-   "fullName": "oliver-kriska/claude-elixir-phoenix",
-   "stargazersCount": 535,
-   "updatedAt": "2026-08-29T19:11:10Z",
-   "url": "https://github.com/oliver-kriska/claude-elixir-phoenix",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "claude code hooks - adding voice on each hook",
-   "fullName": "shanraisshan/claude-code-hooks",
-   "stargazersCount": 531,
-   "updatedAt": "2026-08-28T07:57:19Z",
-   "url": "https://github.com/shanraisshan/claude-code-hooks",
+   "description": "Minimal Coding Agent Harness over MCP for ChatGPT, Claude, Hermes, Grok Bot, OpenClaw",
+   "fullName": "Waishnav/devspace",
+   "stargazersCount": 4293,
+   "updatedAt": "2026-08-30T22:14:48Z",
+   "url": "https://github.com/Waishnav/devspace",
    "labels": [
     "harness"
    ],
-   "query": "claude code hooks"
+   "query": "coding agent harness"
   },
   {
-   "description": "Spec-driven development with smart compaction. Claude Code plugin combining Ralph Wiggum loop with structured specification workflow.",
-   "fullName": "tzachbon/smart-ralph",
-   "stargazersCount": 527,
-   "updatedAt": "2026-08-28T15:26:43Z",
-   "url": "https://github.com/tzachbon/smart-ralph",
+   "description": "Pre-submission AI review stress-test for research papers. A Claude Code skill: review, verdict, revise, verify.",
+   "fullName": "Spark-To-Paper-Skills/paperjury",
+   "stargazersCount": 1032,
+   "updatedAt": "2026-08-30T22:03:08Z",
+   "url": "https://github.com/Spark-To-Paper-Skills/paperjury",
    "labels": [
     "skills"
    ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Claude Code plugin for designing modular systems from functional requirements and reviewing existing codebases for modularity problems with actionable improvement recommendations. Based on the Balanced Coupling model.",
-   "fullName": "vladikk/modularity",
-   "stargazersCount": 524,
-   "updatedAt": "2026-08-26T18:20:39Z",
-   "url": "https://github.com/vladikk/modularity",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Claude Code Plugin Marketplace with LSP servers",
-   "fullName": "Piebald-AI/claude-code-lsps",
-   "stargazersCount": 514,
-   "updatedAt": "2026-08-29T01:42:55Z",
-   "url": "https://github.com/Piebald-AI/claude-code-lsps",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "",
-   "fullName": "nuster1128/LLM_Agent_Memory_Survey",
-   "stargazersCount": 508,
-   "updatedAt": "2026-08-19T13:00:41Z",
-   "url": "https://github.com/nuster1128/LLM_Agent_Memory_Survey",
-   "labels": [
-    "harness"
-   ],
-   "query": "llm agent memory"
+   "query": "claude code skills"
   }
  ]
 }
