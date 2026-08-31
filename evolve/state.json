@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-29T22:38:30.831Z",
+ "lastRun": "2026-08-31T22:33:43.093Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -115,6 +115,12 @@
    "date": "2026-08-31",
    "improvement": "vladikk/modularity 지식화(c) — ~/.wiki concept balanced-coupling(integration strength × distance × volatility 모델, 오너 스킬 체인·3층 지식 경계·파이프라인 결합도 적용) + entity vladikk-modularity 신규(Claude Code 플러그인 /modularity:review·design, SKILL.md 4종 safe_load OK; 어제 이월 (b) 스킬 채택은 LICENSE 실체 CC BY-NC-SA 4.0 NC 조항=Apps in Toss 상업 미니앱 리뷰 리스크+ai.txt Disallow-Training+5개월 정지로 보류, 비상업 한정 --plugin-dir 임시 로드 경로만 열어둠) · 트렌드 후보 2건 검토(채택 0·이월(c) Waishnav/devspace·기각 paperjury — SKILL.md 콜론 함정 in-the-wild 실증) · seenRepos 153→155 · 풀 소진 임박(alreadySeen 148/153) → 다음 §6 후보 trends 쿼리 갱신",
    "commit": "992540b",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-01",
+   "improvement": "§6 자기수정: trends.mjs 풀 재충전 — 소진 원인은 --sort stars 고정(정적 상위권 반복, minStars 하향 무효)으로 진단, (1) 신규 축 쿼리 4종 추가(agent skills marketplace·claude code plugin marketplace·llm coding agent benchmark·spec-driven development agent) (2) updated-sort 패스 신설(핵심 6쿼리 --sort updated·별점 문턱 300) → 실측 candidates 0→56·scanned 153→211, CANDIDATES_EXHAUSTED 해소 · 규칙 준수로 후보 검토는 내일 §3부터",
+   "commit": "PENDING",
    "gates": "4/4"
   }
  ],
@@ -420,6 +426,15 @@
    "date": "2026-08-31",
    "mode": "knowledge",
    "note": "new concept page balanced-coupling + entity vladikk-modularity. Claude Code plugin v1.5.0 by Vlad Khononov (Balanced Coupling author): /modularity:review (coupling review -> md+html), /modularity:design (requirements -> module design/integration contracts/test specs), internal skills balanced-coupling+document. star 526, pushed 04-04 (5mo stale), 11 blobs markdown-only + 1 html template, open issue 2, deps Claude Code>=1.0.33 only, 4 SKILL.md safe_load OK. (b) skill adoption DEFERRED: GitHub license API says NOASSERTION but LICENSE body is CC BY-NC-SA 4.0 (NonCommercial -> risk when reviewing Apps in Toss commercial mini-apps) + ai.txt Disallow-Training + README 'commercial use contact author'. Allowed path: non-commercial projects only via `claude --plugin-dir` temp load, absorb output only. Reviewed today: Waishnav/devspace (c carried — self-hosted MCP harness exposed via reverse tunnel to ChatGPT/Claude/Hermes/Grok/OpenClaw, cross-vendor subagent profiles; rejected a/b: Bash required, tunnel exposes local FS, 62 issues, CC 2.1.x permission regression #253), Spark-To-Paper-Skills/paperjury (rejected — CS-paper LaTeX domain; SKILL.md description ': ' x3 -> yaml.safe_load ScannerError, confirms colon trap in the wild). Trend pool nearly exhausted (alreadySeen 148/153, 2 new/day) -> next self-modify: trends.mjs query refresh + minStars review when CANDIDATES_EXHAUSTED appears. Runner-ups: tzachbon/smart-ralph (c), shanraisshan/claude-code-hooks (c), hamelsmu/claude-review-loop (c), imxv/Pretty-mermaid-skills (b), seulee26/mckinsey-pptx (b conditional)"
+  },
+  {
+   "id": "self:trends-updated-sort-pass",
+   "date": "2026-09-01",
+   "mode": "self-modify",
+   "files": [
+    "evolve/trends.mjs"
+   ],
+   "note": "pool re-exhausted (alreadySeen 150/153, candidates 0, CANDIDATES_EXHAUSTED). Root cause: --sort stars returns a static top-30 per query, so lowering minStars alone is ineffective. Fix: +4 new-axis star-sort queries (yesterday's carry-over list) + RECENT_QUERIES pass — 6 core queries re-scanned with --sort updated, minStars 300 (MIN_STARS_RECENT), query tagged '(updated)'. Measured: scanned 153→211, new 0→56, API calls 19+6=25 < gh search 30/min. Refilled pool consumed from §3 starting tomorrow (one-improvement rule). Next candidates from prior carry-overs: (c) Waishnav/devspace entity, (c) tzachbon/smart-ralph, (c) shanraisshan/claude-code-hooks, (c) hamelsmu/claude-review-loop, (b) imxv/Pretty-mermaid-skills, (b cond.) seulee26/mckinsey-pptx; plus fresh top FlorianBruniaux/claude-code-ultimate-guide(5864★). Other queued self-modify: skill-audit precision (non-executable repo P5/P6 demotion), adoption-procedure yaml.safe_load step, galaxy-data C3 freshness gate"
   }
  ],
  "openFindings": []

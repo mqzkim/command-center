@@ -32,8 +32,27 @@ const QUERIES = [
   { q: "llm evaluation harness", label: "harness" },
   { q: "agentic workflow automation", label: "orchestration" },
   { q: "llm knowledge base wiki", label: "knowledge" },
+  // 2026-09-01 §6 재충전: 15쿼리 풀(153건)이 재소진(alreadySeen 150 → candidates 0, CANDIDATES_EXHAUSTED).
+  // 어제 원장 이월안대로 신규 축 4종 추가.
+  { q: "agent skills marketplace", label: "skills" },
+  { q: "claude code plugin marketplace", label: "skills" },
+  { q: "llm coding agent benchmark", label: "harness" },
+  { q: "spec-driven development agent", label: "harness" },
 ];
 const PER_QUERY_LIMIT = 30; // 15→30 (2026-08-23): star 상위 15건은 쿼리 간 중복이 커서 순증이 적음
+
+// 2026-09-01 §6: --sort stars는 정적 상위권만 반복 스캔해 풀이 고갈된다(minStars 하향만으로는
+// star-sort 상위 30이 안 바뀌어 무효). 핵심 축을 --sort updated·별점 문턱 300으로 재스캔해
+// "최근 활발한 중견 repo"를 매일 유입시키는 재충전 경로.
+const MIN_STARS_RECENT = 300;
+const RECENT_QUERIES = [
+  { q: "claude code skills", label: "skills" },
+  { q: "claude code plugin", label: "skills" },
+  { q: "claude code hooks", label: "harness" },
+  { q: "ai agent harness", label: "harness" },
+  { q: "llm agent orchestration", label: "orchestration" },
+  { q: "mcp server", label: "mcp" },
+];
 
 const state = JSON.parse(readFileSync(STATE_P, "utf8"));
 const seen = new Set((state.seenRepos || []).map(s => s.toLowerCase()));
@@ -47,10 +66,10 @@ const catalog = new Set(
     : []
 );
 
-function ghSearch(q) {
+function ghSearch(q, { sort = "stars", minStars = MIN_STARS } = {}) {
   try {
-    const out = execFileSync("gh", ["search", "repos", q, "--stars", `>=${MIN_STARS}`,
-      "--sort", "stars", "--limit", String(PER_QUERY_LIMIT),
+    const out = execFileSync("gh", ["search", "repos", q, "--stars", `>=${minStars}`,
+      "--sort", sort, "--limit", String(PER_QUERY_LIMIT),
       "--json", "fullName,stargazersCount,description,updatedAt,url"],
       { encoding: "utf8", timeout: 60000 });
     return JSON.parse(out);
@@ -61,13 +80,16 @@ function ghSearch(q) {
 }
 
 const found = new Map();
-for (const { q, label } of QUERIES) {
-  for (const r of ghSearch(q)) {
+function collect(results, label, q) {
+  for (const r of results) {
     const key = r.fullName.toLowerCase();
     if (!found.has(key)) found.set(key, { ...r, labels: [label], query: q });
     else if (!found.get(key).labels.includes(label)) found.get(key).labels.push(label);
   }
 }
+for (const { q, label } of QUERIES) collect(ghSearch(q), label, q);
+for (const { q, label } of RECENT_QUERIES)
+  collect(ghSearch(q, { sort: "updated", minStars: MIN_STARS_RECENT }), label, `${q} (updated)`);
 
 let dupWiki = 0, dupSeen = 0;
 const fresh = [];
@@ -81,7 +103,9 @@ fresh.sort((a, b) => b.stargazersCount - a.stargazersCount);
 const out = {
   generatedAt: new Date().toISOString(),
   minStars: MIN_STARS,
+  minStarsRecent: MIN_STARS_RECENT,
   queries: QUERIES.map(x => x.q),
+  recentQueries: RECENT_QUERIES.map(x => x.q),
   scanned: found.size,
   dedup: { wikiCatalog: dupWiki, alreadySeen: dupSeen },
   candidates: fresh.slice(0, 60),
