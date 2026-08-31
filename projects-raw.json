@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T21:03:21.538Z",
+  "generatedAt": "2026-08-31T21:03:31.297Z",
   "source": "gh api graphql (6 calls, 44 repos: 42 non-fork + 2 fork; fetch-gh.mjs)",
   "repos": [
     {
@@ -9,12 +9,24 @@
       "isPrivate": false,
       "isFork": false,
       "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-08-29T22:38:30Z",
+      "pushedAt": "2026-08-30T22:43:24Z",
       "createdAt": "2026-08-22T15:02:39Z",
       "stargazerCount": 0,
       "openIssues": 0,
       "defaultBranch": "master",
       "recentCommits": [
+        {
+          "date": "2026-08-30",
+          "message": "evolve-run: 2026-08-31 pipeline artifacts"
+        },
+        {
+          "date": "2026-08-30",
+          "message": "evolve(2026-08-31): ledger commit sha 992540b"
+        },
+        {
+          "date": "2026-08-30",
+          "message": "evolve(2026-08-31): vladikk/modularity 지식화(c) — ~/.wiki concept balan…"
+        },
         {
           "date": "2026-08-29",
           "message": "evolve-run: 2026-08-30 pipeline artifacts"
@@ -22,26 +34,14 @@
         {
           "date": "2026-08-29",
           "message": "evolve(2026-08-30): ledger commit sha 242bd36"
-        },
-        {
-          "date": "2026-08-29",
-          "message": "evolve(2026-08-30): Gentleman-Programming/engram 지식화(c) — ~/.wiki ent…"
-        },
-        {
-          "date": "2026-08-28",
-          "message": "evolve-run: 2026-08-29 pipeline artifacts"
-        },
-        {
-          "date": "2026-08-28",
-          "message": "evolve(2026-08-29): ledger commit sha dfc4ba7"
         }
       ],
-      "commitsLast30d": 56,
+      "commitsLast30d": 59,
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 4,
-      "significanceReason": "최근 7일 내 푸시, 30일 커밋 56"
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 59"
     },
     {
       "name": "hermes-shared-knowledge",
@@ -780,7 +780,7 @@
           "message": "merge: add capability portfolio baselines"
         }
       ],
-      "commitsLast30d": 2,
+      "commitsLast30d": 0,
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
@@ -1252,7 +1252,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 114일 전"
+      "significanceReason": "마지막 푸시 115일 전"
     },
     {
       "name": "korean-review-tone-kit",
@@ -1293,7 +1293,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 2,
-      "significanceReason": "마지막 푸시 114일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 115일 전, 설명 있음"
     },
     {
       "name": "hermes-agent",
@@ -1352,7 +1352,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 2,
-      "significanceReason": "마지막 푸시 120일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 121일 전, 설명 있음"
     },
     {
       "name": "tradingagents-sena-trader",
@@ -1393,7 +1393,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 2,
-      "significanceReason": "마지막 푸시 120일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 121일 전, 설명 있음"
     },
     {
       "name": "mqzkim.github.io",
@@ -1434,7 +1434,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "landing-docs",
       "significance": 1,
-      "significanceReason": "마지막 푸시 120일 전"
+      "significanceReason": "마지막 푸시 121일 전"
     },
     {
       "name": "hermes-agent-board",
@@ -1475,7 +1475,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 1,
-      "significanceReason": "마지막 푸시 120일 전"
+      "significanceReason": "마지막 푸시 121일 전"
     },
     {
       "name": "tuist",
@@ -1518,7 +1518,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "landing-docs",
       "significance": 2,
-      "significanceReason": "마지막 푸시 129일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 130일 전, 설명 있음"
     },
     {
       "name": "helix-space",
@@ -1547,7 +1547,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 1,
-      "significanceReason": "마지막 푸시 131일 전"
+      "significanceReason": "마지막 푸시 132일 전"
     },
     {
       "name": "beautify-me",
@@ -1580,7 +1580,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 133일 전"
+      "significanceReason": "마지막 푸시 134일 전"
     },
     {
       "name": "roastsmysite",
@@ -1621,7 +1621,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 134일 전"
+      "significanceReason": "마지막 푸시 135일 전"
     },
     {
       "name": "llm-usage",
@@ -1650,7 +1650,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 134일 전"
+      "significanceReason": "마지막 푸시 135일 전"
     },
     {
       "name": "briefme",
@@ -1691,7 +1691,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 1,
-      "significanceReason": "마지막 푸시 134일 전"
+      "significanceReason": "마지막 푸시 135일 전"
     },
     {
       "name": "short_youtube",
@@ -1732,7 +1732,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 2,
-      "significanceReason": "마지막 푸시 135일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 136일 전, 설명 있음"
     },
     {
       "name": "community-growth-hacker",
@@ -1757,7 +1757,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "knowledge-wiki",
       "significance": 1,
-      "significanceReason": "마지막 푸시 136일 전"
+      "significanceReason": "마지막 푸시 137일 전"
     },
     {
       "name": "harness-infra",
@@ -1798,7 +1798,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 2,
-      "significanceReason": "마지막 푸시 136일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 137일 전, 설명 있음"
     },
     {
       "name": "helix-co",
@@ -1839,7 +1839,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 2,
-      "significanceReason": "마지막 푸시 136일 전, 설명 있음, 오픈 이슈 90"
+      "significanceReason": "마지막 푸시 137일 전, 설명 있음, 오픈 이슈 90"
     },
     {
       "name": "gst",
@@ -1864,7 +1864,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 140일 전"
+      "significanceReason": "마지막 푸시 141일 전"
     },
     {
       "name": "llm-lean-startup",
@@ -1905,7 +1905,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 2,
-      "significanceReason": "마지막 푸시 140일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 141일 전, 설명 있음"
     }
   ]
 }
