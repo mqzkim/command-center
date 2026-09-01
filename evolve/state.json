@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-08-31T22:33:43.093Z",
+ "lastRun": "2026-09-01T22:35:29.000Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -121,6 +121,12 @@
    "date": "2026-09-01",
    "improvement": "§6 자기수정: trends.mjs 풀 재충전 — 소진 원인은 --sort stars 고정(정적 상위권 반복, minStars 하향 무효)으로 진단, (1) 신규 축 쿼리 4종 추가(agent skills marketplace·claude code plugin marketplace·llm coding agent benchmark·spec-driven development agent) (2) updated-sort 패스 신설(핵심 6쿼리 --sort updated·별점 문턱 300) → 실측 candidates 0→56·scanned 153→211, CANDIDATES_EXHAUSTED 해소 · 규칙 준수로 후보 검토는 내일 §3부터",
    "commit": "fdd035c",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-02",
+   "improvement": "callstack/agent-device 지식화(c) — ~/.wiki entity ingest(AI 코딩 에이전트용 모바일 앱 자동화·검증 하네스: 접근성 스냅샷 @ref+--settle diff·증거 수집·.ad 리플레이·병렬 워크트리 디바이스 조정, ★4,314 MIT; (a/b) 설치는 Windows iOS 불가+Toss 샌드박스 스킴 접점 미실측으로 보류, apps-in-toss-qa 접목 아이디어 채록) · 재충전 풀 첫 소비: 후보 10건 검토(채택 1·이월 3: drawio-skill(b) 차기 1순위·ultimate-guide(c)·hol-guard(c)·기각 6) · seenRepos 155→165",
+   "commit": "PENDING",
    "gates": "4/4"
   }
  ],
@@ -279,7 +285,17 @@
   "Piebald-AI/claude-code-lsps",
   "nuster1128/LLM_Agent_Memory_Survey",
   "Waishnav/devspace",
-  "Spark-To-Paper-Skills/paperjury"
+  "Spark-To-Paper-Skills/paperjury",
+  "budtmo/docker-android",
+  "Agents365-ai/drawio-skill",
+  "FlorianBruniaux/claude-code-ultimate-guide",
+  "agentgateway/agentgateway",
+  "TabularisDB/tabularis",
+  "homeassistant-ai/ha-mcp",
+  "callstack/agent-device",
+  "skyhook-io/radar",
+  "taylorwilsdon/google_workspace_mcp",
+  "hashgraph-online/hol-guard"
  ],
  "appliedImprovements": [
   {
@@ -435,6 +451,13 @@
     "evolve/trends.mjs"
    ],
    "note": "pool re-exhausted (alreadySeen 150/153, candidates 0, CANDIDATES_EXHAUSTED). Root cause: --sort stars returns a static top-30 per query, so lowering minStars alone is ineffective. Fix: +4 new-axis star-sort queries (yesterday's carry-over list) + RECENT_QUERIES pass — 6 core queries re-scanned with --sort updated, minStars 300 (MIN_STARS_RECENT), query tagged '(updated)'. Measured: scanned 153→211, new 0→56, API calls 19+6=25 < gh search 30/min. Refilled pool consumed from §3 starting tomorrow (one-improvement rule). Next candidates from prior carry-overs: (c) Waishnav/devspace entity, (c) tzachbon/smart-ralph, (c) shanraisshan/claude-code-hooks, (c) hamelsmu/claude-review-loop, (b) imxv/Pretty-mermaid-skills, (b cond.) seulee26/mckinsey-pptx; plus fresh top FlorianBruniaux/claude-code-ultimate-guide(5864★). Other queued self-modify: skill-audit precision (non-executable repo P5/P6 demotion), adoption-procedure yaml.safe_load step, galaxy-data C3 freshness gate"
+  },
+  {
+   "id": "wiki:callstack/agent-device",
+   "repo": "callstack/agent-device",
+   "date": "2026-09-02",
+   "mode": "knowledge",
+   "note": "new entity page; mobile app automation & verification harness for AI coding agents (Callstack, star 4314, MIT, pushed 09-01, npm agent-device, Node>=22.12). CLI + built-in stdio MCP + typed Node API. Token-efficient accessibility snapshots (@ref + --settle diff) instead of screenshot reasoning; evidence capture (screenshot/video/logs/traces/network/perf/crash/React profile); .ad replay scripts + Maestro YAML export; parallel-worktree device coordination. Used by Expensify/Shopify. Install (a/b) deferred: owner on Windows (no iOS sim, Android emulator only) + Apps in Toss QA runs inside Toss app sandbox scheme — emulator-automation overlap needs measurement first. Graft idea: apps-in-toss-qa functional QA step adopts snapshot->ref->evidence pattern; attach QA evidence to release report (Expensify loop). Reviewed today (10): adopted agent-device; carried (b) Agents365-ai/drawio-skill (8920 MIT active, offline Python diagram IR — next 1st priority), (c) FlorianBruniaux/claude-code-ultimate-guide (5869 CC-BY-SA guide), (c) hashgraph-online/hol-guard (511 Apache-2 runtime agent guard, complements static skill-audit — watch maturity, 45 issues); rejected budtmo/docker-android (Docker/nested-virt friction on Windows, QA flow mismatch), agentgateway/agentgateway (enterprise k8s proxy infra), TabularisDB/tabularis (desktop SQL workspace, low DB need), homeassistant-ai/ha-mcp (no Home Assistant), skyhook-io/radar (no k8s), taylorwilsdon/google_workspace_mcp (duplicate of claude.ai Gmail/Calendar/Drive connectors)"
   }
  ],
  "openFindings": []
