@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-01T22:35:29.000Z",
+ "lastRun": "2026-09-02T22:38:11.000Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -127,6 +127,12 @@
    "date": "2026-09-02",
    "improvement": "callstack/agent-device 지식화(c) — ~/.wiki entity ingest(AI 코딩 에이전트용 모바일 앱 자동화·검증 하네스: 접근성 스냅샷 @ref+--settle diff·증거 수집·.ad 리플레이·병렬 워크트리 디바이스 조정, ★4,314 MIT; (a/b) 설치는 Windows iOS 불가+Toss 샌드박스 스킴 접점 미실측으로 보류, apps-in-toss-qa 접목 아이디어 채록) · 재충전 풀 첫 소비: 후보 10건 검토(채택 1·이월 3: drawio-skill(b) 차기 1순위·ultimate-guide(c)·hol-guard(c)·기각 6) · seenRepos 155→165",
    "commit": "9835c05",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-03",
+   "improvement": "Agents365-ai/drawio-skill 스킬 채택(b) — ~/.claude/skills/drawio-skill (자연어·코드→편집가능 .drawio 아키텍처 모델, Diagram IR·incremental sync·diagram-as-test, ★8,975 MIT stdlib-only 오프라인, Windows 검증; skill-audit 1차 63/100 HIGH 32건 전수 육안 오탐 판정→동봉 baseline v1 비호환이라 v2 로컬 baseline 재생성→0/100 SAFE; smoke build .drawio 생성·claude -p 등재 확인) · 트렌드 후보 11건 검토(채택 0·이월 2: gortex(c)·refactoring-ui-skill(b)·기각 9) · seenRepos 165→176",
+   "commit": "",
    "gates": "4/4"
   }
  ],
@@ -295,7 +301,18 @@
   "callstack/agent-device",
   "skyhook-io/radar",
   "taylorwilsdon/google_workspace_mcp",
-  "hashgraph-online/hol-guard"
+  "hashgraph-online/hol-guard",
+  "anbeime/skill",
+  "openclaw/Peekaboo",
+  "CodeGraphContext/CodeGraphContext",
+  "MCPJam/inspector",
+  "LetsFG/LetsFG",
+  "duty1g/x64dbg-mcp-server",
+  "timescale/pg-aiguide",
+  "zzet/gortex",
+  "sceneview/sceneview",
+  "ArcadeAI/arcade-mcp",
+  "s0xDk/refactoring-ui-skill"
  ],
  "appliedImprovements": [
   {
@@ -458,6 +475,16 @@
    "date": "2026-09-02",
    "mode": "knowledge",
    "note": "new entity page; mobile app automation & verification harness for AI coding agents (Callstack, star 4314, MIT, pushed 09-01, npm agent-device, Node>=22.12). CLI + built-in stdio MCP + typed Node API. Token-efficient accessibility snapshots (@ref + --settle diff) instead of screenshot reasoning; evidence capture (screenshot/video/logs/traces/network/perf/crash/React profile); .ad replay scripts + Maestro YAML export; parallel-worktree device coordination. Used by Expensify/Shopify. Install (a/b) deferred: owner on Windows (no iOS sim, Android emulator only) + Apps in Toss QA runs inside Toss app sandbox scheme — emulator-automation overlap needs measurement first. Graft idea: apps-in-toss-qa functional QA step adopts snapshot->ref->evidence pattern; attach QA evidence to release report (Expensify loop). Reviewed today (10): adopted agent-device; carried (b) Agents365-ai/drawio-skill (8920 MIT active, offline Python diagram IR — next 1st priority), (c) FlorianBruniaux/claude-code-ultimate-guide (5869 CC-BY-SA guide), (c) hashgraph-online/hol-guard (511 Apache-2 runtime agent guard, complements static skill-audit — watch maturity, 45 issues); rejected budtmo/docker-android (Docker/nested-virt friction on Windows, QA flow mismatch), agentgateway/agentgateway (enterprise k8s proxy infra), TabularisDB/tabularis (desktop SQL workspace, low DB need), homeassistant-ai/ha-mcp (no Home Assistant), skyhook-io/radar (no k8s), taylorwilsdon/google_workspace_mcp (duplicate of claude.ai Gmail/Calendar/Drive connectors)"
+  },
+  {
+   "id": "skill:Agents365-ai/drawio-skill",
+   "repo": "Agents365-ai/drawio-skill",
+   "date": "2026-09-03",
+   "mode": "skill",
+   "files": [
+    "~/.claude/skills/drawio-skill/"
+   ],
+   "note": "carried 1st priority from 09-02, adopted (b). NL/code/IaC/SQL/OpenAPI -> editable .drawio architecture models: Diagram IR (semantics/provenance/coords separated), manual-layout-preserving incremental sync, multi-view projection, diagram-as-test rules, what-if failure propagation, offline HTML story mode, built-in stdio MCP (no mcp package). star 8975, MIT (LICENSE body verified, no NC), pushed 09-01 v3.2.0, open issues 0. 42 py scripts 100% stdlib (no requirements.txt), sys.executable/shutil.which/pathlib — no /tmp, no shell=True; metadata.platforms includes windows, troubleshooting.md has native Windows section. Install: copied repo subfolder skills/drawio-skill/ only (avoids 2-level SKILL.md nesting from naive clone), 77 files ~1.02MB. skill-audit v2.9.6: 1st scan 63/100 HIGH 32 findings, bundled .skillspector-baseline.json is v1 format (exit 2 incompatible with v2.9.6) -> all 32 manually reviewed as false positives (AST4/OH1 subprocess.run([sys.executable,...]) sibling calls = core design; P2 XML example comments; E1 _ALLOWED_HOSTS github-only manifest fetch) -> regenerated v2 baseline .skillspector-baseline.local.json with reasons -> rescan exit 0 0/100 SAFE coverage 98.7%. Smoke: diagramctl.py build 3-node graph -> valid out.drawio 2536B; claude -p exit 0 skill registered. Optional binaries (not installed): draw.io desktop CLI for PNG/SVG export, Graphviz dot for autolayout — .drawio/HTML output works without. Gotcha for future scans: use --baseline .skillspector-baseline.local.json. Reviewed today (11): adopted drawio-skill; carried (c) zzet/gortex (1517, local code-intel engine, token-efficient), (b) s0xDk/refactoring-ui-skill (502, Refactoring UI book rules — TDS design work adjacency); rejected anbeime/skill (aggregator), openclaw/Peekaboo (macOS-only), CodeGraphContext (graph-DB dependency vs need), MCPJam/inspector (duplicate axis w/ mcp inspector), LetsFG (flight booking, no fit), duty1g/x64dbg-mcp-server (RE domain), timescale/pg-aiguide (no Postgres), sceneview (3D SDK not skill/harness), ArcadeAI/arcade-mcp (no MCP-authoring need). Prior carries still open: ultimate-guide(c), hol-guard(c), smart-ralph(c), claude-code-hooks(c), claude-review-loop(c), Pretty-mermaid-skills(b), mckinsey-pptx(b cond.)"
   }
  ],
  "openFindings": []
