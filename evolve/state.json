@@ -134,6 +134,12 @@
    "improvement": "Agents365-ai/drawio-skill 스킬 채택(b) — ~/.claude/skills/drawio-skill (자연어·코드→편집가능 .drawio 아키텍처 모델, Diagram IR·incremental sync·diagram-as-test, ★8,975 MIT stdlib-only 오프라인, Windows 검증; skill-audit 1차 63/100 HIGH 32건 전수 육안 오탐 판정→동봉 baseline v1 비호환이라 v2 로컬 baseline 재생성→0/100 SAFE; smoke build .drawio 생성·claude -p 등재 확인) · 트렌드 후보 11건 검토(채택 0·이월 2: gortex(c)·refactoring-ui-skill(b)·기각 9) · seenRepos 165→176",
    "commit": "06e6605",
    "gates": "4/4"
+  },
+  {
+   "date": "2026-09-04",
+   "improvement": "zzet/gortex 지식화(c) — ~/.wiki entity ingest(로컬 코드 인텔리전스: Go 단일 바이너리·tree-sitter 257언어+컴파일러급 17언어·SQLite 지식그래프·MCP 175도구·GCX1 -27%·최대 50× 토큰 절감 주장, ★1,532 Apache-2.0 Windows 공식·텔레메트리 기본 off; (b) 설치는 09-05 이월 1순위 — install 훅 자동주입 배제·수동 MCP 등록·smoke 조건) · 동일 축 jcodemunch-mcp 기각(상업 유료 Dual-Use·텔레메트리 on) 비교 절 채록 · 트렌드 후보 10건 검토(채택 1·이월 1: retentioneering(c)·기각 9) · seenRepos 176→186",
+   "commit": "b8b972c",
+   "gates": "4/4"
   }
  ],
  "seenRepos": [
