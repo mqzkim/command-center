@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-02T22:38:11.000Z",
+ "lastRun": "2026-09-03T22:35:24.273Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -312,7 +312,17 @@
   "zzet/gortex",
   "sceneview/sceneview",
   "ArcadeAI/arcade-mcp",
-  "s0xDk/refactoring-ui-skill"
+  "s0xDk/refactoring-ui-skill",
+  "sooperset/mcp-atlassian",
+  "Vexa-ai/vexa",
+  "jgravelle/jcodemunch-mcp",
+  "hi-godot/godot-ai",
+  "stacklok/toolhive",
+  "containers/kubernetes-mcp-server",
+  "mattt/iMCP",
+  "microsoft/azure-skills",
+  "taishi-i/awesome-japanese-nlp-resources",
+  "retentioneering/retentioneering-tools"
  ],
  "appliedImprovements": [
   {
@@ -485,6 +495,13 @@
     "~/.claude/skills/drawio-skill/"
    ],
    "note": "carried 1st priority from 09-02, adopted (b). NL/code/IaC/SQL/OpenAPI -> editable .drawio architecture models: Diagram IR (semantics/provenance/coords separated), manual-layout-preserving incremental sync, multi-view projection, diagram-as-test rules, what-if failure propagation, offline HTML story mode, built-in stdio MCP (no mcp package). star 8975, MIT (LICENSE body verified, no NC), pushed 09-01 v3.2.0, open issues 0. 42 py scripts 100% stdlib (no requirements.txt), sys.executable/shutil.which/pathlib — no /tmp, no shell=True; metadata.platforms includes windows, troubleshooting.md has native Windows section. Install: copied repo subfolder skills/drawio-skill/ only (avoids 2-level SKILL.md nesting from naive clone), 77 files ~1.02MB. skill-audit v2.9.6: 1st scan 63/100 HIGH 32 findings, bundled .skillspector-baseline.json is v1 format (exit 2 incompatible with v2.9.6) -> all 32 manually reviewed as false positives (AST4/OH1 subprocess.run([sys.executable,...]) sibling calls = core design; P2 XML example comments; E1 _ALLOWED_HOSTS github-only manifest fetch) -> regenerated v2 baseline .skillspector-baseline.local.json with reasons -> rescan exit 0 0/100 SAFE coverage 98.7%. Smoke: diagramctl.py build 3-node graph -> valid out.drawio 2536B; claude -p exit 0 skill registered. Optional binaries (not installed): draw.io desktop CLI for PNG/SVG export, Graphviz dot for autolayout — .drawio/HTML output works without. Gotcha for future scans: use --baseline .skillspector-baseline.local.json. Reviewed today (11): adopted drawio-skill; carried (c) zzet/gortex (1517, local code-intel engine, token-efficient), (b) s0xDk/refactoring-ui-skill (502, Refactoring UI book rules — TDS design work adjacency); rejected anbeime/skill (aggregator), openclaw/Peekaboo (macOS-only), CodeGraphContext (graph-DB dependency vs need), MCPJam/inspector (duplicate axis w/ mcp inspector), LetsFG (flight booking, no fit), duty1g/x64dbg-mcp-server (RE domain), timescale/pg-aiguide (no Postgres), sceneview (3D SDK not skill/harness), ArcadeAI/arcade-mcp (no MCP-authoring need). Prior carries still open: ultimate-guide(c), hol-guard(c), smart-ralph(c), claude-code-hooks(c), claude-review-loop(c), Pretty-mermaid-skills(b), mckinsey-pptx(b cond.)"
+  },
+  {
+   "id": "wiki:zzet/gortex",
+   "repo": "zzet/gortex",
+   "date": "2026-09-04",
+   "mode": "knowledge",
+   "note": "carried (c) from 09-03, adopted as knowledge; (b) tool install carried to 09-05 as 1st priority. new entity page gortex; local code-intelligence engine (Go single static binary, tree-sitter AST 257 langs + compiler-grade resolution 17 langs, SQLite knowledge graph, daemon + fsnotify incremental). MCP stdio+Streamable HTTP, 175 configurable tools/16 resources/3 prompts; `gortex install` auto-configures 19 agents incl. Claude Code (skills/slash/hooks). Token savings: graph-native symbol/call-chain retrieval, precomputed depth-3 reach index for blast radius, GCX1 wire format -27% vs JSON, claims up to 50x w/ reproducible bench. Embedded semantic search (GloVe-50d 3.8MB + FTS5/BM25), cross-repo contract matching (HTTP/gRPC/GraphQL/Kafka/env/OpenAPI/Temporal). star 1532, Apache-2.0 (LICENSE body verified), pushed 09-03, v0.63.10, issues 54, created 2026-04 (v0.x churn risk). Windows official (install.ps1/scoop, cosign+SLSA L3, VirusTotal 0/91), zero runtime deps, telemetry default OFF. (b) install scope condition: manual MCP registration ONLY — do NOT run `gortex install` auto-hook injection (~/.claude collision axis = Continuous-Claude-v3 rejection reason), reduce tool count config, smoke-test savings claim. Compared & rejected same-axis jgravelle/jcodemunch-mcp (2650★, Python/uv, 27.7x claim): Dual-Use License v1.1 commercial paid $79-$1999 (Apps in Toss commercial mini-app conflict, same axis as vladikk CC BY-NC), telemetry default ON, feature subset of gortex — recorded as comparison section inside gortex entity, no separate page. Reviewed today (10 new): rejected sooperset/mcp-atlassian (no Atlassian), Vexa-ai/vexa (meeting transcription, no fit), hi-godot/godot-ai (no Godot), stacklok/toolhive (enterprise MCP platform overkill), containers/kubernetes-mcp-server (no k8s), mattt/iMCP (macOS-only), microsoft/azure-skills (no Azure), taishi-i/awesome-japanese-nlp-resources (domain mismatch), jcodemunch-mcp (license/telemetry, see above); carried (c) retentioneering/retentioneering-tools (917★ clickstream analytics MCP — Apps in Toss Analytics QA adjacency, heavy Python toolkit, needs scope check). Prior carries still open: (b) gortex-install (NEW 1st priority), (b) refactoring-ui-skill, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
   }
  ],
  "openFindings": []
