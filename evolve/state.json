@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-03T22:35:24.273Z",
+ "lastRun": "2026-09-04T22:39:08.616Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -328,7 +328,18 @@
   "mattt/iMCP",
   "microsoft/azure-skills",
   "taishi-i/awesome-japanese-nlp-resources",
-  "retentioneering/retentioneering-tools"
+  "retentioneering/retentioneering-tools",
+  "apify/apify-mcp-server",
+  "nickclyde/duckduckgo-mcp-server",
+  "drhelius/Gearboy",
+  "cisco-ai-defense/mcp-scanner",
+  "iamzifei/show-me-the-money",
+  "laolaoshiren/claude-code-skills-zh",
+  "sirkirby/unifi-mcp",
+  "line/line-bot-mcp-server",
+  "artokun/comfyui-mcp",
+  "Hao0321/claude-skill-social-post",
+  "Cranot/roam-code"
  ],
  "appliedImprovements": [
   {
@@ -507,7 +518,18 @@
    "repo": "zzet/gortex",
    "date": "2026-09-04",
    "mode": "knowledge",
-   "note": "carried (c) from 09-03, adopted as knowledge; (b) tool install carried to 09-05 as 1st priority. new entity page gortex; local code-intelligence engine (Go single static binary, tree-sitter AST 257 langs + compiler-grade resolution 17 langs, SQLite knowledge graph, daemon + fsnotify incremental). MCP stdio+Streamable HTTP, 175 configurable tools/16 resources/3 prompts; `gortex install` auto-configures 19 agents incl. Claude Code (skills/slash/hooks). Token savings: graph-native symbol/call-chain retrieval, precomputed depth-3 reach index for blast radius, GCX1 wire format -27% vs JSON, claims up to 50x w/ reproducible bench. Embedded semantic search (GloVe-50d 3.8MB + FTS5/BM25), cross-repo contract matching (HTTP/gRPC/GraphQL/Kafka/env/OpenAPI/Temporal). star 1532, Apache-2.0 (LICENSE body verified), pushed 09-03, v0.63.10, issues 54, created 2026-04 (v0.x churn risk). Windows official (install.ps1/scoop, cosign+SLSA L3, VirusTotal 0/91), zero runtime deps, telemetry default OFF. (b) install scope condition: manual MCP registration ONLY — do NOT run `gortex install` auto-hook injection (~/.claude collision axis = Continuous-Claude-v3 rejection reason), reduce tool count config, smoke-test savings claim. Compared & rejected same-axis jgravelle/jcodemunch-mcp (2650★, Python/uv, 27.7x claim): Dual-Use License v1.1 commercial paid $79-$1999 (Apps in Toss commercial mini-app conflict, same axis as vladikk CC BY-NC), telemetry default ON, feature subset of gortex — recorded as comparison section inside gortex entity, no separate page. Reviewed today (10 new): rejected sooperset/mcp-atlassian (no Atlassian), Vexa-ai/vexa (meeting transcription, no fit), hi-godot/godot-ai (no Godot), stacklok/toolhive (enterprise MCP platform overkill), containers/kubernetes-mcp-server (no k8s), mattt/iMCP (macOS-only), microsoft/azure-skills (no Azure), taishi-i/awesome-japanese-nlp-resources (domain mismatch), jcodemunch-mcp (license/telemetry, see above); carried (c) retentioneering/retentioneering-tools (917★ clickstream analytics MCP — Apps in Toss Analytics QA adjacency, heavy Python toolkit, needs scope check). Prior carries still open: (b) gortex-install (NEW 1st priority), (b) refactoring-ui-skill, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
+   "note": "carried (c) from 09-03, adopted as knowledge; (b) tool install carried to 09-05 as 1st priority. new entity page gortex; local code-intelligence engine (Go single static binary, tree-sitter AST 257 langs + compiler-grade resolution 17 langs, SQLite knowledge graph, daemon + fsnotify incremental). MCP stdio+Streamable HTTP, 175 configurable tools/16 resources/3 prompts; `gortex install` auto-configures 19 agents incl. Claude Code (skills/slash/hooks). Token savings: graph-native symbol/call-chain retrieval, precomputed depth-3 reach index for blast radius, GCX1 wire format -27% vs JSON, claims up to 50x w/ reproducible bench. Embedded semantic search (GloVe-50d 3.8MB + FTS5/BM25), cross-repo contract matching (HTTP/gRPC/GraphQL/Kafka/env/OpenAPI/Temporal). star 1532, Apache-2.0 (LICENSE body verified), pushed 09-03, v0.63.10, issues 54, created 2026-04 (v0.x churn risk). Windows official (install.ps1/scoop, cosign+SLSA L3, VirusTotal 0/91), zero runtime deps, telemetry default OFF. (b) install scope condition: manual MCP registration ONLY — do NOT run `gortex install` auto-hook injection (~/.claude collision axis = Continuous-Claude-v3 rejection reason), reduce tool count config, smoke-test savings claim. Compared & rejected same-axis jgravelle/jcodemunch-mcp (2650★, Python/uv, 27.7x claim): Dual-Use License v1.1 commercial paid $79-$1999 (Apps in Toss commercial mini-app conflict, same axis as vladikk CC BY-NC), telemetry default ON, feature subset of gortex — recorded as comparison section inside gortex entity, no separate page. Reviewed 09-04 (10 new): rejected sooperset/mcp-atlassian (no Atlassian), Vexa-ai/vexa (meeting transcription, no fit), hi-godot/godot-ai (no Godot), stacklok/toolhive (enterprise MCP platform overkill), containers/kubernetes-mcp-server (no k8s), mattt/iMCP (macOS-only), microsoft/azure-skills (no Azure), taishi-i/awesome-japanese-nlp-resources (domain mismatch), jcodemunch-mcp (license/telemetry, see above); carried (c) retentioneering/retentioneering-tools (917★ clickstream analytics MCP — Apps in Toss Analytics QA adjacency, heavy Python toolkit, needs scope check). Prior carries still open: (b) gortex-install (NEW 1st priority), (b) refactoring-ui-skill, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
+  },
+  {
+   "id": "tool:zzet/gortex-install",
+   "repo": "zzet/gortex",
+   "date": "2026-09-05",
+   "mode": "tool",
+   "files": [
+    "C:/Users/my/.local/bin/gortex.exe",
+    "~/.claude.json (claude mcp add --scope user)"
+   ],
+   "note": "carried (b) 1st priority from 09-04, executed non-invasively per conditions. Binary: Releases v0.63.10 gortex_windows_amd64.zip direct download (scoop absent, official install.ps1 skipped for control), checksums.txt SHA256 verified, installed to ~/.local/bin (already on PATH, zero PATH edits), gortex v0.63.10+506252c go1.26.6. Conditions honored: `gortex install` NEVER run (settings.json SHA256 identical before/after 9EE001C1...427A, caller re-measured; skills 32 dirs unchanged, *gortex* 0 hits; ~/.claude recursive scan clean), `gortex init` also skipped (no .mcp.json/.claude pollution in repos — all state isolated in ~/.gortex). Tool reduction: per-connection preset GORTEX_TOOLS=localization (docs/mcp.md read-only diet set) -> tools/list measured 14 tools vs ~175 full catalog. MCP: claude mcp add --scope user gortex --env GORTEX_TOOLS=localization -- gortex.exe mcp; claude mcp list Connected; only ~/.claude.json modified. Smoke: track command-center 2.56s — files 64/nodes 1,240/edges 2,833/FTS5 427; query symbol record->evolve/health.mjs:24, freshRequire->:29 line-exact vs grep; callers accurate; responses 91/181 chars vs 7,432B file = 41-81x reduction (50x claim plausible at this micro scale). Telemetry disabled + no endpoint (measured). cosign/SLSA verify skipped (tools absent, .sig/.pem available for later). Daemon pid left running (MCP proxy auto-starts anyway). Watch: v0.x churn (issues 54) — pin v0.63.10, re-verify checksum on upgrade. Reviewed today (11): rejected apify-mcp-server (commercial SaaS credits, WebFetch overlap), duckduckgo-mcp-server (builtin WebSearch overlap), Gearboy (emulator domain), show-me-the-money (unverifiable revenue claims), claude-code-skills-zh (aggregator), unifi-mcp (no UniFi), line-bot-mcp-server (no LINE OA), comfyui-mcp (no ComfyUI), claude-skill-social-post (SNS account-automation policy risk), Cranot/roam-code (same axis as gortex, 28 langs/246 tools subset — comparison line to add in gortex entity, no separate page); carried (c) cisco-ai-defense/mcp-scanner (1,061★ MCP server security scanner — complements static skill-audit, utility rises now that gortex MCP is registered; scope check needed). Next 1st priority: (b) s0xDk/refactoring-ui-skill (carried since 09-03). Other carries open: (c) mcp-scanner (NEW), (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
   }
  ],
  "openFindings": []
