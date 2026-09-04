@@ -140,6 +140,12 @@
    "improvement": "zzet/gortex 지식화(c) — ~/.wiki entity ingest(로컬 코드 인텔리전스: Go 단일 바이너리·tree-sitter 257언어+컴파일러급 17언어·SQLite 지식그래프·MCP 175도구·GCX1 -27%·최대 50× 토큰 절감 주장, ★1,532 Apache-2.0 Windows 공식·텔레메트리 기본 off; (b) 설치는 09-05 이월 1순위 — install 훅 자동주입 배제·수동 MCP 등록·smoke 조건) · 동일 축 jcodemunch-mcp 기각(상업 유료 Dual-Use·텔레메트리 on) 비교 절 채록 · 트렌드 후보 10건 검토(채택 1·이월 1: retentioneering(c)·기각 9) · seenRepos 176→186",
    "commit": "b8b972c",
    "gates": "4/4"
+  },
+  {
+   "date": "2026-09-05",
+   "improvement": "zzet/gortex 도구 설치(b) — 09-04 이월 1순위 비침습 집행: v0.63.10 바이너리 직접 설치(SHA256 검증·~/.local/bin·PATH 수정 0)·gortex install/init 미실행(settings.json 해시 불변·skills 신규 0·~/.gortex 격리)·MCP 수동 등록 --scope user + GORTEX_TOOLS=localization(도구 175→14 실측)·smoke: track 2.56s(files 64·nodes 1,240·edges 2,833)·심볼 조회 라인 정확·응답 41~81× 축소 · 트렌드 후보 11건 검토(기각 10·이월 1: mcp-scanner(c)) · seenRepos 186→197",
+   "commit": "9496ec1",
+   "gates": "4/4"
   }
  ],
  "seenRepos": [
