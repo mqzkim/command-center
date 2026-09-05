@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-04T22:39:08.616Z",
+ "lastRun": "2026-09-05T22:35:08.332Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -145,6 +145,12 @@
    "date": "2026-09-05",
    "improvement": "zzet/gortex 도구 설치(b) — 09-04 이월 1순위 비침습 집행: v0.63.10 바이너리 직접 설치(SHA256 검증·~/.local/bin·PATH 수정 0)·gortex install/init 미실행(settings.json 해시 불변·skills 신규 0·~/.gortex 격리)·MCP 수동 등록 --scope user + GORTEX_TOOLS=localization(도구 175→14 실측)·smoke: track 2.56s(files 64·nodes 1,240·edges 2,833)·심볼 조회 라인 정확·응답 41~81× 축소 · 트렌드 후보 11건 검토(기각 10·이월 1: mcp-scanner(c)) · seenRepos 186→197",
    "commit": "9496ec1",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-06",
+   "improvement": "s0xDk/refactoring-ui-skill 스킬 채택(b) — ~/.claude/skills/refactoring-ui (Refactoring UI 책의 구체 수치 규칙: 제약된 spacing/type/color/shadow 스케일·weight/color 계층·광원 에뮬레이션, ★528 markdown+CSS 7파일 52KB 실행표면 0; MIT 본문 실측=표준 MIT+책 비포함 단서로 API key:other, 저자 비공인 파생물이라 로컬 사용 한정·재배포 금지 조건; skill-audit 3/100 SAFE exit 0·오탐 1 억제 0·smoke claude -p 등재 확인) · 트렌드 후보 11건 검토(채택 0·이월 2: open-multi-agent(c)·llm-wiki-compiler(c)·기각 9) · seenRepos 197→208",
+   "commit": "PENDING",
    "gates": "4/4"
   }
  ],
@@ -345,7 +351,18 @@
   "line/line-bot-mcp-server",
   "artokun/comfyui-mcp",
   "Hao0321/claude-skill-social-post",
-  "Cranot/roam-code"
+  "Cranot/roam-code",
+  "open-multi-agent/open-multi-agent",
+  "Gentleman-Programming/gentle-ai",
+  "grafana/mcp-grafana",
+  "stickerdaniel/linkedin-mcp-server",
+  "blacktop/ida-mcp-rs",
+  "awdr74100/figwright",
+  "wshobson/maverick-mcp",
+  "majiayu000/claude-skill-registry",
+  "levnikolaevich/claude-code-skills",
+  "joeseesun/qiaomu-design",
+  "ussumant/llm-wiki-compiler"
  ],
  "appliedImprovements": [
   {
@@ -536,6 +553,16 @@
     "~/.claude.json (claude mcp add --scope user)"
    ],
    "note": "carried (b) 1st priority from 09-04, executed non-invasively per conditions. Binary: Releases v0.63.10 gortex_windows_amd64.zip direct download (scoop absent, official install.ps1 skipped for control), checksums.txt SHA256 verified, installed to ~/.local/bin (already on PATH, zero PATH edits), gortex v0.63.10+506252c go1.26.6. Conditions honored: `gortex install` NEVER run (settings.json SHA256 identical before/after 9EE001C1...427A, caller re-measured; skills 32 dirs unchanged, *gortex* 0 hits; ~/.claude recursive scan clean), `gortex init` also skipped (no .mcp.json/.claude pollution in repos — all state isolated in ~/.gortex). Tool reduction: per-connection preset GORTEX_TOOLS=localization (docs/mcp.md read-only diet set) -> tools/list measured 14 tools vs ~175 full catalog. MCP: claude mcp add --scope user gortex --env GORTEX_TOOLS=localization -- gortex.exe mcp; claude mcp list Connected; only ~/.claude.json modified. Smoke: track command-center 2.56s — files 64/nodes 1,240/edges 2,833/FTS5 427; query symbol record->evolve/health.mjs:24, freshRequire->:29 line-exact vs grep; callers accurate; responses 91/181 chars vs 7,432B file = 41-81x reduction (50x claim plausible at this micro scale). Telemetry disabled + no endpoint (measured). cosign/SLSA verify skipped (tools absent, .sig/.pem available for later). Daemon pid left running (MCP proxy auto-starts anyway). Watch: v0.x churn (issues 54) — pin v0.63.10, re-verify checksum on upgrade. Reviewed today (11): rejected apify-mcp-server (commercial SaaS credits, WebFetch overlap), duckduckgo-mcp-server (builtin WebSearch overlap), Gearboy (emulator domain), show-me-the-money (unverifiable revenue claims), claude-code-skills-zh (aggregator), unifi-mcp (no UniFi), line-bot-mcp-server (no LINE OA), comfyui-mcp (no ComfyUI), claude-skill-social-post (SNS account-automation policy risk), Cranot/roam-code (same axis as gortex, 28 langs/246 tools subset — comparison line to add in gortex entity, no separate page); carried (c) cisco-ai-defense/mcp-scanner (1,061★ MCP server security scanner — complements static skill-audit, utility rises now that gortex MCP is registered; scope check needed). Next 1st priority: (b) s0xDk/refactoring-ui-skill (carried since 09-03). Other carries open: (c) mcp-scanner (NEW), (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
+  },
+  {
+   "id": "skill:s0xDk/refactoring-ui-skill",
+   "repo": "s0xDk/refactoring-ui-skill",
+   "date": "2026-09-06",
+   "mode": "skill",
+   "files": [
+    "~/.claude/skills/refactoring-ui/"
+   ],
+   "note": "carried (b) from 09-03, adopted. Refactoring UI (Wathan & Schoger) concrete design rules as auto-trigger skill: constrained spacing scale (4 8 12 16 24 32 48 64 96 128...), type scale (12-72), 5-step shadow CSS, hierarchy via weight/color not size, emulated-light depth, + assets/tokens.css. star 528, 7 files (6 md + 1 css) 52,199B, zero exec scripts. LICENSE body measured = standard MIT (c) 2026 s13k + book-exclusion clause (covers repo write-up only, grants no rights to the book) — API licenseInfo key:other is just template-match breakage from that appendix, NOT a hidden NC (vladikk-type check done). Copyright verdict: no verbatim copying (author's own restatement, zero quotes/scans), but systematic extraction of the book's numeric decisions ('cross-checked page-by-page' per README), author-unaffiliated (s13k != Wathan/Schoger), repo 11 days old (init 08-26, 2 commits, 0 activity since, 1 doc issue) -> CONDITION: local use only, do NOT redistribute (no public-repo commit, no bundling into commercial deliverables); takedown would orphan local copy — acceptable. skill-audit v2.9.6 --no-llm: 3/100 LOW SAFE exit 0, coverage 100% (7/7), 1 finding EA3 LICENSE:16 conf 70% = MIT warranty boilerplate misread as agent instruction -> manual false-positive, no baseline needed (exit already 0). frontmatter safe_load OK, no ': ' colon trap. Smoke: claude -p exit 0 skill registered; also visible in live session registry. TDS design adjacency: complements toss-tds-design (brand tokens) with generic craft rules — do not let its neutral palette override TDS colors. Reviewed today (11): carried (c) open-multi-agent/open-multi-agent (6880* TS multi-agent framework, approval-gated actions + verifiable run records — Evidence&Truth adjacency, knowledge-only axis), (c) ussumant/llm-wiki-compiler (321* >= minStarsRecent 300, markdown->topic wiki compiler implementing Karpathy LLM KB pattern — direct ~/.wiki adjacency, comparison ingest candidate); rejected gentle-ai (agent config injector, ~/.claude collision axis = Continuous-Claude-v3/gortex-install rejection reason, engram author), mcp-grafana (no Grafana), linkedin-mcp-server (SNS account-automation policy risk = claude-skill-social-post axis), ida-mcp-rs (RE domain, no IDA), figwright (no Figma workflow, Figma-Context-MCP axis), maverick-mcp (stock domain), majiayu000/claude-skill-registry (aggregator/registry axis), levnikolaevich/claude-code-skills (overlaps superpowers + existing 53 skills), joeseesun/qiaomu-design (overlaps frontend-design/toss-tds-design/tastemaker). Next 1st priority: (c) cisco-ai-defense/mcp-scanner (carried since 09-05; utility risen now that gortex MCP registered). Other carries open: (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx, (c) open-multi-agent (NEW), (c) llm-wiki-compiler (NEW)"
   }
  ],
  "openFindings": []
