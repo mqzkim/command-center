@@ -150,7 +150,7 @@
   {
    "date": "2026-09-06",
    "improvement": "s0xDk/refactoring-ui-skill 스킬 채택(b) — ~/.claude/skills/refactoring-ui (Refactoring UI 책의 구체 수치 규칙: 제약된 spacing/type/color/shadow 스케일·weight/color 계층·광원 에뮬레이션, ★528 markdown+CSS 7파일 52KB 실행표면 0; MIT 본문 실측=표준 MIT+책 비포함 단서로 API key:other, 저자 비공인 파생물이라 로컬 사용 한정·재배포 금지 조건; skill-audit 3/100 SAFE exit 0·오탐 1 억제 0·smoke claude -p 등재 확인) · 트렌드 후보 11건 검토(채택 0·이월 2: open-multi-agent(c)·llm-wiki-compiler(c)·기각 9) · seenRepos 197→208",
-   "commit": "PENDING",
+   "commit": "f4b0593",
    "gates": "4/4"
   }
  ],
