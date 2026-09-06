@@ -156,7 +156,7 @@
   {
    "date": "2026-09-07",
    "improvement": "cisco-ai-defense/mcp-scanner 지식화(c) — ~/.wiki entity ingest(MCP 서버/도구 표면 보안 스캐너: 인젝션·poisoning·behavioral·공급망, YARA 로컬/LLM/Cisco API opt-in 3엔진, Apache-2.0 본문 실측; skill-audit와 보완 축, gortex MCP 등록으로 효용 상승한 09-05 이월 집행; (b) 설치는 의존성 표면 커서 보류) · 트렌드 후보 10건 검토(채택 0·이월 1: Q00/ouroboros(c)·기각 9) · seenRepos 208→218",
-   "commit": "TBD",
+   "commit": "f6111f0",
    "gates": "4/4"
   }
  ],
