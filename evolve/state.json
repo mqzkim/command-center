@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-05T22:35:08.332Z",
+ "lastRun": "2026-09-06T22:34:40.000Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -151,6 +151,12 @@
    "date": "2026-09-06",
    "improvement": "s0xDk/refactoring-ui-skill 스킬 채택(b) — ~/.claude/skills/refactoring-ui (Refactoring UI 책의 구체 수치 규칙: 제약된 spacing/type/color/shadow 스케일·weight/color 계층·광원 에뮬레이션, ★528 markdown+CSS 7파일 52KB 실행표면 0; MIT 본문 실측=표준 MIT+책 비포함 단서로 API key:other, 저자 비공인 파생물이라 로컬 사용 한정·재배포 금지 조건; skill-audit 3/100 SAFE exit 0·오탐 1 억제 0·smoke claude -p 등재 확인) · 트렌드 후보 11건 검토(채택 0·이월 2: open-multi-agent(c)·llm-wiki-compiler(c)·기각 9) · seenRepos 197→208",
    "commit": "f4b0593",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-07",
+   "improvement": "cisco-ai-defense/mcp-scanner 지식화(c) — ~/.wiki entity ingest(MCP 서버/도구 표면 보안 스캐너: 인젝션·poisoning·behavioral·공급망, YARA 로컬/LLM/Cisco API opt-in 3엔진, Apache-2.0 본문 실측; skill-audit와 보완 축, gortex MCP 등록으로 효용 상승한 09-05 이월 집행; (b) 설치는 의존성 표면 커서 보류) · 트렌드 후보 10건 검토(채택 0·이월 1: Q00/ouroboros(c)·기각 9) · seenRepos 208→218",
+   "commit": "TBD",
    "gates": "4/4"
   }
  ],
@@ -362,7 +368,17 @@
   "majiayu000/claude-skill-registry",
   "levnikolaevich/claude-code-skills",
   "joeseesun/qiaomu-design",
-  "ussumant/llm-wiki-compiler"
+  "ussumant/llm-wiki-compiler",
+  "Q00/ouroboros",
+  "bostrot/wsl2-distro-manager",
+  "Minidoracat/mcp-feedback-enhanced",
+  "punkpeye/fastmcp",
+  "samuelgursky/davinci-resolve-mcp",
+  "mixelpixx/KiCAD-MCP-Server",
+  "ridafkih/keeper.sh",
+  "TensorBlock/awesome-mcp-servers",
+  "Storybloq/storybloq",
+  "aovestdipaperino/tokensave"
  ],
  "appliedImprovements": [
   {
@@ -563,6 +579,13 @@
     "~/.claude/skills/refactoring-ui/"
    ],
    "note": "carried (b) from 09-03, adopted. Refactoring UI (Wathan & Schoger) concrete design rules as auto-trigger skill: constrained spacing scale (4 8 12 16 24 32 48 64 96 128...), type scale (12-72), 5-step shadow CSS, hierarchy via weight/color not size, emulated-light depth, + assets/tokens.css. star 528, 7 files (6 md + 1 css) 52,199B, zero exec scripts. LICENSE body measured = standard MIT (c) 2026 s13k + book-exclusion clause (covers repo write-up only, grants no rights to the book) — API licenseInfo key:other is just template-match breakage from that appendix, NOT a hidden NC (vladikk-type check done). Copyright verdict: no verbatim copying (author's own restatement, zero quotes/scans), but systematic extraction of the book's numeric decisions ('cross-checked page-by-page' per README), author-unaffiliated (s13k != Wathan/Schoger), repo 11 days old (init 08-26, 2 commits, 0 activity since, 1 doc issue) -> CONDITION: local use only, do NOT redistribute (no public-repo commit, no bundling into commercial deliverables); takedown would orphan local copy — acceptable. skill-audit v2.9.6 --no-llm: 3/100 LOW SAFE exit 0, coverage 100% (7/7), 1 finding EA3 LICENSE:16 conf 70% = MIT warranty boilerplate misread as agent instruction -> manual false-positive, no baseline needed (exit already 0). frontmatter safe_load OK, no ': ' colon trap. Smoke: claude -p exit 0 skill registered; also visible in live session registry. TDS design adjacency: complements toss-tds-design (brand tokens) with generic craft rules — do not let its neutral palette override TDS colors. Reviewed today (11): carried (c) open-multi-agent/open-multi-agent (6880* TS multi-agent framework, approval-gated actions + verifiable run records — Evidence&Truth adjacency, knowledge-only axis), (c) ussumant/llm-wiki-compiler (321* >= minStarsRecent 300, markdown->topic wiki compiler implementing Karpathy LLM KB pattern — direct ~/.wiki adjacency, comparison ingest candidate); rejected gentle-ai (agent config injector, ~/.claude collision axis = Continuous-Claude-v3/gortex-install rejection reason, engram author), mcp-grafana (no Grafana), linkedin-mcp-server (SNS account-automation policy risk = claude-skill-social-post axis), ida-mcp-rs (RE domain, no IDA), figwright (no Figma workflow, Figma-Context-MCP axis), maverick-mcp (stock domain), majiayu000/claude-skill-registry (aggregator/registry axis), levnikolaevich/claude-code-skills (overlaps superpowers + existing 53 skills), joeseesun/qiaomu-design (overlaps frontend-design/toss-tds-design/tastemaker). Next 1st priority: (c) cisco-ai-defense/mcp-scanner (carried since 09-05; utility risen now that gortex MCP registered). Other carries open: (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx, (c) open-multi-agent (NEW), (c) llm-wiki-compiler (NEW)"
+  },
+  {
+   "id": "wiki:cisco-ai-defense/mcp-scanner",
+   "repo": "cisco-ai-defense/mcp-scanner",
+   "date": "2026-09-07",
+   "mode": "knowledge",
+   "note": "carried (c) from 09-05, adopted — utility rose after gortex MCP registered --scope user (09-05). new entity page mcp-scanner; MCP server/tool surface security scanner (Cisco AI Defense official org, star 1064, Apache-2.0 LICENSE body verified 201 lines no NC, Python>=3.11.4, PyPI cisco-ai-mcp-scanner v4.8.4 2026-08-28, pushed 09-04, monthly releases). Scans: MCP tools/prompts/resources (prompt injection, tool poisoning), server source behavioral (docstring-vs-implementation via LLM alignment + cross-file dataflow), PyPI/npm supply chain (Docker sandbox static, no code exec), CVE (pip-audit), binaries (VirusTotal hash). 3 engines independent/combined: YARA (local, zero keys), LLM judge (litellm any provider incl. Ollama local), Cisco AI Defense inspect API (SaaS pure opt-in via MCP_SCANNER_API_KEY + --analyzers api). YARA-only = fully local; telemetry mentions 0. CLI + FastAPI REST + Python SDK + bundled Claude Code plugin (9 commands + mcp-security-scan skill). Owner-env gotcha: known-configs auto-discovery (win32) covers Windsurf/Cursor/VS Code/Claude Desktop only — NOT ~/.claude.json; manual --config-path ~/.claude.json parses root mcpServers so user-scope servers (gortex) scannable; project-scope (projects.*.mcpServers) presumed missed. Axis vs skill-audit: skill files static pre-install gate vs registered-MCP surface scan — complementary, fits before 'manual MCP registration' gate (gortex 09-05 precedent). (b) install deferred: heavy dep surface (tree-sitter 10 langpacks + litellm 1.93.0 pinned + fastapi + yara-python native build; contrast gortex single binary); minimal smoke if adopted: pip install cisco-ai-mcp-scanner && mcp-scanner --analyzers yara config --config-path ~/.claude.json --format summary. Reviewed today (10): carried (c) Q00/ouroboros (5782* Agent OS evolution-loop MCP, 14 runtimes — Self-Evolving Daily Loop adjacency, next knowledge candidate); rejected bostrot/wsl2-distro-manager (WSL GUI, owner native-Windows flow), Minidoracat/mcp-feedback-enhanced (interactive feedback MCP, owner uses live sessions), punkpeye/fastmcp (MCP-authoring framework, no authoring need = arcade-mcp axis), samuelgursky/davinci-resolve-mcp (no DaVinci), mixelpixx/KiCAD-MCP-Server (no KiCAD), ridafkih/keeper.sh (claude.ai Google Calendar connector overlap), TensorBlock/awesome-mcp-servers (aggregator axis), Storybloq/storybloq (cross-session context store, knowledge-source split axis = engram rejection), aovestdipaperino/tokensave (code-intel MCP, gortex-axis subset = roam-code treatment). Other carries open: (c) ouroboros (NEW), (c) open-multi-agent, (c) llm-wiki-compiler, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
   }
  ],
  "openFindings": []
