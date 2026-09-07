@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-06T22:34:40.000Z",
+ "lastRun": "2026-09-07T22:37:22.005Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -378,7 +378,17 @@
   "ridafkih/keeper.sh",
   "TensorBlock/awesome-mcp-servers",
   "Storybloq/storybloq",
-  "aovestdipaperino/tokensave"
+  "aovestdipaperino/tokensave",
+  "redhat-et/ripwire",
+  "Softeria/ms-365-mcp-server",
+  "orneryd/NornicDB",
+  "neondatabase/mcp-server-neon",
+  "soumatheusgomes/vibe-coding-toolkit",
+  "cporter202/agentic-ai-apis",
+  "karanb192/claude-code-hooks",
+  "zenstory-ai/video-recap-skills",
+  "trailofbits/skills-curated",
+  "agenvoy/Agenvoy"
  ],
  "appliedImprovements": [
   {
@@ -586,6 +596,13 @@
    "date": "2026-09-07",
    "mode": "knowledge",
    "note": "carried (c) from 09-05, adopted — utility rose after gortex MCP registered --scope user (09-05). new entity page mcp-scanner; MCP server/tool surface security scanner (Cisco AI Defense official org, star 1064, Apache-2.0 LICENSE body verified 201 lines no NC, Python>=3.11.4, PyPI cisco-ai-mcp-scanner v4.8.4 2026-08-28, pushed 09-04, monthly releases). Scans: MCP tools/prompts/resources (prompt injection, tool poisoning), server source behavioral (docstring-vs-implementation via LLM alignment + cross-file dataflow), PyPI/npm supply chain (Docker sandbox static, no code exec), CVE (pip-audit), binaries (VirusTotal hash). 3 engines independent/combined: YARA (local, zero keys), LLM judge (litellm any provider incl. Ollama local), Cisco AI Defense inspect API (SaaS pure opt-in via MCP_SCANNER_API_KEY + --analyzers api). YARA-only = fully local; telemetry mentions 0. CLI + FastAPI REST + Python SDK + bundled Claude Code plugin (9 commands + mcp-security-scan skill). Owner-env gotcha: known-configs auto-discovery (win32) covers Windsurf/Cursor/VS Code/Claude Desktop only — NOT ~/.claude.json; manual --config-path ~/.claude.json parses root mcpServers so user-scope servers (gortex) scannable; project-scope (projects.*.mcpServers) presumed missed. Axis vs skill-audit: skill files static pre-install gate vs registered-MCP surface scan — complementary, fits before 'manual MCP registration' gate (gortex 09-05 precedent). (b) install deferred: heavy dep surface (tree-sitter 10 langpacks + litellm 1.93.0 pinned + fastapi + yara-python native build; contrast gortex single binary); minimal smoke if adopted: pip install cisco-ai-mcp-scanner && mcp-scanner --analyzers yara config --config-path ~/.claude.json --format summary. Reviewed today (10): carried (c) Q00/ouroboros (5782* Agent OS evolution-loop MCP, 14 runtimes — Self-Evolving Daily Loop adjacency, next knowledge candidate); rejected bostrot/wsl2-distro-manager (WSL GUI, owner native-Windows flow), Minidoracat/mcp-feedback-enhanced (interactive feedback MCP, owner uses live sessions), punkpeye/fastmcp (MCP-authoring framework, no authoring need = arcade-mcp axis), samuelgursky/davinci-resolve-mcp (no DaVinci), mixelpixx/KiCAD-MCP-Server (no KiCAD), ridafkih/keeper.sh (claude.ai Google Calendar connector overlap), TensorBlock/awesome-mcp-servers (aggregator axis), Storybloq/storybloq (cross-session context store, knowledge-source split axis = engram rejection), aovestdipaperino/tokensave (code-intel MCP, gortex-axis subset = roam-code treatment). Other carries open: (c) ouroboros (NEW), (c) open-multi-agent, (c) llm-wiki-compiler, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
+  },
+  {
+   "id": "wiki:Q00/ouroboros",
+   "repo": "Q00/ouroboros",
+   "date": "2026-09-08",
+   "mode": "knowledge",
+   "note": "carried (c) from 09-07, adopted. UPDATED pre-existing entity page ouroboros (librarian dedup hit: 2026-04-15 stub existed, counts unchanged Entities 78/total ~285); 'Agent OS' — local-first runtime layer turning nondeterministic agent work into replayable/observable/policy-bound execution contracts (star 5,793, MIT LICENSE body verified zero clauses, Python>=3.12, .py 1,425 + Rust crates, v0.54.0 2026-09-07, weekly+ release pace, open issues 83 incl PRs). Core loop Interview→Seed→Execute→Evaluate→Evolve: Socratic interview → Ambiguity score <=0.2 gate (Goal 40/Constraint 30/Success 30 weighted, blocks Seed creation, force-only bypass) → immutable Seed spec → Double Diamond execution → 3-stage eval (Mechanical $0 → Semantic → Multi-Model Consensus) → Wonder/Reflect evolution, ontology similarity >=0.95 convergence or 30-generation hard cap; `ooo ralph` persistent cross-session loop (EventStore replay, stateless step). 14 runtimes measured (Claude Code/Codex/Copilot/OpenCode/Hermes/Gemini/Kiro/Pi/OMP/Zcode/Goose/GJC/Antigravity/Grok Build) via orchestrator abstraction — contract layer on top of coding CLIs, not resident runtime (vs nanobot). Spec-first vs Continuous-Claude-v3 auto-accumulate / AHE evolve.sh; philosophy isomorphic to owner Self-Evolving Daily Loop numeric gates (Ambiguity gate ↔ 4-gates, similarity convergence ↔ freshness gate). (b) install rejected: dep surface (.py 1,425 + litellm, = mcp-scanner deferral axis) + PostHog telemetry default ON opt-out (TELEMETRY.md measured; contrast gortex zero) + README self-declared 'Native Windows is experimental'. Reviewed today (10): rejected redhat-et/ripwire (1321* repo context-map CLI+MCP, gortex-installed axis subset = roam-code/tokensave treatment), Softeria/ms-365-mcp-server (no MS365), orneryd/NornicDB (graph+vector DB infra overkill, knowledge-source split axis), neondatabase/mcp-server-neon (no Neon), soumatheusgomes/vibe-coding-toolkit (plugin/prompt aggregator, superpowers+53-skill overlap), cporter202/agentic-ai-apis (API catalog aggregator axis), karanb192/claude-code-hooks (hook marketplace, same axis as carried shanraisshan/claude-code-hooks), zenstory-ai/video-recap-skills (video editing domain), trailofbits/skills-curated (curated marketplace aggregator, trailofbits/skills precedent); carried (c) agenvoy/Agenvoy (489* updated-pass, Go single-binary self-hosted harness that writes/sandbox-tests/repairs its own tools — Self-Evolving adjacency, next knowledge candidate). Other carries open: (c) agenvoy (NEW), (c) open-multi-agent, (c) llm-wiki-compiler, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
   }
  ],
  "openFindings": []
