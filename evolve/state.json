@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-07T22:38:29.515Z",
+ "lastRun": "2026-09-08T22:35:44.009Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -163,6 +163,12 @@
    "date": "2026-09-08",
    "improvement": "Q00/ouroboros 지식화(c) — ~/.wiki entity update(04-15 stub dedup hit·실측 갱신: Agent OS 수치 게이트 진화 루프, 14 runtimes 계약 레이어, ★5,793 MIT; (b) 설치 기각: 의존성 표면·텔레메트리 기본 on·Windows experimental) · 트렌드 후보 10건 검토(이월 1: agenvoy(c)·기각 9) · seenRepos 218→228",
    "commit": "ba91b7d",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-09",
+   "improvement": "agenvoy/Agenvoy 지식화(c) — ~/.wiki entity 신규(Go 단일 바이너리 self-hosted 에이전트 하네스: 도구 자가작성→sandbox 테스트→자가수리→재사용 루프, MCP 서버로 Claude Code/Codex와 도구 공유, ★493 AGPL-3.0+상업 이중 라이선스; (b) 설치 기각: Windows WSL 전용·단독 저자 v1.0.x) · 트렌드 후보 10건 검토(이월 1: peerd(c)·기각 8) · seenRepos 228→238",
+   "commit": "cb8a263",
    "gates": "4/4"
   }
  ],
