@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-07T22:37:22.005Z",
+ "lastRun": "2026-09-07T22:38:29.515Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -394,7 +394,17 @@
   "karanb192/claude-code-hooks",
   "zenstory-ai/video-recap-skills",
   "trailofbits/skills-curated",
-  "agenvoy/Agenvoy"
+  "agenvoy/Agenvoy",
+  "Manavarya09/design-extract",
+  "Hainrixz/the-architect",
+  "AeternaLabsHQ/pullmd",
+  "NotASithLord/peerd",
+  "dongbeixiaohuo/writing-agent",
+  "bybren-llc/safe-agentic-workflow",
+  "Masriyan/Claude-Code-CyberSecurity-Skill",
+  "GRCEngClub/claude-grc-engineering",
+  "jamditis/claude-skills-journalism",
+  "glebis/claude-skills"
  ],
  "appliedImprovements": [
   {
@@ -609,6 +619,13 @@
    "date": "2026-09-08",
    "mode": "knowledge",
    "note": "carried (c) from 09-07, adopted. UPDATED pre-existing entity page ouroboros (librarian dedup hit: 2026-04-15 stub existed, counts unchanged Entities 78/total ~285); 'Agent OS' — local-first runtime layer turning nondeterministic agent work into replayable/observable/policy-bound execution contracts (star 5,793, MIT LICENSE body verified zero clauses, Python>=3.12, .py 1,425 + Rust crates, v0.54.0 2026-09-07, weekly+ release pace, open issues 83 incl PRs). Core loop Interview→Seed→Execute→Evaluate→Evolve: Socratic interview → Ambiguity score <=0.2 gate (Goal 40/Constraint 30/Success 30 weighted, blocks Seed creation, force-only bypass) → immutable Seed spec → Double Diamond execution → 3-stage eval (Mechanical $0 → Semantic → Multi-Model Consensus) → Wonder/Reflect evolution, ontology similarity >=0.95 convergence or 30-generation hard cap; `ooo ralph` persistent cross-session loop (EventStore replay, stateless step). 14 runtimes measured (Claude Code/Codex/Copilot/OpenCode/Hermes/Gemini/Kiro/Pi/OMP/Zcode/Goose/GJC/Antigravity/Grok Build) via orchestrator abstraction — contract layer on top of coding CLIs, not resident runtime (vs nanobot). Spec-first vs Continuous-Claude-v3 auto-accumulate / AHE evolve.sh; philosophy isomorphic to owner Self-Evolving Daily Loop numeric gates (Ambiguity gate ↔ 4-gates, similarity convergence ↔ freshness gate). (b) install rejected: dep surface (.py 1,425 + litellm, = mcp-scanner deferral axis) + PostHog telemetry default ON opt-out (TELEMETRY.md measured; contrast gortex zero) + README self-declared 'Native Windows is experimental'. Reviewed today (10): rejected redhat-et/ripwire (1321* repo context-map CLI+MCP, gortex-installed axis subset = roam-code/tokensave treatment), Softeria/ms-365-mcp-server (no MS365), orneryd/NornicDB (graph+vector DB infra overkill, knowledge-source split axis), neondatabase/mcp-server-neon (no Neon), soumatheusgomes/vibe-coding-toolkit (plugin/prompt aggregator, superpowers+53-skill overlap), cporter202/agentic-ai-apis (API catalog aggregator axis), karanb192/claude-code-hooks (hook marketplace, same axis as carried shanraisshan/claude-code-hooks), zenstory-ai/video-recap-skills (video editing domain), trailofbits/skills-curated (curated marketplace aggregator, trailofbits/skills precedent); carried (c) agenvoy/Agenvoy (489* updated-pass, Go single-binary self-hosted harness that writes/sandbox-tests/repairs its own tools — Self-Evolving adjacency, next knowledge candidate). Other carries open: (c) agenvoy (NEW), (c) open-multi-agent, (c) llm-wiki-compiler, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
+  },
+  {
+   "id": "wiki:agenvoy/Agenvoy",
+   "repo": "agenvoy/Agenvoy",
+   "date": "2026-09-09",
+   "mode": "knowledge",
+   "note": "carried (c) from 09-08, adopted. new entity page agenvoy; self-hosted AI agent harness in a single Go binary by pardnchiu (Taiwan, solo author; repo moved pardnchiu/agenvoy -> agenvoy/Agenvoy). Core loop: missing tool -> agent WRITES the tool -> sandbox-tests it -> auto-repairs on execution failure -> saves for reuse; tool library exposed as MCP server so Claude Code/Codex/OpenCode share and co-create sandboxed tools (demo: CC creates fetch_weather, Codex reuses + creates fetch_crypto_price, Agenvoy tests both). Also: one-sentence cron scheduler, long-term memory + knowledge notes, local file RAG, sub-agents, MCP client (official go-sdk live refresh), Tool Market, reasoning_guide(topic=...), run_command live stream to TUI/Web (127.0.0.1:17989 embedded dashboard), sensitive-path/out-of-home confirmation boundary, MCP OAuth via OS keychain, STT/TTS wake-word voice, Telegram/Discord outbound-only channels, BYOK multi-provider. star 493 (updated-pass, >= minStarsRecent 300), created 2026-02-05, pushed 09-08, v1.0.3 09-08 (active), open issues 1. License measured: AGPL-3.0 full text + dual commercial (COMMERCIAL.md) — knowledge-only fine, derivative/network-service builds must open-source. (b) install rejected: Windows native unsupported (WSL-only install path = wsl2-distro-manager rejection axis) + solo-author v1.0.x + AGPL dual-license caution. Owner-system contrast: auto tool generation vs Self-Evolving Daily Loop explicit adoption gates; same-axis compare nanobot (resident personal runtime) / gortex (Go single binary). Reviewed today (10): adopted agenvoy (carried); carried (c) NotASithLord/peerd (408* browser-native agent harness extension — tabs+WASM sandbox compute+P2P share, BYOK no-telemetry, computer-use-browser-agents concept adjacency); rejected Manavarya09/design-extract (website design-token extraction — TDS fixed token system + toss-tds-design/refactoring-ui overlap, star-velocity unverified), Hainrixz/the-architect (interview->blueprint plugin, superpowers brainstorming/writing-plans + apps-in-toss-mvp-prd overlap), AeternaLabsHQ/pullmd (URL/file->md self-hosted service, WebFetch overlap axis = duckduckgo-mcp precedent), dongbeixiaohuo/writing-agent (Chinese anti-AI-flavor writing domain + CN-model routing, no fit), bybren-llc/safe-agentic-workflow (SAFe enterprise process framework, solo-operator mismatch = agentUniverse knowledge-only axis), Masriyan/Claude-Code-CyberSecurity-Skill (SOC/offensive-security domain mismatch), GRCEngClub/claude-grc-engineering (no GRC need), jamditis/claude-skills-journalism (journalism domain), glebis/claude-skills (generic aggregator axis). Next 1st priority: (c) open-multi-agent/open-multi-agent (6880*, approval-gated actions + verifiable run records, Evidence&Truth adjacency, carried since 09-06). Other carries open: (c) peerd (NEW), (c) llm-wiki-compiler, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
   }
  ],
  "openFindings": []
