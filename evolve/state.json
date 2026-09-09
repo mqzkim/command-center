@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-08T22:35:44.009Z",
+ "lastRun": "2026-09-08T22:36:08.941Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -410,7 +410,18 @@
   "Masriyan/Claude-Code-CyberSecurity-Skill",
   "GRCEngClub/claude-grc-engineering",
   "jamditis/claude-skills-journalism",
-  "glebis/claude-skills"
+  "glebis/claude-skills",
+  "hashicorp/terraform-mcp-server",
+  "msrbuilds/elementor-mcp",
+  "domdomegg/airtable-mcp-server",
+  "jnMetaCode/ai-shortfilm-prompts",
+  "Tiberriver256/mcp-server-azure-devops",
+  "ombulabs/claude-code_rails-upgrade-skill",
+  "Desertbetweenalembic/website-downloader",
+  "openai/tunnel-client",
+  "zxkane/aws-skills",
+  "codeswithroh/tastemaker",
+  "obra/superpowers-chrome"
  ],
  "appliedImprovements": [
   {
@@ -632,6 +643,13 @@
    "date": "2026-09-09",
    "mode": "knowledge",
    "note": "carried (c) from 09-08, adopted. new entity page agenvoy; self-hosted AI agent harness in a single Go binary by pardnchiu (Taiwan, solo author; repo moved pardnchiu/agenvoy -> agenvoy/Agenvoy). Core loop: missing tool -> agent WRITES the tool -> sandbox-tests it -> auto-repairs on execution failure -> saves for reuse; tool library exposed as MCP server so Claude Code/Codex/OpenCode share and co-create sandboxed tools (demo: CC creates fetch_weather, Codex reuses + creates fetch_crypto_price, Agenvoy tests both). Also: one-sentence cron scheduler, long-term memory + knowledge notes, local file RAG, sub-agents, MCP client (official go-sdk live refresh), Tool Market, reasoning_guide(topic=...), run_command live stream to TUI/Web (127.0.0.1:17989 embedded dashboard), sensitive-path/out-of-home confirmation boundary, MCP OAuth via OS keychain, STT/TTS wake-word voice, Telegram/Discord outbound-only channels, BYOK multi-provider. star 493 (updated-pass, >= minStarsRecent 300), created 2026-02-05, pushed 09-08, v1.0.3 09-08 (active), open issues 1. License measured: AGPL-3.0 full text + dual commercial (COMMERCIAL.md) — knowledge-only fine, derivative/network-service builds must open-source. (b) install rejected: Windows native unsupported (WSL-only install path = wsl2-distro-manager rejection axis) + solo-author v1.0.x + AGPL dual-license caution. Owner-system contrast: auto tool generation vs Self-Evolving Daily Loop explicit adoption gates; same-axis compare nanobot (resident personal runtime) / gortex (Go single binary). Reviewed today (10): adopted agenvoy (carried); carried (c) NotASithLord/peerd (408* browser-native agent harness extension — tabs+WASM sandbox compute+P2P share, BYOK no-telemetry, computer-use-browser-agents concept adjacency); rejected Manavarya09/design-extract (website design-token extraction — TDS fixed token system + toss-tds-design/refactoring-ui overlap, star-velocity unverified), Hainrixz/the-architect (interview->blueprint plugin, superpowers brainstorming/writing-plans + apps-in-toss-mvp-prd overlap), AeternaLabsHQ/pullmd (URL/file->md self-hosted service, WebFetch overlap axis = duckduckgo-mcp precedent), dongbeixiaohuo/writing-agent (Chinese anti-AI-flavor writing domain + CN-model routing, no fit), bybren-llc/safe-agentic-workflow (SAFe enterprise process framework, solo-operator mismatch = agentUniverse knowledge-only axis), Masriyan/Claude-Code-CyberSecurity-Skill (SOC/offensive-security domain mismatch), GRCEngClub/claude-grc-engineering (no GRC need), jamditis/claude-skills-journalism (journalism domain), glebis/claude-skills (generic aggregator axis). Next 1st priority: (c) open-multi-agent/open-multi-agent (6880*, approval-gated actions + verifiable run records, Evidence&Truth adjacency, carried since 09-06). Other carries open: (c) peerd (NEW), (c) llm-wiki-compiler, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
+  },
+  {
+   "id": "wiki:open-multi-agent/open-multi-agent",
+   "repo": "open-multi-agent/open-multi-agent",
+   "date": "2026-09-10",
+   "mode": "knowledge",
+   "note": "carried (c) from 09-06, adopted. new entity page open-multi-agent; TypeScript multi-agent framework 'describe the goal, not the graph' — coordinator generates task DAG at runtime, deterministic scheduler (runTeam/runAgent/runTasks). star 6,896, MIT LICENSE body verified zero NC (copyright Shenzhen YuanASI Technology Co., Ltd.), created 2026-03-31, pushed 09-09, v1.18.0 09-04 weekly cadence, main author JackChen-me 433 commits (de facto solo + corporate maintenance). Core facts measured: durable approvals — 4 gate boundaries (onPlanReady/onApproval/onTaskDispatch/onToolCall), consequential suspend -> checkpoint store compareAndSet, first-wins immutable decisions, approval bound to requestHash (hash of what reviewer saw), resume across process restart; verifiable run records — buildExecutionReceipt() structural record of actual executed topology + routingDecision ID cross-link, evaluateGovernance() uses execution facts not model self-report labels, trace store + offline Run Viewer, append-only run journal opt-in; README self-limits: 'verifiable not tamper-evident', external agent backends (Claude Code/Codex/Gemini CLI on same DAG) run outside tool gate/sandbox/egress policy. Telemetry: 'no phone-home of any kind' (self-hosting.md), OTel separate opt-in. Deps thin: core 3 (anthropic sdk/openai/zod), MCP SDK peerDep. (b) install rejected: npm framework has no contact point with owner Claude Code harness flow (would require writing new runTeam app) + CI ubuntu-only Windows unverified + solo-author/CN corporate axis. Evidence&Truth adjacency: governance from execution facts == owner 'judgment from measurement only' gate principle; requestHash approval binding idea grafted. Reviewed today (11): adopted open-multi-agent (carried); carried (b/c) obra/superpowers-chrome (350* zero-dep Chrome DevTools control plugin by superpowers author — owner runs superpowers; check Windows + overlap with computer-use/orca browser stack); rejected hashicorp/terraform-mcp-server (no Terraform), msrbuilds/elementor-mcp (no WordPress), domdomegg/airtable-mcp-server (no Airtable), jnMetaCode/ai-shortfilm-prompts (video prompt domain = zenstory axis), Tiberriver256/mcp-server-azure-devops (no Azure DevOps), ombulabs/claude-code_rails-upgrade-skill (no Rails), Desertbetweenalembic/website-downloader (pixel-perfect site cloning copyright risk + star-begging), openai/tunnel-client (local MCP tunnel exposure to external cloud = devspace axis), zxkane/aws-skills (no AWS), codeswithroh/tastemaker (toss-tds-design/refactoring-ui/frontend-design overlap). Next 1st priority: (c) ussumant/llm-wiki-compiler (carried since 09-06, direct ~/.wiki adjacency). Other carries open: (b/c) superpowers-chrome (NEW), (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
   }
  ],
  "openFindings": []
