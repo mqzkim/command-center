@@ -176,6 +176,12 @@
    "improvement": "open-multi-agent/open-multi-agent 지식화(c) — ~/.wiki entity 신규(TS 멀티에이전트 프레임워크: coordinator 목표→task DAG, durable approvals 4경계·requestHash 승인 바인딩, execution receipt 실행 사실 기반 거버넌스, ★6,896 MIT; (b) 설치 기각: 하네스 접점 없음·CI ubuntu-only) · 트렌드 후보 11건 검토(이월 1: superpowers-chrome(b/c)·기각 10) · seenRepos 238→249",
    "commit": "9f3dc22",
    "gates": "4/4"
+  },
+  {
+   "date": "2026-09-11",
+   "improvement": "ussumant/llm-wiki-compiler 지식화(c) — ~/.wiki entity 신규(Karpathy LLM KB 패턴 명시 구현 Claude Code+Codex 플러그인: incremental 컴파일 파이프라인·coverage 태그·time-decay·staged adoption·/wiki-lint, ★321 MIT; (b) 설치 기각: 지식 원천 분열·철학 충돌·성숙도·Windows 미검증) · 트렌드 후보 11건 검토(이월 2: kordoc(b/c)·buoy(c)·기각 9) · seenRepos 249→260",
+   "commit": "06262d1",
+   "gates": "4/4"
   }
  ],
  "seenRepos": [
