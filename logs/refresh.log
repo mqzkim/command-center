@@ -1,37 +1,4 @@
-﻿[2026-09-05 18:03:40] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
-[2026-09-06 00:03:02] === refresh start (pid 51132, loop=False)
-[2026-09-06 00:03:22]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
-[2026-09-06 00:03:22] fetch-gh exit=0 (19.8s)
-[2026-09-06 00:03:40]   build-projects> dirs scanned 81 | items 95 | visible 71 | toss 20 (launch-status 17)
-[2026-09-06 00:03:40] build-projects exit=0 (18.0s)
-[2026-09-06 00:03:40]   build-galaxy> CONCEPTS 131
-[2026-09-06 00:03:40]   build-galaxy> RESEARCH 37
-[2026-09-06 00:03:40] build-galaxy exit=0 (0.4s)
-[2026-09-06 00:03:41]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
-[2026-09-06 00:03:41]   sync-wiki-kb> skipped: claude-os offline
-[2026-09-06 00:03:41] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
-[2026-09-06 06:03:02] === refresh start (pid 69864, loop=False)
-[2026-09-06 06:03:23]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
-[2026-09-06 06:03:23] fetch-gh exit=0 (21.3s)
-[2026-09-06 06:03:41]   build-projects> dirs scanned 81 | items 95 | visible 71 | toss 20 (launch-status 17)
-[2026-09-06 06:03:41] build-projects exit=0 (17.6s)
-[2026-09-06 06:03:41]   build-galaxy> CONCEPTS 131
-[2026-09-06 06:03:41]   build-galaxy> RESEARCH 37
-[2026-09-06 06:03:41] build-galaxy exit=0 (0.4s)
-[2026-09-06 06:03:42]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
-[2026-09-06 06:03:42]   sync-wiki-kb> skipped: claude-os offline
-[2026-09-06 06:03:42] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
-[2026-09-06 12:03:02] === refresh start (pid 61396, loop=False)
-[2026-09-06 12:03:22]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
-[2026-09-06 12:03:22] fetch-gh exit=0 (19.8s)
-[2026-09-06 12:03:39]   build-projects> dirs scanned 81 | items 95 | visible 71 | toss 20 (launch-status 17)
-[2026-09-06 12:03:39] build-projects exit=0 (17.4s)
-[2026-09-06 12:03:40]   build-galaxy> CONCEPTS 131
-[2026-09-06 12:03:40]   build-galaxy> RESEARCH 37
-[2026-09-06 12:03:40] build-galaxy exit=0 (0.2s)
-[2026-09-06 12:03:40]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
-[2026-09-06 12:03:40]   sync-wiki-kb> skipped: claude-os offline
-[2026-09-06 12:03:40] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+﻿[2026-09-06 12:03:40] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
 [2026-09-06 18:03:02] === refresh start (pid 42628, loop=False)
 [2026-09-06 18:03:22]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
 [2026-09-06 18:03:22] fetch-gh exit=0 (19.6s)
@@ -198,3 +165,36 @@
 [2026-09-10 06:03:50]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
 [2026-09-10 06:03:50]   sync-wiki-kb> skipped: claude-os offline
 [2026-09-10 06:03:50] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-09-10 12:03:02] === refresh start (pid 87268, loop=False)
+[2026-09-10 12:03:22]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
+[2026-09-10 12:03:22] fetch-gh exit=0 (20.1s)
+[2026-09-10 12:03:41]   build-projects> dirs scanned 103 | items 95 | visible 71 | toss 20 (launch-status 17)
+[2026-09-10 12:03:41] build-projects exit=0 (18.9s)
+[2026-09-10 12:03:41]   build-galaxy> CONCEPTS 131
+[2026-09-10 12:03:41]   build-galaxy> RESEARCH 39
+[2026-09-10 12:03:41] build-galaxy exit=0 (0.2s)
+[2026-09-10 12:03:42]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-09-10 12:03:42]   sync-wiki-kb> skipped: claude-os offline
+[2026-09-10 12:03:42] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-09-10 18:03:02] === refresh start (pid 74468, loop=False)
+[2026-09-10 18:03:28]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
+[2026-09-10 18:03:28] fetch-gh exit=0 (26.0s)
+[2026-09-10 18:03:47]   build-projects> dirs scanned 103 | items 95 | visible 71 | toss 20 (launch-status 17)
+[2026-09-10 18:03:47] build-projects exit=0 (18.6s)
+[2026-09-10 18:03:47]   build-galaxy> CONCEPTS 131
+[2026-09-10 18:03:47]   build-galaxy> RESEARCH 39
+[2026-09-10 18:03:47] build-galaxy exit=0 (0.4s)
+[2026-09-10 18:03:48]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-09-10 18:03:48]   sync-wiki-kb> skipped: claude-os offline
+[2026-09-10 18:03:48] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-09-11 00:03:02] === refresh start (pid 104416, loop=False)
+[2026-09-11 00:03:27]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, today-task, nailmap, conclusion-card, seoul-house-from-space, coffee, diamond-gather
+[2026-09-11 00:03:27] fetch-gh exit=0 (24.5s)
+[2026-09-11 00:03:45]   build-projects> dirs scanned 103 | items 95 | visible 71 | toss 20 (launch-status 17)
+[2026-09-11 00:03:45] build-projects exit=0 (17.8s)
+[2026-09-11 00:03:45]   build-galaxy> CONCEPTS 131
+[2026-09-11 00:03:45]   build-galaxy> RESEARCH 39
+[2026-09-11 00:03:45] build-galaxy exit=0 (0.4s)
+[2026-09-11 00:03:45]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-09-11 00:03:45]   sync-wiki-kb> skipped: claude-os offline
+[2026-09-11 00:03:45] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)

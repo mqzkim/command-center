@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-09T22:39:13.921Z",
+ "lastRun": "2026-09-10T22:35:36.174Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -427,7 +427,18 @@
   "openai/tunnel-client",
   "zxkane/aws-skills",
   "codeswithroh/tastemaker",
-  "obra/superpowers-chrome"
+  "obra/superpowers-chrome",
+  "chrisryugj/korean-law-mcp",
+  "tavily-ai/tavily-mcp",
+  "chrisryugj/kordoc",
+  "us/crw",
+  "Buoy-gg/buoy",
+  "use-novamira/novamira",
+  "resend/resend-mcp",
+  "AlexGladkov/claude-in-mobile",
+  "S1N6H/pentest-harness",
+  "AlpacaLabsLLC/skills-for-architects",
+  "starbaser/ccproxy"
  ],
  "appliedImprovements": [
   {
@@ -656,6 +667,13 @@
    "date": "2026-09-10",
    "mode": "knowledge",
    "note": "carried (c) from 09-06, adopted. new entity page open-multi-agent; TypeScript multi-agent framework 'describe the goal, not the graph' — coordinator generates task DAG at runtime, deterministic scheduler (runTeam/runAgent/runTasks). star 6,896, MIT LICENSE body verified zero NC (copyright Shenzhen YuanASI Technology Co., Ltd.), created 2026-03-31, pushed 09-09, v1.18.0 09-04 weekly cadence, main author JackChen-me 433 commits (de facto solo + corporate maintenance). Core facts measured: durable approvals — 4 gate boundaries (onPlanReady/onApproval/onTaskDispatch/onToolCall), consequential suspend -> checkpoint store compareAndSet, first-wins immutable decisions, approval bound to requestHash (hash of what reviewer saw), resume across process restart; verifiable run records — buildExecutionReceipt() structural record of actual executed topology + routingDecision ID cross-link, evaluateGovernance() uses execution facts not model self-report labels, trace store + offline Run Viewer, append-only run journal opt-in; README self-limits: 'verifiable not tamper-evident', external agent backends (Claude Code/Codex/Gemini CLI on same DAG) run outside tool gate/sandbox/egress policy. Telemetry: 'no phone-home of any kind' (self-hosting.md), OTel separate opt-in. Deps thin: core 3 (anthropic sdk/openai/zod), MCP SDK peerDep. (b) install rejected: npm framework has no contact point with owner Claude Code harness flow (would require writing new runTeam app) + CI ubuntu-only Windows unverified + solo-author/CN corporate axis. Evidence&Truth adjacency: governance from execution facts == owner 'judgment from measurement only' gate principle; requestHash approval binding idea grafted. Reviewed today (11): adopted open-multi-agent (carried); carried (b/c) obra/superpowers-chrome (350* zero-dep Chrome DevTools control plugin by superpowers author — owner runs superpowers; check Windows + overlap with computer-use/orca browser stack); rejected hashicorp/terraform-mcp-server (no Terraform), msrbuilds/elementor-mcp (no WordPress), domdomegg/airtable-mcp-server (no Airtable), jnMetaCode/ai-shortfilm-prompts (video prompt domain = zenstory axis), Tiberriver256/mcp-server-azure-devops (no Azure DevOps), ombulabs/claude-code_rails-upgrade-skill (no Rails), Desertbetweenalembic/website-downloader (pixel-perfect site cloning copyright risk + star-begging), openai/tunnel-client (local MCP tunnel exposure to external cloud = devspace axis), zxkane/aws-skills (no AWS), codeswithroh/tastemaker (toss-tds-design/refactoring-ui/frontend-design overlap). Next 1st priority: (c) ussumant/llm-wiki-compiler (carried since 09-06, direct ~/.wiki adjacency). Other carries open: (b/c) superpowers-chrome (NEW), (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
+  },
+  {
+   "id": "wiki:ussumant/llm-wiki-compiler",
+   "repo": "ussumant/llm-wiki-compiler",
+   "date": "2026-09-11",
+   "mode": "knowledge",
+   "note": "carried (c) from 09-06, adopted. new entity page llm-wiki-compiler; Claude Code + Codex compatible plugin v2.1 compiling markdown knowledge files into a topic wiki — the most direct Claude Code plugin implementation of Karpathy's LLM Knowledge Base pattern (README quotes the tweet verbatim). star 321, forks 33, open issues 1, created 2026-04-04, pushed 2026-08-21 (~3wk idle), releases 0/tags 0, 32 commits (ussumant 31/reoxb 1 = de facto solo), LICENSE body measured = standard MIT (c) 2026 Sumant, zero NC (no API-body divergence). Structure: 12 md commands + SKILL.md + 4 md adapters + 2 bash SessionStart hooks + zero-dep Node visualize server; no requirements.txt/package.json; compilation done by host agent LLM (no API keys/BYOK); only external dep = /fetch-bookmarks delegating to Field Theory CLI npm. Pipeline: raw md -> /wiki-init (sampling -> article structure proposal/approval) -> /wiki-compile (incremental batch) | /wiki-ingest (single interactive) | /wiki-capture (URL, web/YouTube/X adapters) -> INDEX.md + topics/ + concepts/ + schema.md; patterns spanning 3+ topics auto-promoted to concept articles. Grafted ideas: per-section coverage tags (high 5+/medium 2-4/low->raw fallback; isomorphic to owner '추정:' prefix but machine-generated numeric), time-decay (18mo warning, [as of] tags, newer-source-wins — Temporal Truth Contract adjacency), staged adoption 3-stage SessionStart hook (staging->recommended->primary, zero CLAUDE.md edits — most refined non-destructive-parallel pattern), /wiki-lint items match owner lint principles verbatim, /wiki-migrate startup-read replacement report, v2.0 codebase mode (knowledge-file synthesis, not AST — self-distinguishes from DeepWiki). Cost claims (self-report): 1,183 files -> 14 articles 84x compression, session 79K->8.5K tokens -89%, initial compile ~880K tokens ~$2.60. (b) install rejected: running it on ~/.wiki would overwrite manually-curated original knowledge with auto-synthesized derivative (knowledge-source split = engram rejection axis) + philosophy clash (LLM owns wiki vs owner explicit curation via wiki-librarian dedup gate; wiki is original non-regenerable knowledge, not source-derived cache) + maturity (321 stars/solo/0 releases/no CI/3wk idle) + hardcoded bash SessionStart hook unverified on Windows (deploy-protocol.ps1 exists but hooks are bash-only). Reviewed today (11): adopted llm-wiki-compiler (carried); carried (b/c) chrisryugj/kordoc (1,812* HWP/HWPX/PDF/Office -> Markdown CLI+MCP with form filling & old-new diff — Korean doc processing is a real capability gap, needs measurement), (c) Buoy-gg/buoy (691* React Native in-app devtools + MCP, 15 tools + desktop dashboard — Apps in Toss RN adjacency = agent-device axis); rejected chrisryugj/korean-law-mcp (statute lookup no recurring need), tavily-ai/tavily-mcp (commercial SaaS search, builtin WebSearch overlap = duckduckgo/apify axis), us/crw (scraper, WebFetch overlap axis), use-novamira/novamira (no WordPress), resend/resend-mcp (no Resend + Gmail connector overlap), AlexGladkov/claude-in-mobile (subset of agent-device knowledge axis), S1N6H/pentest-harness (offensive security domain mismatch = Masriyan axis), AlpacaLabsLLC/skills-for-architects (architecture/real-estate domain), starbaser/ccproxy (request-intercepting proxy, ~/.claude harness-injection axis = Continuous-Claude-v3/gentle-ai rejection). Next 1st priority: (b/c) obra/superpowers-chrome (carried since 09-10 — owner runs superpowers; check Windows + overlap with computer-use/orca browser stack). Other carries open: (b/c) kordoc (NEW), (c) buoy (NEW), (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
   }
  ],
  "openFindings": []
