@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-10T22:30:42.189Z",
+ "generatedAt": "2026-09-11T22:30:49.221Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,132 +31,99 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 213,
+ "scanned": 208,
  "dedup": {
-  "wikiCatalog": 3,
+  "wikiCatalog": 2,
   "alreadySeen": 192
  },
  "candidates": [
   {
-   "description": "법제처 국가법령정보를 LLM에서 바로 조회하는 MCP 서버. 법령·판례·조례 검색과 인용 검증 | MCP server for Korean law — search statutes, precedents, and ordinances, and verify citations",
-   "fullName": "chrisryugj/korean-law-mcp",
-   "stargazersCount": 2572,
-   "updatedAt": "2026-09-10T20:31:07Z",
-   "url": "https://github.com/chrisryugj/korean-law-mcp",
+   "description": "🚀 Self-hosted TikTok & Douyin scraper and no-watermark video downloader — async REST API, MCP server, CLI and web console for posts, profiles, comments and playlists. Self-healing identity pool, PostgreSQL archive, one docker compose up. 抖音、TikTok 数据采集与无水印视频下载 API，自托管，支持 MCP 调用与 Docker 一键部署。",
+   "fullName": "Evil0ctal/Douyin_TikTok_Download_API",
+   "stargazersCount": 20073,
+   "updatedAt": "2026-09-11T18:55:32Z",
+   "url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server"
+  },
+  {
+   "description": "Ghidra MCP Server — 200+ MCP tools for AI-powered reverse engineering. GUI plugin + headless server, lazy tool loading, convention enforcement, batch operations, Ghidra Server integration, and Docker deployment.",
+   "fullName": "bethington/ghidra-mcp",
+   "stargazersCount": 3761,
+   "updatedAt": "2026-09-11T21:02:03Z",
+   "url": "https://github.com/bethington/ghidra-mcp",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Production ready MCP server with real-time search, extract, map & crawl.",
-   "fullName": "tavily-ai/tavily-mcp",
-   "stargazersCount": 2378,
-   "updatedAt": "2026-09-10T19:42:22Z",
-   "url": "https://github.com/tavily-ai/tavily-mcp",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "모두 파싱해버리겠다 — HWP·HWPX·PDF·Office 문서를 Markdown으로. 양식 자동 채우기와 신구대조를 갖춘 CLI·MCP 서버 | Convert Korean documents (HWP, HWPX, PDF, Office) to Markdown — CLI and MCP server with form filling and diff",
-   "fullName": "chrisryugj/kordoc",
-   "stargazersCount": 1812,
-   "updatedAt": "2026-09-10T20:32:02Z",
-   "url": "https://github.com/chrisryugj/kordoc",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "Fast, lightweight Firecrawl/Tavily alternative in Rust. Web scraper, crawler & search API with MCP server for AI agents. Drop-in Firecrawl-compatible API (/scrape, /crawl, /search). 2.3x faster than Tavily, 1.5x faster than Firecrawl in 1K-URL benchmarks. 6 MB RAM, single binary. Self-host or use managed cloud.",
-   "fullName": "us/crw",
-   "stargazersCount": 970,
-   "updatedAt": "2026-09-10T22:03:49Z",
-   "url": "https://github.com/us/crw",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "Devtools that live in your React Native app. And answer to your agent. 15 tools · desktop dashboard · MCP server for AI agents",
-   "fullName": "Buoy-gg/buoy",
-   "stargazersCount": 691,
-   "updatedAt": "2026-09-10T21:45:56Z",
-   "url": "https://github.com/Buoy-gg/buoy",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "MCP server that gives AI agents full access to WordPress through PHP execution and filesystem operations",
-   "fullName": "use-novamira/novamira",
-   "stargazersCount": 663,
-   "updatedAt": "2026-09-10T18:57:40Z",
-   "url": "https://github.com/use-novamira/novamira",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "The official MCP server to send emails and interact with Resend",
-   "fullName": "resend/resend-mcp",
-   "stargazersCount": 568,
-   "updatedAt": "2026-09-10T19:30:48Z",
-   "url": "https://github.com/resend/resend-mcp",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "MCP server for mobile and desktop automation — Android (via ADB), iOS Simulator (via simctl), and Desktop (Compose Multiplatform). Like Claude in Chrome but for mobile devices and desktop apps",
-   "fullName": "AlexGladkov/claude-in-mobile",
-   "stargazersCount": 371,
-   "updatedAt": "2026-09-10T22:10:15Z",
-   "url": "https://github.com/AlexGladkov/claude-in-mobile",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "Pentest Harness — Heaven for Hackers. A self-hosted AI agent harness for authorized pentests, bug bounty, security labs, and CTFs. Bring your own AI model API; sessions stay local.",
-   "fullName": "S1N6H/pentest-harness",
-   "stargazersCount": 352,
-   "updatedAt": "2026-09-10T18:15:07Z",
-   "url": "https://github.com/S1N6H/pentest-harness",
-   "labels": [
-    "harness"
-   ],
-   "query": "ai agent harness (updated)"
-  },
-  {
-   "description": "Claude Code skills for architecture, real estate, and workplace strategy. Type /skill-name and go.",
-   "fullName": "AlpacaLabsLLC/skills-for-architects",
-   "stargazersCount": 351,
-   "updatedAt": "2026-09-10T18:31:57Z",
-   "url": "https://github.com/AlpacaLabsLLC/skills-for-architects",
+   "description": "AI agent skill for end-to-end hotel search and booking—compare live rates across leading OTAs and hotel suppliers, verify availability, book stays, and manage reservations, cancellations, and payments via the TourMind API.",
+   "fullName": "tourmind-com/Tourmind-Booking-Skills",
+   "stargazersCount": 907,
+   "updatedAt": "2026-09-11T22:12:45Z",
+   "url": "https://github.com/tourmind-com/Tourmind-Booking-Skills",
    "labels": [
     "skills"
    ],
-   "query": "claude code skills (updated)"
+   "query": "ai agent skills"
   },
   {
-   "description": "Build mods for Claude Code: Hook any request, modify any response, /model \"with-your-custom-model\", intelligent model routing using your logic or ours",
-   "fullName": "starbaser/ccproxy",
-   "stargazersCount": 346,
-   "updatedAt": "2026-09-09T06:44:07Z",
-   "url": "https://github.com/starbaser/ccproxy",
+   "description": "An MCP server to run AppleScript and JXA (JavaScript for Automation) to macOS.",
+   "fullName": "steipete/macos-automator-mcp",
+   "stargazersCount": 882,
+   "updatedAt": "2026-09-11T21:23:09Z",
+   "url": "https://github.com/steipete/macos-automator-mcp",
    "labels": [
-    "harness"
+    "mcp"
    ],
-   "query": "claude code hooks (updated)"
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "An MCP server for interacting with Sentry via LLMs.",
+   "fullName": "getsentry/sentry-mcp",
+   "stargazersCount": 847,
+   "updatedAt": "2026-09-11T19:49:44Z",
+   "url": "https://github.com/getsentry/sentry-mcp",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "Automate real Microsoft Excel with AI via MCP Server or CLI — Power Query, DAX, VBA, PivotTables, charts, and 326 operations.",
+   "fullName": "sbroenne/mcp-server-excel",
+   "stargazersCount": 682,
+   "updatedAt": "2026-09-11T19:47:48Z",
+   "url": "https://github.com/sbroenne/mcp-server-excel",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "Kindly Web Search MCP Server: Web search + robust content retrieval for AI coding tools (Claude Code, Codex, Cursor, GitHub Copilot, Gemini, etc.) and AI agents (Claude Desktop, OpenClaw, Hermes, etc.). Supports Serper, Tavily, and SearXNG.",
+   "fullName": "Shelpuk-AI-Technology-Consulting/kindly-web-search-mcp-server",
+   "stargazersCount": 385,
+   "updatedAt": "2026-09-11T19:20:11Z",
+   "url": "https://github.com/Shelpuk-AI-Technology-Consulting/kindly-web-search-mcp-server",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "Correction-first persistent memory for AI agents. MCP server + SDK + CLI. Compounds across sessions.",
+   "fullName": "Goldentrii/AgentRecall-X",
+   "stargazersCount": 371,
+   "updatedAt": "2026-09-11T21:48:26Z",
+   "url": "https://github.com/Goldentrii/AgentRecall-X",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
   },
   {
    "description": "23 Claude Code plugins: TDD enforcement hooks, git/PR workflows, spec-driven development, code review, project lifecycle, fix-from-error, maintenance automation, context optimization, research, and multi-LLM delegation. 186 skills, 128 commands, 54 agents.",
@@ -173,7 +140,7 @@
    "description": "Tableau's official MCP Server. Helping agents see and understand data.",
    "fullName": "tableau/tableau-mcp",
    "stargazersCount": 337,
-   "updatedAt": "2026-09-10T20:52:41Z",
+   "updatedAt": "2026-09-11T22:00:55Z",
    "url": "https://github.com/tableau/tableau-mcp",
    "labels": [
     "mcp"
@@ -192,6 +159,17 @@
    "query": "claude code hooks (updated)"
   },
   {
+   "description": "Claude Code plugin: run the Antigravity CLI (Gemini) as a collaborating sub-agent with intelligent model routing across the SDLC. Community project; not affiliated with Google/Anthropic.",
+   "fullName": "yuting0624/antigravity-for-claude-code",
+   "stargazersCount": 329,
+   "updatedAt": "2026-09-11T21:15:52Z",
+   "url": "https://github.com/yuting0624/antigravity-for-claude-code",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code plugin (updated)"
+  },
+  {
    "description": "Lightweight AI Agent Harness for agentic coding: let strong models explore while humans steer with minimal specs, checkpoints, approval, validation, and reverse sync.",
    "fullName": "huisezhiyin/sdd-riper",
    "stargazersCount": 324,
@@ -203,33 +181,11 @@
    "query": "ai agent harness (updated)"
   },
   {
-   "description": "Claude Code plugin: run the Antigravity CLI (Gemini) as a collaborating sub-agent with intelligent model routing across the SDLC. Community project; not affiliated with Google/Anthropic.",
-   "fullName": "yuting0624/antigravity-for-claude-code",
-   "stargazersCount": 322,
-   "updatedAt": "2026-09-10T13:57:49Z",
-   "url": "https://github.com/yuting0624/antigravity-for-claude-code",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin (updated)"
-  },
-  {
    "description": "StatsPAI is the first Agent-native Python library for causal inference and applied econometrics — unified API, broad cross-method coverage, structured result objects, machine-readable schemas, Skills, an MCP server, and R/Stata parity validation.",
    "fullName": "brycewang-stanford/StatsPAI",
-   "stargazersCount": 315,
-   "updatedAt": "2026-09-10T21:26:05Z",
+   "stargazersCount": 316,
+   "updatedAt": "2026-09-11T20:01:29Z",
    "url": "https://github.com/brycewang-stanford/StatsPAI",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "Apollo MCP Server",
-   "fullName": "apollographql/apollo-mcp-server",
-   "stargazersCount": 308,
-   "updatedAt": "2026-09-10T19:26:50Z",
-   "url": "https://github.com/apollographql/apollo-mcp-server",
    "labels": [
     "mcp"
    ],

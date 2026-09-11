@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-10T22:35:36.174Z",
+ "lastRun": "2026-09-10T22:40:19.255Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -444,7 +444,20 @@
   "AlexGladkov/claude-in-mobile",
   "S1N6H/pentest-harness",
   "AlpacaLabsLLC/skills-for-architects",
-  "starbaser/ccproxy"
+  "starbaser/ccproxy",
+  "Evil0ctal/Douyin_TikTok_Download_API",
+  "bethington/ghidra-mcp",
+  "tourmind-com/Tourmind-Booking-Skills",
+  "steipete/macos-automator-mcp",
+  "getsentry/sentry-mcp",
+  "sbroenne/mcp-server-excel",
+  "Shelpuk-AI-Technology-Consulting/kindly-web-search-mcp-server",
+  "Goldentrii/AgentRecall-X",
+  "athola/claude-night-market",
+  "tableau/tableau-mcp",
+  "win4r/claude-code-hooks",
+  "yuting0624/antigravity-for-claude-code",
+  "huisezhiyin/sdd-riper"
  ],
  "appliedImprovements": [
   {
@@ -680,6 +693,16 @@
    "date": "2026-09-11",
    "mode": "knowledge",
    "note": "carried (c) from 09-06, adopted. new entity page llm-wiki-compiler; Claude Code + Codex compatible plugin v2.1 compiling markdown knowledge files into a topic wiki — the most direct Claude Code plugin implementation of Karpathy's LLM Knowledge Base pattern (README quotes the tweet verbatim). star 321, forks 33, open issues 1, created 2026-04-04, pushed 2026-08-21 (~3wk idle), releases 0/tags 0, 32 commits (ussumant 31/reoxb 1 = de facto solo), LICENSE body measured = standard MIT (c) 2026 Sumant, zero NC (no API-body divergence). Structure: 12 md commands + SKILL.md + 4 md adapters + 2 bash SessionStart hooks + zero-dep Node visualize server; no requirements.txt/package.json; compilation done by host agent LLM (no API keys/BYOK); only external dep = /fetch-bookmarks delegating to Field Theory CLI npm. Pipeline: raw md -> /wiki-init (sampling -> article structure proposal/approval) -> /wiki-compile (incremental batch) | /wiki-ingest (single interactive) | /wiki-capture (URL, web/YouTube/X adapters) -> INDEX.md + topics/ + concepts/ + schema.md; patterns spanning 3+ topics auto-promoted to concept articles. Grafted ideas: per-section coverage tags (high 5+/medium 2-4/low->raw fallback; isomorphic to owner '추정:' prefix but machine-generated numeric), time-decay (18mo warning, [as of] tags, newer-source-wins — Temporal Truth Contract adjacency), staged adoption 3-stage SessionStart hook (staging->recommended->primary, zero CLAUDE.md edits — most refined non-destructive-parallel pattern), /wiki-lint items match owner lint principles verbatim, /wiki-migrate startup-read replacement report, v2.0 codebase mode (knowledge-file synthesis, not AST — self-distinguishes from DeepWiki). Cost claims (self-report): 1,183 files -> 14 articles 84x compression, session 79K->8.5K tokens -89%, initial compile ~880K tokens ~$2.60. (b) install rejected: running it on ~/.wiki would overwrite manually-curated original knowledge with auto-synthesized derivative (knowledge-source split = engram rejection axis) + philosophy clash (LLM owns wiki vs owner explicit curation via wiki-librarian dedup gate; wiki is original non-regenerable knowledge, not source-derived cache) + maturity (321 stars/solo/0 releases/no CI/3wk idle) + hardcoded bash SessionStart hook unverified on Windows (deploy-protocol.ps1 exists but hooks are bash-only). Reviewed today (11): adopted llm-wiki-compiler (carried); carried (b/c) chrisryugj/kordoc (1,812* HWP/HWPX/PDF/Office -> Markdown CLI+MCP with form filling & old-new diff — Korean doc processing is a real capability gap, needs measurement), (c) Buoy-gg/buoy (691* React Native in-app devtools + MCP, 15 tools + desktop dashboard — Apps in Toss RN adjacency = agent-device axis); rejected chrisryugj/korean-law-mcp (statute lookup no recurring need), tavily-ai/tavily-mcp (commercial SaaS search, builtin WebSearch overlap = duckduckgo/apify axis), us/crw (scraper, WebFetch overlap axis), use-novamira/novamira (no WordPress), resend/resend-mcp (no Resend + Gmail connector overlap), AlexGladkov/claude-in-mobile (subset of agent-device knowledge axis), S1N6H/pentest-harness (offensive security domain mismatch = Masriyan axis), AlpacaLabsLLC/skills-for-architects (architecture/real-estate domain), starbaser/ccproxy (request-intercepting proxy, ~/.claude harness-injection axis = Continuous-Claude-v3/gentle-ai rejection). Next 1st priority: (b/c) obra/superpowers-chrome (carried since 09-10 — owner runs superpowers; check Windows + overlap with computer-use/orca browser stack). Other carries open: (b/c) kordoc (NEW), (c) buoy (NEW), (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx"
+  },
+  {
+   "id": "skill:obra/superpowers-chrome",
+   "repo": "obra/superpowers-chrome",
+   "date": "2026-09-12",
+   "mode": "skill",
+   "files": [
+    "~/.claude/skills/superpowers-chrome/"
+   ],
+   "note": "carried (b/c) from 09-10, adopted (b) skill-mode-only. Chrome DevTools Protocol WebSocket direct control plugin by Jesse Vincent (obra, superpowers author) — external-Chrome page-level automation gap filler (computer-use=OS-window level, orca=embedded browser only; harness guidance said 'Playwright or CDP' with no tool installed). star 350, MIT LICENSE body verified (c) 2025 Jesse Vincent zero NC, pushed 2026-08-07 = v3.0.5 release (36d idle), commits 330 obra 311 (94.2% de facto solo), releases 6, CI none, plugin.json self-declares 'BETA: VERY LIGHTLY TESTED', Windows open issues 0 (only OS issue #40 is macOS), README 'Windows Verification (2025-11-07)' section. Install conditions honored: skills/browsing/ 51 files 314KB copied to ~/.claude/skills/superpowers-chrome/ (no marketplace/plugin install), MCP mode NOT registered (~/.claude.json superpowers-chrome 0 hits; use_browser tool unavailable by design — surface minimization, mcp-scanner gate required before any future MCP registration), settings.json SHA256 identical before/after (9EE001C1...A1427A). frontmatter yaml.safe_load OK name=browsing no colon trap. skill-audit --no-llm 1st scan 100/100 CRITICAL 9 findings -> all 9 manually verified false positives (LP1 env=CHROME_WS_HOST local override, MP3 x2=comments misread, PE3=--use-mock-keychain standard Chrome flag, SC2=127.0.0.1 CDP curl, etc.) -> .skillspector-baseline.local.json with reasons -> rescan 0/100 SAFE exit 0 suppressed 9. Smoke (Windows native node v24.14.1): start Chrome/152.0.7977.84 CDP 127.0.0.1:9222, example.com new/tabs, extract h1 'Example Domain', markdown '# Example Domain', screenshot PNG 12,877B, close/stop zero residual processes. External host hardcoding grep 0 (127.0.0.1 only x3). Gotcha recorded: SKILL.md body teaches MCP use_browser (allowed-tools mcp__chrome__use_browser) but usable path here is CLI `node ~/.claude/skills/superpowers-chrome/chrome-ws <cmd>` per COMMANDLINE-USAGE.md. Reviewed today (13): adopted superpowers-chrome (carried, not in today's candidates); carried (c) yuting0624/antigravity-for-claude-code (329* MIT pushed 09-11 active — Gemini CLI as collaborating sub-agent w/ model routing, cross-model delegation axis = claudex-loop adjacency); rejected Evil0ctal/Douyin_TikTok_Download_API (no-watermark scraper copyright/policy risk + WebFetch overlap), bethington/ghidra-mcp (RE domain axis = GhidraMCP/ida-mcp-rs/x64dbg precedent), tourmind-com/Tourmind-Booking-Skills (hotel booking commercial API domain), steipete/macos-automator-mcp (macOS-only axis = iMCP/Peekaboo), getsentry/sentry-mcp (no Sentry), sbroenne/mcp-server-excel (no Excel automation touchpoint in owner workflow), kindly-web-search-mcp-server (builtin WebSearch overlap axis = duckduckgo/tavily/apify), Goldentrii/AgentRecall-X (memory-store split axis = engram/Storybloq), athola/claude-night-market (aggregator mega-bundle axis, superpowers+53-skill overlap), tableau/tableau-mcp (no Tableau), win4r/claude-code-hooks (empty description + hooks aggregator axis = karanb192/shanraisshan), huisezhiyin/sdd-riper (license null measured via API — no license = unusable, despite AHE-adjacent harness axis). Other carries open: (c) antigravity-for-claude-code (NEW), (b/c) kordoc, (c) buoy, (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (b/c) chrisryugj/kordoc (carried since 09-11 — Korean doc processing HWP/HWPX capability gap)."
   }
  ],
  "openFindings": []

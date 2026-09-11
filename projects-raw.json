@@ -1,48 +1,7 @@
 {
-  "generatedAt": "2026-09-10T15:03:27.105Z",
+  "generatedAt": "2026-09-11T21:03:25.771Z",
   "source": "gh api graphql (6 calls, 44 repos: 42 non-fork + 2 fork; fetch-gh.mjs)",
   "repos": [
-    {
-      "name": "command-center",
-      "url": "https://github.com/mqzkim/command-center",
-      "description": null,
-      "isPrivate": false,
-      "isFork": false,
-      "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-09-09T22:40:17Z",
-      "createdAt": "2026-08-22T15:02:39Z",
-      "stargazerCount": 0,
-      "openIssues": 0,
-      "defaultBranch": "master",
-      "recentCommits": [
-        {
-          "date": "2026-09-09",
-          "message": "evolve(2026-09-10): gates G3/G4 증거 기입 (메인 9f3dc22·ledger bfd8ba0)"
-        },
-        {
-          "date": "2026-09-09",
-          "message": "evolve(2026-09-10): ledger commit sha 9f3dc22"
-        },
-        {
-          "date": "2026-09-09",
-          "message": "evolve(2026-09-10): open-multi-agent/open-multi-agent 지식화(c) — ~/.wik…"
-        },
-        {
-          "date": "2026-09-08",
-          "message": "evolve(2026-09-09): ledger commit sha cb8a263"
-        },
-        {
-          "date": "2026-09-08",
-          "message": "evolve(2026-09-09): agenvoy/Agenvoy 지식화(c) — ~/.wiki entity 신규(Go 단일 …"
-        }
-      ],
-      "commitsLast30d": 81,
-      "isAppsInToss": false,
-      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
-      "category": "side-project",
-      "significance": 4,
-      "significanceReason": "최근 7일 내 푸시, 30일 커밋 81"
-    },
     {
       "name": "app-in-toss",
       "url": "https://github.com/mqzkim/app-in-toss",
@@ -50,10 +9,10 @@
       "isPrivate": true,
       "isFork": false,
       "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-09-09T18:18:40Z",
+      "pushedAt": "2026-09-11T17:33:34Z",
       "createdAt": "2026-07-04T07:52:06Z",
       "stargazerCount": 0,
-      "openIssues": 39,
+      "openIssues": 59,
       "defaultBranch": "main",
       "recentCommits": [
         {
@@ -93,20 +52,20 @@
         "docs/reference"
       ],
       "openIssueTitles": [
-        "[pet-rock][BL-005] 돌봄 CTA 문구 실험",
-        "[pet-rock][BL-004] 서버 운영 통계",
-        "[pet-rock][BL-003] 서버 기반 광고 중복 검증",
-        "[pet-rock][BL-002] 기기 간 기록 복구",
-        "[pet-rock][BL-001] 서버 시간 검증",
-        "[coffee-cant-wait][BL-007] 커피 브랜드 협업",
-        "[coffee-cant-wait][BL-006] 주간 공동 원두 목표",
-        "[coffee-cant-wait][BL-005] 쥐 바리스타 한정 스킨",
-        "[coffee-cant-wait][BL-004] 친구 초대 원두",
-        "[coffee-cant-wait][BL-003] 연속 출석 인앱 보너스"
+        "[diamond-get][BL-017] 사용자 간 랭킹",
+        "[diamond-get][BL-016] 번들 코드 스플리팅",
+        "[diamond-get][BL-015] Sentry 연동",
+        "[diamond-get][BL-014] 광고 시간당 rate-limit 정교화",
+        "[diamond-get][BL-013] 관리자 리포트",
+        "[diamond-get][BL-012] 글로벌 일일 예산 자동 제어",
+        "[diamond-get][BL-011] 사용자 해시와 RLS의 추가 결속",
+        "[diamond-get][BL-010] 서버사이드 프로모션 지급(mTLS)",
+        "[diamond-get][BL-009] Lottie 채굴 연출",
+        "[diamond-get][BL-008] 오늘의 광산 테마"
       ],
       "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
       "significance": 4,
-      "significanceReason": "최근 7일 내 푸시, 30일 커밋 213, 앱인토스, 오픈 이슈 39"
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 213, 앱인토스, 오픈 이슈 59"
     },
     {
       "name": "llm-wiki",
@@ -115,39 +74,80 @@
       "isPrivate": true,
       "isFork": false,
       "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-09-06T15:25:36Z",
+      "pushedAt": "2026-09-11T17:32:24Z",
       "createdAt": "2026-04-06T21:42:42Z",
       "stargazerCount": 0,
       "openIssues": 0,
       "defaultBranch": "master",
       "recentCommits": [
         {
-          "date": "2026-09-06",
-          "message": "knowledge: update naver adpost submission and statistics collection"
+          "date": "2026-09-11",
+          "message": "knowledge: add local-self-hosted-ci-boundary"
         },
         {
-          "date": "2026-09-06",
-          "message": "knowledge: add naver adpost revenue observation loop"
+          "date": "2026-09-11",
+          "message": "knowledge: add serial-app-review-completion"
         },
         {
-          "date": "2026-09-03",
-          "message": "knowledge: generalize monetization review workflow"
+          "date": "2026-09-11",
+          "message": "knowledge: fix privacy-review-log-line-endings"
         },
         {
-          "date": "2026-09-03",
-          "message": "knowledge: record blogger adsense review submission"
+          "date": "2026-09-11",
+          "message": "knowledge: update toss-sdk-privacy-scope"
         },
         {
-          "date": "2026-09-03",
-          "message": "knowledge: record blogger review readiness proof"
+          "date": "2026-09-11",
+          "message": "knowledge: update toss-rewarded-test-id-and-native-evidence"
         }
       ],
-      "commitsLast30d": 63,
+      "commitsLast30d": 72,
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "knowledge-wiki",
       "significance": 4,
-      "significanceReason": "최근 7일 내 푸시, 30일 커밋 63"
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 72"
+    },
+    {
+      "name": "command-center",
+      "url": "https://github.com/mqzkim/command-center",
+      "description": null,
+      "isPrivate": false,
+      "isFork": false,
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-09-10T22:39:54Z",
+      "createdAt": "2026-08-22T15:02:39Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "master",
+      "recentCommits": [
+        {
+          "date": "2026-09-10",
+          "message": "evolve(2026-09-11): ledger commit sha 06262d1 + gates G3/G4 증거 기입"
+        },
+        {
+          "date": "2026-09-10",
+          "message": "evolve(2026-09-11): ussumant/llm-wiki-compiler 지식화(c) — ~/.wiki entit…"
+        },
+        {
+          "date": "2026-09-09",
+          "message": "evolve(2026-09-10): gates G3/G4 증거 기입 (메인 9f3dc22·ledger bfd8ba0)"
+        },
+        {
+          "date": "2026-09-09",
+          "message": "evolve(2026-09-10): ledger commit sha 9f3dc22"
+        },
+        {
+          "date": "2026-09-09",
+          "message": "evolve(2026-09-10): open-multi-agent/open-multi-agent 지식화(c) — ~/.wik…"
+        }
+      ],
+      "commitsLast30d": 83,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "side-project",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 83"
     },
     {
       "name": "hermes-shared-knowledge",
@@ -188,7 +188,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 4,
-      "significanceReason": "최근 7일 내 푸시, 30일 커밋 16, 설명 있음"
+      "significanceReason": "최근 30일 내 푸시, 30일 커밋 16, 설명 있음"
     },
     {
       "name": "launch-deck",
@@ -672,8 +672,8 @@
         "[BL-001] 저장한 응원과 로컬 보관"
       ],
       "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
-      "significance": 4,
-      "significanceReason": "최근 30일 내 푸시, 앱인토스"
+      "significance": 2,
+      "significanceReason": "60일 내 푸시, 앱인토스"
     },
     {
       "name": "eomma-choiae",
@@ -1129,8 +1129,8 @@
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "landing-docs",
-      "significance": 2,
-      "significanceReason": "60일 내 푸시"
+      "significance": 1,
+      "significanceReason": "마지막 푸시 61일 전"
     },
     {
       "name": "coffee",
@@ -1176,7 +1176,7 @@
       ],
       "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
       "significance": 2,
-      "significanceReason": "마지막 푸시 65일 전, 앱인토스"
+      "significanceReason": "마지막 푸시 67일 전, 앱인토스"
     },
     {
       "name": "diamond-gather",
@@ -1211,7 +1211,7 @@
       ],
       "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
       "significance": 2,
-      "significanceReason": "마지막 푸시 66일 전, 앱인토스"
+      "significanceReason": "마지막 푸시 67일 전, 앱인토스"
     },
     {
       "name": "cafe-review-reply-generator",
@@ -1252,7 +1252,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 125일 전"
+      "significanceReason": "마지막 푸시 126일 전"
     },
     {
       "name": "korean-review-tone-kit",
@@ -1293,7 +1293,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 2,
-      "significanceReason": "마지막 푸시 125일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 126일 전, 설명 있음"
     },
     {
       "name": "hermes-agent",
@@ -1352,7 +1352,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 2,
-      "significanceReason": "마지막 푸시 131일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 132일 전, 설명 있음"
     },
     {
       "name": "tradingagents-sena-trader",
@@ -1393,7 +1393,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 2,
-      "significanceReason": "마지막 푸시 131일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 132일 전, 설명 있음"
     },
     {
       "name": "mqzkim.github.io",
@@ -1434,7 +1434,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "landing-docs",
       "significance": 1,
-      "significanceReason": "마지막 푸시 131일 전"
+      "significanceReason": "마지막 푸시 132일 전"
     },
     {
       "name": "hermes-agent-board",
@@ -1475,7 +1475,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 1,
-      "significanceReason": "마지막 푸시 131일 전"
+      "significanceReason": "마지막 푸시 132일 전"
     },
     {
       "name": "tuist",
@@ -1518,7 +1518,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "landing-docs",
       "significance": 2,
-      "significanceReason": "마지막 푸시 139일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 141일 전, 설명 있음"
     },
     {
       "name": "helix-space",
@@ -1547,7 +1547,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 1,
-      "significanceReason": "마지막 푸시 142일 전"
+      "significanceReason": "마지막 푸시 143일 전"
     },
     {
       "name": "beautify-me",
@@ -1580,7 +1580,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 144일 전"
+      "significanceReason": "마지막 푸시 145일 전"
     },
     {
       "name": "roastsmysite",
@@ -1621,7 +1621,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 145일 전"
+      "significanceReason": "마지막 푸시 146일 전"
     },
     {
       "name": "llm-usage",
@@ -1650,7 +1650,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 145일 전"
+      "significanceReason": "마지막 푸시 146일 전"
     },
     {
       "name": "briefme",
@@ -1691,7 +1691,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 1,
-      "significanceReason": "마지막 푸시 145일 전"
+      "significanceReason": "마지막 푸시 146일 전"
     },
     {
       "name": "short_youtube",
@@ -1732,7 +1732,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 2,
-      "significanceReason": "마지막 푸시 146일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 147일 전, 설명 있음"
     },
     {
       "name": "community-growth-hacker",
@@ -1757,7 +1757,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "knowledge-wiki",
       "significance": 1,
-      "significanceReason": "마지막 푸시 147일 전"
+      "significanceReason": "마지막 푸시 148일 전"
     },
     {
       "name": "harness-infra",
@@ -1798,7 +1798,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 2,
-      "significanceReason": "마지막 푸시 147일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 148일 전, 설명 있음"
     },
     {
       "name": "helix-co",
@@ -1839,7 +1839,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 2,
-      "significanceReason": "마지막 푸시 147일 전, 설명 있음, 오픈 이슈 90"
+      "significanceReason": "마지막 푸시 148일 전, 설명 있음, 오픈 이슈 90"
     },
     {
       "name": "gst",
@@ -1864,7 +1864,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 150일 전"
+      "significanceReason": "마지막 푸시 152일 전"
     },
     {
       "name": "llm-lean-startup",
@@ -1905,7 +1905,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 2,
-      "significanceReason": "마지막 푸시 150일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 152일 전, 설명 있음"
     }
   ]
 }
