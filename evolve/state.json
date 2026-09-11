@@ -1,14 +1,8 @@
 {
  "version": 1,
- "lastRun": "2026-09-10T22:40:19.255Z",
+ "lastRun": "2026-09-11T22:42:38.987Z",
  "consecutiveFailures": 0,
  "runs": [
-  {
-   "date": "2026-08-23",
-   "improvement": "trends.mjs dedup 의미론 수정 — 스캔이 seenRepos를 소비하지 않음(후보 82건 복원, 유실 57건 회수), 캡 25→60, CANDIDATES_EXHAUSTED 경고, evolve.md §3 검토→seenRepos 규칙",
-   "commit": "13fb088",
-   "gates": "4/4"
-  },
   {
    "date": "2026-08-23",
    "improvement": "트렌드 후보 10건 검토(채택 1: headroom → wiki ingest, 기각 9) · seenRepos 원장 0→10",
@@ -181,6 +175,12 @@
    "date": "2026-09-11",
    "improvement": "ussumant/llm-wiki-compiler 지식화(c) — ~/.wiki entity 신규(Karpathy LLM KB 패턴 명시 구현 Claude Code+Codex 플러그인: incremental 컴파일 파이프라인·coverage 태그·time-decay·staged adoption·/wiki-lint, ★321 MIT; (b) 설치 기각: 지식 원천 분열·철학 충돌·성숙도·Windows 미검증) · 트렌드 후보 11건 검토(이월 2: kordoc(b/c)·buoy(c)·기각 9) · seenRepos 249→260",
    "commit": "06262d1",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-12",
+   "improvement": "obra/superpowers-chrome 스킬 채택(b) — ~/.claude/skills/superpowers-chrome (CDP 직결 외부 Chrome 제어 chrome-ws CLI 17커맨드, zero-dep, ★350 MIT 본문 실측, BETA·CI 전무 리스크는 스모크 실측+MCP 미등록 표면 최소화로 통제; skill-audit 1차 100/100→오탐 9건 전수 확정→0/100 SAFE; Windows 스모크 example.com extract/markdown/screenshot 실측) · 트렌드 후보 13건 검토(이월 1: antigravity-for-claude-code(c)·기각 12) · seenRepos 260→273 · health 9/9",
+   "commit": "2613910",
    "gates": "4/4"
   }
  ],
