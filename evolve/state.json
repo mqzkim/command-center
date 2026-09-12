@@ -1,14 +1,8 @@
 {
  "version": 1,
- "lastRun": "2026-09-11T22:42:38.987Z",
+ "lastRun": "2026-09-12T22:40:17.000Z",
  "consecutiveFailures": 0,
  "runs": [
-  {
-   "date": "2026-08-23",
-   "improvement": "트렌드 후보 10건 검토(채택 1: headroom → wiki ingest, 기각 9) · seenRepos 원장 0→10",
-   "commit": "01d8f3d",
-   "gates": "4/4"
-  },
   {
    "date": "2026-08-23",
    "improvement": "트렌드 후보 10건 검토(채택 1: planning-with-files → wiki ingest, 기각 9) · seenRepos 원장 10→20",
@@ -181,6 +175,12 @@
    "date": "2026-09-12",
    "improvement": "obra/superpowers-chrome 스킬 채택(b) — ~/.claude/skills/superpowers-chrome (CDP 직결 외부 Chrome 제어 chrome-ws CLI 17커맨드, zero-dep, ★350 MIT 본문 실측, BETA·CI 전무 리스크는 스모크 실측+MCP 미등록 표면 최소화로 통제; skill-audit 1차 100/100→오탐 9건 전수 확정→0/100 SAFE; Windows 스모크 example.com extract/markdown/screenshot 실측) · 트렌드 후보 13건 검토(이월 1: antigravity-for-claude-code(c)·기각 12) · seenRepos 260→273 · health 9/9",
    "commit": "2613910",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-13",
+   "improvement": "chrisryugj/kordoc 스킬 채택(b) — ~/.claude/skills/kordoc (한국 공문서 툴킷: HWP 3.x/5.x·HWPX·HWPML·PDF·DOCX·XLS/XLSX·이미지 OCR → Markdown, Markdown → 공문서 HWPX 생성 7프리셋·서식 채우기·라운드트립 patch·신구대조표·validate·render, ★1,819 MIT 본문 실측, SKILL.md 단일 파일 npx 래퍼, MCP 미등록·settings.json 불변; skill-audit 1차 7/100 SAFE 16건 전수 오탐 확정→baseline 억제→0/100 SAFE; Windows 스모크 generate→validate→왕복 파싱 통과) · 트렌드 후보 6건 검토(기각 6) · seenRepos 273→279",
+   "commit": "",
    "gates": "4/4"
   }
  ],
@@ -457,7 +457,13 @@
   "tableau/tableau-mcp",
   "win4r/claude-code-hooks",
   "yuting0624/antigravity-for-claude-code",
-  "huisezhiyin/sdd-riper"
+  "huisezhiyin/sdd-riper",
+  "CopilotKit/open-multi-agent-canvas",
+  "alisaitteke/photoshop-mcp",
+  "jasonjgardner/blockbench-mcp-plugin",
+  "robcerda/monarch-mcp-server",
+  "ergut/mcp-logseq",
+  "brycewang-stanford/StatsPAI"
  ],
  "appliedImprovements": [
   {
@@ -703,6 +709,16 @@
     "~/.claude/skills/superpowers-chrome/"
    ],
    "note": "carried (b/c) from 09-10, adopted (b) skill-mode-only. Chrome DevTools Protocol WebSocket direct control plugin by Jesse Vincent (obra, superpowers author) — external-Chrome page-level automation gap filler (computer-use=OS-window level, orca=embedded browser only; harness guidance said 'Playwright or CDP' with no tool installed). star 350, MIT LICENSE body verified (c) 2025 Jesse Vincent zero NC, pushed 2026-08-07 = v3.0.5 release (36d idle), commits 330 obra 311 (94.2% de facto solo), releases 6, CI none, plugin.json self-declares 'BETA: VERY LIGHTLY TESTED', Windows open issues 0 (only OS issue #40 is macOS), README 'Windows Verification (2025-11-07)' section. Install conditions honored: skills/browsing/ 51 files 314KB copied to ~/.claude/skills/superpowers-chrome/ (no marketplace/plugin install), MCP mode NOT registered (~/.claude.json superpowers-chrome 0 hits; use_browser tool unavailable by design — surface minimization, mcp-scanner gate required before any future MCP registration), settings.json SHA256 identical before/after (9EE001C1...A1427A). frontmatter yaml.safe_load OK name=browsing no colon trap. skill-audit --no-llm 1st scan 100/100 CRITICAL 9 findings -> all 9 manually verified false positives (LP1 env=CHROME_WS_HOST local override, MP3 x2=comments misread, PE3=--use-mock-keychain standard Chrome flag, SC2=127.0.0.1 CDP curl, etc.) -> .skillspector-baseline.local.json with reasons -> rescan 0/100 SAFE exit 0 suppressed 9. Smoke (Windows native node v24.14.1): start Chrome/152.0.7977.84 CDP 127.0.0.1:9222, example.com new/tabs, extract h1 'Example Domain', markdown '# Example Domain', screenshot PNG 12,877B, close/stop zero residual processes. External host hardcoding grep 0 (127.0.0.1 only x3). Gotcha recorded: SKILL.md body teaches MCP use_browser (allowed-tools mcp__chrome__use_browser) but usable path here is CLI `node ~/.claude/skills/superpowers-chrome/chrome-ws <cmd>` per COMMANDLINE-USAGE.md. Reviewed today (13): adopted superpowers-chrome (carried, not in today's candidates); carried (c) yuting0624/antigravity-for-claude-code (329* MIT pushed 09-11 active — Gemini CLI as collaborating sub-agent w/ model routing, cross-model delegation axis = claudex-loop adjacency); rejected Evil0ctal/Douyin_TikTok_Download_API (no-watermark scraper copyright/policy risk + WebFetch overlap), bethington/ghidra-mcp (RE domain axis = GhidraMCP/ida-mcp-rs/x64dbg precedent), tourmind-com/Tourmind-Booking-Skills (hotel booking commercial API domain), steipete/macos-automator-mcp (macOS-only axis = iMCP/Peekaboo), getsentry/sentry-mcp (no Sentry), sbroenne/mcp-server-excel (no Excel automation touchpoint in owner workflow), kindly-web-search-mcp-server (builtin WebSearch overlap axis = duckduckgo/tavily/apify), Goldentrii/AgentRecall-X (memory-store split axis = engram/Storybloq), athola/claude-night-market (aggregator mega-bundle axis, superpowers+53-skill overlap), tableau/tableau-mcp (no Tableau), win4r/claude-code-hooks (empty description + hooks aggregator axis = karanb192/shanraisshan), huisezhiyin/sdd-riper (license null measured via API — no license = unusable, despite AHE-adjacent harness axis). Other carries open: (c) antigravity-for-claude-code (NEW), (b/c) kordoc, (c) buoy, (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (b/c) chrisryugj/kordoc (carried since 09-11 — Korean doc processing HWP/HWPX capability gap)."
+  },
+  {
+   "id": "skill:chrisryugj/kordoc",
+   "repo": "chrisryugj/kordoc",
+   "date": "2026-09-13",
+   "mode": "skill",
+   "files": [
+    "~/.claude/skills/kordoc/"
+   ],
+   "note": "carried (b/c) 1st priority from 09-11, adopted (b) skill-mode-only. Korean official-document toolkit by chrisryugj ('7-year public servant'): HWP 3.x/5.x, HWPX, HWPML, PDF, DOCX, XLS/XLSX, images(local OCR PP-OCRv5 korean, no API key) -> Markdown; Markdown -> official HWPX (기안문/보고서/계획서/통지/회의록/개조식/보도자료 presets, hierarchy measured from 629 real Seoul approval docs); form fill (style-preserving), format-preserving roundtrip patch, 신구대조표 compare, HWPX validate, layout SVG/PNG render, seal placement, 표기법 lint 19 rules, PII redact, RAG chunks + real page numbers. star 1,819, forks 334, created 2026-03-28, pushed 09-12, open issues 0, MIT LICENSE body verified (c) 2026 chrisryugj zero NC. Releases v4.13.1/v4.13.0/v4.12.3 all within 09-05~09-06 (2-3/week pace); contributors chrisryugj 361/378 = 95.5% de facto solo. Dep surface thin: dependencies 7 all pure-JS (mcp-sdk/xmldom/cfb/commander/jszip/markdown-it/zod), native heavy (sharp/onnxruntime/pdfium/transformers/pdfjs) isolated in optionalDependencies (OCR/render only). Install = superpowers-chrome pattern: plugins/kordoc/skills/kordoc/SKILL.md single file 11,577B copied to ~/.claude/skills/kordoc/ (no marketplace, no `npx kordoc setup`, MCP NOT registered — ~/.claude.json 'kordoc' 0 hits, mcp-scanner gate required before any future MCP registration), settings.json SHA256 identical before/after (633CE7CC...B036). frontmatter yaml.safe_load OK name=kordoc desc 731 chars no colon trap. skill-audit v2.9.6 --no-llm 1st scan 7/100 LOW SAFE 16 findings (all RP1 conf 70% = documented `npx -y kordoc@^4` example lines, markdown-only Executable:No, known RP1 false-positive class per skill-audit rule 6) -> .skillspector-baseline.local.json with reasons -> rescan 0/100 SAFE exit 0 suppressed 16. Smoke (Windows native, npx kordoc@4.13.1): --version 4.13.1; generate 보고서 preset md(title+> summary+## Ⅰ. chapter+□/ㅇ list+3x3 GFM table) -> out.hwpx 74,870B; validate '구조 검증 통과 (엔트리 6개)'; roundtrip parse recovered title/summary/list markers/all 9 table cells verbatim (Ⅰ. numbering normalized to auto-number per SKILL.md contract); temp dir deleted. Accepted risk recorded: runtime `npx -y kordoc@^4` minor-unpinned (mitigated by npx cache pinning + fast release pace + MIT); dep warning deprecated boolean@3.2.0 (no functional impact). Utility axis: Korean gov-doc (HWP/HWPX) processing gap in owner's 53 skills; Apps in Toss Korean-ecosystem document adjacency. Reviewed today (6 fresh, all rejected): CopilotKit/open-multi-agent-canvas (separate Next.js app, no harness touchpoint = open-multi-agent install-rejection axis), alisaitteke/photoshop-mcp (no Photoshop = KiCAD/DaVinci domain axis), jasonjgardner/blockbench-mcp-plugin (no Blockbench = godot-ai axis), robcerda/monarch-mcp-server (US personal-finance SaaS no account), ergut/mcp-logseq (no LogSeq + knowledge-source split axis = engram/Storybloq), brycewang-stanford/StatsPAI (econometrics domain mismatch). Other carries open: (c) antigravity-for-claude-code, (c) buoy, (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (c) Buoy-gg/buoy (carried since 09-11 — RN in-app devtools + MCP, Apps in Toss RN adjacency = agent-device axis)."
   }
  ],
  "openFindings": []

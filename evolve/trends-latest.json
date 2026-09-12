@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-11T22:30:49.221Z",
+ "generatedAt": "2026-09-12T22:30:47.520Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,160 +31,72 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 208,
+ "scanned": 207,
  "dedup": {
   "wikiCatalog": 2,
-  "alreadySeen": 192
+  "alreadySeen": 199
  },
  "candidates": [
   {
-   "description": "🚀 Self-hosted TikTok & Douyin scraper and no-watermark video downloader — async REST API, MCP server, CLI and web console for posts, profiles, comments and playlists. Self-healing identity pool, PostgreSQL archive, one docker compose up. 抖音、TikTok 数据采集与无水印视频下载 API，自托管，支持 MCP 调用与 Docker 一键部署。",
-   "fullName": "Evil0ctal/Douyin_TikTok_Download_API",
-   "stargazersCount": 20073,
-   "updatedAt": "2026-09-11T18:55:32Z",
-   "url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "Ghidra MCP Server — 200+ MCP tools for AI-powered reverse engineering. GUI plugin + headless server, lazy tool loading, convention enforcement, batch operations, Ghidra Server integration, and Docker deployment.",
-   "fullName": "bethington/ghidra-mcp",
-   "stargazersCount": 3761,
-   "updatedAt": "2026-09-11T21:02:03Z",
-   "url": "https://github.com/bethington/ghidra-mcp",
+   "description": "The open-source multi-agent chat interface that lets you manage multiple agents in one dynamic conversation and add MCP servers for deep research",
+   "fullName": "CopilotKit/open-multi-agent-canvas",
+   "stargazersCount": 532,
+   "updatedAt": "2026-09-12T21:53:35Z",
+   "url": "https://github.com/CopilotKit/open-multi-agent-canvas",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "AI agent skill for end-to-end hotel search and booking—compare live rates across leading OTAs and hotel suppliers, verify availability, book stays, and manage reservations, cancellations, and payments via the TourMind API.",
-   "fullName": "tourmind-com/Tourmind-Booking-Skills",
-   "stargazersCount": 907,
-   "updatedAt": "2026-09-11T22:12:45Z",
-   "url": "https://github.com/tourmind-com/Tourmind-Booking-Skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "An MCP server to run AppleScript and JXA (JavaScript for Automation) to macOS.",
-   "fullName": "steipete/macos-automator-mcp",
-   "stargazersCount": 882,
-   "updatedAt": "2026-09-11T21:23:09Z",
-   "url": "https://github.com/steipete/macos-automator-mcp",
+   "description": "MCP server for Adobe Photoshop — 118 tools, recipe workflows, generative AI, standalone web UI. Control Photoshop from Cursor, Claude, or natural language.",
+   "fullName": "alisaitteke/photoshop-mcp",
+   "stargazersCount": 434,
+   "updatedAt": "2026-09-12T19:01:34Z",
+   "url": "https://github.com/alisaitteke/photoshop-mcp",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "An MCP server for interacting with Sentry via LLMs.",
-   "fullName": "getsentry/sentry-mcp",
-   "stargazersCount": 847,
-   "updatedAt": "2026-09-11T19:49:44Z",
-   "url": "https://github.com/getsentry/sentry-mcp",
+   "description": "Adds MCP server to Blockbench",
+   "fullName": "jasonjgardner/blockbench-mcp-plugin",
+   "stargazersCount": 427,
+   "updatedAt": "2026-09-12T18:54:56Z",
+   "url": "https://github.com/jasonjgardner/blockbench-mcp-plugin",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Automate real Microsoft Excel with AI via MCP Server or CLI — Power Query, DAX, VBA, PivotTables, charts, and 326 operations.",
-   "fullName": "sbroenne/mcp-server-excel",
-   "stargazersCount": 682,
-   "updatedAt": "2026-09-11T19:47:48Z",
-   "url": "https://github.com/sbroenne/mcp-server-excel",
+   "description": "MCP Server for use with Monarch Money",
+   "fullName": "robcerda/monarch-mcp-server",
+   "stargazersCount": 374,
+   "updatedAt": "2026-09-12T21:52:07Z",
+   "url": "https://github.com/robcerda/monarch-mcp-server",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Kindly Web Search MCP Server: Web search + robust content retrieval for AI coding tools (Claude Code, Codex, Cursor, GitHub Copilot, Gemini, etc.) and AI agents (Claude Desktop, OpenClaw, Hermes, etc.). Supports Serper, Tavily, and SearXNG.",
-   "fullName": "Shelpuk-AI-Technology-Consulting/kindly-web-search-mcp-server",
-   "stargazersCount": 385,
-   "updatedAt": "2026-09-11T19:20:11Z",
-   "url": "https://github.com/Shelpuk-AI-Technology-Consulting/kindly-web-search-mcp-server",
+   "description": "MCP server to interact with LogSeq via its Local HTTP API - enabling AI assistants like Claude to seamlessly read, write, and manage your LogSeq graph.",
+   "fullName": "ergut/mcp-logseq",
+   "stargazersCount": 327,
+   "updatedAt": "2026-09-12T22:29:33Z",
+   "url": "https://github.com/ergut/mcp-logseq",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
-  },
-  {
-   "description": "Correction-first persistent memory for AI agents. MCP server + SDK + CLI. Compounds across sessions.",
-   "fullName": "Goldentrii/AgentRecall-X",
-   "stargazersCount": 371,
-   "updatedAt": "2026-09-11T21:48:26Z",
-   "url": "https://github.com/Goldentrii/AgentRecall-X",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "23 Claude Code plugins: TDD enforcement hooks, git/PR workflows, spec-driven development, code review, project lifecycle, fix-from-error, maintenance automation, context optimization, research, and multi-LLM delegation. 186 skills, 128 commands, 54 agents.",
-   "fullName": "athola/claude-night-market",
-   "stargazersCount": 337,
-   "updatedAt": "2026-09-08T22:54:06Z",
-   "url": "https://github.com/athola/claude-night-market",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin (updated)"
-  },
-  {
-   "description": "Tableau's official MCP Server. Helping agents see and understand data.",
-   "fullName": "tableau/tableau-mcp",
-   "stargazersCount": 337,
-   "updatedAt": "2026-09-11T22:00:55Z",
-   "url": "https://github.com/tableau/tableau-mcp",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "",
-   "fullName": "win4r/claude-code-hooks",
-   "stargazersCount": 336,
-   "updatedAt": "2026-08-04T10:05:56Z",
-   "url": "https://github.com/win4r/claude-code-hooks",
-   "labels": [
-    "harness"
-   ],
-   "query": "claude code hooks (updated)"
-  },
-  {
-   "description": "Claude Code plugin: run the Antigravity CLI (Gemini) as a collaborating sub-agent with intelligent model routing across the SDLC. Community project; not affiliated with Google/Anthropic.",
-   "fullName": "yuting0624/antigravity-for-claude-code",
-   "stargazersCount": 329,
-   "updatedAt": "2026-09-11T21:15:52Z",
-   "url": "https://github.com/yuting0624/antigravity-for-claude-code",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin (updated)"
-  },
-  {
-   "description": "Lightweight AI Agent Harness for agentic coding: let strong models explore while humans steer with minimal specs, checkpoints, approval, validation, and reverse sync.",
-   "fullName": "huisezhiyin/sdd-riper",
-   "stargazersCount": 324,
-   "updatedAt": "2026-09-10T02:16:02Z",
-   "url": "https://github.com/huisezhiyin/sdd-riper",
-   "labels": [
-    "harness"
-   ],
-   "query": "ai agent harness (updated)"
   },
   {
    "description": "StatsPAI is the first Agent-native Python library for causal inference and applied econometrics — unified API, broad cross-method coverage, structured result objects, machine-readable schemas, Skills, an MCP server, and R/Stata parity validation.",
    "fullName": "brycewang-stanford/StatsPAI",
-   "stargazersCount": 316,
-   "updatedAt": "2026-09-11T20:01:29Z",
+   "stargazersCount": 317,
+   "updatedAt": "2026-09-12T20:59:14Z",
    "url": "https://github.com/brycewang-stanford/StatsPAI",
    "labels": [
     "mcp"

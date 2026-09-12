@@ -1,12 +1,12 @@
 // 자동 생성 — build-projects.mjs (로컬 클론 스캔 + projects-raw.json(gh) + .launch/launch-status.json + ~/.wiki 링크)
-// 생성: 2026-09-11 22:31Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
+// 생성: 2026-09-12 22:31Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
 const CC_PROJECTS = {
- "generatedAt": "2026-09-11 22:31Z",
+ "generatedAt": "2026-09-12 22:31Z",
  "roots": [
   "C:\\workspace",
   "C:\\Users\\my\\workspace"
  ],
- "ghSnapshot": "2026-09-11T21:03:25.771Z",
+ "ghSnapshot": "2026-09-12T21:03:21.361Z",
  "stages": [
   "intake",
   "repo_bootstrap",
@@ -44,14 +44,14 @@ const CC_PROJECTS = {
   "total": 72,
   "hidden": 24,
   "toss": 20,
-  "active30d": 23,
-  "tossWithBlockers": 13,
+  "active30d": 28,
+  "tossWithBlockers": 12,
   "tossFromLaunchStatus": 17,
   "byCategory": {
+   "harness-ai-infra": 5,
    "knowledge-wiki": 1,
    "apps-in-toss": 20,
    "side-project": 17,
-   "harness-ai-infra": 5,
    "landing-docs": 3,
    "legacy": 26
   },
@@ -60,14 +60,62 @@ const CC_PROJECTS = {
    "store_assets": 3,
    "registration_draft": 4,
    "sandbox_qa": 5,
-   "release_gate": 1,
-   "released": 1,
+   "released": 2,
    "unverified": 3
   },
   "tossUnverified": 3,
-  "dirty": 17
+  "dirty": 19
  },
  "items": [
+  {
+   "name": "hermes-shared-knowledge",
+   "repo": "hermes-shared-knowledge",
+   "displayName": null,
+   "desc": "Shared Hermes/Sena skills, personalities, and safe config templates",
+   "category": "harness-ai-infra",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/hermes-shared-knowledge.git",
+   "lang": "TeX",
+   "branch": "main",
+   "dirty": 2,
+   "lastCommit": "2026-09-13",
+   "lastActivity": "2026-09-13",
+   "daysSince": 0,
+   "gh": {
+    "url": "https://github.com/mqzkim/hermes-shared-knowledge",
+    "private": true,
+    "pushedAt": "2026-09-12",
+    "openIssues": 0,
+    "commits30d": 33,
+    "recent": [
+     {
+      "date": "2026-09-12",
+      "message": "ops: refresh sena-1 telemetry metrics"
+     },
+     {
+      "date": "2026-09-12",
+      "message": "ops: refresh sena-1 telemetry metrics"
+     },
+     {
+      "date": "2026-09-12",
+      "message": "ops: refresh sena-1 telemetry metrics"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "links": {
+    "local": "C:\\Users\\my\\workspace\\hermes-shared-knowledge",
+    "github": "https://github.com/mqzkim/hermes-shared-knowledge",
+    "wiki": [],
+    "launch": null,
+    "parent": null
+   }
+  },
   {
    "name": "wiki-android-qa-evidence-20260911",
    "repo": "llm-wiki",
@@ -85,25 +133,25 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-09-12",
    "lastActivity": "2026-09-12",
-   "daysSince": 0,
+   "daysSince": 1,
    "gh": {
     "url": "https://github.com/mqzkim/llm-wiki",
     "private": true,
-    "pushedAt": "2026-09-11",
+    "pushedAt": "2026-09-12",
     "openIssues": 0,
-    "commits30d": 72,
+    "commits30d": 96,
     "recent": [
      {
-      "date": "2026-09-11",
-      "message": "knowledge: add local-self-hosted-ci-boundary"
+      "date": "2026-09-12",
+      "message": "knowledge: add native date input visual verification"
      },
      {
-      "date": "2026-09-11",
-      "message": "knowledge: add serial-app-review-completion"
+      "date": "2026-09-12",
+      "message": "knowledge: update latest bundle review completion"
      },
      {
-      "date": "2026-09-11",
-      "message": "knowledge: fix privacy-review-log-line-endings"
+      "date": "2026-09-12",
+      "message": "knowledge: update completed phase history indexing"
      }
     ],
     "issueTitles": []
@@ -126,9 +174,589 @@ const CC_PROJECTS = {
     "parent": null
    },
    "altPaths": [
+    "C:\\Users\\my\\workspace\\wiki-classification-history-20260912",
     "C:\\Users\\my\\workspace\\wiki-local-runner-20260912",
     "C:\\Users\\my\\workspace\\wiki-qa-standing-authorization",
     "C:\\Users\\my\\workspace\\wiki-serial-review-20260912"
+   ]
+  },
+  {
+   "name": "seoul-house-from-space",
+   "repo": "seoul-house-from-space",
+   "displayName": null,
+   "desc": "Prepare 서울에 집 사기 for Apps in Toss release gate",
+   "category": "apps-in-toss",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/seoul-house-from-space.git",
+   "lang": "TypeScript",
+   "branch": "main",
+   "dirty": 0,
+   "lastCommit": "2026-07-15",
+   "lastActivity": "2026-09-12",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/seoul-house-from-space",
+    "private": true,
+    "pushedAt": "2026-09-12",
+    "openIssues": 7,
+    "commits30d": 0,
+    "recent": [
+     {
+      "date": "2026-07-15",
+      "message": "docs: clarify fastest release timeline"
+     },
+     {
+      "date": "2026-07-15",
+      "message": "feat: hide remaining distance from journey UI"
+     },
+     {
+      "date": "2026-07-15",
+      "message": "docs: refresh planned release handoff"
+     }
+    ],
+    "issueTitles": [
+     "[BL-007] 클라우드 진행 동기화",
+     "[BL-006] 사운드와 고급 햅틱 연출",
+     "[BL-005] 아파트까지 확장 토지 단계",
+     "[BL-004] 진행 공유 카드와 친구 초대",
+     "[BL-003] 게임 센터 리더보드",
+     "[BL-002] 장기 밸런스와 오프라인 진행"
+    ]
+   },
+   "toss": {
+    "source": "C:\\Users\\my\\workspace\\seoul-house-from-space\\.launch\\launch-status.json",
+    "appName": "seoul-house-from-space",
+    "displayName": null,
+    "stage": "sandbox_qa",
+    "stageKo": "샌드박스 QA",
+    "nextCheck": "sandbox_qa",
+    "pipeline": [
+     {
+      "s": "intake",
+      "st": "pass"
+     },
+     {
+      "s": "repo_bootstrap",
+      "st": "pass"
+     },
+     {
+      "s": "mvp_prd",
+      "st": "pass"
+     },
+     {
+      "s": "store_assets",
+      "st": "pass"
+     },
+     {
+      "s": "scaffold",
+      "st": "pass"
+     },
+     {
+      "s": "tds_mvp",
+      "st": "pass"
+     },
+     {
+      "s": "analytics",
+      "st": "pass"
+     },
+     {
+      "s": "artifact",
+      "st": "pass"
+     },
+     {
+      "s": "local_qa",
+      "st": "pass"
+     },
+     {
+      "s": "registration_draft",
+      "st": "pass"
+     },
+     {
+      "s": "deploy_authorization",
+      "st": "n/a"
+     },
+     {
+      "s": "sandbox_qa",
+      "st": "blocked"
+     },
+     {
+      "s": "release_gate",
+      "st": "pending"
+     },
+     {
+      "s": "released",
+      "st": "pending"
+     }
+    ],
+    "blockersOpen": 4,
+    "blockersTotal": 4,
+    "blockers": [
+     "npm audit reports 31 production-tree findings through the official Apps in Toss SDK and build-tool dependency graph; no compatible framework fix is available an",
+     "Public support and privacy pages are verified with the operator label 담당자. The live console still requires an explicitly approved receiving email, and game revi",
+     "The private test scheme deployed successfully, but it must be opened on a Toss-installed device and the sandbox checklist must pass before sandbox_qa can be mar",
+     "The local submission images were regenerated after removing the remaining-distance display; the logged-out Chrome console draft still needs those current images"
+    ],
+    "classification": "game",
+    "finalReleaseApproved": false,
+    "updatedAt": "2026-07-15",
+    "goal": "Prepare 서울에 집 사기 for Apps in Toss release gate"
+   },
+   "links": {
+    "local": "C:\\Users\\my\\workspace\\seoul-house-from-space",
+    "github": "https://github.com/mqzkim/seoul-house-from-space",
+    "wiki": [
+     "concepts/nomic-embed-korean-field-search-limitation.md",
+     "internal/command-center-project-registry.md"
+    ],
+    "launch": "C:\\Users\\my\\workspace\\seoul-house-from-space\\.launch\\launch-status.json",
+    "parent": null
+   }
+  },
+  {
+   "name": "helix-space",
+   "repo": "helix-space",
+   "displayName": null,
+   "desc": null,
+   "category": "harness-ai-infra",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/helix-space.git",
+   "lang": "Rust",
+   "branch": "main",
+   "dirty": 3,
+   "lastCommit": "2026-09-12",
+   "lastActivity": "2026-09-12",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/helix-space",
+    "private": true,
+    "pushedAt": "2026-09-12",
+    "openIssues": 0,
+    "commits30d": 1,
+    "recent": [
+     {
+      "date": "2026-09-12",
+      "message": "fix(supervisor): deliver role via first turn only; stop writing cwd A…"
+     },
+     {
+      "date": "2026-04-21",
+      "message": "Improve supervisor prompt injection"
+     },
+     {
+      "date": "2026-04-21",
+      "message": "Initial commit"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "links": {
+    "local": "C:\\Users\\my\\workspace\\helix-space",
+    "github": "https://github.com/mqzkim/helix-space",
+    "wiki": [
+     "concepts/agentic-harness-engineering.md",
+     "concepts/harness-engineering.md",
+     "concepts/hook-system.md",
+     "concepts/shared-instruction-file-role-leak.md"
+    ],
+    "launch": null,
+    "parent": null
+   }
+  },
+  {
+   "name": "today-task",
+   "repo": "today-task",
+   "displayName": null,
+   "desc": "Prepare 오늘할일 for Apps in Toss release gate",
+   "category": "apps-in-toss",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/today-task.git",
+   "lang": "JavaScript",
+   "branch": "main",
+   "dirty": 0,
+   "lastCommit": "2026-07-29",
+   "lastActivity": "2026-09-12",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/today-task",
+    "private": true,
+    "pushedAt": "2026-09-12",
+    "openIssues": 4,
+    "commits30d": 0,
+    "recent": [
+     {
+      "date": "2026-07-29",
+      "message": "release: refresh current date and sandbox build"
+     },
+     {
+      "date": "2026-07-28",
+      "message": "release: upload editable main page sandbox build"
+     },
+     {
+      "date": "2026-07-27",
+      "message": "feat: add editable profile and manager task creation"
+     }
+    ],
+    "issueTitles": [
+     "[BL-004] 내보내기와 운영 통계",
+     "[BL-003] 기능성 푸시 알림",
+     "[BL-002] 공동 관리자와 부재 상태",
+     "[BL-001] 반복 업무 템플릿"
+    ]
+   },
+   "toss": {
+    "source": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\today-task\\.launch\\launch-status.json",
+    "appName": "today-task",
+    "displayName": null,
+    "stage": "sandbox_qa",
+    "stageKo": "샌드박스 QA",
+    "nextCheck": "sandbox_qa",
+    "pipeline": [
+     {
+      "s": "intake",
+      "st": "pass"
+     },
+     {
+      "s": "repo_bootstrap",
+      "st": "pass"
+     },
+     {
+      "s": "mvp_prd",
+      "st": "pass"
+     },
+     {
+      "s": "store_assets",
+      "st": "pass"
+     },
+     {
+      "s": "scaffold",
+      "st": "pass"
+     },
+     {
+      "s": "tds_mvp",
+      "st": "pass"
+     },
+     {
+      "s": "analytics",
+      "st": "pass"
+     },
+     {
+      "s": "artifact",
+      "st": "pass"
+     },
+     {
+      "s": "local_qa",
+      "st": "pass"
+     },
+     {
+      "s": "registration_draft",
+      "st": "pass"
+     },
+     {
+      "s": "deploy_authorization",
+      "st": "n/a"
+     },
+     {
+      "s": "sandbox_qa",
+      "st": "pending"
+     },
+     {
+      "s": "release_gate",
+      "st": "pending"
+     },
+     {
+      "s": "released",
+      "st": "pending"
+     }
+    ],
+    "blockersOpen": 3,
+    "blockersTotal": 3,
+    "blockers": [
+     "전용 Supabase 프로젝트가 없고 토스 로그인 mTLS 인증서도 연결되지 않아 실제 멀티사용자 동기화와 기관 격리를 검증할 수 없다. 로컬 스키마와 통합 계약만 준비됐다.",
+     "개인정보처리방침 공개 URL, 고객지원 연락처, 콘솔 앱 등록과 실기기 샌드박스 증거가 필요하다.",
+     "공식 Apps in Toss 빌드 체인에서 critical 1건을 포함한 전이 의존성 경고가 발견됐다. 취약 서버 코드는 AIT 정적 번들에 포함되지 않지만 공식 호환 업데이트가 필요하다."
+    ],
+    "classification": "non-game",
+    "finalReleaseApproved": false,
+    "updatedAt": "2026-07-29",
+    "goal": "Prepare 오늘할일 for Apps in Toss release gate"
+   },
+   "links": {
+    "local": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\today-task",
+    "github": "https://github.com/mqzkim/today-task",
+    "wiki": [
+     "concepts/apps-in-toss-front-loaded-launch-contract.md",
+     "concepts/nomic-embed-korean-field-search-limitation.md",
+     "internal/command-center-project-registry.md"
+    ],
+    "launch": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\today-task\\.launch\\launch-status.json",
+    "parent": null
+   }
+  },
+  {
+   "name": "nailmap",
+   "repo": "nailmap",
+   "displayName": null,
+   "desc": "Prepare NailMap for Apps in Toss release gate",
+   "category": "apps-in-toss",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/nailmap.git",
+   "lang": "TypeScript",
+   "branch": "main",
+   "dirty": 0,
+   "lastCommit": "2026-07-28",
+   "lastActivity": "2026-09-12",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/nailmap",
+    "private": true,
+    "pushedAt": "2026-09-12",
+    "openIssues": 16,
+    "commits30d": 0,
+    "recent": [
+     {
+      "date": "2026-07-28",
+      "message": "fix: make api key evidence utf8-safe"
+     },
+     {
+      "date": "2026-07-28",
+      "message": "release: verify sandbox deploy handoff"
+     },
+     {
+      "date": "2026-07-27",
+      "message": "release: record sandbox deploy authorization blocker"
+     }
+    ],
+    "issueTitles": [
+     "[BL-016] 가격 히스토리·지역 예약 HeatMap",
+     "[BL-015] 채팅·DM·실시간 상담·커뮤니티",
+     "[BL-014] 추천샵 광고·프리미엄 지도 노출",
+     "[BL-013] 친구 추천·쿠폰·포인트",
+     "[BL-012] 고객 리뷰 작성·사진 업로드·AI 방문 검증",
+     "[BL-011] 트렌드·이달의 아트·디자이너 포트폴리오"
+    ]
+   },
+   "toss": {
+    "source": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\nailmap\\.launch\\launch-status.json",
+    "appName": "nailmap",
+    "displayName": null,
+    "stage": "sandbox_qa",
+    "stageKo": "샌드박스 QA",
+    "nextCheck": "sandbox_qa",
+    "pipeline": [
+     {
+      "s": "intake",
+      "st": "pass"
+     },
+     {
+      "s": "repo_bootstrap",
+      "st": "pass"
+     },
+     {
+      "s": "mvp_prd",
+      "st": "pass"
+     },
+     {
+      "s": "store_assets",
+      "st": "pass"
+     },
+     {
+      "s": "scaffold",
+      "st": "pass"
+     },
+     {
+      "s": "tds_mvp",
+      "st": "pass"
+     },
+     {
+      "s": "analytics",
+      "st": "pass"
+     },
+     {
+      "s": "artifact",
+      "st": "pass"
+     },
+     {
+      "s": "local_qa",
+      "st": "pass"
+     },
+     {
+      "s": "registration_draft",
+      "st": "pass"
+     },
+     {
+      "s": "deploy_authorization",
+      "st": "n/a"
+     },
+     {
+      "s": "sandbox_qa",
+      "st": "blocked"
+     },
+     {
+      "s": "release_gate",
+      "st": "pending"
+     },
+     {
+      "s": "released",
+      "st": "pending"
+     }
+    ],
+    "blockersOpen": 3,
+    "blockersTotal": 6,
+    "blockers": [
+     "Provide verifiable operator identity, support channel, and public privacy policy URL before submission",
+     "Recheck official Apps in Toss SDK compatible updates and audit findings before release",
+     "Open the private scheme in an installed Toss app and complete the device checklist before sandbox_qa can pass"
+    ],
+    "classification": "non-game",
+    "finalReleaseApproved": false,
+    "updatedAt": "2026-07-28",
+    "goal": "Prepare NailMap for Apps in Toss release gate"
+   },
+   "links": {
+    "local": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\nailmap",
+    "github": "https://github.com/mqzkim/nailmap",
+    "wiki": [
+     "concepts/apps-in-toss-front-loaded-launch-contract.md",
+     "concepts/native-date-input-visual-verification.md",
+     "entities/launch-deck.md",
+     "internal/command-center-project-registry.md"
+    ],
+    "launch": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\nailmap\\.launch\\launch-status.json",
+    "parent": null
+   }
+  },
+  {
+   "name": "daesin-meogeo",
+   "repo": null,
+   "displayName": null,
+   "desc": null,
+   "category": "apps-in-toss",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": null,
+   "lang": null,
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-09-12",
+   "daysSince": 1,
+   "gh": null,
+   "toss": {
+    "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\daesin-meogeo\\.launch\\launch-status.json",
+    "appName": "daesin-meogeo",
+    "displayName": null,
+    "stage": "released",
+    "stageKo": "출시",
+    "nextCheck": "released",
+    "pipeline": [
+     {
+      "s": "intake",
+      "st": "pass"
+     },
+     {
+      "s": "repo_bootstrap",
+      "st": "pass"
+     },
+     {
+      "s": "mvp_prd",
+      "st": "pass"
+     },
+     {
+      "s": "store_assets",
+      "st": "pass"
+     },
+     {
+      "s": "scaffold",
+      "st": "pass"
+     },
+     {
+      "s": "tds_mvp",
+      "st": "pass"
+     },
+     {
+      "s": "analytics",
+      "st": "pass"
+     },
+     {
+      "s": "artifact",
+      "st": "pass"
+     },
+     {
+      "s": "local_qa",
+      "st": "pass"
+     },
+     {
+      "s": "registration_draft",
+      "st": "pass"
+     },
+     {
+      "s": "deploy_authorization",
+      "st": "n/a"
+     },
+     {
+      "s": "sandbox_qa",
+      "st": "pass"
+     },
+     {
+      "s": "release_gate",
+      "st": "pass"
+     },
+     {
+      "s": "released",
+      "st": "pending"
+     }
+    ],
+    "blockersOpen": 0,
+    "blockersTotal": 4,
+    "blockers": [],
+    "classification": "non-game",
+    "finalReleaseApproved": false,
+    "updatedAt": "2026-09-12",
+    "goal": null
+   },
+   "links": {
+    "local": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\daesin-meogeo",
+    "github": null,
+    "wiki": [
+     "internal/command-center-project-registry.md"
+    ],
+    "launch": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\daesin-meogeo\\.launch\\launch-status.json",
+    "parent": "ait-local-runner-20260912"
+   },
+   "altPaths": [
+    "C:\\Users\\my\\workspace\\all-app-qa-findings\\apps\\daesin-meogeo",
+    "C:\\Users\\my\\workspace\\all-app-qa-map\\apps\\daesin-meogeo",
+    "C:\\Users\\my\\workspace\\app-in-toss\\apps\\daesin-meogeo",
+    "C:\\Users\\my\\workspace\\bamti-native-qa-profile\\apps\\daesin-meogeo",
+    "C:\\Users\\my\\workspace\\pet-qa-ci-contract\\apps\\daesin-meogeo",
+    "C:\\Users\\my\\workspace\\qa-deploy-doc-checkpoint\\apps\\daesin-meogeo",
+    "C:\\Users\\my\\workspace\\qa-sdk-contract-fix\\apps\\daesin-meogeo",
+    "C:\\Users\\my\\workspace\\sdk-340-deploy\\apps\\daesin-meogeo",
+    "C:\\Users\\my\\workspace\\sdk-340-receipts\\apps\\daesin-meogeo",
+    "C:\\Users\\my\\workspace\\upperant-feedback-fixture\\apps\\daesin-meogeo",
+    "C:\\Users\\my\\workspace\\upperant-feedback-qa\\apps\\daesin-meogeo",
+    "C:\\Users\\my\\workspace\\upperant-feedback-viewport\\apps\\daesin-meogeo",
+    "C:\\Users\\my\\workspace\\upperant-modal-regression\\apps\\daesin-meogeo",
+    "C:\\Users\\my\\workspace\\upperant-native-qa-profile\\apps\\daesin-meogeo"
    ]
   },
   {
@@ -144,29 +772,29 @@ const CC_PROJECTS = {
    "mine": true,
    "remote": "https://github.com/mqzkim/app-in-toss.git",
    "lang": "JavaScript",
-   "branch": "codex/self-hosted-runner-20260912",
+   "branch": "codex/daesin-review-receipt-20260912",
    "dirty": 0,
    "lastCommit": "2026-09-12",
    "lastActivity": "2026-09-12",
-   "daysSince": 0,
+   "daysSince": 1,
    "gh": {
     "url": "https://github.com/mqzkim/app-in-toss",
     "private": true,
-    "pushedAt": "2026-09-11",
+    "pushedAt": "2026-09-12",
     "openIssues": 59,
-    "commits30d": 213,
+    "commits30d": 463,
     "recent": [
      {
-      "date": "2026-09-07",
-      "message": "feat(release): 실제 빌드 관찰 기반 artifact 단계 기록 (#113)"
+      "date": "2026-09-12",
+      "message": "Merge pull request #148 from mqzkim/codex/daesin-review-receipt-20260912"
      },
      {
-      "date": "2026-09-07",
-      "message": "fix(release): 단계 승격 시 기존 증거 이력 보존 (#112)"
+      "date": "2026-09-12",
+      "message": "chore(daesin-meogeo): reconcile completed phase history index"
      },
      {
-      "date": "2026-09-07",
-      "message": "chore(bamti): record current QA and rebuilt release artifact (#111)"
+      "date": "2026-09-12",
+      "message": "chore(daesin-meogeo): record accepted console review"
      }
     ],
     "issueTitles": [
@@ -205,6 +833,8 @@ const CC_PROJECTS = {
     "github": "https://github.com/mqzkim/app-in-toss",
     "wiki": [
      "concepts/apps-in-toss-front-loaded-launch-contract.md",
+     "concepts/classification-evidence-history-boundary.md",
+     "concepts/claude-md-import-context-tax.md",
      "concepts/git-subdirectory-remote-detection-pitfall.md",
      "concepts/local-self-hosted-ci-boundary.md",
      "concepts/monorepo-commit-qa-boundary.md",
@@ -231,6 +861,120 @@ const CC_PROJECTS = {
    ]
   },
   {
+   "name": "cafe-route-validation-v1",
+   "repo": "cafe-review-reply-generator",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/cafe-review-reply-generator.git",
+   "lang": "TypeScript",
+   "branch": "main",
+   "dirty": 0,
+   "lastCommit": "2026-09-12",
+   "lastActivity": "2026-09-12",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/cafe-review-reply-generator",
+    "private": true,
+    "pushedAt": "2026-09-12",
+    "openIssues": 0,
+    "commits30d": 1,
+    "recent": [
+     {
+      "date": "2026-09-12",
+      "message": "docs(claude-md): reflect shipped P1-P3, dedupe prompt rules"
+     },
+     {
+      "date": "2026-05-08",
+      "message": "chore(coverage): ratchet content/verticals/lawfirm.ts to 100%"
+     },
+     {
+      "date": "2026-05-08",
+      "message": "chore(coverage): ratchet content/verticals/laundry.ts to 100%"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "links": {
+    "local": "C:\\Users\\my\\workspace\\agent-workstreams\\product\\cafe-route-validation-v1",
+    "github": "https://github.com/mqzkim/cafe-review-reply-generator",
+    "wiki": [
+     "concepts/content-registry-parametric-route.md",
+     "internal/temporal-truth-contract-plan.md",
+     "_librarian/lint-queue.md"
+    ],
+    "launch": null,
+    "parent": null
+   },
+   "altPaths": [
+    "C:\\Users\\my\\workspace\\cafe-review-reply-generator"
+   ]
+  },
+  {
+   "name": "command-center",
+   "repo": "command-center",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 4,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/command-center.git",
+   "lang": "JavaScript",
+   "branch": "master",
+   "dirty": 7,
+   "lastCommit": "2026-09-12",
+   "lastActivity": "2026-09-12",
+   "daysSince": 1,
+   "gh": {
+    "url": "https://github.com/mqzkim/command-center",
+    "private": false,
+    "pushedAt": "2026-09-11",
+    "openIssues": 0,
+    "commits30d": 85,
+    "recent": [
+     {
+      "date": "2026-09-11",
+      "message": "evolve(2026-09-12): ledger commit sha 2613910 + gates G3/G4 증거 기입"
+     },
+     {
+      "date": "2026-09-11",
+      "message": "evolve(2026-09-12): obra/superpowers-chrome 스킬 채택(b) — ~/.claude/skil…"
+     },
+     {
+      "date": "2026-09-10",
+      "message": "evolve(2026-09-11): ledger commit sha 06262d1 + gates G3/G4 증거 기입"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "links": {
+    "local": "C:\\workspace\\command-center",
+    "github": "https://github.com/mqzkim/command-center",
+    "wiki": [
+     "concepts/agent-memory-rag.md",
+     "concepts/agentic-harness-engineering.md",
+     "concepts/apps-in-toss-front-loaded-launch-contract.md",
+     "concepts/balanced-coupling.md",
+     "concepts/computer-use-browser-agents.md",
+     "concepts/derived-mirror-index-sync-contract.md",
+     "concepts/discord-bot-ecosystem.md",
+     "concepts/git-subdirectory-remote-detection-pitfall.md"
+    ],
+    "launch": null,
+    "parent": null
+   }
+  },
+  {
    "name": "diamond-get",
    "repo": null,
    "displayName": null,
@@ -247,7 +991,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-11",
-   "daysSince": 1,
+   "daysSince": 2,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\diamond-get\\.launch\\launch-status.json",
@@ -326,7 +1070,8 @@ const CC_PROJECTS = {
     "local": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\diamond-get",
     "github": null,
     "wiki": [
-     "concepts/android-toss-qa-evidence-pitfalls.md"
+     "concepts/android-toss-qa-evidence-pitfalls.md",
+     "concepts/claude-md-import-context-tax.md"
     ],
     "launch": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\diamond-get\\.launch\\launch-status.json",
     "parent": "ait-local-runner-20260912"
@@ -365,7 +1110,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-11",
-   "daysSince": 1,
+   "daysSince": 2,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\ddasa\\.launch\\launch-status.json",
@@ -468,64 +1213,6 @@ const CC_PROJECTS = {
    ]
   },
   {
-   "name": "command-center",
-   "repo": "command-center",
-   "displayName": null,
-   "desc": null,
-   "category": "side-project",
-   "significance": 4,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/command-center.git",
-   "lang": "JavaScript",
-   "branch": "master",
-   "dirty": 7,
-   "lastCommit": "2026-09-11",
-   "lastActivity": "2026-09-11",
-   "daysSince": 1,
-   "gh": {
-    "url": "https://github.com/mqzkim/command-center",
-    "private": false,
-    "pushedAt": "2026-09-10",
-    "openIssues": 0,
-    "commits30d": 83,
-    "recent": [
-     {
-      "date": "2026-09-10",
-      "message": "evolve(2026-09-11): ledger commit sha 06262d1 + gates G3/G4 증거 기입"
-     },
-     {
-      "date": "2026-09-10",
-      "message": "evolve(2026-09-11): ussumant/llm-wiki-compiler 지식화(c) — ~/.wiki entit…"
-     },
-     {
-      "date": "2026-09-09",
-      "message": "evolve(2026-09-10): gates G3/G4 증거 기입 (메인 9f3dc22·ledger bfd8ba0)"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": null,
-   "links": {
-    "local": "C:\\workspace\\command-center",
-    "github": "https://github.com/mqzkim/command-center",
-    "wiki": [
-     "concepts/agent-memory-rag.md",
-     "concepts/agentic-harness-engineering.md",
-     "concepts/apps-in-toss-front-loaded-launch-contract.md",
-     "concepts/balanced-coupling.md",
-     "concepts/computer-use-browser-agents.md",
-     "concepts/derived-mirror-index-sync-contract.md",
-     "concepts/discord-bot-ecosystem.md",
-     "concepts/git-subdirectory-remote-detection-pitfall.md"
-    ],
-    "launch": null,
-    "parent": null
-   }
-  },
-  {
    "name": "pet-rock",
    "repo": null,
    "displayName": null,
@@ -542,7 +1229,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-08",
-   "daysSince": 4,
+   "daysSince": 5,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\pet-rock\\.launch\\launch-status.json",
@@ -645,56 +1332,6 @@ const CC_PROJECTS = {
    ]
   },
   {
-   "name": "hermes-shared-knowledge",
-   "repo": "hermes-shared-knowledge",
-   "displayName": null,
-   "desc": "Shared Hermes/Sena skills, personalities, and safe config templates",
-   "category": "harness-ai-infra",
-   "significance": 4,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "lang": "TeX",
-   "branch": null,
-   "dirty": null,
-   "lastCommit": null,
-   "lastActivity": "2026-09-03",
-   "daysSince": 9,
-   "gh": {
-    "url": "https://github.com/mqzkim/hermes-shared-knowledge",
-    "private": true,
-    "pushedAt": "2026-09-03",
-    "openIssues": 0,
-    "commits30d": 16,
-    "recent": [
-     {
-      "date": "2026-09-03",
-      "message": "ops: refresh sena-1 telemetry metrics"
-     },
-     {
-      "date": "2026-08-27",
-      "message": "ops: refresh sena-1 telemetry metrics"
-     },
-     {
-      "date": "2026-08-27",
-      "message": "ops: refresh sena-1 telemetry metrics"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": null,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/hermes-shared-knowledge",
-   "links": {
-    "local": null,
-    "github": "https://github.com/mqzkim/hermes-shared-knowledge",
-    "wiki": [],
-    "launch": null,
-    "parent": null
-   },
-   "noLocal": true
-  },
-  {
    "name": "subway-timer",
    "repo": "subway-timer",
    "displayName": null,
@@ -711,7 +1348,7 @@ const CC_PROJECTS = {
    "dirty": 1,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
-   "daysSince": 20,
+   "daysSince": 21,
    "gh": {
     "url": "https://github.com/mqzkim/subway-timer",
     "private": true,
@@ -839,7 +1476,7 @@ const CC_PROJECTS = {
    "dirty": 1,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
-   "daysSince": 20,
+   "daysSince": 21,
    "gh": {
     "url": "https://github.com/mqzkim/launch-deck",
     "private": true,
@@ -894,7 +1531,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-28",
    "lastActivity": "2026-08-22",
-   "daysSince": 21,
+   "daysSince": 22,
    "gh": {
     "url": "https://github.com/mqzkim/bamti-translator",
     "private": true,
@@ -1050,7 +1687,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-08-19",
    "lastActivity": "2026-08-19",
-   "daysSince": 24,
+   "daysSince": 25,
    "gh": {
     "url": "https://github.com/mqzkim/naeheunjeok",
     "private": true,
@@ -1201,7 +1838,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-11",
-   "daysSince": 1,
+   "daysSince": 2,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\upperant-daily\\.launch\\launch-status.json",
@@ -1282,7 +1919,9 @@ const CC_PROJECTS = {
    "links": {
     "local": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\upperant-daily",
     "github": null,
-    "wiki": [],
+    "wiki": [
+     "concepts/claude-md-import-context-tax.md"
+    ],
     "launch": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\upperant-daily\\.launch\\launch-status.json",
     "parent": "ait-local-runner-20260912"
    },
@@ -1320,7 +1959,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-11",
-   "daysSince": 1,
+   "daysSince": 2,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\haru-han-tem\\.launch\\launch-status.json",
@@ -1427,127 +2066,6 @@ const CC_PROJECTS = {
    ]
   },
   {
-   "name": "daesin-meogeo",
-   "repo": null,
-   "displayName": null,
-   "desc": null,
-   "category": "apps-in-toss",
-   "significance": 3,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "mine": true,
-   "remote": null,
-   "lang": null,
-   "branch": null,
-   "dirty": null,
-   "lastCommit": null,
-   "lastActivity": "2026-09-11",
-   "daysSince": 1,
-   "gh": null,
-   "toss": {
-    "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\daesin-meogeo\\.launch\\launch-status.json",
-    "appName": "daesin-meogeo",
-    "displayName": null,
-    "stage": "release_gate",
-    "stageKo": "릴리즈 게이트",
-    "nextCheck": "release_gate",
-    "pipeline": [
-     {
-      "s": "intake",
-      "st": "pass"
-     },
-     {
-      "s": "repo_bootstrap",
-      "st": "pass"
-     },
-     {
-      "s": "mvp_prd",
-      "st": "pass"
-     },
-     {
-      "s": "store_assets",
-      "st": "pass"
-     },
-     {
-      "s": "scaffold",
-      "st": "pass"
-     },
-     {
-      "s": "tds_mvp",
-      "st": "pass"
-     },
-     {
-      "s": "analytics",
-      "st": "pass"
-     },
-     {
-      "s": "artifact",
-      "st": "pass"
-     },
-     {
-      "s": "local_qa",
-      "st": "pass"
-     },
-     {
-      "s": "registration_draft",
-      "st": "pass"
-     },
-     {
-      "s": "deploy_authorization",
-      "st": "n/a"
-     },
-     {
-      "s": "sandbox_qa",
-      "st": "pass"
-     },
-     {
-      "s": "release_gate",
-      "st": "pending"
-     },
-     {
-      "s": "released",
-      "st": "pending"
-     }
-    ],
-    "blockersOpen": 2,
-    "blockersTotal": 4,
-    "blockers": [
-     "현재 PR114/02f1e2e의 필수 validate가 계정 결제 또는 지출 한도 오류로 시작되지 않았다. 작업 보드의 정확한 run/annotation과 재개 조건을 따른다.",
-     "콘솔 인허가·등록·신고 완료 사실 및 책임·손해배상 등 5개 법적 확인은 별도 운영자 확인이 필요하다. 검토 요청 권한은 이미 있으나 법적 진술로 확대하지 않는다."
-    ],
-    "classification": "non-game",
-    "finalReleaseApproved": false,
-    "updatedAt": "2026-09-11",
-    "goal": null
-   },
-   "links": {
-    "local": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\daesin-meogeo",
-    "github": null,
-    "wiki": [
-     "internal/command-center-project-registry.md"
-    ],
-    "launch": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\daesin-meogeo\\.launch\\launch-status.json",
-    "parent": "ait-local-runner-20260912"
-   },
-   "altPaths": [
-    "C:\\Users\\my\\workspace\\all-app-qa-findings\\apps\\daesin-meogeo",
-    "C:\\Users\\my\\workspace\\all-app-qa-map\\apps\\daesin-meogeo",
-    "C:\\Users\\my\\workspace\\app-in-toss\\apps\\daesin-meogeo",
-    "C:\\Users\\my\\workspace\\bamti-native-qa-profile\\apps\\daesin-meogeo",
-    "C:\\Users\\my\\workspace\\pet-qa-ci-contract\\apps\\daesin-meogeo",
-    "C:\\Users\\my\\workspace\\qa-deploy-doc-checkpoint\\apps\\daesin-meogeo",
-    "C:\\Users\\my\\workspace\\qa-sdk-contract-fix\\apps\\daesin-meogeo",
-    "C:\\Users\\my\\workspace\\sdk-340-deploy\\apps\\daesin-meogeo",
-    "C:\\Users\\my\\workspace\\sdk-340-receipts\\apps\\daesin-meogeo",
-    "C:\\Users\\my\\workspace\\upperant-feedback-fixture\\apps\\daesin-meogeo",
-    "C:\\Users\\my\\workspace\\upperant-feedback-qa\\apps\\daesin-meogeo",
-    "C:\\Users\\my\\workspace\\upperant-feedback-viewport\\apps\\daesin-meogeo",
-    "C:\\Users\\my\\workspace\\upperant-modal-regression\\apps\\daesin-meogeo",
-    "C:\\Users\\my\\workspace\\upperant-native-qa-profile\\apps\\daesin-meogeo"
-   ]
-  },
-  {
    "name": "coffee-cant-wait",
    "repo": null,
    "displayName": null,
@@ -1564,7 +2082,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-08",
-   "daysSince": 4,
+   "daysSince": 5,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\coffee-cant-wait\\.launch\\launch-status.json",
@@ -1646,7 +2164,8 @@ const CC_PROJECTS = {
     "local": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\coffee-cant-wait",
     "github": null,
     "wiki": [
-     "concepts/android-toss-qa-evidence-pitfalls.md"
+     "concepts/android-toss-qa-evidence-pitfalls.md",
+     "concepts/claude-md-import-context-tax.md"
     ],
     "launch": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\coffee-cant-wait\\.launch\\launch-status.json",
     "parent": "ait-local-runner-20260912"
@@ -1685,7 +2204,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-07",
-   "daysSince": 5,
+   "daysSince": 6,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\croco-fishing\\.launch\\launch-status.json",
@@ -1767,6 +2286,7 @@ const CC_PROJECTS = {
     "local": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\croco-fishing",
     "github": null,
     "wiki": [
+     "concepts/claude-md-import-context-tax.md",
      "internal/command-center-project-registry.md"
     ],
     "launch": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\croco-fishing\\.launch\\launch-status.json",
@@ -1804,7 +2324,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-08-22",
-   "daysSince": 21,
+   "daysSince": 22,
    "gh": {
     "url": "https://github.com/mqzkim/launch-deck-gtest-fe1e2bc1",
     "private": true,
@@ -1850,7 +2370,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-08-22",
-   "daysSince": 21,
+   "daysSince": 22,
    "gh": {
     "url": "https://github.com/mqzkim/launch-deck-gtest-0a2ab922",
     "private": true,
@@ -1896,7 +2416,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-08-22",
-   "daysSince": 21,
+   "daysSince": 22,
    "gh": {
     "url": "https://github.com/mqzkim/launch-deck-gtest-165ccf97",
     "private": true,
@@ -1942,7 +2462,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-08-22",
-   "daysSince": 21,
+   "daysSince": 22,
    "gh": {
     "url": "https://github.com/mqzkim/launch-deck-gtest-smoke",
     "private": true,
@@ -1992,7 +2512,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-08-22",
-   "daysSince": 21,
+   "daysSince": 22,
    "gh": {
     "url": "https://github.com/mqzkim/launch-deck-gtest-4c3f5fea",
     "private": true,
@@ -2276,7 +2796,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-09-11",
    "lastActivity": "2026-09-11",
-   "daysSince": 1,
+   "daysSince": 2,
    "gh": null,
    "toss": null,
    "links": {
@@ -2304,7 +2824,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-08-22",
    "lastActivity": "2026-08-22",
-   "daysSince": 21,
+   "daysSince": 22,
    "gh": {
     "url": "https://github.com/mqzkim/agent-factory",
     "private": true,
@@ -2362,7 +2882,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-08-11",
    "lastActivity": "2026-08-11",
-   "daysSince": 32,
+   "daysSince": 33,
    "gh": {
     "url": "https://github.com/mqzkim/kid-cheer-call",
     "private": true,
@@ -2497,7 +3017,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-08-03",
    "lastActivity": "2026-08-03",
-   "daysSince": 40,
+   "daysSince": 41,
    "gh": {
     "url": "https://github.com/mqzkim/eomma-choiae",
     "private": true,
@@ -2614,276 +3134,6 @@ const CC_PROJECTS = {
    }
   },
   {
-   "name": "today-task",
-   "repo": "today-task",
-   "displayName": null,
-   "desc": "Prepare 오늘할일 for Apps in Toss release gate",
-   "category": "apps-in-toss",
-   "significance": 2,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/today-task.git",
-   "lang": "JavaScript",
-   "branch": "main",
-   "dirty": 0,
-   "lastCommit": "2026-07-29",
-   "lastActivity": "2026-07-29",
-   "daysSince": 45,
-   "gh": {
-    "url": "https://github.com/mqzkim/today-task",
-    "private": true,
-    "pushedAt": "2026-07-29",
-    "openIssues": 4,
-    "commits30d": 0,
-    "recent": [
-     {
-      "date": "2026-07-29",
-      "message": "release: refresh current date and sandbox build"
-     },
-     {
-      "date": "2026-07-28",
-      "message": "release: upload editable main page sandbox build"
-     },
-     {
-      "date": "2026-07-27",
-      "message": "feat: add editable profile and manager task creation"
-     }
-    ],
-    "issueTitles": [
-     "[BL-004] 내보내기와 운영 통계",
-     "[BL-003] 기능성 푸시 알림",
-     "[BL-002] 공동 관리자와 부재 상태",
-     "[BL-001] 반복 업무 템플릿"
-    ]
-   },
-   "toss": {
-    "source": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\today-task\\.launch\\launch-status.json",
-    "appName": "today-task",
-    "displayName": null,
-    "stage": "sandbox_qa",
-    "stageKo": "샌드박스 QA",
-    "nextCheck": "sandbox_qa",
-    "pipeline": [
-     {
-      "s": "intake",
-      "st": "pass"
-     },
-     {
-      "s": "repo_bootstrap",
-      "st": "pass"
-     },
-     {
-      "s": "mvp_prd",
-      "st": "pass"
-     },
-     {
-      "s": "store_assets",
-      "st": "pass"
-     },
-     {
-      "s": "scaffold",
-      "st": "pass"
-     },
-     {
-      "s": "tds_mvp",
-      "st": "pass"
-     },
-     {
-      "s": "analytics",
-      "st": "pass"
-     },
-     {
-      "s": "artifact",
-      "st": "pass"
-     },
-     {
-      "s": "local_qa",
-      "st": "pass"
-     },
-     {
-      "s": "registration_draft",
-      "st": "pass"
-     },
-     {
-      "s": "deploy_authorization",
-      "st": "n/a"
-     },
-     {
-      "s": "sandbox_qa",
-      "st": "pending"
-     },
-     {
-      "s": "release_gate",
-      "st": "pending"
-     },
-     {
-      "s": "released",
-      "st": "pending"
-     }
-    ],
-    "blockersOpen": 3,
-    "blockersTotal": 3,
-    "blockers": [
-     "전용 Supabase 프로젝트가 없고 토스 로그인 mTLS 인증서도 연결되지 않아 실제 멀티사용자 동기화와 기관 격리를 검증할 수 없다. 로컬 스키마와 통합 계약만 준비됐다.",
-     "개인정보처리방침 공개 URL, 고객지원 연락처, 콘솔 앱 등록과 실기기 샌드박스 증거가 필요하다.",
-     "공식 Apps in Toss 빌드 체인에서 critical 1건을 포함한 전이 의존성 경고가 발견됐다. 취약 서버 코드는 AIT 정적 번들에 포함되지 않지만 공식 호환 업데이트가 필요하다."
-    ],
-    "classification": "non-game",
-    "finalReleaseApproved": false,
-    "updatedAt": "2026-07-29",
-    "goal": "Prepare 오늘할일 for Apps in Toss release gate"
-   },
-   "links": {
-    "local": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\today-task",
-    "github": "https://github.com/mqzkim/today-task",
-    "wiki": [
-     "concepts/apps-in-toss-front-loaded-launch-contract.md",
-     "concepts/nomic-embed-korean-field-search-limitation.md",
-     "internal/command-center-project-registry.md"
-    ],
-    "launch": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\today-task\\.launch\\launch-status.json",
-    "parent": null
-   }
-  },
-  {
-   "name": "nailmap",
-   "repo": "nailmap",
-   "displayName": null,
-   "desc": "Prepare NailMap for Apps in Toss release gate",
-   "category": "apps-in-toss",
-   "significance": 2,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/nailmap.git",
-   "lang": "TypeScript",
-   "branch": "main",
-   "dirty": 0,
-   "lastCommit": "2026-07-28",
-   "lastActivity": "2026-07-28",
-   "daysSince": 46,
-   "gh": {
-    "url": "https://github.com/mqzkim/nailmap",
-    "private": true,
-    "pushedAt": "2026-07-28",
-    "openIssues": 16,
-    "commits30d": 0,
-    "recent": [
-     {
-      "date": "2026-07-28",
-      "message": "fix: make api key evidence utf8-safe"
-     },
-     {
-      "date": "2026-07-28",
-      "message": "release: verify sandbox deploy handoff"
-     },
-     {
-      "date": "2026-07-27",
-      "message": "release: record sandbox deploy authorization blocker"
-     }
-    ],
-    "issueTitles": [
-     "[BL-016] 가격 히스토리·지역 예약 HeatMap",
-     "[BL-015] 채팅·DM·실시간 상담·커뮤니티",
-     "[BL-014] 추천샵 광고·프리미엄 지도 노출",
-     "[BL-013] 친구 추천·쿠폰·포인트",
-     "[BL-012] 고객 리뷰 작성·사진 업로드·AI 방문 검증",
-     "[BL-011] 트렌드·이달의 아트·디자이너 포트폴리오"
-    ]
-   },
-   "toss": {
-    "source": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\nailmap\\.launch\\launch-status.json",
-    "appName": "nailmap",
-    "displayName": null,
-    "stage": "sandbox_qa",
-    "stageKo": "샌드박스 QA",
-    "nextCheck": "sandbox_qa",
-    "pipeline": [
-     {
-      "s": "intake",
-      "st": "pass"
-     },
-     {
-      "s": "repo_bootstrap",
-      "st": "pass"
-     },
-     {
-      "s": "mvp_prd",
-      "st": "pass"
-     },
-     {
-      "s": "store_assets",
-      "st": "pass"
-     },
-     {
-      "s": "scaffold",
-      "st": "pass"
-     },
-     {
-      "s": "tds_mvp",
-      "st": "pass"
-     },
-     {
-      "s": "analytics",
-      "st": "pass"
-     },
-     {
-      "s": "artifact",
-      "st": "pass"
-     },
-     {
-      "s": "local_qa",
-      "st": "pass"
-     },
-     {
-      "s": "registration_draft",
-      "st": "pass"
-     },
-     {
-      "s": "deploy_authorization",
-      "st": "n/a"
-     },
-     {
-      "s": "sandbox_qa",
-      "st": "blocked"
-     },
-     {
-      "s": "release_gate",
-      "st": "pending"
-     },
-     {
-      "s": "released",
-      "st": "pending"
-     }
-    ],
-    "blockersOpen": 3,
-    "blockersTotal": 6,
-    "blockers": [
-     "Provide verifiable operator identity, support channel, and public privacy policy URL before submission",
-     "Recheck official Apps in Toss SDK compatible updates and audit findings before release",
-     "Open the private scheme in an installed Toss app and complete the device checklist before sandbox_qa can pass"
-    ],
-    "classification": "non-game",
-    "finalReleaseApproved": false,
-    "updatedAt": "2026-07-28",
-    "goal": "Prepare NailMap for Apps in Toss release gate"
-   },
-   "links": {
-    "local": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\nailmap",
-    "github": "https://github.com/mqzkim/nailmap",
-    "wiki": [
-     "concepts/apps-in-toss-front-loaded-launch-contract.md",
-     "entities/launch-deck.md",
-     "internal/command-center-project-registry.md"
-    ],
-    "launch": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\nailmap\\.launch\\launch-status.json",
-    "parent": null
-   }
-  },
-  {
    "name": "nail-map",
    "repo": "nail-map",
    "displayName": null,
@@ -2900,7 +3150,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-27",
    "lastActivity": "2026-07-27",
-   "daysSince": 47,
+   "daysSince": 48,
    "gh": {
     "url": "https://github.com/mqzkim/nail-map",
     "private": true,
@@ -2941,7 +3191,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-26",
    "lastActivity": "2026-07-26",
-   "daysSince": 48,
+   "daysSince": 49,
    "gh": null,
    "toss": null,
    "links": {
@@ -2950,142 +3200,6 @@ const CC_PROJECTS = {
     "wiki": [],
     "launch": null,
     "parent": "bamti-translator"
-   }
-  },
-  {
-   "name": "seoul-house-from-space",
-   "repo": "seoul-house-from-space",
-   "displayName": null,
-   "desc": "Prepare 서울에 집 사기 for Apps in Toss release gate",
-   "category": "apps-in-toss",
-   "significance": 2,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/seoul-house-from-space.git",
-   "lang": "TypeScript",
-   "branch": "main",
-   "dirty": 0,
-   "lastCommit": "2026-07-15",
-   "lastActivity": "2026-07-15",
-   "daysSince": 59,
-   "gh": {
-    "url": "https://github.com/mqzkim/seoul-house-from-space",
-    "private": true,
-    "pushedAt": "2026-07-15",
-    "openIssues": 7,
-    "commits30d": 0,
-    "recent": [
-     {
-      "date": "2026-07-15",
-      "message": "docs: clarify fastest release timeline"
-     },
-     {
-      "date": "2026-07-15",
-      "message": "feat: hide remaining distance from journey UI"
-     },
-     {
-      "date": "2026-07-15",
-      "message": "docs: refresh planned release handoff"
-     }
-    ],
-    "issueTitles": [
-     "[BL-007] 클라우드 진행 동기화",
-     "[BL-006] 사운드와 고급 햅틱 연출",
-     "[BL-005] 아파트까지 확장 토지 단계",
-     "[BL-004] 진행 공유 카드와 친구 초대",
-     "[BL-003] 게임 센터 리더보드",
-     "[BL-002] 장기 밸런스와 오프라인 진행"
-    ]
-   },
-   "toss": {
-    "source": "C:\\Users\\my\\workspace\\seoul-house-from-space\\.launch\\launch-status.json",
-    "appName": "seoul-house-from-space",
-    "displayName": null,
-    "stage": "sandbox_qa",
-    "stageKo": "샌드박스 QA",
-    "nextCheck": "sandbox_qa",
-    "pipeline": [
-     {
-      "s": "intake",
-      "st": "pass"
-     },
-     {
-      "s": "repo_bootstrap",
-      "st": "pass"
-     },
-     {
-      "s": "mvp_prd",
-      "st": "pass"
-     },
-     {
-      "s": "store_assets",
-      "st": "pass"
-     },
-     {
-      "s": "scaffold",
-      "st": "pass"
-     },
-     {
-      "s": "tds_mvp",
-      "st": "pass"
-     },
-     {
-      "s": "analytics",
-      "st": "pass"
-     },
-     {
-      "s": "artifact",
-      "st": "pass"
-     },
-     {
-      "s": "local_qa",
-      "st": "pass"
-     },
-     {
-      "s": "registration_draft",
-      "st": "pass"
-     },
-     {
-      "s": "deploy_authorization",
-      "st": "n/a"
-     },
-     {
-      "s": "sandbox_qa",
-      "st": "blocked"
-     },
-     {
-      "s": "release_gate",
-      "st": "pending"
-     },
-     {
-      "s": "released",
-      "st": "pending"
-     }
-    ],
-    "blockersOpen": 4,
-    "blockersTotal": 4,
-    "blockers": [
-     "npm audit reports 31 production-tree findings through the official Apps in Toss SDK and build-tool dependency graph; no compatible framework fix is available an",
-     "Public support and privacy pages are verified with the operator label 담당자. The live console still requires an explicitly approved receiving email, and game revi",
-     "The private test scheme deployed successfully, but it must be opened on a Toss-installed device and the sandbox checklist must pass before sandbox_qa can be mar",
-     "The local submission images were regenerated after removing the remaining-distance display; the logged-out Chrome console draft still needs those current images"
-    ],
-    "classification": "game",
-    "finalReleaseApproved": false,
-    "updatedAt": "2026-07-15",
-    "goal": "Prepare 서울에 집 사기 for Apps in Toss release gate"
-   },
-   "links": {
-    "local": "C:\\Users\\my\\workspace\\seoul-house-from-space",
-    "github": "https://github.com/mqzkim/seoul-house-from-space",
-    "wiki": [
-     "concepts/nomic-embed-korean-field-search-limitation.md",
-     "internal/command-center-project-registry.md"
-    ],
-    "launch": "C:\\Users\\my\\workspace\\seoul-house-from-space\\.launch\\launch-status.json",
-    "parent": null
    }
   },
   {
@@ -3105,7 +3219,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-15",
    "lastActivity": "2026-07-15",
-   "daysSince": 59,
+   "daysSince": 60,
    "gh": {
     "url": "https://github.com/mqzkim/conclusion-card",
     "private": true,
@@ -3240,7 +3354,7 @@ const CC_PROJECTS = {
    "dirty": 2,
    "lastCommit": "2026-07-11",
    "lastActivity": "2026-07-11",
-   "daysSince": 63,
+   "daysSince": 64,
    "gh": null,
    "toss": null,
    "links": {
@@ -3275,7 +3389,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-07-06",
-   "daysSince": 68,
+   "daysSince": 69,
    "gh": {
     "url": "https://github.com/mqzkim/diamond-gather",
     "private": true,
@@ -3338,7 +3452,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-07-06",
-   "daysSince": 68,
+   "daysSince": 69,
    "gh": {
     "url": "https://github.com/mqzkim/coffee",
     "private": true,
@@ -3388,6 +3502,7 @@ const CC_PROJECTS = {
     "github": "https://github.com/mqzkim/coffee",
     "wiki": [
      "concepts/android-toss-qa-evidence-pitfalls.md",
+     "concepts/claude-md-import-context-tax.md",
      "internal/command-center-project-registry.md"
     ],
     "launch": null,
@@ -3412,7 +3527,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-05",
    "lastActivity": "2026-07-05",
-   "daysSince": 69,
+   "daysSince": 70,
    "gh": null,
    "toss": null,
    "links": {
@@ -3431,7 +3546,7 @@ const CC_PROJECTS = {
    }
   },
   {
-   "name": "korean-review-tone-kit",
+   "name": "validation-korean-review-tone-kit-v1",
    "repo": "korean-review-tone-kit",
    "displayName": null,
    "desc": "Korean review tone analysis + reply style recommender (pure TS lib, 100% coverage)",
@@ -3444,10 +3559,10 @@ const CC_PROJECTS = {
    "remote": "https://github.com/mqzkim/korean-review-tone-kit.git",
    "lang": "TypeScript",
    "branch": "main",
-   "dirty": 0,
+   "dirty": 2,
    "lastCommit": "2026-05-08",
    "lastActivity": "2026-05-08",
-   "daysSince": 127,
+   "daysSince": 128,
    "gh": {
     "url": "https://github.com/mqzkim/korean-review-tone-kit",
     "private": true,
@@ -3472,12 +3587,15 @@ const CC_PROJECTS = {
    },
    "toss": null,
    "links": {
-    "local": "C:\\Users\\my\\workspace\\korean-review-tone-kit",
+    "local": "C:\\Users\\my\\workspace\\agent-workstreams\\product\\validation-korean-review-tone-kit-v1",
     "github": "https://github.com/mqzkim/korean-review-tone-kit",
     "wiki": [],
     "launch": null,
     "parent": null
-   }
+   },
+   "altPaths": [
+    "C:\\Users\\my\\workspace\\korean-review-tone-kit"
+   ]
   },
   {
    "name": "tradingagents-sena-trader",
@@ -3494,7 +3612,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-05-02",
-   "daysSince": 133,
+   "daysSince": 134,
    "gh": {
     "url": "https://github.com/mqzkim/tradingagents-sena-trader",
     "private": true,
@@ -3546,7 +3664,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-05-02",
    "lastActivity": "2026-05-02",
-   "daysSince": 133,
+   "daysSince": 134,
    "gh": {
     "url": "https://github.com/mqzkim/og-image-api",
     "private": true,
@@ -3602,7 +3720,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-04-23",
-   "daysSince": 142,
+   "daysSince": 143,
    "gh": {
     "url": "https://github.com/mqzkim/claude-max-codex-setup",
     "private": false,
@@ -3646,7 +3764,7 @@ const CC_PROJECTS = {
    "dirty": 10,
    "lastCommit": "2026-04-17",
    "lastActivity": "2026-04-17",
-   "daysSince": 148,
+   "daysSince": 149,
    "gh": {
     "url": "https://github.com/mqzkim/short_youtube",
     "private": true,
@@ -3695,7 +3813,7 @@ const CC_PROJECTS = {
    "dirty": 6,
    "lastCommit": "2026-04-16",
    "lastActivity": "2026-04-16",
-   "daysSince": 149,
+   "daysSince": 150,
    "gh": {
     "url": "https://github.com/mqzkim/helix-co",
     "private": true,
@@ -3753,7 +3871,7 @@ const CC_PROJECTS = {
    "dirty": 9,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-16",
-   "daysSince": 149,
+   "daysSince": 150,
    "gh": {
     "url": "https://github.com/mqzkim/harness-infra",
     "private": true,
@@ -3811,7 +3929,7 @@ const CC_PROJECTS = {
    "dirty": 1,
    "lastCommit": "2026-04-16",
    "lastActivity": "2026-04-16",
-   "daysSince": 149,
+   "daysSince": 150,
    "gh": null,
    "toss": null,
    "links": {
@@ -3846,7 +3964,7 @@ const CC_PROJECTS = {
    "dirty": 2,
    "lastCommit": "2026-04-15",
    "lastActivity": "2026-04-15",
-   "daysSince": 150,
+   "daysSince": 151,
    "gh": null,
    "toss": null,
    "links": {
@@ -3878,7 +3996,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-15",
    "lastActivity": "2026-04-15",
-   "daysSince": 150,
+   "daysSince": 151,
    "gh": null,
    "toss": null,
    "links": {
@@ -3906,7 +4024,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-15",
    "lastActivity": "2026-04-15",
-   "daysSince": 150,
+   "daysSince": 151,
    "gh": null,
    "toss": null,
    "links": {
@@ -3943,7 +4061,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-14",
    "lastActivity": "2026-04-14",
-   "daysSince": 151,
+   "daysSince": 152,
    "gh": null,
    "toss": null,
    "links": {
@@ -3971,21 +4089,21 @@ const CC_PROJECTS = {
    "dirty": 9,
    "lastCommit": "2026-04-13",
    "lastActivity": "2026-04-13",
-   "daysSince": 152,
+   "daysSince": 153,
    "gh": null,
    "toss": null,
    "links": {
     "local": "C:\\Users\\my\\workspace\\legacy\\super",
     "github": null,
     "wiki": [
+     "concepts/claude-code-cache-write-cost-structure.md",
+     "concepts/computer-use-browser-agents.md",
      "concepts/document-fork-anti-pattern-resolution.md",
      "concepts/immutable-document-append.md",
      "concepts/knowledge-pipeline.md",
      "concepts/multi-llm-capability-research-substrate.md",
      "concepts/observation-regression-gc-workflow.md",
-     "concepts/ratchet-decision-application-lag.md",
-     "concepts/standing-resolution-pattern.md",
-     "concepts/team-agent-delegation.md"
+     "concepts/ratchet-decision-application-lag.md"
     ],
     "launch": null,
     "parent": null
@@ -4008,7 +4126,7 @@ const CC_PROJECTS = {
    "dirty": 10,
    "lastCommit": "2026-04-13",
    "lastActivity": "2026-04-13",
-   "daysSince": 152,
+   "daysSince": 153,
    "gh": {
     "url": "https://github.com/mqzkim/llm-lean-startup",
     "private": false,
@@ -4066,7 +4184,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-10",
    "lastActivity": "2026-04-10",
-   "daysSince": 155,
+   "daysSince": 156,
    "gh": null,
    "toss": null,
    "links": {
@@ -4103,7 +4221,7 @@ const CC_PROJECTS = {
    "dirty": 47,
    "lastCommit": "2026-04-10",
    "lastActivity": "2026-04-10",
-   "daysSince": 155,
+   "daysSince": 156,
    "gh": null,
    "toss": null,
    "links": {
@@ -4136,7 +4254,7 @@ const CC_PROJECTS = {
    "dirty": 5,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 156,
+   "daysSince": 157,
    "gh": null,
    "toss": null,
    "links": {
@@ -4173,7 +4291,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 156,
+   "daysSince": 157,
    "gh": null,
    "toss": null,
    "links": {
@@ -4209,7 +4327,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 156,
+   "daysSince": 157,
    "gh": null,
    "toss": null,
    "links": {
@@ -4246,21 +4364,21 @@ const CC_PROJECTS = {
    "dirty": 1,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 156,
+   "daysSince": 157,
    "gh": null,
    "toss": null,
    "links": {
     "local": "C:\\Users\\my\\workspace\\legacy\\harness-claude-framework",
     "github": "https://github.com/mqzkim/harness-claude-framework",
     "wiki": [
-     "CLAUDE.md",
      "concepts/harness-engineering.md",
      "concepts/harness-recommendations-p12-p14.md",
      "concepts/observation-regression-gc-workflow.md",
      "concepts/voltagent.md",
      "entities/attune-article.md",
      "entities/claude-code-harness.md",
-     "entities/clawdev-bot.md"
+     "entities/clawdev-bot.md",
+     "entities/harness-claude-framework.md"
     ],
     "launch": null,
     "parent": null
@@ -4283,7 +4401,7 @@ const CC_PROJECTS = {
    "dirty": 22,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 156,
+   "daysSince": 157,
    "gh": null,
    "toss": null,
    "links": {
@@ -4320,7 +4438,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 156,
+   "daysSince": 157,
    "gh": null,
    "toss": null,
    "links": {
@@ -4357,7 +4475,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 156,
+   "daysSince": 157,
    "gh": null,
    "toss": null,
    "links": {
@@ -4394,7 +4512,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 156,
+   "daysSince": 157,
    "gh": null,
    "toss": null,
    "links": {
@@ -4429,7 +4547,7 @@ const CC_PROJECTS = {
    "dirty": 9,
    "lastCommit": "2026-04-08",
    "lastActivity": "2026-04-08",
-   "daysSince": 157,
+   "daysSince": 158,
    "gh": null,
    "toss": null,
    "links": {
@@ -4466,7 +4584,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-08",
    "lastActivity": "2026-04-08",
-   "daysSince": 157,
+   "daysSince": 158,
    "gh": null,
    "toss": null,
    "links": {
@@ -4503,7 +4621,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-07",
    "lastActivity": "2026-04-07",
-   "daysSince": 158,
+   "daysSince": 159,
    "gh": null,
    "toss": null,
    "links": {
@@ -4540,7 +4658,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-07",
    "lastActivity": "2026-04-07",
-   "daysSince": 158,
+   "daysSince": 159,
    "gh": null,
    "toss": null,
    "links": {
@@ -4577,21 +4695,21 @@ const CC_PROJECTS = {
    "dirty": 23,
    "lastCommit": "2026-04-07",
    "lastActivity": "2026-04-07",
-   "daysSince": 158,
+   "daysSince": 159,
    "gh": null,
    "toss": null,
    "links": {
     "local": "C:\\Users\\my\\workspace\\legacy\\harness-competition\\harness",
     "github": "https://github.com/harness/harness",
     "wiki": [
-     "CLAUDE.md",
      "concepts/agent-lifecycle.md",
      "concepts/agent-memory-rag.md",
      "concepts/agent-orchestration.md",
      "concepts/agentic-harness-engineering.md",
      "concepts/ai-app-builder-six-axis-decomposition.md",
      "concepts/ai-pr-measurement-pitfalls.md",
-     "concepts/artifact-drop-librarian-hook.md"
+     "concepts/artifact-drop-librarian-hook.md",
+     "concepts/balanced-coupling.md"
     ],
     "launch": null,
     "parent": null
@@ -4617,7 +4735,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-07",
    "lastActivity": "2026-04-07",
-   "daysSince": 158,
+   "daysSince": 159,
    "gh": null,
    "toss": null,
    "links": {
@@ -4654,21 +4772,21 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-06",
    "lastActivity": "2026-04-06",
-   "daysSince": 159,
+   "daysSince": 160,
    "gh": null,
    "toss": null,
    "links": {
     "local": "C:\\Users\\my\\workspace\\legacy\\superpowers",
     "github": "https://github.com/obra/superpowers",
     "wiki": [
+     "concepts/claude-code-cache-write-cost-structure.md",
+     "concepts/computer-use-browser-agents.md",
      "concepts/ratchet-decision-application-lag.md",
+     "concepts/self-evolving-daily-loop.md",
      "concepts/standing-resolution-pattern.md",
      "entities/agno-agentos.md",
      "entities/attune-article.md",
-     "entities/claude-os.md",
-     "entities/claudex-loop.md",
-     "entities/genspark.md",
-     "entities/gstack.md"
+     "entities/claude-os.md"
     ],
     "launch": null,
     "parent": null
@@ -4691,7 +4809,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-03",
    "lastActivity": "2026-04-03",
-   "daysSince": 162,
+   "daysSince": 163,
    "gh": null,
    "toss": null,
    "links": {
@@ -4727,7 +4845,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-01",
    "lastActivity": "2026-04-01",
-   "daysSince": 164,
+   "daysSince": 165,
    "gh": null,
    "toss": null,
    "links": {
@@ -4755,7 +4873,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 166,
+   "daysSince": 167,
    "gh": null,
    "toss": null,
    "links": {
@@ -4788,7 +4906,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 166,
+   "daysSince": 167,
    "gh": null,
    "toss": null,
    "links": {
@@ -4825,7 +4943,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 166,
+   "daysSince": 167,
    "gh": null,
    "toss": null,
    "links": {
@@ -4861,7 +4979,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 166,
+   "daysSince": 167,
    "gh": null,
    "toss": null,
    "links": {
@@ -4898,7 +5016,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 166,
+   "daysSince": 167,
    "gh": null,
    "toss": null,
    "links": {
@@ -4935,7 +5053,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 166,
+   "daysSince": 167,
    "gh": null,
    "toss": null,
    "links": {
@@ -4969,7 +5087,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-18",
    "lastActivity": "2026-03-18",
-   "daysSince": 178,
+   "daysSince": 179,
    "gh": null,
    "toss": null,
    "links": {
@@ -5006,7 +5124,7 @@ const CC_PROJECTS = {
    "dirty": 39,
    "lastCommit": "2026-03-06",
    "lastActivity": "2026-03-06",
-   "daysSince": 190,
+   "daysSince": 191,
    "gh": null,
    "toss": null,
    "links": {
@@ -5038,7 +5156,7 @@ const CC_PROJECTS = {
    "dirty": 7,
    "lastCommit": "2026-02-06",
    "lastActivity": "2026-02-06",
-   "daysSince": 218,
+   "daysSince": 219,
    "gh": null,
    "toss": null,
    "links": {
@@ -5075,7 +5193,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2025-07-22",
    "lastActivity": "2025-07-22",
-   "daysSince": 417,
+   "daysSince": 418,
    "gh": null,
    "toss": null,
    "links": {
@@ -5112,7 +5230,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-12",
    "lastActivity": "2026-07-12",
-   "daysSince": 62,
+   "daysSince": 63,
    "gh": {
     "url": "https://github.com/mqzkim/seoul-house-from-space-support",
     "private": false,
@@ -5137,58 +5255,6 @@ const CC_PROJECTS = {
    }
   },
   {
-   "name": "cafe-review-reply-generator",
-   "repo": "cafe-review-reply-generator",
-   "displayName": null,
-   "desc": null,
-   "category": "side-project",
-   "significance": 1,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/cafe-review-reply-generator.git",
-   "lang": "TypeScript",
-   "branch": "main",
-   "dirty": 0,
-   "lastCommit": "2026-05-08",
-   "lastActivity": "2026-05-08",
-   "daysSince": 127,
-   "gh": {
-    "url": "https://github.com/mqzkim/cafe-review-reply-generator",
-    "private": true,
-    "pushedAt": "2026-05-08",
-    "openIssues": 0,
-    "commits30d": 0,
-    "recent": [
-     {
-      "date": "2026-05-08",
-      "message": "chore(coverage): ratchet content/verticals/laundry.ts to 100%"
-     },
-     {
-      "date": "2026-05-08",
-      "message": "chore(coverage): ratchet content/verticals/laborattorney.ts to 100%"
-     },
-     {
-      "date": "2026-05-08",
-      "message": "chore(coverage): ratchet content/verticals/kids-cafe.ts to 100%"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": null,
-   "links": {
-    "local": "C:\\Users\\my\\workspace\\cafe-review-reply-generator",
-    "github": "https://github.com/mqzkim/cafe-review-reply-generator",
-    "wiki": [
-     "concepts/content-registry-parametric-route.md",
-     "_librarian/lint-queue.md"
-    ],
-    "launch": null,
-    "parent": null
-   }
-  },
-  {
    "name": "hermes-agent",
    "repo": "hermes-agent",
    "displayName": null,
@@ -5198,12 +5264,14 @@ const CC_PROJECTS = {
    "hidden": false,
    "scaffold": false,
    "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/hermes-agent.git",
    "lang": "Python",
-   "branch": null,
-   "dirty": null,
-   "lastCommit": null,
+   "branch": "main",
+   "dirty": 0,
+   "lastCommit": "2026-05-03",
    "lastActivity": "2026-05-03",
-   "daysSince": 132,
+   "daysSince": 133,
    "gh": {
     "url": "https://github.com/mqzkim/hermes-agent",
     "private": false,
@@ -5212,19 +5280,17 @@ const CC_PROJECTS = {
     "issueTitles": []
    },
    "toss": null,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/hermes-agent",
    "links": {
-    "local": null,
+    "local": "C:\\Users\\my\\workspace\\hermes-agent",
     "github": "https://github.com/mqzkim/hermes-agent",
     "wiki": [
      "entities/ai-benchmark-repos/JPeetz__Hermes-Studio.md",
-     "entities/ai-benchmark-repos/swarmclawai__swarmclaw.md"
+     "entities/ai-benchmark-repos/swarmclawai__swarmclaw.md",
+     "internal/hermes-windows-desktop-subscription.md"
     ],
     "launch": null,
     "parent": null
-   },
-   "noLocal": true
+   }
   },
   {
    "name": "mqzkim.github.io",
@@ -5241,7 +5307,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-05-02",
-   "daysSince": 133,
+   "daysSince": 134,
    "gh": {
     "url": "https://github.com/mqzkim/mqzkim.github.io",
     "private": false,
@@ -5291,7 +5357,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-05-01",
-   "daysSince": 134,
+   "daysSince": 135,
    "gh": {
     "url": "https://github.com/mqzkim/hermes-agent-board",
     "private": true,
@@ -5341,7 +5407,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-04-30",
-   "daysSince": 135,
+   "daysSince": 136,
    "gh": {
     "url": "https://github.com/mqzkim/tuist",
     "private": false,
@@ -5362,51 +5428,6 @@ const CC_PROJECTS = {
    "noLocal": true
   },
   {
-   "name": "helix-space",
-   "repo": "helix-space",
-   "displayName": null,
-   "desc": null,
-   "category": "harness-ai-infra",
-   "significance": 1,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/helix-space.git",
-   "lang": "Rust",
-   "branch": "main",
-   "dirty": 5,
-   "lastCommit": "2026-04-21",
-   "lastActivity": "2026-04-21",
-   "daysSince": 144,
-   "gh": {
-    "url": "https://github.com/mqzkim/helix-space",
-    "private": true,
-    "pushedAt": "2026-04-21",
-    "openIssues": 0,
-    "commits30d": 0,
-    "recent": [
-     {
-      "date": "2026-04-21",
-      "message": "Improve supervisor prompt injection"
-     },
-     {
-      "date": "2026-04-21",
-      "message": "Initial commit"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": null,
-   "links": {
-    "local": "C:\\Users\\my\\workspace\\helix-space",
-    "github": "https://github.com/mqzkim/helix-space",
-    "wiki": [],
-    "launch": null,
-    "parent": null
-   }
-  },
-  {
    "name": "beautify-me",
    "repo": "beautify-me",
    "displayName": null,
@@ -5423,7 +5444,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-19",
    "lastActivity": "2026-04-19",
-   "daysSince": 146,
+   "daysSince": 147,
    "gh": {
     "url": "https://github.com/mqzkim/beautify-me",
     "private": true,
@@ -5470,7 +5491,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-04-18",
-   "daysSince": 147,
+   "daysSince": 148,
    "gh": {
     "url": "https://github.com/mqzkim/llm-usage",
     "private": true,
@@ -5516,7 +5537,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-04-18",
-   "daysSince": 147,
+   "daysSince": 148,
    "gh": {
     "url": "https://github.com/mqzkim/roastsmysite",
     "private": true,
@@ -5568,7 +5589,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-18",
    "lastActivity": "2026-04-18",
-   "daysSince": 147,
+   "daysSince": 148,
    "gh": {
     "url": "https://github.com/mqzkim/briefme",
     "private": true,
@@ -5622,7 +5643,7 @@ const CC_PROJECTS = {
    "dirty": 7,
    "lastCommit": "2026-04-16",
    "lastActivity": "2026-04-16",
-   "daysSince": 149,
+   "daysSince": 150,
    "gh": {
     "url": "https://github.com/mqzkim/community-growth-hacker",
     "private": true,
@@ -5672,7 +5693,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-13",
    "lastActivity": "2026-04-13",
-   "daysSince": 152,
+   "daysSince": 153,
    "gh": {
     "url": "https://github.com/mqzkim/gst",
     "private": true,

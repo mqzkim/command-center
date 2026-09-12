@@ -1,7 +1,48 @@
 {
-  "generatedAt": "2026-09-11T21:03:25.771Z",
+  "generatedAt": "2026-09-12T21:03:21.361Z",
   "source": "gh api graphql (6 calls, 44 repos: 42 non-fork + 2 fork; fetch-gh.mjs)",
   "repos": [
+    {
+      "name": "hermes-shared-knowledge",
+      "url": "https://github.com/mqzkim/hermes-shared-knowledge",
+      "description": "Shared Hermes/Sena skills, personalities, and safe config templates",
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TeX",
+      "pushedAt": "2026-09-12T20:30:35Z",
+      "createdAt": "2026-04-30T02:45:22Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-09-12",
+          "message": "ops: refresh sena-1 telemetry metrics"
+        },
+        {
+          "date": "2026-09-12",
+          "message": "ops: refresh sena-1 telemetry metrics"
+        },
+        {
+          "date": "2026-09-12",
+          "message": "ops: refresh sena-1 telemetry metrics"
+        },
+        {
+          "date": "2026-09-12",
+          "message": "ops: refresh sena-1 telemetry metrics"
+        },
+        {
+          "date": "2026-09-12",
+          "message": "ops: refresh sena-1 telemetry metrics"
+        }
+      ],
+      "commitsLast30d": 33,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "harness-ai-infra",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 33, 설명 있음"
+    },
     {
       "name": "app-in-toss",
       "url": "https://github.com/mqzkim/app-in-toss",
@@ -9,34 +50,34 @@
       "isPrivate": true,
       "isFork": false,
       "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-09-11T17:33:34Z",
+      "pushedAt": "2026-09-12T17:16:50Z",
       "createdAt": "2026-07-04T07:52:06Z",
       "stargazerCount": 0,
       "openIssues": 59,
       "defaultBranch": "main",
       "recentCommits": [
         {
-          "date": "2026-09-07",
-          "message": "feat(release): 실제 빌드 관찰 기반 artifact 단계 기록 (#113)"
+          "date": "2026-09-12",
+          "message": "Merge pull request #148 from mqzkim/codex/daesin-review-receipt-20260912"
         },
         {
-          "date": "2026-09-07",
-          "message": "fix(release): 단계 승격 시 기존 증거 이력 보존 (#112)"
+          "date": "2026-09-12",
+          "message": "chore(daesin-meogeo): reconcile completed phase history index"
         },
         {
-          "date": "2026-09-07",
-          "message": "chore(bamti): record current QA and rebuilt release artifact (#111)"
+          "date": "2026-09-12",
+          "message": "chore(daesin-meogeo): record accepted console review"
         },
         {
-          "date": "2026-09-07",
-          "message": "feat(qa): 실제 제품 증거와 단계 기록 연결 (#110)"
+          "date": "2026-09-12",
+          "message": "chore(daesin-meogeo): verify authorized review readiness"
         },
         {
-          "date": "2026-09-07",
-          "message": "feat(qa): bind app-owned product checks and repair Bamti feedback (#109)"
+          "date": "2026-09-12",
+          "message": "Merge pull request #114 from mqzkim/codex/local-qa-environment"
         }
       ],
-      "commitsLast30d": 213,
+      "commitsLast30d": 463,
       "isAppsInToss": true,
       "aitEvidence": "package.json has @apps-in-toss dependency; root has ddasa.ait",
       "category": "apps-in-toss",
@@ -49,7 +90,8 @@
         "docs/architecture",
         "docs/decisions",
         "docs/operations",
-        "docs/reference"
+        "docs/reference",
+        "docs/work-orders"
       ],
       "openIssueTitles": [
         "[diamond-get][BL-017] 사용자 간 랭킹",
@@ -65,7 +107,7 @@
       ],
       "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
       "significance": 4,
-      "significanceReason": "최근 7일 내 푸시, 30일 커밋 213, 앱인토스, 오픈 이슈 59"
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 463, 앱인토스, 오픈 이슈 59"
     },
     {
       "name": "llm-wiki",
@@ -74,39 +116,336 @@
       "isPrivate": true,
       "isFork": false,
       "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-09-11T17:32:24Z",
+      "pushedAt": "2026-09-12T17:13:44Z",
       "createdAt": "2026-04-06T21:42:42Z",
       "stargazerCount": 0,
       "openIssues": 0,
       "defaultBranch": "master",
       "recentCommits": [
         {
-          "date": "2026-09-11",
-          "message": "knowledge: add local-self-hosted-ci-boundary"
+          "date": "2026-09-12",
+          "message": "knowledge: add native date input visual verification"
         },
         {
-          "date": "2026-09-11",
-          "message": "knowledge: add serial-app-review-completion"
+          "date": "2026-09-12",
+          "message": "knowledge: update latest bundle review completion"
         },
         {
-          "date": "2026-09-11",
-          "message": "knowledge: fix privacy-review-log-line-endings"
+          "date": "2026-09-12",
+          "message": "knowledge: update completed phase history indexing"
         },
         {
-          "date": "2026-09-11",
-          "message": "knowledge: update toss-sdk-privacy-scope"
+          "date": "2026-09-12",
+          "message": "knowledge: update staged production ad configuration boundary"
         },
         {
-          "date": "2026-09-11",
-          "message": "knowledge: update toss-rewarded-test-id-and-native-evidence"
+          "date": "2026-09-12",
+          "message": "knowledge: update native media control evidence limits"
         }
       ],
-      "commitsLast30d": 72,
+      "commitsLast30d": 96,
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "knowledge-wiki",
       "significance": 4,
-      "significanceReason": "최근 7일 내 푸시, 30일 커밋 72"
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 96"
+    },
+    {
+      "name": "nailmap",
+      "url": "https://github.com/mqzkim/nailmap",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-09-12T17:08:37Z",
+      "createdAt": "2026-07-27T00:04:18Z",
+      "stargazerCount": 0,
+      "openIssues": 16,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-07-28",
+          "message": "fix: make api key evidence utf8-safe"
+        },
+        {
+          "date": "2026-07-28",
+          "message": "release: verify sandbox deploy handoff"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "release: record sandbox deploy authorization blocker"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "test: refresh local release evidence"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "test: verify current Apps in Toss artifact"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": true,
+      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; root has nailmap.ait",
+      "category": "apps-in-toss",
+      "appName": "nailmap",
+      "stageEvidence": [
+        ".launch",
+        "PRD.md",
+        "docs",
+        "nailmap.ait",
+        "store-assets",
+        "vitest.config.ts",
+        "docs/ANALYTICS_EVENTS.md",
+        "docs/API_KEY_REFRESH_HANDOFF.md",
+        "docs/APP_IN_TOSS_SUBMISSION.md",
+        "docs/ASSET_RIGHTS.md",
+        "docs/BACKLOG.md",
+        "docs/CONSOLE_COPY.md",
+        "docs/IDEA_BRIEF.md",
+        "docs/OPERATOR_INPUTS_REQUIRED.md",
+        "docs/PRIVACY_POLICY_DRAFT.md",
+        "docs/REGISTRATION_HANDOFF.md",
+        "docs/RELEASE_READINESS_REPORT.md",
+        "docs/SANDBOX_TEST_SCHEME.md",
+        "docs/SECURITY_AUDIT_NOTES.md",
+        "docs/SOURCE_NOTES.md",
+        "docs/STORE_ASSET_BRIEF.md",
+        "docs/TODAY_RELEASE_HANDOFF.md"
+      ],
+      "openIssueTitles": [
+        "[BL-016] 가격 히스토리·지역 예약 HeatMap",
+        "[BL-015] 채팅·DM·실시간 상담·커뮤니티",
+        "[BL-014] 추천샵 광고·프리미엄 지도 노출",
+        "[BL-013] 친구 추천·쿠폰·포인트",
+        "[BL-012] 고객 리뷰 작성·사진 업로드·AI 방문 검증",
+        "[BL-011] 트렌드·이달의 아트·디자이너 포트폴리오",
+        "[BL-010] AI 견적·제거 및 시술시간 추정",
+        "[BL-009] AI 디자인 유사 검색·취향 추천",
+        "[BL-008] 고급 검색 필터",
+        "[BL-007] 2시간 이내 즉시예약·특가"
+      ],
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시, 앱인토스, 오픈 이슈 16"
+    },
+    {
+      "name": "today-task",
+      "url": "https://github.com/mqzkim/today-task",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "JavaScript",
+      "pushedAt": "2026-09-12T16:19:25Z",
+      "createdAt": "2026-07-27T03:46:52Z",
+      "stargazerCount": 0,
+      "openIssues": 4,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-07-29",
+          "message": "release: refresh current date and sandbox build"
+        },
+        {
+          "date": "2026-07-28",
+          "message": "release: upload editable main page sandbox build"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "feat: add editable profile and manager task creation"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "evidence: record private console deployment"
+        },
+        {
+          "date": "2026-07-27",
+          "message": "evidence: verify today-task console registration"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": true,
+      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
+      "category": "apps-in-toss",
+      "appName": "today-task",
+      "stageEvidence": [
+        ".launch",
+        "PRD.md",
+        "docs",
+        "store-assets",
+        "docs/ANALYTICS_EVENTS.md",
+        "docs/ASSET_RIGHTS.md",
+        "docs/BACKEND_INTEGRATION_CONTRACT.md",
+        "docs/BACKLOG.md",
+        "docs/CONSOLE_COPY.md",
+        "docs/IDEA_BRIEF.md",
+        "docs/OPERATOR_INPUTS_REQUIRED.md",
+        "docs/PRIVACY_POLICY_DRAFT.md",
+        "docs/REGISTRATION_HANDOFF.md",
+        "docs/SANDBOX_QA_HANDOFF.md",
+        "docs/SANDBOX_TEST_SCHEME.md",
+        "docs/SECURITY_AUDIT.md",
+        "docs/SOURCE_NOTES.md",
+        "docs/STORE_ASSET_BRIEF.md"
+      ],
+      "openIssueTitles": [
+        "[BL-004] 내보내기와 운영 통계",
+        "[BL-003] 기능성 푸시 알림",
+        "[BL-002] 공동 관리자와 부재 상태",
+        "[BL-001] 반복 업무 템플릿"
+      ],
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시, 앱인토스"
+    },
+    {
+      "name": "seoul-house-from-space",
+      "url": "https://github.com/mqzkim/seoul-house-from-space",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-09-12T16:16:41Z",
+      "createdAt": "2026-07-12T12:49:36Z",
+      "stargazerCount": 0,
+      "openIssues": 7,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-07-15",
+          "message": "docs: clarify fastest release timeline"
+        },
+        {
+          "date": "2026-07-15",
+          "message": "feat: hide remaining distance from journey UI"
+        },
+        {
+          "date": "2026-07-15",
+          "message": "docs: refresh planned release handoff"
+        },
+        {
+          "date": "2026-07-15",
+          "message": "docs: plan fastest Apps in Toss release"
+        },
+        {
+          "date": "2026-07-15",
+          "message": "docs: update security review handoff"
+        }
+      ],
+      "commitsLast30d": 0,
+      "isAppsInToss": true,
+      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
+      "category": "apps-in-toss",
+      "appName": "seoul-house-from-space",
+      "stageEvidence": [
+        ".launch",
+        "PRD.md",
+        "docs",
+        "store-assets",
+        "docs/ANALYTICS_EVENTS.md",
+        "docs/API_KEY_REFRESH_HANDOFF.md",
+        "docs/APP_IN_TOSS_SUBMISSION.md",
+        "docs/ASSET_RIGHTS.md",
+        "docs/BACKLOG.md",
+        "docs/CONSOLE_COPY.md",
+        "docs/FASTEST_RELEASE_PLAN.md",
+        "docs/GAME_RATING_EVIDENCE.md",
+        "docs/GAME_RATING_SUBMISSION_PACKAGE.md",
+        "docs/IDEA_BRIEF.md",
+        "docs/OPERATOR_INPUTS_REQUIRED.md",
+        "docs/PRIVACY_POLICY_DRAFT.md",
+        "docs/REGISTRATION_HANDOFF.md",
+        "docs/SANDBOX_TEST_SCHEME.md",
+        "docs/SOURCE_NOTES.md",
+        "docs/STORE_ASSET_BRIEF.md",
+        "docs/skills"
+      ],
+      "openIssueTitles": [
+        "[BL-007] 클라우드 진행 동기화",
+        "[BL-006] 사운드와 고급 햅틱 연출",
+        "[BL-005] 아파트까지 확장 토지 단계",
+        "[BL-004] 진행 공유 카드와 친구 초대",
+        "[BL-003] 게임 센터 리더보드",
+        "[BL-002] 장기 밸런스와 오프라인 진행",
+        "[BL-001] 선택형 보상 광고 부스터"
+      ],
+      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시, 앱인토스"
+    },
+    {
+      "name": "helix-space",
+      "url": "https://github.com/mqzkim/helix-space",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "Rust",
+      "pushedAt": "2026-09-12T04:21:32Z",
+      "createdAt": "2026-04-21T02:45:51Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-09-12",
+          "message": "fix(supervisor): deliver role via first turn only; stop writing cwd A…"
+        },
+        {
+          "date": "2026-04-21",
+          "message": "Improve supervisor prompt injection"
+        },
+        {
+          "date": "2026-04-21",
+          "message": "Initial commit"
+        }
+      ],
+      "commitsLast30d": 1,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "harness-ai-infra",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시"
+    },
+    {
+      "name": "cafe-review-reply-generator",
+      "url": "https://github.com/mqzkim/cafe-review-reply-generator",
+      "description": null,
+      "isPrivate": true,
+      "isFork": false,
+      "primaryLanguage": "TypeScript",
+      "pushedAt": "2026-09-12T04:21:09Z",
+      "createdAt": "2026-04-17T13:54:05Z",
+      "stargazerCount": 0,
+      "openIssues": 0,
+      "defaultBranch": "main",
+      "recentCommits": [
+        {
+          "date": "2026-09-12",
+          "message": "docs(claude-md): reflect shipped P1-P3, dedupe prompt rules"
+        },
+        {
+          "date": "2026-05-08",
+          "message": "chore(coverage): ratchet content/verticals/lawfirm.ts to 100%"
+        },
+        {
+          "date": "2026-05-08",
+          "message": "chore(coverage): ratchet content/verticals/laundry.ts to 100%"
+        },
+        {
+          "date": "2026-05-08",
+          "message": "chore(coverage): ratchet content/verticals/laborattorney.ts to 100%"
+        },
+        {
+          "date": "2026-05-08",
+          "message": "chore(coverage): ratchet content/verticals/kids-cafe.ts to 100%"
+        }
+      ],
+      "commitsLast30d": 1,
+      "isAppsInToss": false,
+      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
+      "category": "side-project",
+      "significance": 4,
+      "significanceReason": "최근 7일 내 푸시"
     },
     {
       "name": "command-center",
@@ -115,12 +454,20 @@
       "isPrivate": false,
       "isFork": false,
       "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-09-10T22:39:54Z",
+      "pushedAt": "2026-09-11T22:43:07Z",
       "createdAt": "2026-08-22T15:02:39Z",
       "stargazerCount": 0,
       "openIssues": 0,
       "defaultBranch": "master",
       "recentCommits": [
+        {
+          "date": "2026-09-11",
+          "message": "evolve(2026-09-12): ledger commit sha 2613910 + gates G3/G4 증거 기입"
+        },
+        {
+          "date": "2026-09-11",
+          "message": "evolve(2026-09-12): obra/superpowers-chrome 스킬 채택(b) — ~/.claude/skil…"
+        },
         {
           "date": "2026-09-10",
           "message": "evolve(2026-09-11): ledger commit sha 06262d1 + gates G3/G4 증거 기입"
@@ -132,63 +479,14 @@
         {
           "date": "2026-09-09",
           "message": "evolve(2026-09-10): gates G3/G4 증거 기입 (메인 9f3dc22·ledger bfd8ba0)"
-        },
-        {
-          "date": "2026-09-09",
-          "message": "evolve(2026-09-10): ledger commit sha 9f3dc22"
-        },
-        {
-          "date": "2026-09-09",
-          "message": "evolve(2026-09-10): open-multi-agent/open-multi-agent 지식화(c) — ~/.wik…"
         }
       ],
-      "commitsLast30d": 83,
+      "commitsLast30d": 85,
       "isAppsInToss": false,
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 4,
-      "significanceReason": "최근 7일 내 푸시, 30일 커밋 83"
-    },
-    {
-      "name": "hermes-shared-knowledge",
-      "url": "https://github.com/mqzkim/hermes-shared-knowledge",
-      "description": "Shared Hermes/Sena skills, personalities, and safe config templates",
-      "isPrivate": true,
-      "isFork": false,
-      "primaryLanguage": "TeX",
-      "pushedAt": "2026-09-03T02:20:11Z",
-      "createdAt": "2026-04-30T02:45:22Z",
-      "stargazerCount": 0,
-      "openIssues": 0,
-      "defaultBranch": "main",
-      "recentCommits": [
-        {
-          "date": "2026-09-03",
-          "message": "ops: refresh sena-1 telemetry metrics"
-        },
-        {
-          "date": "2026-08-27",
-          "message": "ops: refresh sena-1 telemetry metrics"
-        },
-        {
-          "date": "2026-08-27",
-          "message": "ops: refresh sena-1 telemetry metrics"
-        },
-        {
-          "date": "2026-08-27",
-          "message": "ops: refresh sena-1 telemetry metrics"
-        },
-        {
-          "date": "2026-08-27",
-          "message": "ops: refresh sena-1 telemetry metrics"
-        }
-      ],
-      "commitsLast30d": 16,
-      "isAppsInToss": false,
-      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
-      "category": "harness-ai-infra",
-      "significance": 4,
-      "significanceReason": "최근 30일 내 푸시, 30일 커밋 16, 설명 있음"
+      "significanceReason": "최근 7일 내 푸시, 30일 커밋 85"
     },
     {
       "name": "launch-deck",
@@ -788,154 +1086,6 @@
       "significanceReason": "60일 내 푸시"
     },
     {
-      "name": "today-task",
-      "url": "https://github.com/mqzkim/today-task",
-      "description": null,
-      "isPrivate": true,
-      "isFork": false,
-      "primaryLanguage": "JavaScript",
-      "pushedAt": "2026-07-29T03:53:17Z",
-      "createdAt": "2026-07-27T03:46:52Z",
-      "stargazerCount": 0,
-      "openIssues": 4,
-      "defaultBranch": "main",
-      "recentCommits": [
-        {
-          "date": "2026-07-29",
-          "message": "release: refresh current date and sandbox build"
-        },
-        {
-          "date": "2026-07-28",
-          "message": "release: upload editable main page sandbox build"
-        },
-        {
-          "date": "2026-07-27",
-          "message": "feat: add editable profile and manager task creation"
-        },
-        {
-          "date": "2026-07-27",
-          "message": "evidence: record private console deployment"
-        },
-        {
-          "date": "2026-07-27",
-          "message": "evidence: verify today-task console registration"
-        }
-      ],
-      "commitsLast30d": 0,
-      "isAppsInToss": true,
-      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
-      "category": "apps-in-toss",
-      "appName": "today-task",
-      "stageEvidence": [
-        ".launch",
-        "PRD.md",
-        "docs",
-        "store-assets",
-        "docs/ANALYTICS_EVENTS.md",
-        "docs/ASSET_RIGHTS.md",
-        "docs/BACKEND_INTEGRATION_CONTRACT.md",
-        "docs/BACKLOG.md",
-        "docs/CONSOLE_COPY.md",
-        "docs/IDEA_BRIEF.md",
-        "docs/OPERATOR_INPUTS_REQUIRED.md",
-        "docs/PRIVACY_POLICY_DRAFT.md",
-        "docs/REGISTRATION_HANDOFF.md",
-        "docs/SANDBOX_QA_HANDOFF.md",
-        "docs/SANDBOX_TEST_SCHEME.md",
-        "docs/SECURITY_AUDIT.md",
-        "docs/SOURCE_NOTES.md",
-        "docs/STORE_ASSET_BRIEF.md"
-      ],
-      "openIssueTitles": [
-        "[BL-004] 내보내기와 운영 통계",
-        "[BL-003] 기능성 푸시 알림",
-        "[BL-002] 공동 관리자와 부재 상태",
-        "[BL-001] 반복 업무 템플릿"
-      ],
-      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
-      "significance": 2,
-      "significanceReason": "60일 내 푸시, 앱인토스"
-    },
-    {
-      "name": "nailmap",
-      "url": "https://github.com/mqzkim/nailmap",
-      "description": null,
-      "isPrivate": true,
-      "isFork": false,
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-07-28T11:36:12Z",
-      "createdAt": "2026-07-27T00:04:18Z",
-      "stargazerCount": 0,
-      "openIssues": 16,
-      "defaultBranch": "main",
-      "recentCommits": [
-        {
-          "date": "2026-07-28",
-          "message": "fix: make api key evidence utf8-safe"
-        },
-        {
-          "date": "2026-07-28",
-          "message": "release: verify sandbox deploy handoff"
-        },
-        {
-          "date": "2026-07-27",
-          "message": "release: record sandbox deploy authorization blocker"
-        },
-        {
-          "date": "2026-07-27",
-          "message": "test: refresh local release evidence"
-        },
-        {
-          "date": "2026-07-27",
-          "message": "test: verify current Apps in Toss artifact"
-        }
-      ],
-      "commitsLast30d": 0,
-      "isAppsInToss": true,
-      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; root has nailmap.ait",
-      "category": "apps-in-toss",
-      "appName": "nailmap",
-      "stageEvidence": [
-        ".launch",
-        "PRD.md",
-        "docs",
-        "nailmap.ait",
-        "store-assets",
-        "vitest.config.ts",
-        "docs/ANALYTICS_EVENTS.md",
-        "docs/API_KEY_REFRESH_HANDOFF.md",
-        "docs/APP_IN_TOSS_SUBMISSION.md",
-        "docs/ASSET_RIGHTS.md",
-        "docs/BACKLOG.md",
-        "docs/CONSOLE_COPY.md",
-        "docs/IDEA_BRIEF.md",
-        "docs/OPERATOR_INPUTS_REQUIRED.md",
-        "docs/PRIVACY_POLICY_DRAFT.md",
-        "docs/REGISTRATION_HANDOFF.md",
-        "docs/RELEASE_READINESS_REPORT.md",
-        "docs/SANDBOX_TEST_SCHEME.md",
-        "docs/SECURITY_AUDIT_NOTES.md",
-        "docs/SOURCE_NOTES.md",
-        "docs/STORE_ASSET_BRIEF.md",
-        "docs/TODAY_RELEASE_HANDOFF.md"
-      ],
-      "openIssueTitles": [
-        "[BL-016] 가격 히스토리·지역 예약 HeatMap",
-        "[BL-015] 채팅·DM·실시간 상담·커뮤니티",
-        "[BL-014] 추천샵 광고·프리미엄 지도 노출",
-        "[BL-013] 친구 추천·쿠폰·포인트",
-        "[BL-012] 고객 리뷰 작성·사진 업로드·AI 방문 검증",
-        "[BL-011] 트렌드·이달의 아트·디자이너 포트폴리오",
-        "[BL-010] AI 견적·제거 및 시술시간 추정",
-        "[BL-009] AI 디자인 유사 검색·취향 추천",
-        "[BL-008] 고급 검색 필터",
-        "[BL-007] 2시간 이내 즉시예약·특가"
-      ],
-      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
-      "significance": 2,
-      "significanceReason": "60일 내 푸시, 앱인토스, 오픈 이슈 16"
-    },
-    {
       "name": "nail-map",
       "url": "https://github.com/mqzkim/nail-map",
       "description": null,
@@ -1033,81 +1183,6 @@
       "significanceReason": "60일 내 푸시, 앱인토스"
     },
     {
-      "name": "seoul-house-from-space",
-      "url": "https://github.com/mqzkim/seoul-house-from-space",
-      "description": null,
-      "isPrivate": true,
-      "isFork": false,
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-07-15T07:01:25Z",
-      "createdAt": "2026-07-12T12:49:36Z",
-      "stargazerCount": 0,
-      "openIssues": 7,
-      "defaultBranch": "main",
-      "recentCommits": [
-        {
-          "date": "2026-07-15",
-          "message": "docs: clarify fastest release timeline"
-        },
-        {
-          "date": "2026-07-15",
-          "message": "feat: hide remaining distance from journey UI"
-        },
-        {
-          "date": "2026-07-15",
-          "message": "docs: refresh planned release handoff"
-        },
-        {
-          "date": "2026-07-15",
-          "message": "docs: plan fastest Apps in Toss release"
-        },
-        {
-          "date": "2026-07-15",
-          "message": "docs: update security review handoff"
-        }
-      ],
-      "commitsLast30d": 0,
-      "isAppsInToss": true,
-      "aitEvidence": "granite.config.ts exists; package.json has @apps-in-toss dependency; README mentions toss",
-      "category": "apps-in-toss",
-      "appName": "seoul-house-from-space",
-      "stageEvidence": [
-        ".launch",
-        "PRD.md",
-        "docs",
-        "store-assets",
-        "docs/ANALYTICS_EVENTS.md",
-        "docs/API_KEY_REFRESH_HANDOFF.md",
-        "docs/APP_IN_TOSS_SUBMISSION.md",
-        "docs/ASSET_RIGHTS.md",
-        "docs/BACKLOG.md",
-        "docs/CONSOLE_COPY.md",
-        "docs/FASTEST_RELEASE_PLAN.md",
-        "docs/GAME_RATING_EVIDENCE.md",
-        "docs/GAME_RATING_SUBMISSION_PACKAGE.md",
-        "docs/IDEA_BRIEF.md",
-        "docs/OPERATOR_INPUTS_REQUIRED.md",
-        "docs/PRIVACY_POLICY_DRAFT.md",
-        "docs/REGISTRATION_HANDOFF.md",
-        "docs/SANDBOX_TEST_SCHEME.md",
-        "docs/SOURCE_NOTES.md",
-        "docs/STORE_ASSET_BRIEF.md",
-        "docs/skills"
-      ],
-      "openIssueTitles": [
-        "[BL-007] 클라우드 진행 동기화",
-        "[BL-006] 사운드와 고급 햅틱 연출",
-        "[BL-005] 아파트까지 확장 토지 단계",
-        "[BL-004] 진행 공유 카드와 친구 초대",
-        "[BL-003] 게임 센터 리더보드",
-        "[BL-002] 장기 밸런스와 오프라인 진행",
-        "[BL-001] 선택형 보상 광고 부스터"
-      ],
-      "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
-      "significance": 2,
-      "significanceReason": "60일 내 푸시, 앱인토스"
-    },
-    {
       "name": "seoul-house-from-space-support",
       "url": "https://github.com/mqzkim/seoul-house-from-space-support",
       "description": null,
@@ -1130,7 +1205,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "landing-docs",
       "significance": 1,
-      "significanceReason": "마지막 푸시 61일 전"
+      "significanceReason": "마지막 푸시 62일 전"
     },
     {
       "name": "coffee",
@@ -1176,7 +1251,7 @@
       ],
       "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
       "significance": 2,
-      "significanceReason": "마지막 푸시 67일 전, 앱인토스"
+      "significanceReason": "마지막 푸시 68일 전, 앱인토스"
     },
     {
       "name": "diamond-gather",
@@ -1211,48 +1286,7 @@
       ],
       "stageNote": "단계 추정 없음 — stageEvidence는 gh 파일 트리 관찰값. 단계의 진실은 .launch/launch-status.json",
       "significance": 2,
-      "significanceReason": "마지막 푸시 67일 전, 앱인토스"
-    },
-    {
-      "name": "cafe-review-reply-generator",
-      "url": "https://github.com/mqzkim/cafe-review-reply-generator",
-      "description": null,
-      "isPrivate": true,
-      "isFork": false,
-      "primaryLanguage": "TypeScript",
-      "pushedAt": "2026-05-08T11:12:02Z",
-      "createdAt": "2026-04-17T13:54:05Z",
-      "stargazerCount": 0,
-      "openIssues": 0,
-      "defaultBranch": "main",
-      "recentCommits": [
-        {
-          "date": "2026-05-08",
-          "message": "chore(coverage): ratchet content/verticals/laundry.ts to 100%"
-        },
-        {
-          "date": "2026-05-08",
-          "message": "chore(coverage): ratchet content/verticals/laborattorney.ts to 100%"
-        },
-        {
-          "date": "2026-05-08",
-          "message": "chore(coverage): ratchet content/verticals/kids-cafe.ts to 100%"
-        },
-        {
-          "date": "2026-05-08",
-          "message": "chore(coverage): ratchet content/verticals/kids-academy.ts to 100%"
-        },
-        {
-          "date": "2026-05-08",
-          "message": "chore(coverage): ratchet content/verticals/judicial-scrivener.ts to 100%"
-        }
-      ],
-      "commitsLast30d": 0,
-      "isAppsInToss": false,
-      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
-      "category": "side-project",
-      "significance": 1,
-      "significanceReason": "마지막 푸시 126일 전"
+      "significanceReason": "마지막 푸시 68일 전, 앱인토스"
     },
     {
       "name": "korean-review-tone-kit",
@@ -1293,7 +1327,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 2,
-      "significanceReason": "마지막 푸시 126일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 127일 전, 설명 있음"
     },
     {
       "name": "hermes-agent",
@@ -1352,7 +1386,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 2,
-      "significanceReason": "마지막 푸시 132일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 133일 전, 설명 있음"
     },
     {
       "name": "tradingagents-sena-trader",
@@ -1393,7 +1427,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 2,
-      "significanceReason": "마지막 푸시 132일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 133일 전, 설명 있음"
     },
     {
       "name": "mqzkim.github.io",
@@ -1434,7 +1468,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "landing-docs",
       "significance": 1,
-      "significanceReason": "마지막 푸시 132일 전"
+      "significanceReason": "마지막 푸시 133일 전"
     },
     {
       "name": "hermes-agent-board",
@@ -1475,7 +1509,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 1,
-      "significanceReason": "마지막 푸시 132일 전"
+      "significanceReason": "마지막 푸시 133일 전"
     },
     {
       "name": "tuist",
@@ -1518,36 +1552,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "landing-docs",
       "significance": 2,
-      "significanceReason": "마지막 푸시 141일 전, 설명 있음"
-    },
-    {
-      "name": "helix-space",
-      "url": "https://github.com/mqzkim/helix-space",
-      "description": null,
-      "isPrivate": true,
-      "isFork": false,
-      "primaryLanguage": "Rust",
-      "pushedAt": "2026-04-21T02:46:14Z",
-      "createdAt": "2026-04-21T02:45:51Z",
-      "stargazerCount": 0,
-      "openIssues": 0,
-      "defaultBranch": "main",
-      "recentCommits": [
-        {
-          "date": "2026-04-21",
-          "message": "Improve supervisor prompt injection"
-        },
-        {
-          "date": "2026-04-21",
-          "message": "Initial commit"
-        }
-      ],
-      "commitsLast30d": 0,
-      "isAppsInToss": false,
-      "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
-      "category": "harness-ai-infra",
-      "significance": 1,
-      "significanceReason": "마지막 푸시 143일 전"
+      "significanceReason": "마지막 푸시 142일 전, 설명 있음"
     },
     {
       "name": "beautify-me",
@@ -1580,7 +1585,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 145일 전"
+      "significanceReason": "마지막 푸시 146일 전"
     },
     {
       "name": "roastsmysite",
@@ -1621,7 +1626,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 146일 전"
+      "significanceReason": "마지막 푸시 147일 전"
     },
     {
       "name": "llm-usage",
@@ -1650,7 +1655,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 146일 전"
+      "significanceReason": "마지막 푸시 147일 전"
     },
     {
       "name": "briefme",
@@ -1691,7 +1696,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 1,
-      "significanceReason": "마지막 푸시 146일 전"
+      "significanceReason": "마지막 푸시 147일 전"
     },
     {
       "name": "short_youtube",
@@ -1732,7 +1737,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 2,
-      "significanceReason": "마지막 푸시 147일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 148일 전, 설명 있음"
     },
     {
       "name": "community-growth-hacker",
@@ -1757,7 +1762,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "knowledge-wiki",
       "significance": 1,
-      "significanceReason": "마지막 푸시 148일 전"
+      "significanceReason": "마지막 푸시 149일 전"
     },
     {
       "name": "harness-infra",
@@ -1798,7 +1803,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 2,
-      "significanceReason": "마지막 푸시 148일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 149일 전, 설명 있음"
     },
     {
       "name": "helix-co",
@@ -1839,7 +1844,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 2,
-      "significanceReason": "마지막 푸시 148일 전, 설명 있음, 오픈 이슈 90"
+      "significanceReason": "마지막 푸시 149일 전, 설명 있음, 오픈 이슈 90"
     },
     {
       "name": "gst",
@@ -1864,7 +1869,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "side-project",
       "significance": 1,
-      "significanceReason": "마지막 푸시 152일 전"
+      "significanceReason": "마지막 푸시 153일 전"
     },
     {
       "name": "llm-lean-startup",
@@ -1905,7 +1910,7 @@
       "aitEvidence": "no granite.config.ts, no @apps-in-toss dep, no toss mention",
       "category": "harness-ai-infra",
       "significance": 2,
-      "significanceReason": "마지막 푸시 152일 전, 설명 있음"
+      "significanceReason": "마지막 푸시 153일 전, 설명 있음"
     }
   ]
 }
