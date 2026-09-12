@@ -180,7 +180,7 @@
   {
    "date": "2026-09-13",
    "improvement": "chrisryugj/kordoc 스킬 채택(b) — ~/.claude/skills/kordoc (한국 공문서 툴킷: HWP 3.x/5.x·HWPX·HWPML·PDF·DOCX·XLS/XLSX·이미지 OCR → Markdown, Markdown → 공문서 HWPX 생성 7프리셋·서식 채우기·라운드트립 patch·신구대조표·validate·render, ★1,819 MIT 본문 실측, SKILL.md 단일 파일 npx 래퍼, MCP 미등록·settings.json 불변; skill-audit 1차 7/100 SAFE 16건 전수 오탐 확정→baseline 억제→0/100 SAFE; Windows 스모크 generate→validate→왕복 파싱 통과) · 트렌드 후보 6건 검토(기각 6) · seenRepos 273→279",
-   "commit": "",
+   "commit": "19a3eb2",
    "gates": "4/4"
   }
  ],
