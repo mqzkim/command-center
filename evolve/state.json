@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-12T22:40:17.000Z",
+ "lastRun": "2026-09-13T22:34:38.229Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -181,6 +181,12 @@
    "date": "2026-09-13",
    "improvement": "chrisryugj/kordoc 스킬 채택(b) — ~/.claude/skills/kordoc (한국 공문서 툴킷: HWP 3.x/5.x·HWPX·HWPML·PDF·DOCX·XLS/XLSX·이미지 OCR → Markdown, Markdown → 공문서 HWPX 생성 7프리셋·서식 채우기·라운드트립 patch·신구대조표·validate·render, ★1,819 MIT 본문 실측, SKILL.md 단일 파일 npx 래퍼, MCP 미등록·settings.json 불변; skill-audit 1차 7/100 SAFE 16건 전수 오탐 확정→baseline 억제→0/100 SAFE; Windows 스모크 generate→validate→왕복 파싱 통과) · 트렌드 후보 6건 검토(기각 6) · seenRepos 273→279",
    "commit": "19a3eb2",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-14",
+   "improvement": "Buoy-gg/buoy 이월 1순위 검토 확정 — 기각+비교 채록(c 축소): LICENSE 본문 실측 'NOT open source' 완전 독점+MCP Pro 유료+소스 0개 셸 repo로 신규 entity 부적격 → agent-device entity에 비교 절 append(describe_screen+tap_element = accessibility snapshot 철학 동형, in-process 대안 축; jcodemunch→gortex 비교 절 전례) · 트렌드 후보 6건 검토(기각 6: AIHawk 탐지회피·ELI5 중복·obsidian-mcp 지식분열·sigmap gortex축·NMT startup스킬 중복·STS2 게임도메인) · seenRepos 279→285",
+   "commit": "",
    "gates": "4/4"
   }
  ],
@@ -463,7 +469,13 @@
   "jasonjgardner/blockbench-mcp-plugin",
   "robcerda/monarch-mcp-server",
   "ergut/mcp-logseq",
-  "brycewang-stanford/StatsPAI"
+  "brycewang-stanford/StatsPAI",
+  "feder-cr/AIHawk",
+  "DreambigOu/ELI5",
+  "cyanheads/obsidian-mcp-server",
+  "manojmallick/sigmap",
+  "zamesin/Next-Move-Theory-Canon-and-Skills",
+  "CharTyr/STS2-Agent"
  ],
  "appliedImprovements": [
   {
@@ -719,6 +731,13 @@
     "~/.claude/skills/kordoc/"
    ],
    "note": "carried (b/c) 1st priority from 09-11, adopted (b) skill-mode-only. Korean official-document toolkit by chrisryugj ('7-year public servant'): HWP 3.x/5.x, HWPX, HWPML, PDF, DOCX, XLS/XLSX, images(local OCR PP-OCRv5 korean, no API key) -> Markdown; Markdown -> official HWPX (기안문/보고서/계획서/통지/회의록/개조식/보도자료 presets, hierarchy measured from 629 real Seoul approval docs); form fill (style-preserving), format-preserving roundtrip patch, 신구대조표 compare, HWPX validate, layout SVG/PNG render, seal placement, 표기법 lint 19 rules, PII redact, RAG chunks + real page numbers. star 1,819, forks 334, created 2026-03-28, pushed 09-12, open issues 0, MIT LICENSE body verified (c) 2026 chrisryugj zero NC. Releases v4.13.1/v4.13.0/v4.12.3 all within 09-05~09-06 (2-3/week pace); contributors chrisryugj 361/378 = 95.5% de facto solo. Dep surface thin: dependencies 7 all pure-JS (mcp-sdk/xmldom/cfb/commander/jszip/markdown-it/zod), native heavy (sharp/onnxruntime/pdfium/transformers/pdfjs) isolated in optionalDependencies (OCR/render only). Install = superpowers-chrome pattern: plugins/kordoc/skills/kordoc/SKILL.md single file 11,577B copied to ~/.claude/skills/kordoc/ (no marketplace, no `npx kordoc setup`, MCP NOT registered — ~/.claude.json 'kordoc' 0 hits, mcp-scanner gate required before any future MCP registration), settings.json SHA256 identical before/after (633CE7CC...B036). frontmatter yaml.safe_load OK name=kordoc desc 731 chars no colon trap. skill-audit v2.9.6 --no-llm 1st scan 7/100 LOW SAFE 16 findings (all RP1 conf 70% = documented `npx -y kordoc@^4` example lines, markdown-only Executable:No, known RP1 false-positive class per skill-audit rule 6) -> .skillspector-baseline.local.json with reasons -> rescan 0/100 SAFE exit 0 suppressed 16. Smoke (Windows native, npx kordoc@4.13.1): --version 4.13.1; generate 보고서 preset md(title+> summary+## Ⅰ. chapter+□/ㅇ list+3x3 GFM table) -> out.hwpx 74,870B; validate '구조 검증 통과 (엔트리 6개)'; roundtrip parse recovered title/summary/list markers/all 9 table cells verbatim (Ⅰ. numbering normalized to auto-number per SKILL.md contract); temp dir deleted. Accepted risk recorded: runtime `npx -y kordoc@^4` minor-unpinned (mitigated by npx cache pinning + fast release pace + MIT); dep warning deprecated boolean@3.2.0 (no functional impact). Utility axis: Korean gov-doc (HWP/HWPX) processing gap in owner's 53 skills; Apps in Toss Korean-ecosystem document adjacency. Reviewed today (6 fresh, all rejected): CopilotKit/open-multi-agent-canvas (separate Next.js app, no harness touchpoint = open-multi-agent install-rejection axis), alisaitteke/photoshop-mcp (no Photoshop = KiCAD/DaVinci domain axis), jasonjgardner/blockbench-mcp-plugin (no Blockbench = godot-ai axis), robcerda/monarch-mcp-server (US personal-finance SaaS no account), ergut/mcp-logseq (no LogSeq + knowledge-source split axis = engram/Storybloq), brycewang-stanford/StatsPAI (econometrics domain mismatch). Other carries open: (c) antigravity-for-claude-code, (c) buoy, (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (c) Buoy-gg/buoy (carried since 09-11 — RN in-app devtools + MCP, Apps in Toss RN adjacency = agent-device axis)."
+  },
+  {
+   "id": "wiki:Buoy-gg/buoy",
+   "repo": "Buoy-gg/buoy",
+   "date": "2026-09-14",
+   "mode": "knowledge",
+   "note": "carried (c) 1st priority from 09-11, DOWNGRADED to rejection + comparison-section append inside agent-device entity (no new page, jcodemunch-mcp->gortex 2026-09-05 precedent). Measured 2026-09-14: star 691, forks 4, pushed 09-10 active, contributors 1 (LovesWorking 100% solo), GitHub releases stalled at v3.0.1 2026-05-28 but npm packages/mcp v7.0.36 actively shipped. Decisive: LICENSE body = 'PROPRIETARY SOFTWARE LICENSE ... NOTICE: This is NOT open source software' (payment of applicable fees + no competing products clause; spdx NOASSERTION's substance), MCP server is Pro paid ($9/mo Solo), repo is a source-less shell (packages/ 22 dirs = README+package.json only, real code ships compiled via npm — skill-audit/code verification impossible), telemetry daily anonymous ping default ON (opt-out BUOY_TELEMETRY=0), Toss sandbox scheme FloatingDevTools injection unverified. Knowledge value captured: describe_screen (live React tree -> accessibility-style element list) + tap_element (real JS handler press) is isomorphic to agent-device accessibility-snapshot philosophy; in-process (in-app) devtools axis vs agent-device external-driver axis; physical device + Windows desktop support would have bypassed owner iOS-sim constraint — blocked by license, not capability. Reviewed today (6 fresh, all rejected): feder-cr/AIHawk (anti-detect/undetected browsing self-declared = detection-evasion scraping policy axis, Douyin/website-downloader precedent), DreambigOu/ELI5 (exact duplicate — eli5 skill already installed in owner session registry), cyanheads/obsidian-mcp-server (no Obsidian + knowledge-source split axis = engram/Storybloq/mcp-logseq), manojmallick/sigmap (token-saving code-intel MCP = installed-gortex subset axis = roam-code/tokensave/ripwire), zamesin/Next-Move-Theory-Canon-and-Skills (overlaps startup-{design,competitors,positioning,pitch} + apps-in-toss-mvp-prd), CharTyr/STS2-Agent (game-mod MCP domain mismatch = godot-ai/blockbench/photoshop axis). Other carries open: (c) antigravity-for-claude-code, (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (c) yuting0624/antigravity-for-claude-code (carried since 09-12 — Gemini CLI cross-model delegation axis = claudex-loop adjacency, pushed 09-11 active)."
   }
  ],
  "openFindings": []

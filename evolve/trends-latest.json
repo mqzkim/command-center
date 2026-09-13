@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-12T22:30:47.520Z",
+ "generatedAt": "2026-09-13T22:30:47.792Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,73 +31,73 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 207,
+ "scanned": 209,
  "dedup": {
   "wikiCatalog": 2,
-  "alreadySeen": 199
+  "alreadySeen": 201
  },
  "candidates": [
   {
-   "description": "The open-source multi-agent chat interface that lets you manage multiple agents in one dynamic conversation and add MCP servers for deep research",
-   "fullName": "CopilotKit/open-multi-agent-canvas",
-   "stargazersCount": 532,
-   "updatedAt": "2026-09-12T21:53:35Z",
-   "url": "https://github.com/CopilotKit/open-multi-agent-canvas",
+   "description": "Anti detect browser and web browsing agent: an open-source MCP server for undetected browsing, AI web scraping and computer use agents. No captchas.",
+   "fullName": "feder-cr/AIHawk",
+   "stargazersCount": 30719,
+   "updatedAt": "2026-09-13T22:29:45Z",
+   "url": "https://github.com/feder-cr/AIHawk",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server"
+  },
+  {
+   "description": "ELI5 — A Claude Code skill that explains anything to anyone: kids, managers, engineers, parents. Adapts tone, vocabulary, and analogies to match the audience.",
+   "fullName": "DreambigOu/ELI5",
+   "stargazersCount": 1122,
+   "updatedAt": "2026-09-13T22:13:03Z",
+   "url": "https://github.com/DreambigOu/ELI5",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code skills"
+  },
+  {
+   "description": "Read, write, search, and surgically edit Obsidian vault notes, tags, and frontmatter via MCP. STDIO or Streamable HTTP.",
+   "fullName": "cyanheads/obsidian-mcp-server",
+   "stargazersCount": 678,
+   "updatedAt": "2026-09-13T21:10:48Z",
+   "url": "https://github.com/cyanheads/obsidian-mcp-server",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "MCP server for Adobe Photoshop — 118 tools, recipe workflows, generative AI, standalone web UI. Control Photoshop from Cursor, Claude, or natural language.",
-   "fullName": "alisaitteke/photoshop-mcp",
-   "stargazersCount": 434,
-   "updatedAt": "2026-09-12T19:01:34Z",
-   "url": "https://github.com/alisaitteke/photoshop-mcp",
+   "description": "~97% token reduction for AI coding sessions — zero deps, 33 languages, MCP server",
+   "fullName": "manojmallick/sigmap",
+   "stargazersCount": 637,
+   "updatedAt": "2026-09-13T20:56:20Z",
+   "url": "https://github.com/manojmallick/sigmap",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Adds MCP server to Blockbench",
-   "fullName": "jasonjgardner/blockbench-mcp-plugin",
-   "stargazersCount": 427,
-   "updatedAt": "2026-09-12T18:54:56Z",
-   "url": "https://github.com/jasonjgardner/blockbench-mcp-plugin",
+   "description": "Claude Code skills for product market research, value props, PRDs, and go-to-market — plus the open Next Move Theory (based on AJTBD) canon and a product advisor you can /ask-nmt",
+   "fullName": "zamesin/Next-Move-Theory-Canon-and-Skills",
+   "stargazersCount": 370,
+   "updatedAt": "2026-09-13T17:59:15Z",
+   "url": "https://github.com/zamesin/Next-Move-Theory-Canon-and-Skills",
    "labels": [
-    "mcp"
+    "skills"
    ],
-   "query": "mcp server (updated)"
+   "query": "claude code skills (updated)"
   },
   {
-   "description": "MCP Server for use with Monarch Money",
-   "fullName": "robcerda/monarch-mcp-server",
-   "stargazersCount": 374,
-   "updatedAt": "2026-09-12T21:52:07Z",
-   "url": "https://github.com/robcerda/monarch-mcp-server",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "MCP server to interact with LogSeq via its Local HTTP API - enabling AI assistants like Claude to seamlessly read, write, and manage your LogSeq graph.",
-   "fullName": "ergut/mcp-logseq",
-   "stargazersCount": 327,
-   "updatedAt": "2026-09-12T22:29:33Z",
-   "url": "https://github.com/ergut/mcp-logseq",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "StatsPAI is the first Agent-native Python library for causal inference and applied econometrics — unified API, broad cross-method coverage, structured result objects, machine-readable schemas, Skills, an MCP server, and R/Stata parity validation.",
-   "fullName": "brycewang-stanford/StatsPAI",
-   "stargazersCount": 317,
-   "updatedAt": "2026-09-12T20:59:14Z",
-   "url": "https://github.com/brycewang-stanford/StatsPAI",
+   "description": "杀戮尖塔2的MOD，将杀戮尖塔2的游戏状态与操作暴露为本地 HTTP API 包装成 MCP Server，供支持 MCP 的AI客户端直接调用",
+   "fullName": "CharTyr/STS2-Agent",
+   "stargazersCount": 313,
+   "updatedAt": "2026-09-13T18:24:13Z",
+   "url": "https://github.com/CharTyr/STS2-Agent",
    "labels": [
     "mcp"
    ],
