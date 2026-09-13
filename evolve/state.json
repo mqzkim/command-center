@@ -186,7 +186,7 @@
   {
    "date": "2026-09-14",
    "improvement": "Buoy-gg/buoy 이월 1순위 검토 확정 — 기각+비교 채록(c 축소): LICENSE 본문 실측 'NOT open source' 완전 독점+MCP Pro 유료+소스 0개 셸 repo로 신규 entity 부적격 → agent-device entity에 비교 절 append(describe_screen+tap_element = accessibility snapshot 철학 동형, in-process 대안 축; jcodemunch→gortex 비교 절 전례) · 트렌드 후보 6건 검토(기각 6: AIHawk 탐지회피·ELI5 중복·obsidian-mcp 지식분열·sigmap gortex축·NMT startup스킬 중복·STS2 게임도메인) · seenRepos 279→285",
-   "commit": "",
+   "commit": "7daf64a",
    "gates": "4/4"
   }
  ],
