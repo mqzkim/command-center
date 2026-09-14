@@ -180,7 +180,7 @@
   {
    "date": "2026-09-15",
    "improvement": "yuting0624/antigravity-for-claude-code 지식화(c) — 09-12 이월 1순위 채택, ~/.wiki entity 신규(Gemini CLI(agy)를 Claude Code 협업 서브에이전트로 쓰는 크로스모델 위임 플러그인: Claude=지휘자/Gemini=실행자 비용 라우팅, --tier flash/pro, A/B 실측 문화 −27%/−64% 'estimates' 자기 명시, ★338 MIT 본문 실측; (b) 설치 기각: agy CLI+Google 인증 전제·네이티브 Windows 비권장 자기 선언 issue #6·bash 하드코딩 훅; claudex-loop 검증 축과 대비되는 비용 라우팅 축) · 트렌드 후보 9건 검토(이월 1: snyk/agent-scan(c)·기각 8) · seenRepos 285→294",
-   "commit": "",
+   "commit": "2fa8a18",
    "gates": "4/4"
   }
  ],
