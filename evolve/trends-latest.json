@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-13T22:30:47.792Z",
+ "generatedAt": "2026-09-14T22:30:25.830Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,73 +31,106 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 209,
+ "scanned": 208,
  "dedup": {
   "wikiCatalog": 2,
-  "alreadySeen": 201
+  "alreadySeen": 197
  },
  "candidates": [
   {
-   "description": "Anti detect browser and web browsing agent: an open-source MCP server for undetected browsing, AI web scraping and computer use agents. No captchas.",
-   "fullName": "feder-cr/AIHawk",
-   "stargazersCount": 30719,
-   "updatedAt": "2026-09-13T22:29:45Z",
-   "url": "https://github.com/feder-cr/AIHawk",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "ELI5 — A Claude Code skill that explains anything to anyone: kids, managers, engineers, parents. Adapts tone, vocabulary, and analogies to match the audience.",
-   "fullName": "DreambigOu/ELI5",
-   "stargazersCount": 1122,
-   "updatedAt": "2026-09-13T22:13:03Z",
-   "url": "https://github.com/DreambigOu/ELI5",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills"
-  },
-  {
-   "description": "Read, write, search, and surgically edit Obsidian vault notes, tags, and frontmatter via MCP. STDIO or Streamable HTTP.",
-   "fullName": "cyanheads/obsidian-mcp-server",
-   "stargazersCount": 678,
-   "updatedAt": "2026-09-13T21:10:48Z",
-   "url": "https://github.com/cyanheads/obsidian-mcp-server",
+   "description": "Copy/paste detector for source code. 220+ languages, Rust engine, SARIF/HTML/badge reporters, GitHub Action, MCP server for AI agents.",
+   "fullName": "kucherenko/jscpd",
+   "stargazersCount": 6209,
+   "updatedAt": "2026-09-14T19:48:30Z",
+   "url": "https://github.com/kucherenko/jscpd",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "~97% token reduction for AI coding sessions — zero deps, 33 languages, MCP server",
-   "fullName": "manojmallick/sigmap",
-   "stargazersCount": 637,
-   "updatedAt": "2026-09-13T20:56:20Z",
-   "url": "https://github.com/manojmallick/sigmap",
+   "description": "Security scanner for AI agents, MCP servers and agent skills.",
+   "fullName": "snyk/agent-scan",
+   "stargazersCount": 3043,
+   "updatedAt": "2026-09-14T21:36:19Z",
+   "url": "https://github.com/snyk/agent-scan",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Claude Code skills for product market research, value props, PRDs, and go-to-market — plus the open Next Move Theory (based on AJTBD) canon and a product advisor you can /ask-nmt",
-   "fullName": "zamesin/Next-Move-Theory-Canon-and-Skills",
-   "stargazersCount": 370,
-   "updatedAt": "2026-09-13T17:59:15Z",
-   "url": "https://github.com/zamesin/Next-Move-Theory-Canon-and-Skills",
+   "description": "Fast, local-first web content extraction for LLMs. Scrape, crawl, extract structured data — all from Rust. CLI, REST API, and MCP server.",
+   "fullName": "0xMassi/webclaw",
+   "stargazersCount": 2343,
+   "updatedAt": "2026-09-14T21:19:46Z",
+   "url": "https://github.com/0xMassi/webclaw",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "Turn Claude into a senior design architect - DTCG design tokens, 50 components, WCAG 2.2 AA to AAA, 138 design systems, any-framework code, and 38 objective gates that fail the build instead of claiming success. Install as a Claude Code plugin or with npx.",
+   "fullName": "plugin87/ux-ui-agent-skills",
+   "stargazersCount": 1304,
+   "updatedAt": "2026-09-14T22:28:50Z",
+   "url": "https://github.com/plugin87/ux-ui-agent-skills",
    "labels": [
     "skills"
    ],
-   "query": "claude code skills (updated)"
+   "query": "claude code plugin"
   },
   {
-   "description": "杀戮尖塔2的MOD，将杀戮尖塔2的游戏状态与操作暴露为本地 HTTP API 包装成 MCP Server，供支持 MCP 的AI客户端直接调用",
-   "fullName": "CharTyr/STS2-Agent",
-   "stargazersCount": 313,
-   "updatedAt": "2026-09-13T18:24:13Z",
-   "url": "https://github.com/CharTyr/STS2-Agent",
+   "description": "Free, open-source SQL Server and Postgres performance monitoring. Collectors, real-time alerts, graphical plan viewer, MCP server for AI analysis. Supports SQL 2016-2025, Azure SQL, AWS RDS, Postgres, Aurora Postgres.",
+   "fullName": "erikdarlingdata/PerformanceMonitor",
+   "stargazersCount": 497,
+   "updatedAt": "2026-09-14T21:17:06Z",
+   "url": "https://github.com/erikdarlingdata/PerformanceMonitor",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "AI-native ontology engine: a Rust MCP server with tools for building, validating, querying, and reasoning over RDF/OWL ontologies. In-memory Oxigraph triple store, native OWL2-DL tableaux reasoner, SHACL validation, SPARQL, versioning. Single binary, no JVM.",
+   "fullName": "fabio-rovai/open-ontologies",
+   "stargazersCount": 497,
+   "updatedAt": "2026-09-14T21:07:18Z",
+   "url": "https://github.com/fabio-rovai/open-ontologies",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "八字、紫微、星盘、六爻、梅花、奇门、大六壬、小六壬、塔罗、雷诺曼、灵签、择日一站式玄学算命占卜工具包，输出结构化提示词与数据。提供公开 API、MCP Server 与 skill。",
+   "fullName": "Brhiza/mingyu",
+   "stargazersCount": 413,
+   "updatedAt": "2026-09-14T20:05:07Z",
+   "url": "https://github.com/Brhiza/mingyu",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "Query robotics, drone, and IoT data in plain English through an MCP server, with an intelligent edge data reduction pipeline that keeps only the data that matters.",
+   "fullName": "Extelligence-ai/bagel",
+   "stargazersCount": 396,
+   "updatedAt": "2026-09-14T22:04:39Z",
+   "url": "https://github.com/Extelligence-ai/bagel",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "A Nix-based configuration framework for Model Control Protocol (MCP) servers with ready-to-use packages.",
+   "fullName": "natsukium/mcp-servers-nix",
+   "stargazersCount": 300,
+   "updatedAt": "2026-09-14T21:19:42Z",
+   "url": "https://github.com/natsukium/mcp-servers-nix",
    "labels": [
     "mcp"
    ],

@@ -1,20 +1,8 @@
 {
  "version": 1,
- "lastRun": "2026-09-13T22:34:38.229Z",
+ "lastRun": "2026-09-14T22:36:00.000Z",
  "consecutiveFailures": 0,
  "runs": [
-  {
-   "date": "2026-08-23",
-   "improvement": "트렌드 후보 10건 검토(채택 1: planning-with-files → wiki ingest, 기각 9) · seenRepos 원장 10→20",
-   "commit": "0e125ab",
-   "gates": "3/3"
-  },
-  {
-   "date": "2026-08-23",
-   "improvement": "트렌드 후보 10건 검토(채택 1: DeepCode → wiki ingest, 기각 9; 다음 1순위 SkillSpector 스킬 채택) · seenRepos 원장 20→30",
-   "commit": "accaae6",
-   "gates": "4/4"
-  },
   {
    "date": "2026-08-23",
    "improvement": "NVIDIA/SkillSpector 스킬 채택(b) — ~/.claude/skills/skill-audit 래퍼(junction 해석·--no-llm 기본) · 트렌드 후보 10건 검토(기각 10; 다음 후보 trailofbits/skills) · seenRepos 30→40",
@@ -187,6 +175,12 @@
    "date": "2026-09-14",
    "improvement": "Buoy-gg/buoy 이월 1순위 검토 확정 — 기각+비교 채록(c 축소): LICENSE 본문 실측 'NOT open source' 완전 독점+MCP Pro 유료+소스 0개 셸 repo로 신규 entity 부적격 → agent-device entity에 비교 절 append(describe_screen+tap_element = accessibility snapshot 철학 동형, in-process 대안 축; jcodemunch→gortex 비교 절 전례) · 트렌드 후보 6건 검토(기각 6: AIHawk 탐지회피·ELI5 중복·obsidian-mcp 지식분열·sigmap gortex축·NMT startup스킬 중복·STS2 게임도메인) · seenRepos 279→285",
    "commit": "7daf64a",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-15",
+   "improvement": "yuting0624/antigravity-for-claude-code 지식화(c) — 09-12 이월 1순위 채택, ~/.wiki entity 신규(Gemini CLI(agy)를 Claude Code 협업 서브에이전트로 쓰는 크로스모델 위임 플러그인: Claude=지휘자/Gemini=실행자 비용 라우팅, --tier flash/pro, A/B 실측 문화 −27%/−64% 'estimates' 자기 명시, ★338 MIT 본문 실측; (b) 설치 기각: agy CLI+Google 인증 전제·네이티브 Windows 비권장 자기 선언 issue #6·bash 하드코딩 훅; claudex-loop 검증 축과 대비되는 비용 라우팅 축) · 트렌드 후보 9건 검토(이월 1: snyk/agent-scan(c)·기각 8) · seenRepos 285→294",
+   "commit": "",
    "gates": "4/4"
   }
  ],
@@ -475,7 +469,16 @@
   "cyanheads/obsidian-mcp-server",
   "manojmallick/sigmap",
   "zamesin/Next-Move-Theory-Canon-and-Skills",
-  "CharTyr/STS2-Agent"
+  "CharTyr/STS2-Agent",
+  "kucherenko/jscpd",
+  "snyk/agent-scan",
+  "0xMassi/webclaw",
+  "plugin87/ux-ui-agent-skills",
+  "erikdarlingdata/PerformanceMonitor",
+  "fabio-rovai/open-ontologies",
+  "Brhiza/mingyu",
+  "Extelligence-ai/bagel",
+  "natsukium/mcp-servers-nix"
  ],
  "appliedImprovements": [
   {
@@ -738,6 +741,13 @@
    "date": "2026-09-14",
    "mode": "knowledge",
    "note": "carried (c) 1st priority from 09-11, DOWNGRADED to rejection + comparison-section append inside agent-device entity (no new page, jcodemunch-mcp->gortex 2026-09-05 precedent). Measured 2026-09-14: star 691, forks 4, pushed 09-10 active, contributors 1 (LovesWorking 100% solo), GitHub releases stalled at v3.0.1 2026-05-28 but npm packages/mcp v7.0.36 actively shipped. Decisive: LICENSE body = 'PROPRIETARY SOFTWARE LICENSE ... NOTICE: This is NOT open source software' (payment of applicable fees + no competing products clause; spdx NOASSERTION's substance), MCP server is Pro paid ($9/mo Solo), repo is a source-less shell (packages/ 22 dirs = README+package.json only, real code ships compiled via npm — skill-audit/code verification impossible), telemetry daily anonymous ping default ON (opt-out BUOY_TELEMETRY=0), Toss sandbox scheme FloatingDevTools injection unverified. Knowledge value captured: describe_screen (live React tree -> accessibility-style element list) + tap_element (real JS handler press) is isomorphic to agent-device accessibility-snapshot philosophy; in-process (in-app) devtools axis vs agent-device external-driver axis; physical device + Windows desktop support would have bypassed owner iOS-sim constraint — blocked by license, not capability. Reviewed today (6 fresh, all rejected): feder-cr/AIHawk (anti-detect/undetected browsing self-declared = detection-evasion scraping policy axis, Douyin/website-downloader precedent), DreambigOu/ELI5 (exact duplicate — eli5 skill already installed in owner session registry), cyanheads/obsidian-mcp-server (no Obsidian + knowledge-source split axis = engram/Storybloq/mcp-logseq), manojmallick/sigmap (token-saving code-intel MCP = installed-gortex subset axis = roam-code/tokensave/ripwire), zamesin/Next-Move-Theory-Canon-and-Skills (overlaps startup-{design,competitors,positioning,pitch} + apps-in-toss-mvp-prd), CharTyr/STS2-Agent (game-mod MCP domain mismatch = godot-ai/blockbench/photoshop axis). Other carries open: (c) antigravity-for-claude-code, (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (c) yuting0624/antigravity-for-claude-code (carried since 09-12 — Gemini CLI cross-model delegation axis = claudex-loop adjacency, pushed 09-11 active)."
+  },
+  {
+   "id": "wiki:yuting0624/antigravity-for-claude-code",
+   "repo": "yuting0624/antigravity-for-claude-code",
+   "date": "2026-09-15",
+   "mode": "knowledge",
+   "note": "carried (c) 1st priority from 09-12, adopted. new entity page antigravity-for-claude-code; Claude Code plugin running Google Antigravity CLI (agy, Gemini) as a collaborating sub-agent — cross-model delegation harness, 'Claude=conductor (judgment/verification/review) / Gemini=executor (scaffold/implement/test/search)'. Measured 2026-09-15: star 338, forks 30, open_issues 6, created 2026-06-19, pushed 09-14T13:50Z (active), releases v0.25.0~v0.25.2 (README mentions 0.26.0 ahead of releases), contributors yuting0624 77/85 ≈ 90.6% de facto solo (5 external human commits), sister repos gemini-studio-mcp/quorum-review. LICENSE body = standard MIT (c) 2026 linyuting zero NC, API spdx match. Structure: 10 slash commands (delegate/review/research/media/migrate/cloud-run-debug...), agents/antigravity-delegate.md sub-agent (Gemini does file writes), SessionStart hook (agy health check + cost-aware routing policy injection, toggleable), 2 SKILL.md, NO MCP server (CLI wrapper); exec surface scripts .sh 7 + .py 2, bin shims 9, hooks .sh 3, tests 7 + shellcheck, 8 GH Actions (ci/claude-review/quorum-review/zizmor) — all bash. Model routing --tier flash|flash-lo|pro (Gemini 3.8 Flash/3.1 Pro); auto-routing everything rejected as measured net-loss — break-even judgment left to Claude. Cost discipline: docs/AB-RESULTS.md A/B (−27%/−64% at equal quality, self-labeled 'estimates'), self-published finding that --yolo escapes --sandbox — Evidence&Truth-isomorphic culture. Axis compare: claudex-loop = cross-model VERIFICATION axis (author≠reviewer), this = cross-model COST-ROUTING axis (conductor/executor). (b) install rejected: prereq agy CLI + Google/Vertex auth, native Windows (Git Bash/MSYS) discouraged by self-declaration (agy -p 0-byte log hang without ConPTY, issue #6, WSL/macOS/Linux recommended for headless), bash-hardcoded SessionStart hook (= llm-wiki-compiler rejection axis). Reviewed today (9 fresh): carried (c) snyk/agent-scan (3,043* security scanner for AI agents/MCP servers/agent skills — third major-vendor implementation overlapping owner's skill-audit static pre-install + mcp-scanner registered-surface axes, 3-way comparison knowledge value); rejected kucherenko/jscpd (copy/paste detector, no recurring need + gortex code-intel axis), 0xMassi/webclaw (WebFetch overlap axis = duckduckgo/tavily/apify/us-crw), plugin87/ux-ui-agent-skills (toss-tds-design/refactoring-ui/frontend-design overlap = tastemaker/qiaomu-design axis), erikdarlingdata/PerformanceMonitor (no SQL Server/Postgres = pg-aiguide/neon axis), fabio-rovai/open-ontologies (no ontology workflow), Brhiza/mingyu (fortune-telling domain), Extelligence-ai/bagel (robotics/IoT domain), natsukium/mcp-servers-nix (Nix vs owner native Windows = WSL-only rejection axis). Other carries open: (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (c) snyk/agent-scan (NEW — skill-audit/mcp-scanner 3-way comparison axis)."
   }
  ],
  "openFindings": []
