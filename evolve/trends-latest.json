@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-14T22:30:25.830Z",
+ "generatedAt": "2026-09-15T22:30:48.966Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,106 +31,40 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 208,
+ "scanned": 206,
  "dedup": {
   "wikiCatalog": 2,
-  "alreadySeen": 197
+  "alreadySeen": 201
  },
  "candidates": [
   {
-   "description": "Copy/paste detector for source code. 220+ languages, Rust engine, SARIF/HTML/badge reporters, GitHub Action, MCP server for AI agents.",
-   "fullName": "kucherenko/jscpd",
-   "stargazersCount": 6209,
-   "updatedAt": "2026-09-14T19:48:30Z",
-   "url": "https://github.com/kucherenko/jscpd",
+   "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
+   "fullName": "aws/agent-toolkit-for-aws",
+   "stargazersCount": 2629,
+   "updatedAt": "2026-09-15T22:18:50Z",
+   "url": "https://github.com/aws/agent-toolkit-for-aws",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Security scanner for AI agents, MCP servers and agent skills.",
-   "fullName": "snyk/agent-scan",
-   "stargazersCount": 3043,
-   "updatedAt": "2026-09-14T21:36:19Z",
-   "url": "https://github.com/snyk/agent-scan",
+   "description": "🤖 AI-Powered MCP Server for Polymarket - Enable Claude to trade prediction markets with 45 tools, real-time monitoring, and enterprise-grade safety features",
+   "fullName": "caiovicentino/polymarket-mcp-server",
+   "stargazersCount": 674,
+   "updatedAt": "2026-09-15T22:15:28Z",
+   "url": "https://github.com/caiovicentino/polymarket-mcp-server",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Fast, local-first web content extraction for LLMs. Scrape, crawl, extract structured data — all from Rust. CLI, REST API, and MCP server.",
-   "fullName": "0xMassi/webclaw",
-   "stargazersCount": 2343,
-   "updatedAt": "2026-09-14T21:19:46Z",
-   "url": "https://github.com/0xMassi/webclaw",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "Turn Claude into a senior design architect - DTCG design tokens, 50 components, WCAG 2.2 AA to AAA, 138 design systems, any-framework code, and 38 objective gates that fail the build instead of claiming success. Install as a Claude Code plugin or with npx.",
-   "fullName": "plugin87/ux-ui-agent-skills",
-   "stargazersCount": 1304,
-   "updatedAt": "2026-09-14T22:28:50Z",
-   "url": "https://github.com/plugin87/ux-ui-agent-skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Free, open-source SQL Server and Postgres performance monitoring. Collectors, real-time alerts, graphical plan viewer, MCP server for AI analysis. Supports SQL 2016-2025, Azure SQL, AWS RDS, Postgres, Aurora Postgres.",
-   "fullName": "erikdarlingdata/PerformanceMonitor",
-   "stargazersCount": 497,
-   "updatedAt": "2026-09-14T21:17:06Z",
-   "url": "https://github.com/erikdarlingdata/PerformanceMonitor",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "AI-native ontology engine: a Rust MCP server with tools for building, validating, querying, and reasoning over RDF/OWL ontologies. In-memory Oxigraph triple store, native OWL2-DL tableaux reasoner, SHACL validation, SPARQL, versioning. Single binary, no JVM.",
-   "fullName": "fabio-rovai/open-ontologies",
-   "stargazersCount": 497,
-   "updatedAt": "2026-09-14T21:07:18Z",
-   "url": "https://github.com/fabio-rovai/open-ontologies",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "八字、紫微、星盘、六爻、梅花、奇门、大六壬、小六壬、塔罗、雷诺曼、灵签、择日一站式玄学算命占卜工具包，输出结构化提示词与数据。提供公开 API、MCP Server 与 skill。",
-   "fullName": "Brhiza/mingyu",
-   "stargazersCount": 413,
-   "updatedAt": "2026-09-14T20:05:07Z",
-   "url": "https://github.com/Brhiza/mingyu",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "Query robotics, drone, and IoT data in plain English through an MCP server, with an intelligent edge data reduction pipeline that keeps only the data that matters.",
-   "fullName": "Extelligence-ai/bagel",
-   "stargazersCount": 396,
-   "updatedAt": "2026-09-14T22:04:39Z",
-   "url": "https://github.com/Extelligence-ai/bagel",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "A Nix-based configuration framework for Model Control Protocol (MCP) servers with ready-to-use packages.",
-   "fullName": "natsukium/mcp-servers-nix",
-   "stargazersCount": 300,
-   "updatedAt": "2026-09-14T21:19:42Z",
-   "url": "https://github.com/natsukium/mcp-servers-nix",
+   "description": "Apollo MCP Server",
+   "fullName": "apollographql/apollo-mcp-server",
+   "stargazersCount": 307,
+   "updatedAt": "2026-09-15T20:09:03Z",
+   "url": "https://github.com/apollographql/apollo-mcp-server",
    "labels": [
     "mcp"
    ],

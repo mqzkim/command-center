@@ -1,14 +1,8 @@
 {
  "version": 1,
- "lastRun": "2026-09-14T22:36:00.000Z",
+ "lastRun": "2026-09-15T22:35:57.839Z",
  "consecutiveFailures": 0,
  "runs": [
-  {
-   "date": "2026-08-23",
-   "improvement": "NVIDIA/SkillSpector 스킬 채택(b) — ~/.claude/skills/skill-audit 래퍼(junction 해석·--no-llm 기본) · 트렌드 후보 10건 검토(기각 10; 다음 후보 trailofbits/skills) · seenRepos 30→40",
-   "commit": "8adc87c",
-   "gates": "4/4"
-  },
   {
    "date": "2026-08-23",
    "improvement": "agenticnotetaking/arscontexta 지식화(c) — ~/.wiki entity ingest(LLM Wiki 대비 Reweave·write-time 훅 검증 아이디어) · 트렌드 후보 10건 검토(채택 1·기각 9) · seenRepos 40→50",
@@ -181,6 +175,12 @@
    "date": "2026-09-15",
    "improvement": "yuting0624/antigravity-for-claude-code 지식화(c) — 09-12 이월 1순위 채택, ~/.wiki entity 신규(Gemini CLI(agy)를 Claude Code 협업 서브에이전트로 쓰는 크로스모델 위임 플러그인: Claude=지휘자/Gemini=실행자 비용 라우팅, --tier flash/pro, A/B 실측 문화 −27%/−64% 'estimates' 자기 명시, ★338 MIT 본문 실측; (b) 설치 기각: agy CLI+Google 인증 전제·네이티브 Windows 비권장 자기 선언 issue #6·bash 하드코딩 훅; claudex-loop 검증 축과 대비되는 비용 라우팅 축) · 트렌드 후보 9건 검토(이월 1: snyk/agent-scan(c)·기각 8) · seenRepos 285→294",
    "commit": "2fa8a18",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-16",
+   "improvement": "snyk/agent-scan 지식화(c) — 09-15 이월 1순위 채택, ~/.wiki entity 신규(Snyk의 AI 에이전트·MCP 서버·agent skills 보안 스캐너, Invariant Labs mcp-scan 계보, 머신 전체 auto-discover 13 하네스·4-scope·15 risk indicator, ★3,050 Apache-2.0 본문 실측+TERMS.md SaaS 약관 이중 구조, 'MCP 스캔=커맨드 실제 실행' 자기 고지; NVIDIA(입구 게이트)/Cisco(등록 MCP 심층)/Snyk(전수 인벤토리) 3사 비교 축 완성; (b) 설치 기각: SNYK_TOKEN 필수 로컬 완결 불가·스킬 전문 SaaS 전송·등록 stdio MCP 실제 기동) · 트렌드 후보 3건 검토(기각 3: aws-toolkit·polymarket·apollo) · seenRepos 294→297 · health 9/9",
+   "commit": "pending",
    "gates": "4/4"
   }
  ],
@@ -478,7 +478,10 @@
   "fabio-rovai/open-ontologies",
   "Brhiza/mingyu",
   "Extelligence-ai/bagel",
-  "natsukium/mcp-servers-nix"
+  "natsukium/mcp-servers-nix",
+  "aws/agent-toolkit-for-aws",
+  "caiovicentino/polymarket-mcp-server",
+  "apollographql/apollo-mcp-server"
  ],
  "appliedImprovements": [
   {
@@ -748,6 +751,13 @@
    "date": "2026-09-15",
    "mode": "knowledge",
    "note": "carried (c) 1st priority from 09-12, adopted. new entity page antigravity-for-claude-code; Claude Code plugin running Google Antigravity CLI (agy, Gemini) as a collaborating sub-agent — cross-model delegation harness, 'Claude=conductor (judgment/verification/review) / Gemini=executor (scaffold/implement/test/search)'. Measured 2026-09-15: star 338, forks 30, open_issues 6, created 2026-06-19, pushed 09-14T13:50Z (active), releases v0.25.0~v0.25.2 (README mentions 0.26.0 ahead of releases), contributors yuting0624 77/85 ≈ 90.6% de facto solo (5 external human commits), sister repos gemini-studio-mcp/quorum-review. LICENSE body = standard MIT (c) 2026 linyuting zero NC, API spdx match. Structure: 10 slash commands (delegate/review/research/media/migrate/cloud-run-debug...), agents/antigravity-delegate.md sub-agent (Gemini does file writes), SessionStart hook (agy health check + cost-aware routing policy injection, toggleable), 2 SKILL.md, NO MCP server (CLI wrapper); exec surface scripts .sh 7 + .py 2, bin shims 9, hooks .sh 3, tests 7 + shellcheck, 8 GH Actions (ci/claude-review/quorum-review/zizmor) — all bash. Model routing --tier flash|flash-lo|pro (Gemini 3.8 Flash/3.1 Pro); auto-routing everything rejected as measured net-loss — break-even judgment left to Claude. Cost discipline: docs/AB-RESULTS.md A/B (−27%/−64% at equal quality, self-labeled 'estimates'), self-published finding that --yolo escapes --sandbox — Evidence&Truth-isomorphic culture. Axis compare: claudex-loop = cross-model VERIFICATION axis (author≠reviewer), this = cross-model COST-ROUTING axis (conductor/executor). (b) install rejected: prereq agy CLI + Google/Vertex auth, native Windows (Git Bash/MSYS) discouraged by self-declaration (agy -p 0-byte log hang without ConPTY, issue #6, WSL/macOS/Linux recommended for headless), bash-hardcoded SessionStart hook (= llm-wiki-compiler rejection axis). Reviewed today (9 fresh): carried (c) snyk/agent-scan (3,043* security scanner for AI agents/MCP servers/agent skills — third major-vendor implementation overlapping owner's skill-audit static pre-install + mcp-scanner registered-surface axes, 3-way comparison knowledge value); rejected kucherenko/jscpd (copy/paste detector, no recurring need + gortex code-intel axis), 0xMassi/webclaw (WebFetch overlap axis = duckduckgo/tavily/apify/us-crw), plugin87/ux-ui-agent-skills (toss-tds-design/refactoring-ui/frontend-design overlap = tastemaker/qiaomu-design axis), erikdarlingdata/PerformanceMonitor (no SQL Server/Postgres = pg-aiguide/neon axis), fabio-rovai/open-ontologies (no ontology workflow), Brhiza/mingyu (fortune-telling domain), Extelligence-ai/bagel (robotics/IoT domain), natsukium/mcp-servers-nix (Nix vs owner native Windows = WSL-only rejection axis). Other carries open: (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (c) snyk/agent-scan (NEW — skill-audit/mcp-scanner 3-way comparison axis)."
+  },
+  {
+   "id": "wiki:snyk/agent-scan",
+   "repo": "snyk/agent-scan",
+   "date": "2026-09-16",
+   "mode": "knowledge",
+   "note": "carried (c) 1st priority from 09-15, adopted. new entity page agent-scan; Snyk security scanner for AI agents/MCP servers/agent skills (Invariant Labs AG lineage — mcp-scan, default storage ~/.mcp-scan). Measured 2026-09-16: star 3,050, forks 273, open_issues 18, created 2025-04-07, pushed 09-15T12:28Z (active), releases v0.6.3 09-10 weekly cadence w/ SBOM+sha256+GPG signing, contributors hemang-snyk 235/Viehzeug 140/mmilanta 92 = corporate multi-person team (NOT solo), contributions officially closed. LICENSE body = standard Apache-2.0, (c) 2025 Invariant Labs AG, zero NC, spdx match — BUT TERMS.md dual structure: code=Apache / Agent Scan API (SaaS)=Invariant Labs AG ToS, 'scan run = ToS consent', mass-scanning abuse clause. Machine-wide auto-discover: 13 agent harnesses (Claude Code/Desktop, Cursor, VS Code, Windsurf, Gemini CLI, OpenClaw, Amp, Kiro, OpenCode, Antigravity, Codex, Amazon Q) x System/User/Project/Extension 4-scope matrix; MCP servers (tools/prompts/resources) + agent skills (SKILL.md, ~/.claude/skills whole-dir example in README); 15 risk indicators v0.6; dedicated claude_code.py discoverer; guard.py + snyk-agent-guard.sh/.ps1 runtime-guard surface (undocumented). CRITICAL constraint measured: verdict engine is Snyk SaaS API — SNYK_TOKEN required (verify_api.py SnykTokenError), NOT locally completable; skill full text + tool descriptions sent to server (secret redaction claimed). Self-disclosed: 'Scanning MCP configurations will execute the commands defined in them' (interactive consent / --dangerously-run-mcp-servers in CI). Dep surface small: 13 pure-Python deps, no native build (vs Cisco tree-sitter+yara-python), Windows OK (.ps1 hooks x2), uvx one-shot or signed binary, tests/ 414 of 516 paths. 3-vendor comparison completed in entity: NVIDIA SkillSpector=pre-install entry gate (fully local) / Cisco mcp-scanner=registered-MCP deep scan (YARA-only local-completable, supply chain CVE/VirusTotal) / Snyk agent-scan=post-install full inventory audit (SaaS verdict) — complementary by timing/depth, no full substitution. (b) install rejected: Snyk account+SNYK_TOKEN prereq + not locally completable (owner local-completion preference axis = skill-audit/gortex) + ~/.claude/skills full-text exfil surface to external SaaS + real execution of registered stdio MCP servers (gortex) + abuse ToS; conditional leftover: one-shot uvx full-inventory audit only. Principle recorded in self-evolving-daily-loop: 'if the verdict engine lives in SaaS, knowledge-only'. Reviewed today (3 fresh, all rejected): aws/agent-toolkit-for-aws (no AWS account touchpoint = azure-skills/aws-skills axis), caiovicentino/polymarket-mcp-server (prediction-market real-money trading domain + solo author = maverick-mcp axis), apollographql/apollo-mcp-server (no GraphQL/Apollo = grafana/sentry/tableau vendor axis). Other carries open: (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (c) NotASithLord/peerd (carried since 09-09 — browser-native agent harness extension, tabs+WASM sandbox+P2P, computer-use-browser-agents adjacency; longest-carried entry, stale-check star/pushed before adopting)."
   }
  ],
  "openFindings": []
