@@ -180,7 +180,7 @@
   {
    "date": "2026-09-16",
    "improvement": "snyk/agent-scan 지식화(c) — 09-15 이월 1순위 채택, ~/.wiki entity 신규(Snyk의 AI 에이전트·MCP 서버·agent skills 보안 스캐너, Invariant Labs mcp-scan 계보, 머신 전체 auto-discover 13 하네스·4-scope·15 risk indicator, ★3,050 Apache-2.0 본문 실측+TERMS.md SaaS 약관 이중 구조, 'MCP 스캔=커맨드 실제 실행' 자기 고지; NVIDIA(입구 게이트)/Cisco(등록 MCP 심층)/Snyk(전수 인벤토리) 3사 비교 축 완성; (b) 설치 기각: SNYK_TOKEN 필수 로컬 완결 불가·스킬 전문 SaaS 전송·등록 stdio MCP 실제 기동) · 트렌드 후보 3건 검토(기각 3: aws-toolkit·polymarket·apollo) · seenRepos 294→297 · health 9/9",
-   "commit": "pending",
+   "commit": "7e66166",
    "gates": "4/4"
   }
  ],
