@@ -180,7 +180,7 @@
   {
    "date": "2026-09-17",
    "improvement": "infragate/capa 지식화(c) — ~/.wiki entity 신규(단일 capabilities.yaml로 skills·tools·rules·sub-agents·MCP·hooks·plugins를 Claude Code 포함 30+ 에이전트 네이티브 포맷에 배선하는 설치기+로컬 MCP 게이트웨이(:5912, lazy tool load) 이중 정체, marker-block surgical writes·capabilities.lock SHA 핀·shadow workspace wrap, ★737 pushed 09-16 활발; LICENSE 실체 = 파일 부재(API 404·package.json 필드 없음·README 깨진 MIT 배지) = 법적 라이선스 미부여 — 라이선스 표시 불일치 3번째 변종; (a/b) 설치 기각: 라이선스 결격+~/.claude 소유권 역전+원격 실행형 registry 어댑터) · 트렌드 후보 5건 검토(채택 1·기각 4: SeleniumBase 탐지회피 1급 정체성·azure-devops-mcp SaaS 계정·Gearsystem 게임 도메인·mac_messages_mcp macOS 전용) · seenRepos 297→302",
-   "commit": "",
+   "commit": "fa75987",
    "gates": "4/4"
   }
  ],
