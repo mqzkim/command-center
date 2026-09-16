@@ -1,119 +1,4 @@
-﻿[2026-09-14 12:03:50]   build-galaxy> INTERNAL 46
-[2026-09-14 12:03:50]   build-galaxy> WROTE galaxy-data.js
-[2026-09-14 12:03:50] build-galaxy exit=0 (0.4s)
-[2026-09-14 12:03:50]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
-[2026-09-14 12:03:50]   sync-claude-os> upserted=0 deleted=0 skipped=96 errors=0
-[2026-09-14 12:03:50] sync-claude-os exit=0 (0.1s)
-[2026-09-14 12:03:50]   sync-wiki-kb> skipped: claude-os offline
-[2026-09-14 12:03:50]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
-[2026-09-14 12:03:50] sync-wiki-kb exit=0 (0.1s)
-[2026-09-14 12:03:50] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
-[2026-09-14 18:03:03] === refresh start (pid 69328, loop=False)
-[2026-09-14 18:03:25]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, today-task, nailmap, seoul-house-from-space, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, conclusion-card, coffee, diamond-gather
-[2026-09-14 18:03:25]   fetch-gh> api calls 6 | elapsed 22.4s | WROTE projects-raw.json
-[2026-09-14 18:03:25] fetch-gh exit=0 (22.5s)
-[2026-09-14 18:03:49]   build-projects> dirs scanned 245 | items 96 | visible 72 | toss 20 (launch-status 17)
-[2026-09-14 18:03:49]   build-projects> byCategory {"harness-ai-infra":5,"side-project":17,"knowledge-wiki":1,"apps-in-toss":20,"landing-docs":3,"legacy":26} byStage {"mvp_prd":3,"store_assets":3,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
-[2026-09-14 18:03:49]   build-projects> WROTE projects-data.js
-[2026-09-14 18:03:49] build-projects exit=0 (24.2s)
-[2026-09-14 18:03:50]   build-galaxy> CONCEPTS 144
-[2026-09-14 18:03:50]   build-galaxy> ENTITIES 278
-[2026-09-14 18:03:50]   build-galaxy> RESEARCH 40
-[2026-09-14 18:03:50]   build-galaxy> INTERNAL 46
-[2026-09-14 18:03:50]   build-galaxy> WROTE galaxy-data.js
-[2026-09-14 18:03:50] build-galaxy exit=0 (0.4s)
-[2026-09-14 18:03:50]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
-[2026-09-14 18:03:50]   sync-claude-os> upserted=0 deleted=0 skipped=96 errors=0
-[2026-09-14 18:03:50] sync-claude-os exit=0 (0.1s)
-[2026-09-14 18:03:50]   sync-wiki-kb> skipped: claude-os offline
-[2026-09-14 18:03:50]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
-[2026-09-14 18:03:50] sync-wiki-kb exit=0 (0.1s)
-[2026-09-14 18:03:50] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
-[2026-09-15 00:03:03] === refresh start (pid 29920, loop=False)
-[2026-09-15 00:03:31]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, today-task, nailmap, seoul-house-from-space, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, conclusion-card, coffee, diamond-gather
-[2026-09-15 00:03:31]   fetch-gh> api calls 6 | elapsed 27.8s | WROTE projects-raw.json
-[2026-09-15 00:03:31] fetch-gh exit=0 (27.9s)
-[2026-09-15 00:04:02]   build-projects> dirs scanned 245 | items 96 | visible 72 | toss 20 (launch-status 17)
-[2026-09-15 00:04:02]   build-projects> byCategory {"knowledge-wiki":1,"harness-ai-infra":5,"side-project":17,"apps-in-toss":20,"landing-docs":3,"legacy":26} byStage {"mvp_prd":3,"store_assets":3,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
-[2026-09-15 00:04:02]   build-projects> WROTE projects-data.js
-[2026-09-15 00:04:02] build-projects exit=0 (31.2s)
-[2026-09-15 00:04:03]   build-galaxy> CONCEPTS 144
-[2026-09-15 00:04:03]   build-galaxy> ENTITIES 278
-[2026-09-15 00:04:03]   build-galaxy> RESEARCH 41
-[2026-09-15 00:04:03]   build-galaxy> INTERNAL 46
-[2026-09-15 00:04:03]   build-galaxy> WROTE galaxy-data.js
-[2026-09-15 00:04:03] build-galaxy exit=0 (0.5s)
-[2026-09-15 00:04:03]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
-[2026-09-15 00:04:03]   sync-claude-os> upserted=0 deleted=0 skipped=96 errors=0
-[2026-09-15 00:04:03] sync-claude-os exit=0 (0.2s)
-[2026-09-15 00:04:03]   sync-wiki-kb> skipped: claude-os offline
-[2026-09-15 00:04:03]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
-[2026-09-15 00:04:03] sync-wiki-kb exit=0 (0.1s)
-[2026-09-15 00:04:03] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
-[2026-09-15 06:03:03] === refresh start (pid 73144, loop=False)
-[2026-09-15 06:03:14]   fetch-gh> node:internal/errors:985
-[2026-09-15 06:03:14]   fetch-gh>   const err = new Error(message);
-[2026-09-15 06:03:14]   fetch-gh>               ^
-[2026-09-15 06:03:14]   fetch-gh> System.Management.Automation.RemoteException
-[2026-09-15 06:03:14]   fetch-gh> Error: Command failed: gh api graphql -f query=query($after:String){ repositoryOwner(login:"mqzkim"){ repositories(first:100, after:$after, ownerAffiliations:OWNER, orderBy:{field:PUSHED_AT, direction:DESC}){
-[2026-09-15 06:03:14]   fetch-gh>     pageInfo{hasNextPage endCursor}
-[2026-09-15 06:03:14]   fetch-gh>     nodes{ name url description isPrivate isFork isArchived pushedAt createdAt stargazerCount
-[2026-09-15 06:03:14]   fetch-gh>       primaryLanguage{name} defaultBranchRef{name} issues(states:OPEN){totalCount} } } } }
-[2026-09-15 06:03:14]   fetch-gh> gh: HTTP 502
-[2026-09-15 06:03:14]   fetch-gh> System.Management.Automation.RemoteException
-[2026-09-15 06:03:14]   fetch-gh>     at genericNodeError (node:internal/errors:985:15)
-[2026-09-15 06:03:14]   fetch-gh>     at wrappedFn (node:internal/errors:539:14)
-[2026-09-15 06:03:14]   fetch-gh>     at checkExecSyncError (node:child_process:925:11)
-[2026-09-15 06:03:14]   fetch-gh>     at execFileSync (node:child_process:961:15)
-[2026-09-15 06:03:14]   fetch-gh>     at gql (file:///C:/workspace/command-center/fetch-gh.mjs:22:15)
-[2026-09-15 06:03:14]   fetch-gh>     at file:///C:/workspace/command-center/fetch-gh.mjs:36:13
-[2026-09-15 06:03:14]   fetch-gh>     at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
-[2026-09-15 06:03:14]   fetch-gh>     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
-[2026-09-15 06:03:14]   fetch-gh>     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
-[2026-09-15 06:03:14]   fetch-gh>   status: 1,
-[2026-09-15 06:03:14]   fetch-gh>   signal: null,
-[2026-09-15 06:03:14]   fetch-gh>   output: [
-[2026-09-15 06:03:14]   fetch-gh>     null,
-[2026-09-15 06:03:14]   fetch-gh>     '<html>\r\n' +
-[2026-09-15 06:03:14]   fetch-gh>       '<head><title>502 Bad Gateway</title></head>\r\n' +
-[2026-09-15 06:03:14]   fetch-gh>       '<body>\r\n' +
-[2026-09-15 06:03:14]   fetch-gh>       '<center><h1>502 Bad Gateway</h1></center>\r\n' +
-[2026-09-15 06:03:14]   fetch-gh>       '<hr><center>nginx</center>\r\n' +
-[2026-09-15 06:03:14]   fetch-gh>       '</body>\r\n' +
-[2026-09-15 06:03:14]   fetch-gh>       '</html>\r\n',
-[2026-09-15 06:03:14]   fetch-gh>     'gh: HTTP 502\n'
-[2026-09-15 06:03:14]   fetch-gh>   ],
-[2026-09-15 06:03:14]   fetch-gh>   pid: 48916,
-[2026-09-15 06:03:14]   fetch-gh>   stdout: '<html>\r\n' +
-[2026-09-15 06:03:14]   fetch-gh>     '<head><title>502 Bad Gateway</title></head>\r\n' +
-[2026-09-15 06:03:14]   fetch-gh>     '<body>\r\n' +
-[2026-09-15 06:03:14]   fetch-gh>     '<center><h1>502 Bad Gateway</h1></center>\r\n' +
-[2026-09-15 06:03:14]   fetch-gh>     '<hr><center>nginx</center>\r\n' +
-[2026-09-15 06:03:14]   fetch-gh>     '</body>\r\n' +
-[2026-09-15 06:03:14]   fetch-gh>     '</html>\r\n',
-[2026-09-15 06:03:14]   fetch-gh>   stderr: 'gh: HTTP 502\n'
-[2026-09-15 06:03:14]   fetch-gh> }
-[2026-09-15 06:03:14]   fetch-gh> System.Management.Automation.RemoteException
-[2026-09-15 06:03:14]   fetch-gh> Node.js v24.14.1
-[2026-09-15 06:03:14] fetch-gh exit=1 (11.3s)
-[2026-09-15 06:03:14] fetch-gh FAILED ??湲곗〈 projects-raw.json ?좎?, build留??섑뻾
-[2026-09-15 06:03:40]   build-projects> dirs scanned 245 | items 96 | visible 72 | toss 20 (launch-status 17)
-[2026-09-15 06:03:40]   build-projects> byCategory {"harness-ai-infra":5,"knowledge-wiki":1,"side-project":17,"apps-in-toss":20,"landing-docs":3,"legacy":26} byStage {"mvp_prd":3,"store_assets":3,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
-[2026-09-15 06:03:40]   build-projects> WROTE projects-data.js
-[2026-09-15 06:03:40] build-projects exit=0 (25.9s)
-[2026-09-15 06:03:40]   build-galaxy> CONCEPTS 144
-[2026-09-15 06:03:40]   build-galaxy> ENTITIES 278
-[2026-09-15 06:03:40]   build-galaxy> RESEARCH 41
-[2026-09-15 06:03:40]   build-galaxy> INTERNAL 46
-[2026-09-15 06:03:40]   build-galaxy> WROTE galaxy-data.js
-[2026-09-15 06:03:40] build-galaxy exit=0 (0.4s)
-[2026-09-15 06:03:40]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
-[2026-09-15 06:03:40]   sync-claude-os> upserted=0 deleted=0 skipped=96 errors=0
-[2026-09-15 06:03:40] sync-claude-os exit=0 (0.1s)
-[2026-09-15 06:03:40]   sync-wiki-kb> skipped: claude-os offline
-[2026-09-15 06:03:40]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
-[2026-09-15 06:03:40] sync-wiki-kb exit=0 (0.1s)
-[2026-09-15 06:03:40] === refresh end (gh=1 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+﻿[2026-09-15 06:03:40] === refresh end (gh=1 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
 [2026-09-15 12:03:02] === refresh start (pid 2680, loop=False)
 [2026-09-15 12:03:24]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, today-task, nailmap, seoul-house-from-space, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, conclusion-card, coffee, diamond-gather
 [2026-09-15 12:03:24]   fetch-gh> api calls 6 | elapsed 22.3s | WROTE projects-raw.json
@@ -198,3 +83,118 @@
 [2026-09-16 06:03:52]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
 [2026-09-16 06:03:52] sync-wiki-kb exit=0 (0.1s)
 [2026-09-16 06:03:52] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-09-16 12:03:02] === refresh start (pid 38484, loop=False)
+[2026-09-16 12:03:22]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, today-task, nailmap, seoul-house-from-space, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, conclusion-card, coffee, diamond-gather
+[2026-09-16 12:03:22]   fetch-gh> api calls 6 | elapsed 19.7s | WROTE projects-raw.json
+[2026-09-16 12:03:22] fetch-gh exit=0 (19.7s)
+[2026-09-16 12:03:45]   build-projects> dirs scanned 245 | items 96 | visible 72 | toss 20 (launch-status 17)
+[2026-09-16 12:03:45]   build-projects> byCategory {"harness-ai-infra":5,"side-project":17,"knowledge-wiki":1,"apps-in-toss":20,"landing-docs":3,"legacy":26} byStage {"mvp_prd":3,"store_assets":3,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
+[2026-09-16 12:03:45]   build-projects> WROTE projects-data.js
+[2026-09-16 12:03:45] build-projects exit=0 (23.3s)
+[2026-09-16 12:03:45]   build-galaxy> CONCEPTS 144
+[2026-09-16 12:03:45]   build-galaxy> ENTITIES 280
+[2026-09-16 12:03:45]   build-galaxy> RESEARCH 41
+[2026-09-16 12:03:45]   build-galaxy> INTERNAL 46
+[2026-09-16 12:03:45]   build-galaxy> WROTE galaxy-data.js
+[2026-09-16 12:03:45] build-galaxy exit=0 (0.4s)
+[2026-09-16 12:03:46]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-09-16 12:03:46]   sync-claude-os> upserted=0 deleted=0 skipped=96 errors=0
+[2026-09-16 12:03:46] sync-claude-os exit=0 (0.1s)
+[2026-09-16 12:03:46]   sync-wiki-kb> skipped: claude-os offline
+[2026-09-16 12:03:46]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+[2026-09-16 12:03:46] sync-wiki-kb exit=0 (0.1s)
+[2026-09-16 12:03:46] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-09-16 18:03:02] === refresh start (pid 40792, loop=False)
+[2026-09-16 18:03:24]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, today-task, nailmap, seoul-house-from-space, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, conclusion-card, coffee, diamond-gather
+[2026-09-16 18:03:24]   fetch-gh> api calls 6 | elapsed 22.1s | WROTE projects-raw.json
+[2026-09-16 18:03:24] fetch-gh exit=0 (22.2s)
+[2026-09-16 18:03:47]   build-projects> dirs scanned 245 | items 96 | visible 72 | toss 20 (launch-status 17)
+[2026-09-16 18:03:47]   build-projects> byCategory {"harness-ai-infra":5,"side-project":17,"knowledge-wiki":1,"apps-in-toss":20,"landing-docs":3,"legacy":26} byStage {"mvp_prd":3,"store_assets":3,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
+[2026-09-16 18:03:47]   build-projects> WROTE projects-data.js
+[2026-09-16 18:03:47] build-projects exit=0 (23.2s)
+[2026-09-16 18:03:48]   build-galaxy> CONCEPTS 144
+[2026-09-16 18:03:48]   build-galaxy> ENTITIES 280
+[2026-09-16 18:03:48]   build-galaxy> RESEARCH 41
+[2026-09-16 18:03:48]   build-galaxy> INTERNAL 46
+[2026-09-16 18:03:48]   build-galaxy> WROTE galaxy-data.js
+[2026-09-16 18:03:48] build-galaxy exit=0 (0.4s)
+[2026-09-16 18:03:48]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-09-16 18:03:48]   sync-claude-os> upserted=0 deleted=0 skipped=96 errors=0
+[2026-09-16 18:03:48] sync-claude-os exit=0 (0.1s)
+[2026-09-16 18:03:48]   sync-wiki-kb> skipped: claude-os offline
+[2026-09-16 18:03:48]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+[2026-09-16 18:03:48] sync-wiki-kb exit=0 (0.1s)
+[2026-09-16 18:03:48] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-09-17 00:03:02] === refresh start (pid 45420, loop=False)
+[2026-09-17 00:03:13]   fetch-gh> node:internal/errors:985
+[2026-09-17 00:03:13]   fetch-gh>   const err = new Error(message);
+[2026-09-17 00:03:13]   fetch-gh>               ^
+[2026-09-17 00:03:13]   fetch-gh> System.Management.Automation.RemoteException
+[2026-09-17 00:03:13]   fetch-gh> Error: Command failed: gh api graphql -f query=query($after:String){ repositoryOwner(login:"mqzkim"){ repositories(first:100, after:$after, ownerAffiliations:OWNER, orderBy:{field:PUSHED_AT, direction:DESC}){
+[2026-09-17 00:03:13]   fetch-gh>     pageInfo{hasNextPage endCursor}
+[2026-09-17 00:03:13]   fetch-gh>     nodes{ name url description isPrivate isFork isArchived pushedAt createdAt stargazerCount
+[2026-09-17 00:03:13]   fetch-gh>       primaryLanguage{name} defaultBranchRef{name} issues(states:OPEN){totalCount} } } } }
+[2026-09-17 00:03:13]   fetch-gh> gh: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists. (HTTP 504)
+[2026-09-17 00:03:13]   fetch-gh> System.Management.Automation.RemoteException
+[2026-09-17 00:03:13]   fetch-gh>     at genericNodeError (node:internal/errors:985:15)
+[2026-09-17 00:03:13]   fetch-gh>     at wrappedFn (node:internal/errors:539:14)
+[2026-09-17 00:03:13]   fetch-gh>     at checkExecSyncError (node:child_process:925:11)
+[2026-09-17 00:03:13]   fetch-gh>     at execFileSync (node:child_process:961:15)
+[2026-09-17 00:03:13]   fetch-gh>     at gql (file:///C:/workspace/command-center/fetch-gh.mjs:22:15)
+[2026-09-17 00:03:13]   fetch-gh>     at file:///C:/workspace/command-center/fetch-gh.mjs:36:13
+[2026-09-17 00:03:13]   fetch-gh>     at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+[2026-09-17 00:03:13]   fetch-gh>     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
+[2026-09-17 00:03:13]   fetch-gh>     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+[2026-09-17 00:03:13]   fetch-gh>   status: 1,
+[2026-09-17 00:03:13]   fetch-gh>   signal: null,
+[2026-09-17 00:03:13]   fetch-gh>   output: [
+[2026-09-17 00:03:13]   fetch-gh>     null,
+[2026-09-17 00:03:13]   fetch-gh>     `{"message": "We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."}\r\n`,
+[2026-09-17 00:03:13]   fetch-gh>     "gh: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists. (HTTP 504)\n"
+[2026-09-17 00:03:13]   fetch-gh>   ],
+[2026-09-17 00:03:13]   fetch-gh>   pid: 45336,
+[2026-09-17 00:03:13]   fetch-gh>   stdout: `{"message": "We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists."}\r\n`,
+[2026-09-17 00:03:13]   fetch-gh>   stderr: "gh: We couldn't respond to your request in time. Sorry about that. Please try resubmitting your request and contact us if the problem persists. (HTTP 504)\n"
+[2026-09-17 00:03:13]   fetch-gh> }
+[2026-09-17 00:03:13]   fetch-gh> System.Management.Automation.RemoteException
+[2026-09-17 00:03:13]   fetch-gh> Node.js v24.14.1
+[2026-09-17 00:03:13] fetch-gh exit=1 (11.4s)
+[2026-09-17 00:03:13] fetch-gh FAILED ??湲곗〈 projects-raw.json ?좎?, build留??섑뻾
+[2026-09-17 00:03:37]   build-projects> dirs scanned 245 | items 96 | visible 72 | toss 20 (launch-status 17)
+[2026-09-17 00:03:37]   build-projects> byCategory {"harness-ai-infra":5,"side-project":17,"knowledge-wiki":1,"apps-in-toss":20,"landing-docs":3,"legacy":26} byStage {"mvp_prd":3,"store_assets":3,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
+[2026-09-17 00:03:37]   build-projects> WROTE projects-data.js
+[2026-09-17 00:03:37] build-projects exit=0 (23.2s)
+[2026-09-17 00:03:37]   build-galaxy> CONCEPTS 144
+[2026-09-17 00:03:37]   build-galaxy> ENTITIES 280
+[2026-09-17 00:03:37]   build-galaxy> RESEARCH 41
+[2026-09-17 00:03:37]   build-galaxy> INTERNAL 46
+[2026-09-17 00:03:37]   build-galaxy> WROTE galaxy-data.js
+[2026-09-17 00:03:37] build-galaxy exit=0 (0.4s)
+[2026-09-17 00:03:37]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-09-17 00:03:37]   sync-claude-os> upserted=0 deleted=0 skipped=96 errors=0
+[2026-09-17 00:03:37] sync-claude-os exit=0 (0.1s)
+[2026-09-17 00:03:37]   sync-wiki-kb> skipped: claude-os offline
+[2026-09-17 00:03:37]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+[2026-09-17 00:03:37] sync-wiki-kb exit=0 (0.1s)
+[2026-09-17 00:03:37] === refresh end (gh=1 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-09-17 06:03:02] === refresh start (pid 32032, loop=False)
+[2026-09-17 06:03:27]   fetch-gh> repos 44 (non-fork 42, fork 2) | apps-in-toss 12: app-in-toss, today-task, nailmap, seoul-house-from-space, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, conclusion-card, coffee, diamond-gather
+[2026-09-17 06:03:27]   fetch-gh> api calls 6 | elapsed 24.3s | WROTE projects-raw.json
+[2026-09-17 06:03:27] fetch-gh exit=0 (24.4s)
+[2026-09-17 06:03:52]   build-projects> dirs scanned 245 | items 96 | visible 72 | toss 20 (launch-status 17)
+[2026-09-17 06:03:52]   build-projects> byCategory {"harness-ai-infra":5,"side-project":17,"knowledge-wiki":1,"apps-in-toss":20,"landing-docs":3,"legacy":26} byStage {"mvp_prd":3,"store_assets":3,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
+[2026-09-17 06:03:52]   build-projects> WROTE projects-data.js
+[2026-09-17 06:03:52] build-projects exit=0 (25.2s)
+[2026-09-17 06:03:52]   build-galaxy> CONCEPTS 144
+[2026-09-17 06:03:52]   build-galaxy> ENTITIES 280
+[2026-09-17 06:03:52]   build-galaxy> RESEARCH 41
+[2026-09-17 06:03:52]   build-galaxy> INTERNAL 46
+[2026-09-17 06:03:52]   build-galaxy> WROTE galaxy-data.js
+[2026-09-17 06:03:52] build-galaxy exit=0 (0.4s)
+[2026-09-17 06:03:52]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-09-17 06:03:52]   sync-claude-os> upserted=0 deleted=0 skipped=96 errors=0
+[2026-09-17 06:03:52] sync-claude-os exit=0 (0.2s)
+[2026-09-17 06:03:53]   sync-wiki-kb> skipped: claude-os offline
+[2026-09-17 06:03:53]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+[2026-09-17 06:03:53] sync-wiki-kb exit=0 (0.1s)
+[2026-09-17 06:03:53] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)

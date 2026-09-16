@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-15T22:30:48.966Z",
+ "generatedAt": "2026-09-16T22:30:48.785Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -34,37 +34,59 @@
  "scanned": 206,
  "dedup": {
   "wikiCatalog": 2,
-  "alreadySeen": 201
+  "alreadySeen": 199
  },
  "candidates": [
   {
-   "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
-   "fullName": "aws/agent-toolkit-for-aws",
-   "stargazersCount": 2629,
-   "updatedAt": "2026-09-15T22:18:50Z",
-   "url": "https://github.com/aws/agent-toolkit-for-aws",
+   "description": "Browser automation, web scraping, and testing. CDP Mode provides a Stealthy Chromium instance that bypasses bot-detection systems. Includes an MCP server.",
+   "fullName": "seleniumbase/SeleniumBase",
+   "stargazersCount": 13019,
+   "updatedAt": "2026-09-16T20:56:40Z",
+   "url": "https://github.com/seleniumbase/SeleniumBase",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server"
+  },
+  {
+   "description": "The MCP server for Azure DevOps, bringing the power of Azure DevOps directly to your agents.",
+   "fullName": "microsoft/azure-devops-mcp",
+   "stargazersCount": 2018,
+   "updatedAt": "2026-09-16T20:44:09Z",
+   "url": "https://github.com/microsoft/azure-devops-mcp",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "🤖 AI-Powered MCP Server for Polymarket - Enable Claude to trade prediction markets with 45 tools, real-time monitoring, and enterprise-grade safety features",
-   "fullName": "caiovicentino/polymarket-mcp-server",
-   "stargazersCount": 674,
-   "updatedAt": "2026-09-15T22:15:28Z",
-   "url": "https://github.com/caiovicentino/polymarket-mcp-server",
+   "description": "One capabilities.yaml wires skills, tools, rules, sub-agents, MCP servers, and plugins into Cursor, Claude Code, Codex, Windsurf, GitHub Copilot, and 30+ other AI coding agents",
+   "fullName": "infragate/capa",
+   "stargazersCount": 737,
+   "updatedAt": "2026-09-16T22:18:29Z",
+   "url": "https://github.com/infragate/capa",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Apollo MCP Server",
-   "fullName": "apollographql/apollo-mcp-server",
-   "stargazersCount": 307,
-   "updatedAt": "2026-09-15T20:09:03Z",
-   "url": "https://github.com/apollographql/apollo-mcp-server",
+   "description": "Sega Master System / Game Gear / SG-1000 emulator, debugger and embedded MCP server for macOS, Windows, Linux, BSD and RetroArch.",
+   "fullName": "drhelius/Gearsystem",
+   "stargazersCount": 387,
+   "updatedAt": "2026-09-16T21:18:03Z",
+   "url": "https://github.com/drhelius/Gearsystem",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "An MCP server that securely interfaces with your iMessage database via the Model Context Protocol (MCP), allowing LLMs to query and analyze iMessage conversations. It includes robust phone number validation, attachment processing, contact management, group chat handling, and full support for sending and receiving messages.",
+   "fullName": "carterlasalle/mac_messages_mcp",
+   "stargazersCount": 326,
+   "updatedAt": "2026-09-16T20:26:57Z",
+   "url": "https://github.com/carterlasalle/mac_messages_mcp",
    "labels": [
     "mcp"
    ],

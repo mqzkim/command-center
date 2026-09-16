@@ -1,14 +1,8 @@
 {
  "version": 1,
- "lastRun": "2026-09-15T22:35:57.839Z",
+ "lastRun": "2026-09-16T22:36:50.677Z",
  "consecutiveFailures": 0,
  "runs": [
-  {
-   "date": "2026-08-23",
-   "improvement": "agenticnotetaking/arscontexta 지식화(c) — ~/.wiki entity ingest(LLM Wiki 대비 Reweave·write-time 훅 검증 아이디어) · 트렌드 후보 10건 검토(채택 1·기각 9) · seenRepos 40→50",
-   "commit": "dc68e0d",
-   "gates": "4/4"
-  },
   {
    "date": "2026-08-23",
    "improvement": "agentuniverse-ai/agentUniverse 지식화(c) — ~/.wiki entity ingest(PEER·DOE 협업 패턴, Review 단계↔하네스 게이트 대응) · 트렌드 후보 10건 검토(채택 1·기각 9) · seenRepos 50→60",
@@ -181,6 +175,12 @@
    "date": "2026-09-16",
    "improvement": "snyk/agent-scan 지식화(c) — 09-15 이월 1순위 채택, ~/.wiki entity 신규(Snyk의 AI 에이전트·MCP 서버·agent skills 보안 스캐너, Invariant Labs mcp-scan 계보, 머신 전체 auto-discover 13 하네스·4-scope·15 risk indicator, ★3,050 Apache-2.0 본문 실측+TERMS.md SaaS 약관 이중 구조, 'MCP 스캔=커맨드 실제 실행' 자기 고지; NVIDIA(입구 게이트)/Cisco(등록 MCP 심층)/Snyk(전수 인벤토리) 3사 비교 축 완성; (b) 설치 기각: SNYK_TOKEN 필수 로컬 완결 불가·스킬 전문 SaaS 전송·등록 stdio MCP 실제 기동) · 트렌드 후보 3건 검토(기각 3: aws-toolkit·polymarket·apollo) · seenRepos 294→297 · health 9/9",
    "commit": "7e66166",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-17",
+   "improvement": "infragate/capa 지식화(c) — ~/.wiki entity 신규(단일 capabilities.yaml로 skills·tools·rules·sub-agents·MCP·hooks·plugins를 Claude Code 포함 30+ 에이전트 네이티브 포맷에 배선하는 설치기+로컬 MCP 게이트웨이(:5912, lazy tool load) 이중 정체, marker-block surgical writes·capabilities.lock SHA 핀·shadow workspace wrap, ★737 pushed 09-16 활발; LICENSE 실체 = 파일 부재(API 404·package.json 필드 없음·README 깨진 MIT 배지) = 법적 라이선스 미부여 — 라이선스 표시 불일치 3번째 변종; (a/b) 설치 기각: 라이선스 결격+~/.claude 소유권 역전+원격 실행형 registry 어댑터) · 트렌드 후보 5건 검토(채택 1·기각 4: SeleniumBase 탐지회피 1급 정체성·azure-devops-mcp SaaS 계정·Gearsystem 게임 도메인·mac_messages_mcp macOS 전용) · seenRepos 297→302",
+   "commit": "",
    "gates": "4/4"
   }
  ],
@@ -481,7 +481,12 @@
   "natsukium/mcp-servers-nix",
   "aws/agent-toolkit-for-aws",
   "caiovicentino/polymarket-mcp-server",
-  "apollographql/apollo-mcp-server"
+  "apollographql/apollo-mcp-server",
+  "seleniumbase/SeleniumBase",
+  "microsoft/azure-devops-mcp",
+  "infragate/capa",
+  "drhelius/Gearsystem",
+  "carterlasalle/mac_messages_mcp"
  ],
  "appliedImprovements": [
   {
@@ -758,6 +763,13 @@
    "date": "2026-09-16",
    "mode": "knowledge",
    "note": "carried (c) 1st priority from 09-15, adopted. new entity page agent-scan; Snyk security scanner for AI agents/MCP servers/agent skills (Invariant Labs AG lineage — mcp-scan, default storage ~/.mcp-scan). Measured 2026-09-16: star 3,050, forks 273, open_issues 18, created 2025-04-07, pushed 09-15T12:28Z (active), releases v0.6.3 09-10 weekly cadence w/ SBOM+sha256+GPG signing, contributors hemang-snyk 235/Viehzeug 140/mmilanta 92 = corporate multi-person team (NOT solo), contributions officially closed. LICENSE body = standard Apache-2.0, (c) 2025 Invariant Labs AG, zero NC, spdx match — BUT TERMS.md dual structure: code=Apache / Agent Scan API (SaaS)=Invariant Labs AG ToS, 'scan run = ToS consent', mass-scanning abuse clause. Machine-wide auto-discover: 13 agent harnesses (Claude Code/Desktop, Cursor, VS Code, Windsurf, Gemini CLI, OpenClaw, Amp, Kiro, OpenCode, Antigravity, Codex, Amazon Q) x System/User/Project/Extension 4-scope matrix; MCP servers (tools/prompts/resources) + agent skills (SKILL.md, ~/.claude/skills whole-dir example in README); 15 risk indicators v0.6; dedicated claude_code.py discoverer; guard.py + snyk-agent-guard.sh/.ps1 runtime-guard surface (undocumented). CRITICAL constraint measured: verdict engine is Snyk SaaS API — SNYK_TOKEN required (verify_api.py SnykTokenError), NOT locally completable; skill full text + tool descriptions sent to server (secret redaction claimed). Self-disclosed: 'Scanning MCP configurations will execute the commands defined in them' (interactive consent / --dangerously-run-mcp-servers in CI). Dep surface small: 13 pure-Python deps, no native build (vs Cisco tree-sitter+yara-python), Windows OK (.ps1 hooks x2), uvx one-shot or signed binary, tests/ 414 of 516 paths. 3-vendor comparison completed in entity: NVIDIA SkillSpector=pre-install entry gate (fully local) / Cisco mcp-scanner=registered-MCP deep scan (YARA-only local-completable, supply chain CVE/VirusTotal) / Snyk agent-scan=post-install full inventory audit (SaaS verdict) — complementary by timing/depth, no full substitution. (b) install rejected: Snyk account+SNYK_TOKEN prereq + not locally completable (owner local-completion preference axis = skill-audit/gortex) + ~/.claude/skills full-text exfil surface to external SaaS + real execution of registered stdio MCP servers (gortex) + abuse ToS; conditional leftover: one-shot uvx full-inventory audit only. Principle recorded in self-evolving-daily-loop: 'if the verdict engine lives in SaaS, knowledge-only'. Reviewed today (3 fresh, all rejected): aws/agent-toolkit-for-aws (no AWS account touchpoint = azure-skills/aws-skills axis), caiovicentino/polymarket-mcp-server (prediction-market real-money trading domain + solo author = maverick-mcp axis), apollographql/apollo-mcp-server (no GraphQL/Apollo = grafana/sentry/tableau vendor axis). Other carries open: (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (c) NotASithLord/peerd (carried since 09-09 — browser-native agent harness extension, tabs+WASM sandbox+P2P, computer-use-browser-agents adjacency; longest-carried entry, stale-check star/pushed before adopting)."
+  },
+  {
+   "id": "wiki:infragate/capa",
+   "repo": "infragate/capa",
+   "date": "2026-09-17",
+   "mode": "knowledge",
+   "note": "fresh candidate adopted (c). new entity page capa; declarative cross-harness capability manifest — one capabilities.yaml declares skills/tools/rules/sub-agents/MCP servers/hooks/plugins, `capa install` writes each agent's NATIVE format (Claude Code surface per docs/providers/claude-code.md: .claude/skills/, .mcp.json, CLAUDE.md marker blocks, .claude/rules|agents/, .claude/settings.json hooks tagged capa:<id> upsert-only; global $CLAUDE_CONFIG_DIR/skills). Dual identity: installer + runtime local MCP gateway (:5912, per-agent single endpoint, stdio/HTTP/SSE proxy, on-demand tool lazy-load '19–40% fewer tokens across 150 trials on claude-opus-4-8' self-reported, per-subagent tool filtering). capabilities.lock SHA pins, content-addressed ~/.capa/cache, state ~/.capa/db.sqlite, `capa wrap` shadow workspace isolation (Windows needs Developer Mode for symlinks, self-disclosed). Measured 2026-09-17: star 737, forks 99, open_issues 7, created 2026-02-08, pushed 09-16T22:22Z (v2.2.0 released same day, weekly-ish cadence since v2.0.3 08-05), contributors Minitour 610/617 human = 98.9% de facto solo (org name infragate but personal project). CRITICAL: LICENSE file DOES NOT EXIST — 798 tree paths grep license|terms|commercial|eula|notice|copying = 0, gh api /license = HTTP 404, package.json has no license field, yet README shows 'License: MIT' badge linking to nonexistent LICENSE → legally unlicensed (all rights reserved). Third variant in license-display-mismatch lineage: vladikk-modularity (API spdx hid actual CC BY-NC), refactoring-ui-skill (API key:other hid actual MIT), capa (badge claims MIT, no file at all) — principle: only the file body on disk counts, never badge nor API. Local completion good: local server/gateway/SQLite/keyring, no SaaS/account prereq, posthog 0, no external telemetry evidence ('future telemetry fan-out' comment only), capa auth optional. Residual risk: 3 registry adapters are remotely-fetched EXECUTABLE TypeScript (~/.capa/registries-managed/, README self-warning 'Review the source before enabling'), curl|sh install, Bun-compiled single binary (install.ps1, build:win — Windows official), CI 4 workflows, install-time consent gate prints exec surface. (a/b) install rejected 3 grounds: (1) unlicensed = disqualifying (2) manages same file surface as owner's hand-curated ~/.claude system with capabilities.yaml as source-of-truth = ownership inversion (llm-wiki-compiler / Continuous-Claude-v3 rejection axis 'config/knowledge source fragmentation') (3) remote executable registry adapter surface. Knowledge value: cross-harness capability-manifest axis (Harness Wrapper Contract adjacency), marker-block write contract, lazy tool load = same axis as owner's gortex GORTEX_TOOLS 175→14 MCP surface minimization pattern. Reviewed today (5 fresh): adopted capa; rejected seleniumbase/SeleniumBase (13,019* but stealth bot-detection bypass is first-class identity — 28 README mentions, og:title 'Stealthy Chromium Automation' = AIHawk detection-evasion axis + superpowers-chrome CDP overlap), microsoft/azure-devops-mcp (2,018* Azure DevOps account SaaS prereq, owner non-user = aws-toolkit axis), drhelius/Gearsystem (387*<500 game emulator domain = Gearboy same-author precedent), carterlasalle/mac_messages_mcp (326*<500 macOS-only, zero Windows touchpoint). Other carries open: (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (c) NotASithLord/peerd (carried since 09-09 — browser-native agent harness extension; longest-carried entry, stale-check star/pushed before adopting)."
   }
  ],
  "openFindings": []
