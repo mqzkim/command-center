@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-16T22:30:48.785Z",
+ "generatedAt": "2026-09-17T22:30:47.805Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,62 +31,29 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 206,
+ "scanned": 205,
  "dedup": {
   "wikiCatalog": 2,
-  "alreadySeen": 199
+  "alreadySeen": 201
  },
  "candidates": [
   {
-   "description": "Browser automation, web scraping, and testing. CDP Mode provides a Stealthy Chromium instance that bypasses bot-detection systems. Includes an MCP server.",
-   "fullName": "seleniumbase/SeleniumBase",
-   "stargazersCount": 13019,
-   "updatedAt": "2026-09-16T20:56:40Z",
-   "url": "https://github.com/seleniumbase/SeleniumBase",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "The MCP server for Azure DevOps, bringing the power of Azure DevOps directly to your agents.",
-   "fullName": "microsoft/azure-devops-mcp",
-   "stargazersCount": 2018,
-   "updatedAt": "2026-09-16T20:44:09Z",
-   "url": "https://github.com/microsoft/azure-devops-mcp",
+   "description": "Git-native persistent memory for AI coding agents. Implements Google OKF v0.2 with sub-300µs in-memory BM25 search, embedded MCP server, and progressive disclosure. Slashes token bloat by 80% with zero external databases or dependencies. Built in pure Go.",
+   "fullName": "okf-memory/okf-agent-memory",
+   "stargazersCount": 691,
+   "updatedAt": "2026-09-17T19:59:21Z",
+   "url": "https://github.com/okf-memory/okf-agent-memory",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "One capabilities.yaml wires skills, tools, rules, sub-agents, MCP servers, and plugins into Cursor, Claude Code, Codex, Windsurf, GitHub Copilot, and 30+ other AI coding agents",
-   "fullName": "infragate/capa",
-   "stargazersCount": 737,
-   "updatedAt": "2026-09-16T22:18:29Z",
-   "url": "https://github.com/infragate/capa",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "Sega Master System / Game Gear / SG-1000 emulator, debugger and embedded MCP server for macOS, Windows, Linux, BSD and RetroArch.",
-   "fullName": "drhelius/Gearsystem",
-   "stargazersCount": 387,
-   "updatedAt": "2026-09-16T21:18:03Z",
-   "url": "https://github.com/drhelius/Gearsystem",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "An MCP server that securely interfaces with your iMessage database via the Model Context Protocol (MCP), allowing LLMs to query and analyze iMessage conversations. It includes robust phone number validation, attachment processing, contact management, group chat handling, and full support for sending and receiving messages.",
-   "fullName": "carterlasalle/mac_messages_mcp",
-   "stargazersCount": 326,
-   "updatedAt": "2026-09-16T20:26:57Z",
-   "url": "https://github.com/carterlasalle/mac_messages_mcp",
+   "description": "🔍 A Model Context Protocol (MCP) server providing unified access to multiple search engines (Tavily, Brave, Kagi, Exa), AI tools (Kagi FastGPT, Exa, Linkup), and content extraction services (Firecrawl, Tavily, Kagi). Includes GitHub search. All through a single interface.",
+   "fullName": "spences10/mcp-omnisearch",
+   "stargazersCount": 349,
+   "updatedAt": "2026-09-17T20:47:05Z",
+   "url": "https://github.com/spences10/mcp-omnisearch",
    "labels": [
     "mcp"
    ],
