@@ -1,20 +1,8 @@
 {
  "version": 1,
- "lastRun": "2026-09-17T22:36:11.359Z",
+ "lastRun": "2026-09-18T22:36:00.000Z",
  "consecutiveFailures": 0,
  "runs": [
-  {
-   "date": "2026-08-23",
-   "improvement": "agentuniverse-ai/agentUniverse 지식화(c) — ~/.wiki entity ingest(PEER·DOE 협업 패턴, Review 단계↔하네스 게이트 대응) · 트렌드 후보 10건 검토(채택 1·기각 9) · seenRepos 50→60",
-   "commit": "8ea18ac",
-   "gates": "4/4"
-  },
-  {
-   "date": "2026-08-23",
-   "improvement": "FailproofAI/failproofai 지식화(c) — ~/.wiki entity ingest(Claude Code 훅 런타임 관측·정책 차단; (a) 대시보드 통합은 오너 결정 대기) · 트렌드 후보 10건 검토(채택 1·기각 9) · seenRepos 60→70",
-   "commit": "53bf150",
-   "gates": "4/4"
-  },
   {
    "date": "2026-08-23",
    "improvement": "china-qijizhifeng/agentic-harness-engineering 지식화(c) — 기존 AHE concept 페이지에 공식 코드 repo 반영 · 트렌드 후보 10건 검토(채택 1·기각 9, 잔여 2) · seenRepos 70→80",
@@ -187,6 +175,12 @@
    "date": "2026-09-18",
    "improvement": "okf-memory/okf-agent-memory 지식화(c) — ~/.wiki entity 신규(Git-native AI 코딩 에이전트 영속 메모리: pure Go zero-deps 단일 바이너리·DMAA Push(AGENTS.md codex)/Pull(OKF knowledge/ 번들) 이중 레이어·in-memory BM25 <300µs 자체벤치·progressive disclosure·내장 stdio MCP, ★691 MIT 본문 실측; 핵심 발견: \"Google OKF v0.2\"는 GoogleCloudPlatform/knowledge-catalog(★9,226 공식 org) SPEC.md 37,748B 실존 공개 표준 — markdown+frontmatter 디렉토리·no central authority, 오너 ~/.wiki 체계와 동형 축; repo 자체는 13일차 극신생 서드파티 구현체·인간 커밋 94% 실질 단독·hub 외부 동기화 실체 미검증; (a/b) 설치 3중 기각: 극신생+bootstrap AGENTS.md 소유권 개입[capa 계보]+메모리 저장소 추가=지식 원천 분열[engram 축]) · 트렌드 후보 2건 검토(채택 1·기각 1: spences10/mcp-omnisearch ★349<500·7종 외부 검색 SaaS 프록시 본질·로컬 완결 불가·WebSearch 중복) · seenRepos 302→304 · health 9/9",
    "commit": "0d37604",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-19",
+   "improvement": "tamaratran/fast-jev-compaction 지식화(c) — ~/.wiki entity 신규(삭제-only compaction: 요약 대신 tool call/result만 'Jev' 모델 keep 확률 스코어링으로 제거·나머지 verbatim 보존, 전체 대화 state 제시·staged fitting(입력 1000→200→60자)·keepThreshold 0.5·Claude Code 플러그인이 내장 compaction 요약을 원본 복원으로 대체, npm+플러그인 이중 구조, MIT 본문 실측; 핵심 발견: created 09-17 2일차에 ★3,119인데 /stargazers API가 404(추정: 스타 부풀리기 플래그로 목록 비공개)+Devin AI 봇 커밋 과반 17/30+무명 SaaS TYPESAFE_API_KEY(api.typesafe.ai)로 전체 세션 전문 전송 필수 — '무명 모델 벤더가 플러그인+스타 폭증으로 API 키 유도' 공급망 신호 축; (a/b) 설치 3중 기각: 전문 외부 전송 로컬 완결 불가[agent-scan 축]+2일차 극신생 단독 저자·AI 봇 커밋 과반+스타 이상 신호; compaction 품질 축에서 continuous-claude-v3 PreCompact handoff와 대립 설계[요약 대체 vs 요약 무손실화]) · 트렌드 후보 5건 검토(채택 1·기각 4: appeeky/aso-skills 1개월 정지·Eronred/aso-skills 기각 축 중복·Toss 콘솔≠앱스토어, jina-ai/MCP 원격 SaaS 검색 프록시[mcp-omnisearch 축], vercel-labs/mcp-handler license null=미부여[capa 계보 4번째 변종]+MCP 서버 구축 프레임워크 접점 없음, cbcoutinho/nextcloud-mcp-server ★360<500·Nextcloud 미사용) · seenRepos 304→309 · health 9/9",
+   "commit": "",
    "gates": "4/4"
   }
  ],
@@ -494,7 +488,12 @@
   "drhelius/Gearsystem",
   "carterlasalle/mac_messages_mcp",
   "okf-memory/okf-agent-memory",
-  "spences10/mcp-omnisearch"
+  "spences10/mcp-omnisearch",
+  "tamaratran/fast-jev-compaction",
+  "appeeky/aso-skills",
+  "jina-ai/MCP",
+  "vercel-labs/mcp-handler",
+  "cbcoutinho/nextcloud-mcp-server"
  ],
  "appliedImprovements": [
   {
@@ -785,6 +784,13 @@
    "date": "2026-09-18",
    "mode": "knowledge",
    "note": "fresh candidate adopted (c). new entity page okf-agent-memory; Git-native persistent project memory for AI coding agents — pure Go zero-deps single binary, Dual-Memory Agent Architecture (Push layer ~100-150 token AGENTS.md codex w/ self-devised 'Agent Action Grammar' + Pull layer OKF v0.2 knowledge/ bundle, in-memory BM25 <300µs self-benchmark w/ bundled `make benchmark` runner), progressive disclosure index.md hierarchy, search-before-write, code_refs binding, embedded stdio MCP server. Measured 2026-09-18 (gh api read-only): star 691, forks 52, subscribers 3, created 2026-09-05T21:26Z = 13-DAY-OLD repo, pushed 09-17 active, LICENSE body standard MIT (c) 2026 sknr zero NC/TERMS, contributors sknr 111 = 94% human-commit de facto solo (google-labs-jules[bot] 10 = Google Jules coding-agent bot, NOT Google affiliation), releases v0.1.0→v0.4.0 in 13 days, Trendshift '#2 Go Trending' badge. KEY FINDING: 'Google OKF v0.2' badge verified REAL — GoogleCloudPlatform/knowledge-catalog (official org, star 9,226, created 2026-05-04, active) okf/SPEC.md 37,748B exists: 'a directory of markdown files with YAML frontmatter... no schema registry, no central authority, no required tooling' — public Google spec isomorphic to owner's ~/.wiki (markdown+frontmatter directory+index) system; okf-agent-memory itself is third-party implementation (DMAA/AAG author-devised, not Google official). Local completion: core search/verify local, no API key; but `okf hub init-vault/push/sync` external sync service (OKF_HUB_TOKEN, self-styled 'Zero-Knowledge Sync') substance unverified; `okf bootstrap` rewrites target project's AGENTS.md as its own codex = ownership-intrusion axis (weak variant of capa capabilities.yaml source-of-truth inversion); Windows mentions 0 (Homebrew/make/bash-centric); telemetry mentions 0. (a/b) install rejected 3 grounds: (1) 13-day-old extreme-nascent repo + de facto solo author + shell org, subscribers 3 (2) bootstrap AGENTS.md ownership intrusion (capa lineage) (3) additional memory store = knowledge-source fragmentation (engram rejection axis; owner's hand-curated ~/.wiki is single source). Reviewed today (2 fresh): adopted okf-agent-memory; rejected spences10/mcp-omnisearch (349*<500 base threshold; 18-month solid MIT solo project BUT essence = proxy forwarding every query to 7 external search SaaS w/ API keys — not locally completable + overlaps agent-native WebSearch; Windows = WSL-guidance level). Other carries open: (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (c) NotASithLord/peerd (carried since 09-09 — browser-native agent harness extension; longest-carried entry, stale-check star/pushed before adopting)."
+  },
+  {
+   "id": "wiki:tamaratran/fast-jev-compaction",
+   "repo": "tamaratran/fast-jev-compaction",
+   "date": "2026-09-19",
+   "mode": "knowledge",
+   "note": "fresh candidate adopted (c). new entity page fast-jev-compaction; deletion-only context compaction for Claude Code — instead of lossy LLM summarization, only tool calls/results are candidates for removal, scored by an external 'Jev' model shown the whole conversation as state (tool results replaced by one-line size notes, nothing summarized); per-call two keep-probability questions (call stays / result stays verbatim) vs keepThreshold 0.5 → keep both / keep call + truncate result to 300 head chars / drop pair; first message + newest preserveRecentMessages(6) pinned; staged state fitting into 25k est. tokens (inputs 1000→200→60 chars, head+tail abridge, old-call one-liners, throw if unfit); tokenizer-less char-based token estimate; message list rebuilt so no result survives without its call. Dual structure: npm package (src/) + Claude Code plugin (hooks/fast-jev.ts, hooks.json, .claude-plugin/) replacing built-in compaction summary with restored original messages; Message ⊂ Claude Code SessionMessage so transcripts pass through as-is; JevAsker interface for BYO transport, building blocks exported. Measured 2026-09-19 (gh api read-only, UTC 09-18T22:3x): star 3,119 with created 2026-09-17T05:57Z = 2-DAY-OLD repo, pushed 09-18, open_issues 44, size 245KB, tree 34 paths; LICENSE body standard MIT '(c) 2025' zero NC, API spdx match; commit authors last 30: Devin AI bot 17 vs human tamara tran 13 = AI-MAJORITY commits, contributors devin-ai-integration[bot]+tamaratran only (de facto solo human). ANOMALY: /stargazers REST endpoint returns 404 (star+json and plain, headers re-verified) while repo API works — presumed (marked 추정) GitHub fake-star flag hiding the stargazer list, consistent with 3,119 stars in 2 days. Dependency surface: TYPESAFE_API_KEY required, default endpoint api.typesafe.ai/v1/systemone, model jev-latest — unknown third-party LLM SaaS ('TypeSafe'/'Jev'), entire session transcript (code, errors, paths) sent externally, NOT locally completable. Knowledge value: (1) deletion-only/verbatim-preserving compaction as the counter-design to summarization on the compaction-quality axis — opposite pole to Continuous-Claude-v3's PreCompact auto-handoff idea (replace the summary vs make the summary lossless); (2) new supply-chain signal pattern: unknown model vendor distributing a Claude Code plugin with anomalous star velocity to drive API-key signups (추정). (a/b) install rejected 3 grounds: (1) full-transcript exfil to unknown SaaS, not locally completable (agent-scan/mcp-omnisearch axis) (2) 2-day-old extreme-nascent + solo human author + AI-bot commit majority (3) star-inflation anomaly (stargazers 404). Reviewed today (5 fresh): adopted fast-jev-compaction; rejected appeeky/aso-skills (2,011* MIT but pushed 08-22 month-idle, same-axis duplicate of rejected Eronred/aso-skills, ASO targets App Store/Play not Toss console), jina-ai/MCP (857* official but remote SaaS MCP search/reader proxy = mcp-omnisearch external-search axis), vercel-labs/mcp-handler (670* license:null = legally unlicensed, 4th variant in license-display-mismatch lineage after vladikk-modularity/refactoring-ui-skill/capa + MCP-server-building framework with no owner touchpoint), cbcoutinho/nextcloud-mcp-server (360*<500 base threshold + no Nextcloud + AGPL). Other carries open: (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (c) NotASithLord/peerd (carried since 09-09 — browser-native agent harness extension; longest-carried entry, stale-check star/pushed before adopting)."
   }
  ],
  "openFindings": []

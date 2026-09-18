@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-17T22:30:47.805Z",
+ "generatedAt": "2026-09-18T22:30:43.439Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,29 +31,62 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 205,
+ "scanned": 210,
  "dedup": {
-  "wikiCatalog": 2,
-  "alreadySeen": 201
+  "wikiCatalog": 3,
+  "alreadySeen": 202
  },
  "candidates": [
   {
-   "description": "Git-native persistent memory for AI coding agents. Implements Google OKF v0.2 with sub-300µs in-memory BM25 search, embedded MCP server, and progressive disclosure. Slashes token bloat by 80% with zero external databases or dependencies. Built in pure Go.",
-   "fullName": "okf-memory/okf-agent-memory",
-   "stargazersCount": 691,
-   "updatedAt": "2026-09-17T19:59:21Z",
-   "url": "https://github.com/okf-memory/okf-agent-memory",
+   "description": "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.",
+   "fullName": "tamaratran/fast-jev-compaction",
+   "stargazersCount": 3113,
+   "updatedAt": "2026-09-18T22:30:29Z",
+   "url": "https://github.com/tamaratran/fast-jev-compaction",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code plugin"
+  },
+  {
+   "description": "AI agent skills for App Store Optimization (ASO) and app marketing. Built for indie developers, app marketers, and growth teams who want Cursor, Claude Code, or any Agent Skills-compatible AI assistant to help with keyword research, metadata optimization, competitor analysis, and app growth.",
+   "fullName": "appeeky/aso-skills",
+   "stargazersCount": 2011,
+   "updatedAt": "2026-09-18T22:23:36Z",
+   "url": "https://github.com/appeeky/aso-skills",
+   "labels": [
+    "skills"
+   ],
+   "query": "ai agent skills"
+  },
+  {
+   "description": "Official Jina AI Remote MCP Server",
+   "fullName": "jina-ai/MCP",
+   "stargazersCount": 857,
+   "updatedAt": "2026-09-18T22:28:52Z",
+   "url": "https://github.com/jina-ai/MCP",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "🔍 A Model Context Protocol (MCP) server providing unified access to multiple search engines (Tavily, Brave, Kagi, Exa), AI tools (Kagi FastGPT, Exa, Linkup), and content extraction services (Firecrawl, Tavily, Kagi). Includes GitHub search. All through a single interface.",
-   "fullName": "spences10/mcp-omnisearch",
-   "stargazersCount": 349,
-   "updatedAt": "2026-09-17T20:47:05Z",
-   "url": "https://github.com/spences10/mcp-omnisearch",
+   "description": "Easily spin up an MCP Server on Next.js, Nuxt, Svelte, and more",
+   "fullName": "vercel-labs/mcp-handler",
+   "stargazersCount": 670,
+   "updatedAt": "2026-09-18T20:23:41Z",
+   "url": "https://github.com/vercel-labs/mcp-handler",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "Nextcloud MCP Server",
+   "fullName": "cbcoutinho/nextcloud-mcp-server",
+   "stargazersCount": 360,
+   "updatedAt": "2026-09-18T20:41:16Z",
+   "url": "https://github.com/cbcoutinho/nextcloud-mcp-server",
    "labels": [
     "mcp"
    ],
