@@ -180,7 +180,7 @@
   {
    "date": "2026-09-19",
    "improvement": "tamaratran/fast-jev-compaction 지식화(c) — ~/.wiki entity 신규(삭제-only compaction: 요약 대신 tool call/result만 'Jev' 모델 keep 확률 스코어링으로 제거·나머지 verbatim 보존, 전체 대화 state 제시·staged fitting(입력 1000→200→60자)·keepThreshold 0.5·Claude Code 플러그인이 내장 compaction 요약을 원본 복원으로 대체, npm+플러그인 이중 구조, MIT 본문 실측; 핵심 발견: created 09-17 2일차에 ★3,119인데 /stargazers API가 404(추정: 스타 부풀리기 플래그로 목록 비공개)+Devin AI 봇 커밋 과반 17/30+무명 SaaS TYPESAFE_API_KEY(api.typesafe.ai)로 전체 세션 전문 전송 필수 — '무명 모델 벤더가 플러그인+스타 폭증으로 API 키 유도' 공급망 신호 축; (a/b) 설치 3중 기각: 전문 외부 전송 로컬 완결 불가[agent-scan 축]+2일차 극신생 단독 저자·AI 봇 커밋 과반+스타 이상 신호; compaction 품질 축에서 continuous-claude-v3 PreCompact handoff와 대립 설계[요약 대체 vs 요약 무손실화]) · 트렌드 후보 5건 검토(채택 1·기각 4: appeeky/aso-skills 1개월 정지·Eronred/aso-skills 기각 축 중복·Toss 콘솔≠앱스토어, jina-ai/MCP 원격 SaaS 검색 프록시[mcp-omnisearch 축], vercel-labs/mcp-handler license null=미부여[capa 계보 4번째 변종]+MCP 서버 구축 프레임워크 접점 없음, cbcoutinho/nextcloud-mcp-server ★360<500·Nextcloud 미사용) · seenRepos 304→309 · health 9/9",
-   "commit": "",
+   "commit": "feb03cc",
    "gates": "4/4"
   }
  ],
