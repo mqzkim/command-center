@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-18T22:30:43.439Z",
+ "generatedAt": "2026-09-19T22:30:44.404Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,62 +31,84 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 210,
+ "scanned": 211,
  "dedup": {
   "wikiCatalog": 3,
-  "alreadySeen": 202
+  "alreadySeen": 201
  },
  "candidates": [
   {
-   "description": "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.",
-   "fullName": "tamaratran/fast-jev-compaction",
-   "stargazersCount": 3113,
-   "updatedAt": "2026-09-18T22:30:29Z",
-   "url": "https://github.com/tamaratran/fast-jev-compaction",
+   "description": "Udemy & Hotmart course downloader, YouTube downloader (yt-dlp GUI, 1,800+ sites) + desktop app for AI agents: Claude Code, Codex, Gemini CLI, Ollama. Permissions, undo, jobs, loops until tests pass, MCP server, 156 tools, course player. Free and open source for Windows, macOS and Linux. No terminal. Your files stay on your computer.",
+   "fullName": "tonhowtf/omniget",
+   "stargazersCount": 13923,
+   "updatedAt": "2026-09-19T22:21:41Z",
+   "url": "https://github.com/tonhowtf/omniget",
    "labels": [
-    "skills"
+    "mcp"
    ],
-   "query": "claude code plugin"
+   "query": "mcp server"
   },
   {
-   "description": "AI agent skills for App Store Optimization (ASO) and app marketing. Built for indie developers, app marketers, and growth teams who want Cursor, Claude Code, or any Agent Skills-compatible AI assistant to help with keyword research, metadata optimization, competitor analysis, and app growth.",
-   "fullName": "appeeky/aso-skills",
-   "stargazersCount": 2011,
-   "updatedAt": "2026-09-18T22:23:36Z",
-   "url": "https://github.com/appeeky/aso-skills",
-   "labels": [
-    "skills"
-   ],
-   "query": "ai agent skills"
-  },
-  {
-   "description": "Official Jina AI Remote MCP Server",
-   "fullName": "jina-ai/MCP",
-   "stargazersCount": 857,
-   "updatedAt": "2026-09-18T22:28:52Z",
-   "url": "https://github.com/jina-ai/MCP",
+   "description": "Grounded Docs MCP Server: Open-Source Alternative to Context7, Nia, and Ref.Tools",
+   "fullName": "arabold/docs-mcp-server",
+   "stargazersCount": 1749,
+   "updatedAt": "2026-09-19T21:52:44Z",
+   "url": "https://github.com/arabold/docs-mcp-server",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Easily spin up an MCP Server on Next.js, Nuxt, Svelte, and more",
-   "fullName": "vercel-labs/mcp-handler",
-   "stargazersCount": 670,
-   "updatedAt": "2026-09-18T20:23:41Z",
-   "url": "https://github.com/vercel-labs/mcp-handler",
+   "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
+   "fullName": "chigwell/telegram-mcp",
+   "stargazersCount": 1626,
+   "updatedAt": "2026-09-19T22:10:21Z",
+   "url": "https://github.com/chigwell/telegram-mcp",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Nextcloud MCP Server",
-   "fullName": "cbcoutinho/nextcloud-mcp-server",
-   "stargazersCount": 360,
-   "updatedAt": "2026-09-18T20:41:16Z",
-   "url": "https://github.com/cbcoutinho/nextcloud-mcp-server",
+   "description": "云舒精选的 Claude Code Skills 集合，提升开发和产品管理效率",
+   "fullName": "yunshu0909/yunshu_skillshub",
+   "stargazersCount": 760,
+   "updatedAt": "2026-09-19T14:49:50Z",
+   "url": "https://github.com/yunshu0909/yunshu_skillshub",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code skills (updated)"
+  },
+  {
+   "description": "Distill is a lightweight coding agent harness and TUI built to get more done with FAR FEWER tokens 🔥",
+   "fullName": "samuelfaj/distill",
+   "stargazersCount": 678,
+   "updatedAt": "2026-09-19T21:53:04Z",
+   "url": "https://github.com/samuelfaj/distill",
+   "labels": [
+    "harness"
+   ],
+   "query": "coding agent harness"
+  },
+  {
+   "description": "An MCP server enabling AI assistants to interact with Anytype - your encrypted, local and collaborative wiki - to organize objects, lists, and more through natural language.",
+   "fullName": "anyproto/anytype-mcp",
+   "stargazersCount": 525,
+   "updatedAt": "2026-09-19T20:40:10Z",
+   "url": "https://github.com/anyproto/anytype-mcp",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "A persistent, Git-versioned map of your whole codebase and database schema that coding agents read before they touch anything. Local-first MCP server + CLI in Go: a governed repository index of code knowledge that gives Claude Code, Codex, Cursor, and opencode long-term context, memory, and code intelligence.",
+   "fullName": "aoci-spec/aoci-code",
+   "stargazersCount": 443,
+   "updatedAt": "2026-09-19T19:42:17Z",
+   "url": "https://github.com/aoci-spec/aoci-code",
    "labels": [
     "mcp"
    ],

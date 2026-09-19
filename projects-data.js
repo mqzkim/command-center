@@ -1,12 +1,12 @@
 // 자동 생성 — build-projects.mjs (로컬 클론 스캔 + projects-raw.json(gh) + .launch/launch-status.json + ~/.wiki 링크)
-// 생성: 2026-09-18 22:31Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
+// 생성: 2026-09-19 22:31Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
 const CC_PROJECTS = {
- "generatedAt": "2026-09-18 22:31Z",
+ "generatedAt": "2026-09-19 22:31Z",
  "roots": [
   "C:\\workspace",
   "C:\\Users\\my\\workspace"
  ],
- "ghSnapshot": "2026-09-18T21:03:23.560Z",
+ "ghSnapshot": "2026-09-19T21:03:22.039Z",
  "stages": [
   "intake",
   "repo_bootstrap",
@@ -82,26 +82,26 @@ const CC_PROJECTS = {
    "lang": "TeX",
    "branch": "main",
    "dirty": 2,
-   "lastCommit": "2026-09-19",
-   "lastActivity": "2026-09-19",
+   "lastCommit": "2026-09-20",
+   "lastActivity": "2026-09-20",
    "daysSince": 0,
    "gh": {
     "url": "https://github.com/mqzkim/hermes-shared-knowledge",
     "private": true,
-    "pushedAt": "2026-09-18",
+    "pushedAt": "2026-09-19",
     "openIssues": 0,
-    "commits30d": 162,
+    "commits30d": 184,
     "recent": [
      {
-      "date": "2026-09-18",
+      "date": "2026-09-19",
       "message": "ops: refresh sena-1 telemetry metrics"
      },
      {
-      "date": "2026-09-18",
+      "date": "2026-09-19",
       "message": "ops: refresh sena-1 telemetry metrics"
      },
      {
-      "date": "2026-09-18",
+      "date": "2026-09-19",
       "message": "ops: refresh sena-1 telemetry metrics"
      }
     ],
@@ -131,27 +131,27 @@ const CC_PROJECTS = {
    "lang": "JavaScript",
    "branch": "master",
    "dirty": 7,
-   "lastCommit": "2026-09-18",
-   "lastActivity": "2026-09-18",
+   "lastCommit": "2026-09-19",
+   "lastActivity": "2026-09-19",
    "daysSince": 1,
    "gh": {
     "url": "https://github.com/mqzkim/command-center",
     "private": false,
-    "pushedAt": "2026-09-17",
+    "pushedAt": "2026-09-18",
     "openIssues": 0,
-    "commits30d": 97,
+    "commits30d": 99,
     "recent": [
+     {
+      "date": "2026-09-18",
+      "message": "evolve(2026-09-19): ledger commit sha feb03cc + gates G1~G4 증거 기입"
+     },
+     {
+      "date": "2026-09-18",
+      "message": "evolve(2026-09-19): tamaratran/fast-jev-compaction 지식화(c) — ~/.wiki e…"
+     },
      {
       "date": "2026-09-17",
       "message": "evolve(2026-09-18): ledger commit sha 0d37604 + gates G1~G4 증거 기입"
-     },
-     {
-      "date": "2026-09-17",
-      "message": "evolve(2026-09-18): okf-memory/okf-agent-memory 지식화(c) — ~/.wiki enti…"
-     },
-     {
-      "date": "2026-09-16",
-      "message": "evolve(2026-09-17): ledger commit sha fa75987 + gates G1~G4 증거 기입"
      }
     ],
     "issueTitles": []
@@ -191,7 +191,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-09-12",
    "lastActivity": "2026-09-14",
-   "daysSince": 5,
+   "daysSince": 6,
    "gh": {
     "url": "https://github.com/mqzkim/llm-wiki",
     "private": true,
@@ -255,7 +255,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-29",
    "lastActivity": "2026-09-13",
-   "daysSince": 6,
+   "daysSince": 7,
    "gh": {
     "url": "https://github.com/mqzkim/today-task",
     "private": true,
@@ -389,7 +389,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-28",
    "lastActivity": "2026-09-13",
-   "daysSince": 6,
+   "daysSince": 7,
    "gh": {
     "url": "https://github.com/mqzkim/nailmap",
     "private": true,
@@ -527,7 +527,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-09-12",
    "lastActivity": "2026-09-13",
-   "daysSince": 6,
+   "daysSince": 7,
    "gh": {
     "url": "https://github.com/mqzkim/app-in-toss",
     "private": true,
@@ -628,7 +628,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-15",
    "lastActivity": "2026-09-12",
-   "daysSince": 7,
+   "daysSince": 8,
    "gh": {
     "url": "https://github.com/mqzkim/seoul-house-from-space",
     "private": true,
@@ -764,7 +764,7 @@ const CC_PROJECTS = {
    "dirty": 3,
    "lastCommit": "2026-09-12",
    "lastActivity": "2026-09-12",
-   "daysSince": 7,
+   "daysSince": 8,
    "gh": {
     "url": "https://github.com/mqzkim/helix-space",
     "private": true,
@@ -818,7 +818,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-12",
-   "daysSince": 7,
+   "daysSince": 8,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\daesin-meogeo\\.launch\\launch-status.json",
@@ -936,7 +936,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-09-12",
    "lastActivity": "2026-09-12",
-   "daysSince": 7,
+   "daysSince": 8,
    "gh": {
     "url": "https://github.com/mqzkim/cafe-review-reply-generator",
     "private": true,
@@ -992,7 +992,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-11",
-   "daysSince": 8,
+   "daysSince": 9,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\diamond-get\\.launch\\launch-status.json",
@@ -1111,7 +1111,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-11",
-   "daysSince": 8,
+   "daysSince": 9,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\ddasa\\.launch\\launch-status.json",
@@ -1230,7 +1230,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-08",
-   "daysSince": 11,
+   "daysSince": 12,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\pet-rock\\.launch\\launch-status.json",
@@ -1349,7 +1349,7 @@ const CC_PROJECTS = {
    "dirty": 1,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
-   "daysSince": 27,
+   "daysSince": 28,
    "gh": {
     "url": "https://github.com/mqzkim/subway-timer",
     "private": true,
@@ -1477,7 +1477,7 @@ const CC_PROJECTS = {
    "dirty": 1,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
-   "daysSince": 27,
+   "daysSince": 28,
    "gh": {
     "url": "https://github.com/mqzkim/launch-deck",
     "private": true,
@@ -1532,7 +1532,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-28",
    "lastActivity": "2026-08-22",
-   "daysSince": 28,
+   "daysSince": 29,
    "gh": {
     "url": "https://github.com/mqzkim/bamti-translator",
     "private": true,
@@ -1672,157 +1672,6 @@ const CC_PROJECTS = {
    ]
   },
   {
-   "name": "naeheunjeok",
-   "repo": "naeheunjeok",
-   "displayName": null,
-   "desc": "Prepare naeheunjeok for Apps in Toss release gate",
-   "category": "apps-in-toss",
-   "significance": 4,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/naeheunjeok.git",
-   "lang": "TypeScript",
-   "branch": "main",
-   "dirty": 0,
-   "lastCommit": "2026-08-19",
-   "lastActivity": "2026-08-19",
-   "daysSince": 31,
-   "gh": {
-    "url": "https://github.com/mqzkim/naeheunjeok",
-    "private": true,
-    "pushedAt": "2026-08-19",
-    "openIssues": 8,
-    "commits30d": 0,
-    "recent": [
-     {
-      "date": "2026-08-19",
-      "message": "feat: deploy free production search backend"
-     },
-     {
-      "date": "2026-08-19",
-      "message": "chore: refresh release evidence after QA build"
-     },
-     {
-      "date": "2026-08-19",
-      "message": "chore: verify app-scoped Toss deploy access"
-     }
-    ],
-    "issueTitles": [
-     "[BL-008] 개인 아카이브 내보내기",
-     "[BL-007] 허용 플랫폼 OAuth 삭제 API 연동",
-     "[BL-006] 주제 클러스터와 고급 타임라인 필터",
-     "[BL-005] 인터넷 나이 비식별 공유 카드",
-     "[BL-004] 추가 아이디 정밀검색 보상형 광고",
-     "[BL-003] 과거의 오늘과 정기 재검색 알림"
-    ]
-   },
-   "toss": {
-    "source": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\naeheunjeok\\.launch\\launch-status.json",
-    "appName": "naeheunjeok",
-    "displayName": null,
-    "stage": "sandbox_qa",
-    "stageKo": "샌드박스 QA",
-    "nextCheck": "sandbox_qa",
-    "pipeline": [
-     {
-      "s": "intake",
-      "st": "pass"
-     },
-     {
-      "s": "repo_bootstrap",
-      "st": "pass"
-     },
-     {
-      "s": "mvp_prd",
-      "st": "pass"
-     },
-     {
-      "s": "store_assets",
-      "st": "pass"
-     },
-     {
-      "s": "scaffold",
-      "st": "pass"
-     },
-     {
-      "s": "tds_mvp",
-      "st": "pending"
-     },
-     {
-      "s": "analytics",
-      "st": "pass"
-     },
-     {
-      "s": "artifact",
-      "st": "pass"
-     },
-     {
-      "s": "local_qa",
-      "st": "pass"
-     },
-     {
-      "s": "registration_draft",
-      "st": "pass"
-     },
-     {
-      "s": "deploy_authorization",
-      "st": "pass"
-     },
-     {
-      "s": "sandbox_qa",
-      "st": "pending"
-     },
-     {
-      "s": "release_gate",
-      "st": "pending"
-     },
-     {
-      "s": "released",
-      "st": "pending"
-     }
-    ],
-    "blockersOpen": 2,
-    "blockersTotal": 2,
-    "blockers": [
-     "무료 공유 Supabase 프로젝트의 전용 Edge Function 배포는 완료됐고 네이버 Search API 자격증명 등록이 필요해요.",
-     "공개 개인정보처리방침과 고객지원 연락처를 게시할 권한 및 값이 필요해요."
-    ],
-    "classification": "non-game",
-    "finalReleaseApproved": false,
-    "updatedAt": "2026-08-19",
-    "goal": "Prepare naeheunjeok for Apps in Toss release gate"
-   },
-   "links": {
-    "local": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\naeheunjeok",
-    "github": "https://github.com/mqzkim/naeheunjeok",
-    "wiki": [
-     "concepts/nomic-embed-korean-field-search-limitation.md",
-     "internal/command-center-project-registry.md"
-    ],
-    "launch": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\naeheunjeok\\.launch\\launch-status.json",
-    "parent": null
-   },
-   "altPaths": [
-    "C:\\Users\\my\\workspace\\all-app-qa-findings\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\all-app-qa-map\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\app-in-toss\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\bamti-native-qa-profile\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\pet-qa-ci-contract\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\qa-deploy-doc-checkpoint\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\qa-sdk-contract-fix\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\sdk-340-deploy\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\sdk-340-receipts\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\upperant-feedback-fixture\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\upperant-feedback-qa\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\upperant-feedback-viewport\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\upperant-modal-regression\\apps\\naeheunjeok",
-    "C:\\Users\\my\\workspace\\upperant-native-qa-profile\\apps\\naeheunjeok"
-   ]
-  },
-  {
    "name": "upperant-daily",
    "repo": null,
    "displayName": null,
@@ -1839,7 +1688,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-11",
-   "daysSince": 8,
+   "daysSince": 9,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\upperant-daily\\.launch\\launch-status.json",
@@ -1960,7 +1809,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-11",
-   "daysSince": 8,
+   "daysSince": 9,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\haru-han-tem\\.launch\\launch-status.json",
@@ -2083,7 +1932,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-08",
-   "daysSince": 11,
+   "daysSince": 12,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\coffee-cant-wait\\.launch\\launch-status.json",
@@ -2205,7 +2054,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-07",
-   "daysSince": 12,
+   "daysSince": 13,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\croco-fishing\\.launch\\launch-status.json",
@@ -2325,7 +2174,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-08-22",
-   "daysSince": 28,
+   "daysSince": 29,
    "gh": {
     "url": "https://github.com/mqzkim/launch-deck-gtest-fe1e2bc1",
     "private": true,
@@ -2371,7 +2220,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-08-22",
-   "daysSince": 28,
+   "daysSince": 29,
    "gh": {
     "url": "https://github.com/mqzkim/launch-deck-gtest-0a2ab922",
     "private": true,
@@ -2417,7 +2266,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-08-22",
-   "daysSince": 28,
+   "daysSince": 29,
    "gh": {
     "url": "https://github.com/mqzkim/launch-deck-gtest-165ccf97",
     "private": true,
@@ -2463,7 +2312,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-08-22",
-   "daysSince": 28,
+   "daysSince": 29,
    "gh": {
     "url": "https://github.com/mqzkim/launch-deck-gtest-smoke",
     "private": true,
@@ -2513,7 +2362,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-08-22",
-   "daysSince": 28,
+   "daysSince": 29,
    "gh": {
     "url": "https://github.com/mqzkim/launch-deck-gtest-4c3f5fea",
     "private": true,
@@ -2797,7 +2646,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-09-11",
    "lastActivity": "2026-09-11",
-   "daysSince": 8,
+   "daysSince": 9,
    "gh": null,
    "toss": null,
    "links": {
@@ -2825,7 +2674,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-08-22",
    "lastActivity": "2026-08-22",
-   "daysSince": 28,
+   "daysSince": 29,
    "gh": {
     "url": "https://github.com/mqzkim/agent-factory",
     "private": true,
@@ -2867,6 +2716,157 @@ const CC_PROJECTS = {
    }
   },
   {
+   "name": "naeheunjeok",
+   "repo": "naeheunjeok",
+   "displayName": null,
+   "desc": "Prepare naeheunjeok for Apps in Toss release gate",
+   "category": "apps-in-toss",
+   "significance": 2,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/naeheunjeok.git",
+   "lang": "TypeScript",
+   "branch": "main",
+   "dirty": 0,
+   "lastCommit": "2026-08-19",
+   "lastActivity": "2026-08-19",
+   "daysSince": 32,
+   "gh": {
+    "url": "https://github.com/mqzkim/naeheunjeok",
+    "private": true,
+    "pushedAt": "2026-08-19",
+    "openIssues": 8,
+    "commits30d": 0,
+    "recent": [
+     {
+      "date": "2026-08-19",
+      "message": "feat: deploy free production search backend"
+     },
+     {
+      "date": "2026-08-19",
+      "message": "chore: refresh release evidence after QA build"
+     },
+     {
+      "date": "2026-08-19",
+      "message": "chore: verify app-scoped Toss deploy access"
+     }
+    ],
+    "issueTitles": [
+     "[BL-008] 개인 아카이브 내보내기",
+     "[BL-007] 허용 플랫폼 OAuth 삭제 API 연동",
+     "[BL-006] 주제 클러스터와 고급 타임라인 필터",
+     "[BL-005] 인터넷 나이 비식별 공유 카드",
+     "[BL-004] 추가 아이디 정밀검색 보상형 광고",
+     "[BL-003] 과거의 오늘과 정기 재검색 알림"
+    ]
+   },
+   "toss": {
+    "source": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\naeheunjeok\\.launch\\launch-status.json",
+    "appName": "naeheunjeok",
+    "displayName": null,
+    "stage": "sandbox_qa",
+    "stageKo": "샌드박스 QA",
+    "nextCheck": "sandbox_qa",
+    "pipeline": [
+     {
+      "s": "intake",
+      "st": "pass"
+     },
+     {
+      "s": "repo_bootstrap",
+      "st": "pass"
+     },
+     {
+      "s": "mvp_prd",
+      "st": "pass"
+     },
+     {
+      "s": "store_assets",
+      "st": "pass"
+     },
+     {
+      "s": "scaffold",
+      "st": "pass"
+     },
+     {
+      "s": "tds_mvp",
+      "st": "pending"
+     },
+     {
+      "s": "analytics",
+      "st": "pass"
+     },
+     {
+      "s": "artifact",
+      "st": "pass"
+     },
+     {
+      "s": "local_qa",
+      "st": "pass"
+     },
+     {
+      "s": "registration_draft",
+      "st": "pass"
+     },
+     {
+      "s": "deploy_authorization",
+      "st": "pass"
+     },
+     {
+      "s": "sandbox_qa",
+      "st": "pending"
+     },
+     {
+      "s": "release_gate",
+      "st": "pending"
+     },
+     {
+      "s": "released",
+      "st": "pending"
+     }
+    ],
+    "blockersOpen": 2,
+    "blockersTotal": 2,
+    "blockers": [
+     "무료 공유 Supabase 프로젝트의 전용 Edge Function 배포는 완료됐고 네이버 Search API 자격증명 등록이 필요해요.",
+     "공개 개인정보처리방침과 고객지원 연락처를 게시할 권한 및 값이 필요해요."
+    ],
+    "classification": "non-game",
+    "finalReleaseApproved": false,
+    "updatedAt": "2026-08-19",
+    "goal": "Prepare naeheunjeok for Apps in Toss release gate"
+   },
+   "links": {
+    "local": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\naeheunjeok",
+    "github": "https://github.com/mqzkim/naeheunjeok",
+    "wiki": [
+     "concepts/nomic-embed-korean-field-search-limitation.md",
+     "internal/command-center-project-registry.md"
+    ],
+    "launch": "C:\\Users\\my\\workspace\\apps-in-toss-projects\\naeheunjeok\\.launch\\launch-status.json",
+    "parent": null
+   },
+   "altPaths": [
+    "C:\\Users\\my\\workspace\\all-app-qa-findings\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\all-app-qa-map\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\app-in-toss\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\bamti-native-qa-profile\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\pet-qa-ci-contract\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\qa-deploy-doc-checkpoint\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\qa-sdk-contract-fix\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\sdk-340-deploy\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\sdk-340-receipts\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\upperant-feedback-fixture\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\upperant-feedback-qa\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\upperant-feedback-viewport\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\upperant-modal-regression\\apps\\naeheunjeok",
+    "C:\\Users\\my\\workspace\\upperant-native-qa-profile\\apps\\naeheunjeok"
+   ]
+  },
+  {
    "name": "kid-cheer-call",
    "repo": "kid-cheer-call",
    "displayName": null,
@@ -2883,7 +2883,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-08-11",
    "lastActivity": "2026-08-11",
-   "daysSince": 39,
+   "daysSince": 40,
    "gh": {
     "url": "https://github.com/mqzkim/kid-cheer-call",
     "private": true,
@@ -3018,7 +3018,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-08-03",
    "lastActivity": "2026-08-03",
-   "daysSince": 47,
+   "daysSince": 48,
    "gh": {
     "url": "https://github.com/mqzkim/eomma-choiae",
     "private": true,
@@ -3151,7 +3151,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-27",
    "lastActivity": "2026-07-27",
-   "daysSince": 54,
+   "daysSince": 55,
    "gh": {
     "url": "https://github.com/mqzkim/nail-map",
     "private": true,
@@ -3192,7 +3192,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-26",
    "lastActivity": "2026-07-26",
-   "daysSince": 55,
+   "daysSince": 56,
    "gh": null,
    "toss": null,
    "links": {
@@ -3220,7 +3220,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-15",
    "lastActivity": "2026-07-15",
-   "daysSince": 66,
+   "daysSince": 67,
    "gh": {
     "url": "https://github.com/mqzkim/conclusion-card",
     "private": true,
@@ -3355,7 +3355,7 @@ const CC_PROJECTS = {
    "dirty": 2,
    "lastCommit": "2026-07-11",
    "lastActivity": "2026-07-11",
-   "daysSince": 70,
+   "daysSince": 71,
    "gh": null,
    "toss": null,
    "links": {
@@ -3390,7 +3390,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-07-06",
-   "daysSince": 75,
+   "daysSince": 76,
    "gh": {
     "url": "https://github.com/mqzkim/diamond-gather",
     "private": true,
@@ -3453,7 +3453,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-07-06",
-   "daysSince": 75,
+   "daysSince": 76,
    "gh": {
     "url": "https://github.com/mqzkim/coffee",
     "private": true,
@@ -3528,7 +3528,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-05",
    "lastActivity": "2026-07-05",
-   "daysSince": 76,
+   "daysSince": 77,
    "gh": null,
    "toss": null,
    "links": {
@@ -3563,7 +3563,7 @@ const CC_PROJECTS = {
    "dirty": 2,
    "lastCommit": "2026-05-08",
    "lastActivity": "2026-05-08",
-   "daysSince": 134,
+   "daysSince": 135,
    "gh": {
     "url": "https://github.com/mqzkim/korean-review-tone-kit",
     "private": true,
@@ -3613,7 +3613,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-05-02",
-   "daysSince": 140,
+   "daysSince": 141,
    "gh": {
     "url": "https://github.com/mqzkim/tradingagents-sena-trader",
     "private": true,
@@ -3665,7 +3665,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-05-02",
    "lastActivity": "2026-05-02",
-   "daysSince": 140,
+   "daysSince": 141,
    "gh": {
     "url": "https://github.com/mqzkim/og-image-api",
     "private": true,
@@ -3721,7 +3721,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-04-23",
-   "daysSince": 149,
+   "daysSince": 150,
    "gh": {
     "url": "https://github.com/mqzkim/claude-max-codex-setup",
     "private": false,
@@ -3765,7 +3765,7 @@ const CC_PROJECTS = {
    "dirty": 10,
    "lastCommit": "2026-04-17",
    "lastActivity": "2026-04-17",
-   "daysSince": 155,
+   "daysSince": 156,
    "gh": {
     "url": "https://github.com/mqzkim/short_youtube",
     "private": true,
@@ -3814,7 +3814,7 @@ const CC_PROJECTS = {
    "dirty": 6,
    "lastCommit": "2026-04-16",
    "lastActivity": "2026-04-16",
-   "daysSince": 156,
+   "daysSince": 157,
    "gh": {
     "url": "https://github.com/mqzkim/helix-co",
     "private": true,
@@ -3872,7 +3872,7 @@ const CC_PROJECTS = {
    "dirty": 9,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-16",
-   "daysSince": 156,
+   "daysSince": 157,
    "gh": {
     "url": "https://github.com/mqzkim/harness-infra",
     "private": true,
@@ -3930,7 +3930,7 @@ const CC_PROJECTS = {
    "dirty": 1,
    "lastCommit": "2026-04-16",
    "lastActivity": "2026-04-16",
-   "daysSince": 156,
+   "daysSince": 157,
    "gh": null,
    "toss": null,
    "links": {
@@ -3965,7 +3965,7 @@ const CC_PROJECTS = {
    "dirty": 2,
    "lastCommit": "2026-04-15",
    "lastActivity": "2026-04-15",
-   "daysSince": 157,
+   "daysSince": 158,
    "gh": null,
    "toss": null,
    "links": {
@@ -3997,7 +3997,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-15",
    "lastActivity": "2026-04-15",
-   "daysSince": 157,
+   "daysSince": 158,
    "gh": null,
    "toss": null,
    "links": {
@@ -4025,7 +4025,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-15",
    "lastActivity": "2026-04-15",
-   "daysSince": 157,
+   "daysSince": 158,
    "gh": null,
    "toss": null,
    "links": {
@@ -4062,7 +4062,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-14",
    "lastActivity": "2026-04-14",
-   "daysSince": 158,
+   "daysSince": 159,
    "gh": null,
    "toss": null,
    "links": {
@@ -4090,7 +4090,7 @@ const CC_PROJECTS = {
    "dirty": 9,
    "lastCommit": "2026-04-13",
    "lastActivity": "2026-04-13",
-   "daysSince": 159,
+   "daysSince": 160,
    "gh": null,
    "toss": null,
    "links": {
@@ -4127,7 +4127,7 @@ const CC_PROJECTS = {
    "dirty": 10,
    "lastCommit": "2026-04-13",
    "lastActivity": "2026-04-13",
-   "daysSince": 159,
+   "daysSince": 160,
    "gh": {
     "url": "https://github.com/mqzkim/llm-lean-startup",
     "private": false,
@@ -4185,7 +4185,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-10",
    "lastActivity": "2026-04-10",
-   "daysSince": 162,
+   "daysSince": 163,
    "gh": null,
    "toss": null,
    "links": {
@@ -4222,7 +4222,7 @@ const CC_PROJECTS = {
    "dirty": 47,
    "lastCommit": "2026-04-10",
    "lastActivity": "2026-04-10",
-   "daysSince": 162,
+   "daysSince": 163,
    "gh": null,
    "toss": null,
    "links": {
@@ -4255,7 +4255,7 @@ const CC_PROJECTS = {
    "dirty": 5,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 163,
+   "daysSince": 164,
    "gh": null,
    "toss": null,
    "links": {
@@ -4292,7 +4292,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 163,
+   "daysSince": 164,
    "gh": null,
    "toss": null,
    "links": {
@@ -4328,7 +4328,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 163,
+   "daysSince": 164,
    "gh": null,
    "toss": null,
    "links": {
@@ -4365,7 +4365,7 @@ const CC_PROJECTS = {
    "dirty": 1,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 163,
+   "daysSince": 164,
    "gh": null,
    "toss": null,
    "links": {
@@ -4402,7 +4402,7 @@ const CC_PROJECTS = {
    "dirty": 22,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 163,
+   "daysSince": 164,
    "gh": null,
    "toss": null,
    "links": {
@@ -4439,7 +4439,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 163,
+   "daysSince": 164,
    "gh": null,
    "toss": null,
    "links": {
@@ -4476,7 +4476,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 163,
+   "daysSince": 164,
    "gh": null,
    "toss": null,
    "links": {
@@ -4513,7 +4513,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 163,
+   "daysSince": 164,
    "gh": null,
    "toss": null,
    "links": {
@@ -4548,7 +4548,7 @@ const CC_PROJECTS = {
    "dirty": 9,
    "lastCommit": "2026-04-08",
    "lastActivity": "2026-04-08",
-   "daysSince": 164,
+   "daysSince": 165,
    "gh": null,
    "toss": null,
    "links": {
@@ -4585,7 +4585,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-08",
    "lastActivity": "2026-04-08",
-   "daysSince": 164,
+   "daysSince": 165,
    "gh": null,
    "toss": null,
    "links": {
@@ -4622,7 +4622,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-07",
    "lastActivity": "2026-04-07",
-   "daysSince": 165,
+   "daysSince": 166,
    "gh": null,
    "toss": null,
    "links": {
@@ -4659,7 +4659,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-07",
    "lastActivity": "2026-04-07",
-   "daysSince": 165,
+   "daysSince": 166,
    "gh": null,
    "toss": null,
    "links": {
@@ -4696,7 +4696,7 @@ const CC_PROJECTS = {
    "dirty": 23,
    "lastCommit": "2026-04-07",
    "lastActivity": "2026-04-07",
-   "daysSince": 165,
+   "daysSince": 166,
    "gh": null,
    "toss": null,
    "links": {
@@ -4736,7 +4736,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-07",
    "lastActivity": "2026-04-07",
-   "daysSince": 165,
+   "daysSince": 166,
    "gh": null,
    "toss": null,
    "links": {
@@ -4773,7 +4773,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-06",
    "lastActivity": "2026-04-06",
-   "daysSince": 166,
+   "daysSince": 167,
    "gh": null,
    "toss": null,
    "links": {
@@ -4810,7 +4810,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-03",
    "lastActivity": "2026-04-03",
-   "daysSince": 169,
+   "daysSince": 170,
    "gh": null,
    "toss": null,
    "links": {
@@ -4846,7 +4846,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-01",
    "lastActivity": "2026-04-01",
-   "daysSince": 171,
+   "daysSince": 172,
    "gh": null,
    "toss": null,
    "links": {
@@ -4874,7 +4874,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 173,
+   "daysSince": 174,
    "gh": null,
    "toss": null,
    "links": {
@@ -4907,7 +4907,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 173,
+   "daysSince": 174,
    "gh": null,
    "toss": null,
    "links": {
@@ -4944,7 +4944,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 173,
+   "daysSince": 174,
    "gh": null,
    "toss": null,
    "links": {
@@ -4980,7 +4980,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 173,
+   "daysSince": 174,
    "gh": null,
    "toss": null,
    "links": {
@@ -5017,7 +5017,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 173,
+   "daysSince": 174,
    "gh": null,
    "toss": null,
    "links": {
@@ -5054,7 +5054,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 173,
+   "daysSince": 174,
    "gh": null,
    "toss": null,
    "links": {
@@ -5088,7 +5088,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-18",
    "lastActivity": "2026-03-18",
-   "daysSince": 185,
+   "daysSince": 186,
    "gh": null,
    "toss": null,
    "links": {
@@ -5125,7 +5125,7 @@ const CC_PROJECTS = {
    "dirty": 39,
    "lastCommit": "2026-03-06",
    "lastActivity": "2026-03-06",
-   "daysSince": 197,
+   "daysSince": 198,
    "gh": null,
    "toss": null,
    "links": {
@@ -5157,7 +5157,7 @@ const CC_PROJECTS = {
    "dirty": 7,
    "lastCommit": "2026-02-06",
    "lastActivity": "2026-02-06",
-   "daysSince": 225,
+   "daysSince": 226,
    "gh": null,
    "toss": null,
    "links": {
@@ -5194,7 +5194,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2025-07-22",
    "lastActivity": "2025-07-22",
-   "daysSince": 424,
+   "daysSince": 425,
    "gh": null,
    "toss": null,
    "links": {
@@ -5231,7 +5231,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-12",
    "lastActivity": "2026-07-12",
-   "daysSince": 69,
+   "daysSince": 70,
    "gh": {
     "url": "https://github.com/mqzkim/seoul-house-from-space-support",
     "private": false,
@@ -5272,7 +5272,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-05-03",
    "lastActivity": "2026-05-03",
-   "daysSince": 139,
+   "daysSince": 140,
    "gh": {
     "url": "https://github.com/mqzkim/hermes-agent",
     "private": false,
@@ -5308,7 +5308,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-05-02",
-   "daysSince": 140,
+   "daysSince": 141,
    "gh": {
     "url": "https://github.com/mqzkim/mqzkim.github.io",
     "private": false,
@@ -5358,7 +5358,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-05-01",
-   "daysSince": 141,
+   "daysSince": 142,
    "gh": {
     "url": "https://github.com/mqzkim/hermes-agent-board",
     "private": true,
@@ -5408,7 +5408,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-04-30",
-   "daysSince": 142,
+   "daysSince": 143,
    "gh": {
     "url": "https://github.com/mqzkim/tuist",
     "private": false,
@@ -5445,7 +5445,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-19",
    "lastActivity": "2026-04-19",
-   "daysSince": 153,
+   "daysSince": 154,
    "gh": {
     "url": "https://github.com/mqzkim/beautify-me",
     "private": true,
@@ -5492,7 +5492,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-04-18",
-   "daysSince": 154,
+   "daysSince": 155,
    "gh": {
     "url": "https://github.com/mqzkim/llm-usage",
     "private": true,
@@ -5538,7 +5538,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-04-18",
-   "daysSince": 154,
+   "daysSince": 155,
    "gh": {
     "url": "https://github.com/mqzkim/roastsmysite",
     "private": true,
@@ -5590,7 +5590,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-18",
    "lastActivity": "2026-04-18",
-   "daysSince": 154,
+   "daysSince": 155,
    "gh": {
     "url": "https://github.com/mqzkim/briefme",
     "private": true,
@@ -5644,7 +5644,7 @@ const CC_PROJECTS = {
    "dirty": 7,
    "lastCommit": "2026-04-16",
    "lastActivity": "2026-04-16",
-   "daysSince": 156,
+   "daysSince": 157,
    "gh": {
     "url": "https://github.com/mqzkim/community-growth-hacker",
     "private": true,
@@ -5694,7 +5694,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-13",
    "lastActivity": "2026-04-13",
-   "daysSince": 159,
+   "daysSince": 160,
    "gh": {
     "url": "https://github.com/mqzkim/gst",
     "private": true,

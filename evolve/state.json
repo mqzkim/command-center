@@ -1,14 +1,8 @@
 {
  "version": 1,
- "lastRun": "2026-09-18T22:36:00.000Z",
+ "lastRun": "2026-09-19T22:37:20.000Z",
  "consecutiveFailures": 0,
  "runs": [
-  {
-   "date": "2026-08-23",
-   "improvement": "china-qijizhifeng/agentic-harness-engineering 지식화(c) — 기존 AHE concept 페이지에 공식 코드 repo 반영 · 트렌드 후보 10건 검토(채택 1·기각 9, 잔여 2) · seenRepos 70→80",
-   "commit": "a743ebc",
-   "gates": "4/4"
-  },
   {
    "date": "2026-08-23",
    "improvement": "§6 자기진화: trends.mjs 쿼리 8→15·per-query limit 15→30(후보 풀 2→60건 복원) · 잔여 후보 2건 검토(기각 2) · seenRepos 80→82",
@@ -181,6 +175,12 @@
    "date": "2026-09-19",
    "improvement": "tamaratran/fast-jev-compaction 지식화(c) — ~/.wiki entity 신규(삭제-only compaction: 요약 대신 tool call/result만 'Jev' 모델 keep 확률 스코어링으로 제거·나머지 verbatim 보존, 전체 대화 state 제시·staged fitting(입력 1000→200→60자)·keepThreshold 0.5·Claude Code 플러그인이 내장 compaction 요약을 원본 복원으로 대체, npm+플러그인 이중 구조, MIT 본문 실측; 핵심 발견: created 09-17 2일차에 ★3,119인데 /stargazers API가 404(추정: 스타 부풀리기 플래그로 목록 비공개)+Devin AI 봇 커밋 과반 17/30+무명 SaaS TYPESAFE_API_KEY(api.typesafe.ai)로 전체 세션 전문 전송 필수 — '무명 모델 벤더가 플러그인+스타 폭증으로 API 키 유도' 공급망 신호 축; (a/b) 설치 3중 기각: 전문 외부 전송 로컬 완결 불가[agent-scan 축]+2일차 극신생 단독 저자·AI 봇 커밋 과반+스타 이상 신호; compaction 품질 축에서 continuous-claude-v3 PreCompact handoff와 대립 설계[요약 대체 vs 요약 무손실화]) · 트렌드 후보 5건 검토(채택 1·기각 4: appeeky/aso-skills 1개월 정지·Eronred/aso-skills 기각 축 중복·Toss 콘솔≠앱스토어, jina-ai/MCP 원격 SaaS 검색 프록시[mcp-omnisearch 축], vercel-labs/mcp-handler license null=미부여[capa 계보 4번째 변종]+MCP 서버 구축 프레임워크 접점 없음, cbcoutinho/nextcloud-mcp-server ★360<500·Nextcloud 미사용) · seenRepos 304→309 · health 9/9",
    "commit": "feb03cc",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-20",
+   "improvement": "arabold/docs-mcp-server 지식화(c) — ~/.wiki entity 신규(Context7/Nia/Ref.Tools SaaS의 로컬 완결 오픈소스 대안 문서 인덱싱 MCP 서버: 웹/GitHub/npm/PyPI/로컬 파일/zip 스크랩→버전별 인덱싱, MCP(SSE :6280)+CLI(npx)+Web UI 3중 인터페이스, 90+ 언어·PDF/Office/EPUB·llms.txt 자동 탐지, 임베딩 optional[없으면 키워드 검색·Ollama 시 완전 로컬], README 'Runs entirely on your machine' 명시, ★1,749 MIT 본문 실측·created 2025-03 18개월 성숙·v3.1.0 릴리스 활발·AI 봇 커밋 0; 감점: PostHog opt-out 기본 on[단 수집 범위 자기 문서화 구체적]·실질 단독 저자 29/30; (b) 도구 설치는 이월 1순위 — PostHog env opt-out 강제+키워드 모드 또는 Ollama 로컬 임베딩 한정+Windows npx 스모크 조건) · 선행 정정: 09-19 fast-jev-compaction의 '/stargazers 404=스타 조작 추정' 근거가 대조군 cli/cli에서도 404 재현되어 전역 현상(현 토큰/환경 엔드포인트 차단)으로 판명 → entity 정정 절 추가(2일차 ★3,119 폭증 자체는 이상 신호 유지) · samuelfaj/distill(★678 Apache-2.0) 기각+계보 채록 — GitHub fork 아님에도 xAI grok CLI 파생 실측(LICENSE 'Copyright 2023-2026 SpaceXAI' 줄·~/.grok 프로필·GROK_LOG_JEV), 결정 레이어 이름 'Jev'·설정 `model = \"~typesafe/jev-latest\"` = fast-jev-compaction의 무명 SaaS와 동일 typesafe/Jev 생태 확인, fast-jev entity에 계보 절 추가(기각: Windows 미지원[릴리스 macOS/Linux만]·릴리스 v1.5.2 4개월 정체 vs README 2.0.0·완전 단독 저자 30/30) · 트렌드 후보 7건 검토(채택 1·기각 6: omniget 미디어 다운로더 본질+GPL+코스 다운로드 회색지대, telegram-mcp Telegram 미사용+계정 세션 리스크, anytype-mcp Anytype 미사용[지식 원천은 ~/.wiki], yunshu_skillshub 중국어 워크플로 프리셋 문화 접점 낮음, aoci-code gortex 축 정면 중복+FSL-1.1-MIT source-available+★443<500+6주 극신생) · seenRepos 309→316 · health 9/9",
+   "commit": "",
    "gates": "4/4"
   }
  ],
@@ -493,7 +493,14 @@
   "appeeky/aso-skills",
   "jina-ai/MCP",
   "vercel-labs/mcp-handler",
-  "cbcoutinho/nextcloud-mcp-server"
+  "cbcoutinho/nextcloud-mcp-server",
+  "arabold/docs-mcp-server",
+  "samuelfaj/distill",
+  "tonhowtf/omniget",
+  "chigwell/telegram-mcp",
+  "yunshu0909/yunshu_skillshub",
+  "anyproto/anytype-mcp",
+  "aoci-spec/aoci-code"
  ],
  "appliedImprovements": [
   {
@@ -791,6 +798,13 @@
    "date": "2026-09-19",
    "mode": "knowledge",
    "note": "fresh candidate adopted (c). new entity page fast-jev-compaction; deletion-only context compaction for Claude Code — instead of lossy LLM summarization, only tool calls/results are candidates for removal, scored by an external 'Jev' model shown the whole conversation as state (tool results replaced by one-line size notes, nothing summarized); per-call two keep-probability questions (call stays / result stays verbatim) vs keepThreshold 0.5 → keep both / keep call + truncate result to 300 head chars / drop pair; first message + newest preserveRecentMessages(6) pinned; staged state fitting into 25k est. tokens (inputs 1000→200→60 chars, head+tail abridge, old-call one-liners, throw if unfit); tokenizer-less char-based token estimate; message list rebuilt so no result survives without its call. Dual structure: npm package (src/) + Claude Code plugin (hooks/fast-jev.ts, hooks.json, .claude-plugin/) replacing built-in compaction summary with restored original messages; Message ⊂ Claude Code SessionMessage so transcripts pass through as-is; JevAsker interface for BYO transport, building blocks exported. Measured 2026-09-19 (gh api read-only, UTC 09-18T22:3x): star 3,119 with created 2026-09-17T05:57Z = 2-DAY-OLD repo, pushed 09-18, open_issues 44, size 245KB, tree 34 paths; LICENSE body standard MIT '(c) 2025' zero NC, API spdx match; commit authors last 30: Devin AI bot 17 vs human tamara tran 13 = AI-MAJORITY commits, contributors devin-ai-integration[bot]+tamaratran only (de facto solo human). ANOMALY: /stargazers REST endpoint returns 404 (star+json and plain, headers re-verified) while repo API works — presumed (marked 추정) GitHub fake-star flag hiding the stargazer list, consistent with 3,119 stars in 2 days. Dependency surface: TYPESAFE_API_KEY required, default endpoint api.typesafe.ai/v1/systemone, model jev-latest — unknown third-party LLM SaaS ('TypeSafe'/'Jev'), entire session transcript (code, errors, paths) sent externally, NOT locally completable. Knowledge value: (1) deletion-only/verbatim-preserving compaction as the counter-design to summarization on the compaction-quality axis — opposite pole to Continuous-Claude-v3's PreCompact auto-handoff idea (replace the summary vs make the summary lossless); (2) new supply-chain signal pattern: unknown model vendor distributing a Claude Code plugin with anomalous star velocity to drive API-key signups (추정). (a/b) install rejected 3 grounds: (1) full-transcript exfil to unknown SaaS, not locally completable (agent-scan/mcp-omnisearch axis) (2) 2-day-old extreme-nascent + solo human author + AI-bot commit majority (3) star-inflation anomaly (stargazers 404). Reviewed today (5 fresh): adopted fast-jev-compaction; rejected appeeky/aso-skills (2,011* MIT but pushed 08-22 month-idle, same-axis duplicate of rejected Eronred/aso-skills, ASO targets App Store/Play not Toss console), jina-ai/MCP (857* official but remote SaaS MCP search/reader proxy = mcp-omnisearch external-search axis), vercel-labs/mcp-handler (670* license:null = legally unlicensed, 4th variant in license-display-mismatch lineage after vladikk-modularity/refactoring-ui-skill/capa + MCP-server-building framework with no owner touchpoint), cbcoutinho/nextcloud-mcp-server (360*<500 base threshold + no Nextcloud + AGPL). Other carries open: (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (c) NotASithLord/peerd (carried since 09-09 — browser-native agent harness extension; longest-carried entry, stale-check star/pushed before adopting)."
+  },
+  {
+   "id": "wiki:arabold/docs-mcp-server",
+   "repo": "arabold/docs-mcp-server",
+   "date": "2026-09-20",
+   "mode": "knowledge",
+   "note": "fresh candidate adopted (c). new entity page docs-mcp-server; local-first documentation indexing MCP server — the open-source alternative to Context7/Nia/Ref.Tools (all SaaS). Scrapes web/GitHub/npm/PyPI/local files/zip → version-aware indexing → triple interface MCP (SSE :6280) + CLI (npx @arabold/docs-mcp-server) + Web UI; 90+ source languages, PDF/Office/EPUB, llms.txt auto-detection, Accept: text/markdown negotiation, hash-routed SPA auto-promoted to Playwright, bundled Agent Skills in skills/. Measured 2026-09-20 (gh api read-only): star 1,749, forks 183, open_issues 64, created 2025-03-17 = 18-month mature, pushed 09-19 active, releases v3.1.0(08-29)/v3.0.1/v3.0.0 active cadence, commits 30: arabold 29 + 1 external = de facto solo but sustained, AI-bot commits 0. LICENSE body = standard MIT full text '(c) 2025 Andre Rabold', API spdx match, zero NC. Local completion: README explicit 'Runs entirely on your machine; your code never leaves your network'; embeddings OPTIONAL — keyword search without any key, or OpenAI/Ollama/Gemini/Azure choice (Ollama path = fully local). Demerit: PostHog telemetry default ON opt-out — but docs/infrastructure/telemetry.md self-documents scope (no URLs/content/search queries/tokens; counts/durations/success-fail only; CLI flag + env opt-out) — same axis as Ouroboros rejection but far more concrete self-documentation. (b) tool install CARRIED as next 1st priority, conditions: enforce PostHog env opt-out + keyword-mode-only or Ollama-local-embeddings + Windows npx smoke + mcp-scanner gate before MCP registration. PRIOR-RUN CORRECTION executed same day: 09-19 fast-jev-compaction 'stargazers 404 = star-inflation flag (추정)' basis WEAKENED — control repo cli/cli also returns 404 on /stargazers in this token/env = endpoint blocked globally, 404 has no per-repo discriminative power; entity corrected (2-day ★3,119 velocity itself retained as anomaly signal). LINEAGE CAPTURE: samuelfaj/distill (678*, Apache-2.0, created 2026-03-06, Rust, fork:false) measured as xAI grok CLI derivative (LICENSE line 'Copyright 2023-2026 SpaceXAI / Copyright 2026 Samuel Fajreldines (Distill modifications)', ~/.grok legacy profile, GROK_LOG_JEV env) whose decision layer is named 'Jev' (model routing/effort/permission escalate/compaction preservation), config example provider=openrouter_decisions model='~typesafe/jev-latest' = SAME typesafe/Jev ecosystem as fast-jev-compaction's unknown SaaS (api.typesafe.ai) — fast-jev likely a Claude Code port of this Jev; captured as lineage section inside fast-jev-compaction entity, no new distill page (buoy→agent-device precedent). distill install rejected: Windows unsupported (release binaries macOS/Linux only, source build CMake+protobuf), latest release v1.5.2 2026-05-14 = 4 months behind main (README claims 2.0.0), complete solo author 30/30. Reviewed today (7 fresh): adopted docs-mcp-server; rejected distill (lineage captured), tonhowtf/omniget (13,923* but essence = media/course downloader desktop app, GPL-3.0 + purchased-course download gray zone + no CLI workflow touchpoint), chigwell/telegram-mcp (1,626* personal-account Telethon MCP, owner non-Telegram user + session-file custody risk), yunshu0909/yunshu_skillshub (760* Chinese-language curated skill collection, low cultural/workflow touchpoint), anyproto/anytype-mcp (525* official org MIT healthy but owner non-Anytype user, knowledge source is ~/.wiki), aoci-spec/aoci-code (443*<500 + FSL-1.1-MIT source-available competing-use restriction + head-on gortex axis overlap + 6-week nascent rc). Other carries open: (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (b cond.) arabold/docs-mcp-server tool install (fresh carry, conditions above); longest-carried remains (c) NotASithLord/peerd since 09-09."
   }
  ],
  "openFindings": []
