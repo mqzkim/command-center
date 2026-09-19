@@ -180,7 +180,7 @@
   {
    "date": "2026-09-20",
    "improvement": "arabold/docs-mcp-server 지식화(c) — ~/.wiki entity 신규(Context7/Nia/Ref.Tools SaaS의 로컬 완결 오픈소스 대안 문서 인덱싱 MCP 서버: 웹/GitHub/npm/PyPI/로컬 파일/zip 스크랩→버전별 인덱싱, MCP(SSE :6280)+CLI(npx)+Web UI 3중 인터페이스, 90+ 언어·PDF/Office/EPUB·llms.txt 자동 탐지, 임베딩 optional[없으면 키워드 검색·Ollama 시 완전 로컬], README 'Runs entirely on your machine' 명시, ★1,749 MIT 본문 실측·created 2025-03 18개월 성숙·v3.1.0 릴리스 활발·AI 봇 커밋 0; 감점: PostHog opt-out 기본 on[단 수집 범위 자기 문서화 구체적]·실질 단독 저자 29/30; (b) 도구 설치는 이월 1순위 — PostHog env opt-out 강제+키워드 모드 또는 Ollama 로컬 임베딩 한정+Windows npx 스모크 조건) · 선행 정정: 09-19 fast-jev-compaction의 '/stargazers 404=스타 조작 추정' 근거가 대조군 cli/cli에서도 404 재현되어 전역 현상(현 토큰/환경 엔드포인트 차단)으로 판명 → entity 정정 절 추가(2일차 ★3,119 폭증 자체는 이상 신호 유지) · samuelfaj/distill(★678 Apache-2.0) 기각+계보 채록 — GitHub fork 아님에도 xAI grok CLI 파생 실측(LICENSE 'Copyright 2023-2026 SpaceXAI' 줄·~/.grok 프로필·GROK_LOG_JEV), 결정 레이어 이름 'Jev'·설정 `model = \"~typesafe/jev-latest\"` = fast-jev-compaction의 무명 SaaS와 동일 typesafe/Jev 생태 확인, fast-jev entity에 계보 절 추가(기각: Windows 미지원[릴리스 macOS/Linux만]·릴리스 v1.5.2 4개월 정체 vs README 2.0.0·완전 단독 저자 30/30) · 트렌드 후보 7건 검토(채택 1·기각 6: omniget 미디어 다운로더 본질+GPL+코스 다운로드 회색지대, telegram-mcp Telegram 미사용+계정 세션 리스크, anytype-mcp Anytype 미사용[지식 원천은 ~/.wiki], yunshu_skillshub 중국어 워크플로 프리셋 문화 접점 낮음, aoci-code gortex 축 정면 중복+FSL-1.1-MIT source-available+★443<500+6주 극신생) · seenRepos 309→316 · health 9/9",
-   "commit": "",
+   "commit": "5a7e202",
    "gates": "4/4"
   }
  ],
