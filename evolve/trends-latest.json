@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-19T22:30:44.404Z",
+ "generatedAt": "2026-09-20T22:30:43.305Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,84 +31,106 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 211,
+ "scanned": 214,
  "dedup": {
   "wikiCatalog": 3,
-  "alreadySeen": 201
+  "alreadySeen": 202
  },
  "candidates": [
   {
-   "description": "Udemy & Hotmart course downloader, YouTube downloader (yt-dlp GUI, 1,800+ sites) + desktop app for AI agents: Claude Code, Codex, Gemini CLI, Ollama. Permissions, undo, jobs, loops until tests pass, MCP server, 156 tools, course player. Free and open source for Windows, macOS and Linux. No terminal. Your files stay on your computer.",
-   "fullName": "tonhowtf/omniget",
-   "stargazersCount": 13923,
-   "updatedAt": "2026-09-19T22:21:41Z",
-   "url": "https://github.com/tonhowtf/omniget",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server"
-  },
-  {
-   "description": "Grounded Docs MCP Server: Open-Source Alternative to Context7, Nia, and Ref.Tools",
-   "fullName": "arabold/docs-mcp-server",
-   "stargazersCount": 1749,
-   "updatedAt": "2026-09-19T21:52:44Z",
-   "url": "https://github.com/arabold/docs-mcp-server",
+   "description": "Official Notion MCP Server",
+   "fullName": "makenotion/notion-mcp-server",
+   "stargazersCount": 4641,
+   "updatedAt": "2026-09-20T22:16:45Z",
+   "url": "https://github.com/makenotion/notion-mcp-server",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
-   "fullName": "chigwell/telegram-mcp",
-   "stargazersCount": 1626,
-   "updatedAt": "2026-09-19T22:10:21Z",
-   "url": "https://github.com/chigwell/telegram-mcp",
+   "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
+   "fullName": "bostrot/wslmanager",
+   "stargazersCount": 4004,
+   "updatedAt": "2026-09-20T21:44:19Z",
+   "url": "https://github.com/bostrot/wslmanager",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "云舒精选的 Claude Code Skills 集合，提升开发和产品管理效率",
-   "fullName": "yunshu0909/yunshu_skillshub",
-   "stargazersCount": 760,
-   "updatedAt": "2026-09-19T14:49:50Z",
-   "url": "https://github.com/yunshu0909/yunshu_skillshub",
+   "description": "🪐 🔧 Model Context Protocol (MCP) Server for Jupyter.",
+   "fullName": "datalayer/jupyter-mcp-server",
+   "stargazersCount": 1285,
+   "updatedAt": "2026-09-20T21:29:17Z",
+   "url": "https://github.com/datalayer/jupyter-mcp-server",
    "labels": [
-    "skills"
+    "mcp"
    ],
-   "query": "claude code skills (updated)"
+   "query": "mcp server (updated)"
   },
   {
-   "description": "Distill is a lightweight coding agent harness and TUI built to get more done with FAR FEWER tokens 🔥",
-   "fullName": "samuelfaj/distill",
-   "stargazersCount": 678,
-   "updatedAt": "2026-09-19T21:53:04Z",
-   "url": "https://github.com/samuelfaj/distill",
+   "description": "Gentle Shell is a Pi-native coding-agent harness for controlled development with Organic Driven Development, optional SDD/OpenSpec, subagents, TDD evidence, review guardrails, skills, and memory integrations.",
+   "fullName": "Gentleman-Programming/gentle-shell",
+   "stargazersCount": 944,
+   "updatedAt": "2026-09-20T22:26:58Z",
+   "url": "https://github.com/Gentleman-Programming/gentle-shell",
    "labels": [
     "harness"
    ],
    "query": "coding agent harness"
   },
   {
-   "description": "An MCP server enabling AI assistants to interact with Anytype - your encrypted, local and collaborative wiki - to organize objects, lists, and more through natural language.",
-   "fullName": "anyproto/anytype-mcp",
-   "stargazersCount": 525,
-   "updatedAt": "2026-09-19T20:40:10Z",
-   "url": "https://github.com/anyproto/anytype-mcp",
+   "description": "A fast coding-agent harness in Go. Tool-use loop, bubbletea TUI, provider-routable models with live catalog discovery, MCP support, background subagents. One binary, no runtime, built for open-source models.",
+   "fullName": "context-labs/whip",
+   "stargazersCount": 809,
+   "updatedAt": "2026-09-20T22:21:14Z",
+   "url": "https://github.com/context-labs/whip",
+   "labels": [
+    "harness"
+   ],
+   "query": "coding agent harness"
+  },
+  {
+   "description": "Figma Plugin & MCP server to bypass API limits",
+   "fullName": "gethopp/figma-mcp-bridge",
+   "stargazersCount": 646,
+   "updatedAt": "2026-09-20T17:11:12Z",
+   "url": "https://github.com/gethopp/figma-mcp-bridge",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "A persistent, Git-versioned map of your whole codebase and database schema that coding agents read before they touch anything. Local-first MCP server + CLI in Go: a governed repository index of code knowledge that gives Claude Code, Codex, Cursor, and opencode long-term context, memory, and code intelligence.",
-   "fullName": "aoci-spec/aoci-code",
-   "stargazersCount": 443,
-   "updatedAt": "2026-09-19T19:42:17Z",
-   "url": "https://github.com/aoci-spec/aoci-code",
+   "description": "A unified Model Context Protocol server implementation that aggregates multiple MCP servers into one.",
+   "fullName": "1mcp-app/agent",
+   "stargazersCount": 507,
+   "updatedAt": "2026-09-20T16:14:16Z",
+   "url": "https://github.com/1mcp-app/agent",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "More than a skill manager — manage skills, MCP servers, plugins, hooks, CLIs, configs, memory & rules across every AI coding agent. 🌟 Star if you like it!",
+   "fullName": "RealZST/HarnessKit",
+   "stargazersCount": 433,
+   "updatedAt": "2026-09-20T16:29:39Z",
+   "url": "https://github.com/RealZST/HarnessKit",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "Discover the most comprehensive and up-to-date collection of MCP servers in the market. This repository serves as a centralized hub, offering an extensive catalog of open-source and proprietary MCP servers, complete with features, documentation links, and contributors.",
+   "fullName": "apappascs/mcp-servers-hub",
+   "stargazersCount": 332,
+   "updatedAt": "2026-09-20T17:09:59Z",
+   "url": "https://github.com/apappascs/mcp-servers-hub",
    "labels": [
     "mcp"
    ],

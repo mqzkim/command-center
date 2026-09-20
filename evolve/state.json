@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-09-19T22:37:20.000Z",
+ "lastRun": "2026-09-20T22:38:47.093Z",
  "consecutiveFailures": 0,
  "runs": [
   {
@@ -181,6 +181,12 @@
    "date": "2026-09-20",
    "improvement": "arabold/docs-mcp-server 지식화(c) — ~/.wiki entity 신규(Context7/Nia/Ref.Tools SaaS의 로컬 완결 오픈소스 대안 문서 인덱싱 MCP 서버: 웹/GitHub/npm/PyPI/로컬 파일/zip 스크랩→버전별 인덱싱, MCP(SSE :6280)+CLI(npx)+Web UI 3중 인터페이스, 90+ 언어·PDF/Office/EPUB·llms.txt 자동 탐지, 임베딩 optional[없으면 키워드 검색·Ollama 시 완전 로컬], README 'Runs entirely on your machine' 명시, ★1,749 MIT 본문 실측·created 2025-03 18개월 성숙·v3.1.0 릴리스 활발·AI 봇 커밋 0; 감점: PostHog opt-out 기본 on[단 수집 범위 자기 문서화 구체적]·실질 단독 저자 29/30; (b) 도구 설치는 이월 1순위 — PostHog env opt-out 강제+키워드 모드 또는 Ollama 로컬 임베딩 한정+Windows npx 스모크 조건) · 선행 정정: 09-19 fast-jev-compaction의 '/stargazers 404=스타 조작 추정' 근거가 대조군 cli/cli에서도 404 재현되어 전역 현상(현 토큰/환경 엔드포인트 차단)으로 판명 → entity 정정 절 추가(2일차 ★3,119 폭증 자체는 이상 신호 유지) · samuelfaj/distill(★678 Apache-2.0) 기각+계보 채록 — GitHub fork 아님에도 xAI grok CLI 파생 실측(LICENSE 'Copyright 2023-2026 SpaceXAI' 줄·~/.grok 프로필·GROK_LOG_JEV), 결정 레이어 이름 'Jev'·설정 `model = \"~typesafe/jev-latest\"` = fast-jev-compaction의 무명 SaaS와 동일 typesafe/Jev 생태 확인, fast-jev entity에 계보 절 추가(기각: Windows 미지원[릴리스 macOS/Linux만]·릴리스 v1.5.2 4개월 정체 vs README 2.0.0·완전 단독 저자 30/30) · 트렌드 후보 7건 검토(채택 1·기각 6: omniget 미디어 다운로더 본질+GPL+코스 다운로드 회색지대, telegram-mcp Telegram 미사용+계정 세션 리스크, anytype-mcp Anytype 미사용[지식 원천은 ~/.wiki], yunshu_skillshub 중국어 워크플로 프리셋 문화 접점 낮음, aoci-code gortex 축 정면 중복+FSL-1.1-MIT source-available+★443<500+6주 극신생) · seenRepos 309→316 · health 9/9",
    "commit": "5a7e202",
+   "gates": "4/4"
+  },
+  {
+   "date": "2026-09-21",
+   "improvement": "arabold/docs-mcp-server 도구 설치(b) — 09-20 이월 1순위 집행: Windows 네이티브 npx 스모크 v3.1.0 실측(비침습 — MCP 미등록·~/.claude.json 0건·settings.json SHA256 불변·잔존 프로세스 0), 텔레메트리 이중 opt-out(env DOCS_MCP_TELEMETRY=false + CLI --no-telemetry) + 자동 생성 config.yaml telemetryEnabled:true 발견→false 영속화, 키워드 FTS 모드 보장(셸의 OPENAI/GOOGLE 키를 자식 env에서 제거 실측), scrape file://→search 왕복 원문 회수(1차 AccessPolicyError = allowed-roots 기본 차단 보안 게이트 실측 후 임시 폴더 한정 허용), 데이터 로컬 저장 실측(%LOCALAPPDATA%\\docs-mcp-server\\Data\\documents.db) · 주의 채록: config 기본 embeddingModel=text-embedding-3-small — 셸에 키 있으면 임베딩 자동 활성화, 키워드 전용 운용 조건 entity에 명기 · 트렌드 후보 9건 검토(기각 9: notion-mcp 원격판 권장+미사용, wslmanager NOASSERTION+WSL GUI, jupyter-mcp 미사용, gentle-shell Pi 전용 CC 접점 0+외부 POST 텔레메트리+pi-mono 통째 파생[LICENSE 명의 Mario Zechner — 부수 소득: 'GitHub 2026-06-30 stargazers API admin 한정' README 주석 = fast-jev 정정 제3자 교차 증거], whip 독립 경쟁 하네스 CC 접점 0+Windows 바이너리 0+1개월 신생+자사 inference.net 유도, figma-mcp-bridge 'bypass API limits' 자기 명시+미사용, 1mcp aggregator 축, HarnessKit ★433<500+capa 동축+스타 구걸, mcp-servers-hub ★332<500+license null+카탈로그) · seenRepos 316→325 · health 9/9",
+   "commit": "pending",
    "gates": "4/4"
   }
  ],
@@ -500,7 +506,16 @@
   "chigwell/telegram-mcp",
   "yunshu0909/yunshu_skillshub",
   "anyproto/anytype-mcp",
-  "aoci-spec/aoci-code"
+  "aoci-spec/aoci-code",
+  "makenotion/notion-mcp-server",
+  "bostrot/wslmanager",
+  "datalayer/jupyter-mcp-server",
+  "Gentleman-Programming/gentle-shell",
+  "context-labs/whip",
+  "gethopp/figma-mcp-bridge",
+  "1mcp-app/agent",
+  "RealZST/HarnessKit",
+  "apappascs/mcp-servers-hub"
  ],
  "appliedImprovements": [
   {
@@ -805,6 +820,17 @@
    "date": "2026-09-20",
    "mode": "knowledge",
    "note": "fresh candidate adopted (c). new entity page docs-mcp-server; local-first documentation indexing MCP server — the open-source alternative to Context7/Nia/Ref.Tools (all SaaS). Scrapes web/GitHub/npm/PyPI/local files/zip → version-aware indexing → triple interface MCP (SSE :6280) + CLI (npx @arabold/docs-mcp-server) + Web UI; 90+ source languages, PDF/Office/EPUB, llms.txt auto-detection, Accept: text/markdown negotiation, hash-routed SPA auto-promoted to Playwright, bundled Agent Skills in skills/. Measured 2026-09-20 (gh api read-only): star 1,749, forks 183, open_issues 64, created 2025-03-17 = 18-month mature, pushed 09-19 active, releases v3.1.0(08-29)/v3.0.1/v3.0.0 active cadence, commits 30: arabold 29 + 1 external = de facto solo but sustained, AI-bot commits 0. LICENSE body = standard MIT full text '(c) 2025 Andre Rabold', API spdx match, zero NC. Local completion: README explicit 'Runs entirely on your machine; your code never leaves your network'; embeddings OPTIONAL — keyword search without any key, or OpenAI/Ollama/Gemini/Azure choice (Ollama path = fully local). Demerit: PostHog telemetry default ON opt-out — but docs/infrastructure/telemetry.md self-documents scope (no URLs/content/search queries/tokens; counts/durations/success-fail only; CLI flag + env opt-out) — same axis as Ouroboros rejection but far more concrete self-documentation. (b) tool install CARRIED as next 1st priority, conditions: enforce PostHog env opt-out + keyword-mode-only or Ollama-local-embeddings + Windows npx smoke + mcp-scanner gate before MCP registration. PRIOR-RUN CORRECTION executed same day: 09-19 fast-jev-compaction 'stargazers 404 = star-inflation flag (추정)' basis WEAKENED — control repo cli/cli also returns 404 on /stargazers in this token/env = endpoint blocked globally, 404 has no per-repo discriminative power; entity corrected (2-day ★3,119 velocity itself retained as anomaly signal). LINEAGE CAPTURE: samuelfaj/distill (678*, Apache-2.0, created 2026-03-06, Rust, fork:false) measured as xAI grok CLI derivative (LICENSE line 'Copyright 2023-2026 SpaceXAI / Copyright 2026 Samuel Fajreldines (Distill modifications)', ~/.grok legacy profile, GROK_LOG_JEV env) whose decision layer is named 'Jev' (model routing/effort/permission escalate/compaction preservation), config example provider=openrouter_decisions model='~typesafe/jev-latest' = SAME typesafe/Jev ecosystem as fast-jev-compaction's unknown SaaS (api.typesafe.ai) — fast-jev likely a Claude Code port of this Jev; captured as lineage section inside fast-jev-compaction entity, no new distill page (buoy→agent-device precedent). distill install rejected: Windows unsupported (release binaries macOS/Linux only, source build CMake+protobuf), latest release v1.5.2 2026-05-14 = 4 months behind main (README claims 2.0.0), complete solo author 30/30. Reviewed today (7 fresh): adopted docs-mcp-server; rejected distill (lineage captured), tonhowtf/omniget (13,923* but essence = media/course downloader desktop app, GPL-3.0 + purchased-course download gray zone + no CLI workflow touchpoint), chigwell/telegram-mcp (1,626* personal-account Telethon MCP, owner non-Telegram user + session-file custody risk), yunshu0909/yunshu_skillshub (760* Chinese-language curated skill collection, low cultural/workflow touchpoint), anyproto/anytype-mcp (525* official org MIT healthy but owner non-Anytype user, knowledge source is ~/.wiki), aoci-spec/aoci-code (443*<500 + FSL-1.1-MIT source-available competing-use restriction + head-on gortex axis overlap + 6-week nascent rc). Other carries open: (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (b cond.) arabold/docs-mcp-server tool install (fresh carry, conditions above); longest-carried remains (c) NotASithLord/peerd since 09-09."
+  },
+  {
+   "id": "tool:arabold/docs-mcp-server-install",
+   "repo": "arabold/docs-mcp-server",
+   "date": "2026-09-21",
+   "mode": "tool",
+   "files": [
+    "%LOCALAPPDATA%/docs-mcp-server/Data/documents.db",
+    "%APPDATA%/docs-mcp-server/Config/config.yaml (telemetryEnabled:false)"
+   ],
+   "note": "carried (b cond.) 1st priority from 09-20, executed. Non-invasive npx-runtime adoption of local-first docs-indexing server, CLI-mode ONLY (scrape/search/list via npx @arabold/docs-mcp-server@latest). All 4 carry conditions honored, measured: (1) PostHog opt-out enforced — env DOCS_MCP_TELEMETRY=false + CLI --no-telemetry (flag = highest precedence per telemetry.md) on every run, PLUS discovered auto-generated %APPDATA%\\docs-mcp-server\\Config\\config.yaml persists telemetryEnabled:true → edited to false for permanent opt-out (installation.id UUID file noted, local); (2) keyword-FTS-mode only — parent shell HAD OPENAI_API_KEY/GOOGLE_API_KEY, removed from child env (KEYS_REMAINING:0) before each run; gotcha recorded: default config embeddingModel=text-embedding-3-small silently activates embeddings whenever keys exist in shell — keyword-only operation requires key-free env or config edit; (3) MCP NOT registered — ~/.claude.json 'docs-mcp-server' 0 hits before/after, claude mcp add never executed, settings.json SHA256 unchanged 633CE7CC...B036 (mcp-scanner gate required before any future :6280 SSE registration); (4) Windows native npx smoke passed — v3.1.0, scrape file:// temp md w/ unique token CCEVOLVE0921SMOKE → 1st attempt AccessPolicyError (default allowed root = $DOCUMENTS only; local-file access denied-by-default security gate = positive signal) → DOCS_MCP_SCRAPER_SECURITY_FILE_ACCESS_ALLOWED_ROOTS temp-dir-only override → 'Successfully scraped 1 pages' → search recovered verbatim content (FTS) → list 1 library documentCount 1 completed; data local-only %LOCALAPPDATA%\\docs-mcp-server\\Data\\documents.db 156KB SQLite; residual processes 0, :6280 listening 0, temp files deleted. Pre-install re-measure 2026-09-21: star 1,751(+2), pushed 09-20T22:25Z active, v3.1.0 latest, MIT body re-verified, README rebranded 'Grounded Docs' (package name unchanged). Reviewed today (9 fresh, all rejected): makenotion/notion-mcp-server (4,641* official but README top NOTE recommends Remote hosted MCP + owner non-Notion user = anytype axis), bostrot/wslmanager (4,004* license NOASSERTION + WSL GUI vs owner native-Windows flow, same author as rejected wsl2-distro-manager), datalayer/jupyter-mcp-server (1,285* no Jupyter touchpoint = vendor axis), Gentleman-Programming/gentle-shell (944* MIT but Pi-native harness Claude Code mentions 0 + external-POST usage telemetry exists + pi-mono wholesale history derivative: LICENSE (c) Mario Zechner, badlogic 3,104 commits vs Alan 702, fork:false; side gain — README comment 'GitHub restricted the stargazers API to repository admins on 2026-06-30' = third-party cross-evidence for 09-20 fast-jev stargazers-404 correction), context-labs/whip (809* Apache-2.0 standalone competing Go harness — Claude Code mentions 0, Windows binaries none, created 08-20 1-month nascent, default provider = org's own inference.net funnel), gethopp/figma-mcp-bridge (646* self-declared 'bypass API limits' evasion axis + no Figma), 1mcp-app/agent (507* MCP aggregator axis = agentgateway/TensorBlock, inverse of owner MCP-surface-minimization policy gortex 175→14), RealZST/HarnessKit (433*<500 + cross-agent config/skills/memory management = capa ownership-inversion axis + star-begging desc), apappascs/mcp-servers-hub (332*<500 + license null + catalog list repo, no tool). Other carries open: (c) peerd, (c) retentioneering, (c) ultimate-guide, (c) hol-guard, (c) smart-ralph, (c) claude-code-hooks, (c) claude-review-loop, (b) Pretty-mermaid-skills, (b cond.) mckinsey-pptx. Next 1st priority: (c) NotASithLord/peerd (carried since 09-09 — longest-carried; stale-check star/pushed before adopting)."
   }
  ],
  "openFindings": []
