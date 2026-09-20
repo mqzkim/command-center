@@ -186,7 +186,7 @@
   {
    "date": "2026-09-21",
    "improvement": "arabold/docs-mcp-server 도구 설치(b) — 09-20 이월 1순위 집행: Windows 네이티브 npx 스모크 v3.1.0 실측(비침습 — MCP 미등록·~/.claude.json 0건·settings.json SHA256 불변·잔존 프로세스 0), 텔레메트리 이중 opt-out(env DOCS_MCP_TELEMETRY=false + CLI --no-telemetry) + 자동 생성 config.yaml telemetryEnabled:true 발견→false 영속화, 키워드 FTS 모드 보장(셸의 OPENAI/GOOGLE 키를 자식 env에서 제거 실측), scrape file://→search 왕복 원문 회수(1차 AccessPolicyError = allowed-roots 기본 차단 보안 게이트 실측 후 임시 폴더 한정 허용), 데이터 로컬 저장 실측(%LOCALAPPDATA%\\docs-mcp-server\\Data\\documents.db) · 주의 채록: config 기본 embeddingModel=text-embedding-3-small — 셸에 키 있으면 임베딩 자동 활성화, 키워드 전용 운용 조건 entity에 명기 · 트렌드 후보 9건 검토(기각 9: notion-mcp 원격판 권장+미사용, wslmanager NOASSERTION+WSL GUI, jupyter-mcp 미사용, gentle-shell Pi 전용 CC 접점 0+외부 POST 텔레메트리+pi-mono 통째 파생[LICENSE 명의 Mario Zechner — 부수 소득: 'GitHub 2026-06-30 stargazers API admin 한정' README 주석 = fast-jev 정정 제3자 교차 증거], whip 독립 경쟁 하네스 CC 접점 0+Windows 바이너리 0+1개월 신생+자사 inference.net 유도, figma-mcp-bridge 'bypass API limits' 자기 명시+미사용, 1mcp aggregator 축, HarnessKit ★433<500+capa 동축+스타 구걸, mcp-servers-hub ★332<500+license null+카탈로그) · seenRepos 316→325 · health 9/9",
-   "commit": "pending",
+   "commit": "0a05e5b",
    "gates": "4/4"
   }
  ],
