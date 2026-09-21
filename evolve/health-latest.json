@@ -1,5 +1,5 @@
 {
- "at": "2026-09-20T22:41:50.760Z",
+ "at": "2026-09-21T22:30:25.016Z",
  "results": [
   {
    "name": "dashboard-js-syntax",
@@ -22,8 +22,8 @@
   {
    "name": "projects-data",
    "ok": true,
-   "healed": false,
-   "note": ""
+   "healed": true,
+   "note": "재빌드(gh 스냅샷(2026-09-21T21:03:23.873Z)보다 오래됨)"
   },
   {
    "name": "wiki-junction",

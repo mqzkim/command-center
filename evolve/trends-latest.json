@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-20T22:30:43.305Z",
+ "generatedAt": "2026-09-21T22:30:44.819Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,110 +31,110 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 214,
+ "scanned": 215,
  "dedup": {
   "wikiCatalog": 3,
-  "alreadySeen": 202
+  "alreadySeen": 203
  },
  "candidates": [
   {
-   "description": "Official Notion MCP Server",
-   "fullName": "makenotion/notion-mcp-server",
-   "stargazersCount": 4641,
-   "updatedAt": "2026-09-20T22:16:45Z",
-   "url": "https://github.com/makenotion/notion-mcp-server",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
-   "fullName": "bostrot/wslmanager",
-   "stargazersCount": 4004,
-   "updatedAt": "2026-09-20T21:44:19Z",
-   "url": "https://github.com/bostrot/wslmanager",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "🪐 🔧 Model Context Protocol (MCP) Server for Jupyter.",
-   "fullName": "datalayer/jupyter-mcp-server",
-   "stargazersCount": 1285,
-   "updatedAt": "2026-09-20T21:29:17Z",
-   "url": "https://github.com/datalayer/jupyter-mcp-server",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "Gentle Shell is a Pi-native coding-agent harness for controlled development with Organic Driven Development, optional SDD/OpenSpec, subagents, TDD evidence, review guardrails, skills, and memory integrations.",
-   "fullName": "Gentleman-Programming/gentle-shell",
-   "stargazersCount": 944,
-   "updatedAt": "2026-09-20T22:26:58Z",
-   "url": "https://github.com/Gentleman-Programming/gentle-shell",
+   "description": "Z.ai's coding agent harness. Powerful, intelligent, extensible.",
+   "fullName": "zai-org/ZCode",
+   "stargazersCount": 5535,
+   "updatedAt": "2026-09-21T22:26:57Z",
+   "url": "https://github.com/zai-org/ZCode",
    "labels": [
     "harness"
    ],
    "query": "coding agent harness"
   },
   {
-   "description": "A fast coding-agent harness in Go. Tool-use loop, bubbletea TUI, provider-routable models with live catalog discovery, MCP support, background subagents. One binary, no runtime, built for open-source models.",
-   "fullName": "context-labs/whip",
-   "stargazersCount": 809,
-   "updatedAt": "2026-09-20T22:21:14Z",
-   "url": "https://github.com/context-labs/whip",
-   "labels": [
-    "harness"
-   ],
-   "query": "coding agent harness"
-  },
-  {
-   "description": "Figma Plugin & MCP server to bypass API limits",
-   "fullName": "gethopp/figma-mcp-bridge",
-   "stargazersCount": 646,
-   "updatedAt": "2026-09-20T17:11:12Z",
-   "url": "https://github.com/gethopp/figma-mcp-bridge",
+   "description": "A secure REST API and Model Context Protocol (MCP) server for your vault.",
+   "fullName": "coddingtonbear/obsidian-local-rest-api",
+   "stargazersCount": 2944,
+   "updatedAt": "2026-09-21T22:09:57Z",
+   "url": "https://github.com/coddingtonbear/obsidian-local-rest-api",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "A unified Model Context Protocol server implementation that aggregates multiple MCP servers into one.",
-   "fullName": "1mcp-app/agent",
-   "stargazersCount": 507,
-   "updatedAt": "2026-09-20T16:14:16Z",
-   "url": "https://github.com/1mcp-app/agent",
+   "description": "Browser and desktop automation with an MCP server for AI assistants. Record macros or write JavaScript to automate websites, extract data, and control desktop apps with OCR and image recognition.",
+   "fullName": "A9T9/RPA",
+   "stargazersCount": 2026,
+   "updatedAt": "2026-09-21T21:23:33Z",
+   "url": "https://github.com/A9T9/RPA",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "More than a skill manager — manage skills, MCP servers, plugins, hooks, CLIs, configs, memory & rules across every AI coding agent. 🌟 Star if you like it!",
-   "fullName": "RealZST/HarnessKit",
-   "stargazersCount": 433,
-   "updatedAt": "2026-09-20T16:29:39Z",
-   "url": "https://github.com/RealZST/HarnessKit",
+   "description": "Fast, lightweight Firecrawl/Tavily alternative in Rust. Web scraper, crawler & search API with MCP server for AI agents. Drop-in Firecrawl-compatible API (/scrape, /crawl, /search). 2.3x faster than Tavily, 1.5x faster than Firecrawl in 1K-URL benchmarks. 6 MB RAM, single binary. Self-host or use managed cloud.",
+   "fullName": "fastcrw/crw",
+   "stargazersCount": 1061,
+   "updatedAt": "2026-09-21T22:04:48Z",
+   "url": "https://github.com/fastcrw/crw",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Discover the most comprehensive and up-to-date collection of MCP servers in the market. This repository serves as a centralized hub, offering an extensive catalog of open-source and proprietary MCP servers, complete with features, documentation links, and contributors.",
-   "fullName": "apappascs/mcp-servers-hub",
-   "stargazersCount": 332,
-   "updatedAt": "2026-09-20T17:09:59Z",
-   "url": "https://github.com/apappascs/mcp-servers-hub",
+   "description": "Local code intelligence MCP server and CLI for AI coding agents",
+   "fullName": "bartolli/codanna",
+   "stargazersCount": 742,
+   "updatedAt": "2026-09-21T21:44:54Z",
+   "url": "https://github.com/bartolli/codanna",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
+  },
+  {
+   "description": "Fire your SEO·GEO agency 🔥 A Claude Code skill that audits and optimizes SEO·AEO·GEO·LLMO·NEO(Naver) by itself — 월 50~350만 원짜리 'AI 검색 최적화' 대행, AI 에이전트가 대체합니다",
+   "fullName": "leopard627/fire-your-seo-agency",
+   "stargazersCount": 510,
+   "updatedAt": "2026-09-21T22:14:12Z",
+   "url": "https://github.com/leopard627/fire-your-seo-agency",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code skills (updated)"
+  },
+  {
+   "description": "Browser automation and computer use for AI agents. One CLI and MCP server for your signed-in browser, native macOS apps, and real iPhones.",
+   "fullName": "Hacker-Valley-Media/Interceptor",
+   "stargazersCount": 420,
+   "updatedAt": "2026-09-21T22:03:13Z",
+   "url": "https://github.com/Hacker-Valley-Media/Interceptor",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "200+ production-ready Claude Code skills for sales, marketing, design, engineering, and AI agent architecture. Built and maintained by OneWave AI.",
+   "fullName": "OneWave-AI/claude-skills",
+   "stargazersCount": 301,
+   "updatedAt": "2026-09-21T13:57:58Z",
+   "url": "https://github.com/OneWave-AI/claude-skills",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code skills (updated)"
+  },
+  {
+   "description": "A Claude Code plugin that teaches visual design — typography, color, composition, proportions, and visual hierarchy",
+   "fullName": "ryanthedev/design-for-ai",
+   "stargazersCount": 300,
+   "updatedAt": "2026-09-21T03:00:54Z",
+   "url": "https://github.com/ryanthedev/design-for-ai",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code plugin (updated)"
   }
  ]
 }
