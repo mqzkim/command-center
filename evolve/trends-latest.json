@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-21T22:30:44.819Z",
+ "generatedAt": "2026-09-22T22:30:44.834Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,17 +31,17 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 215,
+ "scanned": 216,
  "dedup": {
-  "wikiCatalog": 3,
-  "alreadySeen": 203
+  "wikiCatalog": 2,
+  "alreadySeen": 202
  },
  "candidates": [
   {
    "description": "Z.ai's coding agent harness. Powerful, intelligent, extensible.",
    "fullName": "zai-org/ZCode",
-   "stargazersCount": 5535,
-   "updatedAt": "2026-09-21T22:26:57Z",
+   "stargazersCount": 6274,
+   "updatedAt": "2026-09-22T22:29:47Z",
    "url": "https://github.com/zai-org/ZCode",
    "labels": [
     "harness"
@@ -49,44 +49,33 @@
    "query": "coding agent harness"
   },
   {
-   "description": "A secure REST API and Model Context Protocol (MCP) server for your vault.",
-   "fullName": "coddingtonbear/obsidian-local-rest-api",
-   "stargazersCount": 2944,
-   "updatedAt": "2026-09-21T22:09:57Z",
-   "url": "https://github.com/coddingtonbear/obsidian-local-rest-api",
+   "description": "Meta Ads (Facebook/Instagram) MCP server for Claude, ChatGPT, Perplexity & Cursor — the Meta node of Pipeboard’s 5-platform family (+ Google, TikTok, Snap, Reddit). Hosted remote MCP, badged Meta Business Partner, free plan — no self-hosting required.",
+   "fullName": "pipeboard-co/meta-ads-mcp",
+   "stargazersCount": 1272,
+   "updatedAt": "2026-09-22T20:43:33Z",
+   "url": "https://github.com/pipeboard-co/meta-ads-mcp",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Browser and desktop automation with an MCP server for AI assistants. Record macros or write JavaScript to automate websites, extract data, and control desktop apps with OCR and image recognition.",
-   "fullName": "A9T9/RPA",
-   "stargazersCount": 2026,
-   "updatedAt": "2026-09-21T21:23:33Z",
-   "url": "https://github.com/A9T9/RPA",
+   "description": "Free, open-source terminal SSH manager and SSH config editor in Rust for macOS and Linux that keeps ~/.ssh/config in sync with 18 cloud providers, monitors live SSH tunnels and manages Docker and Podman containers fleet-wide. Plus scp, Vault SSH certs and an MCP server for AI agents.",
+   "fullName": "erickochen/purple",
+   "stargazersCount": 701,
+   "updatedAt": "2026-09-22T20:05:43Z",
+   "url": "https://github.com/erickochen/purple",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Fast, lightweight Firecrawl/Tavily alternative in Rust. Web scraper, crawler & search API with MCP server for AI agents. Drop-in Firecrawl-compatible API (/scrape, /crawl, /search). 2.3x faster than Tavily, 1.5x faster than Firecrawl in 1K-URL benchmarks. 6 MB RAM, single binary. Self-host or use managed cloud.",
-   "fullName": "fastcrw/crw",
-   "stargazersCount": 1061,
-   "updatedAt": "2026-09-21T22:04:48Z",
-   "url": "https://github.com/fastcrw/crw",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "Local code intelligence MCP server and CLI for AI coding agents",
-   "fullName": "bartolli/codanna",
-   "stargazersCount": 742,
-   "updatedAt": "2026-09-21T21:44:54Z",
-   "url": "https://github.com/bartolli/codanna",
+   "description": "The Ultimate Google Docs, Sheets, Drive, Gmail, & Google Calendar MCP Server. This MCP (primarily for use in Claude Desktop) gains full access to your google suite and lets claude do its thing.",
+   "fullName": "a-bonus/google-docs-mcp",
+   "stargazersCount": 662,
+   "updatedAt": "2026-09-22T22:11:25Z",
+   "url": "https://github.com/a-bonus/google-docs-mcp",
    "labels": [
     "mcp"
    ],
@@ -95,8 +84,8 @@
   {
    "description": "Fire your SEO·GEO agency 🔥 A Claude Code skill that audits and optimizes SEO·AEO·GEO·LLMO·NEO(Naver) by itself — 월 50~350만 원짜리 'AI 검색 최적화' 대행, AI 에이전트가 대체합니다",
    "fullName": "leopard627/fire-your-seo-agency",
-   "stargazersCount": 510,
-   "updatedAt": "2026-09-21T22:14:12Z",
+   "stargazersCount": 545,
+   "updatedAt": "2026-09-22T22:22:22Z",
    "url": "https://github.com/leopard627/fire-your-seo-agency",
    "labels": [
     "skills"
@@ -104,11 +93,44 @@
    "query": "claude code skills (updated)"
   },
   {
-   "description": "Browser automation and computer use for AI agents. One CLI and MCP server for your signed-in browser, native macOS apps, and real iPhones.",
-   "fullName": "Hacker-Valley-Media/Interceptor",
-   "stargazersCount": 420,
-   "updatedAt": "2026-09-21T22:03:13Z",
-   "url": "https://github.com/Hacker-Valley-Media/Interceptor",
+   "description": "Claude Code skills for Obsidian | Claude Code x Obsidian Lab starts May 5",
+   "fullName": "ArtemXTech/personal-os-skills",
+   "stargazersCount": 536,
+   "updatedAt": "2026-09-22T20:29:55Z",
+   "url": "https://github.com/ArtemXTech/personal-os-skills",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code skills (updated)"
+  },
+  {
+   "description": "MCP server retrieving transcripts of YouTube videos",
+   "fullName": "jkawamoto/mcp-youtube-transcript",
+   "stargazersCount": 484,
+   "updatedAt": "2026-09-22T21:58:42Z",
+   "url": "https://github.com/jkawamoto/mcp-youtube-transcript",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "Zero-shot text classification over plain HTTP — no API key, no account. One Cloudflare Worker, a CLI, and an MCP server. https://classifier.dev",
+   "fullName": "mrmps/classifier-dev",
+   "stargazersCount": 411,
+   "updatedAt": "2026-09-22T22:07:40Z",
+   "url": "https://github.com/mrmps/classifier-dev",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "Paper trading simulator for Polymarket — built for AI agents. MCP server, live order books, strategy backtesting. Install: npx clawhub install polymarket-paper-trader",
+   "fullName": "agent-next/polymarket-paper-trader",
+   "stargazersCount": 397,
+   "updatedAt": "2026-09-22T21:07:31Z",
+   "url": "https://github.com/agent-next/polymarket-paper-trader",
    "labels": [
     "mcp"
    ],
@@ -117,13 +139,24 @@
   {
    "description": "200+ production-ready Claude Code skills for sales, marketing, design, engineering, and AI agent architecture. Built and maintained by OneWave AI.",
    "fullName": "OneWave-AI/claude-skills",
-   "stargazersCount": 301,
-   "updatedAt": "2026-09-21T13:57:58Z",
+   "stargazersCount": 302,
+   "updatedAt": "2026-09-22T17:36:27Z",
    "url": "https://github.com/OneWave-AI/claude-skills",
    "labels": [
     "skills"
    ],
    "query": "claude code skills (updated)"
+  },
+  {
+   "description": "",
+   "fullName": "EpicGames/unreal-engine-skills-for-claude-code-plugin",
+   "stargazersCount": 300,
+   "updatedAt": "2026-09-22T20:09:36Z",
+   "url": "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code plugin (updated)"
   },
   {
    "description": "A Claude Code plugin that teaches visual design — typography, color, composition, proportions, and visual hierarchy",
