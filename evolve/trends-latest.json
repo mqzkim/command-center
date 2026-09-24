@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-23T22:30:45.232Z",
+ "generatedAt": "2026-09-24T22:30:44.477Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,17 +31,17 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 215,
+ "scanned": 218,
  "dedup": {
   "wikiCatalog": 3,
-  "alreadySeen": 198
+  "alreadySeen": 202
  },
  "candidates": [
   {
    "description": "Your AI agent browses the web without captchas: self-hosted Python MCP server on undetected anti-detect stealth Firefox, for browser automation, scraping, computer use.",
    "fullName": "feder-cr/invisible_playwright_mcp",
-   "stargazersCount": 31644,
-   "updatedAt": "2026-09-23T22:04:29Z",
+   "stargazersCount": 31653,
+   "updatedAt": "2026-09-24T22:14:12Z",
    "url": "https://github.com/feder-cr/invisible_playwright_mcp",
    "labels": [
     "mcp"
@@ -51,8 +51,8 @@
   {
    "description": "Z.ai's coding agent harness. Powerful, intelligent, extensible.",
    "fullName": "zai-org/ZCode",
-   "stargazersCount": 6528,
-   "updatedAt": "2026-09-23T22:26:53Z",
+   "stargazersCount": 6705,
+   "updatedAt": "2026-09-24T21:49:18Z",
    "url": "https://github.com/zai-org/ZCode",
    "labels": [
     "harness"
@@ -60,21 +60,10 @@
    "query": "coding agent harness"
   },
   {
-   "description": "A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.",
-   "fullName": "getsentry/MobileBuildMCP",
-   "stargazersCount": 6416,
-   "updatedAt": "2026-09-23T20:15:26Z",
-   "url": "https://github.com/getsentry/MobileBuildMCP",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
    "description": "Claude Code skills that take a founder from idea to a live Claude Managed Agent: interview, scope a v0, launch in their own account, grade it, iterate, and schedule it",
    "fullName": "anthropics/launch-your-agent",
-   "stargazersCount": 1010,
-   "updatedAt": "2026-09-23T16:00:58Z",
+   "stargazersCount": 1012,
+   "updatedAt": "2026-09-24T18:47:17Z",
    "url": "https://github.com/anthropics/launch-your-agent",
    "labels": [
     "skills"
@@ -82,11 +71,11 @@
    "query": "claude code skills (updated)"
   },
   {
-   "description": "Local code intelligence MCP server and CLI for AI coding agents",
-   "fullName": "bartolli/codanna",
-   "stargazersCount": 744,
-   "updatedAt": "2026-09-23T22:29:26Z",
-   "url": "https://github.com/bartolli/codanna",
+   "description": "🦀 Rust API, 🐍 Python API, and 🤖 MCP Server for TP-Link Tapo smart devices",
+   "fullName": "mihai-dinculescu/tapo",
+   "stargazersCount": 809,
+   "updatedAt": "2026-09-24T20:47:16Z",
+   "url": "https://github.com/mihai-dinculescu/tapo",
    "labels": [
     "mcp"
    ],
@@ -95,8 +84,8 @@
   {
    "description": "Open-source Claude Code skills for cold email and outbound sales. Grade campaigns, export Prospeo searches, scrape Google Maps — all from Claude Code.",
    "fullName": "growthenginenowoslawski/coldoutboundskills",
-   "stargazersCount": 723,
-   "updatedAt": "2026-09-23T21:56:34Z",
+   "stargazersCount": 728,
+   "updatedAt": "2026-09-24T21:19:41Z",
    "url": "https://github.com/growthenginenowoslawski/coldoutboundskills",
    "labels": [
     "skills"
@@ -106,8 +95,8 @@
   {
    "description": "Fire your SEO·GEO agency 🔥 A Claude Code skill that audits and optimizes SEO·AEO·GEO·LLMO·NEO(Naver) by itself — 월 50~350만 원짜리 'AI 검색 최적화' 대행, AI 에이전트가 대체합니다",
    "fullName": "leopard627/fire-your-seo-agency",
-   "stargazersCount": 558,
-   "updatedAt": "2026-09-23T07:56:49Z",
+   "stargazersCount": 559,
+   "updatedAt": "2026-09-24T15:08:25Z",
    "url": "https://github.com/leopard627/fire-your-seo-agency",
    "labels": [
     "skills"
@@ -126,33 +115,33 @@
    "query": "claude code skills (updated)"
   },
   {
-   "description": "MCP Server for interacting with Salesforce instances",
-   "fullName": "salesforcecli/mcp",
-   "stargazersCount": 479,
-   "updatedAt": "2026-09-23T20:29:06Z",
-   "url": "https://github.com/salesforcecli/mcp",
+   "description": "Build APIs your users love ❤️ with Speakeasy. ✨ Polished and type-safe SDKs. 🌐 Terraform providers, MCP servers, CLIs and Contract Tests for your API. OpenAPI native. ",
+   "fullName": "speakeasy-api/speakeasy",
+   "stargazersCount": 448,
+   "updatedAt": "2026-09-24T21:49:52Z",
+   "url": "https://github.com/speakeasy-api/speakeasy",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Zero-shot text classification over plain HTTP — no API key, no account. One Cloudflare Worker, a CLI, and an MCP server. https://classifier.dev",
-   "fullName": "mrmps/classifier-dev",
-   "stargazersCount": 415,
-   "updatedAt": "2026-09-23T22:21:11Z",
-   "url": "https://github.com/mrmps/classifier-dev",
+   "description": "One prompt in, a looping animated 3D icon out — with real transparency. A Claude Code skill.",
+   "fullName": "samyost1/3dicon",
+   "stargazersCount": 380,
+   "updatedAt": "2026-09-24T22:09:16Z",
+   "url": "https://github.com/samyost1/3dicon",
    "labels": [
-    "mcp"
+    "skills"
    ],
-   "query": "mcp server (updated)"
+   "query": "claude code skills (updated)"
   },
   {
-   "description": "Paper trading simulator for Polymarket — built for AI agents. MCP server, live order books, strategy backtesting. Install: npx clawhub install polymarket-paper-trader",
-   "fullName": "agent-next/polymarket-paper-trader",
-   "stargazersCount": 397,
-   "updatedAt": "2026-09-23T22:29:58Z",
-   "url": "https://github.com/agent-next/polymarket-paper-trader",
+   "description": "CLI for Hookdeck: forward webhooks to localhost (ngrok alternative), manage and query Event Gateway resources (sources, connections, destinations, events), run the MCP server for AI agents. Free for dev.",
+   "fullName": "hookdeck/hookdeck-cli",
+   "stargazersCount": 363,
+   "updatedAt": "2026-09-24T20:31:22Z",
+   "url": "https://github.com/hookdeck/hookdeck-cli",
    "labels": [
     "mcp"
    ],
@@ -161,8 +150,8 @@
   {
    "description": "200+ production-ready Claude Code skills for sales, marketing, design, engineering, and AI agent architecture. Built and maintained by OneWave AI.",
    "fullName": "OneWave-AI/claude-skills",
-   "stargazersCount": 304,
-   "updatedAt": "2026-09-23T22:26:40Z",
+   "stargazersCount": 306,
+   "updatedAt": "2026-09-24T02:27:26Z",
    "url": "https://github.com/OneWave-AI/claude-skills",
    "labels": [
     "skills"
@@ -172,8 +161,8 @@
   {
    "description": "",
    "fullName": "EpicGames/unreal-engine-skills-for-claude-code-plugin",
-   "stargazersCount": 302,
-   "updatedAt": "2026-09-23T20:07:06Z",
+   "stargazersCount": 305,
+   "updatedAt": "2026-09-24T17:43:06Z",
    "url": "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin",
    "labels": [
     "skills"
