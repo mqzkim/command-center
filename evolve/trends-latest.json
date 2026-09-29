@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-28T22:30:54.212Z",
+ "generatedAt": "2026-09-29T22:30:53.036Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,17 +31,17 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 220,
+ "scanned": 219,
  "dedup": {
-  "wikiCatalog": 2,
-  "alreadySeen": 196
+  "wikiCatalog": 3,
+  "alreadySeen": 199
  },
  "candidates": [
   {
    "description": "Playwright MCP server undetected by anti-bots and captchas: AI agent browses the web on anti-detect stealth Firefox, Python, undetected browser automation, scraping, computer use.",
    "fullName": "feder-cr/invisible_playwright_mcp",
-   "stargazersCount": 31692,
-   "updatedAt": "2026-09-28T19:57:24Z",
+   "stargazersCount": 31711,
+   "updatedAt": "2026-09-29T20:20:37Z",
    "url": "https://github.com/feder-cr/invisible_playwright_mcp",
    "labels": [
     "mcp"
@@ -51,8 +51,8 @@
   {
    "description": "Z.ai's coding agent harness. Powerful, intelligent, extensible.",
    "fullName": "zai-org/ZCode",
-   "stargazersCount": 7036,
-   "updatedAt": "2026-09-28T21:50:35Z",
+   "stargazersCount": 7163,
+   "updatedAt": "2026-09-29T21:17:54Z",
    "url": "https://github.com/zai-org/ZCode",
    "labels": [
     "harness"
@@ -62,20 +62,9 @@
   {
    "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
    "fullName": "beenuar/AiSOC",
-   "stargazersCount": 2374,
-   "updatedAt": "2026-09-28T22:02:52Z",
+   "stargazersCount": 2379,
+   "updatedAt": "2026-09-29T22:14:48Z",
    "url": "https://github.com/beenuar/AiSOC",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "Professional cloud architecture diagrams with official AWS, Azure and GCP icons, from Terraform code or a plain JSON graph. MCP server + agent skill.",
-   "fullName": "patrickchugh/terravision",
-   "stargazersCount": 1638,
-   "updatedAt": "2026-09-28T21:27:07Z",
-   "url": "https://github.com/patrickchugh/terravision",
    "labels": [
     "mcp"
    ],
@@ -84,8 +73,8 @@
   {
    "description": "Claude Code skills that take a founder from idea to a live Claude Managed Agent: interview, scope a v0, launch in their own account, grade it, iterate, and schedule it",
    "fullName": "anthropics/launch-your-agent",
-   "stargazersCount": 1017,
-   "updatedAt": "2026-09-27T17:25:32Z",
+   "stargazersCount": 1020,
+   "updatedAt": "2026-09-29T19:44:44Z",
    "url": "https://github.com/anthropics/launch-your-agent",
    "labels": [
     "skills"
@@ -93,22 +82,11 @@
    "query": "claude code skills (updated)"
   },
   {
-   "description": "🦀 Rust API, 🐍 Python API, and 🤖 MCP Server for TP-Link Tapo smart devices",
-   "fullName": "mihai-dinculescu/tapo",
-   "stargazersCount": 809,
-   "updatedAt": "2026-09-28T21:16:32Z",
-   "url": "https://github.com/mihai-dinculescu/tapo",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
-   "description": "Memory for AI agents that learns what is wrong and stops repeating it. Mark a memory wrong and it stops coming back; newer facts replace old ones. Local SQLite store and MCP server, persistent across sessions; hippo init wires it into Claude Code, Codex, Cursor, OpenClaw, OpenCode and Pi. Zero runtime deps, MIT, opt-in hosted TypeSafe Jev reranker.",
-   "fullName": "kitfunso/hippo-memory",
-   "stargazersCount": 763,
-   "updatedAt": "2026-09-28T22:01:18Z",
-   "url": "https://github.com/kitfunso/hippo-memory",
+   "description": "Any file → clean Markdown for AI agents: PDF, Word, PowerPoint, Excel, EPUB, HTML and web pages, images (OCR), audio and video (metadata, subtitles, transcripts). A fast Rust MCP server and CLI that runs on your machine. No API key.",
+   "fullName": "SylphxAI/anymd",
+   "stargazersCount": 968,
+   "updatedAt": "2026-09-29T22:27:53Z",
+   "url": "https://github.com/SylphxAI/anymd",
    "labels": [
     "mcp"
    ],
@@ -117,8 +95,8 @@
   {
    "description": "A DeepSeek coding agent harness: persistent shell, Ultra subagents, auto approval, Chrome MCP and session telemetry",
    "fullName": "qiz029/dscode",
-   "stargazersCount": 735,
-   "updatedAt": "2026-09-28T04:33:35Z",
+   "stargazersCount": 864,
+   "updatedAt": "2026-09-29T17:34:06Z",
    "url": "https://github.com/qiz029/dscode",
    "labels": [
     "harness"
@@ -126,10 +104,21 @@
    "query": "coding agent harness"
   },
   {
+   "description": "🦀 Rust API, 🐍 Python API, and 🤖 MCP Server for TP-Link Tapo smart devices",
+   "fullName": "mihai-dinculescu/tapo",
+   "stargazersCount": 809,
+   "updatedAt": "2026-09-29T21:20:42Z",
+   "url": "https://github.com/mihai-dinculescu/tapo",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
    "description": "Open-source Claude Code skills for cold email and outbound sales. Grade campaigns, export Prospeo searches, scrape Google Maps — all from Claude Code.",
    "fullName": "growthenginenowoslawski/coldoutboundskills",
    "stargazersCount": 732,
-   "updatedAt": "2026-09-28T13:15:51Z",
+   "updatedAt": "2026-09-29T17:35:34Z",
    "url": "https://github.com/growthenginenowoslawski/coldoutboundskills",
    "labels": [
     "skills"
@@ -139,8 +128,8 @@
   {
    "description": "Fire your SEO·GEO agency 🔥 A Claude Code skill that audits and optimizes SEO·AEO·GEO·LLMO·NEO(Naver) by itself — 월 50~350만 원짜리 'AI 검색 최적화' 대행, AI 에이전트가 대체합니다",
    "fullName": "leopard627/fire-your-seo-agency",
-   "stargazersCount": 621,
-   "updatedAt": "2026-09-28T22:18:50Z",
+   "stargazersCount": 639,
+   "updatedAt": "2026-09-29T16:14:21Z",
    "url": "https://github.com/leopard627/fire-your-seo-agency",
    "labels": [
     "skills"
@@ -161,8 +150,8 @@
   {
    "description": "One prompt in, a looping animated 3D icon out — with real transparency. A Claude Code skill.",
    "fullName": "samyost1/3dicon",
-   "stargazersCount": 503,
-   "updatedAt": "2026-09-28T21:54:36Z",
+   "stargazersCount": 507,
+   "updatedAt": "2026-09-29T20:32:15Z",
    "url": "https://github.com/samyost1/3dicon",
    "labels": [
     "skills"
@@ -172,24 +161,13 @@
   {
    "description": "A collection of Claude Code skills for academic research review. These tools were developed by Claes Bäckman.",
    "fullName": "claesbackman/AI-research-feedback",
-   "stargazersCount": 484,
-   "updatedAt": "2026-09-27T06:03:47Z",
+   "stargazersCount": 485,
+   "updatedAt": "2026-09-29T21:54:23Z",
    "url": "https://github.com/claesbackman/AI-research-feedback",
    "labels": [
     "skills"
    ],
    "query": "claude code skills (updated)"
-  },
-  {
-   "description": "Local-first 3-in-1 AI memory layer & MCP server for Claude Code, Codex, Grok, Gemini, VS Code and Cursor. Fuses session history, codebase indexing & concept graphs in SQLite. Enables zero-cloud, privacy-first context & instant recall, supports multi-agent swarms.",
-   "fullName": "Lyellr88/marm-memory",
-   "stargazersCount": 407,
-   "updatedAt": "2026-09-28T22:00:04Z",
-   "url": "https://github.com/Lyellr88/marm-memory",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
   },
   {
    "description": "Claude Code skill for OWASP security best practices (2025-2026). Includes Top 10:2025, ASVS 5.0, Agentic AI security, and 20+ language-specific security quirks.",
@@ -203,15 +181,15 @@
    "query": "claude code skills (updated)"
   },
   {
-   "description": "Desktop automation MCP server — computer use for any AI agent: control screen, windows, mouse/keyboard, and Chrome via Model Context Protocol (stdio). Not a DSH plugin — DSH users install dsh-nuphus-mcp.",
-   "fullName": "mrpulor-gh/nuphus-mcp",
-   "stargazersCount": 315,
-   "updatedAt": "2026-09-28T21:39:58Z",
-   "url": "https://github.com/mrpulor-gh/nuphus-mcp",
+   "description": "",
+   "fullName": "EpicGames/unreal-engine-skills-for-claude-code-plugin",
+   "stargazersCount": 313,
+   "updatedAt": "2026-09-29T18:28:55Z",
+   "url": "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin",
    "labels": [
-    "mcp"
+    "skills"
    ],
-   "query": "mcp server (updated)"
+   "query": "claude code plugin (updated)"
   },
   {
    "description": "200+ production-ready Claude Code skills for sales, marketing, design, engineering, and AI agent architecture. Built and maintained by OneWave AI.",
@@ -225,32 +203,10 @@
    "query": "claude code skills (updated)"
   },
   {
-   "description": "",
-   "fullName": "EpicGames/unreal-engine-skills-for-claude-code-plugin",
-   "stargazersCount": 310,
-   "updatedAt": "2026-09-27T23:41:23Z",
-   "url": "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code plugin (updated)"
-  },
-  {
-   "description": "A Model Context Protocol (MCP) server that interfaces with Adobe Photoshop's Python API. Enables LLMs to execute image editing operations, automate workflows, and manage Photoshop tasks through structured commands and context-aware interactions.",
-   "fullName": "loonghao/photoshop-python-api-mcp-server",
-   "stargazersCount": 306,
-   "updatedAt": "2026-09-28T21:55:56Z",
-   "url": "https://github.com/loonghao/photoshop-python-api-mcp-server",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
    "description": "Claude Code skills for startup founders — product briefs, competitor analysis, pricing strategy, pitch decks, and GTM plans from your terminal",
    "fullName": "emotixco/claude-skills-founder",
-   "stargazersCount": 304,
-   "updatedAt": "2026-09-28T17:39:10Z",
+   "stargazersCount": 308,
+   "updatedAt": "2026-09-29T18:09:36Z",
    "url": "https://github.com/emotixco/claude-skills-founder",
    "labels": [
     "skills"
@@ -267,17 +223,6 @@
     "skills"
    ],
    "query": "claude code plugin (updated)"
-  },
-  {
-   "description": "Hugging Face MCP Server",
-   "fullName": "huggingface/hf-mcp-server",
-   "stargazersCount": 301,
-   "updatedAt": "2026-09-28T21:33:14Z",
-   "url": "https://github.com/huggingface/hf-mcp-server",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
   }
  ]
 }
