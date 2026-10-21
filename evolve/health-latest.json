@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T22:30:28.045Z",
+ "at": "2026-10-21T22:30:34.197Z",
  "results": [
   {
    "name": "dashboard-js-syntax",
@@ -21,9 +21,9 @@
   },
   {
    "name": "projects-data",
-   "ok": true,
-   "healed": true,
-   "note": "재빌드(gh 스냅샷(2026-10-20T21:03:27.763Z)보다 오래됨)"
+   "ok": false,
+   "healed": false,
+   "note": "gh 스냅샷(2026-10-21T21:03:28.130Z)보다 오래됨 재빌드 실패 spawnSync C:\\WINDOWS\\system32\\cmd.exe ETIMEDOUT"
   },
   {
    "name": "wiki-junction",
@@ -56,5 +56,7 @@
    "note": ""
   }
  ],
- "unresolved": []
+ "unresolved": [
+  "projects-data"
+ ]
 }
