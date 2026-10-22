@@ -1,12 +1,12 @@
 // 자동 생성 — build-projects.mjs (로컬 클론 스캔 + projects-raw.json(gh) + .launch/launch-status.json + ~/.wiki 링크)
-// 생성: 2026-10-21 22:31Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
+// 생성: 2026-10-22 22:31Z · 수동 편집 금지 (보정은 projects.overrides.json, 재생성: node build-projects.mjs)
 const CC_PROJECTS = {
- "generatedAt": "2026-10-21 22:31Z",
+ "generatedAt": "2026-10-22 22:31Z",
  "roots": [
   "C:\\workspace",
   "C:\\Users\\my\\workspace"
  ],
- "ghSnapshot": "2026-10-21T21:03:28.130Z",
+ "ghSnapshot": "2026-10-22T21:03:30.049Z",
  "stages": [
   "intake",
   "repo_bootstrap",
@@ -82,26 +82,26 @@ const CC_PROJECTS = {
    "lang": "TeX",
    "branch": "main",
    "dirty": 2,
-   "lastCommit": "2026-10-22",
-   "lastActivity": "2026-10-22",
+   "lastCommit": "2026-10-23",
+   "lastActivity": "2026-10-23",
    "daysSince": 0,
    "gh": {
     "url": "https://github.com/mqzkim/hermes-shared-knowledge",
     "private": true,
-    "pushedAt": "2026-10-21",
+    "pushedAt": "2026-10-22",
     "openIssues": 0,
-    "commits30d": 653,
+    "commits30d": 654,
     "recent": [
      {
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "message": "ops: refresh sena-1 telemetry metrics"
      },
      {
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "message": "ops: refresh sena-1 telemetry metrics"
      },
      {
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "message": "ops: refresh sena-1 telemetry metrics"
      }
     ],
@@ -132,15 +132,19 @@ const CC_PROJECTS = {
    "branch": "codex/android-qa-evidence-20260911",
    "dirty": 0,
    "lastCommit": "2026-09-12",
-   "lastActivity": "2026-10-21",
+   "lastActivity": "2026-10-22",
    "daysSince": 1,
    "gh": {
     "url": "https://github.com/mqzkim/llm-wiki",
     "private": true,
-    "pushedAt": "2026-10-21",
+    "pushedAt": "2026-10-22",
     "openIssues": 0,
-    "commits30d": 19,
+    "commits30d": 20,
     "recent": [
+     {
+      "date": "2026-10-22",
+      "message": "knowledge: update SCAIL native40 results and evidence boundaries"
+     },
      {
       "date": "2026-10-21",
       "message": "knowledge: update SCAIL guidance and precision source boundaries"
@@ -148,10 +152,6 @@ const CC_PROJECTS = {
      {
       "date": "2026-10-21",
       "message": "knowledge: update SCAIL prompt motion and input boundaries"
-     },
-     {
-      "date": "2026-10-21",
-      "message": "knowledge: update full tracking and affine verification boundaries"
      }
     ],
     "issueTitles": []
@@ -195,16 +195,20 @@ const CC_PROJECTS = {
    "lang": "JavaScript",
    "branch": "master",
    "dirty": 7,
-   "lastCommit": "2026-10-21",
-   "lastActivity": "2026-10-21",
+   "lastCommit": "2026-10-22",
+   "lastActivity": "2026-10-22",
    "daysSince": 1,
    "gh": {
     "url": "https://github.com/mqzkim/command-center",
     "private": false,
-    "pushedAt": "2026-10-20",
+    "pushedAt": "2026-10-21",
     "openIssues": 0,
     "commits30d": 30,
     "recent": [
+     {
+      "date": "2026-10-21",
+      "message": "evolve-run: 2026-10-22 pipeline artifacts"
+     },
      {
       "date": "2026-10-20",
       "message": "evolve-run: 2026-10-21 pipeline artifacts"
@@ -212,10 +216,6 @@ const CC_PROJECTS = {
      {
       "date": "2026-10-19",
       "message": "evolve-run: 2026-10-20 pipeline artifacts"
-     },
-     {
-      "date": "2026-10-18",
-      "message": "evolve-run: 2026-10-19 pipeline artifacts"
      }
     ],
     "issueTitles": []
@@ -255,7 +255,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-12",
-   "daysSince": 40,
+   "daysSince": 41,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\daesin-meogeo\\.launch\\launch-status.json",
@@ -373,7 +373,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-11",
-   "daysSince": 41,
+   "daysSince": 42,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\upperant-daily\\.launch\\launch-status.json",
@@ -494,7 +494,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-11",
-   "daysSince": 41,
+   "daysSince": 42,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\haru-han-tem\\.launch\\launch-status.json",
@@ -617,7 +617,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-11",
-   "daysSince": 41,
+   "daysSince": 42,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\diamond-get\\.launch\\launch-status.json",
@@ -736,7 +736,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-11",
-   "daysSince": 41,
+   "daysSince": 42,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\ddasa\\.launch\\launch-status.json",
@@ -855,7 +855,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-08",
-   "daysSince": 44,
+   "daysSince": 45,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\pet-rock\\.launch\\launch-status.json",
@@ -974,7 +974,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-08",
-   "daysSince": 44,
+   "daysSince": 45,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\coffee-cant-wait\\.launch\\launch-status.json",
@@ -1096,7 +1096,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-09-07",
-   "daysSince": 45,
+   "daysSince": 46,
    "gh": null,
    "toss": {
     "source": "C:\\Users\\my\\workspace\\ait-local-runner-20260912\\apps\\croco-fishing\\.launch\\launch-status.json",
@@ -1454,7 +1454,7 @@ const CC_PROJECTS = {
    "dirty": 3,
    "lastCommit": "2026-10-19",
    "lastActivity": "2026-10-19",
-   "daysSince": 3,
+   "daysSince": 4,
    "gh": null,
    "toss": null,
    "links": {
@@ -1484,7 +1484,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-29",
    "lastActivity": "2026-09-13",
-   "daysSince": 39,
+   "daysSince": 40,
    "gh": {
     "url": "https://github.com/mqzkim/today-task",
     "private": true,
@@ -1618,7 +1618,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-28",
    "lastActivity": "2026-09-13",
-   "daysSince": 39,
+   "daysSince": 40,
    "gh": {
     "url": "https://github.com/mqzkim/nailmap",
     "private": true,
@@ -1756,7 +1756,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-09-12",
    "lastActivity": "2026-09-13",
-   "daysSince": 39,
+   "daysSince": 40,
    "gh": {
     "url": "https://github.com/mqzkim/app-in-toss",
     "private": true,
@@ -1857,7 +1857,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-15",
    "lastActivity": "2026-09-12",
-   "daysSince": 40,
+   "daysSince": 41,
    "gh": {
     "url": "https://github.com/mqzkim/seoul-house-from-space",
     "private": true,
@@ -1993,7 +1993,7 @@ const CC_PROJECTS = {
    "dirty": 3,
    "lastCommit": "2026-09-12",
    "lastActivity": "2026-09-12",
-   "daysSince": 40,
+   "daysSince": 41,
    "gh": {
     "url": "https://github.com/mqzkim/helix-space",
     "private": true,
@@ -2047,7 +2047,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-09-12",
    "lastActivity": "2026-09-12",
-   "daysSince": 40,
+   "daysSince": 41,
    "gh": {
     "url": "https://github.com/mqzkim/cafe-review-reply-generator",
     "private": true,
@@ -2103,7 +2103,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-09-11",
    "lastActivity": "2026-09-11",
-   "daysSince": 41,
+   "daysSince": 42,
    "gh": null,
    "toss": null,
    "links": {
@@ -2131,7 +2131,7 @@ const CC_PROJECTS = {
    "dirty": 1,
    "lastCommit": "2026-08-23",
    "lastActivity": "2026-08-23",
-   "daysSince": 60,
+   "daysSince": 61,
    "gh": {
     "url": "https://github.com/mqzkim/subway-timer",
     "private": true,
@@ -2243,295 +2243,6 @@ const CC_PROJECTS = {
    }
   },
   {
-   "name": "launch-deck",
-   "repo": "launch-deck",
-   "displayName": null,
-   "desc": null,
-   "category": "side-project",
-   "significance": 2,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/launch-deck.git",
-   "lang": "Python",
-   "branch": "main",
-   "dirty": 1,
-   "lastCommit": "2026-08-23",
-   "lastActivity": "2026-08-23",
-   "daysSince": 60,
-   "gh": {
-    "url": "https://github.com/mqzkim/launch-deck",
-    "private": true,
-    "pushedAt": "2026-08-22",
-    "openIssues": 0,
-    "commits30d": 0,
-    "recent": [
-     {
-      "date": "2026-08-22",
-      "message": "plan(pipeline-c): re-verification follow-up — deploy evidence file, \\…"
-     },
-     {
-      "date": "2026-08-22",
-      "message": "gates(pipeline-c): G4 live probe writes gates/evidence/pipeline-c/nai…"
-     },
-     {
-      "date": "2026-08-22",
-      "message": "fix(proc): restore \\v1.0 in PS module path (literal 0x0B had been wri…"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": null,
-   "links": {
-    "local": "C:\\workspace\\launch-deck",
-    "github": "https://github.com/mqzkim/launch-deck",
-    "wiki": [
-     "concepts/standing-resolution-pattern.md",
-     "entities/agno-agentos.md",
-     "entities/launch-deck.md",
-     "internal/command-center-project-registry.md",
-     "_librarian/lint-queue.md"
-    ],
-    "launch": null,
-    "parent": null
-   }
-  },
-  {
-   "name": "launch-deck-gtest-fe1e2bc1",
-   "repo": "launch-deck-gtest-fe1e2bc1",
-   "displayName": null,
-   "desc": null,
-   "category": "side-project",
-   "significance": 2,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "lang": null,
-   "branch": null,
-   "dirty": null,
-   "lastCommit": null,
-   "lastActivity": "2026-08-22",
-   "daysSince": 61,
-   "gh": {
-    "url": "https://github.com/mqzkim/launch-deck-gtest-fe1e2bc1",
-    "private": true,
-    "pushedAt": "2026-08-22",
-    "openIssues": 1,
-    "commits30d": 0,
-    "recent": [
-     {
-      "date": "2026-08-22",
-      "message": "launch(mvp_prd): live checkpoint"
-     },
-     {
-      "date": "2026-08-22",
-      "message": "launch(repo_bootstrap): import idea artifacts"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": null,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/launch-deck-gtest-fe1e2bc1",
-   "links": {
-    "local": null,
-    "github": "https://github.com/mqzkim/launch-deck-gtest-fe1e2bc1",
-    "wiki": [],
-    "launch": null,
-    "parent": null
-   },
-   "noLocal": true
-  },
-  {
-   "name": "launch-deck-gtest-0a2ab922",
-   "repo": "launch-deck-gtest-0a2ab922",
-   "displayName": null,
-   "desc": null,
-   "category": "side-project",
-   "significance": 2,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "lang": null,
-   "branch": null,
-   "dirty": null,
-   "lastCommit": null,
-   "lastActivity": "2026-08-22",
-   "daysSince": 61,
-   "gh": {
-    "url": "https://github.com/mqzkim/launch-deck-gtest-0a2ab922",
-    "private": true,
-    "pushedAt": "2026-08-22",
-    "openIssues": 1,
-    "commits30d": 0,
-    "recent": [
-     {
-      "date": "2026-08-22",
-      "message": "launch(mvp_prd): live checkpoint"
-     },
-     {
-      "date": "2026-08-22",
-      "message": "launch(repo_bootstrap): import idea artifacts"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": null,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/launch-deck-gtest-0a2ab922",
-   "links": {
-    "local": null,
-    "github": "https://github.com/mqzkim/launch-deck-gtest-0a2ab922",
-    "wiki": [],
-    "launch": null,
-    "parent": null
-   },
-   "noLocal": true
-  },
-  {
-   "name": "launch-deck-gtest-165ccf97",
-   "repo": "launch-deck-gtest-165ccf97",
-   "displayName": null,
-   "desc": null,
-   "category": "side-project",
-   "significance": 2,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "lang": null,
-   "branch": null,
-   "dirty": null,
-   "lastCommit": null,
-   "lastActivity": "2026-08-22",
-   "daysSince": 61,
-   "gh": {
-    "url": "https://github.com/mqzkim/launch-deck-gtest-165ccf97",
-    "private": true,
-    "pushedAt": "2026-08-22",
-    "openIssues": 1,
-    "commits30d": 0,
-    "recent": [
-     {
-      "date": "2026-08-22",
-      "message": "launch(mvp_prd): live checkpoint"
-     },
-     {
-      "date": "2026-08-22",
-      "message": "launch(repo_bootstrap): import idea artifacts"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": null,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/launch-deck-gtest-165ccf97",
-   "links": {
-    "local": null,
-    "github": "https://github.com/mqzkim/launch-deck-gtest-165ccf97",
-    "wiki": [],
-    "launch": null,
-    "parent": null
-   },
-   "noLocal": true
-  },
-  {
-   "name": "launch-deck-gtest-smoke",
-   "repo": "launch-deck-gtest-smoke",
-   "displayName": null,
-   "desc": null,
-   "category": "side-project",
-   "significance": 2,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "lang": null,
-   "branch": null,
-   "dirty": null,
-   "lastCommit": null,
-   "lastActivity": "2026-08-22",
-   "daysSince": 61,
-   "gh": {
-    "url": "https://github.com/mqzkim/launch-deck-gtest-smoke",
-    "private": true,
-    "pushedAt": "2026-08-22",
-    "openIssues": 2,
-    "commits30d": 0,
-    "recent": [
-     {
-      "date": "2026-08-22",
-      "message": "launch(store_assets): draft console asset package"
-     },
-     {
-      "date": "2026-08-22",
-      "message": "launch(mvp_prd): lock MVP scope and mirror backlog issues"
-     },
-     {
-      "date": "2026-08-22",
-      "message": "launch(repo_bootstrap): record repository evidence"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": null,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/launch-deck-gtest-smoke",
-   "links": {
-    "local": null,
-    "github": "https://github.com/mqzkim/launch-deck-gtest-smoke",
-    "wiki": [],
-    "launch": null,
-    "parent": null
-   },
-   "noLocal": true
-  },
-  {
-   "name": "launch-deck-gtest-4c3f5fea",
-   "repo": "launch-deck-gtest-4c3f5fea",
-   "displayName": null,
-   "desc": null,
-   "category": "side-project",
-   "significance": 2,
-   "hidden": false,
-   "scaffold": false,
-   "legacy": false,
-   "lang": null,
-   "branch": null,
-   "dirty": null,
-   "lastCommit": null,
-   "lastActivity": "2026-08-22",
-   "daysSince": 61,
-   "gh": {
-    "url": "https://github.com/mqzkim/launch-deck-gtest-4c3f5fea",
-    "private": true,
-    "pushedAt": "2026-08-22",
-    "openIssues": 1,
-    "commits30d": 0,
-    "recent": [
-     {
-      "date": "2026-08-22",
-      "message": "launch(mvp_prd): live checkpoint"
-     },
-     {
-      "date": "2026-08-22",
-      "message": "launch(repo_bootstrap): import idea artifacts"
-     }
-    ],
-    "issueTitles": []
-   },
-   "toss": null,
-   "mine": true,
-   "remote": "https://github.com/mqzkim/launch-deck-gtest-4c3f5fea",
-   "links": {
-    "local": null,
-    "github": "https://github.com/mqzkim/launch-deck-gtest-4c3f5fea",
-    "wiki": [],
-    "launch": null,
-    "parent": null
-   },
-   "noLocal": true
-  },
-  {
    "name": "bamti-translator",
    "repo": "bamti-translator",
    "displayName": null,
@@ -2548,7 +2259,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-28",
    "lastActivity": "2026-08-22",
-   "daysSince": 61,
+   "daysSince": 62,
    "gh": {
     "url": "https://github.com/mqzkim/bamti-translator",
     "private": true,
@@ -2704,7 +2415,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-08-19",
    "lastActivity": "2026-08-19",
-   "daysSince": 64,
+   "daysSince": 65,
    "gh": {
     "url": "https://github.com/mqzkim/naeheunjeok",
     "private": true,
@@ -2855,7 +2566,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-08-11",
    "lastActivity": "2026-08-11",
-   "daysSince": 72,
+   "daysSince": 73,
    "gh": {
     "url": "https://github.com/mqzkim/kid-cheer-call",
     "private": true,
@@ -2990,7 +2701,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-08-03",
    "lastActivity": "2026-08-03",
-   "daysSince": 80,
+   "daysSince": 81,
    "gh": {
     "url": "https://github.com/mqzkim/eomma-choiae",
     "private": true,
@@ -3123,7 +2834,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-26",
    "lastActivity": "2026-07-26",
-   "daysSince": 88,
+   "daysSince": 89,
    "gh": null,
    "toss": null,
    "links": {
@@ -3151,7 +2862,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-15",
    "lastActivity": "2026-07-15",
-   "daysSince": 99,
+   "daysSince": 100,
    "gh": {
     "url": "https://github.com/mqzkim/conclusion-card",
     "private": true,
@@ -3286,7 +2997,7 @@ const CC_PROJECTS = {
    "dirty": 2,
    "lastCommit": "2026-07-11",
    "lastActivity": "2026-07-11",
-   "daysSince": 103,
+   "daysSince": 104,
    "gh": null,
    "toss": null,
    "links": {
@@ -3321,7 +3032,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-07-06",
-   "daysSince": 108,
+   "daysSince": 109,
    "gh": {
     "url": "https://github.com/mqzkim/diamond-gather",
     "private": true,
@@ -3384,7 +3095,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-07-06",
-   "daysSince": 108,
+   "daysSince": 109,
    "gh": {
     "url": "https://github.com/mqzkim/coffee",
     "private": true,
@@ -3459,7 +3170,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-05",
    "lastActivity": "2026-07-05",
-   "daysSince": 109,
+   "daysSince": 110,
    "gh": null,
    "toss": null,
    "links": {
@@ -3498,7 +3209,7 @@ const CC_PROJECTS = {
    "dirty": 2,
    "lastCommit": "2026-05-08",
    "lastActivity": "2026-05-08",
-   "daysSince": 167,
+   "daysSince": 168,
    "gh": {
     "url": "https://github.com/mqzkim/korean-review-tone-kit",
     "private": true,
@@ -3548,7 +3259,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-05-02",
-   "daysSince": 173,
+   "daysSince": 174,
    "gh": {
     "url": "https://github.com/mqzkim/tradingagents-sena-trader",
     "private": true,
@@ -3600,7 +3311,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-05-02",
    "lastActivity": "2026-05-02",
-   "daysSince": 173,
+   "daysSince": 174,
    "gh": {
     "url": "https://github.com/mqzkim/og-image-api",
     "private": true,
@@ -3656,7 +3367,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-04-23",
-   "daysSince": 182,
+   "daysSince": 183,
    "gh": {
     "url": "https://github.com/mqzkim/claude-max-codex-setup",
     "private": false,
@@ -3700,7 +3411,7 @@ const CC_PROJECTS = {
    "dirty": 10,
    "lastCommit": "2026-04-17",
    "lastActivity": "2026-04-17",
-   "daysSince": 188,
+   "daysSince": 189,
    "gh": {
     "url": "https://github.com/mqzkim/short_youtube",
     "private": true,
@@ -3749,7 +3460,7 @@ const CC_PROJECTS = {
    "dirty": 6,
    "lastCommit": "2026-04-16",
    "lastActivity": "2026-04-16",
-   "daysSince": 189,
+   "daysSince": 190,
    "gh": {
     "url": "https://github.com/mqzkim/helix-co",
     "private": true,
@@ -3807,7 +3518,7 @@ const CC_PROJECTS = {
    "dirty": 9,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-16",
-   "daysSince": 189,
+   "daysSince": 190,
    "gh": {
     "url": "https://github.com/mqzkim/harness-infra",
     "private": true,
@@ -3865,7 +3576,7 @@ const CC_PROJECTS = {
    "dirty": 1,
    "lastCommit": "2026-04-16",
    "lastActivity": "2026-04-16",
-   "daysSince": 189,
+   "daysSince": 190,
    "gh": null,
    "toss": null,
    "links": {
@@ -3900,7 +3611,7 @@ const CC_PROJECTS = {
    "dirty": 2,
    "lastCommit": "2026-04-15",
    "lastActivity": "2026-04-15",
-   "daysSince": 190,
+   "daysSince": 191,
    "gh": null,
    "toss": null,
    "links": {
@@ -3932,7 +3643,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-15",
    "lastActivity": "2026-04-15",
-   "daysSince": 190,
+   "daysSince": 191,
    "gh": null,
    "toss": null,
    "links": {
@@ -3960,7 +3671,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-15",
    "lastActivity": "2026-04-15",
-   "daysSince": 190,
+   "daysSince": 191,
    "gh": null,
    "toss": null,
    "links": {
@@ -3997,7 +3708,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-14",
    "lastActivity": "2026-04-14",
-   "daysSince": 191,
+   "daysSince": 192,
    "gh": null,
    "toss": null,
    "links": {
@@ -4025,7 +3736,7 @@ const CC_PROJECTS = {
    "dirty": 9,
    "lastCommit": "2026-04-13",
    "lastActivity": "2026-04-13",
-   "daysSince": 192,
+   "daysSince": 193,
    "gh": null,
    "toss": null,
    "links": {
@@ -4062,7 +3773,7 @@ const CC_PROJECTS = {
    "dirty": 10,
    "lastCommit": "2026-04-13",
    "lastActivity": "2026-04-13",
-   "daysSince": 192,
+   "daysSince": 193,
    "gh": {
     "url": "https://github.com/mqzkim/llm-lean-startup",
     "private": false,
@@ -4120,7 +3831,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-10",
    "lastActivity": "2026-04-10",
-   "daysSince": 195,
+   "daysSince": 196,
    "gh": null,
    "toss": null,
    "links": {
@@ -4157,7 +3868,7 @@ const CC_PROJECTS = {
    "dirty": 47,
    "lastCommit": "2026-04-10",
    "lastActivity": "2026-04-10",
-   "daysSince": 195,
+   "daysSince": 196,
    "gh": null,
    "toss": null,
    "links": {
@@ -4190,7 +3901,7 @@ const CC_PROJECTS = {
    "dirty": 5,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 196,
+   "daysSince": 197,
    "gh": null,
    "toss": null,
    "links": {
@@ -4227,7 +3938,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 196,
+   "daysSince": 197,
    "gh": null,
    "toss": null,
    "links": {
@@ -4263,7 +3974,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 196,
+   "daysSince": 197,
    "gh": null,
    "toss": null,
    "links": {
@@ -4300,7 +4011,7 @@ const CC_PROJECTS = {
    "dirty": 1,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 196,
+   "daysSince": 197,
    "gh": null,
    "toss": null,
    "links": {
@@ -4337,7 +4048,7 @@ const CC_PROJECTS = {
    "dirty": 22,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 196,
+   "daysSince": 197,
    "gh": null,
    "toss": null,
    "links": {
@@ -4374,7 +4085,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 196,
+   "daysSince": 197,
    "gh": null,
    "toss": null,
    "links": {
@@ -4411,7 +4122,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 196,
+   "daysSince": 197,
    "gh": null,
    "toss": null,
    "links": {
@@ -4448,7 +4159,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-09",
    "lastActivity": "2026-04-09",
-   "daysSince": 196,
+   "daysSince": 197,
    "gh": null,
    "toss": null,
    "links": {
@@ -4484,7 +4195,7 @@ const CC_PROJECTS = {
    "dirty": 9,
    "lastCommit": "2026-04-08",
    "lastActivity": "2026-04-08",
-   "daysSince": 197,
+   "daysSince": 198,
    "gh": null,
    "toss": null,
    "links": {
@@ -4521,7 +4232,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-08",
    "lastActivity": "2026-04-08",
-   "daysSince": 197,
+   "daysSince": 198,
    "gh": null,
    "toss": null,
    "links": {
@@ -4558,7 +4269,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-07",
    "lastActivity": "2026-04-07",
-   "daysSince": 198,
+   "daysSince": 199,
    "gh": null,
    "toss": null,
    "links": {
@@ -4595,7 +4306,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-07",
    "lastActivity": "2026-04-07",
-   "daysSince": 198,
+   "daysSince": 199,
    "gh": null,
    "toss": null,
    "links": {
@@ -4632,7 +4343,7 @@ const CC_PROJECTS = {
    "dirty": 23,
    "lastCommit": "2026-04-07",
    "lastActivity": "2026-04-07",
-   "daysSince": 198,
+   "daysSince": 199,
    "gh": null,
    "toss": null,
    "links": {
@@ -4672,7 +4383,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-07",
    "lastActivity": "2026-04-07",
-   "daysSince": 198,
+   "daysSince": 199,
    "gh": null,
    "toss": null,
    "links": {
@@ -4709,7 +4420,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-06",
    "lastActivity": "2026-04-06",
-   "daysSince": 199,
+   "daysSince": 200,
    "gh": null,
    "toss": null,
    "links": {
@@ -4746,7 +4457,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-03",
    "lastActivity": "2026-04-03",
-   "daysSince": 202,
+   "daysSince": 203,
    "gh": null,
    "toss": null,
    "links": {
@@ -4782,7 +4493,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-01",
    "lastActivity": "2026-04-01",
-   "daysSince": 204,
+   "daysSince": 205,
    "gh": null,
    "toss": null,
    "links": {
@@ -4810,7 +4521,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 206,
+   "daysSince": 207,
    "gh": null,
    "toss": null,
    "links": {
@@ -4843,7 +4554,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 206,
+   "daysSince": 207,
    "gh": null,
    "toss": null,
    "links": {
@@ -4880,7 +4591,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 206,
+   "daysSince": 207,
    "gh": null,
    "toss": null,
    "links": {
@@ -4916,7 +4627,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 206,
+   "daysSince": 207,
    "gh": null,
    "toss": null,
    "links": {
@@ -4953,7 +4664,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 206,
+   "daysSince": 207,
    "gh": null,
    "toss": null,
    "links": {
@@ -4990,7 +4701,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-30",
    "lastActivity": "2026-03-30",
-   "daysSince": 206,
+   "daysSince": 207,
    "gh": null,
    "toss": null,
    "links": {
@@ -5024,7 +4735,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-03-18",
    "lastActivity": "2026-03-18",
-   "daysSince": 218,
+   "daysSince": 219,
    "gh": null,
    "toss": null,
    "links": {
@@ -5061,7 +4772,7 @@ const CC_PROJECTS = {
    "dirty": 39,
    "lastCommit": "2026-03-06",
    "lastActivity": "2026-03-06",
-   "daysSince": 230,
+   "daysSince": 231,
    "gh": null,
    "toss": null,
    "links": {
@@ -5093,7 +4804,7 @@ const CC_PROJECTS = {
    "dirty": 7,
    "lastCommit": "2026-02-06",
    "lastActivity": "2026-02-06",
-   "daysSince": 258,
+   "daysSince": 259,
    "gh": null,
    "toss": null,
    "links": {
@@ -5130,7 +4841,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2025-07-22",
    "lastActivity": "2025-07-22",
-   "daysSince": 457,
+   "daysSince": 458,
    "gh": null,
    "toss": null,
    "links": {
@@ -5151,6 +4862,295 @@ const CC_PROJECTS = {
    }
   },
   {
+   "name": "launch-deck",
+   "repo": "launch-deck",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 1,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/launch-deck.git",
+   "lang": "Python",
+   "branch": "main",
+   "dirty": 1,
+   "lastCommit": "2026-08-23",
+   "lastActivity": "2026-08-23",
+   "daysSince": 61,
+   "gh": {
+    "url": "https://github.com/mqzkim/launch-deck",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 0,
+    "commits30d": 0,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "plan(pipeline-c): re-verification follow-up — deploy evidence file, \\…"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "gates(pipeline-c): G4 live probe writes gates/evidence/pipeline-c/nai…"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "fix(proc): restore \\v1.0 in PS module path (literal 0x0B had been wri…"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "links": {
+    "local": "C:\\workspace\\launch-deck",
+    "github": "https://github.com/mqzkim/launch-deck",
+    "wiki": [
+     "concepts/standing-resolution-pattern.md",
+     "entities/agno-agentos.md",
+     "entities/launch-deck.md",
+     "internal/command-center-project-registry.md",
+     "_librarian/lint-queue.md"
+    ],
+    "launch": null,
+    "parent": null
+   }
+  },
+  {
+   "name": "launch-deck-gtest-fe1e2bc1",
+   "repo": "launch-deck-gtest-fe1e2bc1",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 1,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "lang": null,
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-08-22",
+   "daysSince": 62,
+   "gh": {
+    "url": "https://github.com/mqzkim/launch-deck-gtest-fe1e2bc1",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 1,
+    "commits30d": 0,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "launch(mvp_prd): live checkpoint"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(repo_bootstrap): import idea artifacts"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/launch-deck-gtest-fe1e2bc1",
+   "links": {
+    "local": null,
+    "github": "https://github.com/mqzkim/launch-deck-gtest-fe1e2bc1",
+    "wiki": [],
+    "launch": null,
+    "parent": null
+   },
+   "noLocal": true
+  },
+  {
+   "name": "launch-deck-gtest-0a2ab922",
+   "repo": "launch-deck-gtest-0a2ab922",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 1,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "lang": null,
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-08-22",
+   "daysSince": 62,
+   "gh": {
+    "url": "https://github.com/mqzkim/launch-deck-gtest-0a2ab922",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 1,
+    "commits30d": 0,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "launch(mvp_prd): live checkpoint"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(repo_bootstrap): import idea artifacts"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/launch-deck-gtest-0a2ab922",
+   "links": {
+    "local": null,
+    "github": "https://github.com/mqzkim/launch-deck-gtest-0a2ab922",
+    "wiki": [],
+    "launch": null,
+    "parent": null
+   },
+   "noLocal": true
+  },
+  {
+   "name": "launch-deck-gtest-165ccf97",
+   "repo": "launch-deck-gtest-165ccf97",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 1,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "lang": null,
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-08-22",
+   "daysSince": 62,
+   "gh": {
+    "url": "https://github.com/mqzkim/launch-deck-gtest-165ccf97",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 1,
+    "commits30d": 0,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "launch(mvp_prd): live checkpoint"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(repo_bootstrap): import idea artifacts"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/launch-deck-gtest-165ccf97",
+   "links": {
+    "local": null,
+    "github": "https://github.com/mqzkim/launch-deck-gtest-165ccf97",
+    "wiki": [],
+    "launch": null,
+    "parent": null
+   },
+   "noLocal": true
+  },
+  {
+   "name": "launch-deck-gtest-smoke",
+   "repo": "launch-deck-gtest-smoke",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 1,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "lang": null,
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-08-22",
+   "daysSince": 62,
+   "gh": {
+    "url": "https://github.com/mqzkim/launch-deck-gtest-smoke",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 2,
+    "commits30d": 0,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "launch(store_assets): draft console asset package"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(mvp_prd): lock MVP scope and mirror backlog issues"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(repo_bootstrap): record repository evidence"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/launch-deck-gtest-smoke",
+   "links": {
+    "local": null,
+    "github": "https://github.com/mqzkim/launch-deck-gtest-smoke",
+    "wiki": [],
+    "launch": null,
+    "parent": null
+   },
+   "noLocal": true
+  },
+  {
+   "name": "launch-deck-gtest-4c3f5fea",
+   "repo": "launch-deck-gtest-4c3f5fea",
+   "displayName": null,
+   "desc": null,
+   "category": "side-project",
+   "significance": 1,
+   "hidden": false,
+   "scaffold": false,
+   "legacy": false,
+   "lang": null,
+   "branch": null,
+   "dirty": null,
+   "lastCommit": null,
+   "lastActivity": "2026-08-22",
+   "daysSince": 62,
+   "gh": {
+    "url": "https://github.com/mqzkim/launch-deck-gtest-4c3f5fea",
+    "private": true,
+    "pushedAt": "2026-08-22",
+    "openIssues": 1,
+    "commits30d": 0,
+    "recent": [
+     {
+      "date": "2026-08-22",
+      "message": "launch(mvp_prd): live checkpoint"
+     },
+     {
+      "date": "2026-08-22",
+      "message": "launch(repo_bootstrap): import idea artifacts"
+     }
+    ],
+    "issueTitles": []
+   },
+   "toss": null,
+   "mine": true,
+   "remote": "https://github.com/mqzkim/launch-deck-gtest-4c3f5fea",
+   "links": {
+    "local": null,
+    "github": "https://github.com/mqzkim/launch-deck-gtest-4c3f5fea",
+    "wiki": [],
+    "launch": null,
+    "parent": null
+   },
+   "noLocal": true
+  },
+  {
    "name": "agent-factory",
    "repo": "agent-factory",
    "displayName": null,
@@ -5167,7 +5167,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-08-22",
    "lastActivity": "2026-08-22",
-   "daysSince": 61,
+   "daysSince": 62,
    "gh": {
     "url": "https://github.com/mqzkim/agent-factory",
     "private": true,
@@ -5225,7 +5225,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-27",
    "lastActivity": "2026-07-27",
-   "daysSince": 87,
+   "daysSince": 88,
    "gh": {
     "url": "https://github.com/mqzkim/nail-map",
     "private": true,
@@ -5266,7 +5266,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-07-12",
    "lastActivity": "2026-07-12",
-   "daysSince": 102,
+   "daysSince": 103,
    "gh": {
     "url": "https://github.com/mqzkim/seoul-house-from-space-support",
     "private": false,
@@ -5307,7 +5307,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-05-03",
    "lastActivity": "2026-05-03",
-   "daysSince": 172,
+   "daysSince": 173,
    "gh": {
     "url": "https://github.com/mqzkim/hermes-agent",
     "private": false,
@@ -5343,7 +5343,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-05-02",
-   "daysSince": 173,
+   "daysSince": 174,
    "gh": {
     "url": "https://github.com/mqzkim/mqzkim.github.io",
     "private": false,
@@ -5393,7 +5393,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-05-01",
-   "daysSince": 174,
+   "daysSince": 175,
    "gh": {
     "url": "https://github.com/mqzkim/hermes-agent-board",
     "private": true,
@@ -5443,7 +5443,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-04-30",
-   "daysSince": 175,
+   "daysSince": 176,
    "gh": {
     "url": "https://github.com/mqzkim/tuist",
     "private": false,
@@ -5480,7 +5480,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-19",
    "lastActivity": "2026-04-19",
-   "daysSince": 186,
+   "daysSince": 187,
    "gh": {
     "url": "https://github.com/mqzkim/beautify-me",
     "private": true,
@@ -5527,7 +5527,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-04-18",
-   "daysSince": 187,
+   "daysSince": 188,
    "gh": {
     "url": "https://github.com/mqzkim/llm-usage",
     "private": true,
@@ -5573,7 +5573,7 @@ const CC_PROJECTS = {
    "dirty": null,
    "lastCommit": null,
    "lastActivity": "2026-04-18",
-   "daysSince": 187,
+   "daysSince": 188,
    "gh": {
     "url": "https://github.com/mqzkim/roastsmysite",
     "private": true,
@@ -5625,7 +5625,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-18",
    "lastActivity": "2026-04-18",
-   "daysSince": 187,
+   "daysSince": 188,
    "gh": {
     "url": "https://github.com/mqzkim/briefme",
     "private": true,
@@ -5679,7 +5679,7 @@ const CC_PROJECTS = {
    "dirty": 7,
    "lastCommit": "2026-04-16",
    "lastActivity": "2026-04-16",
-   "daysSince": 189,
+   "daysSince": 190,
    "gh": {
     "url": "https://github.com/mqzkim/community-growth-hacker",
     "private": true,
@@ -5729,7 +5729,7 @@ const CC_PROJECTS = {
    "dirty": 0,
    "lastCommit": "2026-04-13",
    "lastActivity": "2026-04-13",
-   "daysSince": 192,
+   "daysSince": 193,
    "gh": {
     "url": "https://github.com/mqzkim/gst",
     "private": true,
