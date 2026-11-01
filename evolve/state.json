@@ -1,7 +1,7 @@
 {
  "version": 1,
- "lastRun": "2026-10-30T22:31:14.377Z",
- "consecutiveFailures": 40,
+ "lastRun": "2026-10-31T22:31:39.621Z",
+ "consecutiveFailures": 41,
  "runs": [
   {
    "date": "2026-08-23",
@@ -836,8 +836,8 @@
  "openFindings": [
   {
    "check": "projects-data",
-   "note": "gh 스냅샷(2026-10-31T21:03:23.765Z)보다 오래됨 재빌드 실패 spawnSync C:\\WINDOWS\\system32\\cmd.exe ETIMEDOUT",
-   "at": "2026-10-31T22:30:33.080Z"
+   "note": "gh 스냅샷(2026-11-01T21:03:23.135Z)보다 오래됨 재빌드 실패 spawnSync C:\\WINDOWS\\system32\\cmd.exe ETIMEDOUT",
+   "at": "2026-11-01T22:30:32.452Z"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T22:30:33.080Z",
+ "at": "2026-11-01T22:30:32.452Z",
  "results": [
   {
    "name": "dashboard-js-syntax",
@@ -23,7 +23,7 @@
    "name": "projects-data",
    "ok": false,
    "healed": false,
-   "note": "gh 스냅샷(2026-10-31T21:03:23.765Z)보다 오래됨 재빌드 실패 spawnSync C:\\WINDOWS\\system32\\cmd.exe ETIMEDOUT"
+   "note": "gh 스냅샷(2026-11-01T21:03:23.135Z)보다 오래됨 재빌드 실패 spawnSync C:\\WINDOWS\\system32\\cmd.exe ETIMEDOUT"
   },
   {
    "name": "wiki-junction",
