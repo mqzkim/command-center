@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-03T22:30:49.577Z",
+ "generatedAt": "2026-11-04T22:30:56.711Z",
  "minStars": 500,
  "minStarsRecent": 300,
  "queries": [
@@ -31,17 +31,17 @@
   "llm agent orchestration",
   "mcp server"
  ],
- "scanned": 225,
+ "scanned": 227,
  "dedup": {
   "wikiCatalog": 3,
-  "alreadySeen": 171
+  "alreadySeen": 172
  },
  "candidates": [
   {
    "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview prep and an application tracker. It helps you fill in each application; you press Submit. Runs locally in Codex, OpenCode and other AI CLIs, or as a Claude Code plugin.",
    "fullName": "career-ops-hq/career-ops",
-   "stargazersCount": 79832,
-   "updatedAt": "2026-11-03T22:29:57Z",
+   "stargazersCount": 80179,
+   "updatedAt": "2026-11-04T22:28:15Z",
    "url": "https://github.com/career-ops-hq/career-ops",
    "labels": [
     "skills"
@@ -51,8 +51,8 @@
   {
    "description": "2,884+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.",
    "fullName": "sickn33/agentic-awesome-skills",
-   "stargazersCount": 49102,
-   "updatedAt": "2026-11-03T22:29:54Z",
+   "stargazersCount": 49153,
+   "updatedAt": "2026-11-04T21:47:28Z",
    "url": "https://github.com/sickn33/agentic-awesome-skills",
    "labels": [
     "skills"
@@ -62,8 +62,8 @@
   {
    "description": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
    "fullName": "DayuanJiang/next-ai-draw-io",
-   "stargazersCount": 36649,
-   "updatedAt": "2026-11-03T21:49:52Z",
+   "stargazersCount": 36684,
+   "updatedAt": "2026-11-04T21:32:02Z",
    "url": "https://github.com/DayuanJiang/next-ai-draw-io",
    "labels": [
     "mcp"
@@ -73,8 +73,8 @@
   {
    "description": "AI search engine and MCP server for bots and agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
    "fullName": "xerj-org/xerj",
-   "stargazersCount": 18932,
-   "updatedAt": "2026-11-03T22:24:52Z",
+   "stargazersCount": 19081,
+   "updatedAt": "2026-11-04T22:30:23Z",
    "url": "https://github.com/xerj-org/xerj",
    "labels": [
     "mcp"
@@ -84,8 +84,8 @@
   {
    "description": "The most complete open-source travel planner: real-time collaboration, bookings, budgets, packing lists, journals, offline PWA, SSO and an AI-ready MCP server, with planet-wide place search and routing built in.",
    "fullName": "liketrek/TREK",
-   "stargazersCount": 15356,
-   "updatedAt": "2026-11-03T22:05:30Z",
+   "stargazersCount": 15370,
+   "updatedAt": "2026-11-04T21:56:58Z",
    "url": "https://github.com/liketrek/TREK",
    "labels": [
     "mcp"
@@ -95,8 +95,8 @@
   {
    "description": "Open-source, self-hosted alerting for metrics, logs, and databases. Includes a built-in AI agent and MCP server.",
    "fullName": "ccfos/nightingale",
-   "stargazersCount": 13437,
-   "updatedAt": "2026-11-03T17:06:05Z",
+   "stargazersCount": 13439,
+   "updatedAt": "2026-11-04T16:06:03Z",
    "url": "https://github.com/ccfos/nightingale",
    "labels": [
     "mcp"
@@ -106,8 +106,8 @@
   {
    "description": "Mobile MCP: let AI agents drive your iOS and Android apps. MCP server for simulators, emulators and real devices. Works with Claude Code, Codex, Cursor and any MCP client.",
    "fullName": "mobile-next/mobile-mcp",
-   "stargazersCount": 10268,
-   "updatedAt": "2026-11-03T21:58:15Z",
+   "stargazersCount": 10296,
+   "updatedAt": "2026-11-04T21:54:05Z",
    "url": "https://github.com/mobile-next/mobile-mcp",
    "labels": [
     "mcp"
@@ -117,8 +117,8 @@
   {
    "description": "3,400+ curated icons and logos for dashboards and AI agents. SVG, PNG and WEBP on a free CDN, plus an MCP server for Claude Code, Codex, ChatGPT, Cursor, Hermes and OpenClaw.",
    "fullName": "homarr-labs/dashboard-icons",
-   "stargazersCount": 8994,
-   "updatedAt": "2026-11-03T21:31:54Z",
+   "stargazersCount": 9004,
+   "updatedAt": "2026-11-04T21:22:52Z",
    "url": "https://github.com/homarr-labs/dashboard-icons",
    "labels": [
     "mcp"
@@ -128,8 +128,8 @@
   {
    "description": "Free SEO MCP server + open-source SEO and GEO skills for Claude: keyword research, rank tracking, audits, backlinks, AI visibility on your real GSC/GA4/ads data. claude mcp add ryze --transport http https://connector.get-ryze.ai/mcp",
    "fullName": "Ryze-AI-Adgent/open-seo-mcp-skills",
-   "stargazersCount": 8760,
-   "updatedAt": "2026-11-03T21:56:46Z",
+   "stargazersCount": 8810,
+   "updatedAt": "2026-11-04T22:24:46Z",
    "url": "https://github.com/Ryze-AI-Adgent/open-seo-mcp-skills",
    "labels": [
     "mcp"
@@ -139,8 +139,8 @@
   {
    "description": "Z.ai's coding agent harness. Powerful, intelligent, extensible.",
    "fullName": "zai-org/ZCode",
-   "stargazersCount": 8455,
-   "updatedAt": "2026-11-03T22:25:30Z",
+   "stargazersCount": 8484,
+   "updatedAt": "2026-11-04T21:28:31Z",
    "url": "https://github.com/zai-org/ZCode",
    "labels": [
     "harness"
@@ -150,8 +150,8 @@
   {
    "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
    "fullName": "beenuar/AiSOC",
-   "stargazersCount": 6981,
-   "updatedAt": "2026-11-03T22:25:39Z",
+   "stargazersCount": 7231,
+   "updatedAt": "2026-11-04T22:26:44Z",
    "url": "https://github.com/beenuar/AiSOC",
    "labels": [
     "mcp"
@@ -161,24 +161,13 @@
   {
    "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
    "fullName": "patch-gg/pixelfx",
-   "stargazersCount": 4083,
-   "updatedAt": "2026-11-03T22:30:25Z",
+   "stargazersCount": 4678,
+   "updatedAt": "2026-11-04T22:27:35Z",
    "url": "https://github.com/patch-gg/pixelfx",
    "labels": [
     "skills"
    ],
    "query": "claude code skills"
-  },
-  {
-   "description": "Open-source, self-hosted AI penetration testing framework: maps your attack surface into a graph, autonomously exploits it from a Kali sandbox with human approval gates, and opens PRs that fix what it finds. MCP both ways: plug in any MCP server as a tool, or drive RedAmon from Claude Code or your own agent.",
-   "fullName": "samugit83/redamon",
-   "stargazersCount": 3277,
-   "updatedAt": "2026-11-03T21:55:27Z",
-   "url": "https://github.com/samugit83/redamon",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
   },
   {
    "description": "The original open-source Vuesion 5: a Nuxt 3 boilerplate with design system, Storybook, Figma UI kit, authentication and testing. MIT licensed, no longer maintained. Active development continues as the commercial Vuesion on Nuxt 4 with workspaces, billing and AI agent skills.",
@@ -192,17 +181,6 @@
    "query": "ai agent skills"
   },
   {
-   "description": "Open-source manufacturing ERP, MES and QMS. Quoting, MRP, inventory, shop floor, quality and lot/serial traceability on one Postgres schema, with a REST API and MCP server. Self-host or use Carbon Cloud.",
-   "fullName": "crbnos/carbon",
-   "stargazersCount": 2793,
-   "updatedAt": "2026-11-03T22:24:31Z",
-   "url": "https://github.com/crbnos/carbon",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
    "description": "A Spec-Driven Multi-Agent Framework for AI-Assisted Software Engineering",
    "fullName": "sdi2200262/agentic-project-management",
    "stargazersCount": 2450,
@@ -214,21 +192,10 @@
    "query": "multi-agent framework"
   },
   {
-   "description": "Personal AI agent harness for macOS, Windows, Linux, Android & iOS. New: Skales Scout, lasting AI agents that keep working on your desk, each optionally in its own virtual machine. Chat, coding (Skales Code), Flow, automations, computer use, browser, voice, MCP, local LLMs (Ollama). BYOK, 26 providers. No Docker, no terminal.",
-   "fullName": "skalesapp/skales",
-   "stargazersCount": 2225,
-   "updatedAt": "2026-11-03T19:33:21Z",
-   "url": "https://github.com/skalesapp/skales",
-   "labels": [
-    "harness"
-   ],
-   "query": "ai agent harness"
-  },
-  {
    "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
    "fullName": "scenario-labs/skills",
-   "stargazersCount": 1966,
-   "updatedAt": "2026-11-03T22:25:38Z",
+   "stargazersCount": 2383,
+   "updatedAt": "2026-11-04T22:30:22Z",
    "url": "https://github.com/scenario-labs/skills",
    "labels": [
     "skills"
@@ -236,32 +203,21 @@
    "query": "ai agent skills"
   },
   {
-   "description": "",
-   "fullName": "EpicGames/unreal-engine-skills-for-claude-code-plugin",
-   "stargazersCount": 1885,
-   "updatedAt": "2026-11-03T22:18:22Z",
-   "url": "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin",
+   "description": "Personal AI agent harness for macOS, Windows, Linux, Android & iOS. New: Skales Scout, lasting AI agents that keep working on your desk, each optionally in its own virtual machine. Chat, coding (Skales Code), Flow, automations, computer use, browser, voice, MCP, local LLMs (Ollama). BYOK, 26 providers. No Docker, no terminal.",
+   "fullName": "skalesapp/skales",
+   "stargazersCount": 2226,
+   "updatedAt": "2026-11-04T02:28:58Z",
+   "url": "https://github.com/skalesapp/skales",
    "labels": [
-    "skills"
+    "harness"
    ],
-   "query": "claude code plugin"
-  },
-  {
-   "description": "Git for Global Law: the law of 700+ jurisdictions in git, each country's record a submodule where every commit is one change, dated by when it took effect and credited to the law that made it; read any provision on any date with tools/law.py or the MCP server",
-   "fullName": "lexifina/global-law",
-   "stargazersCount": 1737,
-   "updatedAt": "2026-11-03T22:30:03Z",
-   "url": "https://github.com/lexifina/global-law",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
+   "query": "ai agent harness"
   },
   {
    "description": "A Claude Code skill that turns any machine into a 3D simulator you can take apart",
    "fullName": "elvarofficial/teardown",
-   "stargazersCount": 1621,
-   "updatedAt": "2026-11-03T22:24:46Z",
+   "stargazersCount": 1895,
+   "updatedAt": "2026-11-04T22:19:39Z",
    "url": "https://github.com/elvarofficial/teardown",
    "labels": [
     "skills"
@@ -269,10 +225,21 @@
    "query": "claude code skills"
   },
   {
+   "description": "",
+   "fullName": "EpicGames/unreal-engine-skills-for-claude-code-plugin",
+   "stargazersCount": 1891,
+   "updatedAt": "2026-11-04T20:22:47Z",
+   "url": "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code plugin"
+  },
+  {
    "description": "Reusable AI agent skills for software factories: explore ideas, write specs, implement, review, and run autonomous research. Works with Claude Code, Codex, and other skill-compatible agents.",
    "fullName": "dzhng/skills",
-   "stargazersCount": 1398,
-   "updatedAt": "2026-11-03T16:23:44Z",
+   "stargazersCount": 1401,
+   "updatedAt": "2026-11-04T21:12:06Z",
    "url": "https://github.com/dzhng/skills",
    "labels": [
     "skills"
@@ -282,8 +249,8 @@
   {
    "description": "Claude Code skill kit for premium AI-assisted business videos: independent critic loop, motion principles from 28 launch films, quality bar, sound design, business offers, Three.js patterns, scripts",
    "fullName": "echris6/motion-video-kit",
-   "stargazersCount": 1342,
-   "updatedAt": "2026-11-03T19:22:09Z",
+   "stargazersCount": 1350,
+   "updatedAt": "2026-11-04T19:56:30Z",
    "url": "https://github.com/echris6/motion-video-kit",
    "labels": [
     "skills"
@@ -294,7 +261,7 @@
    "description": "The official TanStack CLI - Project Scaffolding, MCP Server, Agent Skills Installation, etc",
    "fullName": "TanStack/cli",
    "stargazersCount": 1302,
-   "updatedAt": "2026-11-03T21:26:28Z",
+   "updatedAt": "2026-11-04T21:26:16Z",
    "url": "https://github.com/TanStack/cli",
    "labels": [
     "mcp"
@@ -304,8 +271,8 @@
   {
    "description": "When Claude keeps giving you bad answers, make 100 versions of it fight to the death. Same task, 100 different strategies, a bracket, one answer left. Free Claude Code skill.",
    "fullName": "Jakeschincariol/arena-skill",
-   "stargazersCount": 1233,
-   "updatedAt": "2026-11-03T22:10:23Z",
+   "stargazersCount": 1250,
+   "updatedAt": "2026-11-04T20:54:53Z",
    "url": "https://github.com/Jakeschincariol/arena-skill",
    "labels": [
     "skills"
@@ -315,8 +282,8 @@
   {
    "description": "A comprehensive collection of Claude Code skills for modern web development, specializing in 3D graphics, animation, and interactive web experiences.",
    "fullName": "freshtechbro/claudedesignskills",
-   "stargazersCount": 1229,
-   "updatedAt": "2026-11-03T21:17:30Z",
+   "stargazersCount": 1247,
+   "updatedAt": "2026-11-04T22:08:19Z",
    "url": "https://github.com/freshtechbro/claudedesignskills",
    "labels": [
     "skills"
@@ -326,9 +293,20 @@
   {
    "description": "Fast, lightweight Firecrawl/Tavily alternative in Rust. Web scraper, crawler & search API with MCP server for AI agents. Drop-in Firecrawl-compatible API (/scrape, /crawl, /search). 2.3x faster than Tavily, 1.5x faster than Firecrawl in 1K-URL benchmarks. 6 MB RAM, single binary. Self-host or use managed cloud.",
    "fullName": "fastcrw/crw",
-   "stargazersCount": 1220,
-   "updatedAt": "2026-11-03T22:19:30Z",
+   "stargazersCount": 1226,
+   "updatedAt": "2026-11-04T22:26:36Z",
    "url": "https://github.com/fastcrw/crw",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "Don't reverse engineer it twice. 17,000+ open-source tools built by reverse engineering closed apps, APIs, devices, protocols, file formats, games and AI tools. Search site + agent skill + MCP server, refreshed nightly.",
+   "fullName": "alexgaoth/awesome-reverse-engineered",
+   "stargazersCount": 1219,
+   "updatedAt": "2026-11-04T21:17:48Z",
+   "url": "https://github.com/alexgaoth/awesome-reverse-engineered",
    "labels": [
     "mcp"
    ],
@@ -337,24 +315,13 @@
   {
    "description": "A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same.",
    "fullName": "NiazMorshed2007/reanimate",
-   "stargazersCount": 1085,
-   "updatedAt": "2026-11-03T22:17:14Z",
+   "stargazersCount": 1171,
+   "updatedAt": "2026-11-04T22:01:40Z",
    "url": "https://github.com/NiazMorshed2007/reanimate",
    "labels": [
     "skills"
    ],
    "query": "claude code skills (updated)"
-  },
-  {
-   "description": "Any file → clean Markdown for AI agents: PDF, Word, PowerPoint, Excel, EPUB, HTML and web pages, images (OCR), audio and video (metadata, subtitles, transcripts). A fast Rust MCP server and CLI that runs on your machine. No API key.",
-   "fullName": "SylphxAI/anymd",
-   "stargazersCount": 1061,
-   "updatedAt": "2026-11-03T21:45:51Z",
-   "url": "https://github.com/SylphxAI/anymd",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
   },
   {
    "description": "A DeepSeek coding agent harness: persistent shell, Ultra subagents, auto approval, Chrome MCP and session telemetry",
@@ -370,8 +337,8 @@
   {
    "description": "Fire your SEO·GEO agency 🔥 A Claude Code skill that audits and optimizes SEO·AEO·GEO·LLMO·NEO(Naver) by itself — 월 50~350만 원짜리 'AI 검색 최적화' 대행, AI 에이전트가 대체합니다",
    "fullName": "leopard627/fire-your-seo-agency",
-   "stargazersCount": 992,
-   "updatedAt": "2026-11-03T12:12:19Z",
+   "stargazersCount": 993,
+   "updatedAt": "2026-11-04T13:32:18Z",
    "url": "https://github.com/leopard627/fire-your-seo-agency",
    "labels": [
     "skills"
@@ -379,21 +346,32 @@
    "query": "claude code skills (updated)"
   },
   {
-   "description": "Scenario for Blender: AI images, video, 3D and PBR materials in the viewport, plus a local MCP server for agents. Blender 5.0+ extension, GPL-3.0-or-later.",
-   "fullName": "scenario-labs/blender-plugin",
-   "stargazersCount": 939,
-   "updatedAt": "2026-11-03T21:08:26Z",
-   "url": "https://github.com/scenario-labs/blender-plugin",
+   "description": "🦀 Rust API, 🐍 Python API, and 🤖 MCP Server for TP-Link Tapo smart devices",
+   "fullName": "mihai-dinculescu/tapo",
+   "stargazersCount": 867,
+   "updatedAt": "2026-11-04T21:10:48Z",
+   "url": "https://github.com/mihai-dinculescu/tapo",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
+   "description": "Claude Code skills for Apple platform development (iOS, macOS, iPadOS) — product validation, code generation, App Store optimization, and more",
+   "fullName": "rshankras/claude-code-apple-skills",
+   "stargazersCount": 860,
+   "updatedAt": "2026-11-04T16:32:19Z",
+   "url": "https://github.com/rshankras/claude-code-apple-skills",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code skills (updated)"
+  },
+  {
    "description": "Claude Code skills for startup founders — product briefs, competitor analysis, pricing strategy, pitch decks, and GTM plans from your terminal",
    "fullName": "emotixco/claude-skills-founder",
-   "stargazersCount": 776,
-   "updatedAt": "2026-11-03T21:39:17Z",
+   "stargazersCount": 780,
+   "updatedAt": "2026-11-04T16:38:22Z",
    "url": "https://github.com/emotixco/claude-skills-founder",
    "labels": [
     "skills"
@@ -401,43 +379,21 @@
    "query": "claude code skills (updated)"
   },
   {
-   "description": "A local AI agent harness in Go that runs 24/7 with auto-built tools, MCP, and Ollama",
-   "fullName": "pardnchiu/Agenvoy",
-   "stargazersCount": 753,
-   "updatedAt": "2026-11-03T22:27:15Z",
-   "url": "https://github.com/pardnchiu/Agenvoy",
-   "labels": [
-    "harness"
-   ],
-   "query": "ai agent harness"
-  },
-  {
-   "description": "MCP server for AutoCAD LT v3.1: freehand AutoLISP execution, 8 consolidated tools, File IPC + ezdxf backends, focus-free dispatch, undo/redo, P&ID symbols, and robust IPC with ESC prefix and UTF-8 fallback. Companion agent skill: puran-water/autocad-drafting",
-   "fullName": "puran-water/autocad-mcp",
-   "stargazersCount": 620,
-   "updatedAt": "2026-11-03T22:19:49Z",
-   "url": "https://github.com/puran-water/autocad-mcp",
+   "description": "SEO for agent-native teams. Your agent gets your real Search Console, Google Analytics, Bing and crawl data through an MCP server and CLI, so it stops guessing.",
+   "fullName": "iannuttall/seo",
+   "stargazersCount": 605,
+   "updatedAt": "2026-11-04T22:25:03Z",
+   "url": "https://github.com/iannuttall/seo",
    "labels": [
     "mcp"
    ],
    "query": "mcp server (updated)"
   },
   {
-   "description": "Claudemy: an open-source alternative to Udemy and Coursera. Give Claude a topic, it researches the web and builds a course of 2-minute audio lessons with cited sources. A free Claude Code skill.",
-   "fullName": "assafkip/claudemy",
-   "stargazersCount": 604,
-   "updatedAt": "2026-11-03T21:36:11Z",
-   "url": "https://github.com/assafkip/claudemy",
-   "labels": [
-    "skills"
-   ],
-   "query": "claude code skills (updated)"
-  },
-  {
    "description": "The lossless, headless coding agent harness. One 7 MB static binary, four tools, plain stdin/stdout, no silent cuts.",
    "fullName": "Balanov/uncut",
-   "stargazersCount": 591,
-   "updatedAt": "2026-11-03T21:34:17Z",
+   "stargazersCount": 600,
+   "updatedAt": "2026-11-04T12:19:18Z",
    "url": "https://github.com/Balanov/uncut",
    "labels": [
     "harness"
@@ -445,10 +401,21 @@
    "query": "coding agent harness"
   },
   {
+   "description": "A local AI agent harness in Go that runs 24/7 with auto-built tools, MCP, and Ollama",
+   "fullName": "pardnchiu/Agenvoy",
+   "stargazersCount": 596,
+   "updatedAt": "2026-11-04T22:18:33Z",
+   "url": "https://github.com/pardnchiu/Agenvoy",
+   "labels": [
+    "harness"
+   ],
+   "query": "ai agent harness"
+  },
+  {
    "description": "A training-free multi-agent framework for recursive self-improvement in new environments through broad-then-deep autonomous exploration and reusable memory.",
    "fullName": "AetherLabsAI/RSIAgent",
-   "stargazersCount": 587,
-   "updatedAt": "2026-11-03T14:21:21Z",
+   "stargazersCount": 589,
+   "updatedAt": "2026-11-04T22:22:57Z",
    "url": "https://github.com/AetherLabsAI/RSIAgent",
    "labels": [
     "orchestration"
@@ -467,22 +434,33 @@
    "query": "claude code skills (updated)"
   },
   {
-   "description": "A collection of Claude Code skills for academic research review. These tools were developed by Claes Bäckman.",
-   "fullName": "claesbackman/AI-research-feedback",
-   "stargazersCount": 528,
-   "updatedAt": "2026-11-03T17:21:43Z",
-   "url": "https://github.com/claesbackman/AI-research-feedback",
+   "description": "Self-hosted, open-source inventory of everything you own and where it is. AI assistant and MCP server built in.",
+   "fullName": "keptinventory/kept",
+   "stargazersCount": 493,
+   "updatedAt": "2026-11-04T22:26:56Z",
+   "url": "https://github.com/keptinventory/kept",
    "labels": [
-    "skills"
+    "mcp"
    ],
-   "query": "claude code skills (updated)"
+   "query": "mcp server (updated)"
   },
   {
-   "description": "Claude Code 最实用的 Skills / Agents / Plugins 精选合集 | 50+ 精选 | 按场景分类 | 带推荐等级 | 复制即装",
-   "fullName": "helloianneo/awesome-claude-code-skills",
-   "stargazersCount": 506,
-   "updatedAt": "2026-11-03T17:05:23Z",
-   "url": "https://github.com/helloianneo/awesome-claude-code-skills",
+   "description": "Parse, view, query, edit, validate and export building models. Browser-first WebGPU viewer, TypeScript SDK, CLI, MCP server and Rust/WASM core with dual exact-arithmetic & SMlib geometry kernels.",
+   "fullName": "LTplus-AG/ifc-lite",
+   "stargazersCount": 459,
+   "updatedAt": "2026-11-04T21:15:41Z",
+   "url": "https://github.com/LTplus-AG/ifc-lite",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "Claude Code skills for copywriting, SEO, design, and more",
+   "fullName": "boraoztunc/skills",
+   "stargazersCount": 446,
+   "updatedAt": "2026-11-04T15:54:43Z",
+   "url": "https://github.com/boraoztunc/skills",
    "labels": [
     "skills"
    ],
@@ -491,8 +469,8 @@
   {
    "description": "Claude Code skill for OWASP security best practices (2025-2026). Includes Top 10:2025, ASVS 5.0, Agentic AI security, and 20+ language-specific security quirks.",
    "fullName": "agamm/claude-code-owasp",
-   "stargazersCount": 428,
-   "updatedAt": "2026-11-03T19:29:27Z",
+   "stargazersCount": 427,
+   "updatedAt": "2026-11-04T16:14:48Z",
    "url": "https://github.com/agamm/claude-code-owasp",
    "labels": [
     "skills"
@@ -511,32 +489,21 @@
    "query": "claude code plugin (updated)"
   },
   {
-   "description": "Vibe 知识大赏：一个知识点 → 一条有旁白、每句有出处的精品知识短片（Claude Code skill · 44 套风格 · 代码逐帧成片）",
-   "fullName": "andyhuo520/vibe-knowledge",
-   "stargazersCount": 408,
-   "updatedAt": "2026-11-03T22:20:17Z",
-   "url": "https://github.com/andyhuo520/vibe-knowledge",
+   "description": "堪舆子 · 传统风水顾问 Claude Code Skill —— 三元玄空飞星、八宅明镜、择日学",
+   "fullName": "voidforall/fengshui.skill",
+   "stargazersCount": 385,
+   "updatedAt": "2026-11-04T20:57:52Z",
+   "url": "https://github.com/voidforall/fengshui.skill",
    "labels": [
     "skills"
    ],
    "query": "claude code skills (updated)"
   },
   {
-   "description": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode…) design inspiration from award-winning websites — search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
-   "fullName": "INSANE0777/Awwwards-mcp",
-   "stargazersCount": 408,
-   "updatedAt": "2026-11-03T22:08:32Z",
-   "url": "https://github.com/INSANE0777/Awwwards-mcp",
-   "labels": [
-    "mcp"
-   ],
-   "query": "mcp server (updated)"
-  },
-  {
    "description": "Agent Skills for end-to-end story writing in markdown, packaged as Codex and Claude Code plugins.",
    "fullName": "danjdewhurst/story-skills",
-   "stargazersCount": 381,
-   "updatedAt": "2026-11-03T19:46:47Z",
+   "stargazersCount": 384,
+   "updatedAt": "2026-11-04T21:23:12Z",
    "url": "https://github.com/danjdewhurst/story-skills",
    "labels": [
     "skills"
@@ -544,10 +511,21 @@
    "query": "claude code plugin (updated)"
   },
   {
+   "description": "Six Claude Code skills that make animations for reels, no footage needed: 3D cartoon explainer, stick figure, minimal line art, 3D map route, exploded view, line graph.",
+   "fullName": "artemnovitckii/claude-animation-skills",
+   "stargazersCount": 376,
+   "updatedAt": "2026-11-04T22:24:26Z",
+   "url": "https://github.com/artemnovitckii/claude-animation-skills",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code skills (updated)"
+  },
+  {
    "description": "Claude Code plugin for writing triager-grade bug bounty reports",
    "fullName": "yeswehack/claude-kit",
-   "stargazersCount": 363,
-   "updatedAt": "2026-11-03T18:53:33Z",
+   "stargazersCount": 365,
+   "updatedAt": "2026-11-04T21:53:52Z",
    "url": "https://github.com/yeswehack/claude-kit",
    "labels": [
     "skills"
@@ -555,21 +533,21 @@
    "query": "claude code plugin (updated)"
   },
   {
-   "description": "A pixel art virtual office that visualizes your AI agents working in real-time. Claude Code hooks, WebSocket events, and isometric pixel art.",
-   "fullName": "W17ant/Claude-Office",
-   "stargazersCount": 333,
-   "updatedAt": "2026-11-03T22:17:14Z",
-   "url": "https://github.com/W17ant/Claude-Office",
+   "description": "Drive Google Flow from the command line: Veo video and Imagen images, scripted, batched and pipeline-ready. Ships an MCP server so coding agents can drive it too, giving you and your agents full programmatic control over generation. Unofficial, alpha, not affiliated with Google.",
+   "fullName": "ffroliva/gflow-cli",
+   "stargazersCount": 358,
+   "updatedAt": "2026-11-04T21:48:40Z",
+   "url": "https://github.com/ffroliva/gflow-cli",
    "labels": [
-    "harness"
+    "mcp"
    ],
-   "query": "claude code hooks (updated)"
+   "query": "mcp server (updated)"
   },
   {
    "description": "Claude Code skill for product videos: real browser capture, branded composition, and local mastering.",
    "fullName": "aaitor/skill-video-studio",
-   "stargazersCount": 332,
-   "updatedAt": "2026-11-03T22:13:24Z",
+   "stargazersCount": 346,
+   "updatedAt": "2026-11-04T22:16:24Z",
    "url": "https://github.com/aaitor/skill-video-studio",
    "labels": [
     "skills"
@@ -577,11 +555,33 @@
    "query": "claude code skills (updated)"
   },
   {
-   "description": "Procedural risograph films in single HTML files (Window Seat, Roost and more), with the Claude Code skills, docs and tools to make your own.",
-   "fullName": "sevenevesai/riso-windowseat",
-   "stargazersCount": 308,
-   "updatedAt": "2026-11-03T12:53:27Z",
-   "url": "https://github.com/sevenevesai/riso-windowseat",
+   "description": "A pixel art virtual office that visualizes your AI agents working in real-time. Claude Code hooks, WebSocket events, and isometric pixel art.",
+   "fullName": "W17ant/Claude-Office",
+   "stargazersCount": 340,
+   "updatedAt": "2026-11-04T18:31:13Z",
+   "url": "https://github.com/W17ant/Claude-Office",
+   "labels": [
+    "harness"
+   ],
+   "query": "claude code hooks (updated)"
+  },
+  {
+   "description": "MCP server for Mikrotik",
+   "fullName": "wiresage/mikrotik-mcp",
+   "stargazersCount": 316,
+   "updatedAt": "2026-11-04T21:31:12Z",
+   "url": "https://github.com/wiresage/mikrotik-mcp",
+   "labels": [
+    "mcp"
+   ],
+   "query": "mcp server (updated)"
+  },
+  {
+   "description": "Claude Code skills for Go-To-Market: 137 sales triggers, 34 email templates, 11 GTM plays, and Clay    enrichment workflows.    ",
+   "fullName": "Cold-IQ/ColdIQ-s-GTM-Skills",
+   "stargazersCount": 315,
+   "updatedAt": "2026-11-04T17:25:30Z",
+   "url": "https://github.com/Cold-IQ/ColdIQ-s-GTM-Skills",
    "labels": [
     "skills"
    ],
@@ -590,13 +590,24 @@
   {
    "description": "Master AI inference, AI agent harness systems, and hardware engineering — then design a physical AI chip. That is the goal.",
    "fullName": "ai-hpc/ai-hardware-engineer-roadmap",
-   "stargazersCount": 300,
-   "updatedAt": "2026-11-03T10:53:09Z",
+   "stargazersCount": 301,
+   "updatedAt": "2026-11-04T10:57:11Z",
    "url": "https://github.com/ai-hpc/ai-hardware-engineer-roadmap",
    "labels": [
     "harness"
    ],
    "query": "ai agent harness (updated)"
+  },
+  {
+   "description": "A Claude Code skill that designs a brand identity as one system: logo, typography and colour palette built together from one brief, measured, compared as identity cards, and delivered as a brand guidelines kit.",
+   "fullName": "fatihaydost/brand-identity-skill",
+   "stargazersCount": 300,
+   "updatedAt": "2026-11-04T20:48:43Z",
+   "url": "https://github.com/fatihaydost/brand-identity-skill",
+   "labels": [
+    "skills"
+   ],
+   "query": "claude code skills (updated)"
   }
  ]
 }
