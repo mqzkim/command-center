@@ -1,131 +1,4 @@
-﻿[2026-11-16 18:03:57]   build-projects> WROTE projects-data.js
-[2026-11-16 18:03:57] build-projects exit=0 (26.6s)
-[2026-11-16 18:03:57]   build-galaxy> CONCEPTS 145
-[2026-11-16 18:03:57]   build-galaxy> ENTITIES 284
-[2026-11-16 18:03:57]   build-galaxy> RESEARCH 46
-[2026-11-16 18:03:57]   build-galaxy> INTERNAL 49
-[2026-11-16 18:03:57]   build-galaxy> WROTE galaxy-data.js
-[2026-11-16 18:03:57] build-galaxy exit=0 (0.4s)
-[2026-11-16 18:03:57]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
-[2026-11-16 18:03:57]   sync-claude-os> upserted=0 deleted=0 skipped=97 errors=0
-[2026-11-16 18:03:57] sync-claude-os exit=0 (0.1s)
-[2026-11-16 18:03:58]   sync-wiki-kb> skipped: claude-os offline
-[2026-11-16 18:03:58]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
-[2026-11-16 18:03:58] sync-wiki-kb exit=0 (0.1s)
-[2026-11-16 18:03:58] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
-[2026-11-17 00:03:04] === refresh start (pid 19032, loop=False)
-[2026-11-17 00:03:22]   fetch-gh> node:internal/errors:985
-[2026-11-17 00:03:22]   fetch-gh>   const err = new Error(message);
-[2026-11-17 00:03:22]   fetch-gh>               ^
-[2026-11-17 00:03:22]   fetch-gh> System.Management.Automation.RemoteException
-[2026-11-17 00:03:22]   fetch-gh> Error: Command failed: gh api graphql -f query={ r0: repository(owner:"mqzkim", name:"hermes-shared-knowledge"){
-[2026-11-17 00:03:22]   fetch-gh>     root: object(expression:"HEAD:"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:22]   fetch-gh>     docs: object(expression:"HEAD:docs"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:22]   fetch-gh>     granite: object(expression:"HEAD:granite.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:22]   fetch-gh>     ait: object(expression:"HEAD:apps-in-toss.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:22]   fetch-gh>     pkg: object(expression:"HEAD:package.json"){ ... on Blob { text } }
-[2026-11-17 00:03:22]   fetch-gh>     readme: object(expression:"HEAD:README.md"){ ... on Blob { text } }
-[2026-11-17 00:03:22]   fetch-gh>     issues(first:10, states:OPEN, orderBy:{field:CREATED_AT, direction:DESC}){ nodes { title } }
-[2026-11-17 00:03:22]   fetch-gh>     defaultBranchRef { target { ... on Commit {
-[2026-11-17 00:03:22]   fetch-gh>       recent: history(first:5){ nodes { committedDate messageHeadline } }
-[2026-11-17 00:03:22]   fetch-gh>       last30: history(since:"2026-10-17T15:03:11.340Z"){ totalCount } } } }
-[2026-11-17 00:03:22]   fetch-gh>   }
-[2026-11-17 00:03:22]   fetch-gh> r1: repository(owner:"mqzkim", name:"command-center"){
-[2026-11-17 00:03:22]   fetch-gh>     root: object(expression:"HEAD:"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:22]   fetch-gh>     docs: object(expression:"HEAD:docs"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:22]   fetch-gh>     granite: object(expression:"HEAD:granite.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:22]   fetch-gh>     ait: object(expression:"HEAD:apps-in-toss.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:22]   fetch-gh>     pkg: object(expression:"HEAD:package.json"){ ... on Blob { text } }
-[2026-11-17 00:03:22]   fetch-gh>     readme: object(expression:"HEAD:README.md"){ ... on Blob { text } }
-[2026-11-17 00:03:22]   fetch-gh>     issues(first:10, states:OPEN, orderBy:{field:CREATED_AT, direction:DESC}){ nodes { title } }
-[2026-11-17 00:03:22]   fetch-gh>     defaultBranchRef { target { ... on Commit {
-[2026-11-17 00:03:22]   fetch-gh>       recent: history(first:5){ nodes { committedDate messageHeadline } }
-[2026-11-17 00:03:22]   fetch-gh>       last30: history(since:"2026-10-17T15:03:11.340Z"){ totalCount } } } }
-[2026-11-17 00:03:22]   fetch-gh>   }
-[2026-11-17 00:03:22]   fetch-gh> r2: repository(owner:"mqzkim", name:"llm-wiki"){
-[2026-11-17 00:03:22]   fetch-gh>     root: object(expression:"HEAD:"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:22]   fetch-gh>     docs: object(expression:"HEAD:docs"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:22]   fetch-gh>     granite: object(expression:"HEAD:granite.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:22]   fetch-gh>     ait: object(expression:"HEAD:apps-in-toss.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:22]   fetch-gh>     pkg: object(expression:"HEAD:package.json"){ ... on Blob { text } }
-[2026-11-17 00:03:22]   fetch-gh>     readme: object(expression:"HEAD:README.md"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     issues(first:10, states:OPEN, orderBy:{field:CREATED_AT, direction:DESC}){ nodes { title } }
-[2026-11-17 00:03:23]   fetch-gh>     defaultBranchRef { target { ... on Commit {
-[2026-11-17 00:03:23]   fetch-gh>       recent: history(first:5){ nodes { committedDate messageHeadline } }
-[2026-11-17 00:03:23]   fetch-gh>       last30: history(since:"2026-10-17T15:03:11.340Z"){ totalCount } } } }
-[2026-11-17 00:03:23]   fetch-gh>   }
-[2026-11-17 00:03:23]   fetch-gh> r3: repository(owner:"mqzkim", name:"app-in-toss"){
-[2026-11-17 00:03:23]   fetch-gh>     root: object(expression:"HEAD:"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:23]   fetch-gh>     docs: object(expression:"HEAD:docs"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:23]   fetch-gh>     granite: object(expression:"HEAD:granite.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     ait: object(expression:"HEAD:apps-in-toss.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     pkg: object(expression:"HEAD:package.json"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     readme: object(expression:"HEAD:README.md"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     issues(first:10, states:OPEN, orderBy:{field:CREATED_AT, direction:DESC}){ nodes { title } }
-[2026-11-17 00:03:23]   fetch-gh>     defaultBranchRef { target { ... on Commit {
-[2026-11-17 00:03:23]   fetch-gh>       recent: history(first:5){ nodes { committedDate messageHeadline } }
-[2026-11-17 00:03:23]   fetch-gh>       last30: history(since:"2026-10-17T15:03:11.340Z"){ totalCount } } } }
-[2026-11-17 00:03:23]   fetch-gh>   }
-[2026-11-17 00:03:23]   fetch-gh> r4: repository(owner:"mqzkim", name:"today-task"){
-[2026-11-17 00:03:23]   fetch-gh>     root: object(expression:"HEAD:"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:23]   fetch-gh>     docs: object(expression:"HEAD:docs"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:23]   fetch-gh>     granite: object(expression:"HEAD:granite.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     ait: object(expression:"HEAD:apps-in-toss.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     pkg: object(expression:"HEAD:package.json"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     readme: object(expression:"HEAD:README.md"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     issues(first:10, states:OPEN, orderBy:{field:CREATED_AT, direction:DESC}){ nodes { title } }
-[2026-11-17 00:03:23]   fetch-gh>     defaultBranchRef { target { ... on Commit {
-[2026-11-17 00:03:23]   fetch-gh>       recent: history(first:5){ nodes { committedDate messageHeadline } }
-[2026-11-17 00:03:23]   fetch-gh>       last30: history(since:"2026-10-17T15:03:11.340Z"){ totalCount } } } }
-[2026-11-17 00:03:23]   fetch-gh>   }
-[2026-11-17 00:03:23]   fetch-gh> r5: repository(owner:"mqzkim", name:"nailmap"){
-[2026-11-17 00:03:23]   fetch-gh>     root: object(expression:"HEAD:"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:23]   fetch-gh>     docs: object(expression:"HEAD:docs"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:23]   fetch-gh>     granite: object(expression:"HEAD:granite.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     ait: object(expression:"HEAD:apps-in-toss.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     pkg: object(expression:"HEAD:package.json"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     readme: object(expression:"HEAD:README.md"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     issues(first:10, states:OPEN, orderBy:{field:CREATED_AT, direction:DESC}){ nodes { title } }
-[2026-11-17 00:03:23]   fetch-gh>     defaultBranchRef { target { ... on Commit {
-[2026-11-17 00:03:23]   fetch-gh>       recent: history(first:5){ nodes { committedDate messageHeadline } }
-[2026-11-17 00:03:23]   fetch-gh>       last30: history(since:"2026-10-17T15:03:11.340Z"){ totalCount } } } }
-[2026-11-17 00:03:23]   fetch-gh>   }
-[2026-11-17 00:03:23]   fetch-gh> r6: repository(owner:"mqzkim", name:"seoul-house-from-space"){
-[2026-11-17 00:03:23]   fetch-gh>     root: object(expression:"HEAD:"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:23]   fetch-gh>     docs: object(expression:"HEAD:docs"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:23]   fetch-gh>     granite: object(expression:"HEAD:granite.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     ait: object(expression:"HEAD:apps-in-toss.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     pkg: object(expression:"HEAD:package.json"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     readme: object(expression:"HEAD:README.md"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     issues(first:10, states:OPEN, orderBy:{field:CREATED_AT, direction:DESC}){ nodes { title } }
-[2026-11-17 00:03:23]   fetch-gh>     defaultBranchRef { target { ... on Commit {
-[2026-11-17 00:03:23]   fetch-gh>       recent: history(first:5){ nodes { committedDate messageHeadline } }
-[2026-11-17 00:03:23]   fetch-gh>       last30: history(since:"2026-10-17T15:03:11.340Z"){ totalCount } } } }
-[2026-11-17 00:03:23]   fetch-gh>   }
-[2026-11-17 00:03:23]   fetch-gh> r7: repository(owner:"mqzkim", name:"helix-space"){
-[2026-11-17 00:03:23]   fetch-gh>     root: object(expression:"HEAD:"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:23]   fetch-gh>     docs: object(expression:"HEAD:docs"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:23]   fetch-gh>     granite: object(expression:"HEAD:granite.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     ait: object(expression:"HEAD:apps-in-toss.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     pkg: object(expression:"HEAD:package.json"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     readme: object(expression:"HEAD:README.md"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     issues(first:10, states:OPEN, orderBy:{field:CREATED_AT, direction:DESC}){ nodes { title } }
-[2026-11-17 00:03:23]   fetch-gh>     defaultBranchRef { target { ... on Commit {
-[2026-11-17 00:03:23]   fetch-gh>       recent: history(first:5){ nodes { committedDate messageHeadline } }
-[2026-11-17 00:03:23]   fetch-gh>       last30: history(since:"2026-10-17T15:03:11.340Z"){ totalCount } } } }
-[2026-11-17 00:03:23]   fetch-gh>   }
-[2026-11-17 00:03:23]   fetch-gh> r8: repository(owner:"mqzkim", name:"cafe-review-reply-generator"){
-[2026-11-17 00:03:23]   fetch-gh>     root: object(expression:"HEAD:"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:23]   fetch-gh>     docs: object(expression:"HEAD:docs"){ ... on Tree { entries { name type } } }
-[2026-11-17 00:03:23]   fetch-gh>     granite: object(expression:"HEAD:granite.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     ait: object(expression:"HEAD:apps-in-toss.config.ts"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     pkg: object(expression:"HEAD:package.json"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     readme: object(expression:"HEAD:README.md"){ ... on Blob { text } }
-[2026-11-17 00:03:23]   fetch-gh>     issues(first:10, states:OPEN, orderBy:{field:CREATED_AT, direction:DESC}){ nodes { title } }
-[2026-11-17 00:03:23]   fetch-gh>     defaultBranchRef { target { ... on Commit {
-[2026-11-17 00:03:23]   fetch-gh>       recent: history(first:5){ nodes { committedDate messageHeadline } }
-[2026-11-17 00:03:23]   fetch-gh>       last30: history(since:"2026-10-17T15:03:11.340Z"){ totalCount } } } }
-[2026-11-17 00:03:23]   fetch-gh>   }
+﻿[2026-11-17 00:03:23]   fetch-gh>   }
 [2026-11-17 00:03:23]   fetch-gh> r9: repository(owner:"mqzkim", name:"launch-deck"){
 [2026-11-17 00:03:23]   fetch-gh>     root: object(expression:"HEAD:"){ ... on Tree { entries { name type } } }
 [2026-11-17 00:03:23]   fetch-gh>     docs: object(expression:"HEAD:docs"){ ... on Tree { entries { name type } } }
@@ -198,3 +71,130 @@
 [2026-11-17 06:03:54]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
 [2026-11-17 06:03:54] sync-wiki-kb exit=0 (0.1s)
 [2026-11-17 06:03:54] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-11-17 12:03:03] === refresh start (pid 71204, loop=False)
+[2026-11-17 12:03:24]   fetch-gh> repos 45 (non-fork 43, fork 2) | apps-in-toss 12: app-in-toss, today-task, nailmap, seoul-house-from-space, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, conclusion-card, coffee, diamond-gather
+[2026-11-17 12:03:24]   fetch-gh> api calls 6 | elapsed 21.0s | WROTE projects-raw.json
+[2026-11-17 12:03:24] fetch-gh exit=0 (21.1s)
+[2026-11-17 12:04:14]   build-projects> dirs scanned 256 | items 98 | visible 73 | toss 20 (launch-status 17)
+[2026-11-17 12:04:14]   build-projects> byCategory {"harness-ai-infra":6,"side-project":17,"knowledge-wiki":1,"apps-in-toss":20,"landing-docs":3,"legacy":26} byStage {"mvp_prd":3,"store_assets":3,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
+[2026-11-17 12:04:14]   build-projects> WROTE projects-data.js
+[2026-11-17 12:04:14] build-projects exit=0 (50.4s)
+[2026-11-17 12:04:15]   build-galaxy> CONCEPTS 145
+[2026-11-17 12:04:15]   build-galaxy> ENTITIES 284
+[2026-11-17 12:04:15]   build-galaxy> RESEARCH 46
+[2026-11-17 12:04:15]   build-galaxy> INTERNAL 49
+[2026-11-17 12:04:15]   build-galaxy> WROTE galaxy-data.js
+[2026-11-17 12:04:15] build-galaxy exit=0 (0.6s)
+[2026-11-17 12:04:15]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-11-17 12:04:15]   sync-claude-os> upserted=0 deleted=0 skipped=98 errors=0
+[2026-11-17 12:04:15] sync-claude-os exit=0 (0.2s)
+[2026-11-17 12:04:15]   sync-wiki-kb> skipped: claude-os offline
+[2026-11-17 12:04:15]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+[2026-11-17 12:04:15] sync-wiki-kb exit=0 (0.2s)
+[2026-11-17 12:04:15] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-11-17 18:03:03] === refresh start (pid 62292, loop=False)
+[2026-11-17 18:03:32]   fetch-gh> repos 45 (non-fork 43, fork 2) | apps-in-toss 12: app-in-toss, today-task, nailmap, seoul-house-from-space, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, conclusion-card, coffee, diamond-gather
+[2026-11-17 18:03:32]   fetch-gh> api calls 6 | elapsed 27.8s | WROTE projects-raw.json
+[2026-11-17 18:03:32] fetch-gh exit=0 (28.3s)
+[2026-11-17 18:04:42]   build-projects> dirs scanned 266 | items 98 | visible 73 | toss 20 (launch-status 17)
+[2026-11-17 18:04:42]   build-projects> byCategory {"harness-ai-infra":6,"knowledge-wiki":1,"side-project":17,"apps-in-toss":20,"landing-docs":3,"legacy":26} byStage {"mvp_prd":3,"store_assets":3,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
+[2026-11-17 18:04:42]   build-projects> WROTE projects-data.js
+[2026-11-17 18:04:42] build-projects exit=0 (70.8s)
+[2026-11-17 18:04:44]   build-galaxy> CONCEPTS 145
+[2026-11-17 18:04:44]   build-galaxy> ENTITIES 284
+[2026-11-17 18:04:44]   build-galaxy> RESEARCH 46
+[2026-11-17 18:04:44]   build-galaxy> INTERNAL 49
+[2026-11-17 18:04:44]   build-galaxy> WROTE galaxy-data.js
+[2026-11-17 18:04:44] build-galaxy exit=0 (1.4s)
+[2026-11-17 18:04:44]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-11-17 18:04:44]   sync-claude-os> upserted=0 deleted=0 skipped=98 errors=0
+[2026-11-17 18:04:44] sync-claude-os exit=0 (0.3s)
+[2026-11-17 18:04:44]   sync-wiki-kb> skipped: claude-os offline
+[2026-11-17 18:04:44]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+[2026-11-17 18:04:44] sync-wiki-kb exit=0 (0.1s)
+[2026-11-17 18:04:44] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-11-18 00:03:03] === refresh start (pid 45832, loop=False)
+[2026-11-18 00:03:14]   fetch-gh> node:internal/errors:985
+[2026-11-18 00:03:14]   fetch-gh>   const err = new Error(message);
+[2026-11-18 00:03:14]   fetch-gh>               ^
+[2026-11-18 00:03:14]   fetch-gh> System.Management.Automation.RemoteException
+[2026-11-18 00:03:14]   fetch-gh> Error: Command failed: gh api graphql -f query=query($after:String){ repositoryOwner(login:"mqzkim"){ repositories(first:100, after:$after, ownerAffiliations:OWNER, orderBy:{field:PUSHED_AT, direction:DESC}){
+[2026-11-18 00:03:14]   fetch-gh>     pageInfo{hasNextPage endCursor}
+[2026-11-18 00:03:14]   fetch-gh>     nodes{ name url description isPrivate isFork isArchived pushedAt createdAt stargazerCount
+[2026-11-18 00:03:14]   fetch-gh>       primaryLanguage{name} defaultBranchRef{name} issues(states:OPEN){totalCount} } } } }
+[2026-11-18 00:03:14]   fetch-gh> gh: HTTP 502
+[2026-11-18 00:03:14]   fetch-gh> System.Management.Automation.RemoteException
+[2026-11-18 00:03:14]   fetch-gh>     at genericNodeError (node:internal/errors:985:15)
+[2026-11-18 00:03:14]   fetch-gh>     at wrappedFn (node:internal/errors:539:14)
+[2026-11-18 00:03:14]   fetch-gh>     at checkExecSyncError (node:child_process:925:11)
+[2026-11-18 00:03:14]   fetch-gh>     at execFileSync (node:child_process:961:15)
+[2026-11-18 00:03:14]   fetch-gh>     at gql (file:///C:/workspace/command-center/fetch-gh.mjs:22:15)
+[2026-11-18 00:03:14]   fetch-gh>     at file:///C:/workspace/command-center/fetch-gh.mjs:36:13
+[2026-11-18 00:03:14]   fetch-gh>     at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+[2026-11-18 00:03:14]   fetch-gh>     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
+[2026-11-18 00:03:14]   fetch-gh>     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+[2026-11-18 00:03:14]   fetch-gh>   status: 1,
+[2026-11-18 00:03:14]   fetch-gh>   signal: null,
+[2026-11-18 00:03:14]   fetch-gh>   output: [
+[2026-11-18 00:03:14]   fetch-gh>     null,
+[2026-11-18 00:03:14]   fetch-gh>     '<html>\r\n' +
+[2026-11-18 00:03:14]   fetch-gh>       '<head><title>502 Bad Gateway</title></head>\r\n' +
+[2026-11-18 00:03:14]   fetch-gh>       '<body>\r\n' +
+[2026-11-18 00:03:14]   fetch-gh>       '<center><h1>502 Bad Gateway</h1></center>\r\n' +
+[2026-11-18 00:03:14]   fetch-gh>       '<hr><center>nginx</center>\r\n' +
+[2026-11-18 00:03:14]   fetch-gh>       '</body>\r\n' +
+[2026-11-18 00:03:14]   fetch-gh>       '</html>\r\n',
+[2026-11-18 00:03:14]   fetch-gh>     'gh: HTTP 502\n'
+[2026-11-18 00:03:14]   fetch-gh>   ],
+[2026-11-18 00:03:14]   fetch-gh>   pid: 49304,
+[2026-11-18 00:03:14]   fetch-gh>   stdout: '<html>\r\n' +
+[2026-11-18 00:03:14]   fetch-gh>     '<head><title>502 Bad Gateway</title></head>\r\n' +
+[2026-11-18 00:03:14]   fetch-gh>     '<body>\r\n' +
+[2026-11-18 00:03:14]   fetch-gh>     '<center><h1>502 Bad Gateway</h1></center>\r\n' +
+[2026-11-18 00:03:14]   fetch-gh>     '<hr><center>nginx</center>\r\n' +
+[2026-11-18 00:03:14]   fetch-gh>     '</body>\r\n' +
+[2026-11-18 00:03:14]   fetch-gh>     '</html>\r\n',
+[2026-11-18 00:03:14]   fetch-gh>   stderr: 'gh: HTTP 502\n'
+[2026-11-18 00:03:14]   fetch-gh> }
+[2026-11-18 00:03:14]   fetch-gh> System.Management.Automation.RemoteException
+[2026-11-18 00:03:14]   fetch-gh> Node.js v24.14.1
+[2026-11-18 00:03:14] fetch-gh exit=1 (11.6s)
+[2026-11-18 00:03:14] fetch-gh FAILED ??湲곗〈 projects-raw.json ?좎?, build留??섑뻾
+[2026-11-18 00:04:15]   build-projects> dirs scanned 266 | items 98 | visible 73 | toss 20 (launch-status 17)
+[2026-11-18 00:04:15]   build-projects> byCategory {"harness-ai-infra":6,"knowledge-wiki":1,"side-project":17,"apps-in-toss":20,"landing-docs":3,"legacy":26} byStage {"mvp_prd":3,"store_assets":3,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
+[2026-11-18 00:04:15]   build-projects> WROTE projects-data.js
+[2026-11-18 00:04:15] build-projects exit=0 (61.0s)
+[2026-11-18 00:04:21]   build-galaxy> CONCEPTS 145
+[2026-11-18 00:04:21]   build-galaxy> ENTITIES 284
+[2026-11-18 00:04:21]   build-galaxy> RESEARCH 46
+[2026-11-18 00:04:21]   build-galaxy> INTERNAL 49
+[2026-11-18 00:04:21]   build-galaxy> WROTE galaxy-data.js
+[2026-11-18 00:04:21] build-galaxy exit=0 (5.6s)
+[2026-11-18 00:04:21]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-11-18 00:04:21]   sync-claude-os> upserted=0 deleted=0 skipped=98 errors=0
+[2026-11-18 00:04:21] sync-claude-os exit=0 (0.4s)
+[2026-11-18 00:04:21]   sync-wiki-kb> skipped: claude-os offline
+[2026-11-18 00:04:21]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+[2026-11-18 00:04:21] sync-wiki-kb exit=0 (0.3s)
+[2026-11-18 00:04:21] === refresh end (gh=1 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
+[2026-11-18 06:03:02] === refresh start (pid 53168, loop=False)
+[2026-11-18 06:03:27]   fetch-gh> repos 45 (non-fork 43, fork 2) | apps-in-toss 12: app-in-toss, today-task, nailmap, seoul-house-from-space, subway-timer, bamti-translator, naeheunjeok, kid-cheer-call, eomma-choiae, conclusion-card, coffee, diamond-gather
+[2026-11-18 06:03:27]   fetch-gh> api calls 6 | elapsed 24.9s | WROTE projects-raw.json
+[2026-11-18 06:03:27] fetch-gh exit=0 (25.0s)
+[2026-11-18 06:03:58]   build-projects> dirs scanned 266 | items 98 | visible 73 | toss 20 (launch-status 17)
+[2026-11-18 06:03:58]   build-projects> byCategory {"harness-ai-infra":6,"knowledge-wiki":1,"side-project":17,"apps-in-toss":20,"landing-docs":3,"legacy":26} byStage {"mvp_prd":3,"store_assets":3,"registration_draft":4,"sandbox_qa":5,"released":2,"unverified":3}
+[2026-11-18 06:03:58]   build-projects> WROTE projects-data.js
+[2026-11-18 06:03:58] build-projects exit=0 (31.1s)
+[2026-11-18 06:03:59]   build-galaxy> CONCEPTS 145
+[2026-11-18 06:03:59]   build-galaxy> ENTITIES 284
+[2026-11-18 06:03:59]   build-galaxy> RESEARCH 46
+[2026-11-18 06:03:59]   build-galaxy> INTERNAL 49
+[2026-11-18 06:03:59]   build-galaxy> WROTE galaxy-data.js
+[2026-11-18 06:03:59] build-galaxy exit=0 (0.4s)
+[2026-11-18 06:03:59]   sync-claude-os> skipped: claude-os offline (http://localhost:8051: ECONNREFUSED)
+[2026-11-18 06:03:59]   sync-claude-os> upserted=0 deleted=0 skipped=98 errors=0
+[2026-11-18 06:03:59] sync-claude-os exit=0 (0.1s)
+[2026-11-18 06:03:59]   sync-wiki-kb> skipped: claude-os offline
+[2026-11-18 06:03:59]   sync-wiki-kb> scanned=0 upserted=0 deleted=0 unchanged=0 errors=0
+[2026-11-18 06:03:59] sync-wiki-kb exit=0 (0.1s)
+[2026-11-18 06:03:59] === refresh end (gh=0 build-projects=0 build-galaxy=0 sync-claude-os=0 sync-wiki-kb=0)
